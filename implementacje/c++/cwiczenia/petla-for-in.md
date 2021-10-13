@@ -1,0 +1,2 @@
+# Pętla for in
+
