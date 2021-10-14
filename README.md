@@ -4,8 +4,6 @@ description: Nauczanie informatyki nowymi metodami
 
 # Informatyka: Trudne Tematy w Najprostszy Sposób
 
-{% tabs %}
-{% tab title="PL" %}
 Dydaktyka informatyki jest dużym wyzwaniem, szczególnie w szkole. Wcześniej podstawa programowa w zakresie podstawowym ograniczała się przede wszystkim do technologii informatycznych, co oznacza, że uczono głównie podstaw wykorzystania pakietu biurowego. W pewnym momencie uległo to jednak znacznej zmianie i teraz już od szkoły podstawowej mówi się o algorytmice, myśleniu komputacyjnym i programowaniu. Chociaż jest to niewątpliwie ważna i pozytywna zmiana, to stawia ona jeszcze większe wyzwania przed nauczycielami. W porównaniu do innych przedmiotów, takich jak chociażby matematyka, dydaktyka informatyki jest wciąż bardzo młoda i wciąż poszukiwane są skuteczne metody tłumaczenia wielu zagadnień. Dlatego postanowiliśmy stworzyć coś, co ochrzciliśmy mianą projektu Trudne Tematy w Najprostszy Sposób. Jest to zestaw gotowych materiałów dla nauczycieli, zawierający całe scenariusze lekcji, konspekty, prezentacje, które można wykorzystać, by przybliżyć uczniom tematy z dziedziny informatyki uważane za szczególnie trudne.
 
 ### Cele i założenia
@@ -35,5 +33,3 @@ Prezentacja
 ![Uznanie autorstwa-Na tych samych warunkach 4.0](.gitbook/assets/88x31.png)
 
 {% file src=".gitbook/assets/Licencja.pdf" %}
-{% endtab %}
-{% endtabs %}

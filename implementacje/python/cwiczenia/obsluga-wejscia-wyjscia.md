@@ -1,7 +1,5 @@
 # Obsługa wejścia/wyjścia
 
-{% tabs %}
-{% tab title="PL" %}
 ## Zadanie 1
 
 Napisz program zgodny z poniższą specyfikacją.
@@ -215,5 +213,3 @@ $$32M=1920S$$
 
 $$2H+32M+59S=7200S+1920S+59S=9179S$$ 
 {% endhint %}
-{% endtab %}
-{% endtabs %}

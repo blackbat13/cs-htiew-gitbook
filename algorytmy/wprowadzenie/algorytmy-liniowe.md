@@ -1,7 +1,5 @@
 # Algorytmy liniowe
 
-{% tabs %}
-{% tab title="PL" %}
 ## Wstęp
 
 Czym jest algorytm? Instrukcja, przepis, schemat postępowania... Algorytm opisuje rozwiązanie pewnego problemu. Wyróżniamy różnego rodzaju algorytmy, a zaczniemy od ich najprostszego rodzaju - algorytmów liniowych.
@@ -60,5 +58,3 @@ Teraz możemy przejść do algorytmu. Jak widać, mamy trzy dane wejściowe: kro
 ```
 
 I w tym przypadku ograniczyliśmy się do pewnego zbioru operacji i do pewnego poziomu szczegółowości. Gdy przejdziemy do bardziej informatycznych algorytmów stanie się bardziej jasne, jakie operacje możemy wykonywać, a jakie nie. 
-{% endtab %}
-{% endtabs %}

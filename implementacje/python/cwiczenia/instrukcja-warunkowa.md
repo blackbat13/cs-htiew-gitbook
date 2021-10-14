@@ -1,7 +1,5 @@
 # Instrukcja warunkowa
 
-{% tabs %}
-{% tab title="PL" %}
 ## Zadanie 1
 
 Napisz program zgodny z poniższą specyfikacją. Nie korzystaj z funkcji **abs, fabs**
@@ -205,5 +203,3 @@ rok := 2021
 ```
 
 **Wynik**:  "Rok 2021 nie jest przestępny"
-{% endtab %}
-{% endtabs %}
