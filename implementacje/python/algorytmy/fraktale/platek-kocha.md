@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../fraktale/platek-kocha.md" %}
-[platek-kocha.md](../../../../fraktale/platek-kocha.md)
+{% content-ref url="../../../../algorytmy/fraktale/platek-kocha.md" %}
+[platek-kocha.md](../../../../algorytmy/fraktale/platek-kocha.md)
 {% endcontent-ref %}
 
 ## Implementacja 

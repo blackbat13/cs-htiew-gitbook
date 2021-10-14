@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../algorytmy-na-liczbach-calkowitych/sito-eratostenesa.md" %}
-[sito-eratostenesa.md](../../../../algorytmy-na-liczbach-calkowitych/sito-eratostenesa.md)
+{% content-ref url="../../../../algorytmy/algorytmy-na-liczbach-calkowitych/sito-eratostenesa.md" %}
+[sito-eratostenesa.md](../../../../algorytmy/algorytmy-na-liczbach-calkowitych/sito-eratostenesa.md)
 {% endcontent-ref %}
 
 ## Implementacja

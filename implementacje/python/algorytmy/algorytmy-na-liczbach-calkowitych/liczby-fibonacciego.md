@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../algorytmy-na-liczbach-calkowitych/liczby-fibonacciego.md" %}
-[liczby-fibonacciego.md](../../../../algorytmy-na-liczbach-calkowitych/liczby-fibonacciego.md)
+{% content-ref url="../../../../algorytmy/algorytmy-na-liczbach-calkowitych/liczby-fibonacciego.md" %}
+[liczby-fibonacciego.md](../../../../algorytmy/algorytmy-na-liczbach-calkowitych/liczby-fibonacciego.md)
 {% endcontent-ref %}
 
 ## Wersja iteracyjna

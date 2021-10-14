@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../grafowe/flood-fill.md" %}
-[flood-fill.md](../../../../grafowe/flood-fill.md)
+{% content-ref url="../../../../algorytmy/grafowe/flood-fill.md" %}
+[flood-fill.md](../../../../algorytmy/grafowe/flood-fill.md)
 {% endcontent-ref %}
 
 ## Implementacja

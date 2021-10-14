@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../algorytmy-na-liczbach-calkowitych/test-doskonalosci.md" %}
-[test-doskonalosci.md](../../../../algorytmy-na-liczbach-calkowitych/test-doskonalosci.md)
+{% content-ref url="../../../../algorytmy/algorytmy-na-liczbach-calkowitych/test-doskonalosci.md" %}
+[test-doskonalosci.md](../../../../algorytmy/algorytmy-na-liczbach-calkowitych/test-doskonalosci.md)
 {% endcontent-ref %}
 
 ## Implementacja

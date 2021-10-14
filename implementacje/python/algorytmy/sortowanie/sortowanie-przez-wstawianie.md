@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../sortowanie/sortowanie-przez-wstawianie.md" %}
-[sortowanie-przez-wstawianie.md](../../../../sortowanie/sortowanie-przez-wstawianie.md)
+{% content-ref url="../../../../algorytmy/sortowanie/sortowanie-przez-wstawianie.md" %}
+[sortowanie-przez-wstawianie.md](../../../../algorytmy/sortowanie/sortowanie-przez-wstawianie.md)
 {% endcontent-ref %}
 
 ## Implementacja

@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../sortowanie/sortowanie-odd-even.md" %}
-[sortowanie-odd-even.md](../../../../sortowanie/sortowanie-odd-even.md)
+{% content-ref url="../../../../algorytmy/sortowanie/sortowanie-odd-even.md" %}
+[sortowanie-odd-even.md](../../../../algorytmy/sortowanie/sortowanie-odd-even.md)
 {% endcontent-ref %}
 
 ## Implementacja

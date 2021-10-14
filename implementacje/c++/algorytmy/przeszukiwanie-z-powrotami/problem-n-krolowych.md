@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../przeszukiwanie-z-powrotami/problem-n-krolowych.md" %}
-[problem-n-krolowych.md](../../../../przeszukiwanie-z-powrotami/problem-n-krolowych.md)
+{% content-ref url="../../../../algorytmy/przeszukiwanie-z-powrotami/problem-n-krolowych.md" %}
+[problem-n-krolowych.md](../../../../algorytmy/przeszukiwanie-z-powrotami/problem-n-krolowych.md)
 {% endcontent-ref %}
 
 ## Implementacja

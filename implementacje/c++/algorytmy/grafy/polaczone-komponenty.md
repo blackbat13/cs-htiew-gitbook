@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../grafowe/spojne-skladowe.md" %}
-[spojne-skladowe.md](../../../../grafowe/spojne-skladowe.md)
+{% content-ref url="../../../../algorytmy/grafowe/spojne-skladowe.md" %}
+[spojne-skladowe.md](../../../../algorytmy/grafowe/spojne-skladowe.md)
 {% endcontent-ref %}
 
 ## Implementacja

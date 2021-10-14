@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../sortowanie/sortowanie-przez-zliczanie.md" %}
-[sortowanie-przez-zliczanie.md](../../../../sortowanie/sortowanie-przez-zliczanie.md)
+{% content-ref url="../../../../algorytmy/sortowanie/sortowanie-przez-zliczanie.md" %}
+[sortowanie-przez-zliczanie.md](../../../../algorytmy/sortowanie/sortowanie-przez-zliczanie.md)
 {% endcontent-ref %}
 
 ## Implementacja

@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../algorytmy-na-liczbach-calkowitych/zachlanne-wydawanie-reszty.md" %}
-[zachlanne-wydawanie-reszty.md](../../../../algorytmy-na-liczbach-calkowitych/zachlanne-wydawanie-reszty.md)
+{% content-ref url="../../../../algorytmy/algorytmy-na-liczbach-calkowitych/zachlanne-wydawanie-reszty.md" %}
+[zachlanne-wydawanie-reszty.md](../../../../algorytmy/algorytmy-na-liczbach-calkowitych/zachlanne-wydawanie-reszty.md)
 {% endcontent-ref %}
 
 ## Podejście zachłanne

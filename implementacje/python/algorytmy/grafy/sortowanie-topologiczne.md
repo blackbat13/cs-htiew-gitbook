@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../grafowe/sortowanie-topologiczne.md" %}
-[sortowanie-topologiczne.md](../../../../grafowe/sortowanie-topologiczne.md)
+{% content-ref url="../../../../algorytmy/grafowe/sortowanie-topologiczne.md" %}
+[sortowanie-topologiczne.md](../../../../algorytmy/grafowe/sortowanie-topologiczne.md)
 {% endcontent-ref %}
 
 ## Implementacja

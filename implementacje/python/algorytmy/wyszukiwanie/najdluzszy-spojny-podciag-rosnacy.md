@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../wyszukiwanie/najdluzszy-spojny-podciag-rosnacy.md" %}
-[najdluzszy-spojny-podciag-rosnacy.md](../../../../wyszukiwanie/najdluzszy-spojny-podciag-rosnacy.md)
+{% content-ref url="../../../../algorytmy/wyszukiwanie/najdluzszy-spojny-podciag-rosnacy.md" %}
+[najdluzszy-spojny-podciag-rosnacy.md](../../../../algorytmy/wyszukiwanie/najdluzszy-spojny-podciag-rosnacy.md)
 {% endcontent-ref %}
 
 ## Implementacja

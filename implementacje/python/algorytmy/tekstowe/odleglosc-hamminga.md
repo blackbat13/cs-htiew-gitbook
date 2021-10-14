@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../tekstowe/odleglosc-hamminga.md" %}
-[odleglosc-hamminga.md](../../../../tekstowe/odleglosc-hamminga.md)
+{% content-ref url="../../../../algorytmy/tekstowe/odleglosc-hamminga.md" %}
+[odleglosc-hamminga.md](../../../../algorytmy/tekstowe/odleglosc-hamminga.md)
 {% endcontent-ref %}
 
 ## Implementacja

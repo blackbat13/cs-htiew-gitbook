@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../fraktale/kwadrat-sierpinskiego.md" %}
-[kwadrat-sierpinskiego.md](../../../../fraktale/kwadrat-sierpinskiego.md)
+{% content-ref url="../../../../algorytmy/fraktale/kwadrat-sierpinskiego.md" %}
+[kwadrat-sierpinskiego.md](../../../../algorytmy/fraktale/kwadrat-sierpinskiego.md)
 {% endcontent-ref %}
 
 ## Implementacja

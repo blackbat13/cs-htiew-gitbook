@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../fraktale/krzywa-peano.md" %}
-[krzywa-peano.md](../../../../fraktale/krzywa-peano.md)
+{% content-ref url="../../../../algorytmy/fraktale/krzywa-peano.md" %}
+[krzywa-peano.md](../../../../algorytmy/fraktale/krzywa-peano.md)
 {% endcontent-ref %}
 
 ## Implementacja

@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../sortowanie/sortowanie-przez-scalanie.md" %}
-[sortowanie-przez-scalanie.md](../../../../sortowanie/sortowanie-przez-scalanie.md)
+{% content-ref url="../../../../algorytmy/sortowanie/sortowanie-przez-scalanie.md" %}
+[sortowanie-przez-scalanie.md](../../../../algorytmy/sortowanie/sortowanie-przez-scalanie.md)
 {% endcontent-ref %}
 
 ## Implementacja

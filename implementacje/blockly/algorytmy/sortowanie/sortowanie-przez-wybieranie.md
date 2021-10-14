@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../sortowanie/sortowanie-przez-wybieranie.md" %}
-[sortowanie-przez-wybieranie.md](../../../../sortowanie/sortowanie-przez-wybieranie.md)
+{% content-ref url="../../../../algorytmy/sortowanie/sortowanie-przez-wybieranie.md" %}
+[sortowanie-przez-wybieranie.md](../../../../algorytmy/sortowanie/sortowanie-przez-wybieranie.md)
 {% endcontent-ref %}
 
 ## Implementacja

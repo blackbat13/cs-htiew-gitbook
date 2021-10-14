@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../grafowe/kruskal.md" %}
-[kruskal.md](../../../../grafowe/kruskal.md)
+{% content-ref url="../../../../algorytmy/grafowe/kruskal.md" %}
+[kruskal.md](../../../../algorytmy/grafowe/kruskal.md)
 {% endcontent-ref %}
 
 ## Implementacja

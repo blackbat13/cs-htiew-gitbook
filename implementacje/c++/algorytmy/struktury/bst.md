@@ -6,8 +6,8 @@ description: BST
 
 ## Opis problemu
 
-{% content-ref url="../../../../struktury-danych/drzewa-przeszukiwan-binarnych.md" %}
-[drzewa-przeszukiwan-binarnych.md](../../../../struktury-danych/drzewa-przeszukiwan-binarnych.md)
+{% content-ref url="../../../../algorytmy/struktury-danych/drzewa-przeszukiwan-binarnych.md" %}
+[drzewa-przeszukiwan-binarnych.md](../../../../algorytmy/struktury-danych/drzewa-przeszukiwan-binarnych.md)
 {% endcontent-ref %}
 
 ## Implementacja

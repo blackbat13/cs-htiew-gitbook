@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../metody-numeryczne/szybkie-potegowanie.md" %}
-[szybkie-potegowanie.md](../../../../metody-numeryczne/szybkie-potegowanie.md)
+{% content-ref url="../../../../algorytmy/metody-numeryczne/szybkie-potegowanie.md" %}
+[szybkie-potegowanie.md](../../../../algorytmy/metody-numeryczne/szybkie-potegowanie.md)
 {% endcontent-ref %}
 
 ## Rozwiązanie rekurencyjne

@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../algorytmy-na-liczbach-calkowitych/rozklad-na-czynniki-pierwsze.md" %}
-[rozklad-na-czynniki-pierwsze.md](../../../../algorytmy-na-liczbach-calkowitych/rozklad-na-czynniki-pierwsze.md)
+{% content-ref url="../../../../algorytmy/algorytmy-na-liczbach-calkowitych/rozklad-na-czynniki-pierwsze.md" %}
+[rozklad-na-czynniki-pierwsze.md](../../../../algorytmy/algorytmy-na-liczbach-calkowitych/rozklad-na-czynniki-pierwsze.md)
 {% endcontent-ref %}
 
 ## Implementacja

@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../sortowanie/sortowanie-grzebieniowe.md" %}
-[sortowanie-grzebieniowe.md](../../../../sortowanie/sortowanie-grzebieniowe.md)
+{% content-ref url="../../../../algorytmy/sortowanie/sortowanie-grzebieniowe.md" %}
+[sortowanie-grzebieniowe.md](../../../../algorytmy/sortowanie/sortowanie-grzebieniowe.md)
 {% endcontent-ref %}
 
 ## Implementacja

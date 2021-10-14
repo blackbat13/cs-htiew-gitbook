@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../wyszukiwanie/jednoczesne-znajdowanie-minimum-i-maksimum.md" %}
-[jednoczesne-znajdowanie-minimum-i-maksimum.md](../../../../wyszukiwanie/jednoczesne-znajdowanie-minimum-i-maksimum.md)
+{% content-ref url="../../../../algorytmy/wyszukiwanie/jednoczesne-znajdowanie-minimum-i-maksimum.md" %}
+[jednoczesne-znajdowanie-minimum-i-maksimum.md](../../../../algorytmy/wyszukiwanie/jednoczesne-znajdowanie-minimum-i-maksimum.md)
 {% endcontent-ref %}
 
 ## Podejście naiwne

@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../fraktale/trojkat-sierpinskiego.md" %}
-[trojkat-sierpinskiego.md](../../../../fraktale/trojkat-sierpinskiego.md)
+{% content-ref url="../../../../algorytmy/fraktale/trojkat-sierpinskiego.md" %}
+[trojkat-sierpinskiego.md](../../../../algorytmy/fraktale/trojkat-sierpinskiego.md)
 {% endcontent-ref %}
 
 ## Implementacja

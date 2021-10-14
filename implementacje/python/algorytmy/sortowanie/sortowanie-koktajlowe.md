@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../sortowanie/sortowanie-koktajlowe.md" %}
-[sortowanie-koktajlowe.md](../../../../sortowanie/sortowanie-koktajlowe.md)
+{% content-ref url="../../../../algorytmy/sortowanie/sortowanie-koktajlowe.md" %}
+[sortowanie-koktajlowe.md](../../../../algorytmy/sortowanie/sortowanie-koktajlowe.md)
 {% endcontent-ref %}
 
 ## Implementacja

@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../algorytmy-szyfrowania/szyfr-playfaira.md" %}
-[szyfr-playfaira.md](../../../../algorytmy-szyfrowania/szyfr-playfaira.md)
+{% content-ref url="../../../../algorytmy/algorytmy-szyfrowania/szyfr-playfaira.md" %}
+[szyfr-playfaira.md](../../../../algorytmy/algorytmy-szyfrowania/szyfr-playfaira.md)
 {% endcontent-ref %}
 
 ## Implementacja

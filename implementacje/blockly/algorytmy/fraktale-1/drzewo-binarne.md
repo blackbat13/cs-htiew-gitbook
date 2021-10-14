@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../fraktale/drzewo-binarne.md" %}
-[drzewo-binarne.md](../../../../fraktale/drzewo-binarne.md)
+{% content-ref url="../../../../algorytmy/fraktale/drzewo-binarne.md" %}
+[drzewo-binarne.md](../../../../algorytmy/fraktale/drzewo-binarne.md)
 {% endcontent-ref %}
 
 ## Implementacja

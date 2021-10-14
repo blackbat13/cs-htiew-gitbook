@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../algorytmy-szyfrowania/szyfr-rot13.md" %}
-[szyfr-rot13.md](../../../../algorytmy-szyfrowania/szyfr-rot13.md)
+{% content-ref url="../../../../algorytmy/algorytmy-szyfrowania/szyfr-rot13.md" %}
+[szyfr-rot13.md](../../../../algorytmy/algorytmy-szyfrowania/szyfr-rot13.md)
 {% endcontent-ref %}
 
 ## Szyfrowanie

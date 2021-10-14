@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../geometria-2d/odleglosc-punktu-od-prostej.md" %}
-[odleglosc-punktu-od-prostej.md](../../../../geometria-2d/odleglosc-punktu-od-prostej.md)
+{% content-ref url="../../../../algorytmy/geometria-2d/odleglosc-punktu-od-prostej.md" %}
+[odleglosc-punktu-od-prostej.md](../../../../algorytmy/geometria-2d/odleglosc-punktu-od-prostej.md)
 {% endcontent-ref %}
 
 ## Implementacja

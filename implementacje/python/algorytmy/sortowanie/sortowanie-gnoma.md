@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../sortowanie/sortowanie-gnoma.md" %}
-[sortowanie-gnoma.md](../../../../sortowanie/sortowanie-gnoma.md)
+{% content-ref url="../../../../algorytmy/sortowanie/sortowanie-gnoma.md" %}
+[sortowanie-gnoma.md](../../../../algorytmy/sortowanie/sortowanie-gnoma.md)
 {% endcontent-ref %}
 
 ## Implementacja

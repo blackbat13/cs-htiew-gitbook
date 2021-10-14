@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../sortowanie/sortowanie-przez-kopcowanie.md" %}
-[sortowanie-przez-kopcowanie.md](../../../../sortowanie/sortowanie-przez-kopcowanie.md)
+{% content-ref url="../../../../algorytmy/sortowanie/sortowanie-przez-kopcowanie.md" %}
+[sortowanie-przez-kopcowanie.md](../../../../algorytmy/sortowanie/sortowanie-przez-kopcowanie.md)
 {% endcontent-ref %}
 
 ## Implementacja

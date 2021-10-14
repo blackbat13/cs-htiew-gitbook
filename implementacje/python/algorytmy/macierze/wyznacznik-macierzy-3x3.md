@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../macierze/wyznacznik-macierzy-3x3.md" %}
-[wyznacznik-macierzy-3x3.md](../../../../macierze/wyznacznik-macierzy-3x3.md)
+{% content-ref url="../../../../algorytmy/macierze/wyznacznik-macierzy-3x3.md" %}
+[wyznacznik-macierzy-3x3.md](../../../../algorytmy/macierze/wyznacznik-macierzy-3x3.md)
 {% endcontent-ref %}
 
 ## Implementacja

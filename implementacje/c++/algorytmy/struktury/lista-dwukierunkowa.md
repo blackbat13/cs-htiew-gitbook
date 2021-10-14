@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../struktury-danych/lista-dwukierunkowa.md" %}
-[lista-dwukierunkowa.md](../../../../struktury-danych/lista-dwukierunkowa.md)
+{% content-ref url="../../../../algorytmy/struktury-danych/lista-dwukierunkowa.md" %}
+[lista-dwukierunkowa.md](../../../../algorytmy/struktury-danych/lista-dwukierunkowa.md)
 {% endcontent-ref %}
 
 ## Implementacja

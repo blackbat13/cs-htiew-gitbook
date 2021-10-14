@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../sortowanie/sortowanie-babelkowe.md" %}
-[sortowanie-babelkowe.md](../../../../sortowanie/sortowanie-babelkowe.md)
+{% content-ref url="../../../../algorytmy/sortowanie/sortowanie-babelkowe.md" %}
+[sortowanie-babelkowe.md](../../../../algorytmy/sortowanie/sortowanie-babelkowe.md)
 {% endcontent-ref %}
 
 ## Wersja standardowa

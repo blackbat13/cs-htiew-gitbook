@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../tekstowe/naiwne-wyszukiwanie-wzorca-w-tekscie.md" %}
-[naiwne-wyszukiwanie-wzorca-w-tekscie.md](../../../../tekstowe/naiwne-wyszukiwanie-wzorca-w-tekscie.md)
+{% content-ref url="../../../../algorytmy/tekstowe/naiwne-wyszukiwanie-wzorca-w-tekscie.md" %}
+[naiwne-wyszukiwanie-wzorca-w-tekscie.md](../../../../algorytmy/tekstowe/naiwne-wyszukiwanie-wzorca-w-tekscie.md)
 {% endcontent-ref %}
 
 ## Znajdowanie miejsca pierwszego wystąpienia wzorca w tekście 

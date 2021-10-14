@@ -6,8 +6,8 @@ description: Największy Wspólny Dzielnik
 
 ## Opis problemu
 
-{% content-ref url="../../../../algorytmy-na-liczbach-calkowitych/algorytm-euklidesa.md" %}
-[algorytm-euklidesa.md](../../../../algorytmy-na-liczbach-calkowitych/algorytm-euklidesa.md)
+{% content-ref url="../../../../algorytmy/algorytmy-na-liczbach-calkowitych/algorytm-euklidesa.md" %}
+[algorytm-euklidesa.md](../../../../algorytmy/algorytmy-na-liczbach-calkowitych/algorytm-euklidesa.md)
 {% endcontent-ref %}
 
 ## NWD z odejmowaniem

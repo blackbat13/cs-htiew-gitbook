@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../fraktale/zbior-cantora.md" %}
-[zbior-cantora.md](../../../../fraktale/zbior-cantora.md)
+{% content-ref url="../../../../algorytmy/fraktale/zbior-cantora.md" %}
+[zbior-cantora.md](../../../../algorytmy/fraktale/zbior-cantora.md)
 {% endcontent-ref %}
 
 ## Implementacja

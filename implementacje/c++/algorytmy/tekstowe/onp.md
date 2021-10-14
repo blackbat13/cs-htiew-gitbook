@@ -6,8 +6,8 @@ description: Obliczanie wartości wyrażenia ONP
 
 ## Opis problemu
 
-{% content-ref url="../../../../tekstowe/odwrotna-notacja-polska.md" %}
-[odwrotna-notacja-polska.md](../../../../tekstowe/odwrotna-notacja-polska.md)
+{% content-ref url="../../../../algorytmy/tekstowe/odwrotna-notacja-polska.md" %}
+[odwrotna-notacja-polska.md](../../../../algorytmy/tekstowe/odwrotna-notacja-polska.md)
 {% endcontent-ref %}
 
 ## Implementacja

@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../algorytmy-na-liczbach-calkowitych/wszystkie-dzielniki.md" %}
-[wszystkie-dzielniki.md](../../../../algorytmy-na-liczbach-calkowitych/wszystkie-dzielniki.md)
+{% content-ref url="../../../../algorytmy/algorytmy-na-liczbach-calkowitych/wszystkie-dzielniki.md" %}
+[wszystkie-dzielniki.md](../../../../algorytmy/algorytmy-na-liczbach-calkowitych/wszystkie-dzielniki.md)
 {% endcontent-ref %}
 
 ## Rozwiązanie zupełnie naiwne

@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../grafowe/prim.md" %}
-[prim.md](../../../../grafowe/prim.md)
+{% content-ref url="../../../../algorytmy/grafowe/prim.md" %}
+[prim.md](../../../../algorytmy/grafowe/prim.md)
 {% endcontent-ref %}
 
 ## Implementacja

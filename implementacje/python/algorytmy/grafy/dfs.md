@@ -6,8 +6,8 @@ description: Przeszukiwanie grafu w głąb
 
 ## Opis problemu
 
-{% content-ref url="../../../../grafowe/dfs.md" %}
-[dfs.md](../../../../grafowe/dfs.md)
+{% content-ref url="../../../../algorytmy/grafowe/dfs.md" %}
+[dfs.md](../../../../algorytmy/grafowe/dfs.md)
 {% endcontent-ref %}
 
 ## Implementacja

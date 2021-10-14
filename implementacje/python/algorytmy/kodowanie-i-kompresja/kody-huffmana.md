@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../kompresja/kody-huffmana.md" %}
-[kody-huffmana.md](../../../../kompresja/kody-huffmana.md)
+{% content-ref url="../../../../algorytmy/kompresja/kody-huffmana.md" %}
+[kody-huffmana.md](../../../../algorytmy/kompresja/kody-huffmana.md)
 {% endcontent-ref %}
 
 ## Implementacja

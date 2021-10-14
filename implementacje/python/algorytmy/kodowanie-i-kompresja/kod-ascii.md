@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../kompresja/kod-ascii.md" %}
-[kod-ascii.md](../../../../kompresja/kod-ascii.md)
+{% content-ref url="../../../../algorytmy/kompresja/kod-ascii.md" %}
+[kod-ascii.md](../../../../algorytmy/kompresja/kod-ascii.md)
 {% endcontent-ref %}
 
 ## Podstawowa tablica ASCII

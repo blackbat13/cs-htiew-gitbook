@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../algorytmy-szyfrowania/szyfr-vigenerea.md" %}
-[szyfr-vigenerea.md](../../../../algorytmy-szyfrowania/szyfr-vigenerea.md)
+{% content-ref url="../../../../algorytmy/algorytmy-szyfrowania/szyfr-vigenerea.md" %}
+[szyfr-vigenerea.md](../../../../algorytmy/algorytmy-szyfrowania/szyfr-vigenerea.md)
 {% endcontent-ref %}
 
 ## Szyfrowanie

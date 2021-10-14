@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../tekstowe/anagramy.md" %}
-[anagramy.md](../../../../tekstowe/anagramy.md)
+{% content-ref url="../../../../algorytmy/tekstowe/anagramy.md" %}
+[anagramy.md](../../../../algorytmy/tekstowe/anagramy.md)
 {% endcontent-ref %}
 
 ## Implementacja

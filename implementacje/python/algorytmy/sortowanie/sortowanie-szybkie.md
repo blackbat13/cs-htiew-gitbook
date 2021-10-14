@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../sortowanie/sortowanie-szybkie.md" %}
-[sortowanie-szybkie.md](../../../../sortowanie/sortowanie-szybkie.md)
+{% content-ref url="../../../../algorytmy/sortowanie/sortowanie-szybkie.md" %}
+[sortowanie-szybkie.md](../../../../algorytmy/sortowanie/sortowanie-szybkie.md)
 {% endcontent-ref %}
 
 ## Implementacja

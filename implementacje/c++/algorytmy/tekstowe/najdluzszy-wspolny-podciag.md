@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../tekstowe/najdluzszy-wspolny-podciag.md" %}
-[najdluzszy-wspolny-podciag.md](../../../../tekstowe/najdluzszy-wspolny-podciag.md)
+{% content-ref url="../../../../algorytmy/tekstowe/najdluzszy-wspolny-podciag.md" %}
+[najdluzszy-wspolny-podciag.md](../../../../algorytmy/tekstowe/najdluzszy-wspolny-podciag.md)
 {% endcontent-ref %}
 
 ## Implementacja

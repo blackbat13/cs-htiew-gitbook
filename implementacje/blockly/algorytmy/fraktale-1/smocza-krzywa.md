@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../fraktale/smocza-krzywa.md" %}
-[smocza-krzywa.md](../../../../fraktale/smocza-krzywa.md)
+{% content-ref url="../../../../algorytmy/fraktale/smocza-krzywa.md" %}
+[smocza-krzywa.md](../../../../algorytmy/fraktale/smocza-krzywa.md)
 {% endcontent-ref %}
 
 ## Implementacja

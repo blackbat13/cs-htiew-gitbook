@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../struktury-danych/kolejka.md" %}
-[kolejka.md](../../../../struktury-danych/kolejka.md)
+{% content-ref url="../../../../algorytmy/struktury-danych/kolejka.md" %}
+[kolejka.md](../../../../algorytmy/struktury-danych/kolejka.md)
 {% endcontent-ref %}
 
 ## Implementacja

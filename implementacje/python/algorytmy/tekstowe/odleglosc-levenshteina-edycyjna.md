@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../tekstowe/odleglosc-levenshteina-edycyjna.md" %}
-[odleglosc-levenshteina-edycyjna.md](../../../../tekstowe/odleglosc-levenshteina-edycyjna.md)
+{% content-ref url="../../../../algorytmy/tekstowe/odleglosc-levenshteina-edycyjna.md" %}
+[odleglosc-levenshteina-edycyjna.md](../../../../algorytmy/tekstowe/odleglosc-levenshteina-edycyjna.md)
 {% endcontent-ref %}
 
 ## Implementacja

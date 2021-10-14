@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../tekstowe/palindrom.md" %}
-[palindrom.md](../../../../tekstowe/palindrom.md)
+{% content-ref url="../../../../algorytmy/tekstowe/palindrom.md" %}
+[palindrom.md](../../../../algorytmy/tekstowe/palindrom.md)
 {% endcontent-ref %}
 
 ## Implementacja

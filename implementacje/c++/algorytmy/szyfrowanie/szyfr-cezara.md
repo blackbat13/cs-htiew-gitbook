@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../algorytmy-szyfrowania/szyfr-cezara.md" %}
-[szyfr-cezara.md](../../../../algorytmy-szyfrowania/szyfr-cezara.md)
+{% content-ref url="../../../../algorytmy/algorytmy-szyfrowania/szyfr-cezara.md" %}
+[szyfr-cezara.md](../../../../algorytmy/algorytmy-szyfrowania/szyfr-cezara.md)
 {% endcontent-ref %}
 
 ## Szyfrowanie

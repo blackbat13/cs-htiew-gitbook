@@ -6,8 +6,8 @@ description: Najkrótsze ścieżki pomiędzy wszystkimi wierzchołkami
 
 ## Opis problemu
 
-{% content-ref url="../../../../grafowe/floyd-warshall.md" %}
-[floyd-warshall.md](../../../../grafowe/floyd-warshall.md)
+{% content-ref url="../../../../algorytmy/grafowe/floyd-warshall.md" %}
+[floyd-warshall.md](../../../../algorytmy/grafowe/floyd-warshall.md)
 {% endcontent-ref %}
 
 ## Implementacja

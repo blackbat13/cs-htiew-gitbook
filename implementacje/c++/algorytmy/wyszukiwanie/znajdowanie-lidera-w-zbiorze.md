@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../wyszukiwanie/znajdowanie-lidera-w-zbiorze.md" %}
-[znajdowanie-lidera-w-zbiorze.md](../../../../wyszukiwanie/znajdowanie-lidera-w-zbiorze.md)
+{% content-ref url="../../../../algorytmy/wyszukiwanie/znajdowanie-lidera-w-zbiorze.md" %}
+[znajdowanie-lidera-w-zbiorze.md](../../../../algorytmy/wyszukiwanie/znajdowanie-lidera-w-zbiorze.md)
 {% endcontent-ref %}
 
 ## Implementacja

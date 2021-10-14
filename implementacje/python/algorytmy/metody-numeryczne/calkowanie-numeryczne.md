@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../metody-numeryczne/calkowanie-numeryczne.md" %}
-[calkowanie-numeryczne.md](../../../../metody-numeryczne/calkowanie-numeryczne.md)
+{% content-ref url="../../../../algorytmy/metody-numeryczne/calkowanie-numeryczne.md" %}
+[calkowanie-numeryczne.md](../../../../algorytmy/metody-numeryczne/calkowanie-numeryczne.md)
 {% endcontent-ref %}
 
 ## Metoda prostokątów

@@ -6,8 +6,8 @@ description: Najkrótsze ścieżki z jednego wierzchołka
 
 ## Opis problemu
 
-{% content-ref url="../../../../grafowe/dijkstra.md" %}
-[dijkstra.md](../../../../grafowe/dijkstra.md)
+{% content-ref url="../../../../algorytmy/grafowe/dijkstra.md" %}
+[dijkstra.md](../../../../algorytmy/grafowe/dijkstra.md)
 {% endcontent-ref %}
 
 ## Implementacja

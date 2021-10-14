@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../metody-numeryczne/pierwiastek-kwadratowy.md" %}
-[pierwiastek-kwadratowy.md](../../../../metody-numeryczne/pierwiastek-kwadratowy.md)
+{% content-ref url="../../../../algorytmy/metody-numeryczne/pierwiastek-kwadratowy.md" %}
+[pierwiastek-kwadratowy.md](../../../../algorytmy/metody-numeryczne/pierwiastek-kwadratowy.md)
 {% endcontent-ref %}
 
 ## Metoda Herona

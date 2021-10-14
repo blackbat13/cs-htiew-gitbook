@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../metody-numeryczne/schemat-hornera.md" %}
-[schemat-hornera.md](../../../../metody-numeryczne/schemat-hornera.md)
+{% content-ref url="../../../../algorytmy/metody-numeryczne/schemat-hornera.md" %}
+[schemat-hornera.md](../../../../algorytmy/metody-numeryczne/schemat-hornera.md)
 {% endcontent-ref %}
 
 ## Implementacja

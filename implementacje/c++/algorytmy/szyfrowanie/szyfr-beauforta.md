@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../algorytmy-szyfrowania/szyfr-beauforta.md" %}
-[szyfr-beauforta.md](../../../../algorytmy-szyfrowania/szyfr-beauforta.md)
+{% content-ref url="../../../../algorytmy/algorytmy-szyfrowania/szyfr-beauforta.md" %}
+[szyfr-beauforta.md](../../../../algorytmy/algorytmy-szyfrowania/szyfr-beauforta.md)
 {% endcontent-ref %}
 
 ## Implementacja

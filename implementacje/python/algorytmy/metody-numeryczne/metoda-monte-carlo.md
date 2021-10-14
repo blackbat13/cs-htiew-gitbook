@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../metody-numeryczne/metoda-monte-carlo.md" %}
-[metoda-monte-carlo.md](../../../../metody-numeryczne/metoda-monte-carlo.md)
+{% content-ref url="../../../../algorytmy/metody-numeryczne/metoda-monte-carlo.md" %}
+[metoda-monte-carlo.md](../../../../algorytmy/metody-numeryczne/metoda-monte-carlo.md)
 {% endcontent-ref %}
 
 ## Obliczanie wartości liczby PI

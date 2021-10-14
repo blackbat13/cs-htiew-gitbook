@@ -6,8 +6,8 @@ description: Przeszukiwanie grafu wszerz
 
 ## Opis problemu
 
-{% content-ref url="../../../../grafowe/bfs.md" %}
-[bfs.md](../../../../grafowe/bfs.md)
+{% content-ref url="../../../../algorytmy/grafowe/bfs.md" %}
+[bfs.md](../../../../algorytmy/grafowe/bfs.md)
 {% endcontent-ref %}
 
 ## Implementacja

@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../algorytmy-szyfrowania/szyfr-plotkowy.md" %}
-[szyfr-plotkowy.md](../../../../algorytmy-szyfrowania/szyfr-plotkowy.md)
+{% content-ref url="../../../../algorytmy/algorytmy-szyfrowania/szyfr-plotkowy.md" %}
+[szyfr-plotkowy.md](../../../../algorytmy/algorytmy-szyfrowania/szyfr-plotkowy.md)
 {% endcontent-ref %}
 
 ## Szyfrowanie

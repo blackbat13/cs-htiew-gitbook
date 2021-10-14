@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../struktury-danych/lista-jednokierunkowa.md" %}
-[lista-jednokierunkowa.md](../../../../struktury-danych/lista-jednokierunkowa.md)
+{% content-ref url="../../../../algorytmy/struktury-danych/lista-jednokierunkowa.md" %}
+[lista-jednokierunkowa.md](../../../../algorytmy/struktury-danych/lista-jednokierunkowa.md)
 {% endcontent-ref %}
 
 ## Implementacja

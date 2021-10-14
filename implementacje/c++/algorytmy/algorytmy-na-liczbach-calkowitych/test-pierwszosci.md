@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../algorytmy-na-liczbach-calkowitych/test-pierwszosci.md" %}
-[test-pierwszosci.md](../../../../algorytmy-na-liczbach-calkowitych/test-pierwszosci.md)
+{% content-ref url="../../../../algorytmy/algorytmy-na-liczbach-calkowitych/test-pierwszosci.md" %}
+[test-pierwszosci.md](../../../../algorytmy/algorytmy-na-liczbach-calkowitych/test-pierwszosci.md)
 {% endcontent-ref %}
 
 ## Implementacja
