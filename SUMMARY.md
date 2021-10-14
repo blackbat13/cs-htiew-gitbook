@@ -585,8 +585,6 @@
 
 ## Przydatne linki
 
-***
-
 * [Przewodnik po informatyce](https://bezkomputera.wmi.amu.edu.pl/ppi/)
 * [Kurs programowania z Harvardu](https://landing.codegym.cc/pl/cs50/)
 * [Informatyka dla Jasia i Joasi](http://jasijoasia.edu.pl)
@@ -601,8 +599,6 @@
 * [Virus Simulation](https://blackbat13.github.io/VirusSimulation/)
 
 ## Przydatne narzędzia
-
-***
 
 * [CodeShare](https://codeshare.io)
 * [Replit](https://replit.com)
