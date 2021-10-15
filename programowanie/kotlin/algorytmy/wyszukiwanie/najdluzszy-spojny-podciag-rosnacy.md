@@ -8,32 +8,37 @@
 
 ## Implementacja
 
-```python
-def longest_growing_substring_length(n: int, tab: list) -> int:
-    mx = 1
-    length = 1
-    
-    for i in range(1, n):
-        if tab[i] > tab[i-1]:
-            length += 1
-            if length > mx:
-                mx = length
-        else:
-            length = 1
-    
-    return mx
+```kotlin
+fun longestGrowingSubstringLength(array: List<Int>): Int {
+  var maxLength = 1
+  var currentLength = 1
 
+  for (i in 1 until array.count()) {
+    if (array[i] > array[i - 1]) {
+      currentLength += 1
+      if (currentLength > maxLength) {
+        maxLength = currentLength
+      }
+    } else {
+      currentLength = 1
+    }
+  }
 
-tab = [4, 9, 7, 2, 4, 7, 9, 3, 8, 6]
-n = 10
+  return maxLength
+}
 
-result = longest_growing_substring_length(n, tab)
-print(result)
+fun main() {
+  val array = listOf(4, 9, 7, 2, 4, 7, 9, 3, 8, 6)
+
+  val result = longestGrowingSubstringLength(array)
+
+  println("Dlugosc najdluzszego rosnacego spojnego podciagu wynosi $result")
+}
 ```
 
 ### Link do implementacji
 
-{% embed url="https://ideone.com/66djuO" %}
+{% embed url="https://ideone.com/iKkowC" %}
 Długość najdłuższego spójnego podciągu rosnącego
 {% endembed %}
 

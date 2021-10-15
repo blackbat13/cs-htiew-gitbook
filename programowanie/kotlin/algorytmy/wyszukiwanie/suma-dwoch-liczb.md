@@ -10,27 +10,28 @@
 
 ### Implementacja
 
-```python
-def sum_of_two(n : int, tab : list, k : int):
-    for i in range(n):
-        for j in range(i+1, n):
-            if tab[i] + tab[j] == k:
-                print(tab[i], tab[j])
-                return
-                
-    print(-1)
-    
+```kotlin
+fun sumOfTwo(array: List<Int>, sum: Int) {
+  for (i in array.indices) {
+    for (j in i + 1 until array.count()) {
+      if (array[i] + array[j] == sum) {
+        println("${array[i]} + ${array[j]} = $sum")
+      }
+    }
+  }
+}
 
-n = 10
-tab = [1, 2, 4, 6, 8, 9, 10, 12, 13, 15]
-k = 18
+fun main() {
+  val array = listOf(1, 2, 4, 6, 8, 9, 10, 12, 13, 15)
+  val sum = 18
 
-sum_of_two(n, tab, k)
+  sumOfTwo(array, sum)
+}
 ```
 
 ### Link do implementacji
 
-{% embed url="https://ideone.com/7iwqRc" %}
+{% embed url="https://ideone.com/AJ50ho" %}
 Suma dwóch - rozwiązanie naiwne
 {% endembed %}
 
@@ -42,33 +43,37 @@ TODO
 
 ### Implementacja
 
-```python
-def sum_of_two(n : int, tab : list, k : int):
-    left = 0
-    right = n - 1
-    
-    while left < right and tab[left] + tab[right] != k:
-        if tab[left] + tab[right] < k:
-            left += 1
-        else:
-            right -= 1
-            
-    if left < right:
-        print(tab[left], tab[right])
-    else:
-        print(-1)
-     
-           
-n = 10
-tab = [1, 2, 4, 6, 8, 9, 10, 12, 13, 15]
-k = 18
+```kotlin
+fun sumOfTwo(array: List<Int>, sum: Int) {
+  var left = 0
+  var right = array.count() - 1
 
-sum_of_two(n, tab, k)
+  while (left < right && array[left] + array[right] != sum) {
+    if (array[left] + array[right] < sum) {
+      left += 1
+    } else {
+      right -= 1
+    }
+  }
+
+  if (left < right) {
+    println("${array[left]} + ${array[right]} = $sum")
+  } else {
+    println("Nie znaleziono pary dajacej pozadana sume")
+  }
+}
+
+fun main() {
+  val array = listOf(1, 2, 4, 6, 8, 9, 10, 12, 13, 15)
+  val sum = 18
+
+  sumOfTwo(array, sum)
+}
 ```
 
 ### Link do implementacji
 
-{% embed url="https://ideone.com/qarXHf" %}
+{% embed url="https://ideone.com/MXQjLX" %}
 Suma dwóch - rozwiązanie optymalne
 {% endembed %}
 

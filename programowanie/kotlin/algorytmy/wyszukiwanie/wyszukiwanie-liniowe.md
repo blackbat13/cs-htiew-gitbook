@@ -37,7 +37,7 @@ fun main() {
 
 ### Link do implementacji
 
-{% embed url="https://ideone.com/SyXFi9" %}
+{% embed url="https://ideone.com/ShpM4v" %}
 Wyszukiwanie liniowe - istnienie elementu
 {% endembed %}
 
@@ -76,7 +76,7 @@ fun main() {
 
 ### Link do implementacji
 
-{% embed url="https://ideone.com/w7tswW" %}
+{% embed url="https://ideone.com/KeI9lc" %}
 Wyszukiwanie liniowe - pozycja elementu
 {% endembed %}
 
@@ -110,7 +110,7 @@ fun main() {
 
 ### Link do implementacji
 
-{% embed url="https://ideone.com/WEsyWj" %}
+{% embed url="https://ideone.com/G8jeS5" %}
 Wyszukiwanie liniowe - wszystkie pozycje elementu
 {% endembed %}
 

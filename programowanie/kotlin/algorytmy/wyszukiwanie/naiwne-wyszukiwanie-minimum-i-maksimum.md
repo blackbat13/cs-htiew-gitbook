@@ -10,30 +10,34 @@
 
 ### Implementacja
 
-```python
-def find_min_max(array: list) -> (int, int):
-    min = array[0]
-    max = array[0]
-    
-    for i in range(1, len(array)):
-        if array[i] < min:
-            min = array[i]
-        elif array[i] > max:
-            max = array[i]
+```kotlin
+fun findMinMax(array: List<Int>): Pair<Int,Int> {
+  var min = array[0]
+  var max = array[0]
 
-    return min, max
-    
+  for (el in array) {
+    if (el < min) {
+      min = el
+    } else if (el > max) {
+      max = el
+    }
+  }
 
-array = [3, 6, 1, 9, 10, 4, -4, 6, 12, 5, 11]
+  return Pair(min, max)
+}
 
-min, max = find_min_max(array)
+fun main() {
+  val array = listOf(3, 6, 1, 9, 10, 4, -4, 6, 12, 5, 11)
 
-print(f'Minimum: {min}, Maximum: {max}')
+  val (min, max) = findMinMax(array)
+
+  println("Minimum: $min, Maximum: $max")
+}
 ```
 
 ### Link do implementacji
 
-{% embed url="https://ideone.com/abPu9T" %}
+{% embed url="https://ideone.com/freoSQ" %}
 Jednoczesne wyszukiwanie minimum i maksimum - podejście naiwne
 {% endembed %}
 
@@ -43,45 +47,54 @@ TODO
 
 ## Podejście optymalne
 
-```python
-def find_min_max(array: list) -> (int, int):
-    min_candidates = []
-    max_candidates = []
-    
-    for i in range(1, len(array), 2):
-        if array[i - 1] < array[i]:
-            min_candidates.append(array[i - 1])
-            max_candidates.append(array[i])
-        else:
-            min_candidates.append(array[i])
-            max_candidates.append(array[i - 1])
+```kotlin
+fun findMinMax(array: List<Int>): Pair<Int,Int> {
+  var minCandidates = mutableListOf<Int>()
+  var maxCandidates = mutableListOf<Int>()
 
-    if len(array) % 2 != 0:
-        min_candidates.append(array[len(array) - 1])
-        max_candidates.append(array[len(array) - 1])
+  for (i in 1 until array.count() step 2) {
+    if (array[i - 1] < array[i]) {
+      minCandidates.add(array[i - 1])
+      maxCandidates.add(array[i])
+    } else {
+      minCandidates.add(array[i])
+      maxCandidates.add(array[i - 1])
+    }
+  }
 
-    min = min_candidates[0]
-    max = max_candidates[0]
-    
-    for i in range(1, len(min_candidates)):
-        if min > min_candidates[i]:
-            min = min_candidates[i]
-        if max < max_candidates[i]:
-            max = max_candidates[i]
+  if (array.count() % 2 != 0) {
+    minCandidates.add(array[array.count() - 1])
+    maxCandidates.add(array[array.count() - 1])
+  }
 
-    return min, max
-    
-    
-array = [3, 6, 1, 9, 10, 4, -4, 6, 12, 5, 11]
+  var min = minCandidates[0]
+  var max = maxCandidates[0]
 
-min, max = find_min_max(array)
+  for (i in minCandidates.indices) {
+    if (min > minCandidates[i]) {
+      min = minCandidates[i]
+    }
 
-print(f'Minimum: {min}, Maximum: {max}')
+    if (max < maxCandidates[i]) {
+      max = maxCandidates[i]
+    }
+  }
+
+  return Pair(min, max)
+}
+
+fun main() {
+  val array = listOf(3, 6, 1, 9, 10, 4, -4, 6, 12, 5, 11)
+
+  val (min, max) = findMinMax(array)
+
+  println("Minimum: $min, Maximum: $max")
+}
 ```
 
 ### Link do implementacji
 
-{% embed url="https://ideone.com/CtHqmV" %}
+{% embed url="https://ideone.com/r8KFFR" %}
 Jednoczesne wyszukiwanie minimum i maksimum - podejście optymalne
 {% endembed %}
 
