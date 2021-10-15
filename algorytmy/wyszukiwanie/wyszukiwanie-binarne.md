@@ -90,8 +90,8 @@ $$O(\log n)$$ - logarytmiczna
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/wyszukiwanie/wyszukiwanie-binarne.md" %}
-[wyszukiwanie-binarne.md](../../programowanie/python/algorytmy/wyszukiwanie/wyszukiwanie-binarne.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/wyszukiwanie/wyszukiwanie-binarne.md" %}
+[wyszukiwanie-binarne.md](../../programowanie/kotlin/algorytmy/wyszukiwanie/wyszukiwanie-binarne.md)
 {% endcontent-ref %}
 
 ### Blockly

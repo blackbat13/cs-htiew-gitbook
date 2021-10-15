@@ -122,6 +122,6 @@ $$O(\log{n})$$ - logarytmiczna
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/metody-numeryczne/szybkie-potegowanie.md" %}
-[szybkie-potegowanie.md](../../programowanie/python/algorytmy/metody-numeryczne/szybkie-potegowanie.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/metody-numeryczne/szybkie-potegowanie.md" %}
+[szybkie-potegowanie.md](../../programowanie/kotlin/algorytmy/metody-numeryczne/szybkie-potegowanie.md)
 {% endcontent-ref %}

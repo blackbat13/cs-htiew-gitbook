@@ -36,6 +36,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/grafy/dfs.md" %}
-[dfs.md](../../programowanie/python/algorytmy/grafy/dfs.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/grafy/dfs.md" %}
+[dfs.md](../../programowanie/kotlin/algorytmy/grafy/dfs.md)
 {% endcontent-ref %}

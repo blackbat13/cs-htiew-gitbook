@@ -92,7 +92,7 @@ $$O(n\log{n})$$ - liniowo logarytmiczna, jeżeli użyjemy standardowej metody so
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/tekstowe/anagramy.md" %}
-[anagramy.md](../../programowanie/python/algorytmy/tekstowe/anagramy.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/tekstowe/anagramy.md" %}
+[anagramy.md](../../programowanie/kotlin/algorytmy/tekstowe/anagramy.md)
 {% endcontent-ref %}
 

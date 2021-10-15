@@ -63,6 +63,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/sortowanie/sortowanie-koktajlowe.md" %}
-[sortowanie-koktajlowe.md](../../programowanie/python/algorytmy/sortowanie/sortowanie-koktajlowe.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/sortowanie/sortowanie-koktajlowe.md" %}
+[sortowanie-koktajlowe.md](../../programowanie/kotlin/algorytmy/sortowanie/sortowanie-koktajlowe.md)
 {% endcontent-ref %}

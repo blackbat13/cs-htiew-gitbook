@@ -78,6 +78,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/liczby-fibonacciego.md" %}
-[liczby-fibonacciego.md](../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/liczby-fibonacciego.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/liczby-fibonacciego.md" %}
+[liczby-fibonacciego.md](../../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/liczby-fibonacciego.md)
 {% endcontent-ref %}

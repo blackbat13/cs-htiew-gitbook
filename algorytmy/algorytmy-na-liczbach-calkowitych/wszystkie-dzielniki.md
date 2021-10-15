@@ -129,6 +129,6 @@ $$O(\sqrt{n})$$
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/wszystkie-dzielniki.md" %}
-[wszystkie-dzielniki.md](../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/wszystkie-dzielniki.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/wszystkie-dzielniki.md" %}
+[wszystkie-dzielniki.md](../../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/wszystkie-dzielniki.md)
 {% endcontent-ref %}

@@ -107,8 +107,8 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/nwd.md" %}
-[nwd.md](../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/nwd.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/nwd.md" %}
+[nwd.md](../../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/nwd.md)
 {% endcontent-ref %}
 
 ### Blockly

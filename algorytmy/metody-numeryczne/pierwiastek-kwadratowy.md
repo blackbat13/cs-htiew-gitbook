@@ -49,6 +49,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/metody-numeryczne/pierwiastek-kwadratowy.md" %}
-[pierwiastek-kwadratowy.md](../../programowanie/python/algorytmy/metody-numeryczne/pierwiastek-kwadratowy.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/metody-numeryczne/pierwiastek-kwadratowy.md" %}
+[pierwiastek-kwadratowy.md](../../programowanie/kotlin/algorytmy/metody-numeryczne/pierwiastek-kwadratowy.md)
 {% endcontent-ref %}

@@ -61,6 +61,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/rozklad-na-czynniki-pierwsze.md" %}
-[rozklad-na-czynniki-pierwsze.md](../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/rozklad-na-czynniki-pierwsze.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/rozklad-na-czynniki-pierwsze.md" %}
+[rozklad-na-czynniki-pierwsze.md](../../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/rozklad-na-czynniki-pierwsze.md)
 {% endcontent-ref %}

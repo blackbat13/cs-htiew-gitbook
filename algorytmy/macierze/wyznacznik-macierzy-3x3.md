@@ -18,6 +18,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/macierze/wyznacznik-macierzy-3x3.md" %}
-[wyznacznik-macierzy-3x3.md](../../programowanie/python/algorytmy/macierze/wyznacznik-macierzy-3x3.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/macierze/wyznacznik-macierzy-3x3.md" %}
+[wyznacznik-macierzy-3x3.md](../../programowanie/kotlin/algorytmy/macierze/wyznacznik-macierzy-3x3.md)
 {% endcontent-ref %}

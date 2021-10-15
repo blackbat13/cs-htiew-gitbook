@@ -84,6 +84,6 @@ $$O(n*m)\to O(n^2)$$ - kwadratowa
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/tekstowe/naiwne-wyszukiwanie-wzorca-w-tekscie.md" %}
-[naiwne-wyszukiwanie-wzorca-w-tekscie.md](../../programowanie/python/algorytmy/tekstowe/naiwne-wyszukiwanie-wzorca-w-tekscie.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/tekstowe/naiwne-wyszukiwanie-wzorca-w-tekscie.md" %}
+[naiwne-wyszukiwanie-wzorca-w-tekscie.md](../../programowanie/kotlin/algorytmy/tekstowe/naiwne-wyszukiwanie-wzorca-w-tekscie.md)
 {% endcontent-ref %}

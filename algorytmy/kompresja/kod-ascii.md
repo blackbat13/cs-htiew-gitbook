@@ -14,6 +14,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/kodowanie-i-kompresja/kod-ascii.md" %}
-[kod-ascii.md](../../programowanie/python/algorytmy/kodowanie-i-kompresja/kod-ascii.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/kodowanie-i-kompresja/kod-ascii.md" %}
+[kod-ascii.md](../../programowanie/kotlin/algorytmy/kodowanie-i-kompresja/kod-ascii.md)
 {% endcontent-ref %}

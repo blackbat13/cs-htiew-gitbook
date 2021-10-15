@@ -18,6 +18,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/geometria-2d/warunek-trojkata.md" %}
-[warunek-trojkata.md](../../programowanie/python/algorytmy/geometria-2d/warunek-trojkata.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/geometria-2d/warunek-trojkata.md" %}
+[warunek-trojkata.md](../../programowanie/kotlin/algorytmy/geometria-2d/warunek-trojkata.md)
 {% endcontent-ref %}

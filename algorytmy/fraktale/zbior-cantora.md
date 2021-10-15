@@ -12,8 +12,8 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/fraktale/zbior-cantora.md" %}
-[zbior-cantora.md](../../programowanie/python/algorytmy/fraktale/zbior-cantora.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/fraktale/zbior-cantora.md" %}
+[zbior-cantora.md](../../programowanie/kotlin/algorytmy/fraktale/zbior-cantora.md)
 {% endcontent-ref %}
 
 ### Blockly

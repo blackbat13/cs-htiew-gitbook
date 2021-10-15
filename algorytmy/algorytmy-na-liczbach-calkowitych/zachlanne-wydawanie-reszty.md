@@ -84,6 +84,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/zachlanne-wydawanie-reszty.md" %}
-[zachlanne-wydawanie-reszty.md](../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/zachlanne-wydawanie-reszty.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/zachlanne-wydawanie-reszty.md" %}
+[zachlanne-wydawanie-reszty.md](../../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/zachlanne-wydawanie-reszty.md)
 {% endcontent-ref %}

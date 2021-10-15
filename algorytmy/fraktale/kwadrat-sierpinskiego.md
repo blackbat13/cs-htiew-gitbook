@@ -12,8 +12,8 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/fraktale/kwadrat-sierpinskiego.md" %}
-[kwadrat-sierpinskiego.md](../../programowanie/python/algorytmy/fraktale/kwadrat-sierpinskiego.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/fraktale/kwadrat-sierpinskiego.md" %}
+[kwadrat-sierpinskiego.md](../../programowanie/kotlin/algorytmy/fraktale/kwadrat-sierpinskiego.md)
 {% endcontent-ref %}
 
 ### Blockly

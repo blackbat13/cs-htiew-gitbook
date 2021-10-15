@@ -18,6 +18,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/geometria-2d/odleglosc-punktu-od-prostej.md" %}
-[odleglosc-punktu-od-prostej.md](../../programowanie/python/algorytmy/geometria-2d/odleglosc-punktu-od-prostej.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/geometria-2d/odleglosc-punktu-od-prostej.md" %}
+[odleglosc-punktu-od-prostej.md](../../programowanie/kotlin/algorytmy/geometria-2d/odleglosc-punktu-od-prostej.md)
 {% endcontent-ref %}

@@ -22,6 +22,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/szyfrowanie/szyfr-rot13.md" %}
-[szyfr-rot13.md](../../programowanie/python/algorytmy/szyfrowanie/szyfr-rot13.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/szyfrowanie/szyfr-rot13.md" %}
+[szyfr-rot13.md](../../programowanie/kotlin/algorytmy/szyfrowanie/szyfr-rot13.md)
 {% endcontent-ref %}

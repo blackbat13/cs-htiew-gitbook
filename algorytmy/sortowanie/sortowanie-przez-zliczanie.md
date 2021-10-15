@@ -53,8 +53,8 @@ $$O(n+m)$$ - liniowa
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/sortowanie/sortowanie-przez-zliczanie.md" %}
-[sortowanie-przez-zliczanie.md](../../programowanie/python/algorytmy/sortowanie/sortowanie-przez-zliczanie.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/sortowanie/sortowanie-przez-zliczanie.md" %}
+[sortowanie-przez-zliczanie.md](../../programowanie/kotlin/algorytmy/sortowanie/sortowanie-przez-zliczanie.md)
 {% endcontent-ref %}
 
 ### Blockly

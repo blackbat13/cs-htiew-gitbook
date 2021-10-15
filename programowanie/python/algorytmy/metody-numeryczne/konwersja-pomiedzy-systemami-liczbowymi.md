@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="../../../kotlin/algorytmy/metody-numeryczne/broken-reference/" %}
+[broken-reference](../../../kotlin/algorytmy/metody-numeryczne/broken-reference/)
 {% endcontent-ref %}
 
 ## Konwersja z dziesiętnego

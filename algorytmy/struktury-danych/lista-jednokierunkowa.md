@@ -34,6 +34,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/struktury-danych/lista-jednokierunkowa.md" %}
-[lista-jednokierunkowa.md](../../programowanie/python/algorytmy/struktury-danych/lista-jednokierunkowa.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/struktury-danych/lista-jednokierunkowa.md" %}
+[lista-jednokierunkowa.md](../../programowanie/kotlin/algorytmy/struktury-danych/lista-jednokierunkowa.md)
 {% endcontent-ref %}

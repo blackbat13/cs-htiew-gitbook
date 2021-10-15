@@ -34,6 +34,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/grafy/spojne-skladowe.md" %}
-[spojne-skladowe.md](../../programowanie/python/algorytmy/grafy/spojne-skladowe.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/grafy/spojne-skladowe.md" %}
+[spojne-skladowe.md](../../programowanie/kotlin/algorytmy/grafy/spojne-skladowe.md)
 {% endcontent-ref %}

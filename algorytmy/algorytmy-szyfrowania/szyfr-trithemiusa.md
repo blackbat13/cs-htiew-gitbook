@@ -22,6 +22,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/szyfrowanie/szyfr-trithemiusa.md" %}
-[szyfr-trithemiusa.md](../../programowanie/python/algorytmy/szyfrowanie/szyfr-trithemiusa.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/szyfrowanie/szyfr-trithemiusa.md" %}
+[szyfr-trithemiusa.md](../../programowanie/kotlin/algorytmy/szyfrowanie/szyfr-trithemiusa.md)
 {% endcontent-ref %}

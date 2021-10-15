@@ -57,6 +57,6 @@ $$O(n\log{n})$$ - liniowo logarytmiczna
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/sortowanie/sortowanie-szybkie.md" %}
-[sortowanie-szybkie.md](../../programowanie/python/algorytmy/sortowanie/sortowanie-szybkie.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/sortowanie/sortowanie-szybkie.md" %}
+[sortowanie-szybkie.md](../../programowanie/kotlin/algorytmy/sortowanie/sortowanie-szybkie.md)
 {% endcontent-ref %}

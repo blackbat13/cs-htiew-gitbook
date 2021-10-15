@@ -12,8 +12,8 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/fraktale/krzywa-peano.md" %}
-[krzywa-peano.md](../../programowanie/python/algorytmy/fraktale/krzywa-peano.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/fraktale/krzywa-peano.md" %}
+[krzywa-peano.md](../../programowanie/kotlin/algorytmy/fraktale/krzywa-peano.md)
 {% endcontent-ref %}
 
 ### Blockly

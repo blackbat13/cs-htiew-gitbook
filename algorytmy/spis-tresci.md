@@ -6,7 +6,7 @@
 
 * Opis algorytmu: [Wyszukiwanie minimum i maksimum](wyszukiwanie/wyszukiwanie-maksimum.md) 
 * Implementacja C++: [Wyszukiwanie minimum i maksimum](../programowanie/c++/algorytmy/wyszukiwanie/wyszukiwanie-minimum-i-maksimum.md) 
-* Implementacja Python: [Wyszukiwanie minimum i maksimum](../programowanie/python/algorytmy/wyszukiwanie/wyszukiwanie-minimum-i-maksimum.md)
+* Implementacja Python: [Wyszukiwanie minimum i maksimum](../programowanie/kotlin/algorytmy/wyszukiwanie/wyszukiwanie-minimum-i-maksimum.md)
 * Implementacja Blockly: [Wyszukiwanie minimum i maksimum](../programowanie/blockly/algorytmy/wyszukiwanie/wyszukiwanie-minimum-i-maksimum.md)
 
 ### Jednoczesne znajdowanie minimum i maksimum (na maturze)
@@ -26,14 +26,14 @@
 
 * Opis algorytmu: [Wyszukiwanie binarne](wyszukiwanie/wyszukiwanie-binarne.md)
 * Implementacja C++: [Wyszukiwanie binarne](../programowanie/c++/algorytmy/wyszukiwanie/wyszukiwanie-binarne.md)
-* Implementacja Python: [Wyszukiwanie binarne](../programowanie/python/algorytmy/wyszukiwanie/wyszukiwanie-binarne.md)
+* Implementacja Python: [Wyszukiwanie binarne](../programowanie/kotlin/algorytmy/wyszukiwanie/wyszukiwanie-binarne.md)
 * Implementacja Blockly: [Wyszukiwanie binarne](../programowanie/blockly/algorytmy/wyszukiwanie/wyszukiwanie-binarne.md)
 
 ### Znajdowanie lidera w zbiorze
 
 * Opis algorytmu: [Znajdowanie lidera w zbiorze](wyszukiwanie/znajdowanie-lidera-w-zbiorze.md)
 * Implementacja C++: [Znajdowanie lidera w zbiorze](../programowanie/c++/algorytmy/wyszukiwanie/znajdowanie-lidera-w-zbiorze.md)
-* Implementacja Python: [Znajdowanie lidera w zbiorze](../programowanie/python/algorytmy/wyszukiwanie/znajdowanie-lidera-w-zbiorze.md)
+* Implementacja Python: [Znajdowanie lidera w zbiorze](../programowanie/kotlin/algorytmy/wyszukiwanie/znajdowanie-lidera-w-zbiorze.md)
 
 ### Najdłuższy spójny podciąg rosnący (na maturze)
 
@@ -53,38 +53,38 @@
 
 * Opis algorytmu: [Sortowanie bąbelkowe](sortowanie/sortowanie-babelkowe.md)
 * Implementacja C++: [Sortowanie bąbelkowe](../programowanie/c++/algorytmy/sortowanie/sortowanie-babelkowe.md)
-* Implementacja Python: [Sortowanie bąbelkowe](../programowanie/python/algorytmy/sortowanie/sortowanie-babelkowe.md)
+* Implementacja Python: [Sortowanie bąbelkowe](../programowanie/kotlin/algorytmy/sortowanie/sortowanie-babelkowe.md)
 
 ### Sortowanie przez wybieranie (na maturze)
 
 * Opis algorytmu: [Sortowanie przez wybieranie](sortowanie/sortowanie-przez-wybieranie.md)
 * Implementacja C++: [Sortowanie przez wybieranie](../programowanie/c++/algorytmy/sortowanie/sortowanie-przez-wybieranie.md)
-* Implementacja Python: [Sortowanie przez wybieranie](../programowanie/python/algorytmy/sortowanie/sortowanie-przez-wybieranie.md)
+* Implementacja Python: [Sortowanie przez wybieranie](../programowanie/kotlin/algorytmy/sortowanie/sortowanie-przez-wybieranie.md)
 * Implementacja Blockly: [Sortowanie przez wybieranie](../programowanie/blockly/algorytmy/sortowanie/sortowanie-przez-wybieranie.md)
 
 ### Sortowanie przez wstawianie - liniowe i binarne (na maturze)
 
 * Opis algorytmu: [Sortowanie przez wstawianie](sortowanie/sortowanie-przez-wstawianie.md)
 * Implementacja C++: [Sortowanie przez wstawianie](../programowanie/c++/algorytmy/sortowanie/sortowanie-przez-wstawianie.md)
-* Implementacja Python: [Sortowanie przez wstawianie](../programowanie/python/algorytmy/sortowanie/sortowanie-przez-wstawianie.md)
+* Implementacja Python: [Sortowanie przez wstawianie](../programowanie/kotlin/algorytmy/sortowanie/sortowanie-przez-wstawianie.md)
 
 ### Sortowanie przez scalanie (na maturze)
 
 * Opis algorytmu: [Sortowanie przez scalanie](sortowanie/sortowanie-przez-scalanie.md)
 * Implementacja C++: [Sortowanie przez scalanie](../programowanie/c++/algorytmy/sortowanie/sortowanie-przez-scalanie.md)
-* Implementacja Python: [Sortowanie przez scalanie](../programowanie/python/algorytmy/sortowanie/sortowanie-przez-scalanie.md)
+* Implementacja Python: [Sortowanie przez scalanie](../programowanie/kotlin/algorytmy/sortowanie/sortowanie-przez-scalanie.md)
 
 ### Sortowanie szybkie (na maturze)
 
 * Opis algorytmu: [Sortowanie szybkie](sortowanie/sortowanie-szybkie.md)
 * Implementacja C++: [Sortowanie szybkie](../programowanie/c++/algorytmy/sortowanie/sortowanie-szybkie.md)
-* Implementacja Python: [Sortowanie szybkie](../programowanie/python/algorytmy/sortowanie/sortowanie-szybkie.md)
+* Implementacja Python: [Sortowanie szybkie](../programowanie/kotlin/algorytmy/sortowanie/sortowanie-szybkie.md)
 
 ### Sortowanie przez zliczanie (na maturze)
 
 * Opis algorytmu: [Sortowanie przez zliczanie](sortowanie/sortowanie-przez-zliczanie.md)
 * Implementacja C++: [Sortowanie przez zliczanie](../programowanie/c++/algorytmy/sortowanie/sortowanie-przez-zliczanie.md)
-* Implementacja Python: [Sortowanie przez zliczanie](../programowanie/python/algorytmy/sortowanie/sortowanie-przez-zliczanie.md)
+* Implementacja Python: [Sortowanie przez zliczanie](../programowanie/kotlin/algorytmy/sortowanie/sortowanie-przez-zliczanie.md)
 * Implementacja Blockly: [Sortowanie przez zliczanie](../programowanie/blockly/algorytmy/sortowanie/sortowanie-przez-zliczanie.md)
 
 ### Sortowanie kubełkowe (na maturze)
@@ -97,7 +97,7 @@
 
 * Opis algorytmu: [Sortowanie przez kopcowanie](sortowanie/sortowanie-przez-kopcowanie.md)
 * Implementacja C++: [Sortowanie przez kopcowanie](../programowanie/c++/algorytmy/sortowanie/sortowanie-przez-kopcowanie.md)
-* Implementacja Python: [Sortowanie przez kopcowanie](../programowanie/python/algorytmy/sortowanie/sortowanie-przez-kopcowanie.md)
+* Implementacja Python: [Sortowanie przez kopcowanie](../programowanie/kotlin/algorytmy/sortowanie/sortowanie-przez-kopcowanie.md)
 
 ## Algorytmy na liczbach całkowitych
 
@@ -105,37 +105,37 @@
 
 * Opis algorytmu: [Systemy liczbowe - przegląd](broken-reference)
 * Implementacja C++: [Konwersja pomiędzy systemami liczbowymi](../programowanie/c++/algorytmy/metody-numeryczne/konwersja-pomiedzy-systemami-liczbowymi.md)
-* Implementacja Python: [Konwersja pomiędzy systemami liczbowymi](../programowanie/python/algorytmy/metody-numeryczne/konwersja-pomiedzy-systemami-liczbowymi.md)
+* Implementacja Python: [Konwersja pomiędzy systemami liczbowymi](../programowanie/kotlin/algorytmy/metody-numeryczne/konwersja-pomiedzy-systemami-liczbowymi.md)
 
 ### Wszystkie dzielniki
 
 * Opis algorytmu: [Wszystkie dzielniki](algorytmy-na-liczbach-calkowitych/wszystkie-dzielniki.md)
 * Implementacja C++: [Wszystkie dzielniki](../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/wszystkie-dzielniki.md)
-* Implementacja Python: [Wszystkie dzielniki](../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/wszystkie-dzielniki.md)
+* Implementacja Python: [Wszystkie dzielniki](../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/wszystkie-dzielniki.md)
 
 ### Test pierwszości (na maturze)
 
 * Opis algorytmu: [Test pierwszości](algorytmy-na-liczbach-calkowitych/test-pierwszosci.md)
 * Implementacja C++: [Test pierwszości](../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/test-pierwszosci.md)
-* Implementacja Python: [Test pierwszości](../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/test-pierwszosci.md)
+* Implementacja Python: [Test pierwszości](../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/test-pierwszosci.md)
 
 ### Test doskonałości (na maturze)
 
 * Opis algorytmu: [Test doskonałości](algorytmy-na-liczbach-calkowitych/test-doskonalosci.md)
 * Implementacja C++: [Test doskonałości](../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/test-doskonalosci.md)
-* Implementacja Python: [Test doskonałości](../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/test-doskonalosci.md)
+* Implementacja Python: [Test doskonałości](../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/test-doskonalosci.md)
 
 ### Rozkład liczby na czynniki pierwsze (na maturze)
 
 * Opis algorytmu: [Rozkład na czynniki pierwsze](algorytmy-na-liczbach-calkowitych/rozklad-na-czynniki-pierwsze.md)
 * Implementacja C++: [Rozkład na czynniki pierwsze](../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/rozklad-na-czynniki-pierwsze.md)
-* Implementacja Python: [Rozkład na czynniki pierwsze](../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/rozklad-na-czynniki-pierwsze.md)
+* Implementacja Python: [Rozkład na czynniki pierwsze](../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/rozklad-na-czynniki-pierwsze.md)
 
 ### Algorytm Euklidesa (na maturze)
 
 * Opis algorytmu: [Algorytm Euklidesa](algorytmy-na-liczbach-calkowitych/algorytm-euklidesa.md)
 * Implementacja C++: [NWD](../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/nwd.md)
-* Implementacja Python: [NWD](../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/nwd.md)
+* Implementacja Python: [NWD](../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/nwd.md)
 * Implementacja Blockly: [NWD](../programowanie/blockly/algorytmy/algorytmy-na-liczbach-calkowitych/nwd.md)
 
 ### Binarne NWD
@@ -148,19 +148,19 @@
 
 * Opis algorytmu: [Liczby Fibonacciego](algorytmy-na-liczbach-calkowitych/liczby-fibonacciego.md)
 * Implementacja C++: [Liczby Fibonacciego](../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/liczby-fibbonacciego.md)
-* Implementacja Python: [Liczby Fibonacciego](../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/liczby-fibonacciego.md)
+* Implementacja Python: [Liczby Fibonacciego](../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/liczby-fibonacciego.md)
 
 ### Zachłanny i dynamiczny algorytm wydawania reszty (na maturze)
 
 * Opis algorytmu: [Wydawanie reszty](algorytmy-na-liczbach-calkowitych/zachlanne-wydawanie-reszty.md)
 * Implementacja C++: [Wydawanie reszty](../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/wydawanie-reszty.md)
-* Implementacja Python: [Wydawanie reszty](../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/zachlanne-wydawanie-reszty.md)
+* Implementacja Python: [Wydawanie reszty](../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/zachlanne-wydawanie-reszty.md)
 
 ### Sito Eratostenesa
 
 * Opis algorytmu: [Sito Eratostenesa](algorytmy-na-liczbach-calkowitych/sito-eratostenesa.md)
 * Implementacja C++: [Sito Eratostenesa](../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/sito-eratostenesa.md)
-* Implementacja Python: [Sito Eratostenesa](../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/sito-eratostenesa.md)
+* Implementacja Python: [Sito Eratostenesa](../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/sito-eratostenesa.md)
 
 ## Metody numeryczne
 
@@ -168,19 +168,19 @@
 
 * Opis algorytmu: [Pierwiastek kwadratowy](metody-numeryczne/pierwiastek-kwadratowy.md)
 * Implementacja C++: [Pierwiastek kwadratowy](../programowanie/c++/algorytmy/metody-numeryczne/pierwiastek-kwadratowy.md)
-* Implementacja Python: [Pierwiastek kwadratowy](../programowanie/python/algorytmy/metody-numeryczne/pierwiastek-kwadratowy.md)
+* Implementacja Python: [Pierwiastek kwadratowy](../programowanie/kotlin/algorytmy/metody-numeryczne/pierwiastek-kwadratowy.md)
 
 ### Schemat Hornera (na maturze)
 
 * Opis algorytmu: [Schemat Hornera](metody-numeryczne/schemat-hornera.md)
 * Implementacja C++: [Schemat Hornera](../programowanie/c++/algorytmy/metody-numeryczne/schemat-hornera.md)
-* Implementacja Python: [Schemat Hornera](../programowanie/python/algorytmy/metody-numeryczne/schemat-hornera.md)
+* Implementacja Python: [Schemat Hornera](../programowanie/kotlin/algorytmy/metody-numeryczne/schemat-hornera.md)
 
 ### Szybkie potęgowanie (na maturze)
 
 * Opis algorytmu: [Szybkie potęgowanie](metody-numeryczne/szybkie-potegowanie.md)
 * Implementacja C++: [Szybkie potęgowanie](../programowanie/c++/algorytmy/metody-numeryczne/szybkie-potegowanie.md)
-* Implementacja Python: [Szybkie potęgowanie](../programowanie/python/algorytmy/metody-numeryczne/szybkie-potegowanie.md)
+* Implementacja Python: [Szybkie potęgowanie](../programowanie/kotlin/algorytmy/metody-numeryczne/szybkie-potegowanie.md)
 
 ### Wyznaczanie miejsc zerowych funkcji metodą połowienia (na maturze)
 
@@ -192,7 +192,7 @@
 
 * Opis algorytmu: [Całkowanie numeryczne](metody-numeryczne/calkowanie-numeryczne.md)
 * Implementacja C++: [Całkowanie numeryczne](../programowanie/c++/algorytmy/metody-numeryczne/calkowanie-numeryczne.md)
-* Implementacja Python: [Całkowanie numeryczne](../programowanie/python/algorytmy/metody-numeryczne/calkowanie-numeryczne.md)
+* Implementacja Python: [Całkowanie numeryczne](../programowanie/kotlin/algorytmy/metody-numeryczne/calkowanie-numeryczne.md)
 
 ## Tekstowe
 
@@ -200,19 +200,19 @@
 
 * Opis algorytmu: [Naiwne wyszukiwanie wzorca w tekście](tekstowe/naiwne-wyszukiwanie-wzorca-w-tekscie.md)
 * Implementacja C++: [Naiwne wyszukiwanie wzorca w tekście](../programowanie/c++/algorytmy/tekstowe/naiwne-wyszukiwanie-wzorca-w-tekscie.md)
-* Implementacja Python: [Naiwne wyszukiwanie wzorca w tekście](../programowanie/python/algorytmy/tekstowe/naiwne-wyszukiwanie-wzorca-w-tekscie.md)
+* Implementacja Python: [Naiwne wyszukiwanie wzorca w tekście](../programowanie/kotlin/algorytmy/tekstowe/naiwne-wyszukiwanie-wzorca-w-tekscie.md)
 
 ### Test palindromu (na maturze)
 
 * Opis algorytmu: [Palindrom](tekstowe/palindrom.md)
 * Implementacja C++: [Palindrom](../programowanie/c++/algorytmy/tekstowe/palindrom.md)
-* Implementacja Python: [Palindrom](../programowanie/python/algorytmy/tekstowe/palindrom.md)
+* Implementacja Python: [Palindrom](../programowanie/kotlin/algorytmy/tekstowe/palindrom.md)
 
 ### Test anagramów (na maturze)
 
 * Opis algorytmu: [Anagramy](tekstowe/anagramy.md)
 * Implementacja C++: [Anagramy](../programowanie/c++/algorytmy/tekstowe/anagramy.md)
-* Implementacja Python: [Anagramy](../programowanie/python/algorytmy/tekstowe/anagramy.md)
+* Implementacja Python: [Anagramy](../programowanie/kotlin/algorytmy/tekstowe/anagramy.md)
 
 ### Porządkowanie alfabetyczne (na maturze)
 
@@ -224,13 +224,13 @@
 
 * Opis algorytmu: 
 * Implementacja C++: [ONP](../programowanie/c++/algorytmy/tekstowe/onp.md)
-* Implementacja Python: [ONP](../programowanie/python/algorytmy/tekstowe/onp.md)
+* Implementacja Python: [ONP](../programowanie/kotlin/algorytmy/tekstowe/onp.md)
 
 ### Najdłuższy wspólny podciąg
 
 * Opis algorytmu: [Najdłuższy wspólny podciąg](tekstowe/najdluzszy-wspolny-podciag.md)
 * Implementacja C++: [Najdłuższy wspólny podciąg](../programowanie/c++/algorytmy/tekstowe/najdluzszy-wspolny-podciag.md)
-* Implementacja Python: [Najdłuższy wspólny podciąg](../programowanie/python/algorytmy/tekstowe/najdluzszy-wspolny-podciag.md)
+* Implementacja Python: [Najdłuższy wspólny podciąg](../programowanie/kotlin/algorytmy/tekstowe/najdluzszy-wspolny-podciag.md)
 
 ## Kodowanie i kompresja
 
@@ -264,7 +264,7 @@
 
 * Opis algorytmu: 
 * Implementacja C++: 
-* Implementacja Python: [Warunek trójkąta](../programowanie/python/algorytmy/geometria-2d/warunek-trojkata.md)
+* Implementacja Python: [Warunek trójkąta](../programowanie/kotlin/algorytmy/geometria-2d/warunek-trojkata.md)
 
 ### Położenie punktu względem prostej (na maturze)
 
@@ -296,19 +296,19 @@
 
 * Opis algorytmu: [DFS](grafowe/dfs.md)
 * Implementacja C++: [DFS](../programowanie/c++/algorytmy/grafy/dfs.md)
-* Implementacja Python: [DFS](../programowanie/python/algorytmy/grafy/dfs.md)
+* Implementacja Python: [DFS](../programowanie/kotlin/algorytmy/grafy/dfs.md)
 
 ### Spójne składowe
 
 * Opis algorytmu: [Spójne składowe](grafowe/spojne-skladowe.md)
 * Implementacja C++: [Spójne składowe](../programowanie/c++/algorytmy/grafy/polaczone-komponenty.md)
-* Implementacja Python: [Spójne składowe](../programowanie/python/algorytmy/grafy/spojne-skladowe.md)
+* Implementacja Python: [Spójne składowe](../programowanie/kotlin/algorytmy/grafy/spojne-skladowe.md)
 
 ### BFS
 
 * Opis algorytmu: 
 * Implementacja C++: [BFS](../programowanie/c++/algorytmy/grafy/bfs.md)
-* Implementacja Python: [BFS](../programowanie/python/algorytmy/grafy/bfs.md)
+* Implementacja Python: [BFS](../programowanie/kotlin/algorytmy/grafy/bfs.md)
 
 ### Flood Fill
 

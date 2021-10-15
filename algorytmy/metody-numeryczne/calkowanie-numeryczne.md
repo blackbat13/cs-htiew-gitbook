@@ -67,6 +67,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/metody-numeryczne/calkowanie-numeryczne.md" %}
-[calkowanie-numeryczne.md](../../programowanie/python/algorytmy/metody-numeryczne/calkowanie-numeryczne.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/metody-numeryczne/calkowanie-numeryczne.md" %}
+[calkowanie-numeryczne.md](../../programowanie/kotlin/algorytmy/metody-numeryczne/calkowanie-numeryczne.md)
 {% endcontent-ref %}

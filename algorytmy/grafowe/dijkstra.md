@@ -38,6 +38,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/grafy/dijkstra.md" %}
-[dijkstra.md](../../programowanie/python/algorytmy/grafy/dijkstra.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/grafy/dijkstra.md" %}
+[dijkstra.md](../../programowanie/kotlin/algorytmy/grafy/dijkstra.md)
 {% endcontent-ref %}

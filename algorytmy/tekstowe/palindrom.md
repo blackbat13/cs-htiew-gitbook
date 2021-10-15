@@ -87,7 +87,7 @@ $$O(n/2)\to O(n)$$ - liniowa
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/tekstowe/palindrom.md" %}
-[palindrom.md](../../programowanie/python/algorytmy/tekstowe/palindrom.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/tekstowe/palindrom.md" %}
+[palindrom.md](../../programowanie/kotlin/algorytmy/tekstowe/palindrom.md)
 {% endcontent-ref %}
 
