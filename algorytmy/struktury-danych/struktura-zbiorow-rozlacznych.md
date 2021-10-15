@@ -28,12 +28,12 @@ TODO
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/struktury/struktura-zbiorow-rozlacznych.md" %}
-[struktura-zbiorow-rozlacznych.md](../../implementacje/c++/algorytmy/struktury/struktura-zbiorow-rozlacznych.md)
+{% content-ref url="../../programowanie/c++/algorytmy/struktury/struktura-zbiorow-rozlacznych.md" %}
+[struktura-zbiorow-rozlacznych.md](../../programowanie/c++/algorytmy/struktury/struktura-zbiorow-rozlacznych.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/struktury-danych/struktura-zbiorow-rozlacznych.md" %}
-[struktura-zbiorow-rozlacznych.md](../../implementacje/python/algorytmy/struktury-danych/struktura-zbiorow-rozlacznych.md)
+{% content-ref url="../../programowanie/python/algorytmy/struktury-danych/struktura-zbiorow-rozlacznych.md" %}
+[struktura-zbiorow-rozlacznych.md](../../programowanie/python/algorytmy/struktury-danych/struktura-zbiorow-rozlacznych.md)
 {% endcontent-ref %}

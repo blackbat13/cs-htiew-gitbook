@@ -61,12 +61,12 @@ TODO
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/algorytmy-na-liczbach-calkowitych/sito-eratostenesa.md" %}
-[sito-eratostenesa.md](../../implementacje/c++/algorytmy/algorytmy-na-liczbach-calkowitych/sito-eratostenesa.md)
+{% content-ref url="../../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/sito-eratostenesa.md" %}
+[sito-eratostenesa.md](../../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/sito-eratostenesa.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/algorytmy-na-liczbach-calkowitych/sito-eratostenesa.md" %}
-[sito-eratostenesa.md](../../implementacje/python/algorytmy/algorytmy-na-liczbach-calkowitych/sito-eratostenesa.md)
+{% content-ref url="../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/sito-eratostenesa.md" %}
+[sito-eratostenesa.md](../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/sito-eratostenesa.md)
 {% endcontent-ref %}

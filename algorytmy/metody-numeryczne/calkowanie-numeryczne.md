@@ -61,12 +61,12 @@ TODO
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/metody-numeryczne/calkowanie-numeryczne.md" %}
-[calkowanie-numeryczne.md](../../implementacje/c++/algorytmy/metody-numeryczne/calkowanie-numeryczne.md)
+{% content-ref url="../../programowanie/c++/algorytmy/metody-numeryczne/calkowanie-numeryczne.md" %}
+[calkowanie-numeryczne.md](../../programowanie/c++/algorytmy/metody-numeryczne/calkowanie-numeryczne.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/metody-numeryczne/calkowanie-numeryczne.md" %}
-[calkowanie-numeryczne.md](../../implementacje/python/algorytmy/metody-numeryczne/calkowanie-numeryczne.md)
+{% content-ref url="../../programowanie/python/algorytmy/metody-numeryczne/calkowanie-numeryczne.md" %}
+[calkowanie-numeryczne.md](../../programowanie/python/algorytmy/metody-numeryczne/calkowanie-numeryczne.md)
 {% endcontent-ref %}

@@ -86,13 +86,13 @@ $$O(n\log{n})$$ - liniowo logarytmiczna, jeżeli użyjemy standardowej metody so
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/tekstowe/anagramy.md" %}
-[anagramy.md](../../implementacje/c++/algorytmy/tekstowe/anagramy.md)
+{% content-ref url="../../programowanie/c++/algorytmy/tekstowe/anagramy.md" %}
+[anagramy.md](../../programowanie/c++/algorytmy/tekstowe/anagramy.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/tekstowe/anagramy.md" %}
-[anagramy.md](../../implementacje/python/algorytmy/tekstowe/anagramy.md)
+{% content-ref url="../../programowanie/python/algorytmy/tekstowe/anagramy.md" %}
+[anagramy.md](../../programowanie/python/algorytmy/tekstowe/anagramy.md)
 {% endcontent-ref %}
 

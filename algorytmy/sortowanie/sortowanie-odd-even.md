@@ -46,12 +46,12 @@ TODO
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/sortowanie/sortowanie-odd-even.md" %}
-[sortowanie-odd-even.md](../../implementacje/c++/algorytmy/sortowanie/sortowanie-odd-even.md)
+{% content-ref url="../../programowanie/c++/algorytmy/sortowanie/sortowanie-odd-even.md" %}
+[sortowanie-odd-even.md](../../programowanie/c++/algorytmy/sortowanie/sortowanie-odd-even.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/sortowanie/sortowanie-odd-even.md" %}
-[sortowanie-odd-even.md](../../implementacje/python/algorytmy/sortowanie/sortowanie-odd-even.md)
+{% content-ref url="../../programowanie/python/algorytmy/sortowanie/sortowanie-odd-even.md" %}
+[sortowanie-odd-even.md](../../programowanie/python/algorytmy/sortowanie/sortowanie-odd-even.md)
 {% endcontent-ref %}

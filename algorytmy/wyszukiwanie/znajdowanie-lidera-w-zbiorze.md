@@ -98,12 +98,12 @@ $$O(n)$$ - liniowa
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/wyszukiwanie/znajdowanie-lidera-w-zbiorze.md" %}
-[znajdowanie-lidera-w-zbiorze.md](../../implementacje/c++/algorytmy/wyszukiwanie/znajdowanie-lidera-w-zbiorze.md)
+{% content-ref url="../../programowanie/c++/algorytmy/wyszukiwanie/znajdowanie-lidera-w-zbiorze.md" %}
+[znajdowanie-lidera-w-zbiorze.md](../../programowanie/c++/algorytmy/wyszukiwanie/znajdowanie-lidera-w-zbiorze.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/wyszukiwanie/znajdowanie-lidera-w-zbiorze.md" %}
-[znajdowanie-lidera-w-zbiorze.md](../../implementacje/python/algorytmy/wyszukiwanie/znajdowanie-lidera-w-zbiorze.md)
+{% content-ref url="../../programowanie/python/algorytmy/wyszukiwanie/znajdowanie-lidera-w-zbiorze.md" %}
+[znajdowanie-lidera-w-zbiorze.md](../../programowanie/python/algorytmy/wyszukiwanie/znajdowanie-lidera-w-zbiorze.md)
 {% endcontent-ref %}

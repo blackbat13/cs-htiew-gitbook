@@ -55,12 +55,12 @@ TODO
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/algorytmy-na-liczbach-calkowitych/rozklad-na-czynniki-pierwsze.md" %}
-[rozklad-na-czynniki-pierwsze.md](../../implementacje/c++/algorytmy/algorytmy-na-liczbach-calkowitych/rozklad-na-czynniki-pierwsze.md)
+{% content-ref url="../../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/rozklad-na-czynniki-pierwsze.md" %}
+[rozklad-na-czynniki-pierwsze.md](../../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/rozklad-na-czynniki-pierwsze.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/algorytmy-na-liczbach-calkowitych/rozklad-na-czynniki-pierwsze.md" %}
-[rozklad-na-czynniki-pierwsze.md](../../implementacje/python/algorytmy/algorytmy-na-liczbach-calkowitych/rozklad-na-czynniki-pierwsze.md)
+{% content-ref url="../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/rozklad-na-czynniki-pierwsze.md" %}
+[rozklad-na-czynniki-pierwsze.md](../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/rozklad-na-czynniki-pierwsze.md)
 {% endcontent-ref %}

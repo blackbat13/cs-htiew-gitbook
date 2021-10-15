@@ -16,12 +16,12 @@ TODO
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/szyfrowanie/szyfr-beauforta.md" %}
-[szyfr-beauforta.md](../../implementacje/c++/algorytmy/szyfrowanie/szyfr-beauforta.md)
+{% content-ref url="../../programowanie/c++/algorytmy/szyfrowanie/szyfr-beauforta.md" %}
+[szyfr-beauforta.md](../../programowanie/c++/algorytmy/szyfrowanie/szyfr-beauforta.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/szyfrowanie/szyfr-beauforta.md" %}
-[szyfr-beauforta.md](../../implementacje/python/algorytmy/szyfrowanie/szyfr-beauforta.md)
+{% content-ref url="../../programowanie/python/algorytmy/szyfrowanie/szyfr-beauforta.md" %}
+[szyfr-beauforta.md](../../programowanie/python/algorytmy/szyfrowanie/szyfr-beauforta.md)
 {% endcontent-ref %}

@@ -32,12 +32,12 @@ TODO
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/struktury/bst.md" %}
-[bst.md](../../implementacje/c++/algorytmy/struktury/bst.md)
+{% content-ref url="../../programowanie/c++/algorytmy/struktury/bst.md" %}
+[bst.md](../../programowanie/c++/algorytmy/struktury/bst.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/struktury-danych/drzewo-przeszukiwan-binarnych.md" %}
-[drzewo-przeszukiwan-binarnych.md](../../implementacje/python/algorytmy/struktury-danych/drzewo-przeszukiwan-binarnych.md)
+{% content-ref url="../../programowanie/python/algorytmy/struktury-danych/drzewo-przeszukiwan-binarnych.md" %}
+[drzewo-przeszukiwan-binarnych.md](../../programowanie/python/algorytmy/struktury-danych/drzewo-przeszukiwan-binarnych.md)
 {% endcontent-ref %}

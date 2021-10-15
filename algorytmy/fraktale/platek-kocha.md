@@ -23,12 +23,12 @@ TODO
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/fraktale/platek-kocha.md" %}
-[platek-kocha.md](../../implementacje/python/algorytmy/fraktale/platek-kocha.md)
+{% content-ref url="../../programowanie/python/algorytmy/fraktale/platek-kocha.md" %}
+[platek-kocha.md](../../programowanie/python/algorytmy/fraktale/platek-kocha.md)
 {% endcontent-ref %}
 
 ### Blockly
 
-{% content-ref url="../../implementacje/blockly/algorytmy/fraktale-1/platek-kocha.md" %}
-[platek-kocha.md](../../implementacje/blockly/algorytmy/fraktale-1/platek-kocha.md)
+{% content-ref url="../../programowanie/blockly/algorytmy/fraktale-1/platek-kocha.md" %}
+[platek-kocha.md](../../programowanie/blockly/algorytmy/fraktale-1/platek-kocha.md)
 {% endcontent-ref %}

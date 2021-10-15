@@ -81,13 +81,13 @@ $$O(n/2)\to O(n)$$ - liniowa
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/tekstowe/palindrom.md" %}
-[palindrom.md](../../implementacje/c++/algorytmy/tekstowe/palindrom.md)
+{% content-ref url="../../programowanie/c++/algorytmy/tekstowe/palindrom.md" %}
+[palindrom.md](../../programowanie/c++/algorytmy/tekstowe/palindrom.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/tekstowe/palindrom.md" %}
-[palindrom.md](../../implementacje/python/algorytmy/tekstowe/palindrom.md)
+{% content-ref url="../../programowanie/python/algorytmy/tekstowe/palindrom.md" %}
+[palindrom.md](../../programowanie/python/algorytmy/tekstowe/palindrom.md)
 {% endcontent-ref %}
 

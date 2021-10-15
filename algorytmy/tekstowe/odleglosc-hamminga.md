@@ -12,12 +12,12 @@ TODO
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/tekstowe/odleglosc-hamminga.md" %}
-[odleglosc-hamminga.md](../../implementacje/c++/algorytmy/tekstowe/odleglosc-hamminga.md)
+{% content-ref url="../../programowanie/c++/algorytmy/tekstowe/odleglosc-hamminga.md" %}
+[odleglosc-hamminga.md](../../programowanie/c++/algorytmy/tekstowe/odleglosc-hamminga.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/tekstowe/odleglosc-hamminga.md" %}
-[odleglosc-hamminga.md](../../implementacje/python/algorytmy/tekstowe/odleglosc-hamminga.md)
+{% content-ref url="../../programowanie/python/algorytmy/tekstowe/odleglosc-hamminga.md" %}
+[odleglosc-hamminga.md](../../programowanie/python/algorytmy/tekstowe/odleglosc-hamminga.md)
 {% endcontent-ref %}

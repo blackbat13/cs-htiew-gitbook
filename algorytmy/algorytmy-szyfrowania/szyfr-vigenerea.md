@@ -16,12 +16,12 @@ TODO
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/szyfrowanie/szyfr-vigenerea.md" %}
-[szyfr-vigenerea.md](../../implementacje/c++/algorytmy/szyfrowanie/szyfr-vigenerea.md)
+{% content-ref url="../../programowanie/c++/algorytmy/szyfrowanie/szyfr-vigenerea.md" %}
+[szyfr-vigenerea.md](../../programowanie/c++/algorytmy/szyfrowanie/szyfr-vigenerea.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/szyfrowanie/szyfr-vigenerea.md" %}
-[szyfr-vigenerea.md](../../implementacje/python/algorytmy/szyfrowanie/szyfr-vigenerea.md)
+{% content-ref url="../../programowanie/python/algorytmy/szyfrowanie/szyfr-vigenerea.md" %}
+[szyfr-vigenerea.md](../../programowanie/python/algorytmy/szyfrowanie/szyfr-vigenerea.md)
 {% endcontent-ref %}

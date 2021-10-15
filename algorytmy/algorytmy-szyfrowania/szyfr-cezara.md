@@ -40,12 +40,12 @@ TODO
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/szyfrowanie/szyfr-cezara.md" %}
-[szyfr-cezara.md](../../implementacje/c++/algorytmy/szyfrowanie/szyfr-cezara.md)
+{% content-ref url="../../programowanie/c++/algorytmy/szyfrowanie/szyfr-cezara.md" %}
+[szyfr-cezara.md](../../programowanie/c++/algorytmy/szyfrowanie/szyfr-cezara.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/szyfrowanie/szyfr-cezara.md" %}
-[szyfr-cezara.md](../../implementacje/python/algorytmy/szyfrowanie/szyfr-cezara.md)
+{% content-ref url="../../programowanie/python/algorytmy/szyfrowanie/szyfr-cezara.md" %}
+[szyfr-cezara.md](../../programowanie/python/algorytmy/szyfrowanie/szyfr-cezara.md)
 {% endcontent-ref %}

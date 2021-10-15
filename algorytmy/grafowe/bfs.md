@@ -28,12 +28,12 @@ TODO
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/grafy/bfs.md" %}
-[bfs.md](../../implementacje/c++/algorytmy/grafy/bfs.md)
+{% content-ref url="../../programowanie/c++/algorytmy/grafy/bfs.md" %}
+[bfs.md](../../programowanie/c++/algorytmy/grafy/bfs.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/grafy/bfs.md" %}
-[bfs.md](../../implementacje/python/algorytmy/grafy/bfs.md)
+{% content-ref url="../../programowanie/python/algorytmy/grafy/bfs.md" %}
+[bfs.md](../../programowanie/python/algorytmy/grafy/bfs.md)
 {% endcontent-ref %}

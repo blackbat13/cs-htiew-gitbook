@@ -12,12 +12,12 @@ TODO
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/fraktale/zbior-cantora.md" %}
-[zbior-cantora.md](../../implementacje/python/algorytmy/fraktale/zbior-cantora.md)
+{% content-ref url="../../programowanie/python/algorytmy/fraktale/zbior-cantora.md" %}
+[zbior-cantora.md](../../programowanie/python/algorytmy/fraktale/zbior-cantora.md)
 {% endcontent-ref %}
 
 ### Blockly
 
-{% content-ref url="../../implementacje/blockly/algorytmy/fraktale-1/zbior-cantora.md" %}
-[zbior-cantora.md](../../implementacje/blockly/algorytmy/fraktale-1/zbior-cantora.md)
+{% content-ref url="../../programowanie/blockly/algorytmy/fraktale-1/zbior-cantora.md" %}
+[zbior-cantora.md](../../programowanie/blockly/algorytmy/fraktale-1/zbior-cantora.md)
 {% endcontent-ref %}

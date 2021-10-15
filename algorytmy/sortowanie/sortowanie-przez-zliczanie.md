@@ -47,18 +47,18 @@ $$O(n+m)$$ - liniowa
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/sortowanie/sortowanie-przez-zliczanie.md" %}
-[sortowanie-przez-zliczanie.md](../../implementacje/c++/algorytmy/sortowanie/sortowanie-przez-zliczanie.md)
+{% content-ref url="../../programowanie/c++/algorytmy/sortowanie/sortowanie-przez-zliczanie.md" %}
+[sortowanie-przez-zliczanie.md](../../programowanie/c++/algorytmy/sortowanie/sortowanie-przez-zliczanie.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/sortowanie/sortowanie-przez-zliczanie.md" %}
-[sortowanie-przez-zliczanie.md](../../implementacje/python/algorytmy/sortowanie/sortowanie-przez-zliczanie.md)
+{% content-ref url="../../programowanie/python/algorytmy/sortowanie/sortowanie-przez-zliczanie.md" %}
+[sortowanie-przez-zliczanie.md](../../programowanie/python/algorytmy/sortowanie/sortowanie-przez-zliczanie.md)
 {% endcontent-ref %}
 
 ### Blockly
 
-{% content-ref url="../../implementacje/blockly/algorytmy/sortowanie/sortowanie-przez-zliczanie.md" %}
-[sortowanie-przez-zliczanie.md](../../implementacje/blockly/algorytmy/sortowanie/sortowanie-przez-zliczanie.md)
+{% content-ref url="../../programowanie/blockly/algorytmy/sortowanie/sortowanie-przez-zliczanie.md" %}
+[sortowanie-przez-zliczanie.md](../../programowanie/blockly/algorytmy/sortowanie/sortowanie-przez-zliczanie.md)
 {% endcontent-ref %}

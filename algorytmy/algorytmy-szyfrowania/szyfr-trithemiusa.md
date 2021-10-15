@@ -16,12 +16,12 @@ TODO
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/szyfrowanie/szyfr-trithemiusa.md" %}
-[szyfr-trithemiusa.md](../../implementacje/c++/algorytmy/szyfrowanie/szyfr-trithemiusa.md)
+{% content-ref url="../../programowanie/c++/algorytmy/szyfrowanie/szyfr-trithemiusa.md" %}
+[szyfr-trithemiusa.md](../../programowanie/c++/algorytmy/szyfrowanie/szyfr-trithemiusa.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/szyfrowanie/szyfr-trithemiusa.md" %}
-[szyfr-trithemiusa.md](../../implementacje/python/algorytmy/szyfrowanie/szyfr-trithemiusa.md)
+{% content-ref url="../../programowanie/python/algorytmy/szyfrowanie/szyfr-trithemiusa.md" %}
+[szyfr-trithemiusa.md](../../programowanie/python/algorytmy/szyfrowanie/szyfr-trithemiusa.md)
 {% endcontent-ref %}

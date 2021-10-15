@@ -51,12 +51,12 @@ $$O(n\log{n})$$ - liniowo logarytmiczna
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/sortowanie/sortowanie-szybkie.md" %}
-[sortowanie-szybkie.md](../../implementacje/c++/algorytmy/sortowanie/sortowanie-szybkie.md)
+{% content-ref url="../../programowanie/c++/algorytmy/sortowanie/sortowanie-szybkie.md" %}
+[sortowanie-szybkie.md](../../programowanie/c++/algorytmy/sortowanie/sortowanie-szybkie.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/sortowanie/sortowanie-szybkie.md" %}
-[sortowanie-szybkie.md](../../implementacje/python/algorytmy/sortowanie/sortowanie-szybkie.md)
+{% content-ref url="../../programowanie/python/algorytmy/sortowanie/sortowanie-szybkie.md" %}
+[sortowanie-szybkie.md](../../programowanie/python/algorytmy/sortowanie/sortowanie-szybkie.md)
 {% endcontent-ref %}

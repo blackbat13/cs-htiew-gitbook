@@ -28,12 +28,12 @@ TODO
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/struktury/kolejka.md" %}
-[kolejka.md](../../implementacje/c++/algorytmy/struktury/kolejka.md)
+{% content-ref url="../../programowanie/c++/algorytmy/struktury/kolejka.md" %}
+[kolejka.md](../../programowanie/c++/algorytmy/struktury/kolejka.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/struktury-danych/kolejka.md" %}
-[kolejka.md](../../implementacje/python/algorytmy/struktury-danych/kolejka.md)
+{% content-ref url="../../programowanie/python/algorytmy/struktury-danych/kolejka.md" %}
+[kolejka.md](../../programowanie/python/algorytmy/struktury-danych/kolejka.md)
 {% endcontent-ref %}

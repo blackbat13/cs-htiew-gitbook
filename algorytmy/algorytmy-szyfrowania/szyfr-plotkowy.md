@@ -16,12 +16,12 @@ TODO
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/szyfrowanie/szyfr-plotkowy.md" %}
-[szyfr-plotkowy.md](../../implementacje/c++/algorytmy/szyfrowanie/szyfr-plotkowy.md)
+{% content-ref url="../../programowanie/c++/algorytmy/szyfrowanie/szyfr-plotkowy.md" %}
+[szyfr-plotkowy.md](../../programowanie/c++/algorytmy/szyfrowanie/szyfr-plotkowy.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/szyfrowanie/szyfr-plotkowy.md" %}
-[szyfr-plotkowy.md](../../implementacje/python/algorytmy/szyfrowanie/szyfr-plotkowy.md)
+{% content-ref url="../../programowanie/python/algorytmy/szyfrowanie/szyfr-plotkowy.md" %}
+[szyfr-plotkowy.md](../../programowanie/python/algorytmy/szyfrowanie/szyfr-plotkowy.md)
 {% endcontent-ref %}

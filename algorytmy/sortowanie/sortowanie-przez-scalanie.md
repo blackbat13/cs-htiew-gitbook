@@ -54,12 +54,12 @@ $$O(n\log{n})$$ - liniowo logarytmiczna
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/sortowanie/sortowanie-przez-scalanie.md" %}
-[sortowanie-przez-scalanie.md](../../implementacje/c++/algorytmy/sortowanie/sortowanie-przez-scalanie.md)
+{% content-ref url="../../programowanie/c++/algorytmy/sortowanie/sortowanie-przez-scalanie.md" %}
+[sortowanie-przez-scalanie.md](../../programowanie/c++/algorytmy/sortowanie/sortowanie-przez-scalanie.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/sortowanie/sortowanie-przez-scalanie.md" %}
-[sortowanie-przez-scalanie.md](../../implementacje/python/algorytmy/sortowanie/sortowanie-przez-scalanie.md)
+{% content-ref url="../../programowanie/python/algorytmy/sortowanie/sortowanie-przez-scalanie.md" %}
+[sortowanie-przez-scalanie.md](../../programowanie/python/algorytmy/sortowanie/sortowanie-przez-scalanie.md)
 {% endcontent-ref %}

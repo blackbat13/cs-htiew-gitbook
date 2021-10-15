@@ -8,12 +8,12 @@ TODO
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/kompresja/kod-ascii.md" %}
-[kod-ascii.md](../../implementacje/c++/algorytmy/kompresja/kod-ascii.md)
+{% content-ref url="../../programowanie/c++/algorytmy/kompresja/kod-ascii.md" %}
+[kod-ascii.md](../../programowanie/c++/algorytmy/kompresja/kod-ascii.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/kodowanie-i-kompresja/kod-ascii.md" %}
-[kod-ascii.md](../../implementacje/python/algorytmy/kodowanie-i-kompresja/kod-ascii.md)
+{% content-ref url="../../programowanie/python/algorytmy/kodowanie-i-kompresja/kod-ascii.md" %}
+[kod-ascii.md](../../programowanie/python/algorytmy/kodowanie-i-kompresja/kod-ascii.md)
 {% endcontent-ref %}

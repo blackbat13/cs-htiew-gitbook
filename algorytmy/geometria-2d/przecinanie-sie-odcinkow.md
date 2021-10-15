@@ -12,12 +12,12 @@ TODO
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/geometria-2d/przecinanie-sie-odcinkow.md" %}
-[przecinanie-sie-odcinkow.md](../../implementacje/c++/algorytmy/geometria-2d/przecinanie-sie-odcinkow.md)
+{% content-ref url="../../programowanie/c++/algorytmy/geometria-2d/przecinanie-sie-odcinkow.md" %}
+[przecinanie-sie-odcinkow.md](../../programowanie/c++/algorytmy/geometria-2d/przecinanie-sie-odcinkow.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/geometria-2d/przecinanie-sie-odcinkow.md" %}
-[przecinanie-sie-odcinkow.md](../../implementacje/python/algorytmy/geometria-2d/przecinanie-sie-odcinkow.md)
+{% content-ref url="../../programowanie/python/algorytmy/geometria-2d/przecinanie-sie-odcinkow.md" %}
+[przecinanie-sie-odcinkow.md](../../programowanie/python/algorytmy/geometria-2d/przecinanie-sie-odcinkow.md)
 {% endcontent-ref %}

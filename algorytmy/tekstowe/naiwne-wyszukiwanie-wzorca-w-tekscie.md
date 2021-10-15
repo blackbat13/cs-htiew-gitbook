@@ -78,12 +78,12 @@ $$O(n*m)\to O(n^2)$$ - kwadratowa
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/tekstowe/naiwne-wyszukiwanie-wzorca-w-tekscie.md" %}
-[naiwne-wyszukiwanie-wzorca-w-tekscie.md](../../implementacje/c++/algorytmy/tekstowe/naiwne-wyszukiwanie-wzorca-w-tekscie.md)
+{% content-ref url="../../programowanie/c++/algorytmy/tekstowe/naiwne-wyszukiwanie-wzorca-w-tekscie.md" %}
+[naiwne-wyszukiwanie-wzorca-w-tekscie.md](../../programowanie/c++/algorytmy/tekstowe/naiwne-wyszukiwanie-wzorca-w-tekscie.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/tekstowe/naiwne-wyszukiwanie-wzorca-w-tekscie.md" %}
-[naiwne-wyszukiwanie-wzorca-w-tekscie.md](../../implementacje/python/algorytmy/tekstowe/naiwne-wyszukiwanie-wzorca-w-tekscie.md)
+{% content-ref url="../../programowanie/python/algorytmy/tekstowe/naiwne-wyszukiwanie-wzorca-w-tekscie.md" %}
+[naiwne-wyszukiwanie-wzorca-w-tekscie.md](../../programowanie/python/algorytmy/tekstowe/naiwne-wyszukiwanie-wzorca-w-tekscie.md)
 {% endcontent-ref %}

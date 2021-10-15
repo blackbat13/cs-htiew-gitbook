@@ -130,12 +130,12 @@ $$O(\sqrt{n})$$
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/algorytmy-na-liczbach-calkowitych/test-pierwszosci.md" %}
-[test-pierwszosci.md](../../implementacje/c++/algorytmy/algorytmy-na-liczbach-calkowitych/test-pierwszosci.md)
+{% content-ref url="../../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/test-pierwszosci.md" %}
+[test-pierwszosci.md](../../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/test-pierwszosci.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/algorytmy-na-liczbach-calkowitych/test-pierwszosci.md" %}
-[test-pierwszosci.md](../../implementacje/python/algorytmy/algorytmy-na-liczbach-calkowitych/test-pierwszosci.md)
+{% content-ref url="../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/test-pierwszosci.md" %}
+[test-pierwszosci.md](../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/test-pierwszosci.md)
 {% endcontent-ref %}

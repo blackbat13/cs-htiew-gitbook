@@ -58,12 +58,12 @@ $$O(n^2)$$ - kwadratowa
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/sortowanie/sortowanie-przez-wstawianie.md" %}
-[sortowanie-przez-wstawianie.md](../../implementacje/c++/algorytmy/sortowanie/sortowanie-przez-wstawianie.md)
+{% content-ref url="../../programowanie/c++/algorytmy/sortowanie/sortowanie-przez-wstawianie.md" %}
+[sortowanie-przez-wstawianie.md](../../programowanie/c++/algorytmy/sortowanie/sortowanie-przez-wstawianie.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/sortowanie/sortowanie-przez-wstawianie.md" %}
-[sortowanie-przez-wstawianie.md](../../implementacje/python/algorytmy/sortowanie/sortowanie-przez-wstawianie.md)
+{% content-ref url="../../programowanie/python/algorytmy/sortowanie/sortowanie-przez-wstawianie.md" %}
+[sortowanie-przez-wstawianie.md](../../programowanie/python/algorytmy/sortowanie/sortowanie-przez-wstawianie.md)
 {% endcontent-ref %}

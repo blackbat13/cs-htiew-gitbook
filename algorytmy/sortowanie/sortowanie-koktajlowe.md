@@ -57,12 +57,12 @@ TODO
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/sortowanie/sortowanie-koktajlowe.md" %}
-[sortowanie-koktajlowe.md](../../implementacje/c++/algorytmy/sortowanie/sortowanie-koktajlowe.md)
+{% content-ref url="../../programowanie/c++/algorytmy/sortowanie/sortowanie-koktajlowe.md" %}
+[sortowanie-koktajlowe.md](../../programowanie/c++/algorytmy/sortowanie/sortowanie-koktajlowe.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/sortowanie/sortowanie-koktajlowe.md" %}
-[sortowanie-koktajlowe.md](../../implementacje/python/algorytmy/sortowanie/sortowanie-koktajlowe.md)
+{% content-ref url="../../programowanie/python/algorytmy/sortowanie/sortowanie-koktajlowe.md" %}
+[sortowanie-koktajlowe.md](../../programowanie/python/algorytmy/sortowanie/sortowanie-koktajlowe.md)
 {% endcontent-ref %}

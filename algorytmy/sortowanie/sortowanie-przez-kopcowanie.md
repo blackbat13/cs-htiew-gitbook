@@ -48,12 +48,12 @@ $$O(n\log{n})$$ - liniowo logarytmiczna
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/sortowanie/sortowanie-przez-kopcowanie.md" %}
-[sortowanie-przez-kopcowanie.md](../../implementacje/c++/algorytmy/sortowanie/sortowanie-przez-kopcowanie.md)
+{% content-ref url="../../programowanie/c++/algorytmy/sortowanie/sortowanie-przez-kopcowanie.md" %}
+[sortowanie-przez-kopcowanie.md](../../programowanie/c++/algorytmy/sortowanie/sortowanie-przez-kopcowanie.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/sortowanie/sortowanie-przez-kopcowanie.md" %}
-[sortowanie-przez-kopcowanie.md](../../implementacje/python/algorytmy/sortowanie/sortowanie-przez-kopcowanie.md)
+{% content-ref url="../../programowanie/python/algorytmy/sortowanie/sortowanie-przez-kopcowanie.md" %}
+[sortowanie-przez-kopcowanie.md](../../programowanie/python/algorytmy/sortowanie/sortowanie-przez-kopcowanie.md)
 {% endcontent-ref %}

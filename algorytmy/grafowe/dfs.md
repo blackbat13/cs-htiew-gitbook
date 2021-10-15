@@ -30,12 +30,12 @@ TODO
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/grafy/dfs.md" %}
-[dfs.md](../../implementacje/c++/algorytmy/grafy/dfs.md)
+{% content-ref url="../../programowanie/c++/algorytmy/grafy/dfs.md" %}
+[dfs.md](../../programowanie/c++/algorytmy/grafy/dfs.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/grafy/dfs.md" %}
-[dfs.md](../../implementacje/python/algorytmy/grafy/dfs.md)
+{% content-ref url="../../programowanie/python/algorytmy/grafy/dfs.md" %}
+[dfs.md](../../programowanie/python/algorytmy/grafy/dfs.md)
 {% endcontent-ref %}

@@ -271,18 +271,18 @@ $$O(n)$$ - liniowa
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/wyszukiwanie/wyszukiwanie-liniowe.md" %}
-[wyszukiwanie-liniowe.md](../../implementacje/c++/algorytmy/wyszukiwanie/wyszukiwanie-liniowe.md)
+{% content-ref url="../../programowanie/c++/algorytmy/wyszukiwanie/wyszukiwanie-liniowe.md" %}
+[wyszukiwanie-liniowe.md](../../programowanie/c++/algorytmy/wyszukiwanie/wyszukiwanie-liniowe.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/wyszukiwanie/wyszukiwanie-liniowe.md" %}
-[wyszukiwanie-liniowe.md](../../implementacje/python/algorytmy/wyszukiwanie/wyszukiwanie-liniowe.md)
+{% content-ref url="../../programowanie/python/algorytmy/wyszukiwanie/wyszukiwanie-liniowe.md" %}
+[wyszukiwanie-liniowe.md](../../programowanie/python/algorytmy/wyszukiwanie/wyszukiwanie-liniowe.md)
 {% endcontent-ref %}
 
 ### Blockly
 
-{% content-ref url="../../implementacje/blockly/algorytmy/wyszukiwanie/wyszukiwanie-liniowe.md" %}
-[wyszukiwanie-liniowe.md](../../implementacje/blockly/algorytmy/wyszukiwanie/wyszukiwanie-liniowe.md)
+{% content-ref url="../../programowanie/blockly/algorytmy/wyszukiwanie/wyszukiwanie-liniowe.md" %}
+[wyszukiwanie-liniowe.md](../../programowanie/blockly/algorytmy/wyszukiwanie/wyszukiwanie-liniowe.md)
 {% endcontent-ref %}

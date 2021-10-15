@@ -12,12 +12,12 @@ TODO
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/fraktale/smocza-krzywa.md" %}
-[smocza-krzywa.md](../../implementacje/python/algorytmy/fraktale/smocza-krzywa.md)
+{% content-ref url="../../programowanie/python/algorytmy/fraktale/smocza-krzywa.md" %}
+[smocza-krzywa.md](../../programowanie/python/algorytmy/fraktale/smocza-krzywa.md)
 {% endcontent-ref %}
 
 ### Blockly
 
-{% content-ref url="../../implementacje/blockly/algorytmy/fraktale-1/smocza-krzywa.md" %}
-[smocza-krzywa.md](../../implementacje/blockly/algorytmy/fraktale-1/smocza-krzywa.md)
+{% content-ref url="../../programowanie/blockly/algorytmy/fraktale-1/smocza-krzywa.md" %}
+[smocza-krzywa.md](../../programowanie/blockly/algorytmy/fraktale-1/smocza-krzywa.md)
 {% endcontent-ref %}

@@ -45,12 +45,12 @@ TODO
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/tekstowe/najdluzszy-wspolny-podciag.md" %}
-[najdluzszy-wspolny-podciag.md](../../implementacje/c++/algorytmy/tekstowe/najdluzszy-wspolny-podciag.md)
+{% content-ref url="../../programowanie/c++/algorytmy/tekstowe/najdluzszy-wspolny-podciag.md" %}
+[najdluzszy-wspolny-podciag.md](../../programowanie/c++/algorytmy/tekstowe/najdluzszy-wspolny-podciag.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/tekstowe/najdluzszy-wspolny-podciag.md" %}
-[najdluzszy-wspolny-podciag.md](../../implementacje/python/algorytmy/tekstowe/najdluzszy-wspolny-podciag.md)
+{% content-ref url="../../programowanie/python/algorytmy/tekstowe/najdluzszy-wspolny-podciag.md" %}
+[najdluzszy-wspolny-podciag.md](../../programowanie/python/algorytmy/tekstowe/najdluzszy-wspolny-podciag.md)
 {% endcontent-ref %}

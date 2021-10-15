@@ -39,13 +39,13 @@ TODO
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/fraktale/trojkat-sierpinskiego.md" %}
-[trojkat-sierpinskiego.md](../../implementacje/python/algorytmy/fraktale/trojkat-sierpinskiego.md)
+{% content-ref url="../../programowanie/python/algorytmy/fraktale/trojkat-sierpinskiego.md" %}
+[trojkat-sierpinskiego.md](../../programowanie/python/algorytmy/fraktale/trojkat-sierpinskiego.md)
 {% endcontent-ref %}
 
 ### Blockly
 
-{% content-ref url="../../implementacje/blockly/algorytmy/fraktale-1/trojkat-sierpinskiego.md" %}
-[trojkat-sierpinskiego.md](../../implementacje/blockly/algorytmy/fraktale-1/trojkat-sierpinskiego.md)
+{% content-ref url="../../programowanie/blockly/algorytmy/fraktale-1/trojkat-sierpinskiego.md" %}
+[trojkat-sierpinskiego.md](../../programowanie/blockly/algorytmy/fraktale-1/trojkat-sierpinskiego.md)
 {% endcontent-ref %}
 

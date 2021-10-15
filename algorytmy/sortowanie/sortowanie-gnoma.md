@@ -53,12 +53,12 @@ TODO
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/sortowanie/sortowanie-gnoma.md" %}
-[sortowanie-gnoma.md](../../implementacje/c++/algorytmy/sortowanie/sortowanie-gnoma.md)
+{% content-ref url="../../programowanie/c++/algorytmy/sortowanie/sortowanie-gnoma.md" %}
+[sortowanie-gnoma.md](../../programowanie/c++/algorytmy/sortowanie/sortowanie-gnoma.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/sortowanie/sortowanie-gnoma.md" %}
-[sortowanie-gnoma.md](../../implementacje/python/algorytmy/sortowanie/sortowanie-gnoma.md)
+{% content-ref url="../../programowanie/python/algorytmy/sortowanie/sortowanie-gnoma.md" %}
+[sortowanie-gnoma.md](../../programowanie/python/algorytmy/sortowanie/sortowanie-gnoma.md)
 {% endcontent-ref %}

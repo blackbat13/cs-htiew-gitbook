@@ -103,12 +103,12 @@ $$O(n)$$ - liniowa
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/metody-numeryczne/schemat-hornera.md" %}
-[schemat-hornera.md](../../implementacje/c++/algorytmy/metody-numeryczne/schemat-hornera.md)
+{% content-ref url="../../programowanie/c++/algorytmy/metody-numeryczne/schemat-hornera.md" %}
+[schemat-hornera.md](../../programowanie/c++/algorytmy/metody-numeryczne/schemat-hornera.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/metody-numeryczne/schemat-hornera.md" %}
-[schemat-hornera.md](../../implementacje/python/algorytmy/metody-numeryczne/schemat-hornera.md)
+{% content-ref url="../../programowanie/python/algorytmy/metody-numeryczne/schemat-hornera.md" %}
+[schemat-hornera.md](../../programowanie/python/algorytmy/metody-numeryczne/schemat-hornera.md)
 {% endcontent-ref %}

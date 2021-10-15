@@ -78,12 +78,12 @@ TODO
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/algorytmy-na-liczbach-calkowitych/wydawanie-reszty.md" %}
-[wydawanie-reszty.md](../../implementacje/c++/algorytmy/algorytmy-na-liczbach-calkowitych/wydawanie-reszty.md)
+{% content-ref url="../../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/wydawanie-reszty.md" %}
+[wydawanie-reszty.md](../../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/wydawanie-reszty.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/algorytmy-na-liczbach-calkowitych/zachlanne-wydawanie-reszty.md" %}
-[zachlanne-wydawanie-reszty.md](../../implementacje/python/algorytmy/algorytmy-na-liczbach-calkowitych/zachlanne-wydawanie-reszty.md)
+{% content-ref url="../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/zachlanne-wydawanie-reszty.md" %}
+[zachlanne-wydawanie-reszty.md](../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/zachlanne-wydawanie-reszty.md)
 {% endcontent-ref %}

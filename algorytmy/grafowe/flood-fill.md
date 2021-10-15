@@ -43,13 +43,13 @@ funkcja FloodFill(x, y):
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/grafy/flood-fill.md" %}
-[flood-fill.md](../../implementacje/c++/algorytmy/grafy/flood-fill.md)
+{% content-ref url="../../programowanie/c++/algorytmy/grafy/flood-fill.md" %}
+[flood-fill.md](../../programowanie/c++/algorytmy/grafy/flood-fill.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/grafy/flood-fill.md" %}
-[flood-fill.md](../../implementacje/python/algorytmy/grafy/flood-fill.md)
+{% content-ref url="../../programowanie/python/algorytmy/grafy/flood-fill.md" %}
+[flood-fill.md](../../programowanie/python/algorytmy/grafy/flood-fill.md)
 {% endcontent-ref %}
 

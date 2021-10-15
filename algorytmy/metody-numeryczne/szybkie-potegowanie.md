@@ -116,12 +116,12 @@ $$O(\log{n})$$ - logarytmiczna
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/metody-numeryczne/szybkie-potegowanie.md" %}
-[szybkie-potegowanie.md](../../implementacje/c++/algorytmy/metody-numeryczne/szybkie-potegowanie.md)
+{% content-ref url="../../programowanie/c++/algorytmy/metody-numeryczne/szybkie-potegowanie.md" %}
+[szybkie-potegowanie.md](../../programowanie/c++/algorytmy/metody-numeryczne/szybkie-potegowanie.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/metody-numeryczne/szybkie-potegowanie.md" %}
-[szybkie-potegowanie.md](../../implementacje/python/algorytmy/metody-numeryczne/szybkie-potegowanie.md)
+{% content-ref url="../../programowanie/python/algorytmy/metody-numeryczne/szybkie-potegowanie.md" %}
+[szybkie-potegowanie.md](../../programowanie/python/algorytmy/metody-numeryczne/szybkie-potegowanie.md)
 {% endcontent-ref %}

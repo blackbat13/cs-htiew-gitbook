@@ -32,12 +32,12 @@ TODO
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/grafy/floyd-warshall.md" %}
-[floyd-warshall.md](../../implementacje/c++/algorytmy/grafy/floyd-warshall.md)
+{% content-ref url="../../programowanie/c++/algorytmy/grafy/floyd-warshall.md" %}
+[floyd-warshall.md](../../programowanie/c++/algorytmy/grafy/floyd-warshall.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/grafy/floyd-warshall.md" %}
-[floyd-warshall.md](../../implementacje/python/algorytmy/grafy/floyd-warshall.md)
+{% content-ref url="../../programowanie/python/algorytmy/grafy/floyd-warshall.md" %}
+[floyd-warshall.md](../../programowanie/python/algorytmy/grafy/floyd-warshall.md)
 {% endcontent-ref %}

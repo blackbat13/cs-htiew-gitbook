@@ -16,12 +16,12 @@ TODO
 
 ### C++
 
-{% content-ref url="../../implementacje/c++/algorytmy/szyfrowanie/szyfr-playfaira.md" %}
-[szyfr-playfaira.md](../../implementacje/c++/algorytmy/szyfrowanie/szyfr-playfaira.md)
+{% content-ref url="../../programowanie/c++/algorytmy/szyfrowanie/szyfr-playfaira.md" %}
+[szyfr-playfaira.md](../../programowanie/c++/algorytmy/szyfrowanie/szyfr-playfaira.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../implementacje/python/algorytmy/szyfrowanie/szyfr-playfaira.md" %}
-[szyfr-playfaira.md](../../implementacje/python/algorytmy/szyfrowanie/szyfr-playfaira.md)
+{% content-ref url="../../programowanie/python/algorytmy/szyfrowanie/szyfr-playfaira.md" %}
+[szyfr-playfaira.md](../../programowanie/python/algorytmy/szyfrowanie/szyfr-playfaira.md)
 {% endcontent-ref %}
