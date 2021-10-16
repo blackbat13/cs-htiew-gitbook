@@ -14,7 +14,7 @@ Dzisiaj spróbujemy tę grę odtworzyć w trochę bardziej współczesnym środo
 
 ### Grafiki do pobrania
 
-Zanim zaczniemy, pobierz poniższe grafiki, rozpakuj i umieść w katalogu **images **w projekcie gry.
+Zanim zaczniemy, pobierz poniższe grafiki, rozpakuj i umieść w katalogu **images** w projekcie gry.
 
 {% file src="../../.gitbook/assets/grafiki_pong.zip" %}
 Grafiki do gry Pong
@@ -34,9 +34,9 @@ Spróbujmy przeanalizować powyższą animację. Zacznijmy od wyróżniania elem
 * Dwie paletki - jedna przy lewym brzegu, druga przy prawym
 * Piłka
 
-### Szablon
+## Podstawowy szablon
 
-Jak zwykle zaczynamy od standardowego szablonu. Jako wymiary gry przyjmiemy 800x600 (szerokość 800 i wysokość 600).
+Jak zwykle zaczynamy od standardowego szablonu. Jako wymiary gry przyjmiemy $800\times600$ (szerokość $800$ i wysokość $600$).
 
 Ustalmy także tytuł naszej gry: "Pong".
 
@@ -61,9 +61,15 @@ def update():
 pgzrun.go()
 ```
 
-### Określamy tło gry
+## Tło gry
 
-Zacznijmy od rzeczy prostej - tła gry. Jak już ustaliliśmy na tło składa się szary kolor i żółta linia na środku ekranu. Zacznijmy od szarego koloru. Dla ułatwienia zapamiętamy go w zmiennej `kolor_tla`, którą dodamy zaraz pod tytułem gry. Chcemy mieć lekki odcień szarości.
+Na początek rzecz prosta - tło gry. Jak już ustaliliśmy na tło składa się szary kolor i żółta linia na środku ekranu. Zacznijmy od szarego koloru. 
+
+### Szare tło
+
+Dla ułatwienia kolor tła zapamiętamy w zmiennej `kolor_tla`, którą dodamy zaraz pod tytułem gry. Chcemy mieć lekki odcień szarości.
+W tym celu ustalamy kolor za pomocą trzech wartości: **(R, G, B)**.
+W celu uzyskania odcieniu szarości wystarczy podać trzy takie same liczby, np. $64$.
 
 ```python
 kolor_tla = (64, 64, 64)
@@ -75,6 +81,8 @@ Jak już mamy kolor, to wypełnijmy nim całe tło. Dodajemy instrukcję `screen
 def draw():
     screen.fill(kolor_tla)
 ```
+
+### Żółta linia
 
 Mamy kolor tła, teraz dodajmy żółtą linię. W tym celu użyjemy polecenia screen.draw.line do narysowania linii. Żeby narysować linię musimy podać jej początek i koniec, a także kolor. Gdybyśmy chcieli narysować żółtą linię przez cały ekran, wyglądałoby to tak:
 
@@ -96,7 +104,9 @@ def draw():
     screen.draw.line((WIDTH / 2, 40), (WIDTH / 2, HEIGHT - 40), color = "yellow")
 ```
 
-Nasz pełny kod przedstawia się teraz następująco:
+### Pełny kod
+
+Dotychczasowy pełny kod naszej gry przedstawiony jest poniżej.
 
 ```python
 import pgzrun
@@ -122,7 +132,275 @@ def update():
 pgzrun.go()
 ```
 
-### Pełna gra
+## Aktorzy
+
+W naszej grze występują trzy postacie (aktorzy):
+* lewa paletka,
+* prawa paletka,
+* piłka.
+
+Dodamy je po kolei do naszej gry i wyświetlimy na ekranie.
+
+## Lewa paletka
+
+Naszych aktorów dodamy zaraz pod kolorem tła, czyli na górze programu.
+
+### Tworzymy aktora
+
+Najpierw musimy utworzyć aktora i zapisać go w nowej zmiennej, którą nazwiemy _lewa_.
+Naszego aktora tworzymy na podstawie grafiki *lewa.png*.
+
+```python
+lewa = Actor("lewa.png")
+```
+
+### Ustalamy pozycję lewej paletki
+
+Nasza lewa paletka będzie znajdować się z lewej strony ekranu.
+Nie chcemy jednak, by dotykała krawędzi, damy jej więc pewien niewielki margines, np. $20$ pikseli.
+Dzięki temu nasza gra będzie wyglądała estetyczniej.
+Ustalamy więc współrzędną $x$ lewej paletki.
+
+```python
+lewa.x = 20
+```
+
+Trzeba jeszcze pomyśleć o drugiej współrzędnej: $y$.
+Początkowo umieśćmy paletkę na środku, czyli w połowie wysokości ekranu gry.
+
+```python
+lewa.y = HEIGHT / 2
+```
+
+### Rysujemy paletkę
+
+Skoro już umieściliśmy naszą lewą paletkę w jej początkowej pozycji, możemy ją narysować na ekranie.
+Do części rysującej, zaraz pod poleceniem rysującym żółtą linię, dopisujemy polecenie rysujące lewą paletkę: _lewa.draw()_.
+
+```python
+def draw():
+    screen.fill(kolor_tla)
+    screen.draw.line((WIDTH / 2, 40), (WIDTH / 2, HEIGHT - 40), color = "yellow")
+    lewa.draw()
+```
+
+### Pełny kod
+
+Dotychczasowy pełny kod naszej gry przedstawiony jest poniżej.
+
+```python
+import pgzrun
+
+
+WIDTH = 800
+HEIGHT = 600
+
+TITLE = "PONG"
+
+kolor_tla = (64, 64, 64)
+
+lewa = Actor("lewa.png")
+lewa.x = 20
+lewa.y = HEIGHT / 2
+
+
+def draw():
+    screen.fill(kolor_tla)
+    screen.draw.line((WIDTH / 2, 40), (WIDTH / 2, HEIGHT - 40), color = "yellow")
+    lewa.draw()
+
+    
+def update():
+    pass
+    
+    
+pgzrun.go()
+```
+
+## Prawa paletka
+
+Prawą paletkę tworzymy bardzo podobnie do lewej.
+Najważniejszą różnicą będzie oczywiście jej grafika i początkowe położenie.
+
+### Pełny kod
+
+Dotychczasowy pełny kod naszej gry przedstawiony jest poniżej.
+
+```python
+import pgzrun
+
+
+WIDTH = 800
+HEIGHT = 600
+
+TITLE = "PONG"
+
+kolor_tla = (64, 64, 64)
+
+lewa = Actor("lewa.png")
+lewa.x = 20
+lewa.y = HEIGHT / 2
+
+prawa = Actor("prawa.png")
+prawa.x = WIDTH - 20
+prawa.y = HEIGHT / 2
+
+
+def draw():
+    screen.fill(kolor_tla)
+    screen.draw.line((WIDTH / 2, 40), (WIDTH / 2, HEIGHT - 40), color = "yellow")
+    lewa.draw()
+    prawa.draw()
+    
+    
+def update():
+    pass
+    
+    
+pgzrun.go()
+```
+
+## Piłka
+
+Piłkę dodamy podobnie jak paletki, ale umieścimy ją na środku ekranu.
+
+### Pełny kod
+
+Dotychczasowy pełny kod naszej gry przedstawiony jest poniżej.
+
+```python
+import pgzrun
+
+
+WIDTH = 800
+HEIGHT = 600
+
+TITLE = "PONG"
+
+kolor_tla = (64, 64, 64)
+
+lewa = Actor("lewa.png")
+lewa.x = 20
+lewa.y = HEIGHT / 2
+
+prawa = Actor("prawa.png")
+prawa.x = WIDTH - 20
+prawa.y = HEIGHT / 2
+
+pilka = Actor("pilka.png")
+pilka.x = WIDTH / 2
+pilka.y = HEIGHT / 2
+
+
+def draw():
+    screen.fill(kolor_tla)
+    screen.draw.line((WIDTH / 2, 40), (WIDTH / 2, HEIGHT - 40), color = "yellow")
+    lewa.draw()
+    prawa.draw()
+    pilka.draw()
+    
+    
+def update():
+    pass
+    
+    
+pgzrun.go()
+```
+
+## Ruch graczy
+
+```python
+def ruch_graczy():
+    if keyboard.w:
+        lewa.y -= lewa.py
+
+    if keybaord.s:
+        lewa.y += lewa.py
+
+    if keyboard.up:
+        prawa.y -= prawa.py
+
+    if keyboard.down:
+        prawa.y += prawa.py
+```
+
+### Ograniczenie ruchu graczy
+
+```python
+def ruch_graczy():
+    if keyboard.w and lewa.top > 40:
+        lewa.y -= lewa.py
+
+    if keybaord.s and lewa.bottom < HEIGHT - 40:
+        lewa.y += lewa.py
+
+    if keyboard.up and prawa.top > 40:
+        prawa.y -= prawa.py
+
+    if keyboard.down and prawa.bottom < HEIGHT - 40:
+        prawa.y += prawa.py
+```
+
+### Pełny kod
+
+Dotychczasowy pełny kod naszej gry przedstawiony jest poniżej.
+
+```python
+import pgzrun
+
+
+WIDTH = 800
+HEIGHT = 600
+
+TITLE = "PONG"
+
+kolor_tla = (64, 64, 64)
+
+lewa = Actor("lewa.png")
+lewa.x = 20
+lewa.y = HEIGHT / 2
+lewa.py = 5
+
+prawa = Actor("prawa.png")
+prawa.x = WIDTH - 20
+prawa.y = HEIGHT / 2
+prawa.py = 5
+
+pilka = Actor("pilka.png")
+pilka.x = WIDTH / 2
+pilka.y = HEIGHT / 2
+
+
+def draw():
+    screen.fill(kolor_tla)
+    screen.draw.line((WIDTH / 2, 40), (WIDTH / 2, HEIGHT - 40), color = "yellow")
+    lewa.draw()
+    prawa.draw()
+    pilka.draw()
+    
+    
+def update():
+    ruch_graczy()
+
+
+def ruch_graczy():
+    if keyboard.w and lewa.top > 40:
+        lewa.y -= lewa.py
+
+    if keybaord.s and lewa.bottom < HEIGHT - 40:
+        lewa.y += lewa.py
+
+    if keyboard.up and prawa.top > 40:
+        prawa.y -= prawa.py
+
+    if keyboard.down and prawa.bottom < HEIGHT - 40:
+        prawa.y += prawa.py
+    
+    
+pgzrun.go()
+```
+
+## Pełna gra - wersja podstawowa
 
 ```python
 import pgzrun
