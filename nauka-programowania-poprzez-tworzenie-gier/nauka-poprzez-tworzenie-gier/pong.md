@@ -2,13 +2,19 @@
 
 ## Wstęp
 
-TODO
+Klasyczną grę Pong stworzoną przez firmę Atari zna chyba każdy. Dwie paletki po przeciwległych brzegach ekranu, piłka odbijająca się od paletek - ta prosta w swoich założeniach gra była jednak czymś przełomowym w swoich czasach.
+
+Dzisiaj spróbujemy tę grę odtworzyć w trochę bardziej współczesnym środowisku i z odświeżoną grafiką. Do dzieła!
 
 ### Czego się nauczysz
 
-TODO
+* Obsługi dwóch graczy jednocześnie
+* Symulacji prostej fizyki odbijania się piłki
+* Obsługi zakończenia gry i wyświetlenia wyniku
 
 ### Grafiki do pobrania
+
+Zanim zaczniemy, pobierz poniższe grafiki, rozpakuj i umieść w katalogu **images **w projekcie gry.
 
 {% file src="../../.gitbook/assets/grafiki_pong.zip" %}
 Grafiki do gry Pong
@@ -16,13 +22,17 @@ Grafiki do gry Pong
 
 ## Wersja klasyczna
 
-TODO
+Zaczniemy od stworzenia klasycznej wersji gry Pong. Na początek przyjrzyjmy się temu, co jest naszym celem.
 
-### Pełny program
+![Pong - wersja klasyczna](../../.gitbook/assets/pongGame.gif)
+
+
+
+### Pełna gra
 
 ```python
-import random
 import pgzrun
+import random
 
 WIDTH = 800
 HEIGHT = 600
@@ -34,23 +44,26 @@ TITLE = 'Pong'
 kolor = 'yellow'
 kolor_tla = (64, 64, 64)
 
-# Tworzymy aktorów - lewą paletkę, prawą paletkę i piłkę
-# Paletki mają początkową pozycję i wynik
+# Tworzymy aktora lewej paletki
 lewa = Actor("lewa.png")
-lewa.left = 10
-lewa.top = HEIGHT / 2
+lewa.x = 20
+lewa.y = HEIGHT / 2
 lewa.wynik = 0
+lewa.wygrana = False
 
+# Tworzymy aktora prawej paletki
 prawa = Actor("prawa.png")
-prawa.right = WIDTH - 10
-prawa.top = HEIGHT / 2
+prawa.x = WIDTH - 20
+prawa.y = HEIGHT / 2
 prawa.wynik = 0
+prawa.wygrana = False
 
-# Piłka ma jeszcze określoną prędkość poruszania się
+# Tworzymy aktora piłki
+# Piłka ma określoną prędkość poruszania się
 # A także informację o tym, czy gra została zakończona
 pilka = Actor("pilka.png")
-pilka.left = WIDTH / 2
-pilka.top = HEIGHT / 2
+pilka.x = WIDTH / 2
+pilka.y = HEIGHT / 2
 pilka.px = 5
 pilka.py = 5
 pilka.koniec_gry = False
@@ -59,48 +72,43 @@ pilka.koniec_gry = False
 def draw():
     screen.fill(kolor_tla)
 
-    if lewa.wynik == 11:
-        screen.draw.text(
-            "LEWY WYGRYWA!!!",
-            color=kolor,
-            center=(WIDTH / 2, HEIGHT / 2),
-            fontsize=96
-        )
-        pilka.koniec_gry = True
-    elif prawa.wynik == 11:
-        screen.draw.text(
-            "PRAWY WYGRYWA!!!",
-            color=kolor,
-            center=(WIDTH / 2, HEIGHT / 2),
-            fontsize=96
-        )
-        pilka.koniec_gry = True
+    if pilka.koniec_gry:
+        wypisz_wynik()
     else:
         lewa.draw()
         prawa.draw()
         pilka.draw()
+        wypisz_punkty()
 
+        # Eysujemy linię dzielącą pole gry
+        screen.draw.line((WIDTH / 2, 40), (WIDTH / 2, HEIGHT - 40), color=kolor)
+
+# Wypisujemy wynik końca gry
+def wypisz_wynik():
+  if lewa.wygrana:
+      screen.draw.text("LEWY WYGRYWA!!!",
+                        color=kolor,
+                        center=(WIDTH / 2, HEIGHT / 2),
+                        fontsize=96)
+  else:
+      screen.draw.text("PRAWY WYGRYWA!!!",
+                        color=kolor,
+                        center=(WIDTH / 2, HEIGHT / 2),
+                        fontsize=96)
+
+# Wypisujemy na ekranie punkty graczy
+def wypisz_punkty():
     # Wypisujemy wynik lewego gracza
-    screen.draw.text(
-        "Lewy: " + str(lewa.wynik),
-        color=kolor,
-        center=(WIDTH / 4 - 20, 20),
-        fontsize=48
-    )
+    screen.draw.text("Lewy: " + str(lewa.wynik),
+                     color=kolor,
+                     center=(WIDTH / 4 - 20, 20),
+                     fontsize=48)
 
     # Wypisujemy wynik prawego gracza
-    screen.draw.text(
-        'Prawy: ' + str(prawa.wynik),
-        color=kolor,
-        center=(WIDTH / 2 + WIDTH / 4 - 20, 20),
-        fontsize=48
-    )
-
-    # Eysujemy linię dzielącą pole gry
-    screen.draw.line(
-        (WIDTH / 2, 40),
-        (WIDTH / 2, HEIGHT - 40),
-        color=kolor)
+    screen.draw.text('Prawy: ' + str(prawa.wynik),
+                     color=kolor,
+                     center=(WIDTH / 2 + WIDTH / 4 - 20, 20),
+                     fontsize=48)
 
 
 # Aktualizujemy stan gry - ruchy graczy i piłki
@@ -117,20 +125,18 @@ def update():
 # Odczytujemy ruchy graczy
 def ruch_graczy():
     # Prawy gracz porusza się za pomocą strzałek góra i dół
-    if keyboard.up:
-        if prawa.top - 5 > 40:
-            prawa.top -= 5
-    elif keyboard.down:
-        if prawa.bottom + 5 < HEIGHT - 40:
-            prawa.top += 5
+    if keyboard.up and prawa.top > 40:
+        prawa.y -= 5
+
+    if keyboard.down and prawa.bottom < HEIGHT - 40:
+        prawa.y += 5
 
     # Lewy gracz porusza się za pomocą klawiszy w i s
-    if keyboard.w:
-        if lewa.top - 5 > 40:
-            lewa.top -= 5
-    elif keyboard.s:
-        if lewa.bottom + 5 < HEIGHT - 40:
-            lewa.top += 5
+    if keyboard.w and lewa.top > 40:
+        lewa.y -= 5
+
+    if keyboard.s and lewa.bottom < HEIGHT - 40:
+        lewa.y += 5
 
 
 # Resetujemy pozycję piłki
@@ -147,29 +153,41 @@ def ruch_pilki():
     pilka.left += pilka.px
     pilka.top += pilka.py
 
-    # Odbijamy od ścian - góra i dół
+    # Odbijamy piłkę od górnej ściany
     if pilka.top <= 40:
         pilka.py *= -1
 
+    # Odbijamy piłkę od dolnej ściany
     if pilka.bottom >= HEIGHT - 40:
         pilka.py *= -1
 
-    # Odbijamy od paletek
+    # Odbijamy piłkę od lewej paletki
     if lewa.colliderect(pilka):
         pilka.px *= -1
 
+    # Odpijamy piłkę od prawej paletki
     if prawa.colliderect(pilka):
         pilka.px *= -1
 
-    # Jeżeli piłka wypadła poza ekran, to jeden z graczy dostaje punkt
+    # Jeżeli piłka wypadła z lewej strony, to prawy gracz dostaje punkt
     if pilka.left <= 0:
         resetuj_pilke()
         prawa.wynik += 1
 
+        # Jeżeli prawa paletka uzyskała 11 punktów to wygrywa i gra się kończy
+        if prawa.wynik == 11:
+            prawa.wygrana = True
+            pilka.koniec_gry = True
+
+    # Jeżeli piłka wypadła z prawej strony, to lewy graczdostaje punkt
     if pilka.right >= WIDTH:
         resetuj_pilke()
         lewa.wynik += 1
 
+        # Jeżeli lewa paletka uzyskała 11 punktów to wygrywa i gra się kończy
+        if lewa.wynik == 11:
+            lewa.wygrana = True
+            pilka.koniec_gry = True
 
 pgzrun.go()
 ```
