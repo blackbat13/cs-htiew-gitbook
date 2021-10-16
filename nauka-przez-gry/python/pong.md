@@ -36,7 +36,7 @@ Spróbujmy przeanalizować powyższą animację. Zacznijmy od wyróżniania elem
 
 ## Podstawowy szablon
 
-Jak zwykle zaczynamy od standardowego szablonu. Jako wymiary gry przyjmiemy $800\times600$ (szerokość $800$ i wysokość $600$).
+Jak zwykle zaczynamy od standardowego szablonu. Jako wymiary gry przyjmiemy $$800\times600$$ (szerokość $$800$$ i wysokość $$600$$).
 
 Ustalmy także tytuł naszej gry: "Pong".
 
@@ -69,7 +69,7 @@ Na początek rzecz prosta - tło gry. Jak już ustaliliśmy na tło składa się
 
 Dla ułatwienia kolor tła zapamiętamy w zmiennej `kolor_tla`, którą dodamy zaraz pod tytułem gry. Chcemy mieć lekki odcień szarości.
 W tym celu ustalamy kolor za pomocą trzech wartości: **(R, G, B)**.
-W celu uzyskania odcieniu szarości wystarczy podać trzy takie same liczby, np. $64$.
+W celu uzyskania odcieniu szarości wystarczy podać trzy takie same liczby, np. $$64$$.
 
 ```python
 kolor_tla = (64, 64, 64)
@@ -90,7 +90,7 @@ Mamy kolor tła, teraz dodajmy żółtą linię. W tym celu użyjemy polecenia s
 screen.draw.line((WIDTH / 2, 0), (WIDTH / 2, HEIGHT), color = "yellow")
 ```
 
-Teraz dostosujmy naszą linię, dodając niewielkie marginesy: 40 pikseli z góry i z dołu.
+Teraz dostosujmy naszą linię, dodając niewielkie marginesy: $$40$$ pikseli z góry i z dołu.
 
 ```python
 screen.draw.line((WIDTH / 2, 40), (WIDTH / 2, HEIGHT - 40), color = "yellow")
