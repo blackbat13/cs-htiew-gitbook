@@ -35,7 +35,7 @@ import pgzrun
 
 ### Określamy wymiary okna gry
 
-Na początek określamy wymiary okna naszej gry. Zacznijmy klasycznie od wymiarów $800\times600$.
+Na początek określamy wymiary okna naszej gry. Zacznijmy klasycznie od wymiarów $$800\times600$$.
 W zależności od zapotrzebowania będziemy te wymiary dostosowywać do konkretnych gier.
 
 Wymiary określamy podając szerokość (ang. *width*) i wysokość (ang. *height*) okna gry.
@@ -104,7 +104,7 @@ pgzrun.go()
 
 ### Testujemy działanie
 
-Teraz czas uruchomić naszą "grę". Postępujemy standardowo: prawy przycisk myszy w edytorze -> _Run 'szablon'_. Naszym oczom powinien ukazać się piękny, czarny ekran o wymiarach $800$ na $600$ pikseli. Świetnie!
+Teraz czas uruchomić naszą "grę". Postępujemy standardowo: prawy przycisk myszy w edytorze -> _Run 'szablon'_. Naszym oczom powinien ukazać się piękny, czarny ekran o wymiarach $$800$$ na $$600$$ pikseli. Świetnie!
 
 Efekt może nie jest bardzo satysfakcjonujący, ale to oznacza, że biblioteka zainstalowana została poprawnie i możemy przejść do tworzenia naszych gier!
 
