@@ -26,7 +26,101 @@ Zaczniemy od stworzenia klasycznej wersji gry Pong. Na początek przyjrzyjmy si�
 
 ![Pong - wersja klasyczna](../../.gitbook/assets/pongGame.gif)
 
+Spróbujmy przeanalizować powyższą animację. Zacznijmy od wyróżniania elementów graficznych:
 
+* Szare tło
+* Żółta linia po środku dzieląca planszę na dwie części
+* Punkty wyświetlane na górze ekranu
+* Dwie paletki - jedna przy lewym brzegu, druga przy prawym
+* Piłka
+
+### Szablon
+
+Jak zwykle zaczynamy od standardowego szablonu. Jako wymiary gry przyjmiemy 800x600 (szerokość 800 i wysokość 600).
+
+Ustalmy także tytuł naszej gry: "Pong".
+
+```python
+import pgzrun
+
+
+WIDTH = 800
+HEIGHT = 600
+
+TITLE = "PONG"
+
+
+def draw():
+    pass
+    
+    
+def update():
+    pass
+    
+    
+pgzrun.go()
+```
+
+### Określamy tło gry
+
+Zacznijmy od rzeczy prostej - tła gry. Jak już ustaliliśmy na tło składa się szary kolor i żółta linia na środku ekranu. Zacznijmy od szarego koloru. Dla ułatwienia zapamiętamy go w zmiennej `kolor_tla`, którą dodamy zaraz pod tytułem gry. Chcemy mieć lekki odcień szarości.
+
+```python
+kolor_tla = (64, 64, 64)
+```
+
+Jak już mamy kolor, to wypełnijmy nim całe tło. Dodajemy instrukcję `screen.fill` w części rysującej.
+
+```python
+def draw():
+    screen.fill(kolor_tla)
+```
+
+Mamy kolor tła, teraz dodajmy żółtą linię. W tym celu użyjemy polecenia screen.draw.line do narysowania linii. Żeby narysować linię musimy podać jej początek i koniec, a także kolor. Gdybyśmy chcieli narysować żółtą linię przez cały ekran, wyglądałoby to tak:
+
+```python
+screen.draw.line((WIDTH / 2, 0), (WIDTH / 2, HEIGHT), color = "yellow")
+```
+
+Teraz dostosujmy naszą linię, dodając niewielkie marginesy: 40 pikseli z góry i z dołu.
+
+```python
+screen.draw.line((WIDTH / 2, 40), (WIDTH / 2, HEIGHT - 40), color = "yellow")
+```
+
+Oczywiście, żeby narysować linię na ekraniu, musimy dopisać powyższe polecenie w części rysującej, zaraz pod wypełnieniem ekranu kolorem tła.
+
+```python
+def draw():
+    screen.fill(kolor_tla)
+    screen.draw.line((WIDTH / 2, 40), (WIDTH / 2, HEIGHT - 40), color = "yellow")
+```
+
+Nasz pełny kod przedstawia się teraz następująco:
+
+```python
+import pgzrun
+
+
+WIDTH = 800
+HEIGHT = 600
+
+TITLE = "PONG"
+
+kolor_tla = (64, 64, 64)
+
+
+def draw():
+    screen.fill(kolor_tla)
+    screen.draw.line((WIDTH / 2, 40), (WIDTH / 2, HEIGHT - 40), color = "yellow")
+    
+    
+def update():
+    pass
+    
+    
+pgzrun.go()
+```
 
 ### Pełna gra
 
