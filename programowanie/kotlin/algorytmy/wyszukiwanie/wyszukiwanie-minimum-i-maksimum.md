@@ -10,40 +10,45 @@
 
 ### Implementacja
 
-```python
-def find_min(n: int, tab: list) -> int:
-    min_val = tab[0]
-    
-    for i in range(1, n):
-        if tab[i] < min_val:
-            min_val = tab[i]
-    
-    return min_val
+```kotlin
+fun findMinVal(array: List<Int>): Int {
+  var minVal = array[0]
 
+  for (el in array) {
+    if (el < minVal) {
+      minVal = el
+    }
+  }
 
-def find_max(n: int, tab: list) -> int:
-    max_val = tab[0]
-    
-    for i in range(1, n):
-        if tab[i] > max_val:
-            max_val = tab[i]
-    
-    return max_val
+  return minVal
+}
 
+fun findMaxVal(array: List<Int>): Int {
+  var maxVal = array[0]
 
-tab = [8, 2, 9, 10, 5, 4, 2, 7, 18, 0]
-n = 10
-    
-min_val = find_min(n, tab)
-max_val = find_max(n, tab)
-    
-print("Min:", min_val)
-print("Max:", max_val)
+  for(el in array) {
+    if(el > maxVal) {
+      maxVal = el
+    }
+  }
+
+  return maxVal
+}
+
+fun main() {
+  val array = listOf(8, 2, 9, 10, 5, 4, 2, 7, 18, 0)
+
+  val minVal = findMinVal(array)
+  val maxVal = findMaxVal(array)
+
+  println("Min: $minVal")
+  println("Max: $maxVal")
+}
 ```
 
 ### Link do implementacji
 
-{% embed url="https://ideone.com/DxxLsK" %}
+{% embed url="https://ideone.com/ksC9K4" %}
 Wyszukiwanie wartości minimum i maksimum
 {% endembed %}
 
@@ -55,40 +60,45 @@ TODO
 
 ### Implementacja
 
-```python
-def find_min_ind(n: int, tab: list) -> int:
-    min_ind = 0
-    
-    for i in range(1, n):
-        if tab[i] < tab[min_ind]:
-            min_ind = i
-    
-    return min_ind
+```kotlin
+fun findMinInd(array: List<Int>): Int {
+  var minInd = 0
 
+  for (i in array.indices) {
+    if (array[i] < array[minInd]) {
+      minInd = i
+    }
+  }
 
-def find_max_ind(n: int, tab: list) -> int:
-    max_ind = 0
-    
-    for i in range(1, n):
-        if tab[i] > tab[max_ind]:
-            max_ind = i
-    
-    return max_ind
+  return minInd
+}
 
+fun findMaxInd(array: List<Int>): Int {
+  var maxInd = 0
 
-tab = [8, 2, 9, 10, 5, 4, 2, 7, 18, 0]
-n = 10
-    
-min_ind = find_min_ind(n, tab)
-max_ind = find_max_ind(n, tab)
-    
-print("Min index:", min_ind)
-print("Max index:", max_ind)
+  for(i in array.indices) {
+    if(array[i] > array[maxInd]) {
+      maxInd = i
+    }
+  }
+
+  return maxInd
+}
+
+fun main() {
+  val array = listOf(8, 2, 9, 10, 5, 4, 2, 7, 18, 0)
+
+  val minInd = findMinInd(array)
+  val maxInd = findMaxInd(array)
+
+  println("Wartosc minimum znajduje sie na pozycji: $minInd")
+  println("Wartosc maximum znajduje sie na pozycji: $maxInd")
+}
 ```
 
 ### Link do implementacji
 
-{% embed url="https://ideone.com/Yy748p" %}
+{% embed url="https://ideone.com/bA2kuB" %}
 Wyszukiwanie indeksów wartości min i maks
 {% endembed %}
 

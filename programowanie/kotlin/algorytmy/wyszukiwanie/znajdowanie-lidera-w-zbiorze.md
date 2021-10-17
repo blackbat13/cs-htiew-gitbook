@@ -8,47 +8,57 @@
 
 ## Implementacja
 
-```python
-def count_occurrences(element: int, array: list) -> int:
-    count = 0
-    
-    for el in array:
-        if el == element:
-            count += 1
+```kotlin
+fun countOccurrences(element: Int, array: List<Int>): Int {
+  var count = 0
 
-    return count
+  for (el in array) {
+    if (el == element) {
+      count += 1
+    }
+  }
 
+  return count
+}
 
-def find_majority(array: list) -> int:
-    counter = 0
-    current_candidate = 0
-    
-    for el in array:
-        if counter == 0:
-            current_candidate = el
-            counter = 1
-        else:
-            if el == current_candidate:
-                counter += 1
-            else:
-                counter -= 1
+fun findMajority(array: List<Int>): Int {
+  var counter = 0
+  var currentCandidate = 0
 
-    if count_occurrences(current_candidate, array) >= len(array) / 2:
-        return current_candidate
-    else:
-        return -1
+  for (el in array) {
+    if(counter == 0) {
+      currentCandidate = el
+      counter = 1
+    } else if (el == currentCandidate) {
+      counter += 1
+    } else {
+      counter -= 1
+    }
+  }
 
+  if (countOccurrences(currentCandidate, array) >= array.count() / 2) {
+    return currentCandidate
+  } else {
+    return -1
+  }
+}
 
-array = [1, 2, 5, 5, 7, 5, 5, 10, 5, 5]
+fun main() {
+  val array = listOf(1, 2, 5, 5, 7, 5, 5, 10, 5, 5)
 
-majority = find_majority(array)
+  val majority = findMajority(array)
 
-print(majority)
+  if (majority == -1) {
+    println("Nie ma lidera")
+  } else {
+    println("Lider to $majority")
+  }
+}
 ```
 
 ### Link do implementacji
 
-{% embed url="https://ideone.com/9kFDlI" %}
+{% embed url="https://ideone.com/btfNVv" %}
 Znajdowanie lidera w zbiorze
 {% endembed %}
 
