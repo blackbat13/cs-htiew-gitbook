@@ -242,6 +242,7 @@
     * [Tablice dynamiczne](programowanie/c++/cwiczenia/tablice-dynamiczne.md)
     * [Pętla for in](programowanie/c++/cwiczenia/petla-for-in.md)
     * [Struktury](programowanie/c++/cwiczenia/struktury.md)
+    * [STL](programowanie/c++/cwiczenia/stl.md)
     * [Klasy](programowanie/c++/cwiczenia/klasy.md)
   * [Symulacje](programowanie/c++/symulacje/README.md)
     * [Wężyk](programowanie/c++/symulacje/wezyk.md)
