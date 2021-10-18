@@ -139,6 +139,6 @@ $$O(\sqrt{n})$$
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/test-doskonalosci.md" %}
-[test-doskonalosci.md](../../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/test-doskonalosci.md)
+{% content-ref url="../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/test-doskonalosci.md" %}
+[test-doskonalosci.md](../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/test-doskonalosci.md)
 {% endcontent-ref %}

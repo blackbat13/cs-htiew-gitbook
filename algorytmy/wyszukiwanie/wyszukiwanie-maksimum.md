@@ -124,8 +124,8 @@ $$O(n)$$ - liniowa
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/wyszukiwanie/wyszukiwanie-minimum-i-maksimum.md" %}
-[wyszukiwanie-minimum-i-maksimum.md](../../programowanie/kotlin/algorytmy/wyszukiwanie/wyszukiwanie-minimum-i-maksimum.md)
+{% content-ref url="../../programowanie/python/algorytmy/wyszukiwanie/wyszukiwanie-minimum-i-maksimum.md" %}
+[wyszukiwanie-minimum-i-maksimum.md](../../programowanie/python/algorytmy/wyszukiwanie/wyszukiwanie-minimum-i-maksimum.md)
 {% endcontent-ref %}
 
 ### Blockly

@@ -67,6 +67,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/sito-eratostenesa.md" %}
-[sito-eratostenesa.md](../../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/sito-eratostenesa.md)
+{% content-ref url="../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/sito-eratostenesa.md" %}
+[sito-eratostenesa.md](../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/sito-eratostenesa.md)
 {% endcontent-ref %}

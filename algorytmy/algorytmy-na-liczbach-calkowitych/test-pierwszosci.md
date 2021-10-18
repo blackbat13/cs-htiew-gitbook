@@ -136,6 +136,6 @@ $$O(\sqrt{n})$$
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/test-pierwszosci.md" %}
-[test-pierwszosci.md](../../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/test-pierwszosci.md)
+{% content-ref url="../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/test-pierwszosci.md" %}
+[test-pierwszosci.md](../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/test-pierwszosci.md)
 {% endcontent-ref %}

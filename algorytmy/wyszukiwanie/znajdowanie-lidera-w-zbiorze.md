@@ -104,6 +104,6 @@ $$O(n)$$ - liniowa
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/wyszukiwanie/znajdowanie-lidera-w-zbiorze.md" %}
-[znajdowanie-lidera-w-zbiorze.md](../../programowanie/kotlin/algorytmy/wyszukiwanie/znajdowanie-lidera-w-zbiorze.md)
+{% content-ref url="../../programowanie/python/algorytmy/wyszukiwanie/znajdowanie-lidera-w-zbiorze.md" %}
+[znajdowanie-lidera-w-zbiorze.md](../../programowanie/python/algorytmy/wyszukiwanie/znajdowanie-lidera-w-zbiorze.md)
 {% endcontent-ref %}

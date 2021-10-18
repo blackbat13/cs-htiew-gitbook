@@ -1,8 +1,23 @@
-# vector
+# Tablice dynamiczne
 
 ## Opis
 
-W dużym skrócie `vector` jest dynamiczną tablicą i tak zazwyczaj go traktujemy. Co oznacza, że tablica jest **dynamiczna**? To znaczy, że w dowolnym momencie działania programu możemy zmieniać jej rozmiar, tzn. dodawać i usuwać elementy (w przeciwieństwie do tablic **statycznych**). Jest to przydatne np. w sytuacji gdy nie wiemy, ile wartości będziemy musieli w takiej tablicy przechować.
+Co oznacza, że tablica jest **dynamiczna**? To znaczy, że w dowolnym momencie działania programu możemy zmieniać jej rozmiar, tzn. dodawać i usuwać elementy (w przeciwieństwie do tablic **statycznych**). Jest to przydatne np. w sytuacji gdy nie wiemy, ile wartości będziemy musieli w takiej tablicy przechować.
+
+W STL mamy dwie podstawowe klasy implementujące tablice dynamiczne: `vector` oraz `deque`. W założeniach są do siebie bardzo zbliżone. Podstawowa różnica jest taka, że `vector` jest jednokierunkowy, a `deque` dwukierunkowy. Co to oznacza w praktyce? Do tablic typu `vector` możemy _tanio_ dodawać i usuwać elementy od końca. Do `deque` możemy natomiast dodawać i usuwać elementy zarówno z końca jak i z początku.
+
+W poniższych przykładach wykorzystujemy `vector`, jednak można go spokojnie zastąpić klasą `deque` i wszystko będzie działać tak samo.
+
+### Biblioteka
+
+Do klasy `vector` potrzebujemy biblioteki `vector`, a do klasy `deque` potrzebujemy biblioteki `deque`.
+
+```cpp
+#include <vector>
+#include <deque>
+
+using namespace std;
+```
 
 ## Implementacja - przykłady
 
@@ -46,6 +61,18 @@ cout << "Size of the array is: " << array.size() << endl;
 
 ```cpp
 array.push_back(55);
+```
+
+### Usunięcie ostatniego elementu tablicy
+
+```cpp
+array.pop_back();
+```
+
+### Usunięcie ostatniego elementu tablicy
+
+```cpp
+array.pop_back();
 ```
 
 ### Usunięcie ostatniego elementu tablicy

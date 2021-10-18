@@ -6,7 +6,7 @@
 
 * Opis algorytmu: [Wyszukiwanie minimum i maksimum](wyszukiwanie/wyszukiwanie-maksimum.md) 
 * Implementacja C++: [Wyszukiwanie minimum i maksimum](../programowanie/c++/algorytmy/wyszukiwanie/wyszukiwanie-minimum-i-maksimum.md) 
-* Implementacja Python: [Wyszukiwanie minimum i maksimum](../programowanie/kotlin/algorytmy/wyszukiwanie/wyszukiwanie-minimum-i-maksimum.md)
+* Implementacja Python: [Wyszukiwanie minimum i maksimum](../programowanie/python/algorytmy/wyszukiwanie/wyszukiwanie-minimum-i-maksimum.md)
 * Implementacja Blockly: [Wyszukiwanie minimum i maksimum](../programowanie/blockly/algorytmy/wyszukiwanie/wyszukiwanie-minimum-i-maksimum.md)
 
 ### Jednoczesne znajdowanie minimum i maksimum (na maturze)
@@ -26,14 +26,14 @@
 
 * Opis algorytmu: [Wyszukiwanie binarne](wyszukiwanie/wyszukiwanie-binarne.md)
 * Implementacja C++: [Wyszukiwanie binarne](../programowanie/c++/algorytmy/wyszukiwanie/wyszukiwanie-binarne.md)
-* Implementacja Python: [Wyszukiwanie binarne](../programowanie/kotlin/algorytmy/wyszukiwanie/wyszukiwanie-binarne.md)
+* Implementacja Python: [Wyszukiwanie binarne](../programowanie/python/algorytmy/wyszukiwanie/wyszukiwanie-binarne.md)
 * Implementacja Blockly: [Wyszukiwanie binarne](../programowanie/blockly/algorytmy/wyszukiwanie/wyszukiwanie-binarne.md)
 
 ### Znajdowanie lidera w zbiorze
 
 * Opis algorytmu: [Znajdowanie lidera w zbiorze](wyszukiwanie/znajdowanie-lidera-w-zbiorze.md)
 * Implementacja C++: [Znajdowanie lidera w zbiorze](../programowanie/c++/algorytmy/wyszukiwanie/znajdowanie-lidera-w-zbiorze.md)
-* Implementacja Python: [Znajdowanie lidera w zbiorze](../programowanie/kotlin/algorytmy/wyszukiwanie/znajdowanie-lidera-w-zbiorze.md)
+* Implementacja Python: [Znajdowanie lidera w zbiorze](../programowanie/python/algorytmy/wyszukiwanie/znajdowanie-lidera-w-zbiorze.md)
 
 ### Najdłuższy spójny podciąg rosnący (na maturze)
 
@@ -111,31 +111,31 @@
 
 * Opis algorytmu: [Wszystkie dzielniki](algorytmy-na-liczbach-calkowitych/wszystkie-dzielniki.md)
 * Implementacja C++: [Wszystkie dzielniki](../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/wszystkie-dzielniki.md)
-* Implementacja Python: [Wszystkie dzielniki](../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/wszystkie-dzielniki.md)
+* Implementacja Python: [Wszystkie dzielniki](../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/wszystkie-dzielniki.md)
 
 ### Test pierwszości (na maturze)
 
 * Opis algorytmu: [Test pierwszości](algorytmy-na-liczbach-calkowitych/test-pierwszosci.md)
 * Implementacja C++: [Test pierwszości](../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/test-pierwszosci.md)
-* Implementacja Python: [Test pierwszości](../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/test-pierwszosci.md)
+* Implementacja Python: [Test pierwszości](../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/test-pierwszosci.md)
 
 ### Test doskonałości (na maturze)
 
 * Opis algorytmu: [Test doskonałości](algorytmy-na-liczbach-calkowitych/test-doskonalosci.md)
 * Implementacja C++: [Test doskonałości](../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/test-doskonalosci.md)
-* Implementacja Python: [Test doskonałości](../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/test-doskonalosci.md)
+* Implementacja Python: [Test doskonałości](../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/test-doskonalosci.md)
 
 ### Rozkład liczby na czynniki pierwsze (na maturze)
 
 * Opis algorytmu: [Rozkład na czynniki pierwsze](algorytmy-na-liczbach-calkowitych/rozklad-na-czynniki-pierwsze.md)
 * Implementacja C++: [Rozkład na czynniki pierwsze](../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/rozklad-na-czynniki-pierwsze.md)
-* Implementacja Python: [Rozkład na czynniki pierwsze](../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/rozklad-na-czynniki-pierwsze.md)
+* Implementacja Python: [Rozkład na czynniki pierwsze](../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/rozklad-na-czynniki-pierwsze.md)
 
 ### Algorytm Euklidesa (na maturze)
 
 * Opis algorytmu: [Algorytm Euklidesa](algorytmy-na-liczbach-calkowitych/algorytm-euklidesa.md)
 * Implementacja C++: [NWD](../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/nwd.md)
-* Implementacja Python: [NWD](../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/nwd.md)
+* Implementacja Python: [NWD](broken-reference)
 * Implementacja Blockly: [NWD](../programowanie/blockly/algorytmy/algorytmy-na-liczbach-calkowitych/nwd.md)
 
 ### Binarne NWD
@@ -148,7 +148,7 @@
 
 * Opis algorytmu: [Liczby Fibonacciego](algorytmy-na-liczbach-calkowitych/liczby-fibonacciego.md)
 * Implementacja C++: [Liczby Fibonacciego](../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/liczby-fibbonacciego.md)
-* Implementacja Python: [Liczby Fibonacciego](../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/liczby-fibonacciego.md)
+* Implementacja Python: [Liczby Fibonacciego](broken-reference)
 
 ### Zachłanny i dynamiczny algorytm wydawania reszty (na maturze)
 
@@ -160,7 +160,7 @@
 
 * Opis algorytmu: [Sito Eratostenesa](algorytmy-na-liczbach-calkowitych/sito-eratostenesa.md)
 * Implementacja C++: [Sito Eratostenesa](../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/sito-eratostenesa.md)
-* Implementacja Python: [Sito Eratostenesa](../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/sito-eratostenesa.md)
+* Implementacja Python: [Sito Eratostenesa](../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/sito-eratostenesa.md)
 
 ## Metody numeryczne
 
