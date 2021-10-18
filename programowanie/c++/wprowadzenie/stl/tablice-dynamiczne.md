@@ -77,10 +77,10 @@ cout << "Size of the array is: " << array.size() << endl;
 array.push_back(55);
 ```
 
-### Usunięcie ostatniego elementu tablicy
+### Dodanie nowego elementu na początek tablicy (tylko deque)
 
 ```cpp
-array.pop_back();
+array.push_front(55);
 ```
 
 ### Usunięcie ostatniego elementu tablicy
@@ -89,10 +89,10 @@ array.pop_back();
 array.pop_back();
 ```
 
-### Usunięcie ostatniego elementu tablicy
+### Usunięcie pierwszego elementu tablicy (tylko deque)
 
 ```cpp
-array.pop_back();
+array.pop_front();
 ```
 
 ### Usunięcie elementu pod zadanym indeksem
