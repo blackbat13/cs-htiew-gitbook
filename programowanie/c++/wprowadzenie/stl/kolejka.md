@@ -7,7 +7,7 @@ Wykorzystywana jest w wielu algorytmach, nic dziwnego więc, że jej implementac
 
 ### Biblioteka
 
-Stos znajduje się w bibliotece `queue`.
+Kolejka znajduje się w bibliotece `queue`.
 
 ```cpp
 #include <queue>
