@@ -8,28 +8,35 @@
 
 ## Implementacja
 
-```python
-def is_perfect(n: int) -> bool:
-    sum = 0
-    
-    for i in range(1, n):
-        if n % i == 0:
-            sum += i
+```kotlin
+fun isPerfect(n: Int): Boolean {
+  var sum = 0
 
-    return sum == n
+  for (i in 1 until n) {
+    if (n % i == 0) {
+      sum += i
+    }
+  }
 
+  return sum == n
+}
 
-n = 6
+fun main() {
+  val n = 6
 
-if is_perfect(n):
-    print(f'{n} is a perfect number')
-else:
-    print(f'{n} is not a perfect number')
+  val result = isPerfect(n)
+
+  if (result) {
+    println("$n jest liczba doskonala")
+  } else {
+    println("$n nie jest liczba doskonala")
+  }
+}
 ```
 
 ### Link do implementacji
 
-{% embed url="https://ideone.com/4EALRV" %}
+{% embed url="https://ideone.com/FVvc2L" %}
 Test doskonałości
 {% endembed %}
 

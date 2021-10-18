@@ -10,21 +10,26 @@
 
 ### Implementacja
 
-```python
-def divisors(n: int):
-	for i in range(1, n + 1):
-		if n % i == 0:
-			print(i)
- 
- 
-n = 12
- 
-divisors(n)
+```kotlin
+fun printDivisors(n: Int) {
+  for (i in 1 until n + 1) {
+    if (n % i == 0) {
+      println(i)
+    }
+  }
+}
+
+fun main() {
+  val n = 12
+
+  println("Dzielniki liczby $n:")
+  printDivisors(n)
+}
 ```
 
 ### Link do implementacji
 
-{% embed url="https://ideone.com/bNjeR2" %}
+{% embed url="https://ideone.com/hfECmZ" %}
 Wszystkie dzielniki - podejście zupełnie naiwne
 {% endembed %}
 
@@ -36,24 +41,30 @@ TODO
 
 ### Implementacja
 
-```python
-def divisors(n: int):
-	for i in range(1, (n // 2) + 1):
-		if n % i == 0:
-			print(i)
- 
-	if n > 1:
-		print(n)
-		
-		
-n = 12
- 
-divisors(n)
+```kotlin
+fun printDivisors(n: Int) {
+  for (i in 1 until (n / 2) + 1) {
+    if (n % i == 0) {
+      println(i)
+    }
+  }
+
+  if (n > 1) {
+    println(n)
+  }
+}
+
+fun main() {
+  val n = 12
+
+  println("Dzielniki liczby $n:")
+  printDivisors(n)
+}
 ```
 
 ### Link do implementacji
 
-{% embed url="https://ideone.com/1ZKypb" %}
+{% embed url="https://ideone.com/iD7tJJ" %}
 Wszystkie dzielniki - podejście naiwne
 {% endembed %}
 
@@ -65,26 +76,33 @@ TODO
 
 ### Implementacja
 
-```python
-from math import sqrt, ceil
+```kotlin
+import kotlin.math.sqrt
 
 
-def divisors(n: int):
-	for i in range(1, ceil(sqrt(n))):
-		if n % i == 0:
-			print(i)
-			if i != (n // i):
-				print(n // i)
- 
- 
-n = 12
- 
-divisors(n)
+fun printDivisors(n: Int) {
+  for (i in 1 until sqrt(n.toDouble()).toInt() + 1) {
+    if (n % i == 0) {
+      println(i)
+
+      if (i != n / i) {
+        println(n / i)
+      }
+    }
+  }
+}
+
+fun main() {
+  val n = 12
+
+  println("Dzielniki liczby $n:")
+  printDivisors(n)
+}
 ```
 
 ### Link do implementacji
 
-{% embed url="https://ideone.com/jZpx7E" %}
+{% embed url="https://ideone.com/m5v9Hi" %}
 Wszystkie dzielniki - podejście optymalne
 {% endembed %}
 

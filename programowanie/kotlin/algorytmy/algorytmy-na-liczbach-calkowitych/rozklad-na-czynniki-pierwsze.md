@@ -8,29 +8,36 @@
 
 ## Implementacja
 
-```python
-def distribute(n: int) -> list:
-    prime_factors = []
-    i = 2
-    
-    while n > 1:
-        if n % i == 0:
-            prime_factors.append(i)
-            n /= i
-        else:
-            i += 1
+```kotlin
+fun distribute(num: Int): List<Int> {
+  var primeFactors: MutableList<Int> = mutableListOf()
+  var i = 2
+  var n = num
 
-    return prime_factors
+  while (n > 1) {
+    if (n % i == 0) {
+      primeFactors.add(i)
+      n /= i
+    } else {
+      i++
+    }
+  }
 
+  return primeFactors
+}
 
-n = 124
+fun main() {
+  val n = 124
 
-print(f"Prime factors of {n}: {distribute(n)}")
+  val result = distribute(n)
+
+  println("Czynniki pierwsze liczby $n: $result")
+}
 ```
 
 ### Link do implementacji
 
-{% embed url="https://ideone.com/Kpj2pe" %}
+{% embed url="https://ideone.com/VAB2Jl" %}
 Rozkład na czynniki pierwsze
 {% endembed %}
 

@@ -8,39 +8,48 @@
 
 ## Implementacja
 
-```python
-def sieve(n: int) -> list:
-    primes = [False, False]
-    
-    for i in range(2, n + 1):
-        primes.append(True)
+```kotlin
+fun sieve(n: Int): List<Boolean> {
+  var primes = mutableListOf(false, false)
 
-    for i in range(2, n):
-        if not primes[i]:
-            continue
+  for (i in 2 until n + 1) {
+    primes.add(true)
+  }
 
-        for j in range(2 * i, n + 1, i):
-            primes[j] = False
+  for (i in 2 until n) {
+    if (!primes[i]) {
+      continue
+    }
 
-    return primes
+    for (j in 2 * i until n + 1 step i) {
+      primes[j] = false
+    }
+  }
 
+  return primes
+}
 
-def print_prime_numbers(primes: list) -> None:
-    for i in range(0, len(primes)):
-        if primes[i]:
-            print(i)
+fun printPrimeNumbers(primes: List<Boolean>) {
+  for (i in 0 until primes.count()) {
+    if (primes[i]) {
+      println(i)
+    }
+  }
+}
 
+fun main() {
+  val n = 100
 
-n = 100
+  val primes = sieve(n)
 
-primes = sieve(n)
-
-print_prime_numbers(primes)
+  println("Liczby pierwsze od 1 do $n:")
+  printPrimeNumbers(primes)
+}
 ```
 
 ### Link do implementacji
 
-{% embed url="https://ideone.com/uQ3J6y" %}
+{% embed url="https://ideone.com/GUPgH6" %}
 Sito Eratostenesa
 {% endembed %}
 

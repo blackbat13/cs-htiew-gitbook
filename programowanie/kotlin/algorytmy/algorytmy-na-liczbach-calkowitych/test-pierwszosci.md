@@ -8,34 +8,40 @@
 
 ## Implementacja
 
-```python
-import math
+```kotlin
+import kotlin.math.sqrt
 
 
-def is_prime(n: int) -> bool:
-    if n < 2:
-        return False
+fun isPrime(n: Int): Boolean {
+  if (n < 2) {
+    return false
+  }
 
-    sqrt_n = int(math.sqrt(n))
-    
-    for i in range(2, sqrt_n + 1):
-        if n % i == 0:
-            return False
+  for (i in 2 until sqrt(n.toDouble()).toInt() + 1) {
+    if (n % i == 0) {
+      return false
+    }
+  }
 
-    return True
+  return true
+}
 
+fun main() {
+  val n = 7
 
-n = 7
+  val result = isPrime(n)
 
-if is_prime(n):
-    print(f"{n} is a prime number")
-else:
-    print(f"{n} is not a prime number")
+  if (result) {
+    println("$n jest liczba pierwsza")
+  } else {
+    println("$n nie jest liczba pierwsza")
+  }
+}
 ```
 
 ### Link do implementacji
 
-{% embed url="https://ideone.com/PgfLBw" %}
+{% embed url="https://ideone.com/eVaqy4" %}
 Test pierwszości
 {% endembed %}
 
