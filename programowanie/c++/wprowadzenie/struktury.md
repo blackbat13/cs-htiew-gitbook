@@ -1,39 +1,47 @@
 # Struktury
 
-## Przykład 1 - punkt
+## Wstęp
+
+Z czasem, gdy zaczynamy tworzyć coraz bardziej zaawansowane projekty programistyczne, zaczyna się okazywać, że podstawowe typy przestają wystarczać.
+Nasz kod staje się coraz mniej czytelny i coraz trudniej się w nim zorientować, ponieważ mamy grupy zmiennych, które dotyczą tak naprawdę jednego "obiektu".
+Dla przykładu wyobraźmy sobie, że piszemy program, który wykonuje obliczenia geometryczne i pracuje na punktach.
+Każdy punkt jest reprezentowany przez dwie współrzędne: $$x$$ i $$y$$.
+Potrzebujemy więc dwóch zmiennych do reprezentacji każdego punktu.
+To już samo w sobie może okazać się problematyczne, w szczególności, gdy będziemy potrzebowali tablicy takich punktów.
+Co wtedy zrobić? Stworzyć dwie tablice, jedną do współrzędnych $$x$$, drugą do współrzędnych $$y$$ i na nich pracować?
+Trzeba wtedy pamiętać o tym, że wartości z dwóch tablic są ze sobą powiązane, więc jak np. chcemy zmienić ich kolejność, to powinniśmy to zrobić w dwóch tablicach.
+Możemy też skorzystać z pary (_pair_) z STL, ale to także nie jest idealne rozwiązanie.
+
+W takiej sytuacji z pomocą przychodzą **struktury**.
+Struktury (w dużym skrócie) pozwalają nam definiować własne typy i przydają się przede wszystkim w sytuacjach, gdy potrzebujemy połączyć grupę wartości w jedną, logiczną całość.
+Przyjrzyjmy się poniższym przykładom.
+
+## Przykład 1: punkt 2D
+
+Zacznijmy od prostego przykładu punktu. 
+Zdefiniujemy strukturę _Point_, która będzie przechowywać dwie wartości całkowite: współrzędne punktu.
+
+### Implementacja
 
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-// Basic structure, containing only two elements of type int
-// We use the word "struct" to define structure
-// After the word struct we write the name of our structure
-// By default we should begin names of structures with upper case
 struct Point {
     int x;
     int y;
 };
 
 int main() {
-    // After creating the structure we can use it as a new type for our variables
-    // Now we create variable named "point" of type Point
     Point point;
 
-    // We assign new value to our point variable
-    // We assign values to the corresponding fields of the Point structure
-    // 5 is assigned to the first field in the structure - x
-    // 3 is assigned to the second field in the structure - y
     cout << "Creating new point with x = 5 and y = 3" << endl;
     point = {5, 3};
 
-    // To access the field from our variable of type Point we write: variable_name.field_name
-    // For example to access the field x: point.x
     cout << "Point x: " << point.x << endl;
     cout << "Point y: " << point.y << endl;
 
-    // We can also assign new values to fields this way
     cout << endl << "Assigning new values to the point variable" << endl;
     point.x = 20;
     point.y = 13;
@@ -44,7 +52,37 @@ int main() {
 }
 ```
 
-## Przykład 2 - punkt 3D
+### Link do implementacji
+
+{% embed url="https://ideone.com/YOfvJ9" %}
+Struktura Point
+{% endembed %}
+
+### Opis implementacji
+
+Zaczynamy od zdefiniowania własnej struktury _Point_ (**linia 5**).
+Definicję struktury zaczynamy od słowa kluczowego _struct_, następnie podajemy jej nazwę i otwieramy blok kodu.
+
+W ciele struktury definiujemy dwie zmienne całkowite do przechowywania współrzędnych punktu: _x_ (**linia 6**) oraz _y_ (**linia 7**).
+Dla czytelności robimy to w dwóch osobnych liniach, nic nie stoi jednak na przeszkodzie, by zdefiniować obie zmienne jedna po drugiej, po przecinku.
+
+W części głównej programu na samym początku tworzymy zmienną _point_ korzystając z wcześniej zdefiniowanego nowego typu _Point_ (**linia 10**).
+
+W celu przypisania wartości do naszej zmiennej możemy postąpić na dwa sposoby:
+* Korzystając z notacji nawiasów klamrowych, podać wartości kolejnych zmiennych po przecinku (**linia 13**),
+* Przypisać wartości do każdej zmiennej osobno (**linie 19 i 20**).
+
+Aby dostać się do elementów naszej zmiennej typu _Point_ używamy zapisu z kropką, np. _point.x_.
+Gdyby nasza zmienna _point_ była wskaźnikiem, zamiast kropki użylibyśmy strzałki: _point->x_.
+
+## Przykład 2: punkt 3D
+
+Rozbudujmy poprzedni przykład i stwórzmy strukturę do reprezentacji punktu w przestrzeni 3D.
+Tym razem, zamiast wartości całkowitych, użyjemy wartości rzeczywistych.
+Dodatkowo, aby ułatwić sobie życie, dopiszemy metodę do wypisywania informacji na temat punktu do konsoli.
+Tak, do struktur możemy także dopisywać **metody**: funkcje przypisane do struktury, które mogą korzystać z jej wartości.
+
+### Implementacja
 
 ```cpp
 #include <iostream>
@@ -79,7 +117,7 @@ int main() {
 }
 ```
 
-## Przykład 3 - prostokąt
+## Przykład 3: prostokąt
 
 ```cpp
 #include <iostream>
