@@ -1,10 +1,27 @@
-# kolejka
+# Kolejka
 
 ## Opis
 
-TODO
+Kolejka to jedna z klasycznych struktur danych. 
+Wykorzystywana jest w wielu algorytmach, nic dziwnego więc, że jej implementacja znajduje się także w STL.
 
-## Implementacja - przykłady
+### Biblioteka
+
+Stos znajduje się w bibliotece `queue`.
+
+```cpp
+#include <queue>
+```
+
+### Dokumentacja
+
+{% embed url="https://www.cplusplus.com/reference/queue/queue/" %}
+Queue Reference
+{% endembed %}
+
+## Implementacja: przykłady
+
+Kilka przykładów pokazujących, jak korzystać z klasy `stack`.
 
 ### Utworzenie pustej kolejki
 
@@ -116,4 +133,24 @@ int main() {
 
 {% embed url="https://ideone.com/xR1i8c" %}
 queue - przykłady
+{% endembed %}
+
+## Kolejka priorytetowa
+
+Poza standardową kolejką w STL znajdziemy także kolejkę priorytetową.
+Korzystamy z niej praktycznie tak samo jak ze zwykłej kolejki.
+Różnica oczywiście tkwi w kolejności elementów pobieranych z kolejki, a także w nazwie klasy.
+
+### Biblioteka
+
+Aby korzystać z kolejki priorytetowej potrzebujemy biblioteki `priority_queue`.
+
+```cpp
+#include <priority_queue>
+```
+
+### Dokumentacja
+
+{% embed url="https://www.cplusplus.com/reference/queue/priority_queue/" %}
+Priority Queue Reference
 {% endembed %}

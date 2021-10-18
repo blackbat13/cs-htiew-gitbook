@@ -10,7 +10,7 @@ Potrzebujemy więc dwóch zmiennych do reprezentacji każdego punktu.
 To już samo w sobie może okazać się problematyczne, w szczególności, gdy będziemy potrzebowali tablicy takich punktów.
 Co wtedy zrobić? Stworzyć dwie tablice, jedną do współrzędnych $$x$$, drugą do współrzędnych $$y$$ i na nich pracować?
 Trzeba wtedy pamiętać o tym, że wartości z dwóch tablic są ze sobą powiązane, więc jak np. chcemy zmienić ich kolejność, to powinniśmy to zrobić w dwóch tablicach.
-Możemy też skorzystać z pary (_pair_) z STL, ale to także nie jest idealne rozwiązanie.
+Możemy też skorzystać z pary (`pair`) z STL, ale to także nie jest idealne rozwiązanie.
 
 W takiej sytuacji z pomocą przychodzą **struktury**.
 Struktury (w dużym skrócie) pozwalają nam definiować własne typy i przydają się przede wszystkim w sytuacjach, gdy potrzebujemy połączyć grupę wartości w jedną, logiczną całość.
@@ -19,7 +19,7 @@ Przyjrzyjmy się poniższym przykładom.
 ## Przykład 1: punkt 2D
 
 Zacznijmy od prostego przykładu punktu. 
-Zdefiniujemy strukturę _Point_, która będzie przechowywać dwie wartości całkowite: współrzędne punktu.
+Zdefiniujemy strukturę `Point`, która będzie przechowywać dwie wartości całkowite: współrzędne punktu.
 
 ### Implementacja
 
@@ -60,10 +60,10 @@ Struktura Point
 
 ### Opis implementacji
 
-Zaczynamy od zdefiniowania własnej struktury _Point_ (**linia 5**).
-Definicję struktury zaczynamy od słowa kluczowego _struct_, następnie podajemy jej nazwę i otwieramy blok kodu.
+Zaczynamy od zdefiniowania własnej struktury `Point` (**linia 5**).
+Definicję struktury zaczynamy od słowa kluczowego `struct`, następnie podajemy jej nazwę i otwieramy blok kodu.
 
-W ciele struktury definiujemy dwie zmienne całkowite do przechowywania współrzędnych punktu: _x_ (**linia 6**) oraz _y_ (**linia 7**).
+W ciele struktury definiujemy dwie zmienne całkowite do przechowywania współrzędnych punktu: `x` (**linia 6**) oraz `y` (**linia 7**).
 Dla czytelności robimy to w dwóch osobnych liniach, nic nie stoi jednak na przeszkodzie, by zdefiniować obie zmienne jedna po drugiej, po przecinku.
 
 W części głównej programu na samym początku tworzymy zmienną _point_ korzystając z wcześniej zdefiniowanego nowego typu _Point_ (**linia 10**).
@@ -72,8 +72,8 @@ W celu przypisania wartości do naszej zmiennej możemy postąpić na dwa sposob
 * Korzystając z notacji nawiasów klamrowych, podać wartości kolejnych zmiennych po przecinku (**linia 13**),
 * Przypisać wartości do każdej zmiennej osobno (**linie 19 i 20**).
 
-Aby dostać się do elementów naszej zmiennej typu _Point_ używamy zapisu z kropką, np. _point.x_.
-Gdyby nasza zmienna _point_ była wskaźnikiem, zamiast kropki użylibyśmy strzałki: _point->x_.
+Aby dostać się do elementów naszej zmiennej typu `Point` używamy zapisu z kropką, np. `point.x`.
+Gdyby nasza zmienna `point` była wskaźnikiem, zamiast kropki użylibyśmy strzałki: `point->x`.
 
 ## Przykład 2: punkt 3D
 

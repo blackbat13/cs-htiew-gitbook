@@ -1,10 +1,27 @@
-# stos
+# Stos
 
 ## Opis
 
-TODO
+Stos to jedna z klasycznych struktur danych. 
+Wykorzystywana jest w wielu algorytmach, nic dziwnego więc, że jej implementacja znajduje się także w STL.
 
-## Implementacja - przykłady
+### Biblioteka
+
+Stos znajduje się w bibliotece `stack`.
+
+```cpp
+#include <stack>
+```
+
+### Dokumentacja
+
+{% embed url="https://www.cplusplus.com/reference/stack/stack/" %}
+Stack Reference
+{% endembed %}
+
+## Implementacja: przykłady
+
+Kilka przykładów pokazujących, jak korzystać z klasy `stack`.
 
 ### Utworzenie pustego stosu
 

@@ -19,7 +19,21 @@ Do klasy `vector` potrzebujemy biblioteki `vector`, a do klasy `deque` potrzebuj
 using namespace std;
 ```
 
-## Implementacja - przykłady
+### Dokumentacja
+
+#### Vector
+
+{% embed url="https://www.cplusplus.com/reference/vector/vector/" %}
+Vector Reference
+{% endembed %}
+
+#### Deque
+
+{% embed url="https://www.cplusplus.com/reference/deque/deque/" %}
+Deque Reference
+{% endembed %}
+
+## Implementacja: przykłady
 
 ### Utworzenie pustej tablicy
 
