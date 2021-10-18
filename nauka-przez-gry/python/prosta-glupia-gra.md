@@ -32,7 +32,7 @@ Jest to jednak idealna gra na początek. Przejdźmy więc do działania!
 
 ### Tworzymy nowy plik
 
-TODO - filmik
+Klikamy prawym przyciskiem myszy na główny katalog naszej gry, następnie wybieramy **New->Python file**. Nazwijmy nasz plik *naiwna_gra*.
 
 ### Wczytujemy liczbę od gracza
 
@@ -123,12 +123,3 @@ print("Wygrałem!")
 ### Uruchamiamy grę
 
 {% embed url="https://replit.com/@damiankurpiewski/NaiwnaGra" %}
-
-TODO - filmik
-
-## Zadania dodatkowe
-
-TODO
-
-
-

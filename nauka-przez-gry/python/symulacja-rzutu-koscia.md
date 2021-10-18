@@ -69,8 +69,6 @@ print("Kości zostały rzucone. Wynik to:", wynik)
 
 {% embed url="https://replit.com/@damiankurpiewski/Kosci1" %}
 
-TODO - filmik
-
 ## Wielokrotny rzut
 
 Wiemy już jak symulować pojedynczy rzut kością. Czasem jednak potrzebujemy rzucić kilkoma kośćmi naraz, np. dwiema. Możemy oczywiście wielokrotnie uruchomić powyższy program, ale nie jest to zbyt wygodne. Zmodyfikujmy go więc tak, byśmy mogli podać, ile rzutów kością ma zostać wykonanych.
@@ -143,8 +141,6 @@ for i in range(ile_razy):
 ### Testujemy działanie
 
 {% embed url="https://replit.com/@damiankurpiewski/Kosci2" %}
-
-TODO - filmik
 
 ## Wielokrotny rzut ze zliczaniem
 
@@ -232,8 +228,6 @@ print("Szóstka wypadła", szostki, "razy")
 ### Testujemy działanie
 
 {% embed url="https://replit.com/@damiankurpiewski/Kosci3" %}
-
-TODO - filmik
 
 {% hint style="info" %}
 Spróbuj uruchomić program kilka razy, aby zobaczyć, ile szóstek uda Ci się wylosować!
