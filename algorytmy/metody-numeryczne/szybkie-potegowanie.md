@@ -8,7 +8,7 @@ $$
 x^4=x*x*x*x
 $$
 
-Jak widać w powyższym przykładzie, aby podnieść $$x$$ do potęgi 4, musimy wykonać **3 mnożenia**. 
+Jak widać w powyższym przykładzie, aby podnieść $$x$$ do potęgi 4, musimy wykonać **3 mnożenia**.&#x20;
 
 Zauważmy jednak, że pewne obliczenia będziemy wykonywać wielokrotnie:
 
@@ -49,7 +49,7 @@ $$
 
 #### Wynik:
 
-* $$x^n$$ 
+* $$x^n$$&#x20;
 
 ## Rozwiązanie iteracyjne
 
@@ -122,6 +122,6 @@ $$O(\log{n})$$ - logarytmiczna
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/metody-numeryczne/szybkie-potegowanie.md" %}
-[szybkie-potegowanie.md](../../programowanie/kotlin/algorytmy/metody-numeryczne/szybkie-potegowanie.md)
+{% content-ref url="../../programowanie/python/algorytmy/metody-numeryczne/szybkie-potegowanie.md" %}
+[szybkie-potegowanie.md](../../programowanie/python/algorytmy/metody-numeryczne/szybkie-potegowanie.md)
 {% endcontent-ref %}

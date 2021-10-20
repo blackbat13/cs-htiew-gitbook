@@ -13,7 +13,7 @@ TODO
 
 #### Wynik:
 
-* Posortowana niemalejąco tablica $$A$$ 
+* Posortowana niemalejąco tablica $$A$$&#x20;
 
 ### Przykład
 
@@ -70,6 +70,6 @@ $$O(n^2)$$  - kwadratowa
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/sortowanie/sortowanie-babelkowe.md" %}
-[sortowanie-babelkowe.md](../../programowanie/kotlin/algorytmy/sortowanie/sortowanie-babelkowe.md)
+{% content-ref url="../../programowanie/python/algorytmy/sortowanie/sortowanie-babelkowe.md" %}
+[sortowanie-babelkowe.md](../../programowanie/python/algorytmy/sortowanie/sortowanie-babelkowe.md)
 {% endcontent-ref %}

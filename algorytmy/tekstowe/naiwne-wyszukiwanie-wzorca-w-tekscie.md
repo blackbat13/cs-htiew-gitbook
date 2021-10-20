@@ -6,16 +6,16 @@ Problem znalezienia jednego tekstu w drugim to problem, z którym mamy do czynie
 
 Jak niemalże każdy problem (informatyczny), także ten możne zostać rozwiązany w sposób naiwny i takim właśnie rozwiązaniem początkowo się zajmiemy.
 
-Problem wygląda następująco: dostajemy dwa teksty, nazwijmy je _tekst_ oraz _wzorzec_, a naszym (algorytmu) zadaniem jest sprawdzenie, czy _wzorzec_ zawiera się w _tekście_. 
+Problem wygląda następująco: dostajemy dwa teksty, nazwijmy je _tekst_ oraz _wzorzec_, a naszym (algorytmu) zadaniem jest sprawdzenie, czy _wzorzec_ zawiera się w _tekście_.&#x20;
 
 ### Specyfikacja
 
 #### Dane:
 
-* $$n$$ - długość tekstu, $$n\in\mathbb{N}, n\geq1$$ 
-* $$tekst[1..n]$$ - ciąg znaków o długości $$n$$, numerowanych od jedynki 
+* $$n$$ - długość tekstu, $$n\in\mathbb{N}, n\geq1$$&#x20;
+* $$tekst[1..n]$$ - ciąg znaków o długości $$n$$, numerowanych od jedynki&#x20;
 * $$m$$ - długość wzorca,  $$m\in\mathbb{N}, 1\leq m\leq n$$
-* $$wzorzec[1..m]$$ - ciąg znaków o długości $$m$$, numerowanych od jedynki 
+* $$wzorzec[1..m]$$ - ciąg znaków o długości $$m$$, numerowanych od jedynki&#x20;
 
 #### Wynik:
 
@@ -84,6 +84,6 @@ $$O(n*m)\to O(n^2)$$ - kwadratowa
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/tekstowe/naiwne-wyszukiwanie-wzorca-w-tekscie.md" %}
-[naiwne-wyszukiwanie-wzorca-w-tekscie.md](../../programowanie/kotlin/algorytmy/tekstowe/naiwne-wyszukiwanie-wzorca-w-tekscie.md)
+{% content-ref url="../../programowanie/python/algorytmy/tekstowe/naiwne-wyszukiwanie-wzorca-w-tekscie.md" %}
+[naiwne-wyszukiwanie-wzorca-w-tekscie.md](../../programowanie/python/algorytmy/tekstowe/naiwne-wyszukiwanie-wzorca-w-tekscie.md)
 {% endcontent-ref %}

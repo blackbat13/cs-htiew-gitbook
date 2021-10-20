@@ -31,7 +31,7 @@ tekst1 := "markotny"
 tekst2 := "romantyk"
 ```
 
-**Wynik**: $$True$$ 
+**Wynik**: $$True$$&#x20;
 
 ## Rozwiązanie 1
 
@@ -80,7 +80,7 @@ funkcja TestujAnagramy(n, tekst1, tekst2):
 
 $$O(n)$$ - liniowa, jeżeli wykorzystamy optymalny algorytm sortowania (np. sortowanie przez zliczanie).
 
-$$O(n\log{n})$$ - liniowo logarytmiczna, jeżeli użyjemy standardowej metody sortowania (np. sortowanie szybkie). 
+$$O(n\log{n})$$ - liniowo logarytmiczna, jeżeli użyjemy standardowej metody sortowania (np. sortowanie szybkie).&#x20;
 
 ## Implementacja
 
@@ -92,7 +92,7 @@ $$O(n\log{n})$$ - liniowo logarytmiczna, jeżeli użyjemy standardowej metody so
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/tekstowe/anagramy.md" %}
-[anagramy.md](../../programowanie/kotlin/algorytmy/tekstowe/anagramy.md)
+{% content-ref url="../../programowanie/python/algorytmy/tekstowe/anagramy.md" %}
+[anagramy.md](../../programowanie/python/algorytmy/tekstowe/anagramy.md)
 {% endcontent-ref %}
 

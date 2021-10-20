@@ -10,11 +10,11 @@ TODO
 
 * $$n$$ - liczba naturalna, ilość elementów w tablicy
 * $$m$$ - największa liczba w tablicy wyznaczająca zakres elementów
-* $$A[1..n]$$ - tablica $$n$$ wartości całkowitych z przedziału $$[1,m]$$ 
+* $$A[1..n]$$ - tablica $$n$$ wartości całkowitych z przedziału $$[1,m]$$&#x20;
 
 #### Wynik:
 
-* Posortowana niemalejąco tablica $$A$$ 
+* Posortowana niemalejąco tablica $$A$$&#x20;
 
 ### Przykład
 
@@ -53,8 +53,8 @@ $$O(n+m)$$ - liniowa
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/sortowanie/sortowanie-przez-zliczanie.md" %}
-[sortowanie-przez-zliczanie.md](../../programowanie/kotlin/algorytmy/sortowanie/sortowanie-przez-zliczanie.md)
+{% content-ref url="../../programowanie/python/algorytmy/sortowanie/sortowanie-przez-zliczanie.md" %}
+[sortowanie-przez-zliczanie.md](../../programowanie/python/algorytmy/sortowanie/sortowanie-przez-zliczanie.md)
 {% endcontent-ref %}
 
 ### Blockly

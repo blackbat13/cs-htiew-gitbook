@@ -91,11 +91,11 @@ Napisz program zgodny z poniższą specyfikacją. W implementacji wykorzystaj ta
 
 Wszystkie wartości są liczbami całkowitymi mieszczącymi się w typie `int`.
 
-* **DODAJ $$x$$** - dopisz wartość $$x$$ na koniec tablicy
+* **DODAJ **$$x$$ - dopisz wartość $$x$$ na koniec tablicy
 * **USUN** - usuń ostatni element z tablicy
-* **WSTAW $$x$$ NA $$i$$** - wstaw wartość $$x$$ na pozycję $$i$$ (numerowane od $$0$$)
-* **SORTUJ $$i$$ $$j$$** - posortuj tablicę rosnąco od elementu pod indeksem $$i$$ do elementu pod indeksem $$j$$ włącznie
-* **WYPISZ $$i$$** - wypisz wartość zapisaną pod indeksem $$i$$
+* **WSTAW **$$x$$** NA **$$i$$ - wstaw wartość $$x$$ na pozycję $$i$$ (numerowane od $$0$$)
+* **SORTUJ **$$i$$** **$$j$$ - posortuj tablicę rosnąco od elementu pod indeksem $$i$$ do elementu pod indeksem $$j$$ włącznie
+* **WYPISZ **$$i$$ - wypisz wartość zapisaną pod indeksem $$i$$
 * **KONIEC** - zakończ obliczenia (instrukcja ta występuje tylko raz, na samym końcu ciągu instrukcji)
 
 ### Przykład 1

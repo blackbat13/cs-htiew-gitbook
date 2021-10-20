@@ -34,6 +34,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/metody-numeryczne/metoda-monte-carlo.md" %}
-[metoda-monte-carlo.md](../../programowanie/kotlin/algorytmy/metody-numeryczne/metoda-monte-carlo.md)
+{% content-ref url="../../programowanie/python/algorytmy/metody-numeryczne/metoda-monte-carlo.md" %}
+[metoda-monte-carlo.md](../../programowanie/python/algorytmy/metody-numeryczne/metoda-monte-carlo.md)
 {% endcontent-ref %}

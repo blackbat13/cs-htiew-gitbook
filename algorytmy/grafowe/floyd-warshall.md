@@ -38,6 +38,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/grafy/floyd-warshall.md" %}
-[floyd-warshall.md](../../programowanie/kotlin/algorytmy/grafy/floyd-warshall.md)
+{% content-ref url="../../programowanie/python/algorytmy/grafy/floyd-warshall.md" %}
+[floyd-warshall.md](../../programowanie/python/algorytmy/grafy/floyd-warshall.md)
 {% endcontent-ref %}

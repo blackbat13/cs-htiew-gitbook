@@ -17,7 +17,7 @@ TODO
 
 #### Wynik
 
-* Posortowana niemalejąco tablica $$A$$ 
+* Posortowana niemalejąco tablica $$A$$&#x20;
 
 ### Przykład
 
@@ -72,8 +72,8 @@ $$O(n^2)$$ - kwadratowa
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/sortowanie/sortowanie-przez-wybieranie.md" %}
-[sortowanie-przez-wybieranie.md](../../programowanie/kotlin/algorytmy/sortowanie/sortowanie-przez-wybieranie.md)
+{% content-ref url="../../programowanie/python/algorytmy/sortowanie/sortowanie-przez-wybieranie.md" %}
+[sortowanie-przez-wybieranie.md](../../programowanie/python/algorytmy/sortowanie/sortowanie-przez-wybieranie.md)
 {% endcontent-ref %}
 
 ### Blockly

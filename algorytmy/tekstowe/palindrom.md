@@ -17,7 +17,7 @@ TODO
 #### Dane:
 
 * $$n$$ - długość tekstu
-* $$tekst[1..n]$$ - ciąg znaków o długości $$n$$, numerowanych od jedynki 
+* $$tekst[1..n]$$ - ciąg znaków o długości $$n$$, numerowanych od jedynki&#x20;
 
 #### Wynik:
 
@@ -33,7 +33,7 @@ n := 5
 tekst := "kajak"
 ```
 
-#### Wynik: $$True$$ 
+#### Wynik: $$True$$&#x20;
 
 {% hint style="info" %}
 **Wyjaśnienie**
@@ -50,7 +50,7 @@ n := 4
 tekst := "tama"
 ```
 
-**Wynik**: $$False$$ 
+**Wynik**: $$False$$&#x20;
 
 {% hint style="info" %}
 **Wyjaśnienie**
@@ -75,7 +75,7 @@ funkcja czyPalindrom(n, tekst):
 
 ### Złożoność
 
-$$O(n/2)\to O(n)$$ - liniowa 
+$$O(n/2)\to O(n)$$ - liniowa&#x20;
 
 ## Implementacja
 
@@ -87,7 +87,7 @@ $$O(n/2)\to O(n)$$ - liniowa
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/tekstowe/palindrom.md" %}
-[palindrom.md](../../programowanie/kotlin/algorytmy/tekstowe/palindrom.md)
+{% content-ref url="../../programowanie/python/algorytmy/tekstowe/palindrom.md" %}
+[palindrom.md](../../programowanie/python/algorytmy/tekstowe/palindrom.md)
 {% endcontent-ref %}
 

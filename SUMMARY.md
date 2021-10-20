@@ -637,6 +637,11 @@
 * [Wireshark](sieci-komputerowe/wireshark/README.md)
   * [Połączenia HTTPS](sieci-komputerowe/wireshark/polaczenia-https.md)
 
+## Linux
+
+* [Wprowadzenie do systemu Linux](linux/wprowadzenie-do-systemu-linux.md)
+* [Prawa dostępu](linux/prawa-dostepu.md)
+
 ## E-głosowanie
 
 * [Wstęp](e-glosowanie/wstep.md)
@@ -649,7 +654,6 @@
 * [Fake news i postprawda](inne-tematy/fake-news-i-postprawda.md)
 * [Typowe problemy z komputerem](inne-tematy/typowe-problemy-z-komputerem.md)
 * [Zasady tworzenia prezentacji](inne-tematy/zasady-tworzenia-prezentacji.md)
-* [Wprowadzenie do systemu Linux](inne-tematy/wprowadzenie-do-systemu-linux.md)
 * [Programowanie funkcyjne - wprowadzenie](inne-tematy/programowanie-funkcyjne-wprowadzenie.md)
 
 ## Matura z informatyki

@@ -17,7 +17,7 @@ TODO
 
 #### Wynik:
 
-* Posortowana niemalejąco tablica $$A$$ 
+* Posortowana niemalejąco tablica $$A$$&#x20;
 
 ### Przykład
 
@@ -54,6 +54,6 @@ $$O(n\log{n})$$ - liniowo logarytmiczna
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/sortowanie/sortowanie-przez-kopcowanie.md" %}
-[sortowanie-przez-kopcowanie.md](../../programowanie/kotlin/algorytmy/sortowanie/sortowanie-przez-kopcowanie.md)
+{% content-ref url="../../programowanie/python/algorytmy/sortowanie/sortowanie-przez-kopcowanie.md" %}
+[sortowanie-przez-kopcowanie.md](../../programowanie/python/algorytmy/sortowanie/sortowanie-przez-kopcowanie.md)
 {% endcontent-ref %}

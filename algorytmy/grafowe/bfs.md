@@ -34,6 +34,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/grafy/bfs.md" %}
-[bfs.md](../../programowanie/kotlin/algorytmy/grafy/bfs.md)
+{% content-ref url="../../programowanie/python/algorytmy/grafy/bfs.md" %}
+[bfs.md](../../programowanie/python/algorytmy/grafy/bfs.md)
 {% endcontent-ref %}

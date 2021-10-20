@@ -9,7 +9,7 @@ TODO
 #### Dane
 
 * $$n$$ - liczba naturalna, ilość dostępnych nominałów
-* $$nom[1..n]$$ - tablica dostępnych nominałów (liczb całkowitych) o rozmiarze $$n$$ 
+* $$nom[1..n]$$ - tablica dostępnych nominałów (liczb całkowitych) o rozmiarze $$n$$&#x20;
 * $$kw$$ - liczba naturalna, kwota do wydania
 
 #### Wynik
@@ -84,6 +84,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/zachlanne-wydawanie-reszty.md" %}
-[zachlanne-wydawanie-reszty.md](../../programowanie/kotlin/algorytmy/algorytmy-na-liczbach-calkowitych/zachlanne-wydawanie-reszty.md)
+{% content-ref url="../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/zachlanne-wydawanie-reszty.md" %}
+[zachlanne-wydawanie-reszty.md](../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/zachlanne-wydawanie-reszty.md)
 {% endcontent-ref %}

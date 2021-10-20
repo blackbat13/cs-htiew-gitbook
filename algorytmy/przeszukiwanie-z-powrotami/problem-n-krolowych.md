@@ -18,6 +18,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/inne/problem-n-krolowych.md" %}
-[problem-n-krolowych.md](../../programowanie/kotlin/algorytmy/inne/problem-n-krolowych.md)
+{% content-ref url="../../programowanie/python/algorytmy/inne/problem-n-krolowych.md" %}
+[problem-n-krolowych.md](../../programowanie/python/algorytmy/inne/problem-n-krolowych.md)
 {% endcontent-ref %}
