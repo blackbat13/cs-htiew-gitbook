@@ -2,13 +2,13 @@
 
 ## Znaki specjalne
 
-* `\n` - znak nowej linii
-* `\t` - tabulacja pozioma
+* &#x20;\- znak nowej linii
+* &#x20;\- tabulacja pozioma
 * `\v` - tabulacja pionowa
 * `\b` - backspace
 * `\a` - alarm
 * `\\` - backslash
-* `\?` - znak 
+* `\?` - znak
 * `` \` `` - apostrof
 * `\"` - cudzysłów
 
