@@ -4,11 +4,11 @@ Programowanie to sztuka. Programista jest niczym artysta, który bierze puste p�
 
 Zanim zaczniemy przygodę z programowaniem, przyjrzyjmy się dostępnym "narzędziom", tzn. **językom programowania**. Oczywiście nie omówimy wszystkich, nie miałoby to większego sensu. Skupimy się na pewnych _klasykach_.
 
-Poszczególne języki porównamy ze sobą, przyglądając się implementacji prostego programu: **symulatora rzutu monetą**. Nie będziemy tutaj skupiać się na dokładnym omówieniu implementacji i poszczególnych instrukcji. Celem jest spojrzenie na różne języki z_ lotu ptaka_.
+Poszczególne języki porównamy ze sobą, przyglądając się implementacji prostego programu: **symulatora rzutu monetą**. Nie będziemy tutaj skupiać się na dokładnym omówieniu implementacji i poszczególnych instrukcji. Celem jest spojrzenie na różne języki z _lotu ptaka_.
 
 Idea działania programu jest prosta. Na początku losujemy liczbę całkowitą: **0** lub **1**, ma to symulować nasz rzut monetą. Następnie, w zależności od wylosowanej wartości, wypisujemy stosowny komunikat na ekran. Jeżeli wylosowaliśmy **0**, to znaczy, że wypadł **Orzeł**. W przeciwnym przypadku (tzn., gdy wylosowaliśmy **1**) wypadła **Reszka**.
 
-Zachęcamy do przetestowania poniższych programów. Pod każdą implementacją znajduje się link do tejże implementacji na serwisie _Ideone_. Tam można uruchomić dany program, co najlepiej zrobić kilkukrotnie by zobaczyć, jakie wartości (**Orzeł **czy **Reszka**) będą drukowane na ekranie.
+Zachęcamy do przetestowania poniższych programów. Pod każdą implementacją znajduje się link do tejże implementacji na serwisie _Ideone_. Tam można uruchomić dany program, co najlepiej zrobić kilkukrotnie by zobaczyć, jakie wartości (**Orzeł** czy **Reszka**) będą drukowane na ekranie.
 
 ## Python 3
 
