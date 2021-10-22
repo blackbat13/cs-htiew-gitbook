@@ -2,7 +2,7 @@
 
 ## Treść zadania
 
-Napisz program zgodny z poniższą specyfikacją.&#x20;
+Napisz program zgodny z poniższą specyfikacją.
 
 ### Specyfikacja
 
@@ -10,10 +10,11 @@ Napisz program zgodny z poniższą specyfikacją.&#x20;
 
 * $$n$$ - liczba naturalna
 * $$a_1,a_2,\dots,a_n$$ - $$n$$ liczb całkowitych
+* $$k$$ - liczba naturalna, $$1<=k<=n$$
 
 #### Wynik
 
-* $$a_n,a_{n-1},\dots,a_2,a_1$$ - podane liczby w odwrotnej kolejności
+* $$a_k$$ - $$k$$-ta podana liczba
 
 ## Rozwiązanie
 
@@ -22,7 +23,7 @@ Napisz program zgodny z poniższą specyfikacją.&#x20;
 using namespace std;
 
 int main() {
-  int n;
+  int n, k;
 
   cout << "Podaj liczbe elementow:" << endl;
   cin >> n;
@@ -34,9 +35,10 @@ int main() {
     cin >> tab[i];
   }
 
-  for(int i = n - 1; i >= 0; i--) {
-    cout << tab[i] << endl;
-  }
+  cout << "Podaj numer elementu:" << endl;
+  cin >> k;
+
+  cout << "Element numer " << k << " = " << tab[k - 1] << endl;
 
   return 0;
 }
@@ -50,4 +52,6 @@ Gdy już znamy liczbę elementów, możemy utworzyć tablicę o odpowiednim rozm
 
 W kolejnym kroku, w pętli wczytujemy kolejne wartości od użytkownika i zapisujemy je w tablicy. Pętlą przechodzimy przez kolejne indeksy w naszej tablicy, tzn. od $$0$$ do $$n$$ (**linia 12**). Licznik pętli, zmienna `i`, określa indeks w tablicy, pod którym zapisujemy wczytaną wartość (**linia 14**).
 
-Ostatnim etapem rozwiązania jest ponowne przejście po wszystkich indeksach elementów, tylko w kolejności malejącej: od ostatniego indeksu ($$n - 1$$) do pierwszego indeksu ($$0$$) (**linia 17**). W pętli wypisujemy wartości kolejnych elementów tablicy (**linia 18**).
+Następnie wczytujemy od użytkownika numer elementu, który należy wypisać (**linia 18**).
+
+Teraz pozostało wypisać właściwy element. Ponieważ tablica jest numerowana (indeksowana) od zera, należy wypisać element pod indeksem $$k - 1$$ (**linia 20**).
