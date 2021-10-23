@@ -22,6 +22,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/szyfrowanie/szyfr-beauforta.md" %}
-[szyfr-beauforta.md](../../programowanie/python/algorytmy/szyfrowanie/szyfr-beauforta.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/szyfrowanie/szyfr-beauforta.md" %}
+[szyfr-beauforta.md](../../programowanie/kotlin/algorytmy/szyfrowanie/szyfr-beauforta.md)
 {% endcontent-ref %}

@@ -12,8 +12,8 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/fraktale/smocza-krzywa.md" %}
-[smocza-krzywa.md](../../programowanie/python/algorytmy/fraktale/smocza-krzywa.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/fraktale/smocza-krzywa.md" %}
+[smocza-krzywa.md](../../programowanie/kotlin/algorytmy/fraktale/smocza-krzywa.md)
 {% endcontent-ref %}
 
 ### Blockly

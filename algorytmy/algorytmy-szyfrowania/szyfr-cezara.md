@@ -46,6 +46,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/szyfrowanie/szyfr-cezara.md" %}
-[szyfr-cezara.md](../../programowanie/python/algorytmy/szyfrowanie/szyfr-cezara.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/szyfrowanie/szyfr-cezara.md" %}
+[szyfr-cezara.md](../../programowanie/kotlin/algorytmy/szyfrowanie/szyfr-cezara.md)
 {% endcontent-ref %}

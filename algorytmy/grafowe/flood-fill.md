@@ -49,6 +49,6 @@ funkcja FloodFill(x, y):
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/grafy/flood-fill.md" %}
-[flood-fill.md](../../programowanie/python/algorytmy/grafy/flood-fill.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/grafy/flood-fill.md" %}
+[flood-fill.md](../../programowanie/kotlin/algorytmy/grafy/flood-fill.md)
 {% endcontent-ref %}

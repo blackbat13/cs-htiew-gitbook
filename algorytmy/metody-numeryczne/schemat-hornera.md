@@ -109,6 +109,6 @@ $$O(n)$$ - liniowa
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/metody-numeryczne/schemat-hornera.md" %}
-[schemat-hornera.md](../../programowanie/python/algorytmy/metody-numeryczne/schemat-hornera.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/metody-numeryczne/schemat-hornera.md" %}
+[schemat-hornera.md](../../programowanie/kotlin/algorytmy/metody-numeryczne/schemat-hornera.md)
 {% endcontent-ref %}

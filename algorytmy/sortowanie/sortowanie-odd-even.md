@@ -52,6 +52,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/sortowanie/sortowanie-odd-even.md" %}
-[sortowanie-odd-even.md](../../programowanie/python/algorytmy/sortowanie/sortowanie-odd-even.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/sortowanie/sortowanie-odd-even.md" %}
+[sortowanie-odd-even.md](../../programowanie/kotlin/algorytmy/sortowanie/sortowanie-odd-even.md)
 {% endcontent-ref %}

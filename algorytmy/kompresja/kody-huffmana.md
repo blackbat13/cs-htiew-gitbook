@@ -34,6 +34,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/kodowanie-i-kompresja/kody-huffmana.md" %}
-[kody-huffmana.md](../../programowanie/python/algorytmy/kodowanie-i-kompresja/kody-huffmana.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/kodowanie-i-kompresja/kody-huffmana.md" %}
+[kody-huffmana.md](../../programowanie/kotlin/algorytmy/kodowanie-i-kompresja/kody-huffmana.md)
 {% endcontent-ref %}

@@ -34,6 +34,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/struktury-danych/struktura-zbiorow-rozlacznych.md" %}
-[struktura-zbiorow-rozlacznych.md](../../programowanie/python/algorytmy/struktury-danych/struktura-zbiorow-rozlacznych.md)
+{% content-ref url="../../programowanie/kotlin/algorytmy/struktury-danych/struktura-zbiorow-rozlacznych.md" %}
+[struktura-zbiorow-rozlacznych.md](../../programowanie/kotlin/algorytmy/struktury-danych/struktura-zbiorow-rozlacznych.md)
 {% endcontent-ref %}
