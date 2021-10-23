@@ -23,8 +23,8 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/fraktale/platek-kocha.md" %}
-[platek-kocha.md](../../programowanie/kotlin/algorytmy/fraktale/platek-kocha.md)
+{% content-ref url="../../programowanie/python/algorytmy/fraktale/platek-kocha.md" %}
+[platek-kocha.md](../../programowanie/python/algorytmy/fraktale/platek-kocha.md)
 {% endcontent-ref %}
 
 ### Blockly

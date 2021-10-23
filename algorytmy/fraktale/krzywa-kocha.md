@@ -23,8 +23,8 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/fraktale/krzywa-kocha.md" %}
-[krzywa-kocha.md](../../programowanie/kotlin/algorytmy/fraktale/krzywa-kocha.md)
+{% content-ref url="../../programowanie/python/algorytmy/fraktale/krzywa-kocha.md" %}
+[krzywa-kocha.md](../../programowanie/python/algorytmy/fraktale/krzywa-kocha.md)
 {% endcontent-ref %}
 
 ### Blockly

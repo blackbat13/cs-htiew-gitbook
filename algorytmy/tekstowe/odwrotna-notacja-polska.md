@@ -8,7 +8,7 @@ TODO
 
 #### Dane
 
-* **onp** - ciąg znaków reprezentujący poprawne wyrażenie w Odwrotnej Notacji Polskiej 
+* **onp** - ciąg znaków reprezentujący poprawne wyrażenie w Odwrotnej Notacji Polskiej
 
 #### Wynik
 
@@ -22,14 +22,14 @@ TODO
 onp := "27+3/13-4*+2/"
 ```
 
-**Wynik**: $$-2.5$$ 
+**Wynik**: $$-2.5$$
 
 {% hint style="info" %}
 Wyjaśnienie
 
 Przedstawione wyrażenie ONP odpowiada następującemu wyrażeniu arytmetycznemu:
 
-$$(((2 + 7) / 3) + (1 - 3) * 4) / 2$$ 
+$$(((2 + 7) / 3) + (1 - 3) * 4) / 2$$
 {% endhint %}
 
 ## Rozwiązanie
@@ -54,6 +54,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/tekstowe/onp.md" %}
-[onp.md](../../programowanie/kotlin/algorytmy/tekstowe/onp.md)
+{% content-ref url="../../programowanie/python/algorytmy/tekstowe/onp.md" %}
+[onp.md](../../programowanie/python/algorytmy/tekstowe/onp.md)
 {% endcontent-ref %}

@@ -12,8 +12,8 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/fraktale/minkowski-sausage.md" %}
-[minkowski-sausage.md](../../programowanie/kotlin/algorytmy/fraktale/minkowski-sausage.md)
+{% content-ref url="../../programowanie/python/algorytmy/fraktale/minkowski-sausage.md" %}
+[minkowski-sausage.md](../../programowanie/python/algorytmy/fraktale/minkowski-sausage.md)
 {% endcontent-ref %}
 
 ### Blockly

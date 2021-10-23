@@ -22,6 +22,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/szyfrowanie/szyfr-playfaira.md" %}
-[szyfr-playfaira.md](../../programowanie/kotlin/algorytmy/szyfrowanie/szyfr-playfaira.md)
+{% content-ref url="../../programowanie/python/algorytmy/szyfrowanie/szyfr-playfaira.md" %}
+[szyfr-playfaira.md](../../programowanie/python/algorytmy/szyfrowanie/szyfr-playfaira.md)
 {% endcontent-ref %}

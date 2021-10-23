@@ -18,6 +18,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/tekstowe/odleglosc-hamminga.md" %}
-[odleglosc-hamminga.md](../../programowanie/kotlin/algorytmy/tekstowe/odleglosc-hamminga.md)
+{% content-ref url="../../programowanie/python/algorytmy/tekstowe/odleglosc-hamminga.md" %}
+[odleglosc-hamminga.md](../../programowanie/python/algorytmy/tekstowe/odleglosc-hamminga.md)
 {% endcontent-ref %}

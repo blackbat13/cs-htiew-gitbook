@@ -14,11 +14,11 @@ TODO
 
 ### Przykład 1 - rekurencyjne wypełnianie obszaru pól połączonych ze sobą w linii prostej, poziomo lub pionowo.
 
-![By André Karwath aka Aka - Own work, CC BY-SA 2.5, https://commons.wikimedia.org/w/index.php?curid=481651](../../.gitbook/assets/Recursive_Flood_Fill\_4\_\(aka\).gif)
+![By André Karwath aka Aka - Own work, CC BY-SA 2.5, https://commons.wikimedia.org/w/index.php?curid=481651](../../.gitbook/assets/Recursive\_Flood\_Fill\_4\_\(aka\).gif)
 
 ### Przykład 2 - rekurencyjne wypełnianie obszaru pól połączonych ze sobą w dowolnym kierunku, także na ukos.
 
-![By André Karwath aka Aka - Own work, CC BY-SA 2.5, https://commons.wikimedia.org/w/index.php?curid=481652](../../.gitbook/assets/Recursive_Flood_Fill\_8\_\(aka\).gif)
+![By André Karwath aka Aka - Own work, CC BY-SA 2.5, https://commons.wikimedia.org/w/index.php?curid=481652](../../.gitbook/assets/Recursive\_Flood\_Fill\_8\_\(aka\).gif)
 
 ### Rozwiązanie
 
@@ -49,7 +49,6 @@ funkcja FloodFill(x, y):
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/grafy/flood-fill.md" %}
-[flood-fill.md](../../programowanie/kotlin/algorytmy/grafy/flood-fill.md)
+{% content-ref url="../../programowanie/python/algorytmy/grafy/flood-fill.md" %}
+[flood-fill.md](../../programowanie/python/algorytmy/grafy/flood-fill.md)
 {% endcontent-ref %}
-

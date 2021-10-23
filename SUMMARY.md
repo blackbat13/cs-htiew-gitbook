@@ -610,7 +610,7 @@
   * [Wstęp do PygameZero](nauka-przez-gry/python/wstep-do-pygamezero.md)
   * [Złap kosmitę](nauka-przez-gry/python/zlap-kosmite.md)
   * [Pong](nauka-przez-gry/python/pong.md)
-  * [Latający samolocik](nauka-przez-gry/python/latajacy-samolocik.md)
+  * [Flappy Bird](nauka-przez-gry/python/flappy-bird.md)
   * [Asteroidy](nauka-przez-gry/python/asteroidy.md)
   * [Kosmos](nauka-przez-gry/python/kosmos.md)
   * [Czołgi 1](nauka-przez-gry/python/czolgi-1.md)

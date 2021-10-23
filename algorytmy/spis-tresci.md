@@ -4,8 +4,8 @@
 
 ### Wyszukiwanie maksimum/minimum (na maturze)
 
-* Opis algorytmu: [Wyszukiwanie minimum i maksimum](wyszukiwanie/wyszukiwanie-maksimum.md)&#x20;
-* Implementacja C++: [Wyszukiwanie minimum i maksimum](../programowanie/c++/algorytmy/wyszukiwanie/wyszukiwanie-minimum-i-maksimum.md)&#x20;
+* Opis algorytmu: [Wyszukiwanie minimum i maksimum](wyszukiwanie/wyszukiwanie-maksimum.md)
+* Implementacja C++: [Wyszukiwanie minimum i maksimum](../programowanie/c++/algorytmy/wyszukiwanie/wyszukiwanie-minimum-i-maksimum.md)
 * Implementacja Python: [Wyszukiwanie minimum i maksimum](../programowanie/python/algorytmy/wyszukiwanie/wyszukiwanie-minimum-i-maksimum.md)
 * Implementacja Blockly: [Wyszukiwanie minimum i maksimum](../programowanie/blockly/algorytmy/wyszukiwanie/wyszukiwanie-minimum-i-maksimum.md)
 
@@ -89,8 +89,8 @@
 
 ### Sortowanie kubełkowe (na maturze)
 
-* Opis algorytmu:&#x20;
-* Implementacja C++:&#x20;
+* Opis algorytmu:
+* Implementacja C++:
 * Implementacja Python:
 
 ### Sortowanie przez kopcowanie
@@ -103,7 +103,7 @@
 
 ### Reprezentacja liczb w dowolnym systemie pozycyjnym (na maturze)
 
-* Opis algorytmu: [Systemy liczbowe - przegląd](broken-reference)
+* Opis algorytmu: [Systemy liczbowe - przegląd](broken-reference/)
 * Implementacja C++: [Konwersja pomiędzy systemami liczbowymi](../programowanie/c++/algorytmy/metody-numeryczne/konwersja-pomiedzy-systemami-liczbowymi.md)
 * Implementacja Python: [Konwersja pomiędzy systemami liczbowymi](../programowanie/kotlin/algorytmy/metody-numeryczne/konwersja-pomiedzy-systemami-liczbowymi.md)
 
@@ -135,20 +135,20 @@
 
 * Opis algorytmu: [Algorytm Euklidesa](algorytmy-na-liczbach-calkowitych/algorytm-euklidesa.md)
 * Implementacja C++: [NWD](../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/nwd.md)
-* Implementacja Python: [NWD](broken-reference)
+* Implementacja Python: [NWD](broken-reference/)
 * Implementacja Blockly: [NWD](../programowanie/blockly/algorytmy/algorytmy-na-liczbach-calkowitych/nwd.md)
 
 ### Binarne NWD
 
 * Opis algorytmu:
-* Implementacja C++: [Binarne NWD](broken-reference)
+* Implementacja C++: [Binarne NWD](broken-reference/)
 * Implementacja Python:
 
 ### Liczby Fibonacciego (na maturze)
 
 * Opis algorytmu: [Liczby Fibonacciego](algorytmy-na-liczbach-calkowitych/liczby-fibonacciego.md)
 * Implementacja C++: [Liczby Fibonacciego](../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/liczby-fibbonacciego.md)
-* Implementacja Python: [Liczby Fibonacciego](broken-reference)
+* Implementacja Python: [Liczby Fibonacciego](broken-reference/)
 
 ### Zachłanny i dynamiczny algorytm wydawania reszty (na maturze)
 
@@ -174,7 +174,7 @@
 
 * Opis algorytmu: [Schemat Hornera](metody-numeryczne/schemat-hornera.md)
 * Implementacja C++: [Schemat Hornera](../programowanie/c++/algorytmy/metody-numeryczne/schemat-hornera.md)
-* Implementacja Python: [Schemat Hornera](../programowanie/kotlin/algorytmy/metody-numeryczne/schemat-hornera.md)
+* Implementacja Python: [Schemat Hornera](../programowanie/python/algorytmy/metody-numeryczne/schemat-hornera.md)
 
 ### Szybkie potęgowanie (na maturze)
 
@@ -184,8 +184,8 @@
 
 ### Wyznaczanie miejsc zerowych funkcji metodą połowienia (na maturze)
 
-* Opis algorytmu:&#x20;
-* Implementacja C++:&#x20;
+* Opis algorytmu:
+* Implementacja C++:
 * Implementacja Python:
 
 ### Całkowanie numeryczne (na maturze)
@@ -216,28 +216,28 @@
 
 ### Porządkowanie alfabetyczne (na maturze)
 
-* Opis algorytmu:&#x20;
-* Implementacja C++:&#x20;
-* Implementacja Python:&#x20;
+* Opis algorytmu:
+* Implementacja C++:
+* Implementacja Python:
 
 ### Obliczanie wartości wyrażenia ONP (na maturze)
 
-* Opis algorytmu:&#x20;
+* Opis algorytmu:
 * Implementacja C++: [ONP](../programowanie/c++/algorytmy/tekstowe/onp.md)
-* Implementacja Python: [ONP](../programowanie/kotlin/algorytmy/tekstowe/onp.md)
+* Implementacja Python: [ONP](../programowanie/python/algorytmy/tekstowe/onp.md)
 
 ### Najdłuższy wspólny podciąg
 
 * Opis algorytmu: [Najdłuższy wspólny podciąg](tekstowe/najdluzszy-wspolny-podciag.md)
 * Implementacja C++: [Najdłuższy wspólny podciąg](../programowanie/c++/algorytmy/tekstowe/najdluzszy-wspolny-podciag.md)
-* Implementacja Python: [Najdłuższy wspólny podciąg](../programowanie/kotlin/algorytmy/tekstowe/najdluzszy-wspolny-podciag.md)
+* Implementacja Python: [Najdłuższy wspólny podciąg](../programowanie/python/algorytmy/tekstowe/najdluzszy-wspolny-podciag.md)
 
 ## Kodowanie i kompresja
 
 ### Kody Huffmana (na maturze)
 
-* Opis algorytmu:&#x20;
-* Implementacja C++:&#x20;
+* Opis algorytmu:
+* Implementacja C++:
 * Implementacja Python:
 
 ## Szyfrowanie
@@ -251,7 +251,7 @@
 ### Szyfr przestawieniowy (na maturze)
 
 * Opis algorytmu: [Metody szyfrowania symetrycznego](algorytmy-szyfrowania/metody-szyfrowania-symetrycznego.md)
-* Implementacja C++:&#x20;
+* Implementacja C++:
 * Implementacja Python:
 
 ### Szyfr z kluczem jawnym (RSA) (na maturze)
@@ -262,32 +262,32 @@
 
 ### Warunek trójkąta (na maturze)
 
-* Opis algorytmu:&#x20;
-* Implementacja C++:&#x20;
+* Opis algorytmu:
+* Implementacja C++:
 * Implementacja Python: [Warunek trójkąta](../programowanie/python/algorytmy/geometria-2d/warunek-trojkata.md)
 
 ### Położenie punktu względem prostej (na maturze)
 
-* Opis algorytmu:&#x20;
-* Implementacja C++:&#x20;
+* Opis algorytmu:
+* Implementacja C++:
 * Implementacja Python:
 
 ### Przynależność punktu do odcinka (na maturze)
 
-* Opis algorytmu:&#x20;
-* Implementacja C++:&#x20;
+* Opis algorytmu:
+* Implementacja C++:
 * Implementacja Python:
 
 ### Przecinanie się odcinków (na maturze)
 
-* Opis algorytmu:&#x20;
-* Implementacja C++:&#x20;
+* Opis algorytmu:
+* Implementacja C++:
 * Implementacja Python:
 
 ### Przynależność punktu do obszaru (na maturze)
 
-* Opis algorytmu:&#x20;
-* Implementacja C++:&#x20;
+* Opis algorytmu:
+* Implementacja C++:
 * Implementacja Python:
 
 ## Grafowe
@@ -302,16 +302,16 @@
 
 * Opis algorytmu: [Spójne składowe](grafowe/spojne-skladowe.md)
 * Implementacja C++: [Spójne składowe](../programowanie/c++/algorytmy/grafy/polaczone-komponenty.md)
-* Implementacja Python: [Spójne składowe](../programowanie/kotlin/algorytmy/grafy/spojne-skladowe.md)
+* Implementacja Python: [Spójne składowe](../programowanie/python/algorytmy/grafy/spojne-skladowe.md)
 
 ### BFS
 
-* Opis algorytmu:&#x20;
+* Opis algorytmu:
 * Implementacja C++: [BFS](../programowanie/c++/algorytmy/grafy/bfs.md)
 * Implementacja Python: [BFS](../programowanie/python/algorytmy/grafy/bfs.md)
 
 ### Flood Fill
 
 * Opis algorytmu: [Flood fill](grafowe/flood-fill.md)
-* Implementacja C++:&#x20;
+* Implementacja C++:
 * Implementacja Python:

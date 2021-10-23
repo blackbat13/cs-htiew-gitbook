@@ -13,7 +13,7 @@ TODO
 
 #### Wynik
 
-* Posortowana niemalejąco tablica $$A$$ 
+* Posortowana niemalejąco tablica $$A$$
 
 ### **Przykład**
 
@@ -52,6 +52,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/sortowanie/sortowanie-grzebieniowe.md" %}
-[sortowanie-grzebieniowe.md](../../programowanie/kotlin/algorytmy/sortowanie/sortowanie-grzebieniowe.md)
+{% content-ref url="../../programowanie/c++/algorytmy/sortowanie/sortowanie-grzebieniowe.md" %}
+[sortowanie-grzebieniowe.md](../../programowanie/c++/algorytmy/sortowanie/sortowanie-grzebieniowe.md)
 {% endcontent-ref %}

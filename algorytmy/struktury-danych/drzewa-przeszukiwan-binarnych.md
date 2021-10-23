@@ -38,6 +38,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/struktury-danych/drzewo-przeszukiwan-binarnych.md" %}
-[drzewo-przeszukiwan-binarnych.md](../../programowanie/kotlin/algorytmy/struktury-danych/drzewo-przeszukiwan-binarnych.md)
+{% content-ref url="../../programowanie/python/algorytmy/struktury-danych/drzewo-przeszukiwan-binarnych.md" %}
+[drzewo-przeszukiwan-binarnych.md](../../programowanie/python/algorytmy/struktury-danych/drzewo-przeszukiwan-binarnych.md)
 {% endcontent-ref %}
