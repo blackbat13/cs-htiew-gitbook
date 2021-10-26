@@ -190,6 +190,7 @@
     * [Funkcje printf i scanf](programowanie/c++/wprowadzenie/funkcje-printf-i-scanf.md)
     * [Operacje bitowe](programowanie/c++/wprowadzenie/operacje-bitowe.md)
     * [Struktury](programowanie/c++/wprowadzenie/struktury.md)
+    * [OOP](programowanie/c++/wprowadzenie/oop.md)
     * [STL](programowanie/c++/wprowadzenie/stl/README.md)
       * [Sortowanie](programowanie/c++/wprowadzenie/stl/sortowanie-z-stl.md)
       * [Tablica statyczna](programowanie/c++/wprowadzenie/stl/tablica-statyczna.md)
