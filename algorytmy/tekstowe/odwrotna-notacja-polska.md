@@ -54,6 +54,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/tekstowe/onp.md" %}
-[onp.md](../../programowanie/kotlin/algorytmy/tekstowe/onp.md)
+{% content-ref url="../../programowanie/python/algorytmy/tekstowe/onp.md" %}
+[onp.md](../../programowanie/python/algorytmy/tekstowe/onp.md)
 {% endcontent-ref %}

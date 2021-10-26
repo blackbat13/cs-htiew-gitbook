@@ -34,6 +34,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/struktury-danych/lista-dwukierunkowa.md" %}
-[lista-dwukierunkowa.md](../../programowanie/kotlin/algorytmy/struktury-danych/lista-dwukierunkowa.md)
+{% content-ref url="../../programowanie/python/algorytmy/struktury-danych/lista-dwukierunkowa.md" %}
+[lista-dwukierunkowa.md](../../programowanie/python/algorytmy/struktury-danych/lista-dwukierunkowa.md)
 {% endcontent-ref %}

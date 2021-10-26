@@ -59,6 +59,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/sortowanie/sortowanie-gnoma.md" %}
-[sortowanie-gnoma.md](../../programowanie/kotlin/algorytmy/sortowanie/sortowanie-gnoma.md)
+{% content-ref url="../../programowanie/python/algorytmy/sortowanie/sortowanie-gnoma.md" %}
+[sortowanie-gnoma.md](../../programowanie/python/algorytmy/sortowanie/sortowanie-gnoma.md)
 {% endcontent-ref %}

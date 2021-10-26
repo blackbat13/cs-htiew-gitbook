@@ -51,6 +51,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/tekstowe/najdluzszy-wspolny-podciag.md" %}
-[najdluzszy-wspolny-podciag.md](../../programowanie/kotlin/algorytmy/tekstowe/najdluzszy-wspolny-podciag.md)
+{% content-ref url="../../programowanie/python/algorytmy/tekstowe/najdluzszy-wspolny-podciag.md" %}
+[najdluzszy-wspolny-podciag.md](../../programowanie/python/algorytmy/tekstowe/najdluzszy-wspolny-podciag.md)
 {% endcontent-ref %}

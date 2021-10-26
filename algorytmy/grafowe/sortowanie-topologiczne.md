@@ -34,6 +34,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/grafy/sortowanie-topologiczne.md" %}
-[sortowanie-topologiczne.md](../../programowanie/kotlin/algorytmy/grafy/sortowanie-topologiczne.md)
+{% content-ref url="../../programowanie/python/algorytmy/grafy/sortowanie-topologiczne.md" %}
+[sortowanie-topologiczne.md](../../programowanie/python/algorytmy/grafy/sortowanie-topologiczne.md)
 {% endcontent-ref %}

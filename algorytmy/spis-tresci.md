@@ -174,7 +174,7 @@
 
 * Opis algorytmu: [Schemat Hornera](metody-numeryczne/schemat-hornera.md)
 * Implementacja C++: [Schemat Hornera](../programowanie/c++/algorytmy/metody-numeryczne/schemat-hornera.md)
-* Implementacja Python: [Schemat Hornera](../programowanie/kotlin/algorytmy/metody-numeryczne/schemat-hornera.md)
+* Implementacja Python: [Schemat Hornera](../programowanie/python/algorytmy/metody-numeryczne/schemat-hornera.md)
 
 ### Szybkie potęgowanie (na maturze)
 
@@ -224,13 +224,13 @@
 
 * Opis algorytmu:
 * Implementacja C++: [ONP](../programowanie/c++/algorytmy/tekstowe/onp.md)
-* Implementacja Python: [ONP](../programowanie/kotlin/algorytmy/tekstowe/onp.md)
+* Implementacja Python: [ONP](../programowanie/python/algorytmy/tekstowe/onp.md)
 
 ### Najdłuższy wspólny podciąg
 
 * Opis algorytmu: [Najdłuższy wspólny podciąg](tekstowe/najdluzszy-wspolny-podciag.md)
 * Implementacja C++: [Najdłuższy wspólny podciąg](../programowanie/c++/algorytmy/tekstowe/najdluzszy-wspolny-podciag.md)
-* Implementacja Python: [Najdłuższy wspólny podciąg](../programowanie/kotlin/algorytmy/tekstowe/najdluzszy-wspolny-podciag.md)
+* Implementacja Python: [Najdłuższy wspólny podciąg](../programowanie/python/algorytmy/tekstowe/najdluzszy-wspolny-podciag.md)
 
 ## Kodowanie i kompresja
 
@@ -302,7 +302,7 @@
 
 * Opis algorytmu: [Spójne składowe](grafowe/spojne-skladowe.md)
 * Implementacja C++: [Spójne składowe](../programowanie/c++/algorytmy/grafy/polaczone-komponenty.md)
-* Implementacja Python: [Spójne składowe](../programowanie/kotlin/algorytmy/grafy/spojne-skladowe.md)
+* Implementacja Python: [Spójne składowe](../programowanie/python/algorytmy/grafy/spojne-skladowe.md)
 
 ### BFS
 

@@ -47,8 +47,8 @@ funkcja DrzewoBinarne(n, w):
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/fraktale/drzewo-binarne.md" %}
-[drzewo-binarne.md](../../programowanie/kotlin/algorytmy/fraktale/drzewo-binarne.md)
+{% content-ref url="../../programowanie/python/algorytmy/fraktale/drzewo-binarne.md" %}
+[drzewo-binarne.md](../../programowanie/python/algorytmy/fraktale/drzewo-binarne.md)
 {% endcontent-ref %}
 
 ### Blockly

@@ -34,6 +34,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/struktury-danych/stos.md" %}
-[stos.md](../../programowanie/kotlin/algorytmy/struktury-danych/stos.md)
+{% content-ref url="../../programowanie/python/algorytmy/struktury-danych/stos.md" %}
+[stos.md](../../programowanie/python/algorytmy/struktury-danych/stos.md)
 {% endcontent-ref %}

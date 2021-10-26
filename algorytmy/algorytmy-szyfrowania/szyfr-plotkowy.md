@@ -22,6 +22,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/szyfrowanie/szyfr-plotkowy.md" %}
-[szyfr-plotkowy.md](../../programowanie/kotlin/algorytmy/szyfrowanie/szyfr-plotkowy.md)
+{% content-ref url="../../programowanie/python/algorytmy/szyfrowanie/szyfr-plotkowy.md" %}
+[szyfr-plotkowy.md](../../programowanie/python/algorytmy/szyfrowanie/szyfr-plotkowy.md)
 {% endcontent-ref %}

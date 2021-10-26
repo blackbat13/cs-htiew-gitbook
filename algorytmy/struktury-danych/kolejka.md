@@ -34,6 +34,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/struktury-danych/kolejka.md" %}
-[kolejka.md](../../programowanie/kotlin/algorytmy/struktury-danych/kolejka.md)
+{% content-ref url="../../programowanie/python/algorytmy/struktury-danych/kolejka.md" %}
+[kolejka.md](../../programowanie/python/algorytmy/struktury-danych/kolejka.md)
 {% endcontent-ref %}

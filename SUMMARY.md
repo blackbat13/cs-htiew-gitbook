@@ -245,7 +245,7 @@
     * [Pętla for in](programowanie/c++/cwiczenia/petla-for-in.md)
     * [Struktury](programowanie/c++/cwiczenia/struktury.md)
     * [STL](programowanie/c++/cwiczenia/stl.md)
-    * [Klasy](programowanie/c++/cwiczenia/klasy.md)
+    * [Programowanie obiektowe](programowanie/c++/cwiczenia/oop.md)
   * [Symulacje](programowanie/c++/symulacje/README.md)
     * [Wężyk](programowanie/c++/symulacje/wezyk.md)
     * [Robot w labiryncie](programowanie/c++/symulacje/robot-w-labiryncie.md)

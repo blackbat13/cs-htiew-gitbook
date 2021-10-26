@@ -22,6 +22,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/szyfrowanie/szyfr-vigenerea.md" %}
-[szyfr-vigenerea.md](../../programowanie/kotlin/algorytmy/szyfrowanie/szyfr-vigenerea.md)
+{% content-ref url="../../programowanie/python/algorytmy/szyfrowanie/szyfr-vigenerea.md" %}
+[szyfr-vigenerea.md](../../programowanie/python/algorytmy/szyfrowanie/szyfr-vigenerea.md)
 {% endcontent-ref %}

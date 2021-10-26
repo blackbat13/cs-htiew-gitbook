@@ -34,6 +34,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/grafy/prim.md" %}
-[prim.md](../../programowanie/kotlin/algorytmy/grafy/prim.md)
+{% content-ref url="../../programowanie/python/algorytmy/grafy/prim.md" %}
+[prim.md](../../programowanie/python/algorytmy/grafy/prim.md)
 {% endcontent-ref %}

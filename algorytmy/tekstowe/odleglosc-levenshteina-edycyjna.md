@@ -18,6 +18,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/tekstowe/odleglosc-levenshteina-edycyjna.md" %}
-[odleglosc-levenshteina-edycyjna.md](../../programowanie/kotlin/algorytmy/tekstowe/odleglosc-levenshteina-edycyjna.md)
+{% content-ref url="../../programowanie/python/algorytmy/tekstowe/odleglosc-levenshteina-edycyjna.md" %}
+[odleglosc-levenshteina-edycyjna.md](../../programowanie/python/algorytmy/tekstowe/odleglosc-levenshteina-edycyjna.md)
 {% endcontent-ref %}

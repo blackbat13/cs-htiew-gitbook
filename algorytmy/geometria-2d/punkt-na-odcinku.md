@@ -18,6 +18,6 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/kotlin/algorytmy/geometria-2d/punkt-na-odcinku.md" %}
-[punkt-na-odcinku.md](../../programowanie/kotlin/algorytmy/geometria-2d/punkt-na-odcinku.md)
+{% content-ref url="../../programowanie/python/algorytmy/geometria-2d/punkt-na-odcinku.md" %}
+[punkt-na-odcinku.md](../../programowanie/python/algorytmy/geometria-2d/punkt-na-odcinku.md)
 {% endcontent-ref %}
