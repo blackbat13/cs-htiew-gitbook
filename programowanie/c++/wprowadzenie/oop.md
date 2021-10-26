@@ -179,7 +179,7 @@ void Point2D::print() {
 
 ```
 
-### main.cpp
+#### main.cpp
 
 ```cpp
 #include "Point2D.h"
@@ -209,4 +209,33 @@ int main() {
 
 ```
 g++ -o main Point2D.cpp main.cpp
+```
+
+## Przeciążanie operatorów
+
+### Przykład
+
+#### Point2D.h
+
+```cpp
+Point2D operator+(const Point2D &other);
+```
+
+#### Point2D.cpp
+
+```cpp
+Point2D Point2D::operator+(const Point2D &other) {
+  return Point2D(this->x + other.x, this->y + other.y);
+}
+```
+
+#### main.cpp
+
+```cpp
+Point2D point = Point2D(3, 4);
+Point2D point2 = Point2D(1, 9);
+
+Point2D point3 = point + point2;
+
+point3.print();
 ```
