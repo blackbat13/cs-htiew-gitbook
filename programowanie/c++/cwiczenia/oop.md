@@ -55,7 +55,7 @@ m2 := 4
 ## Zadanie 2
 
 Napisz program zgodny z poniższą specyfikacją. Do reprezentacji liczb i wykonywania na nich operacji wykorzystaj własną implementację klasy.
-Możesz założyć, że wartości wszystkich liczb w systemie dziesiętnym zmieszczą się w typie `int`.
+Możesz założyć, że wartości wszystkich liczb w systemie dziesiętnym zmieszczą się w typie `int`. Wszystkie litery powinny być **drukowane**.
 
 ### Specyfikacja
 
@@ -69,7 +69,7 @@ Możesz założyć, że wartości wszystkich liczb w systemie dziesiętnym zmies
 
 * Suma podanych wartości przedstawiona w podstawie $$p3$$
 
-### Przykład
+### Przykład 1
 
 #### Dane
 
@@ -91,4 +91,28 @@ p3 := 8
 **Wyjaśnienie**
 
 $$1010_2+5_{10}=17_8$$
+{% endhint %}
+
+### Przykład 2
+
+#### Dane
+
+```
+l1 := 1010
+p1 := 2
+l2 := 5
+p2 := 10
+p3 := 16
+```
+
+#### Wynik
+
+```
+F
+```
+
+{% hint style="info" %}
+**Wyjaśnienie**
+
+$$1010_2+5_{10}=F_16$$
 {% endhint %}
