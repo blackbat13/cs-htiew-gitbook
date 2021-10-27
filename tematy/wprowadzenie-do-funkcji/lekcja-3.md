@@ -6,10 +6,10 @@ description: Globalność i lokalność
 
 ### Materiały
 
-{% file src="../.gitbook/assets/3-wpr-do-fun.pdf" %}
+{% file src="../../.gitbook/assets/3-wpr-do-fun.pdf" %}
 Konspekt
 {% endfile %}
 
-{% file src="../.gitbook/assets/Globalność i lokalność.pdf" %}
+{% file src="../../.gitbook/assets/Globalność i lokalność.pdf" %}
 Prezentacja - globalność i lokalność
 {% endfile %}
