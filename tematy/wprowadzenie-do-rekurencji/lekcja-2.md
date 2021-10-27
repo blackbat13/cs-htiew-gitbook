@@ -2,18 +2,18 @@
 
 ### Materiały
 
-{% file src="../.gitbook/assets/2-wpr-do-rek.pdf" %}
+{% file src="../../.gitbook/assets/2-wpr-do-rek.pdf" %}
 Konspekt
 {% endfile %}
 
-{% file src="../.gitbook/assets/Zadanie z małpą- rozwiązanie.pdf" %}
+{% file src="../../.gitbook/assets/Zadanie z małpą- rozwiązanie.pdf" %}
 Prezentacja - rozwiązanie zadania z małpą
 {% endfile %}
 
-{% file src="../.gitbook/assets/Blockly Żółw.pdf" %}
+{% file src="../../.gitbook/assets/Blockly Żółw.pdf" %}
 Prezentacja - Blockly Żółw
 {% endfile %}
 
-{% file src="../.gitbook/assets/Blockly Żółw - Funkcje.pdf" %}
+{% file src="../../.gitbook/assets/Blockly Żółw - Funkcje.pdf" %}
 Prezentacja - funkcje w Blockly Żółw
 {% endfile %}
