@@ -30,7 +30,22 @@ Napisz program zgodny z poniższą specyfikacją. Obliczanie sumy powinno być z
 
 ## Zadanie 3
 
-Napisz program zgodny z poniższą specyfikacją. Przemnażanie tablicy oraz wypisywanie tablicy na ekranie zrealizuj za pomocą osobnych funkcji.
+Napisz program zgodny z poniższą specyfikacją. Wczytywanie tablicy oraz wypisywanie tablicy na ekranie zrealizuj za pomocą osobnych funkcji.
+
+### Specyfikacja
+
+#### Dane
+
+* $$n$$ - liczba naturalna
+* $$tab[n]$$ - tablica liczb całkowitych
+
+#### Wynik
+
+* Wczytana tablica wypisana na ekranie w jednej linii, każdy element oddzielony spacją
+
+## Zadanie 4
+
+Napisz program zgodny z poniższą specyfikacją. Wczytywanie tablicy, przemnażanie tablicy oraz wypisywanie tablicy na ekranie zrealizuj za pomocą osobnych funkcji.
 
 ### Specyfikacja
 

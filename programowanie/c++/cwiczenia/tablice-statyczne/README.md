@@ -211,8 +211,8 @@ Napisz program zgodny z poniższą specyfikacją.
 
 #### Wynik
 
-* Komunikat "niemalejąco" jeżeli elementy tablicy posortowane są niemalejąco
-* Komunikat "nierosnąco" jeżeli elementy tablicy posortowane są nierosnąco
+* Komunikat "niemalejaco" jeżeli elementy tablicy posortowane są niemalejąco
+* Komunikat "nierosnaco" jeżeli elementy tablicy posortowane są nierosnąco
 * Komunikat "nieposortowane" jeżeli elementy tablicy nie są posortowane
 
 ### Przykład 1
