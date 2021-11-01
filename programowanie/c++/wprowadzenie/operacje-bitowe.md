@@ -1,5 +1,11 @@
 # Operacje bitowe
 
+## Opis zagadnienia
+
+{% content-ref url="../../../../algorytmy/systemy-liczbowe/operacje-bitowe.md" %}
+[operaje-bitowe.md](../../../../algorytmy/systemy-liczbowe/operacje-bitowe.md)
+{% endcontent-ref %}
+
 ### Przesunięcie bitowe
 
 Do przesunięcia w lewo stosujemy operator `<<`.

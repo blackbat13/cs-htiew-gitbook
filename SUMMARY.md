@@ -85,6 +85,7 @@
   * [System binarny](algorytmy/systemy-liczbowe/system-binarny.md)
   * [Konwersja pomiędzy systemami](algorytmy/systemy-liczbowe/konwersja-pomiedzy-systemami.md)
   * [System U2](algorytmy/systemy-liczbowe/system-u2.md)
+  * [Operacje bitowe](algorytmy/systemy-liczbowe/operacje-bitowe.md)
 * [Metody numeryczne](algorytmy/metody-numeryczne/README.md)
   * [Schemat Hornera](algorytmy/metody-numeryczne/schemat-hornera.md)
   * [Pierwiastek kwadratowy](algorytmy/metody-numeryczne/pierwiastek-kwadratowy.md)
