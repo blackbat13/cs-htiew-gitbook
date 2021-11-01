@@ -649,10 +649,10 @@
 ## Linux
 
 * [Wprowadzenie do systemu Linux](linux/wprowadzenie-do-systemu-linux.md)
+* [Katalogi](linux/katalogi.md)
 * [Pliki](linux/pliki.md)
 * [Prawa dostępu](linux/prawa-dostepu.md)
 * [Procesy](linux/procesy.md)
-* [Listowanie plików](linux/listowanie-plikow.md)
 
 ## E-głosowanie
 
