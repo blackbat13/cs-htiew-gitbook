@@ -2,18 +2,18 @@
 
 ### Materiały
 
-{% file src="../.gitbook/assets/1-wpr-do-fun.pdf" %}
+{% file src="../../.gitbook/assets/1-wpr-do-fun.pdf" %}
 Konspekt
 {% endfile %}
 
-{% file src="../.gitbook/assets/Funkcje.pdf" %}
+{% file src="../../.gitbook/assets/Funkcje.pdf" %}
 Prezentacja - funkcje
 {% endfile %}
 
-{% file src="../.gitbook/assets/Ćwiczenie w grupach.pdf" %}
+{% file src="../../.gitbook/assets/Ćwiczenie w grupach.pdf" %}
 Prezentacja - ćwiczenie
 {% endfile %}
 
-{% file src="../.gitbook/assets/Ćwiczenie w grupach - opis.pdf" %}
+{% file src="../../.gitbook/assets/Ćwiczenie w grupach - opis.pdf" %}
 Ćwiczenie - opis
 {% endfile %}

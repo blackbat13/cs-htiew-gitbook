@@ -2,15 +2,15 @@
 
 ### Materiały
 
-{% file src="../.gitbook/assets/4-wpr-do-fun.pdf" %}
+{% file src="../../.gitbook/assets/4-wpr-do-fun.pdf" %}
 Konspekt
 {% endfile %}
 
-{% file src="../.gitbook/assets/NWW i NWD.pdf" %}
+{% file src="../../.gitbook/assets/NWW i NWD.pdf" %}
 Prezentacja - NWW i NWD
 {% endfile %}
 
-{% file src="../.gitbook/assets/Funkcje4_rozwiazania.zip" %}
+{% file src="../../.gitbook/assets/Funkcje4_rozwiazania.zip" %}
 Rozwiązania
 {% endfile %}
 
