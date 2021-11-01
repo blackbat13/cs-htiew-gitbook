@@ -238,6 +238,7 @@
     * [Tablice statyczne](programowanie/c++/cwiczenia/tablice-statyczne/README.md)
       * [Rozwiązanie 1](programowanie/c++/cwiczenia/tablice-statyczne/rozwiazanie-1.md)
       * [Rozwiązanie 2](programowanie/c++/cwiczenia/tablice-statyczne/rozwiazanie-2.md)
+      * [Rozwiązanie 3](programowanie/c++/cwiczenia/tablice-statyczne/rozwiazanie-3.md)
     * [Funkcje](programowanie/c++/cwiczenia/funkcje/README.md)
       * [Rozwiązanie 1](programowanie/c++/cwiczenia/funkcje/zadanie-1.md)
       * [Rozwiązanie 2](programowanie/c++/cwiczenia/funkcje/zadanie-2.md)
