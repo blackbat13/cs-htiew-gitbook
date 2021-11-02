@@ -11,6 +11,12 @@ Chcemy dodać współrzędne jednego punktu do drugiego i wynik zapisać w zmien
 Zazwyczaj zapisalibyśmy coś w stylu ``p1.Add(p2)``.
 Używając jednak **przeciążenia operatorów** możemy zapisać ``p1 = p1 + p2``.
 
+### Dokumentacja
+
+{% embed url="https://en.cppreference.com/w/cpp/language/operators" %}
+operatory - dokumentacja
+{% endembed %}
+
 ## Przykład: dodawanie punktów
 
 Operator dodawania $$+$$ jest jednym ze standardowych operatorów **dwuargumentowych**.
