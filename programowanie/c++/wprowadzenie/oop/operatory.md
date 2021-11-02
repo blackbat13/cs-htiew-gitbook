@@ -76,3 +76,32 @@ std::istream& operator>>(std::istream &in, Point2D &point)
 ```cpp
 std::cin >> p3;
 ```
+
+## Przykład: operator indeksowania
+
+Możemy także przeciążyć operator indeksowania, czy też operator nawiasów kwadratowych **[]**.
+Jest to szczególnie przydatne, gdy tworzymy własną implementację jakiegoś zbioru.
+
+### Point2D
+
+```cpp
+double Point2D::operator[](int index) {
+  if(index == 0) {
+    return this->x;
+  } else if(index == 1) {
+    return this->y;
+  } else {
+    throw std::out_of_range("Index should be 0 or 1");
+  }
+}
+```
+
+### main
+
+```cpp
+  std::cout << point3[0] << std::endl;
+
+  std::cout << point3[2] << std::endl;
+```
+
+Próba wypisania wartości pod indeksem $$2$$ zakończy się błędem.
