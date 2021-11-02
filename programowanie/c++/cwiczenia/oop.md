@@ -116,3 +116,37 @@ F
 
 $$1010_2+5_{10}=F_16$$
 {% endhint %}
+
+## Zadanie 3
+
+Napisz program zgodny z poniższą specyfikacją. Do reprezentacji liczb zespolonych i wykonywania na nich operacji wykorzystaj własną implementację klasy.
+Operacje arytmetyczne, a także wypisanie liczb na ekran zrealizuj za pomocą **przeciążonych operatorów**.
+Informacje na temat liczb zespolonych można znaleźć na stronie Wikipedii: [https://pl.wikipedia.org/wiki/Liczby_zespolone](https://www.codeblocks.org/downloads/binaries/](https://pl.wikipedia.org/wiki/Liczby_zespolone)
+
+### Specyfikacja
+
+#### Dane
+
+* $$re1, im1$$ - część rzeczywista i urojona pierwszej liczby, liczby całkowite
+* $$op$$ - znak operacji: $$+$$, $$-$$, $$*$$ lub $$/$$
+* $$re2, im2$$ - część rzeczywista i urojona drugiej liczby, liczby całkowite
+
+#### Wynik
+
+* Wynik działania operacji $$\Re{re1}+\Im{im1} op\ \Re{re2}+\Im{im2}$$ przedstawiony w formacie `re + imi`, np. `3 + 4i`
+
+### Przykład
+
+#### Dane
+
+```
+3 5
++
+7 11
+```
+
+#### Wynik
+
+```
+10 + 16i
+```
