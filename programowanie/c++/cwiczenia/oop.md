@@ -120,7 +120,7 @@ $$1010_2+5_{10}=F_16$$
 ## Zadanie 3
 
 Napisz program zgodny z poniższą specyfikacją. Do reprezentacji liczb zespolonych i wykonywania na nich operacji wykorzystaj własną implementację klasy.
-Operacje arytmetyczne, a także wypisanie liczb na ekran zrealizuj za pomocą **przeciążonych operatorów**.
+Operacje arytmetyczne, a także wczytywanie i wypisywanie liczb na ekran zrealizuj za pomocą **przeciążonych operatorów**.
 Informacje na temat liczb zespolonych można znaleźć na stronie Wikipedii: [https://pl.wikipedia.org/wiki/Liczby_zespolone](https://www.codeblocks.org/downloads/binaries/](https://pl.wikipedia.org/wiki/Liczby_zespolone)
 
 ### Specyfikacja
