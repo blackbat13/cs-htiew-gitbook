@@ -1,8 +1,19 @@
-# OOP
+# Klasy
 
-## Klasy
+## Wstęp
 
-### Przykład
+W języku C++ definicję klasy zaczynamy od słowa kluczowego ``class``.
+W klasach, w przeciwieństwie do struktur, domyślnym modyfikatorem dostępu jest ``private``.
+Jak i w innych językach klasy mogą mieć swoje atrybuty i metody.
+Omówimy działanie klas na konkretnym przykładzie.
+
+## Przykład 1: Punkt2D
+
+Stwórzmy klasę reprezentującą dwuwymiarowy punkt.
+Nazwiemy ją **Point2D**.
+Nasza klasa będzie miała dwa atrybuty: współrzędne $$x$$ i $$y$$.
+
+### Implementacja
 
 ```cpp
 #include <iostream>
@@ -83,11 +94,15 @@ int main() {
 }
 ```
 
-## Klasy: podział na pliki
+## Przykład 2: podział na pliki
 
-### Przykład
+Gdy nasza klasa będzie obrastać w nowe funkcjonalności i metody, z czasem może stać się mało czytelna.
+Dlatego dobrym pomysłem jest oddzielić deklarację klasy od jej implementacji.
+W ten sposób uzyskujemy dwa pliki: plik nagłówkowy z rozszerzeniem **.h** oraz plik z implementacją z rozszerzeniem **.cpp**.
+W pliku nagłówkowym zawieramy jedynie deklaracje atrybutów i metod klasy, unikamy dodawania ich implementacji.
+Na implementację metod naszej klasy przeznaczony jest osobny plik.
 
-#### Point2D.h
+### Point2D.h
 
 ```cpp
 #ifndef POINT2D_H
@@ -124,7 +139,7 @@ class Point2D {
 #endif //POINT2D_H
 ```
 
-#### Point2D.cpp
+### Point2D.cpp
 
 ```cpp
 #include "Point2D.h"
@@ -179,7 +194,7 @@ void Point2D::print() {
 
 ```
 
-#### main.cpp
+### main.cpp
 
 ```cpp
 #include "Point2D.h"
@@ -209,33 +224,4 @@ int main() {
 
 ```
 g++ -o main Point2D.cpp main.cpp
-```
-
-## Przeciążanie operatorów
-
-### Przykład
-
-#### Point2D.h
-
-```cpp
-Point2D operator+(const Point2D &other);
-```
-
-#### Point2D.cpp
-
-```cpp
-Point2D Point2D::operator+(const Point2D &other) {
-  return Point2D(this->x + other.x, this->y + other.y);
-}
-```
-
-#### main.cpp
-
-```cpp
-Point2D point = Point2D(3, 4);
-Point2D point2 = Point2D(1, 9);
-
-Point2D point3 = point + point2;
-
-point3.print();
 ```
