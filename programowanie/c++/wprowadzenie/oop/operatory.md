@@ -13,6 +13,10 @@ Używając jednak **przeciążenia operatorów** możemy zapisać ``p1 = p1 + p2
 
 ## Przykład: dodawanie punktów
 
+Operator dodawania $$+$$ jest jednym ze standardowych operatorów **dwuargumentowych**.
+Oznacza to, że działa na dwóch argumentach, a jego wynikiem jest nowa wartość.
+**Przeciążając ten operator nie powinniśmy modyfikować obecnego obiektu, ale utworzyć nowy i zwrócić go jako wynik.**
+
 ### Point2D
 
 ```cpp
@@ -30,4 +34,45 @@ Point2D p2 = Point2D(1, 9);
 auto p3 = p1 + p2;
 
 p3.print();
+```
+
+## Przykład: wypisanie punktu
+
+Możemy przeciążać nie tylko operatory arytmetyczne, ale także operatory strumieniowe.
+W ten sposób możemy sami zdefiniować, w jaki sposób nasz obiekt ma zostać wypisany, lub wczytany.
+
+W przeciwieństwie do operatorów arytmetycznych, ten nie jest definiowany jako część implementacji klasy, ale jako funkcja **zaprzyjaźniona** (ang. __friend__).
+
+### Point2D
+
+```cpp
+std::ostream& operator<<(std::ostream &out, const Point2D &point)
+{
+    out << "(" << point.x << "," << point.y << ")";
+    return out;
+}
+```
+
+### main
+```cpp
+std::cout << p3 << std::endl;
+```
+
+## Przykład: wczytanie punktu
+
+Przeciążanie operatora strumieniowego wejścia wygląda podobnie, jak przy operatorze wejścia.
+
+### Point2D
+
+```cpp
+std::istream& operator>>(std::istream &in, Point2D &point)
+{
+    in >> point.x >> point.y;
+    return in;
+}
+```
+
+### main
+```cpp
+std::cin >> p3;
 ```

@@ -150,3 +150,37 @@ Informacje na temat liczb zespolonych można znaleźć na stronie Wikipedii: [ht
 ```
 10 + 16i
 ```
+
+## Zadanie 4
+
+Napisz program zgodny z poniższą specyfikacją. 
+Dane przechowuj w tablicy dynamicznej, którą samodzielnie zaimplementujesz za pomocą klasy.
+Zaimplementuj dostęp do danych za pomocą przeciążenia operatora **[]**.
+Wszystkie arytmetyczne obliczenia zaimplementuj jako metody w klasie.
+Zadbaj o czyszczenie pamięci przy użyciu destruktora klasy.
+
+### Specyfikacja
+
+#### Dane
+
+* $$a1, a2, a3...$$ - ciąg liczb całkowitych
+
+#### Wynik
+
+* Średnia, suma oraz mediana podanych liczb wypisane w odpowiednim komunikacie.
+
+### Przykład
+
+#### Dane
+
+```
+1 2 3 4 5 6 7 8 9
+```
+
+#### Wynik
+
+```
+average = 5
+sum = 45
+median = 5
+```
