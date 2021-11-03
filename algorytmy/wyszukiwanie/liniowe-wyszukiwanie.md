@@ -20,19 +20,19 @@ Naszym celem będzie więc sprawdzenie, czy w tablicy znajduje się poszukiwana 
 
 ### Specyfikacja
 
-#### Dane:
+#### Dane
 
-* $$n$$ - liczba naturalna, ilość elementów w tablicy
+* $$n$$ - liczba naturalna, liczba elementów w tablicy
 * $$A[1..n]$$ - tablica n wartości całkowitych
 * $$k$$ - liczba całkowita, szukana wartość
 
-#### Wynik:
+#### Wynik
 
-* Wartość $$true$$, jeżeli wartość $$k$$ znajduje się w tablicy $$A$$ , lub $$false$$ w przeciwnym przypadku
+* Wartość $$true$$, jeżeli wartość $$k$$ znajduje się w tablicy $$A$$, lub $$false$$ w przeciwnym przypadku
 
 ### Przykład 1
 
-#### Dane:
+#### Dane
 
 ```
 n := 5
@@ -45,12 +45,12 @@ k := 7
 {% hint style="info" %}
 **Wyjaśnienie**
 
-Poszukiwana wartość w tablicy to $$7$$ . Jak widać, ta wartość znajduje się w tablicy, stąd też wynik wynosi $$true$$.
+Poszukiwana wartość w tablicy to $$7$$. Jak widać, ta wartość znajduje się w tablicy, stąd też wynik wynosi $$true$$.
 {% endhint %}
 
 ### Przykład 2
 
-#### Dane:
+#### Dane
 
 ```
 n := 5
@@ -63,14 +63,14 @@ k := 3
 {% hint style="info" %}
 **Wyjaśnienie**
 
-Poszukujemy wartości $$3$$ , która nie występuje w tablicy. Dlatego wynik to $$false$$ .
+Poszukujemy wartości $$3$$, która nie występuje w tablicy. Dlatego wynik to $$false$$ .
 {% endhint %}
 
 ### Rozwiązanie
 
 Znamy już problem, teraz pytanie brzmi, jak go rozwiązać? Jaki algorytm skonstruujemy? Wiemy, że chodzi o algorytm **przeszukiwania liniowego**, czyli sprawdzania elementów** jeden po drugim**. I dokładnie to musimy zrobić. Będziemy przeglądać elementy **od pierwszego do ostatniego**. Każdy kolejny element z tablicy będziemy** porównywać z poszukiwaną wartością**. 
 
-Teraz pytanie brzmi: **co zrobimy, gdy natrafimy na poszukiwany element**? Odpowiedź jest stosunkowo prosta. Gdy stwierdzimy, że poszukiwany element znajduje się w tablicy (czyli gdy go znajdziemy), to należy **zwrócić **stosowny wynik, czyli wartość $$true$$. I co robimy dalej? Cóż, w tym momencie możemy już **zakończyć obliczenia**, ponieważ stwierdziliśmy istnienie elementu w tablicy. Tak więc otrzepujemy ręce i kończymy, dobra robota!
+Teraz pytanie brzmi: **co zrobimy, gdy natrafimy na poszukiwany element**? Odpowiedź jest stosunkowo prosta. Gdy stwierdzimy, że poszukiwany element znajduje się w tablicy (czyli gdy go znajdziemy), to należy **zwrócić** stosowny wynik, czyli wartość $$true$$. I co robimy dalej? Cóż, w tym momencie możemy już **zakończyć obliczenia**, ponieważ stwierdziliśmy istnienie elementu w tablicy. Tak więc otrzepujemy ręce i kończymy, dobra robota!
 
 Pozostaje nam jeszcze jednak do rozważenia sytuacja, w której poszukiwany element **nie występuje w tablicy**. Co zrobimy w takim przypadku? Oczywiście powinniśmy zwrócić wartość $$false$$, ale jak stwierdzić, że elementu nie ma w tablicy? Zastanówmy się nad tym chwilę. Gdy znajdziemy element w tablicy to zwracamy wartość $$true$$ i kończymy działanie. Gdy nie znajdziemy elementu w tablicy, to **nie zwrócimy** wartości $$true$$ i po prostu** sprawdzimy wszystkie elementy tablicy**. 
 
@@ -113,19 +113,19 @@ Szukana wartość może występować w tablicy wielokrotnie. Nas jednak na pocz�
 
 ### Specyfikacja
 
-#### Dane:
+#### Dane
 
-* $$n$$ - liczba naturalna, ilość elementów w tablicy
+* $$n$$ - liczba naturalna, liczba elementów w tablicy
 * $$A[1..n]$$ - tablica n wartości całkowitych
 * $$k$$ - liczba całkowita, szukana wartość
 
-#### Wynik:
+#### Wynik
 
 * Indeks dowolnego wystąpienia wartości $$k$$ w tablicy $$A$$, lub $$-1$$ jeżeli tej wartości nie ma w tablicy
 
 ### Przykład 1
 
-#### Dane:
+#### Dane
 
 ```
 n := 5
@@ -143,7 +143,7 @@ Poszukiwana wartość w tablicy to $$7$$ . Jak widać, ta wartość znajduje si�
 
 ### Przykład 2
 
-#### Dane:
+#### Dane
 
 ```
 n := 5
@@ -163,7 +163,7 @@ Poszukujemy wartości $$3$$ , która nie występuje w tablicy. Dlatego wynik to 
 
 Do skonstruowania rozwiązania tego problemu skorzystamy z poprzedniego rozwiązania. Zastanówmy się, jakie są różnice pomiędzy tymi dwoma problemami i co musimy zmienić.
 
-Różnicę tak naprawdę stanowią jedynie wartości, jakie mamy zwrócić w wyniku. Poprzednio zwracaliśmy $$true$$, gdy element istniał w tablicy. Teraz mamy zwrócić jego **indeks**. Oznacza to, że musimy zmienić instrukcję, w której zwracamy wynik $$true$$ (numer 3). Powinniśmy w tym miejscu zwrócić indeks elementu, jednak skąd wziąć tę wartość? Przyjrzyjmy się poprzedzającej instrukcji warunkowej. W niej sprawdzamy, czy szukana wartość występuje pod **aktualnie sprawdzanym indeksem** w tablicy. A jaki to jest indeks? Ten indeks określany jest przez zmienną, która stanowi **licznik naszej pętli**, czyli przez zmienną $$i$$. W takim razie zamiast $$true$$ zwracamy wartość zmiennej $$i$$ . Gotowe!
+Różnicę tak naprawdę stanowią jedynie wartości, jakie mamy zwrócić w wyniku. Poprzednio zwracaliśmy $$true$$, gdy element istniał w tablicy. Teraz mamy zwrócić jego **indeks**. Oznacza to, że musimy zmienić instrukcję, w której zwracamy wynik $$true$$ (numer 3). Powinniśmy w tym miejscu zwrócić indeks elementu, jednak skąd wziąć tę wartość? Przyjrzyjmy się poprzedzającej instrukcji warunkowej. W niej sprawdzamy, czy szukana wartość występuje pod **aktualnie sprawdzanym indeksem** w tablicy. A jaki to jest indeks? Ten indeks określany jest przez zmienną, która stanowi **licznik naszej pętli**, czyli przez zmienną $$i$$. W takim razie zamiast $$true$$ zwracamy wartość zmiennej $$i$$. Gotowe!
 
 Teraz skupmy się na drugim możliwym wyniku. Przedtem zwracaliśmy $$false$$. Co teraz powinniśmy zwrócić, gdy element nie występuje w tablicy? Wystarczy spojrzeć na specyfikację. Zastępujemy $$false$$ wartością $$-1$$ i kończymy działanie.
 
@@ -194,19 +194,19 @@ Wiemy już jak sprawdzić, czy wartość występuje w tablicy, a także jak ją 
 
 ### Specyfikacja
 
-#### Dane:
+#### Dane
 
-* $$n$$ - liczba naturalna, ilość elementów w tablicy
+* $$n$$ - liczba naturalna, liczba elementów w tablicy
 * $$A[1..n]$$ - tablica n wartości całkowitych
 * $$k$$ - liczba całkowita, szukana wartość
 
-#### Wynik:
+#### Wynik
 
 * Lista wszystkich indeksów, pod którymi znajduje się wartość $$k$$ w tablicy $$A$$
 
 ### Przykład 1
 
-#### Dane:
+#### Dane
 
 ```
 n := 5

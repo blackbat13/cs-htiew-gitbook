@@ -4,6 +4,16 @@
 
 TODO
 
+### Specyfikacja
+
+#### Dane
+
+* $$n$$ - liczba naturalna, liczba królowych do rozstawienia
+
+#### Wynik
+
+* Jedno z poprawnych ustawień $$n$$ królowych na szachownicy o wymiarach $$n\times n$$, lub informacja, że takie ułożenie nie istnieje.
+
 ## Rozwiązanie
 
 TODO
