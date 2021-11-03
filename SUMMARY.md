@@ -656,6 +656,7 @@
 * [Pliki](linux/pliki.md)
 * [Prawa dostępu](linux/prawa-dostepu.md)
 * [Procesy](linux/procesy.md)
+* [Grep](linux/grep.md)
 
 ## E-głosowanie
 
