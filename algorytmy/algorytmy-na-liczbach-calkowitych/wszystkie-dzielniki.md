@@ -86,7 +86,7 @@ TODO
 
 ### Złożoność
 
-W naszym rozwiązaniu przechodzimy przez wszystkie kolejne wartości od $$1$$ do $$n/2$$ . Dla zadanego $$n$$ mamy więc do sprawdzenia $$n/2$$ potencjalnych dzielników. Stąd też otrzymujemy złożoność:
+W naszym rozwiązaniu przechodzimy przez wszystkie kolejne wartości od $$1$$ do $$n/2$$. Dla zadanego $$n$$ mamy więc do sprawdzenia $$n/2$$ potencjalnych dzielników. Stąd też otrzymujemy złożoność:
 
 $$O(\frac{n}{2})$$
 
@@ -115,7 +115,7 @@ TODO
 
 ### Złożoność
 
-W naszym rozwiązaniu przechodzimy przez wszystkie kolejne wartości od $$1$$ do $$\sqrt{n}$$ . Dla zadanego $$n$$ mamy więc do sprawdzenia $$\sqrt{n}$$ potencjalnych dzielników. Stąd też otrzymujemy złożoność:
+W naszym rozwiązaniu przechodzimy przez wszystkie kolejne wartości od $$1$$ do $$\sqrt{n}$$. Dla zadanego $$n$$ mamy więc do sprawdzenia $$\sqrt{n}$$ potencjalnych dzielników. Stąd też otrzymujemy złożoność:
 
 $$O(\sqrt{n})$$
 

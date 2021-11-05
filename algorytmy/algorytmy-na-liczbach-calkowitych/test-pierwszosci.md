@@ -22,8 +22,8 @@ Jak zwykle zaczynamy od formalnej specyfikacji problemu i kilku prostych przykł
 
 #### Wynik:
 
-* **PRAWDA **- jeżeli $$n$$ jest liczbą pierwszą
-* **FAŁSZ **- jeżeli $$n$$ nie jest liczbą pierwszą
+* **PRAWDA**- jeżeli $$n$$ jest liczbą pierwszą
+* **FAŁSZ**- jeżeli $$n$$ nie jest liczbą pierwszą
 
 {% hint style="info" %}
 Dlaczego w specyfikacji wymagamy, żeby liczba $$n$$ była większa od $$1$$? Dla ułatwienia i zwiększenia czytelności rozwiązania. Wiadomo, że liczby $$0$$ i $$1$$ nie są liczbami pierwszymi. W związku z tym możemy je łatwo potraktować jako osobny przypadek, używając instrukcji warunkowej. To jednak zostawimy jako ćwiczenie do samodzielnego wykonania.
@@ -81,7 +81,7 @@ funkcja CzyPierwsza(n):
 ```
 
 {% hint style="info" %}
-**mod **oznacza operację reszty z dzielenia
+**mod** oznacza operację reszty z dzielenia
 {% endhint %}
 
 ### Złożoność
