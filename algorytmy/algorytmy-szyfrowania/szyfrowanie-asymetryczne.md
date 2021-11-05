@@ -2,7 +2,7 @@
 
 ## Prezentacja
 
-{% file src="../.gitbook/assets/Szyfrowanie asymetryczne.pdf" %}
+{% file src="../../.gitbook/assets/Szyfrowanie asymetryczne.pdf" %}
 Prezentacja
 {% endfile %}
 
