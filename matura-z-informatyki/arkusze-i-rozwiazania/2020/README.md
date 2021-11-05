@@ -2,20 +2,20 @@
 
 ## Arkusze
 
-{% file src="../../.gitbook/assets/informatyka-2020-czerwiec-matura-rozszerzona.pdf" %}
+{% file src="../../../.gitbook/assets/informatyka-2020-czerwiec-matura-rozszerzona.pdf" %}
 Część I
 {% endfile %}
 
-{% file src="../../.gitbook/assets/informatyka-2020-czerwiec-matura-rozszerzona-2.pdf" %}
+{% file src="../../../.gitbook/assets/informatyka-2020-czerwiec-matura-rozszerzona-2.pdf" %}
 Część II
 {% endfile %}
 
-{% file src="../../.gitbook/assets/dane_2020.zip" %}
+{% file src="../../../.gitbook/assets/dane_2020.zip" %}
 Dane
 {% endfile %}
 
 ## Odpowiedzi
 
-{% file src="../../.gitbook/assets/informatyka-2020-czerwiec-matura-rozszerzona-odpowiedzi.pdf" %}
+{% file src="../../../.gitbook/assets/informatyka-2020-czerwiec-matura-rozszerzona-odpowiedzi.pdf" %}
 Klucz
 {% endfile %}
