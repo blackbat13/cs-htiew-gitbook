@@ -2,7 +2,7 @@
 
 ## Prezentacja
 
-{% file src="../.gitbook/assets/Metody szyfrowania symetrycznego.pdf" %}
+{% file src="../../.gitbook/assets/Metody szyfrowania symetrycznego.pdf" %}
 Prezentacja
 {% endfile %}
 
