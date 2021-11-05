@@ -2,6 +2,6 @@
 
 ## Prezentacja
 
-{% file src="../.gitbook/assets/Fraktale (1).pdf" %}
+{% file src="../../.gitbook/assets/Fraktale.pdf" %}
 Fraktale - wprowadzenie
 {% endfile %}
