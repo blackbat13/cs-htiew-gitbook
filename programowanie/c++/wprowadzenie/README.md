@@ -7,7 +7,7 @@ To nie jest tutorial programowania. Założenie jest takie, że wiesz już co ni
 
 **Nie będziemy tutaj tłumaczyć czym jest pętla czy instrukcja warunkowe, a jedynie pokażemy, jak te konstrukcje wyglądają w języku C++.**
 
-**Jeżeli dopiero zaczynasz, zapoznaj się najpierw z wprowadzeniem do algorytmów: **[**Wprowadzenie**](../../../algorytmy/wprowadzenie/)
+**Jeżeli dopiero zaczynasz, zapoznaj się najpierw z wprowadzeniem do algorytmów:** [**Wprowadzenie**](../../../algorytmy/wprowadzenie/)
 {% endhint %}
 
 ## Środowiska lokalne
