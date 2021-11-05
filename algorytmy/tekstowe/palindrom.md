@@ -9,7 +9,7 @@ description: Sprawdzanie, czy wyraz jest palindromem
 TODO
 
 {% hint style="info" %}
-**Palindrom **to wyraz, który czytany od lewej do prawej i od prawej do lewej jest taki sam.
+**Palindrom** to wyraz, który czytany od lewej do prawej i od prawej do lewej jest taki sam.
 {% endhint %}
 
 ### Specyfikacja
@@ -17,7 +17,7 @@ TODO
 #### Dane:
 
 * $$n$$ - długość tekstu
-* $$tekst[1..n]$$ - ciąg znaków o długości $$n$$, numerowanych od jedynki&#x20;
+* $$tekst[1..n]$$ - ciąg znaków o długości $$n$$, numerowanych od jedynki
 
 #### Wynik:
 
@@ -33,7 +33,7 @@ n := 5
 tekst := "kajak"
 ```
 
-#### Wynik: $$True$$&#x20;
+#### Wynik: $$True$$
 
 {% hint style="info" %}
 **Wyjaśnienie**
@@ -50,7 +50,7 @@ n := 4
 tekst := "tama"
 ```
 
-**Wynik**: $$False$$&#x20;
+**Wynik**: $$False$$
 
 {% hint style="info" %}
 **Wyjaśnienie**
