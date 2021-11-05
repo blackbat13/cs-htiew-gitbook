@@ -87,14 +87,14 @@ W tym przykładzie bardzo ważne jest poprawne zrozumienie działania pętli. P�
 
 ## Prezentacja
 
-{% file src="../.gitbook/assets/Zmienne - wprowadzenie.pdf" %}
+{% file src="../../.gitbook/assets/Zmienne - wprowadzenie.pdf" %}
 Wprowadzenie
 {% endfile %}
 
-{% file src="../.gitbook/assets/Zmienne - ćwiczenia.pdf" %}
+{% file src="../../.gitbook/assets/Zmienne - ćwiczenia.pdf" %}
 Ćwiczenia
 {% endfile %}
 
-{% file src="../.gitbook/assets/Zmienne w Pamięci - Ćwiczenia (1).pdf" %}
+{% file src="../../.gitbook/assets/Zmienne w Pamięci - Ćwiczenia.pdf" %}
 Zmienne w pamięci
 {% endfile %}
