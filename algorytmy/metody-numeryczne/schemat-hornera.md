@@ -85,15 +85,30 @@ _**Schemat Hornera**_ ma także zastosowanie przy przeliczaniu liczby z zadanego
 
 ### Specyfikacja
 
-TODO
+#### Dane
+
+* $$n$$ - stopień wielomianu, liczba naturalna
+* $$x$$ - wartość, dla której należy obliczyć wielomian
+* $$a_{n}, a_{n-1}, ..., a_1, a_0$$ - współczynniki wielomianu, podane w kolejności od największej potęgi do najmniejszej
+
+#### Wynik
+
+* Wartość podanego wielomianu w punkcie $$x$$
 
 ## Rozwiązanie
 
-TODO
+Zaprojektujmy funkcje Horner, zgodną z powyższą specyfikacją.
+Będziemy postępować zgodnie ze schematem: w pętli mnożymy przez $$x$$ i dodajemy kolejny współczynnik.
 
 ### Pseudokod
 
-TODO
+```
+funkcja Horner(n, x, a)
+    1. wynik := a[n]
+    2. Od i := n - 1 w dół do 0, wykonuj:
+        3. wynik := wynik * x + a[i]
+    4. Zwróć wynik
+```
 
 ### Złożoność
 
