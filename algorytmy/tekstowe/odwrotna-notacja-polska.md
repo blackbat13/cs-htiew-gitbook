@@ -25,7 +25,7 @@ onp := "27+3/13-4*+2/"
 **Wynik**: $$-2.5$$
 
 {% hint style="info" %}
-Wyjaśnienie
+**Wyjaśnienie**
 
 Przedstawione wyrażenie ONP odpowiada następującemu wyrażeniu arytmetycznemu:
 
