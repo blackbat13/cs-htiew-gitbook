@@ -607,6 +607,7 @@
   * [Różne cyfry](algorytmika-zadania/poziom-1-1/rozne-cyfry.md)
   * [Różnice w sekwencji](algorytmika-zadania/poziom-1-1/wesole-skoki.md)
   * [Promocja](algorytmika-zadania/poziom-1-1/promocja.md)
+  * [Permutacja](algorytmika-zadania/poziom-1-1/permutacja.md)
 * [Poziom 2](algorytmika-zadania/poziom-2.md)
 
 ## Nauka programowania poprzez tworzenie gier <a href="nauka-przez-gry" id="nauka-przez-gry"></a>
