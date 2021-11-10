@@ -1,5 +1,29 @@
 # Procesy
 
+## Procesy działające w tle
+
+Domyślnie, jak uruchamiamy jakiś proces, program, to urachmiany jest "na planie głównym".
+Między innymi oznacza to, że program "blokuje" nam terminal.
+Istnieje jednak możliwość uruchomienia procesu w tle, albo uśpienia działającego procesu.
+
+### Uruchomienie procesu w tle
+
+Aby uruchomić proces w tle, należy po poleceniu dodać znak ampersant: **&**.
+
+#### Przykład
+
+```
+./program &
+```
+
+### Uśpienie procesu
+
+Aby uśpić działający na pierwszym planie proces, należy użyć skrótu **CTRL+Z**.
+
+### Przeniesienie procesu na pierwszy plan
+
+Aby przenieść uśpiony proces na pierwszy plan, użyjemy polecenia **fg** (ang. __foreground__).
+
 ## ps
 
 Polecenie **ps** pozwala nam zobaczyć listę aktualnie uruchomionych procesów.
