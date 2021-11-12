@@ -104,7 +104,7 @@ TODO
 
 $$
 fib_2(n) =  \begin{cases} 
-      2 & n <= 3 \\
+      2 & n \leq 3 \\
       fib_2(n - 1) + 2 * fib_2(n - 3) & n > 3 \\
    \end{cases}
 $$
