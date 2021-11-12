@@ -1,8 +1,10 @@
 # Rozwiązania
 
-Zad 1
+## Część I
 
-c)
+### Zadanie 1
+
+#### c)
 
 ```
 1. Zapamiętujemy pierwszy bit z liczby
