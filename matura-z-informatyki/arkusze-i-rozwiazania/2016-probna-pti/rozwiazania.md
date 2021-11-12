@@ -103,9 +103,9 @@ TODO
 |    10     |         126         |
 
 $$
-fib-2(n) =  \begin{cases} 
+fib_2(n) =  \begin{cases} 
       2 & n <= 3 \\
-      fib-2(n - 1) + 2 * fib-2(n - 3) & n > 3 \\
+      fib_2(n - 1) + 2 * fib_2(n - 3) & n > 3 \\
    \end{cases}
 $$
 
