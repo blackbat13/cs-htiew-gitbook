@@ -81,6 +81,49 @@ TODO
     10. Zwróć false
 ``` 
 
+### Zadanie 3
+
+#### 3.1
+
+TODO
+
+#### 3.2
+
+|  Miesiąc  | Liczba par królików |
+| :-------: | :-----------------: |
+|     1     |          2          |
+|     2     |          2          |
+|     3     |          2          |
+|     4     |          6          |
+|     5     |          10         |
+|     6     |          14         |
+|     7     |          26         |
+|     8     |          46         |
+|     9     |          74         |
+|    10     |         126         |
+
+$$
+fib-2(n) =  \begin{cases} 
+      2 & n <= 3 \\
+      fib-2(n - 1) + 2 * fib-2(n - 3) & n > 3 \\
+   \end{cases}
+$$
+
+#### 3.3
+
+```
+Funkcja Fib-2(n):
+1. Jeżeli n <= 3 to:
+    2. Zwróć 2
+3. fib2 := tablica [1..n]
+4. fib2[1] := 2
+5. fib2[2] := 2
+6. fib2[3] := 2
+7. Od i := 4 do n, wykonuj:
+    8. fib2[i] := fib2[i - 1] + 2 * fib2[i - 3]
+9. Zwróć fib2[n]
+```
+
 ## Część II
 
 ### Zadanie 5
