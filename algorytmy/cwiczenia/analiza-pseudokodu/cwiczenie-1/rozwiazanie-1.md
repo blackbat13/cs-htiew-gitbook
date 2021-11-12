@@ -1,6 +1,6 @@
 # Rozwiązanie 1
 
-## Pseudokod
+## Analiza
 
 ```
 [x = 10, y = 3]
