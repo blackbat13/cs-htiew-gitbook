@@ -16,7 +16,7 @@ Excel
 
 ### Zadanie 6
 
-{% file src="../../../.gitbook/assets/2019_p_m_zad6.zip" %}
+{% file src="../../../.gitbook/assets/2019_p_m_zad6.accdb" %}
 Access
 {% endfile %}
 
