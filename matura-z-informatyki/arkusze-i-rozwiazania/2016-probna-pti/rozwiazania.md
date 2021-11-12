@@ -4,6 +4,49 @@
 
 ### Zadanie 1
 
+#### 1.1
+
+**Konwertujemy wartość bezwzględną**
+
+| div | mod |
+| :-: | :-: |
+| 116 |  0  |
+|  58 |  1  |
+|  25 |  1  |
+|  12 |  0  |
+|  6  |  0  |
+|  3  |  1  |
+|  1  |  1  |
+|  0  |     |
+
+$$
+102_{10}=1100110_2
+$$
+
+**Dodajemy brakujące bity**
+
+$$
+01100110
+$$
+
+**Zamieniamy bity na przeciwne**
+
+$$
+10011001
+$$
+
+**Dodajemy liczbę 1 do wyniku**
+
+$$
+10011010
+$$
+
+**Konwersja skończona**
+
+$$
+-102_{10}=10011010_{U2}
+$$
+
 #### 1.2
 
 $$ONP(3\ 5\ +\ 4\ 2\ *\ -) = (3 + 5) - (4 * 2) = 8 - 8 = 0$$

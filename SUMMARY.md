@@ -153,6 +153,7 @@
 * [Ćwiczenia](algorytmy/cwiczenia/README.md)
   * [Analiza pseudokodu](algorytmy/cwiczenia/analiza-pseudokodu/README.md)
     * [Ćwiczenie 1](algorytmy/cwiczenia/analiza-pseudokodu/cwiczenie-1/README.md)
+      * [Rozwiązanie 1](algorytmy/cwiczenia/analiza-pseudokodu/cwiczenie-1/rozwiazanie-1.md)
       * [Rozwiązanie](algorytmy/cwiczenia/analiza-pseudokodu/cwiczenie-1/rozwiazanie.md)
     * [Ćwiczenie 2](algorytmy/cwiczenia/analiza-pseudokodu/cwiczenie-2/README.md)
       * [Rozwiązanie](algorytmy/cwiczenia/analiza-pseudokodu/cwiczenie-2/rozwiazanie.md)

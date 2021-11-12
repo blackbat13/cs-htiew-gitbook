@@ -25,7 +25,15 @@ Dany jest następujący pseudokod, zgodny z poniższą  częściową specyfikacj
 
 ## Zadania
 
-1. Podaj wynik programu dla danych: `x := 10, y := 3`
-2. Podaj wynik programu dla danych: `x := 50, y := 15`
-3. Podaj specyfikację wyniku dla powyższego programu.
+### Zadanie 1
+
+Podaj wynik programu dla danych: `x := 10, y := 3`
+
+### Zadanie 2
+
+Podaj wynik programu dla danych: `x := 50, y := 15`
+
+### Zadanie 3
+
+Podaj specyfikację wyniku dla powyższego programu.
 
