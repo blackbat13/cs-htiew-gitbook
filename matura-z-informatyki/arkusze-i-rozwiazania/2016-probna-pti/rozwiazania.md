@@ -62,6 +62,25 @@ Wynik: false
 Wynik: true
 ```
 
+#### 2.2
+
+TODO
+
+#### 2.3
+
+```
+1. suma := 0
+2. Dopóki n != 0, wykonuj:
+   3. dwie := n mod 100
+   4. suma := suma + (dwie mod 7)
+   5. n := n div 100
+   6. n := n * 2
+7. Jeżeli suma mod 7 = 0, to:
+    8. Zwróć true
+9. w przeciwnym przypadku:
+    10. Zwróć false
+``` 
+
 ## Część II
 
 ### Zadanie 5
