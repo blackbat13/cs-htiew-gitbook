@@ -43,15 +43,15 @@ Przeanalizuj powyższą funkcję i uzupełnij poniższą tabelkę.
 
 Oblicz ilość wywołań funkcji `fun` dla różnych wartości $$n$$.
 
-| n  | liczba wywołań funkcji fun |
-| -- | -------------------------- |
-| 0  | 1                          |
-| 1  | 2                          |
-| 4  |                            |
-| 8  |                            |
-| 10 |                            |
-| 16 |                            |
-| 20 |                            |
+| n   | liczba wywołań funkcji fun |
+| :-: | :------------------------: |
+| 0   | 1                          |
+| 1   | 2                          |
+| 4   |                            |
+| 8   |                            |
+| 10  |                            |
+| 16  |                            |
+| 20  |                            |
 
 ### Zadanie 3
 

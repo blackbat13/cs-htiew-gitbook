@@ -183,7 +183,9 @@
       * [Rozwiązanie 2](algorytmy/cwiczenia/rekurencja/cwiczenie-5/rozwiazanie-2.md)
       * [Rozwiązanie 3](algorytmy/cwiczenia/rekurencja/cwiczenie-5/rozwiazanie-3.md)
     * [Ćwiczenie 6](algorytmy/cwiczenia/rekurencja/cwiczenie-6/README.md)
-      * [Rozwiązanie](algorytmy/cwiczenia/rekurencja/cwiczenie-6/rozwiazanie.md)
+      * [Rozwiązanie 1](algorytmy/cwiczenia/rekurencja/cwiczenie-6/rozwiazanie-1.md)
+      * [Rozwiązanie 2](algorytmy/cwiczenia/rekurencja/cwiczenie-6/rozwiazanie-2.md)
+      * [Rozwiązanie 3](algorytmy/cwiczenia/rekurencja/cwiczenie-6/rozwiazanie-3.md)
 
 ## Programowanie
 
