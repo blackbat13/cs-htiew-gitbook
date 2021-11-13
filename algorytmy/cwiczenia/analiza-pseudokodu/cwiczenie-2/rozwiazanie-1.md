@@ -1,6 +1,6 @@
-# Rozwiązanie
+# Rozwiązanie 1
 
-## Zadanie 1
+## Symulacja
 
 ```
 [x = 2]
@@ -24,4 +24,6 @@
 8. Wypisz 4
 ```
 
-**Wynik**: $$w=4$$ 
+## Wynik
+
+$$4$$ 

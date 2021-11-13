@@ -1,22 +1,58 @@
-# Ćwiczenie 2
+# Ćwiczenie 6
 
 ## Opis
 
-Dana jest następująca specyfikacja problemu:
+Dany jest następujący pseudokod, zgodny z poniższą częściową specyfikacją:
 
 ### Specyfikacja
 
 #### Dane
 
-* $$n$$ - liczba naturalna
+* n - liczba naturalna, $$n>0$$ 
 
-#### Wynik
+### Pseudokod
 
-* $$n!$$ - $$n$$ silnia
+```
+funkcja fun(n):
+    1. Jeżeli n = 0, to
+        2. Zakończ
+    3. Jeżeli n mod 2 = 0, to 
+        4. Wywołaj fun(n div 2)
+        5. Wypisz "0"
+    6. Jeżeli n mod 2 = 1, to
+        7. Wywołaj fun(n div 2)
+        8. Wypisz "1"
+```
 
 ## Zadania
 
-1. Napisz pseudokod **iteracyjnej** funkcji `silnia_iter(n)` zgodnej z powyższą specyfikacją.
-2. Narysuj schemat blokowy **iteracyjnej** funkcji `silnia_iter(n)` zgodnej z powyższą specyfikacją.
-3. Napisz pseudokod **rekurencyjnej** funkcji `silnia_rek(n)` zgodnej z powyższą specyfikacją.
-4. Narysuj schemat blokowy **rekurencyjnej** funkcji `silnia_rek(n)` zgodnej z powyższą specyfikacją.
+### Zadanie 1
+
+Przeanalizuj powyższą funkcję i uzupełnij poniższą tabelkę.
+
+|  n  | Wypisany komunikat |
+| :-: | :----------------: |
+|  1  |         "1"        |
+|  2  |        "10"        |
+|  4  |                    |
+|  5  |                    |
+|  10 |                    |
+|  20 |                    |
+
+### Zadanie 2
+
+Oblicz ilość wywołań funkcji `fun` dla różnych wartości $$n$$.
+
+| n  | liczba wywołań funkcji fun |
+| -- | -------------------------- |
+| 0  | 1                          |
+| 1  | 2                          |
+| 4  |                            |
+| 8  |                            |
+| 10 |                            |
+| 16 |                            |
+| 20 |                            |
+
+### Zadanie 3
+
+Jaka jest złożoność funkcji `fun`?

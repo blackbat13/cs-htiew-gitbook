@@ -28,10 +28,21 @@ funkcja fun(n):
 
 ## Zadania
 
-1. Wykonanie funkcji rekurencyjnej można przedstawić w postaci _drzewa wywołań rekurencyjnych_ ilustrującego wszystkie wywołania funkcji po jej uruchomieniu dla zadanego argumentu. Narysuj takie drzewo dla wywołania `fun(5)`.
-2. Narysuj _drzewo wywołań rekurencyjnych_ dla wywołania `fun(7)`.
-3. Ile razy zostanie wykonane wywołanie `fun(1)` podczas obliczania `fun(7)`?.
-4. Uzupełnij poniższą tabelę, podając wartości funkcji `fun` dla wskazanych argumentów.
+### Zadanie 1
+
+Wykonanie funkcji rekurencyjnej można przedstawić w postaci _drzewa wywołań rekurencyjnych_ ilustrującego wszystkie wywołania funkcji po jej uruchomieniu dla zadanego argumentu. Narysuj takie drzewo dla wywołania `fun(5)`.
+
+### Zadanie 2
+
+Narysuj _drzewo wywołań rekurencyjnych_ dla wywołania `fun(7)`.
+
+### Zadanie 3
+
+Ile razy zostanie wykonane wywołanie `fun(1)` podczas obliczania `fun(7)`?.
+
+### Zadanie 4
+
+Uzupełnij poniższą tabelę, podając wartości funkcji `fun` dla wskazanych argumentów.
 
 |  n  | fun(n) |
 | :-: | :----: |
@@ -42,4 +53,6 @@ funkcja fun(n):
 |  5  |        |
 |  6  |        |
 
-5\. Napisz **iteracyjną** wersję funkcji `fun` (bez użycia rekurencji).
+### Zadanie 5
+
+Napisz **iteracyjną** wersję funkcji `fun` (bez użycia rekurencji).

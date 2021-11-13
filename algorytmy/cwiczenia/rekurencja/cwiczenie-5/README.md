@@ -26,7 +26,9 @@ funkcja fun(n):
 
 ## Zadania
 
-1. Przeanalizuj powyższą funkcję i uzupełnij poniższą tabelkę.
+### Zadanie 1
+
+Przeanalizuj powyższą funkcję i uzupełnij poniższą tabelkę.
 
 |  n  | Wypisany komunikat |
 | :-: | :----------------: |
@@ -37,7 +39,9 @@ funkcja fun(n):
 |  10 |                    |
 |  20 |                    |
 
-2\. Oblicz ilość wywołań funkcji `fun` dla różnych wartości $$n$$ .
+### Zadanie 2
+
+Oblicz ilość wywołań funkcji `fun` dla różnych wartości $$n$$ .
 
 |  n  | liczba wywołań funkcji `fun` |
 | :-: | :--------------------------: |
@@ -49,4 +53,6 @@ funkcja fun(n):
 |  16 |                              |
 |  20 |                              |
 
-3\. Jaka jest złożoność funkcji `fun`?
+### Zadanie 3
+
+Jaka jest złożoność funkcji `fun`?

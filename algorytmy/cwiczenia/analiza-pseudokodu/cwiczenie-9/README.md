@@ -29,7 +29,9 @@ Dany jest następujący pseudokod, zgodny z poniższą specyfikacją:
 
 ## Zadania
 
-1. Przeanalizuj powyższy algorytm i uzupełnij poniższą tabelę wartościami zmiennych $$p$$ , $$b$$ oraz $$n$$ po kolejnych wykonaniach kroku **3** dla dowolnej początkowej wartości $$a$$ oraz początkowej wartości zmiennej $$n$$ równej $$12$$ .
+### Zadanie 1
+
+Przeanalizuj powyższy algorytm i uzupełnij poniższą tabelę wartościami zmiennych $$p$$, $$b$$ oraz $$n$$ po kolejnych wykonaniach kroku **3** dla dowolnej początkowej wartości $$a$$ oraz początkowej wartości zmiennej $$n$$ równej $$12$$.
 
 |  p  |     b    |  n  |
 | :-: | :------: | :-: |
@@ -39,7 +41,9 @@ Dany jest następujący pseudokod, zgodny z poniższą specyfikacją:
 |     |          |     |
 |     |          |     |
 
-2\. Uzupełnij poniższą tabelę wpisując liczby **wszystkich mnożeń** wykonywanych przez powyższy algorytm dla podanych wartości $$n$$ , tzn. liczby wykonanych instrukcji `p:=p*b` i `b:=b*b`
+### Zadanie 2
+
+Uzupełnij poniższą tabelę wpisując liczby **wszystkich mnożeń** wykonywanych przez powyższy algorytm dla podanych wartości $$n$$, tzn. liczby wykonanych instrukcji `p:=p*b` i `b:=b*b`
 
 | `n` | liczba mnożeń |
 | :-: | :-----------: |
@@ -50,4 +54,6 @@ Dany jest następujący pseudokod, zgodny z poniższą specyfikacją:
 |  6  |               |
 |  7  |               |
 
-3\. Jaka jest złożoność powyższego algorytmu?
+### Zadanie 3
+
+Jaka jest złożoność powyższego algorytmu?

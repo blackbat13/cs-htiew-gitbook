@@ -22,9 +22,19 @@ funkcja fun(n):
 
 ## Zadania
 
-1. Podaj wyniki funkcji dla kolejnych wartości n od 1 do 10.
-2. Uzupełnij poniższą definicję rekurencyjną zgodnie z działaniem algorytmu:\
-   $$fun(n) =  \begin{cases}        ? & n\leq 2 \\       ? & n > 2 \\    \end{cases}$$ 
-3. Ile razy zostanie wykonane wywołanie `fun(2)` podczas obliczania wyniku dla `n :=5`?
-4. Rozrysuj _drzewo wywołań rekurencyjnych_ dla wywołania `fun(5)`.
+### Zadanie 1
 
+Podaj wyniki funkcji dla kolejnych wartości $$n$$ od $$1$$ do $$10$$.
+
+### Zadanie 2
+
+Uzupełnij poniższą definicję rekurencyjną zgodnie z działaniem algorytmu:\
+   $$fun(n) =  \begin{cases}        ? & n\leq 2 \\       ? & n > 2 \\    \end{cases}$$ 
+
+### Zadanie 3
+
+Ile razy zostanie wykonane wywołanie `fun(2)` podczas obliczania wyniku dla `n := 5`?
+
+### Zadanie 4
+
+Rozrysuj _drzewo wywołań rekurencyjnych_ dla wywołania `fun(5)`.

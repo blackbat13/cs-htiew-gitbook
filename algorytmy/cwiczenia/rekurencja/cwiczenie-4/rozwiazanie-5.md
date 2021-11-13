@@ -1,31 +1,6 @@
-# Rozwiązanie
+# Rozwiązanie 5
 
-## Zadanie 1
-
-TODO
-
-## Zadanie 2
-
-TODO
-
-## Zadanie 3
-
-Odpowiedź: **3**.
-
-## Zadanie 4
-
-
-
-|  n  | fun(n) |
-| :-: | :----: |
-|  1  |    0   |
-|  2  |    1   |
-|  3  |  **3** |
-|  4  |  **5** |
-|  5  |  **8** |
-|  6  | **11** |
-
-## Zadanie 5
+## Pseudokod
 
 ```
 funkcja fun_iter(n):

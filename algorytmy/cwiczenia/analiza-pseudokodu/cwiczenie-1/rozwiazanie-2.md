@@ -1,6 +1,6 @@
 # Rozwiązanie 2
 
-## Analiza
+## Symulacja
 
 ```
 [x = 50, y = 15]

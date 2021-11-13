@@ -1,6 +1,6 @@
 # Rozwiązanie 1
 
-## Analiza
+## Symulacja
 
 ```
 [x = 10, y = 3]

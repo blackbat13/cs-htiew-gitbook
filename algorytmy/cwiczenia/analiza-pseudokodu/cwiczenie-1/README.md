@@ -2,7 +2,7 @@
 
 ## Opis
 
-Dany jest następujący pseudokod, zgodny z poniższą  częściową specyfikacją:
+Dany jest następujący pseudokod, zgodny z poniższą częściową specyfikacją:
 
 ### Specyfikacja
 

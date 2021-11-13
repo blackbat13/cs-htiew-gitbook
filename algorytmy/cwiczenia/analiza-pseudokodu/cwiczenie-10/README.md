@@ -29,7 +29,9 @@ Dany jest następujący pseudokod, zgodny z poniższą częściową specyfikacj�
 
 ## Zadania
 
-1. Przeanalizuj powyższy algorytm i uzupełnij poniższą tabelkę.
+### Zadanie 1
+
+Przeanalizuj powyższy algorytm i uzupełnij poniższą tabelkę.
 
 |  n  | wynik |
 | :-: | :---: |
@@ -38,4 +40,6 @@ Dany jest następujący pseudokod, zgodny z poniższą częściową specyfikacj�
 |  3  |       |
 |  4  |       |
 
-2\. Podaj specyfikację wyjścia dla powyższego algorytmu.
+### Zadanie 2
+
+Podaj specyfikację wyjścia dla powyższego algorytmu.

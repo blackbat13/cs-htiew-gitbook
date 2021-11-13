@@ -26,9 +26,22 @@ Dany jest następujący pseudokod, zgodny z poniższą częściową specyfikacj�
 
 ## Zadania
 
-1. Podaj wynik programu dla danych `n := 5, tab := [4, 7, 2, 10, 1]`
-2. Podaj wynik programu dla danych `n := 10, tab := [5, 8, 1, 3, 6, 10, 1, 10, 12, 9]`
-3. Ile razy zostanie wykonana instrukcja **4** dla danych z pierwszego zadania, a ile razy dla danych z drugiego zadania?
-4. Podaj specyfikację wyjścia dla powyższego algorytmu.
-5. Jaka jest złożoność powyższego algorytmu?
+### Zadanie 1
 
+Podaj wynik programu dla danych `n := 5, tab := [4, 7, 2, 10, 1]`
+
+### Zadanie 2
+
+Podaj wynik programu dla danych `n := 10, tab := [5, 8, 1, 3, 6, 10, 1, 10, 12, 9]`
+
+### Zadanie 3
+
+Ile razy zostanie wykonana instrukcja **4** dla danych z pierwszego zadania, a ile razy dla danych z drugiego zadania?
+
+### Zadanie 4
+
+Podaj specyfikację wyjścia dla powyższego algorytmu.
+
+### Zadanie 5
+
+Jaka jest złożoność powyższego algorytmu?

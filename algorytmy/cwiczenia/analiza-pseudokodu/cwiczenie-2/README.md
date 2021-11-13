@@ -25,10 +25,26 @@ Dany jest następujący pseudokod, zgodny z poniższą częściową specyfikacj�
 
 ## Zadania
 
-1. Podaj wynik działania programu dla `x := 2`
-2. Podaj wynik działania programu dla `x := 5`
-3. Podaj wynik działania programu dla `x := 20`
-4. Jaki będzie wynik działania programu dla `x := -5`?
-5. Jaki będzie wynik działania programu dla `x := 0`?
-6. Podaj specyfikację wyjścia dla powyższego programu.
+### Zadanie 1
 
+Podaj wynik działania programu dla `x := 2`
+
+### Zadanie 2
+
+Podaj wynik działania programu dla `x := 5`
+
+### Zadanie 3
+
+Podaj wynik działania programu dla `x := 20`
+
+### Zadanie 4
+
+Jaki będzie wynik działania programu dla `x := -5`?
+
+### Zadanie 5
+
+Jaki będzie wynik działania programu dla `x := 0`?
+
+### Zadanie 6
+
+Podaj specyfikację wyjścia dla powyższego programu.
