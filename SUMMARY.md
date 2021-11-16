@@ -208,6 +208,7 @@
     * [OOP](programowanie/c++/wprowadzenie/oop/README.md)
       * [Klasy](programowanie/c++/wprowadzenie/oop/klasy.md)
       * [Przeciążanie operatorów](programowanie/c++/wprowadzenie/oop/operatory.md)
+      * [Szablony](programowanie/c++/wprowadzenie/oop/szablony.md)
     * [STL](programowanie/c++/wprowadzenie/stl/README.md)
       * [Sortowanie](programowanie/c++/wprowadzenie/stl/sortowanie-z-stl.md)
       * [Tablica statyczna](programowanie/c++/wprowadzenie/stl/tablica-statyczna.md)
