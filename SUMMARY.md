@@ -205,6 +205,7 @@
     * [Funkcje printf i scanf](programowanie/c++/wprowadzenie/funkcje-printf-i-scanf.md)
     * [Operacje bitowe](programowanie/c++/wprowadzenie/operacje-bitowe.md)
     * [Struktury](programowanie/c++/wprowadzenie/struktury.md)
+    * [Wyjątki](programowanie/c++/wprowadzenie/wyjatki.md)
     * [OOP](programowanie/c++/wprowadzenie/oop/README.md)
       * [Klasy](programowanie/c++/wprowadzenie/oop/klasy.md)
       * [Przeciążanie operatorów](programowanie/c++/wprowadzenie/oop/operatory.md)
