@@ -624,6 +624,7 @@
   * [Promocja](algorytmika-zadania/poziom-1-1/promocja.md)
   * [Permutacja](algorytmika-zadania/poziom-1-1/permutacja.md)
   * [Gazeta](algorytmika-zadania/poziom-1-1/gazeta.md)
+  * [Kodowanie obrazka](algorytmika-zadania/poziom-1-1/kodowanie-obrazka.md)
 * [Poziom 2](algorytmika-zadania/poziom-2.md)
 
 ## Nauka programowania poprzez tworzenie gier <a href="nauka-przez-gry" id="nauka-przez-gry"></a>
