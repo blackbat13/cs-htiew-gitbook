@@ -19,6 +19,18 @@ Stworzymy naszą pierwszą grę kosmiczną!
 Grafiki do gry Asteroidy
 {% endfile %}
 
+### Dźwięki do pobrania
+
+{% file src="../../.gitbook/assets/sounds_asteroidy.zip" %}
+Dźwięki do gry Asteroidy
+{% endfile %}
+
+### Muzyka do pobrania
+
+{% file src="../../.gitbook/assets/music_asteroidy.zip" %}
+Muzyka do gry Asteroidy
+{% endfile %}
+
 ## Gra
 
 ![Asteroidy](../../.gitbook/assets/asteroidsGame.gif)
@@ -148,6 +160,7 @@ Aby narysować meteory, musimy ponownie przejść przez całą listę i narysowa
 import pgzrun
 import random
 import pygame
+import shelve
 
 WIDTH = 600
 HEIGHT = 900
@@ -166,6 +179,10 @@ lasery = []
 
 zycia = []
 
+wyniki = shelve.open("wyniki")
+if "highscore" not in wyniki:
+    wyniki["highscore"] = 0
+wyniki.close()
 
 def draw():
     screen.blit("tlo", (0, 0))
@@ -177,6 +194,12 @@ def draw():
 
     if statek.zycia == 0:
         screen.draw.text("Game Over", center=(WIDTH / 2, HEIGHT / 2), fontsize=90)
+
+        wyniki = shelve.open("wyniki")
+        highscore = wyniki["highscore"]
+        wyniki.close()
+
+        screen.draw.text("Best: " + str(highscore), center=(WIDTH / 2, HEIGHT / 2 + 80), fontsize = 90, color="yellow")
 
 
 def draw_punkty():
@@ -227,6 +250,17 @@ def update_meteory():
             statek.zycia -= 1
             zycia.pop()
             meteory.remove(met)
+            if statek.zycia > 0:
+                sounds.tarcza.play()
+            else:
+                sounds.eksplozja.play()
+                sounds.game_over.play()
+                music.fadeout(1)
+
+                wyniki = shelve.open("wyniki")
+                if statek.punkty > wyniki["highscore"]:
+                    wyniki["highscore"] = statek.punkty
+                wyniki.close()
 
 
 def update_lasery():
@@ -244,6 +278,7 @@ def update_trafienia():
                 lasery.remove(las)
                 meteory.remove(met)
                 statek.punkty += 10
+                sounds.trafienie.play()
                 break
 
 
@@ -252,6 +287,7 @@ def on_mouse_down():
         dodaj_laser()
         statek.strzaly -= 1
         clock.schedule(dodaj_strzal, 1)
+        sounds.laser.play()
 
 
 def dodaj_laser():
@@ -286,6 +322,9 @@ def utworz_zycia():
 
 pygame.mouse.set_visible(False)
 utworz_zycia()
-pgzrun.go()
 
+music.play("space")
+music.set_volume(0.3)
+
+pgzrun.go()
 ```
