@@ -23,7 +23,7 @@ Napisz program zgodny z poniższą specyfikacją.
 using namespace std;
 
 int main() {
-  int n, k, suma;
+  int n, p, k, suma;
 
   cout << "Podaj liczbe elementow:" << endl;
   cin >> n;
