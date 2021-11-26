@@ -2,18 +2,17 @@
 
 ## Treść zadania
 
-Napisz program zgodny z poniższą specyfikacją. Wczytywanie tablicy oraz wypisywanie tablicy na ekranie zrealizuj za pomocą osobnych funkcji.
+Napisz program zgodny z poniższą specyfikacją. Obliczenie i wypisywanie dzielników powinno być zrealizowane za pomocą funkcji.
 
 ### Specyfikacja
 
 #### Dane
 
 * $$n$$ - liczba naturalna
-* $$tab[n]$$ - tablica liczb całkowitych
 
 #### Wynik
 
-* Wczytana tablica wypisana na ekranie w jednej linii, każdy element oddzielony spacją
+* Wszystkie dzielniki liczby $$n$$ 
 
 ## Rozwiązanie
 
@@ -22,33 +21,26 @@ Napisz program zgodny z poniższą specyfikacją. Wczytywanie tablicy oraz wypis
 
 using namespace std;
 
-void wczytaj(int n, int tab[]) {
-    for(int i = 0; i < n; i++) {
-        cout << "Podaj kolejna wartosc:" << endl;
-        cin >> tab[i];
-    }
-}
+void dzielniki(int n) {
+    cout << "Dzielniki liczby " << n << endl;
 
-void wypisz(int n, int tab[]) {
-    for(int i = 0; i < n; i++) {
-        cout << tab[i] << " ";
+    for(int i = 1; i <= n; i++) {
+        if(n % i == 0) {
+            cout << i << " ";
+        }
     }
 
     cout << endl;
 }
 
 int main() {
-     int n;
-
-    cout << "Podaj liczbe elementow:" << endl;
-    cin >> n;
-
-    int tab[n];
-
-    wczytaj(n, tab);
+    int n;
     
-    wypisz(n, tab);
-
+    cout << "Podaj liczbe naturalna:" << endl;
+    cin >> n;
+    
+    dzielniki(n);
+    
     return 0;
 }
 ```

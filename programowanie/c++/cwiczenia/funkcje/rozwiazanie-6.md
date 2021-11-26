@@ -1,19 +1,20 @@
-# Rozwiązanie 4
+# Rozwiązanie 6
 
 ## Treść zadania
 
-Napisz program zgodny z poniższą specyfikacją. Wczytywanie tablicy oraz wypisywanie tablicy na ekranie zrealizuj za pomocą osobnych funkcji.
+Napisz program zgodny z poniższą specyfikacją. Wczytywanie tablicy, przemnażanie tablicy oraz wypisywanie tablicy na ekranie zrealizuj za pomocą osobnych funkcji.
 
 ### Specyfikacja
 
 #### Dane
 
 * $$n$$ - liczba naturalna
+* $$k$$ - liczba całkowita
 * $$tab[n]$$ - tablica liczb całkowitych
 
 #### Wynik
 
-* Wczytana tablica wypisana na ekranie w jednej linii, każdy element oddzielony spacją
+* Tablica powstała poprzez przemnożenie każdego elementu tablicy $$tab$$ przez liczbę $$k$$ 
 
 ## Rozwiązanie
 
@@ -37,15 +38,26 @@ void wypisz(int n, int tab[]) {
     cout << endl;
 }
 
+void przemnoz(int n, int tab[], int k) {
+    for(int i = 0; i < n; i++) {
+        tab[i] *= k;
+    }
+}
+
 int main() {
-     int n;
+     int n, k;
 
     cout << "Podaj liczbe elementow:" << endl;
     cin >> n;
 
+    cout << "Podaj mnoznik:" << endl;
+    cin >> k;
+
     int tab[n];
 
     wczytaj(n, tab);
+
+    przemnoz(n, tab, k);
     
     wypisz(n, tab);
 
