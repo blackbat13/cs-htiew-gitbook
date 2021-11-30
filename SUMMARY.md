@@ -208,6 +208,7 @@
     * [OOP](programowanie/c++/wprowadzenie/oop/README.md)
       * [Struktury](programowanie/c++/wprowadzenie/oop/struktury.md)
       * [Klasy](programowanie/c++/wprowadzenie/oop/klasy.md)
+      * [Enumeracje](programowanie/c++/wprowadzenie/oop/enumeracje.md)
       * [Przeciążanie operatorów](programowanie/c++/wprowadzenie/oop/operatory.md)
       * [Szablony](programowanie/c++/wprowadzenie/oop/szablony.md)
       * [Przestrzenie nazw](programowanie/c++/wprowadzenie/oop/przestrzenie_nazw.md)
