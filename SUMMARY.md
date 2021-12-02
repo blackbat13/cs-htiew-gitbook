@@ -5,6 +5,7 @@
 
 ## Tematy
 
+* [Wstęp](tematy/README.md)
 * [Wprowadzenie do algorytmów](tematy/wprowadzenie-do-algorytmow/README.md)
   * [Lekcja 1](tematy/wprowadzenie-do-algorytmow/lekcja-1.md)
   * [Lekcja 2](tematy/wprowadzenie-do-algorytmow/lekcja-2.md)
