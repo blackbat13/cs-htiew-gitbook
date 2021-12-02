@@ -68,11 +68,11 @@ Poszukujemy wartości $$3$$, która nie występuje w tablicy. Dlatego wynik to $
 
 ### Rozwiązanie
 
-Znamy już problem, teraz pytanie brzmi, jak go rozwiązać? Jaki algorytm skonstruujemy? Wiemy, że chodzi o algorytm **przeszukiwania liniowego**, czyli sprawdzania elementów** jeden po drugim**. I dokładnie to musimy zrobić. Będziemy przeglądać elementy **od pierwszego do ostatniego**. Każdy kolejny element z tablicy będziemy** porównywać z poszukiwaną wartością**. 
+Znamy już problem, teraz pytanie brzmi, jak go rozwiązać? Jaki algorytm skonstruujemy? Wiemy, że chodzi o algorytm **przeszukiwania liniowego**, czyli sprawdzania elementów **jeden po drugim**. I dokładnie to musimy zrobić. Będziemy przeglądać elementy **od pierwszego do ostatniego**. Każdy kolejny element z tablicy będziemy **porównywać z poszukiwaną wartością**. 
 
 Teraz pytanie brzmi: **co zrobimy, gdy natrafimy na poszukiwany element**? Odpowiedź jest stosunkowo prosta. Gdy stwierdzimy, że poszukiwany element znajduje się w tablicy (czyli gdy go znajdziemy), to należy **zwrócić** stosowny wynik, czyli wartość $$true$$. I co robimy dalej? Cóż, w tym momencie możemy już **zakończyć obliczenia**, ponieważ stwierdziliśmy istnienie elementu w tablicy. Tak więc otrzepujemy ręce i kończymy, dobra robota!
 
-Pozostaje nam jeszcze jednak do rozważenia sytuacja, w której poszukiwany element **nie występuje w tablicy**. Co zrobimy w takim przypadku? Oczywiście powinniśmy zwrócić wartość $$false$$, ale jak stwierdzić, że elementu nie ma w tablicy? Zastanówmy się nad tym chwilę. Gdy znajdziemy element w tablicy to zwracamy wartość $$true$$ i kończymy działanie. Gdy nie znajdziemy elementu w tablicy, to **nie zwrócimy** wartości $$true$$ i po prostu** sprawdzimy wszystkie elementy tablicy**. 
+Pozostaje nam jeszcze jednak do rozważenia sytuacja, w której poszukiwany element **nie występuje w tablicy**. Co zrobimy w takim przypadku? Oczywiście powinniśmy zwrócić wartość $$false$$, ale jak stwierdzić, że elementu nie ma w tablicy? Zastanówmy się nad tym chwilę. Gdy znajdziemy element w tablicy to zwracamy wartość $$true$$ i kończymy działanie. Gdy nie znajdziemy elementu w tablicy, to **nie zwrócimy** wartości $$true$$ i po prostu **sprawdzimy wszystkie elementy tablicy**. 
 
 W takim razie, gdy sprawdzimy już wszystkie elementy tablicy i **nadal będziemy wykonywać kolejne operacje** (ponieważ nie zakończyliśmy wcześniej działania) będzie to oznaczało, że nie znaleźliśmy elementu w tablicy! W takim razie zwracamy $$false$$ i kończymy działanie. 
 
@@ -138,7 +138,7 @@ k := 7
 {% hint style="info" %}
 **Wyjaśnienie**
 
-Poszukiwana wartość w tablicy to $$7$$ . Jak widać, ta wartość znajduje się na trzecim miejscu w tablicy, stąd też wynik wynosi $$3$$.
+Poszukiwana wartość w tablicy to $$7$$. Jak widać, ta wartość znajduje się na trzecim miejscu w tablicy, stąd też wynik wynosi $$3$$.
 {% endhint %}
 
 ### Przykład 2
@@ -156,7 +156,7 @@ k := 3
 {% hint style="info" %}
 **Wyjaśnienie**
 
-Poszukujemy wartości $$3$$ , która nie występuje w tablicy. Dlatego wynik to $$-1$$ .
+Poszukujemy wartości $$3$$, która nie występuje w tablicy. Dlatego wynik to $$-1$$.
 {% endhint %}
 
 ### Rozwiązanie
@@ -219,7 +219,7 @@ k := 7
 {% hint style="info" %}
 **Wyjaśnienie**
 
-Poszukiwana wartość w tablicy to $$7$$ . Jak widać, ta wartość znajduje się na pierwszym, trzecim oraz ostatnim (piątym) miejscu w tablicy.
+Poszukiwana wartość w tablicy to $$7$$. Jak widać, ta wartość znajduje się na pierwszym, trzecim oraz ostatnim (piątym) miejscu w tablicy.
 {% endhint %}
 
 ### Przykład 2
@@ -237,7 +237,7 @@ k := 3
 {% hint style="info" %}
 **Wyjaśnienie**
 
-Poszukiwana wartość w tablicy to $$3$$ . Jak widać, ta wartość nie występuje w tablicy, stąd też wynik jest pusty, ponieważ lista indeksów jest pusta.
+Poszukiwana wartość w tablicy to $$3$$. Jak widać, ta wartość nie występuje w tablicy, stąd też wynik jest pusty, ponieważ lista indeksów jest pusta.
 {% endhint %}
 
 ### Rozwiązanie
@@ -246,7 +246,7 @@ W ogólności zwrócenie listy, czy też tablicy jako wynik działania bywa prob
 
 Zastanówmy się, jak zmodyfikować poprzednie rozwiązanie. Jakie są różnice pomiędzy tą wersją problemu, a poprzednią, w której jako wynik zwracaliśmy indeks tylko jednego, pierwszego wystąpienia wartości w tablicy. 
 
-Po pierwsze, teraz chcemy wypisać **wszystkie** indeksy, pod którymi pojawia się szukana wartość. W takim razie **nie możemy kończyć działania po znalezieniu pierwszego wystąpienia**, musimy iść dalej. Mówiąc dokładniej, musimy przejrzeć **całą** tablicę. W takim razie dokonujemy dwóch zmian w instrukcji 3: zamiast _zwróć_ zrobimy _wypisz _i usuniemy polecenie _zakończ_.
+Po pierwsze, teraz chcemy wypisać **wszystkie** indeksy, pod którymi pojawia się szukana wartość. W takim razie **nie możemy kończyć działania po znalezieniu pierwszego wystąpienia**, musimy iść dalej. Mówiąc dokładniej, musimy przejrzeć **całą** tablicę. W takim razie dokonujemy dwóch zmian w instrukcji 3: zamiast _zwróć_ zrobimy _wypisz_ i usuniemy polecenie _zakończ_.
 
 Potrzebujemy dokonać jeszcze jednej zmiany. Zauważmy, że teraz nie musimy się zastanawiać nad tym, co zrobić w przypadku, gdy poszukiwany element nie występuje w tablicy. W takim przypadku po prostu nic nie wypiszemy na ekran. Dlatego usuwamy ostatnią instrukcję (numer 4), w której zwracamy wynik -1.
 
