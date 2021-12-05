@@ -131,8 +131,14 @@ Napisz program zgodny z poniższą specyfikacją. Wczytywanie tablicy, a także 
 
 ```
 n := 5
-k := 2
 tab := [4, 1, 7, 0, 2]
 ```
 
-**Wynik**: $$[8, 2, 14, 0, 4]$$ 
+#### Wynik
+
+```
+minimum := 0
+maksimum := 7
+suma := 14
+srednia := 2.8
+```
