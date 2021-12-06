@@ -10,6 +10,12 @@ TODO
 
 ## Implementacja
 
+### C++
+
+{% content-ref url="../../programowanie/c++/algorytmy/fraktale/zbior-cantora.md" %}
+[zbior-cantora.md](../../programowanie/c++/algorytmy/fraktale/zbior-cantora.md)
+{% endcontent-ref %}
+
 ### Python
 
 {% content-ref url="../../programowanie/python/algorytmy/fraktale/zbior-cantora.md" %}
