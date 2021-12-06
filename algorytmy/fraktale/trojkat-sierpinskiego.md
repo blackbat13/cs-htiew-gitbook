@@ -37,6 +37,12 @@ TODO
 
 ## Implementacja
 
+### C++
+
+{% content-ref url="../../programowanie/c++/algorytmy/fraktale/trojkat-sierpinskiego.md" %}
+[trojkat-sierpinskiego.md](../../programowanie/c++/algorytmy/fraktale/trojkat-sierpinskiego.md)
+{% endcontent-ref %}
+
 ### Python
 
 {% content-ref url="../../programowanie/python/algorytmy/fraktale/trojkat-sierpinskiego.md" %}
