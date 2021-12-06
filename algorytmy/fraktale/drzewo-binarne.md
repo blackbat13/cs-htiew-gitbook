@@ -45,6 +45,12 @@ funkcja DrzewoBinarne(n, w):
 
 ## Implementacja
 
+### C++
+
+{% content-ref url="../../programowanie/c++/algorytmy/fraktale/drzewo-binarne.md" %}
+[drzewo-binarne.md](../../programowanie/c++/algorytmy/fraktale/drzewo-binarne.md)
+{% endcontent-ref %}
+
 ### Python
 
 {% content-ref url="../../programowanie/python/algorytmy/fraktale/drzewo-binarne.md" %}

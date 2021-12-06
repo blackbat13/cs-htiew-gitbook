@@ -352,6 +352,8 @@
       * [Odległość punktu od prostej](programowanie/c++/algorytmy/geometria-2d/odleglosc-punktu-od-prostej.md)
       * [Punkt na odcinku](programowanie/c++/algorytmy/geometria-2d/punkt-na-odcinku.md)
       * [Przecinanie się odcinków](programowanie/c++/algorytmy/geometria-2d/przecinanie-sie-odcinkow.md)
+    * [Fraktale](programowanie/c++/algorytmy/fraktale/README.md)
+      * [Drzewo binarne](programowanie/c++/algorytmy/fraktale/drzewo-binarne.md)
     * [Struktury danych](programowanie/c++/algorytmy/struktury/README.md)
       * [Stos](programowanie/c++/algorytmy/struktury/stos.md)
       * [Kolejka](programowanie/c++/algorytmy/struktury/kolejka.md)
