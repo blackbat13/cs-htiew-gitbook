@@ -10,6 +10,12 @@ TODO
 
 ## Implementacja
 
+### C++
+
+{% content-ref url="../../programowanie/c++/algorytmy/fraktale/kwadrat-sierpinskiego.md" %}
+[kwadrat-sierpinskiego.md](../../programowanie/c++/algorytmy/fraktale/kwadrat-sierpinskiego.md)
+{% endcontent-ref %}
+
 ### Python
 
 {% content-ref url="../../programowanie/python/algorytmy/fraktale/kwadrat-sierpinskiego.md" %}
