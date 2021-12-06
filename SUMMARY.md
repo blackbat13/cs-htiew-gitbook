@@ -356,6 +356,7 @@
       * [Drzewo binarne](programowanie/c++/algorytmy/fraktale/drzewo-binarne.md)
       * [Trójkąt Sierpińskiego](programowanie/c++/algorytmy/fraktale/trojkat-sierpinskiego.md)
       * [Kwadrat Sierpińskiego](programowanie/c++/algorytmy/fraktale/kwadrat-sierpinskiego.md)
+      * [Krzywa Kocha](programowanie/c++/algorytmy/fraktale/krzywa-kocha.md)
     * [Struktury danych](programowanie/c++/algorytmy/struktury/README.md)
       * [Stos](programowanie/c++/algorytmy/struktury/stos.md)
       * [Kolejka](programowanie/c++/algorytmy/struktury/kolejka.md)

@@ -21,6 +21,12 @@ TODO
 
 ## Implementacja
 
+### C++
+
+{% content-ref url="../../programowanie/c++/algorytmy/fraktale/krzywa-kocha.md" %}
+[krzywa-kocha.md](../../programowanie/c++/algorytmy/fraktale/krzywa-kocha.md)
+{% endcontent-ref %}
+
 ### Python
 
 {% content-ref url="../../programowanie/python/algorytmy/fraktale/krzywa-kocha.md" %}
