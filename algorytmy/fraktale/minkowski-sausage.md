@@ -10,6 +10,12 @@ TODO
 
 ## Implementacja
 
+### C++
+
+{% content-ref url="../../programowanie/c++/algorytmy/fraktale/minkowski-sausage.md" %}
+[minkowski-sausage.md](../../programowanie/c++/algorytmy/fraktale/minkowski-sausage.md)
+{% endcontent-ref %}
+
 ### Python
 
 {% content-ref url="../../programowanie/python/algorytmy/fraktale/minkowski-sausage.md" %}
