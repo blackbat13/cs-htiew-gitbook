@@ -9,7 +9,7 @@
 ## Implementacja
 
 ```cpp
-#include "yatg_all.hpp"
+#include "turtle.hpp"
 
 const int SIZE = 900;
 
