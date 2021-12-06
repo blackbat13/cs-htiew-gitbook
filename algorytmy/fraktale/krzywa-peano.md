@@ -10,6 +10,12 @@ TODO
 
 ## Implementacja
 
+### C++
+
+{% content-ref url="../../programowanie/c++/algorytmy/fraktale/krzywa-peano.md" %}
+[krzywa-peano.md](../../programowanie/c++/algorytmy/fraktale/krzywa-peano.md)
+{% endcontent-ref %}
+
 ### Python
 
 {% content-ref url="../../programowanie/python/algorytmy/fraktale/krzywa-peano.md" %}

@@ -358,6 +358,7 @@
       * [Kwadrat Sierpińskiego](programowanie/c++/algorytmy/fraktale/kwadrat-sierpinskiego.md)
       * [Krzywa Kocha](programowanie/c++/algorytmy/fraktale/krzywa-kocha.md)
       * [Płatek Kocha](programowanie/c++/algorytmy/fraktale/platek-kocha.md)
+      * [Krzywa Peano](programowanie/c++/algorytmy/fraktale/krzywa-peano.md)
     * [Struktury danych](programowanie/c++/algorytmy/struktury/README.md)
       * [Stos](programowanie/c++/algorytmy/struktury/stos.md)
       * [Kolejka](programowanie/c++/algorytmy/struktury/kolejka.md)
