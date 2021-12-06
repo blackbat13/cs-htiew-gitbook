@@ -359,6 +359,7 @@
       * [Krzywa Kocha](programowanie/c++/algorytmy/fraktale/krzywa-kocha.md)
       * [Płatek Kocha](programowanie/c++/algorytmy/fraktale/platek-kocha.md)
       * [Krzywa Peano](programowanie/c++/algorytmy/fraktale/krzywa-peano.md)
+      * [Smocza Krzywa](programowanie/c++/algorytmy/fraktale/smocza-krzywa.md)
     * [Struktury danych](programowanie/c++/algorytmy/struktury/README.md)
       * [Stos](programowanie/c++/algorytmy/struktury/stos.md)
       * [Kolejka](programowanie/c++/algorytmy/struktury/kolejka.md)

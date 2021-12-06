@@ -10,6 +10,12 @@ TODO
 
 ## Implementacja
 
+### C++
+
+{% content-ref url="../../programowanie/c++/algorytmy/fraktale/smocza-krzywa.md" %}
+[smocza-krzywa.md](../../programowanie/c++/algorytmy/fraktale/smocza-krzywa.md)
+{% endcontent-ref %}
+
 ### Python
 
 {% content-ref url="../../programowanie/python/algorytmy/fraktale/smocza-krzywa.md" %}
