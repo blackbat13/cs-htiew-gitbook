@@ -214,6 +214,7 @@
       * [Szablony](programowanie/c++/wprowadzenie/oop/szablony.md)
       * [Przestrzenie nazw](programowanie/c++/wprowadzenie/oop/przestrzenie_nazw.md)
       * [Klasy abstrakcyjne](programowanie/c++/wprowadzenie/oop/klasy_abstrakcyjne.md)
+      * [Rzutowanie](programowanie/c++/wprowadzenie/oop/rzutowanie.md)
     * [STL](programowanie/c++/wprowadzenie/stl/README.md)
       * [Sortowanie](programowanie/c++/wprowadzenie/stl/sortowanie-z-stl.md)
       * [Tablica statyczna](programowanie/c++/wprowadzenie/stl/tablica-statyczna.md)
