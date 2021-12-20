@@ -2,19 +2,44 @@
 
 ## Opis problemu
 
-TODO
+Istnieje wiele metod na sprawdzanie i tworzenie relacji pomiędzy wyrazami.
+W tym temacie zajmiemy się pojęciem **anagramu**, które może być znane szczególnie osobom przejawiającym zamiłowanie do różnego rodzaju krzyżówek i zagadek słownych.
+Zacznijmy od krótkiej definicji.
+
+### Anagramy -- definicja
 
 {% hint style="info" %}
 Dwa wyrazy nazywamy **anagramami**, jeżeli składają się dokładnie z takich samych znaków, ale ułożonych w innej kolejności.
 {% endhint %}
+
+#### Link do Wikipedii
+
+{% embed url="https://pl.wikipedia.org/wiki/Anagram" %}
+Anagram - Wikipedia
+{% endembed %}
+
+### Przykład
+
+Wyrazy **rży** i **ryż** są anagramami.
+Podobnie wyrazy **algorytm** i **logarytm**.
+
+Nie tylko wyrazy mogą być anagramami, ale także wyrażenia czy całe zdania.
+
+Skoro już wiemy, czym są anagramy, zastanówmy się, w jaki sposób możemy sprawdzić, czy dwa wyrazy są anagramami.
+Zacznijmy od formalnej specyfikacji naszego problemu.
 
 ### Specyfikacja
 
 #### Dane
 
 * $$n$$ - liczba naturalna, długość tekstu.
-* $$tekst1[1..n]$$ - ciąg znaków o długości $$n$$, numerowanych od jedynki, składający się wyłącznie z małych liter alfabetu angielskiego.
-* $$tekst2[1..n]$$ - ciąg znaków o długości $$n$$, numerowanych od jedynki, składający się wyłącznie z małych liter alfabetu angielskiego.
+* $$tekst1[1..n]$$ - ciąg $$n$$ znaków, numerowanych od jedynki, składający się wyłącznie z małych liter alfabetu angielskiego.
+* $$tekst2[1..n]$$ - ciąg $$n$$ znaków, numerowanych od jedynki, składający się wyłącznie z małych liter alfabetu angielskiego.
+
+{% hint style="info" %}
+W ogólnym problemie moglibyśmy sprawdzać własność anagramu dla dowolnych ciągów znaków, w szczególności zawierających także wielkie litery alfabetu.
+Skupimy się jednak na uproszczonej wersji tego problemu, by przedstawić ideę rozwiązania, a technikalia zostawiamy osobom zainteresowanym.
+{% endhint %}
 
 #### Wynik
 
@@ -31,15 +56,58 @@ tekst1 := "markotny"
 tekst2 := "romantyk"
 ```
 
-**Wynik**: $$True$$&#x20;
+**Wynik**: $$True$$
 
 ## Rozwiązanie 1
 
-Aby dwa wyrazy były anagramami, muszą składać się dokładnie z takich samych liter. Oznacza to także, że każda litera musi występować w każdym z wyrazów dokładnie tyle samo razy. W związku z tym pierwsze rozwiązanie jest proste: policzmy, ile razy każda litera występuje w pierwszym wyrazie, następnie zróbmy to samo dla drugiego wyrazu i porównajmy wyniki. Jeżeli będą takie same, to dwa wyrazy są anagramami.
+### Opis
 
-Jak jednak policzyć, ile razy dana litera występuje w wyrazie? Zauważmy, że nasze wyrazy składają się jedynie z małych liter alfabetu angielskiego. Oznacza to, że mamy dokładnie 26 znaków. Możemy więc przygotować tablicę przechowującą 26 liczników - po jednym dla każdej litery. Litery natomiast ponumerujemy od 1, startując od a. Ilość wystąpień litery a zapiszemy w pierwszym liczniku, ilość wystąpień litery b zapiszemy w drugim liczniku itd.
+Aby dwa wyrazy były anagramami, muszą składać się dokładnie z takich samych liter. 
+Oznacza to także, że każda litera z pierwszego wyrazu musi pojawić się w drugim wyrazie dokładnie tyle samo razy i tak samo w drugą stronę. 
+W związku z tym pierwsze rozwiązanie jest proste: policzmy, ile razy każda litera występuje w pierwszym wyrazie, następnie zróbmy to samo dla drugiego wyrazu i porównajmy wyniki. 
+Jeżeli będą takie same, to dwa wyrazy są anagramami.
+
+Jak jednak policzyć, ile razy dana litera występuje w wyrazie? 
+Zauważmy, że nasze wyrazy składają się jedynie z małych liter alfabetu angielskiego. 
+Oznacza to, że mamy dokładnie 26 znaków. 
+Możemy więc przygotować tablicę przechowującą 26 liczników -- po jednym dla każdej litery. 
+Litery natomiast ponumerujemy od 1, startując od $$a$$. 
+Liczbę wystąpień litery $$a$$ zapiszemy w pierwszym liczniku, liczbę wystąpień litery $$b$$ zapiszemy w drugim liczniku itd.
+
+### Przykład
+
+Przyjmijmy takie same dane jak we wcześniejszym przykładzie, tzn.:
+
+```
+n := 8
+tekst1 := "markotny"
+tekst2 := "romantyk"
+```
+
+Zaczynamy od policzenia tablic liczników dla pierwszego i drugiego wyrazu.
+Dla czytelności zapiszemy je w zmodyfikowanej formie, do każdego licznika dopisując odpowiadającą mu literę.
+Tak oto otrzymujemy tablice liczników odpowiednio dla pierwszego i drugiego wyrazu:
+
+```
+liczniki1 = [a:1, b:0, c:0, d:0, e:0, f:0, g:0, h:0, i:0, j:0, k:1, l:0, m:1, n:1, o:1, p:0, q:0, r:1, s:0, t:1, u:0, v:0, w:0, x:0, y:1, z:0]
+liczniki2 = [a:1, b:0, c:0, d:0, e:0, f:0, g:0, h:0, i:0, j:0, k:1, l:0, m:1, n:1, o:1, p:0, q:0, r:1, s:0, t:1, u:0, v:0, w:0, x:0, y:1, z:0]
+```
+
+Gdy je porównamy zobaczymy, że są sobie równe.
+Oznacza to, że nasze wyrazy są anagramami.
 
 ### Pseudokod
+
+Spróbujmy teraz zapisać nasze rozwiązanie w bardziej formalny sposób.
+Zaprojektujemy funkcję **TestujAnagramy**, która będzie przyjmować trzy parametry, zgodnie ze specyfikacją.
+
+Najpierw tworzymy dwie tablice liczników, po jednej dla każdego wyrazu.
+Początkowo wypełniamy je wartościami 0, gdyż jeszcze nie przystąpiliśmy do zliczania liter w wyrazach.
+
+Gdy tablice są gotowe, możemy przejść do zliczania.
+Przechodzimy przez oba wyrazy znak po znaku i zwiększamy właściwe liczniki w odpowiadających wyrazom tablicach.
+
+Ostatnim krokiem jest porównanie naszych liczników i zwrócenie odpowiedniego wyniku.
 
 ```
 funkcja TestujAnagramy(n, tekst1, tekst2):
@@ -58,7 +126,10 @@ funkcja TestujAnagramy(n, tekst1, tekst2):
 
 ### Złożoność
 
-$$O(n)$$ - liniowa
+Najbardziej czasochłonną operacją w naszym algorytmie jest pętla przechodząca przez każdy znak obu wyrazów.
+Znaków mamy $$n$$, więc nasza pętla wykona dokładnie $$n$$ obrotów, co daje nam złożoność:
+
+$$O(n)$$ -- liniowa
 
 ## Rozwiązanie 2
 
