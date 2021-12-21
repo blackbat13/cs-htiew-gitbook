@@ -8,9 +8,9 @@ TODO
 
 #### Dane
 
-* $$n$$ - liczba naturalna, ilość dostępnych nominałów
-* $$nom[1..n]$$ - tablica dostępnych nominałów (liczb całkowitych) o rozmiarze $$n$$&#x20;
-* $$kw$$ - liczba naturalna, kwota do wydania
+* $$n$$ — liczba naturalna, ilość dostępnych nominałów
+* $$nom[1..n]$$ — tablica dostępnych nominałów (liczb całkowitych) o rozmiarze $$n$$&#x20;
+* $$kw$$ — liczba naturalna, kwota do wydania
 
 #### Wynik
 

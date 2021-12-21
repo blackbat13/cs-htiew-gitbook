@@ -10,7 +10,7 @@ Zadanie to jest stosunkowo proste, należy jednak zadać sobie pytanie: **jakie 
 
 #### Dane
 
-* $$n$$ - liczba naturalna, większa od zera
+* $$n$$ — liczba naturalna, większa od zera
 
 #### Wynik
 
@@ -28,7 +28,7 @@ n := 12
 
 ## Rozwiązanie zupełnie naiwne
 
-Przejdźmy do próby rozwiązania problemu. Naszym zadaniem jest wypisać **wszystkie dzielniki** podanej wartości. Nie możemy żadnego pominąć. Spróbujmy więc odpowiedzieć na postawione wcześniej pytanie: **jakie liczby musimy sprawdzić**? Po pierwsze możemy łatwo zauważyć, że nie ma sensu sprawdzać wartości mniejszych niż $$1$$ . Najmniejszy i zarazem pierwszy dzielnik to będzie zawsze liczba $$1$$ . Od niej więc zaczynamy poszukiwanie dzielników. W którym miejscu jednak należy się zatrzymać? Cóż, na pewno nie ma sensu sprawdzać wartości większych od $$n$$. Liczba nie może być podzielna przez wartość od siebie większą!
+Przejdźmy do próby rozwiązania problemu. Naszym zadaniem jest wypisać **wszystkie dzielniki** podanej wartości. Nie możemy żadnego pominąć. Spróbujmy więc odpowiedzieć na postawione wcześniej pytanie: **jakie liczby musimy sprawdzić**? Po pierwsze możemy łatwo zauważyć, że nie ma sensu sprawdzać wartości mniejszych niż $$1$$. Najmniejszy i zarazem pierwszy dzielnik to będzie zawsze liczba $$1$$. Od niej więc zaczynamy poszukiwanie dzielników. W którym miejscu jednak należy się zatrzymać? Cóż, na pewno nie ma sensu sprawdzać wartości większych od $$n$$. Liczba nie może być podzielna przez wartość od siebie większą!
 
 Podsumowując wystarczy sprawdzić wszystkie liczby od $$1$$ do $$n$$, aby znaleźć dzielniki. W ten sposób otrzymaliśmy pierwsze, zgrubne ograniczenie naszego przeszukiwanego przedziału wartości. Dla każdej liczby z tego zakresu będziemy sprawdzać, czy jest ona dzielnikiem $$n$$.
 
@@ -57,7 +57,7 @@ TODO
 
 W naszym rozwiązaniu przechodzimy przez wszystkie kolejne wartości od $$1$$ do $$n$$. Dla zadanego $$n$$ mamy więc do sprawdzenia $$n$$ potencjalnych dzielników. Stąd też otrzymujemy złożoność:
 
-$$O(n)$$ - liniowa
+$$O(n)$$ — liniowa
 
 ## Rozwiązanie naiwne
 
