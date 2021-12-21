@@ -6,7 +6,7 @@ Istnieje wiele metod na sprawdzanie i tworzenie relacji pomiędzy wyrazami.
 W tym temacie zajmiemy się pojęciem **anagramu**, które może być znane szczególnie osobom przejawiającym zamiłowanie do różnego rodzaju krzyżówek i zagadek słownych.
 Zacznijmy od krótkiej definicji.
 
-### Anagramy -- definicja
+### Anagramy — definicja
 
 {% hint style="info" %}
 Dwa wyrazy nazywamy **anagramami**, jeżeli składają się dokładnie z takich samych znaków, ale ułożonych w innej kolejności.
@@ -15,7 +15,7 @@ Dwa wyrazy nazywamy **anagramami**, jeżeli składają się dokładnie z takich 
 #### Link do Wikipedii
 
 {% embed url="https://pl.wikipedia.org/wiki/Anagram" %}
-Anagram - Wikipedia
+Anagram — Wikipedia
 {% endembed %}
 
 ### Przykład
@@ -32,9 +32,9 @@ Zacznijmy od formalnej specyfikacji naszego problemu.
 
 #### Dane
 
-* $$n$$ - liczba naturalna, długość tekstu.
-* $$tekst1[1..n]$$ - ciąg $$n$$ znaków, numerowanych od jedynki, składający się wyłącznie z małych liter alfabetu angielskiego.
-* $$tekst2[1..n]$$ - ciąg $$n$$ znaków, numerowanych od jedynki, składający się wyłącznie z małych liter alfabetu angielskiego.
+* $$n$$ — liczba naturalna, długość tekstu.
+* $$tekst1[1..n]$$ — ciąg $$n$$ znaków, numerowanych od jedynki, składający się wyłącznie z małych liter alfabetu angielskiego.
+* $$tekst2[1..n]$$ — ciąg $$n$$ znaków, numerowanych od jedynki, składający się wyłącznie z małych liter alfabetu angielskiego.
 
 {% hint style="info" %}
 W ogólnym problemie moglibyśmy sprawdzać własność anagramu dla dowolnych ciągów znaków, w szczególności zawierających także wielkie litery alfabetu.
@@ -43,8 +43,8 @@ Skupimy się jednak na uproszczonej wersji tego problemu, by przedstawić ideę 
 
 #### Wynik
 
-* $$True$$ - jeżeli $$tekst1$$ i $$tekst2$$ są anagramami.
-* $$False$$ - w przeciwnym przypadku.
+* $$True$$ — jeżeli $$tekst1$$ i $$tekst2$$ są anagramami.
+* $$False$$ — w przeciwnym przypadku.
 
 ### Przykład
 
@@ -70,7 +70,7 @@ Jeżeli będą takie same, to dwa wyrazy są anagramami.
 Jak jednak policzyć, ile razy dana litera występuje w wyrazie? 
 Zauważmy, że nasze wyrazy składają się jedynie z małych liter alfabetu angielskiego. 
 Oznacza to, że mamy dokładnie 26 znaków. 
-Możemy więc przygotować tablicę przechowującą 26 liczników -- po jednym dla każdej litery. 
+Możemy więc przygotować tablicę przechowującą 26 liczników — po jednym dla każdej litery. 
 Litery natomiast ponumerujemy od 1, startując od $$a$$. 
 Liczbę wystąpień litery $$a$$ zapiszemy w pierwszym liczniku, liczbę wystąpień litery $$b$$ zapiszemy w drugim liczniku itd.
 
@@ -129,7 +129,7 @@ funkcja TestujAnagramy(n, tekst1, tekst2):
 Najbardziej czasochłonną operacją w naszym algorytmie jest pętla przechodząca przez każdy znak obu wyrazów.
 Znaków mamy $$n$$, więc nasza pętla wykona dokładnie $$n$$ obrotów, co daje nam złożoność:
 
-$$O(n)$$ -- liniowa
+$$O(n)$$ — liniowa
 
 ## Rozwiązanie 2
 
@@ -149,9 +149,9 @@ funkcja TestujAnagramy(n, tekst1, tekst2):
 
 ### Złożoność
 
-$$O(n)$$ - liniowa, jeżeli wykorzystamy optymalny algorytm sortowania (np. sortowanie przez zliczanie).
+$$O(n)$$ — liniowa, jeżeli wykorzystamy optymalny algorytm sortowania (np. sortowanie przez zliczanie).
 
-$$O(n\log{n})$$ - liniowo logarytmiczna, jeżeli użyjemy standardowej metody sortowania (np. sortowanie szybkie).&#x20;
+$$O(n\log{n})$$ — liniowo logarytmiczna, jeżeli użyjemy standardowej metody sortowania (np. sortowanie szybkie).&#x20;
 
 ## Implementacja
 
