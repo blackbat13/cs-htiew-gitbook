@@ -8,11 +8,11 @@ TODO
 
 #### Dane
 
-* $$a, b$$ - liczby naturalne, większe od zera
+* $$a, b$$ — liczby naturalne, większe od zera
 
 #### Wynik
 
-* $$NWD(a,b)$$ - największy wspólny dzielnik liczb $$a$$ i $$b$$ 
+* $$NWD(a, b)$$ — największy wspólny dzielnik liczb $$a$$ i $$b$$ 
 
 ### Przykład
 
@@ -57,7 +57,7 @@ funkcja NWD(a, b):
 
 TODO
 
-## Wersja z modulo - iteracyjna
+## Wersja z modulo — iteracyjna
 
 TODO
 
@@ -80,7 +80,7 @@ funkcja NWD(a, b):
 
 TODO
 
-## Wersja z modulo - rekurencyjna
+## Wersja z modulo — rekurencyjna
 
 TODO
 
