@@ -24,6 +24,10 @@ Projekt: [https://github.com/carpedm20/emoji](https://github.com/carpedm20/emoji
 
 Projekt: [https://github.com/sepandhaghighi/art](https://github.com/sepandhaghighi/art)
 
+### Przykład
+
+{% embed url="https://replit.com/@damiankurpiewski/ArtExample" %}
+
 ## Freegames
 
 Dokumentacja: [http://www.grantjenks.com/docs/freegames/](http://www.grantjenks.com/docs/freegames/)
