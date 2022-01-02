@@ -286,3 +286,9 @@ $$O(n)$$ - liniowa
 {% content-ref url="../../programowanie/blockly/algorytmy/wyszukiwanie/wyszukiwanie-liniowe.md" %}
 [wyszukiwanie-liniowe.md](../../programowanie/blockly/algorytmy/wyszukiwanie/wyszukiwanie-liniowe.md)
 {% endcontent-ref %}
+
+### Kotlin
+
+{% content-ref url="../../programowanie/kotlin/algorithms/searching/linear-search.md" %}
+[linear-search.md](../../programowanie/kotlin/algorithms/searching/linear-search.md)
+{% endcontent-ref %}

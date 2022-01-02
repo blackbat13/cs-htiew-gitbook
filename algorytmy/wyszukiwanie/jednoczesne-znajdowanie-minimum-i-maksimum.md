@@ -107,3 +107,9 @@ $$O(3\frac{n}{2})$$
 {% content-ref url="../../programowanie/python/algorytmy/wyszukiwanie/naiwne-wyszukiwanie-minimum-i-maksimum.md" %}
 [naiwne-wyszukiwanie-minimum-i-maksimum.md](../../programowanie/python/algorytmy/wyszukiwanie/naiwne-wyszukiwanie-minimum-i-maksimum.md)
 {% endcontent-ref %}
+
+### Kotlin
+
+{% content-ref url="../../programowanie/kotlin/algorithms/searching/min-max-search.md" %}
+[min-max-search.md](../../programowanie/kotlin/algorithms/searching/min-max-search.md)
+{% endcontent-ref %}

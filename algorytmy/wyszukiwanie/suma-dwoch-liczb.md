@@ -90,3 +90,9 @@ $$O(n)$$ - liniowa
 {% content-ref url="../../programowanie/python/algorytmy/wyszukiwanie/suma-dwoch-liczb.md" %}
 [suma-dwoch-liczb.md](../../programowanie/python/algorytmy/wyszukiwanie/suma-dwoch-liczb.md)
 {% endcontent-ref %}
+
+### Kotlin
+
+{% content-ref url="../../programowanie/kotlin/algorithms/searching/sum-of-two.md" %}
+[sum-of-two.md](../../programowanie/kotlin/algorithms/searching/sum-of-two.md)
+{% endcontent-ref %}

@@ -86,3 +86,8 @@ $$O(n)$$ - liniowa
 [najdluzszy-spojny-podciag-rosnacy.md](../../programowanie/python/algorytmy/wyszukiwanie/najdluzszy-spojny-podciag-rosnacy.md)
 {% endcontent-ref %}
 
+### Kotlin
+
+{% content-ref url="../../programowanie/kotlin/algorithms/searching/longest-growing-substring.md" %}
+[longest-growing-substring.md](../../programowanie/kotlin/algorithms/searching/longest-growing-substring.md)
+{% endcontent-ref %}

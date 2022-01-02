@@ -44,7 +44,7 @@ def sgn(a: int) -> int:
         return 0
 
 
-def segment_crossing(a_x: int, a_y: int, b_x: int, b_y: int, c_x: int, c_y: int, d_x: int, d_y: int) -> bool:
+def segments_crossing(a_x: int, a_y: int, b_x: int, b_y: int, c_x: int, c_y: int, d_x: int, d_y: int) -> bool:
     if point_on_segment(a_x, a_y, b_x, b_y, c_x, c_y) or \
             point_on_segment(a_x, a_y, b_x, b_y, d_x, d_y) or \
             point_on_segment(c_x, c_y, d_x, d_y, a_x, a_y) or \
@@ -68,7 +68,7 @@ c_y = 3
 d_x = 4
 d_y = 4
 
-result = segment_crossing(a_x, a_y, b_x, b_y, c_x, c_y, d_x, d_y)
+result = segments_crossing(a_x, a_y, b_x, b_y, c_x, c_y, d_x, d_y)
 
 if result:
 	print(f"Odcinki [({a_x}, {a_y}), ({b_x}, {b_y})] oraz [({c_x}, {c_y}), ({d_x}, {d_y})] przecinają się")

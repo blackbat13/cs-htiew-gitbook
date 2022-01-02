@@ -99,3 +99,9 @@ $$O(\log n)$$ - logarytmiczna
 {% content-ref url="../../programowanie/blockly/algorytmy/wyszukiwanie/wyszukiwanie-binarne.md" %}
 [wyszukiwanie-binarne.md](../../programowanie/blockly/algorytmy/wyszukiwanie/wyszukiwanie-binarne.md)
 {% endcontent-ref %}
+
+### Kotlin
+
+{% content-ref url="../../programowanie/kotlin/algorithms/searching/binary-search.md" %}
+[binary-search.md](../../programowanie/kotlin/algorithms/searching/binary-search.md)
+{% endcontent-ref %}

@@ -133,3 +133,9 @@ $$O(n)$$ - liniowa
 {% content-ref url="../../programowanie/blockly/algorytmy/wyszukiwanie/wyszukiwanie-minimum-i-maksimum.md" %}
 [wyszukiwanie-minimum-i-maksimum.md](../../programowanie/blockly/algorytmy/wyszukiwanie/wyszukiwanie-minimum-i-maksimum.md)
 {% endcontent-ref %}
+
+### Kotlin
+
+{% content-ref url="../../programowanie/kotlin/algorithms/searching/min-or-max.md" %}
+[min-or-max.md](../../programowanie/kotlin/algorithms/searching/min-or-max.md)
+{% endcontent-ref %}

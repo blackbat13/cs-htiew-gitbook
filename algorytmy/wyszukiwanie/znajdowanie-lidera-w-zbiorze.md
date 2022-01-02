@@ -107,3 +107,9 @@ $$O(n)$$ - liniowa
 {% content-ref url="../../programowanie/python/algorytmy/wyszukiwanie/znajdowanie-lidera-w-zbiorze.md" %}
 [znajdowanie-lidera-w-zbiorze.md](../../programowanie/python/algorytmy/wyszukiwanie/znajdowanie-lidera-w-zbiorze.md)
 {% endcontent-ref %}
+
+### Kotlin
+
+{% content-ref url="../../programowanie/kotlin/algorithms/searching/majority.md" %}
+[majority.md](../../programowanie/kotlin/algorithms/searching/majority.md)
+{% endcontent-ref %}

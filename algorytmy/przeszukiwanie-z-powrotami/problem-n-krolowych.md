@@ -31,3 +31,9 @@ TODO
 {% content-ref url="../../programowanie/python/algorytmy/inne/problem-n-krolowych.md" %}
 [problem-n-krolowych.md](../../programowanie/python/algorytmy/inne/problem-n-krolowych.md)
 {% endcontent-ref %}
+
+### Kotlin
+
+{% content-ref url="../../programowanie/kotlin/algorithms/backtracking/n-queens.md" %}
+[n-queens.md](../../programowanie/kotlin/algorithms/backtracking/n-queens.md)
+{% endcontent-ref %}
