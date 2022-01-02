@@ -64,14 +64,14 @@ import java.io.*;
 
 class Main {
     public static void main (String[] args) throws java.lang.Exception {
-        Random rd = new Random(); 
-        
-		    int moneta = rd.nextInt(2);
-		
-		    if(moneta == 0) {
-		        System.out.println("Orzel");
-		    } else {
-			      System.out.println("Reszka");
+        Random rd = new Random();
+
+        int moneta = rd.nextInt(2);
+    
+        if(moneta == 0) {
+            System.out.println("Orzel");
+        } else {
+                System.out.println("Reszka");
         }
     }
 }
