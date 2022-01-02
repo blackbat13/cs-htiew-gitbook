@@ -8,62 +8,73 @@
 
 ## Implementacja
 
-```python
-from pprint import pprint
+```kotlin
+fun findSolution(n: Int, queenId: Int, positions: Array<Int>): Boolean {
+    if (queenId == n) {
+        return true
+    }
 
-
-def find_solution(n: int, queen_id: int, positions: list) -> bool:
-    if queen_id == n:
-        return True
-
-    for i in range(n):
-        if not check_new_position(queen_id, i, positions):
+    for (i in 0 until n) {
+        if (!checkNewPosition(queenId, i, positions)) {
             continue
+        }
 
-        positions[queen_id] = i
-        
-        if find_solution(n, queen_id + 1, positions):
-            return True
+        positions[queenId] = i
 
-    return False
+        if (findSolution(n, queenId + 1, positions)) {
+            return true
+        }
+    }
 
+    return false
+}
 
-def check_new_position(x: int, y: int, positions: list) -> bool:
-    for i in range(x):
-        if positions[i] == y:
-            return False
-            
-        if y - positions[i] == x - i:
-            return False
+fun checkNewPosition(x: Int, y: Int, positions: Array<Int>): Boolean {
+    for (i in 0 until x) {
+        if (positions[i] == y) {
+            return false
+        }
 
-    return True
+        if ((y - positions[i]) == (x - i)) {
+            return false
+        }
+    }
 
+    return true
+}
 
-def print_checkboard(n: int, positions: list):
-    board = [[0 for _ in range(n)] for _ in range(n)]
-    
-    for i in range(n):
+fun printCheckboard(n: Int, positions: Array<Int>) {
+    val board = Array(n) { IntArray(n) }
+
+    for (i in 0 until n) {
         board[positions[i]][i] = 1
-        
-    pprint(board)
-    
+    }
 
-n = 5
-positions = [0 for _ in range(n)]
+    for (i in 0 until n) {
+        println(board[i].contentToString())
+    }
+}
 
-result = find_solution(n, 0, positions)
+fun main() {
+  val n = 5
+  val positions = Array(n) {0}
 
-if result:
-    print(f"Positions: {positions}")
-    print("Checkboard:")
-    print_checkboard(n, positions)
-else:
-    print("No result exists")
+  val result = findSolution(n, 0, positions)
+
+  if (result) {
+      println("Pozycje:")
+      println(positions.contentToString())
+      println("Szachownica:")
+      printCheckboard(n, positions)
+  } else {
+      println("Brak rozwiazania")
+  }
+}
 ```
 
 ### Link do implementacji
 
-{% embed url="https://ideone.com/C4JTOk" %}
+{% embed url="https://ideone.com/DDsmN4" %}
 Problem n królowych
 {% endembed %}
 
