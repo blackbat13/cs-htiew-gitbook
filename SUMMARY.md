@@ -607,8 +607,8 @@
       * [Minkowski Sausage](programowanie/blockly/algorytmy/fraktale-1/minkowski-sausage.md)
       * [Zbiór Cantora](programowanie/blockly/algorytmy/fraktale-1/zbior-cantora.md)
 * [Lua](programowanie/lua/README.md)
-  * [Symulacje](programowanie/lua/symulacje/README.md)
-    * [Gra w życie](programowanie/lua/symulacje/gra-w-zycie.md)
+  * [Symulacje](programowanie/lua/simulations/README.md)
+    * [Gra w życie](programowanie/lua/simulations/game-of-life.md)
 
 ## Algorytmika - zadania
 
