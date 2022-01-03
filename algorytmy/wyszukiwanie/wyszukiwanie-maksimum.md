@@ -2,13 +2,23 @@
 
 ## Opis problemu
 
-TODO
+Wyobraźmy sobie, że odwiedzamy pewien sklep internetowy, np. w poszukiwaniu nowego laptopa.
+Na początek chcemy sprawdzić, jaki jest najdroższy z dostępnych sprzętów.
+Co możemy w tym celu zrobić? Możemy oczywiście posortować produkty po cenie.
+Nie potrzebna nam jednak lista wszystkich produktów, a tylko jeden - ten najdroższy.
+
+W tym temacie zajmiemy się właśnie takim problemem - **znajdowaniem elementu maksymalnego (albo minimalnego) w zadanym zbiorze**.
 
 ## Wyszukiwanie wartości maksymalnej w tablicy
 
 ### Opis problemu
 
-TODO
+Zacznijmy od standardowej wersji problemu.
+Jak to zwykle w informatyce, będziemy rozważać pewien uporządkowany zbiór elementów, a dokładnie tablicę liczb całkowitych.
+Oczywiście w ogólności nie ma znaczenia, jakie to będą wartości, pod warunkiem, że możemy je ze sobą porównywać i można wśród nich znaleźć wartość największą.
+
+Interesuje nas znalezienie wartości maksymalnej w zadanej tablicy.
+Jak zwykle, zaczynamy od bardziej formalnej specyfikacji naszego problemu.
 
 ### Specyfikacja
 
@@ -40,7 +50,20 @@ Wyszukiwanie maksimum
 
 ### Rozwiązanie
 
-TODO
+Zanim przejdziemy do rozwiązywania problemu warto przyjrzeć się dokładnie powyższej animacji.
+Pokazuje ona, krok po kroku, metodę, którą zastosujemy.
+
+Idea jest prosta: na początku przyglądamy się **pierwszemu** elementowi z tablicy i stwierdzamy "tak, to może być nasz element maksymalny", więc **zapamiętujemy** jego wartość.
+Innymi słowy: wartość pierwszego elementu tablicy zapamiętujemy jako **dotychczasowe** maksimum.
+
+Teraz możemy przejść do sprawdzania kolejnych elementów tablicy, które będziemy przeglądać jeden po drugim, czyli liniowo, podobnie jak w algorytmie wyszukiwania liniowego.
+Każdy kolejny element tablicy będziemy porównywać z naszym dotychczasowym maksimum.
+Jeżeli znajdziemy element o wartości większej niż nasze dotychczasowe maksimum, to znaczy, że właśnie tę większą wartość należy zapamiętać jako nasze dotychczasowe maksimum.
+Poprzednią wartość możemy zapomnieć, jako że interesuje nas tylko jedna wartość: maksymalna.
+
+Na końcu, gdy już sprawdzimy wszystkie elementy tablicy, nasze dotychczasowe maksimum będzie już maksimum z **całej tablicy** i tę właśnie wartość zwrócimy jako wynik naszego algorytmu.
+
+Zapiszmy teraz nasz algorytm w postaci pseudokodu.
 
 ### Pseudokod
 
@@ -55,6 +78,9 @@ funkcja SzukajMaks(n, A):
 ```
 
 ### Złożoność
+
+Podobnie jak w przypadku wyszukiwania liniowego przeglądamy elementy jeden po drugim w poszukiwaniu maksimum.
+Dlatego i w tym przypadku mamy złożoność liniową.
 
 $$O(n)$$ - liniowa
 
