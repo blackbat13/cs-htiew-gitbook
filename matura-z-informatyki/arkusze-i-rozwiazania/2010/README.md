@@ -10,9 +10,7 @@ Część I
 Część II
 {% endfile %}
 
-{% file src="../../../.gitbook/assets/dane_2010.zip" %}
-Dane
-{% endfile %}
+
 
 ## Odpowiedzi
 
