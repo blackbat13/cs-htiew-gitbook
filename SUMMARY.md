@@ -698,6 +698,8 @@
 ## Matura z informatyki
 
 * [Arkusze i rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/README.md)
+  * [2010](matura-z-informatyki/arkusze-i-rozwiazania/2010/README.md)
+    * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2010/rozwiazania.md)
   * [2013 - próbna PTI](matura-z-informatyki/arkusze-i-rozwiazania/2013-probna-pti/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2013-probna-pti/rozwiazania.md)
   * [2013](matura-z-informatyki/arkusze-i-rozwiazania/2013/README.md)
