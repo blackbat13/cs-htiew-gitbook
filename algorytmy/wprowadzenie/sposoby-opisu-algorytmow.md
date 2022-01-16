@@ -158,7 +158,7 @@ Przykład - Python
 
 #### Pascal
 
-```
+```delphi
 program dzielniki;
 var n, wynik, i: integer;
 begin
