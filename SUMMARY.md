@@ -663,6 +663,12 @@
 * [JavaScript](nauka-przez-gry/javascript/README.md)
   * [Złap kosmitę](nauka-przez-gry/javascript/zlap-kosmite.md)
 
+## Grafika komputerowa
+
+* [Gimp](graphics/gimp/README.md)
+* [Tutoriale](graphics/gimp/tutorials/README.md)
+  * [Efekt vintage](graphics/gimp/tutorials/vintage_effect.md)
+
 ## Sieci komputerowe
 
 * [Słownik pojęć](sieci-komputerowe/slownik-pojec.md)
