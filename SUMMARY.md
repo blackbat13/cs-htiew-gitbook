@@ -34,10 +34,10 @@
 
 ## Dydaktyka Informatyki
 
-* [Wstęp](dydaktyka-informatyki/wstep.md)
-* [Omówienie podstawy programowej](dydaktyka-informatyki/omowienie-podstawy-programowej.md)
-* [Nauczanie zdalne](dydaktyka-informatyki/nauczanie-zdalne.md)
-* [Programowanie w szkole](dydaktyka-informatyki/programowanie-w-szkole.md)
+* [Wstęp](cs-didactics/README.md)
+* [Omówienie podstawy programowej](cs-didactics/core-curriculum-discussion.md)
+* [Nauczanie zdalne](cs-didactics/remote-learning.md)
+* [Programowanie w szkole](cs-didactics/programming-in-school.md)
 
 ## Algorytmy
 
@@ -612,25 +612,26 @@
 
 ## Algorytmika - zadania
 
-* [Wstęp](algorytmika-zadania/wstep.md)
-* [Poziom 0](algorytmika-zadania/poziom-1/README.md)
-  * [Porównywanie liczb](algorytmika-zadania/poziom-1/porownywanie-liczb/README.md)
-    * [Pseudokod](algorytmika-zadania/poziom-1/porownywanie-liczb/pseudokod.md)
-    * [Schemat blokowy](algorytmika-zadania/poziom-1/porownywanie-liczb/schemat-blokowy.md)
-    * [Python](algorytmika-zadania/poziom-1/porownywanie-liczb/python.md)
-    * [C++](algorytmika-zadania/poziom-1/porownywanie-liczb/c++.md)
-    * [Blockly](algorytmika-zadania/poziom-1/porownywanie-liczb/blockly.md)
-  * [Cięcie kosztów](algorytmika-zadania/poziom-1/ciecie-kosztow.md)
-  * [Pakowanie na wakacje](algorytmika-zadania/poziom-1/pakowanie-na-wakacje.md)
-* [Poziom 1](algorytmika-zadania/poziom-1-1/README.md)
-  * [Suma nieparzystych](algorytmika-zadania/poziom-1-1/suma-nieparzystych.md)
-  * [Różne cyfry](algorytmika-zadania/poziom-1-1/rozne-cyfry.md)
-  * [Różnice w sekwencji](algorytmika-zadania/poziom-1-1/wesole-skoki.md)
-  * [Promocja](algorytmika-zadania/poziom-1-1/promocja.md)
-  * [Permutacja](algorytmika-zadania/poziom-1-1/permutacja.md)
-  * [Gazeta](algorytmika-zadania/poziom-1-1/gazeta.md)
-  * [Kodowanie obrazka](algorytmika-zadania/poziom-1-1/kodowanie-obrazka.md)
-* [Poziom 2](algorytmika-zadania/poziom-2.md)
+* [Wstęp](algorithmic-exercises/README.md)
+* [Poziom 0](algorithmic-exercises/level-0/README.md)
+  * [Porównywanie liczb](algorithmic-exercises/level-0/compare-integers/README.md)
+    * [Pseudokod](algorithmic-exercises/level-0/compare-integers/pseudocode.md)
+    * [Schemat blokowy](algorithmic-exercises/level-0/compare-integers/block-diagram.md)
+    * [Python](algorithmic-exercises/level-0/compare-integers/python.md)
+    * [C++](algorithmic-exercises/level-0/compare-integers/c++.md)
+    * [Blockly](algorithmic-exercises/level-0/compare-integers/blockly.md)
+  * [Cięcie kosztów](algorithmic-exercises/level-0/cutting-costs/README.md)
+    * [Pseudokod](algorithmic-exercises/level-0/cutting-costs/pseudocode.md)
+  * [Pakowanie na wakacje](algorithmic-exercises/level-0/holidays-packing/README.md)
+    * [Pseudokod](algorithmic-exercises/level-0/holidays-packing/pseudocode.md)
+* [Poziom 1](algorithmic-exercises/level-1/README.md)
+  * [Suma nieparzystych](algorithmic-exercises/level-1/odd-sum.md)
+  * [Różne cyfry](algorithmic-exercises/level-1/different-digits.md)
+  * [Różnice w sekwencji](algorithmic-exercises/level-1/happy-jumps.md)
+  * [Promocja](algorithmic-exercises/level-1/sale.md)
+  * [Permutacja](algorithmic-exercises/level-1/permutation.md)
+  * [Gazeta](algorithmic-exercises/level-1/newspaper.md)
+  * [Kodowanie obrazka](algorithmic-exercises/level-1/image-coding.md)
 
 ## Nauka programowania poprzez tworzenie gier <a href="nauka-przez-gry" id="nauka-przez-gry"></a>
 
@@ -672,12 +673,13 @@
 
 ## Sieci komputerowe
 
-* [Słownik pojęć](sieci-komputerowe/slownik-pojec.md)
-* [Protokół IP](sieci-komputerowe/protokol-ip.md)
-* [TCP i UDP](sieci-komputerowe/tcp-i-udp.md)
-* [Model OSI](sieci-komputerowe/model-osi.md)
-* [Wireshark](sieci-komputerowe/wireshark/README.md)
-  * [Połączenia HTTPS](sieci-komputerowe/wireshark/polaczenia-https.md)
+* [Słownik pojęć](networking/terms.md)
+* [Model OSI](networking/osi.md)
+* [Protokoły](networking/protocols/README.md)
+  * [Protokół IP](networking/protocols/ip.md)
+  * [TCP i UDP](networking/protocols/tcp-udp.md)
+* [Wireshark](networking/wireshark/README.md)
+  * [Połączenia HTTPS](networking/wireshark/https.md)
 
 ## Linux
 
@@ -688,11 +690,11 @@
 * [Procesy](linux/procesy.md)
 * [Grep](linux/grep.md)
 
-## E-głosowanie
+<!-- ## E-głosowanie
 
-* [Wstęp](e-glosowanie/wstep.md)
-* [Prêt à Voter](e-glosowanie/pret-a-voter.md)
-* [ThreeBallot](e-glosowanie/threeballot.md)
+* [Wstęp](e-voting/README.md)
+* [Prêt à Voter](e-voting/pret-a-voter.md)
+* [ThreeBallot](e-voting/threeballot.md) -->
 
 ## Inne tematy
 

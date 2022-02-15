@@ -1,6 +1,6 @@
 # Schemat blokowy
 
-### Schemat blokowy
+## Rozwiązanie
 
 ![Porównywanie dwóch liczb](../../../.gitbook/assets/porownywanie_liczb_schemat_blokowy.png)
 

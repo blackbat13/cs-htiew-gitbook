@@ -26,7 +26,7 @@ b := 1200
 c := 1800
 ```
 
-**Wynik: **$$1500$$
+**Wynik:** $$1500$$
 
 {% hint style="info" %}
 #### Wyjaśnienie

@@ -1,6 +1,6 @@
 # Pseudokod
 
-## Pseudokod
+## Rozwiązanie
 
 ```
 1. Wczytaj a, b

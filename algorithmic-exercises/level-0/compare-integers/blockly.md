@@ -1,6 +1,6 @@
 # Blockly
 
-## Implementacja
+## Rozwiązanie
 
 ![Porównywanie liczb - Blockly](<../../../.gitbook/assets/image (9).png>)
 
@@ -10,7 +10,7 @@
 Porównywanie liczb - Blockly
 {% endembed %}
 
-### Opis implementacji
+### Opis
 
 Na początku wczytujemy dwie liczby od użytkownika, podając przy tym stosowane komunikaty i zapisując je w zmiennych `a` i `b`.
 

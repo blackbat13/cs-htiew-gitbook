@@ -1,6 +1,6 @@
 # Python
 
-## Implementacja
+## Rozwiązanie
 
 ```python
 a = int(input("Podaj a: "))
@@ -20,7 +20,7 @@ else:
 Porównywanie liczb - Python
 {% endembed %}
 
-### Opis implementacji
+### Opis
 
 Na początku wczytujemy dwie wartości od użytkownika (**linie 1 i 2**). Ponieważ spodziewamy się liczb całkowitych, to poza funkcją `input` do wczytania wartości używamy także funkcji `int` do zamiany wczytanych wartości (które są przechowywane w postaci ciągów znaków typu `string`) na liczby całkowite.
 
