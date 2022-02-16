@@ -683,11 +683,11 @@
 
 ## Linux
 
-* [Wprowadzenie do systemu Linux](linux/wprowadzenie-do-systemu-linux.md)
-* [Katalogi](linux/katalogi.md)
-* [Pliki](linux/pliki.md)
-* [Prawa dostępu](linux/prawa-dostepu.md)
-* [Procesy](linux/procesy.md)
+* [Wprowadzenie do systemu Linux](linux/introduction.md)
+* [Katalogi](linux/folders.md)
+* [Pliki](linux/files.md)
+* [Prawa dostępu](linux/permissions.md)
+* [Procesy](linux/processes.md)
 * [Grep](linux/grep.md)
 
 <!-- ## E-głosowanie
