@@ -2,7 +2,7 @@
 
 ## Treść zadania
 
-Napisz program zgodny z poniższą specyfikacją. Obliczenie i wypisywanie dzielników powinno być zrealizowane za pomocą funkcji.
+Napisz program zgodny z poniższą specyfikacją. Obliczanie dzielników powinno być zrealizowane za pomocą funkcji.
 
 ### Specyfikacja
 
