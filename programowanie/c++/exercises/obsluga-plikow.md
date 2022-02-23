@@ -1,2 +1,0 @@
-# Obsługa plików
-
