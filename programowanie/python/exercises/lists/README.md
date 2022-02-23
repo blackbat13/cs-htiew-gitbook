@@ -120,11 +120,11 @@ Napisz program zgodny z poniższą specyfikacją.
 #### Dane
 
 * $$n$$ - liczba naturalna
-* $$t1[n],\ t2[n]$$ - dwie tablice liczb całkowitych
+* $$t1[n],\ t2[n]$$ - dwie listy liczb całkowitych
 
 #### Wynik
 
-* Tablica powstała poprzez dodanie do siebie wartości z tablic $$t1$$ i $$t2$$ 
+* Tablica powstała poprzez dodanie do siebie wartości z list $$t1$$ i $$t2$$ 
 
 ### Przykład
 
@@ -152,11 +152,11 @@ Napisz program zgodny z poniższą specyfikacją.
 
 #### Dane
 
-* $$n$$ - liczba naturalna
+* $$n$$ - liczba naturalna, $$n>2$$
 
 #### Wynik
 
-* $$fib[n]$$ - tablica zawierająca $$n$$ kolejnych liczb Fibonacciego
+* $$fib[n]$$ - lista zawierająca $$n$$ kolejnych liczb Fibonacciego
 
 ### Przykład
 
@@ -180,7 +180,7 @@ Napisz program zgodny z poniższą specyfikacją.
 
 #### Wynik
 
-* $$mno[n][n]$$ - dwuwymiarowa tablica reprezentująca tabliczkę mnożenia liczb z zakresu $$[0,n-1]$$, gdzie $$mno[i][j]=i*j$$
+* $$mno[n][n]$$ - dwuwymiarowa lista reprezentująca tabliczkę mnożenia liczb z zakresu $$[0,n-1]$$, gdzie $$mno[i][j]=i*j$$
 
 ### Przykład
 
@@ -207,13 +207,13 @@ Napisz program zgodny z poniższą specyfikacją.
 #### Dane
 
 * $$n$$ - liczba naturalna
-* $$tab[n]$$ - tablica liczb całkowitych
+* $$tab[n]$$ - lista liczb całkowitych
 
 #### Wynik
 
-* Komunikat "niemalejaco" jeżeli elementy tablicy posortowane są niemalejąco
-* Komunikat "nierosnaco" jeżeli elementy tablicy posortowane są nierosnąco
-* Komunikat "nieposortowane" jeżeli elementy tablicy nie są posortowane
+* Komunikat "niemalejaco" jeżeli elementy listy posortowane są niemalejąco
+* Komunikat "nierosnaco" jeżeli elementy listy posortowane są nierosnąco
+* Komunikat "nieposortowane" jeżeli elementy listy nie są posortowane
 
 ### Przykład 1
 
@@ -247,3 +247,18 @@ tab := [1, 2, 3, 1, 5]
 ```
 
 **Wynik**: "nieposortowane"
+
+## Zadanie 8
+
+Napisz program zgodny z poniższą specyfikacją.
+
+### Specyfikacja
+
+#### Dane
+
+* $$n$$ - liczba naturalna
+* $$p, k$$ - dwie liczby naturalna, $$p <= k$$
+
+#### Wynik
+
+* $$n$$-elementowa lista wypełniona losowymi wartościami z przedziału $$[p, k]$$

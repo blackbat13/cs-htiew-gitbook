@@ -16,23 +16,12 @@ Napisz program zgodny z poniższą specyfikacją. Wypisanie komunikatu powinno z
 
 ## Rozwiązanie
 
-```cpp
-#include <iostream>
+```python
+def powitanie(imie: str):
+    print(f"Witaj {imie}!")
 
-using namespace std;
 
-void powitanie(string imie) {
-    cout << "Witaj " << imie << "!" << endl;
-}
+imie = input("Podaj swoje imię: ")
 
-int main() {
-    string imie;
-    
-    cout << "Podaj swoje imie:" << endl;
-    cin >> imie;
-    
-    powitanie(imie);
-    
-    return 0;
-}
+powitanie(imie)
 ```
