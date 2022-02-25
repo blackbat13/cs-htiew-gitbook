@@ -19,7 +19,7 @@ Twoim zadaniem jest policzyć, ile będzie wynosić opłata za dany wyraz wedle 
 
 * $$n$$ - liczba znaków
 * $$(z_1, c_1), (z_2, c_2), ..., (z_n, c_n)$$ - cennik: pary znak oraz cena znaku, podana w groszach
-* $$wyraz$$ - ciąg znaków, bez spacji i innych białych znaków
+* $$wyraz$$ - ciąg znaków, małych i/lub wielkich liter alfabetu angielskiego, bez spacji i innych białych znaków
 
 #### Wynik
 
@@ -30,7 +30,7 @@ Twoim zadaniem jest policzyć, ile będzie wynosić opłata za dany wyraz wedle 
 #### Dane
 
 ```
-5
+6
 a 5
 l 25
 m 30
