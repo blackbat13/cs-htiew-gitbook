@@ -47,7 +47,7 @@ procedura SortGnoma(n, A):
 
 ### Złożoność
 
-TODO
+$$O(n^2)$$ - kwadratowa
 
 ## Implementacja
 
@@ -61,4 +61,10 @@ TODO
 
 {% content-ref url="../../programowanie/python/algorytmy/sortowanie/sortowanie-gnoma.md" %}
 [sortowanie-gnoma.md](../../programowanie/python/algorytmy/sortowanie/sortowanie-gnoma.md)
+{% endcontent-ref %}
+
+### Kotlin
+
+{% content-ref url="../../programowanie/kotlin/algorithms/sorting/gnome-sort.md" %}
+[gnome-sort.md](../../programowanie/kotlin/algorithms/sorting/gnome-sort.md)
 {% endcontent-ref %}
