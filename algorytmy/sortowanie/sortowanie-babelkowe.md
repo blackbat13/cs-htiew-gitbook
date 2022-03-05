@@ -58,7 +58,7 @@ procedura SortowanieBabelkowe(n, A):
 
 ### Złożoność
 
-$$O(n^2)$$  - kwadratowa
+$$O(n^2)$$ - kwadratowa
 
 ## Implementacja
 

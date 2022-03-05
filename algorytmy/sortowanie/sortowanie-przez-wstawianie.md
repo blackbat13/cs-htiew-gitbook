@@ -67,3 +67,9 @@ $$O(n^2)$$ - kwadratowa
 {% content-ref url="../../programowanie/python/algorytmy/sortowanie/sortowanie-przez-wstawianie.md" %}
 [sortowanie-przez-wstawianie.md](../../programowanie/python/algorytmy/sortowanie/sortowanie-przez-wstawianie.md)
 {% endcontent-ref %}
+
+### Kotlin
+
+{% content-ref url="../../programowanie/kotlin/algorithms/sorting/insertion-sort.md" %}
+[insertion-sort.md](../../programowanie/kotlin/algorithms/sorting/insertion-sort.md)
+{% endcontent-ref %}
