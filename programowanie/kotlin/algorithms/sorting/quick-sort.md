@@ -8,47 +8,52 @@
 
 ## Implementacja
 
-```python
-def quick_sort(array: list, left: int, right: int):
-    if right <= left:
+```kotlin
+fun quickSort(array: MutableList<Int>, left: Int, right: Int) {
+    if (right <= left) {
         return
+    }
 
-    pivot = array[(left + right) // 2]
-    i = left
-    j = right
-    
-    while i <= j:
-        while array[i] < pivot:
+    val pivot = array[(left + right) / 2]
+    var i = left
+    var j = right
+
+    while (i <= j) {
+        while (array[i] < pivot) {
             i += 1
+        }
 
-        while array[j] > pivot:
+        while (array[j] > pivot) {
             j -= 1
+        }
 
-        if i > j:
+        if (i > j) {
             break
+        } 
 
-        array[i], array[j] = array[j], array[i]
+        val tmp = array[i]
+        array[i] = array[j]
+        array[j] = tmp
 
-        i += 1
-        j -= 1
+        i++
+        j--
+    }
+    
+    quickSort(array, left, j)
+    quickSort(array, i, right)
+}
 
-    quick_sort(array, left, j)
-    quick_sort(array, i, right)
+fun main() {
+    val array = mutableListOf(7, 3, 0, 1, 5, 2, 5, 19, 10, 5)
 
+    quickSort(array, 0, array.count() - 1)
 
-array = [7, 3, 0, 1, 5, 2, 5, 19, 10, 5]
-
-quick_sort(array, 0, len(array) - 1)
-
-print(array)
+    println(array)
+}
 ```
 
 ### Link do implementacji
 
-{% embed url="https://ideone.com/z29zNR" %}
+{% embed url="https://ideone.com/vwYIuK" %}
 Sortowanie szybkie
 {% endembed %}
-
-### Opis implementacji
-
-TODO

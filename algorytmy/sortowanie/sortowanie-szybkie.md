@@ -60,3 +60,9 @@ $$O(n\log{n})$$ - liniowo logarytmiczna
 {% content-ref url="../../programowanie/python/algorytmy/sortowanie/sortowanie-szybkie.md" %}
 [sortowanie-szybkie.md](../../programowanie/python/algorytmy/sortowanie/sortowanie-szybkie.md)
 {% endcontent-ref %}
+
+### Kotlin
+
+{% content-ref url="../../programowanie/kotlin/algorithms/sorting/quick-sort.md" %}
+[quick-sort.md](../../programowanie/kotlin/algorithms/sorting/quick-sort.md)
+{% endcontent-ref %}
