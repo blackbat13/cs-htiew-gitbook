@@ -81,3 +81,9 @@ $$O(n^2)$$ - kwadratowa
 {% content-ref url="../../programowanie/blockly/algorytmy/sortowanie/sortowanie-przez-wybieranie.md" %}
 [sortowanie-przez-wybieranie.md](../../programowanie/blockly/algorytmy/sortowanie/sortowanie-przez-wybieranie.md)
 {% endcontent-ref %}
+
+### Kotlin
+
+{% content-ref url="../../programowanie/kotlin/algorithms/sorting/selection-sort.md" %}
+[selection-sort.md](../../programowanie/kotlin/algorithms/sorting/selection-sort.md)
+{% endcontent-ref %}
