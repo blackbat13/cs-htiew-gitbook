@@ -66,3 +66,9 @@ $$O(n^2)$$ - kwadratowa
 {% content-ref url="../../programowanie/python/algorytmy/sortowanie/sortowanie-koktajlowe.md" %}
 [sortowanie-koktajlowe.md](../../programowanie/python/algorytmy/sortowanie/sortowanie-koktajlowe.md)
 {% endcontent-ref %}
+
+### Kotlin
+
+{% content-ref url="../../programowanie/kotlin/algorithms/sorting/cocktail-shaker-sort.md" %}
+[cocktail-shaker-sort.md](../../programowanie/kotlin/algorithms/sorting/cocktail-shaker-sort.md)
+{% endcontent-ref %}

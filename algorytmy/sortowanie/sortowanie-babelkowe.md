@@ -74,3 +74,9 @@ $$O(n^2)$$ - kwadratowa
 {% content-ref url="../../programowanie/kotlin/algorithms/sorting/bubble-sort.md" %}
 [bubble-sort.md](../../programowanie/kotlin/algorithms/sorting/bubble-sort.md)
 {% endcontent-ref %}
+
+### Julia
+
+{% content-ref url="../../programowanie/julia/algorithms/sorting/bubble-sort.md" %}
+[bubble-sort.md](../../programowanie/julia/algorithms/sorting/bubble-sort.md)
+{% endcontent-ref %}
