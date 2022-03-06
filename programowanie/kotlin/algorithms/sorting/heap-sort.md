@@ -16,7 +16,7 @@ def build_heap(array: [], n: int):
         
         while j > 0 and array[j] > array[parent_index]:
             array[j], array[parent_index] = array[parent_index], array[j]
-            j = parent_index;
+            j = parent_index
             parent_index = (j - 1) // 2;
             
 
@@ -38,7 +38,3 @@ print(array)
 {% embed url="https://ideone.com/RvYqmU" %}
 Sortowanie przez kopcowanie
 {% endembed %}
-
-### Opis implementacji
-
-TODO

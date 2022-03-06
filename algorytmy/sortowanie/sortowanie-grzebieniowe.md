@@ -64,12 +64,18 @@ $$O(n^2)$$ - kwadratowa
 
 ### C++
 
-{% content-ref url="../../programowanie/python/algorytmy/sortowanie/sortowanie-grzebieniowe.md" %}
-[sortowanie-grzebieniowe.md](../../programowanie/python/algorytmy/sortowanie/sortowanie-grzebieniowe.md)
+{% content-ref url="../../programowanie/c++/algorytmy/sortowanie/sortowanie-grzebieniowe.md" %}
+[sortowanie-grzebieniowe.md](../../programowanie/c++/algorytmy/sortowanie/sortowanie-grzebieniowe.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../programowanie/c++/algorytmy/sortowanie/sortowanie-grzebieniowe.md" %}
-[sortowanie-grzebieniowe.md](../../programowanie/c++/algorytmy/sortowanie/sortowanie-grzebieniowe.md)
+{% content-ref url="../../programowanie/python/algorytmy/sortowanie/sortowanie-grzebieniowe.md" %}
+[sortowanie-grzebieniowe.md](../../programowanie/python/algorytmy/sortowanie/sortowanie-grzebieniowe.md)
+{% endcontent-ref %}
+
+### Kotlin
+
+{% content-ref url="../../programowanie/kotlin/algorithms/sorting/comb-sort.md" %}
+[comb-sort.md](../../programowanie/kotlin/algorithms/sorting/comb-sort.md)
 {% endcontent-ref %}
