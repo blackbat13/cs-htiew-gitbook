@@ -8,33 +8,43 @@
 
 ## Implementacja
 
-```python
-def build_heap(array: [], n: int):
-    for i in range(1, n):
-        parent_index = (i - 1) // 2
-        j = i
+```kotlin
+fun buildHeap(array: MutableList<Int>, n: Int) {
+    for (i in 1 until n) {
+        var parentIndex = (i - 1) / 2
+        var j = i
         
-        while j > 0 and array[j] > array[parent_index]:
-            array[j], array[parent_index] = array[parent_index], array[j]
-            j = parent_index
-            parent_index = (j - 1) // 2;
+        while (j > 0 && array[j] > array[parentIndex]) {
+            val tmp = array[j]
+            array[j] = array[parentIndex]
+            array[parentIndex] = tmp
+            j = parentIndex
+            parentIndex = (j - 1) / 2
+        }
+    }
+}
             
 
-def heap_sort(array: [], n: int):
-    for i in range(n-1, 0, -1):
-        build_heap(array, i + 1);
-        array[0], array[i] = array[i], array[0]
+fun heapSort(array: MutableList<Int>) {
+    for (i in array.count() - 1 downTo 1) {
+        buildHeap(array, i + 1)
+        val tmp = array[0]
+        array[0] = array[i]
+        array[i] = tmp
+    }
+}
 
+fun main() {
+    val array = mutableListOf(7, 3, 0, 1, 5, 2, 5, 19, 10, 5)
 
-array = [7, 3, 0, 1, 5, 2, 5, 19, 10, 5]
-    
-heap_sort(array, length(array))
+    heapSort(array)
 
-print(array)
+    println(array)
+}
 ```
 
 ### Link do implementacji
 
-{% embed url="https://ideone.com/RvYqmU" %}
+{% embed url="https://ideone.com/spy6YJ" %}
 Sortowanie przez kopcowanie
 {% endembed %}

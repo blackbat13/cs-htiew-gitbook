@@ -8,32 +8,39 @@
 
 ## Implementacja
 
-```python
-def cocktail_shaker_sort(array: list, n: int):
-    for i in range(n//2+1):
-        for j in range(i, n-i-1):
-            if array[j] > array[j + 1]:
-                array[j], array[j + 1] = array[j + 1], array[j]
+```kotlin
+fun cocktailShakerSort(array: MutableList<Int>) {
+    for (i in 0 until array.count() / 2 + 1) {
+        for (j in i until array.count() - i - 1) {
+            if (array[j] > array[j + 1]) {
+                val tmp = array[j]
+                array[j] = array[j + 1]
+                array[j + 1] = tmp
+            }
+        }
         
-        for j in range(n - 1 - i, i, -1):
-            if array[j] < array[j - 1]:
-                array[j], array[j - 1] = array[j - 1], array[j]
+        for (j in array.count() - 1 - i downTo i + 1) {
+            if (array[j] < array[j - 1]) {
+                val tmp = array[j]
+                array[j] = array[j - 1]
+                array[j - 1] = tmp
+            }
+        }
+    }
+}
 
 
-array = [7, 3, 0, 1, 5, 2, 5, 19, 10, 5]
-n = 10
-
-cocktail_shaker_sort(array, n)
+fun main() {
+    val array = mutableListOf(7, 3, 0, 1, 5, 2, 5, 19, 10, 5)
     
-print(array)
+    cocktailShakerSort(array)
+        
+    println(array)
+}
 ```
 
 ### Link do implementacji
 
-{% embed url="https://ideone.com/C38hze" %}
+{% embed url="https://ideone.com/oNNYmV" %}
 Sortowanie koktajlowe
 {% endembed %}
-
-### Opis implementacji
-
-TODO

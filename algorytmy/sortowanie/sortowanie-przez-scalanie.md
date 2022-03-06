@@ -93,3 +93,9 @@ $$O(n\log{n})$$ - liniowo logarytmiczna
 {% content-ref url="../../programowanie/python/algorytmy/sortowanie/sortowanie-przez-scalanie.md" %}
 [sortowanie-przez-scalanie.md](../../programowanie/python/algorytmy/sortowanie/sortowanie-przez-scalanie.md)
 {% endcontent-ref %}
+
+### Kotlin
+
+{% content-ref url="../../programowanie/kotlin/algorithms/sorting/merge-sort.md" %}
+[merge-sort.md](../../programowanie/kotlin/algorithms/sorting/merge-sort.md)
+{% endcontent-ref %}

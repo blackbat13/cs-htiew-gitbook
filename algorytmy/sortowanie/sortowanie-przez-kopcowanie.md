@@ -57,3 +57,9 @@ $$O(n\log{n})$$ - liniowo logarytmiczna
 {% content-ref url="../../programowanie/python/algorytmy/sortowanie/sortowanie-przez-kopcowanie.md" %}
 [sortowanie-przez-kopcowanie.md](../../programowanie/python/algorytmy/sortowanie/sortowanie-przez-kopcowanie.md)
 {% endcontent-ref %}
+
+### Kotlin
+
+{% content-ref url="../../programowanie/kotlin/algorithms/sorting/heap-sort.md" %}
+[heap-sort.md](../../programowanie/kotlin/algorithms/sorting/heap-sort.md)
+{% endcontent-ref %}

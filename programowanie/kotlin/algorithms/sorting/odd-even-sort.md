@@ -8,33 +8,30 @@
 
 ## Implementacja
 
-```python
-def odd_even_sort(array: list):
-    for i in range(len(array)):
-        if i % 2 == 1:
-            for j in range(2, len(array), 2):
-                if array[j] < array[j - 1]:
-                    array[j], array[j - 1] = array[j - 1], array[j]
-        else:
-            for j in range(1, len(array), 2):
-                if array[j] < array[j - 1]:
-                    array[j], array[j - 1] = array[j - 1], array[j]
+```kotlin
+fun oddEvenSort(array: MutableList<Int>) {
+    for (i in array.indices) {
+        for (j in i % 2 + 1 until array.count() step 2) {
+            if (array[j] < array[j - 1]) {
+                val tmp = array[j]
+                array[j] = array[j - 1]
+                array[j - 1] = tmp
+            }
+        }
+    }
+}
 
+fun main() {
+    val array = mutableListOf(7, 3, 0, 1, 5, 2, 5, 19, 10, 5)
 
-array = [7, 3, 0, 1, 5, 2, 5, 19, 10, 5]
+    oddEvenSort(array)
 
-odd_even_sort(array)
-
-print(array)
+    println(array)
+}
 ```
 
 ### Link do implementacji
 
-{% embed url="https://ideone.com/r1Bb5H" %}
+{% embed url="https://ideone.com/ZfC5Rh" %}
 Sortowanie odd-even
 {% endembed %}
-
-### Opis implementacji
-
-TODO
-

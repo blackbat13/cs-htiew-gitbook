@@ -6,66 +6,38 @@
 [sortowanie-babelkowe.md](../../../../algorytmy/sortowanie/sortowanie-babelkowe.md)
 {% endcontent-ref %}
 
-## Wersja standardowa
+## Implementacja
 
-### Implementacja
-
-```python
-def bubble_sort(array: list):
-    for i in range(0, len(array) - 2):
-        for j in range(len(array) - 1, i, -1):
-            if array[j - 1] > array[j]:
-                array[j], array[j - 1] = array[j-1], array[j]
-
-
-array = [7, 3, 0, 1, 5, 2, 5, 19, 10, 5]
-
-bubble_sort(array)
-
-print(array)
-```
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/1WKZb9" %}
-Sortowanie bąbelkowe - wersja standardowa
-{% endembed %}
-
-### Opis implementacji
-
-TODO
-
-## Wersja zoptymalizowana
-
-### Implementacja
-
-```python
-def bubble_sort(array: list):
-    for i in range(0, len(array) - 2):
-        swap = False
+```kotlin
+fun bubbleSort(array: MutableList<Int>) {
+	var sorted = false
+	var i = 1
+    while (!sorted) {
+    	sorted = true
+        for(j in array.count() - 1 downTo i) {
+            if(array[j] < array[j - 1]) {
+                val tmp = array[j]
+                array[j] = array[j - 1]
+                array[j - 1] = tmp
+                sorted = false
+            }
+        }
         
-        for j in range(len(array) - 1, i, -1):
-            if array[j - 1] > array[j]:
-                array[j], array[j - 1] = array[j-1], array[j]
-                swap = True
+        i++
+    }
+}
 
-        if not swap:
-            return
+fun main() {
+    val array = mutableListOf(7, 3, 0, 1, 5, 2, 5, 19, 10, 5)
 
+    bubbleSort(array)
 
-array = [7, 3, 0, 1, 5, 2, 5, 19, 10, 5]
-
-bubble_sort(array)
-
-print(array)
+    println(array)
+}
 ```
 
 ### Link do implementacji
 
-{% embed url="https://ideone.com/ozVf3z" %}
-Sortowanie bąbelkowe - wersja zoptymalizowana
+{% embed url="https://ideone.com/1hHW2V" %}
+Sortowanie bąbelkowe
 {% endembed %}
-
-### Opis implementacji
-
-W wersji zoptymalizowanej w każdym przebiegu głównej pętli (**linia 2**) sprawdzamy, czy podczas wykonania wewnętrznej pętli (**linia 5**) została dokonana jakaś zamiana elementów. W tym celu używamy dodatkowej zmiennej `swap`. Jeżeli żadna zamiana nie została wykonana (**linia 10**), to oznacza, że można zakończyć działanie algorytmu (**linia 11**), ponieważ lista została już posortowana.

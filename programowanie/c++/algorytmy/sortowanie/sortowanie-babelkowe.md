@@ -17,12 +17,18 @@ using namespace std;
 /// \param array - array to sort
 /// \param n - length of the given array
 void bubbleSort(int array[], int n) {
-    for(int i = 0; i < n; i++) {
+	bool sorted = false;
+	int i = 0;
+    while (!sorted) {
+    	sorted = true;
         for(int j = n - 1; j > i; j--) {
             if(array[j] < array[j-1]) {
                 swap(array[j], array[j-1]);
+                sorted = false;
             }
         }
+        
+        i++;
     }
 }
 
@@ -30,7 +36,7 @@ void bubbleSort(int array[], int n) {
 /// \param array - array to print
 /// \param n - length of the given array
 void printArray(int array[], int n) {
-    for(int i = 0; i < n; ++i) {
+    for(int i = 0; i < 10; ++i) {
         cout << array[i] << " ";
     }
  

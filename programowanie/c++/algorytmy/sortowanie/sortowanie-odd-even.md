@@ -18,17 +18,9 @@ using namespace std;
 /// \param length - length of given array
 void oddEvenSort(int array[], int n) {
     for (int i = 0; i < n; i++) {
-        if (i % 2 == 1) {
-            for (int j = 2; j < n; j += 2) {
-                if (array[j] < array[j - 1]) {
-                    swap(array[j], array[j - 1]);
-                }
-            }
-        } else {
-            for (int j = 1; j < n; j += 2) {
-                if (array[j] < array[j - 1]) {
-                    swap(array[j], array[j - 1]);
-                }
+        for (int j = i % 2 + 1; j < n; j += 2) {
+            if (array[j] < array[j - 1]) {
+                swap(array[j], array[j - 1]);
             }
         }
     }
@@ -38,7 +30,7 @@ void oddEvenSort(int array[], int n) {
 /// \param array - array to print
 /// \param n - length of the given array
 void printArray(int array[], int n) {
-    for(int i = 0; i < n; ++i) {
+    for(int i = 0; i < 10; ++i) {
         cout << array[i] << " ";
     }
 

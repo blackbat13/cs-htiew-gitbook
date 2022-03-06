@@ -62,3 +62,9 @@ $$O(n+m)$$ - liniowa
 {% content-ref url="../../programowanie/blockly/algorytmy/sortowanie/sortowanie-przez-zliczanie.md" %}
 [sortowanie-przez-zliczanie.md](../../programowanie/blockly/algorytmy/sortowanie/sortowanie-przez-zliczanie.md)
 {% endcontent-ref %}
+
+### Kotlin
+
+{% content-ref url="../../programowanie/kotlin/algorithms/sorting/counting-sort.md" %}
+[counting-sort.md](../../programowanie/kotlin/algorithms/sorting/counting-sort.md)
+{% endcontent-ref %}

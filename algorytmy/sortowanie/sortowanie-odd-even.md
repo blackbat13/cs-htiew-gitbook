@@ -66,3 +66,9 @@ $$O(n^2)$$ - kwadratowa
 {% content-ref url="../../programowanie/python/algorytmy/sortowanie/sortowanie-odd-even.md" %}
 [sortowanie-odd-even.md](../../programowanie/python/algorytmy/sortowanie/sortowanie-odd-even.md)
 {% endcontent-ref %}
+
+### Kotlin
+
+{% content-ref url="../../programowanie/kotlin/algorithms/sorting/odd-even-sort.md" %}
+[odd-even-sort.md](../../programowanie/kotlin/algorithms/sorting/odd-even-sort.md)
+{% endcontent-ref %}

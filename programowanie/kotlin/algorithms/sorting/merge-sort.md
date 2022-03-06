@@ -8,50 +8,57 @@
 
 ## Implementacja
 
-```python
-def merge(array: list, left: int, right: int, division: int):
-    merged_length = right - left
-    merged = []
-    index1 = left
-    index2 = division
+```kotlin
+fun merge(array: MutableList<Int>, left: Int, right: Int, division: Int) {
+    val mergedLength = right - left
+    val merged = Array<Int>(mergedLength){0}
+    var index1 = left
+    var index2 = division
 
-    for i in range(merged_length):
-        if index1 >= division or (index2 < right and array[index1] > array[index2]):
-            merged.append(array[index2])
-            index2 += 1
-        elif index2 >= right or array[index1] <= array[index2]:
-            merged.append(array[index1])
-            index1 += 1
+    for(i in 0 until mergedLength) {
+        if(index1 >= division) {
+            merged[i] = array[index2]
+            index2++
+        } else if(index2 >= right) {
+            merged[i] = array[index1]
+            index1++
+        } else if(array[index1] <= array[index2]) {
+            merged[i] = array[index1]
+            index1++
+        } else {
+            merged[i] = array[index2]
+            index2++
+        }
+    }
 
-    for i in range(merged_length):
-        array[left + i] = merged[i]
+    for(i in left until right) {
+        array[i] = merged[i - left]
+    }
+}
 
+fun mergeSort(array: MutableList<Int>, left: Int, right: Int) {
+    if(right - left <= 1) {
+        return;
+    }
 
-def merge_sort(array: list, left: int, right: int):
-    if right - left <= 1:
-        return
+    val division = (left + right) / 2
+    mergeSort(array, left, division)
+    mergeSort(array, division, right)
 
-    division = (left + right) // 2
-    
-    merge_sort(array, left, division)
-    merge_sort(array, division, right)
-    
     merge(array, left, right, division)
+}
 
+fun main() {
+    val array = mutableListOf(7, 3, 0, 1, 5, 2, 5, 19, 10, 5)
 
-array = [7, 3, 0, 1, 5, 2, 5, 19, 10, 5]
+    mergeSort(array, 0, array.count())
 
-merge_sort(array, 0, len(array))
-
-print(array)
+    println(array)
+}
 ```
 
 ### Link do implementacji
 
-{% embed url="https://ideone.com/wSU0Ru" %}
+{% embed url="https://ideone.com/P8XQMA" %}
 Sortowanie przez scalanie
 {% endembed %}
-
-### Opis implementacji
-
-TODO

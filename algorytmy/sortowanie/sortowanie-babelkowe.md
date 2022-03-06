@@ -40,20 +40,15 @@ TODO
 
 ```
 procedura SortowanieBabelkowe(n, A):
-    1. Dla i = 1 do n, wykonuj:
-        2. Dla j = 1 do n - 1, wykonuj:
-            3. Jeżeli A[j] > A[j+1], to:
-                4. Zamień(A[j], A[j+1])
-```
-
-#### Optymalizacja 1
-
-```
-procedura SortowanieBabelkowe(n, A):
-    1. Dla i = 1 do n, wykonuj:
-        2. Dla j = 1 do n - i, wykonuj:
-            3. Jeżeli A[j] > A[j+1], to:
-                4. Zamień(A[j], A[j+1])
+    1. posortowane := Fałsz
+    2. i := 0
+    3. Dopóki posortowane = Fałsz, wykonuj:
+        4. posortowane := Prawda
+        5. Dla j = 1 do n - i, wykonuj:
+            6. Jeżeli A[j] > A[j+1], to:
+                7. Zamień(A[j], A[j+1])
+                8. posortowane := Fałsz
+        9. i := i + 1
 ```
 
 ### Złożoność
@@ -72,4 +67,10 @@ $$O(n^2)$$ - kwadratowa
 
 {% content-ref url="../../programowanie/python/algorytmy/sortowanie/sortowanie-babelkowe.md" %}
 [sortowanie-babelkowe.md](../../programowanie/python/algorytmy/sortowanie/sortowanie-babelkowe.md)
+{% endcontent-ref %}
+
+### Kotlin
+
+{% content-ref url="../../programowanie/kotlin/algorithms/sorting/bubble-sort.md" %}
+[bubble-sort.md](../../programowanie/kotlin/algorithms/sorting/bubble-sort.md)
 {% endcontent-ref %}
