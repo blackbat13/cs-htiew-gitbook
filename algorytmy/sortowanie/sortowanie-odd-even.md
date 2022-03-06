@@ -36,11 +36,22 @@ TODO
 
 ### Pseudokod
 
-TODO
+```
+Procedura SortOddEven(A, n):
+    1. Od i := 1 do n, wykonuj:
+        2. Jeżeli i mod 2 = 1, to:
+            3. Dla j := 2 do n, z krokiem 2, wykonuj:
+                4. Jeżeli A[j] < A[j - 1]:
+                    5. Zamień(A[j], A[j - 1])
+        6. w przeciwnym przypadku:
+            7. Dla j := 1 do n, z krokiem 2, wykonuj:
+                8. Jeżeli A[j] < A[j - 1]:
+                    9. Zamień(A[j], A[j - 1])
+```
 
 ### Złożoność
 
-TODO
+$$O(n^2)$$ - kwadratowa
 
 ## Implementacja
 

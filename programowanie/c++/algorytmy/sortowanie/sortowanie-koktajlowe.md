@@ -36,7 +36,7 @@ void cocktailShakerSort(int array[], int n) {
 /// \param array - array to print
 /// \param n - length of the given array
 void printArray(int array[], int n) {
-    for(int i = 0; i < 10; ++i) {
+    for(int i = 0; i < n; ++i) {
         cout << array[i] << " ";
     }
 
@@ -60,7 +60,3 @@ int main() {
 {% embed url="https://ideone.com/JvEapG" %}
 Sortowanie koktajlowe
 {% endembed %}
-
-### Opis implementacji
-
-TODO

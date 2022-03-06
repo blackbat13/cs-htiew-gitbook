@@ -44,7 +44,37 @@ TODO
 
 ### Pseudokod
 
-TODO
+```
+Procedura Scal(A, p, k, sr):
+    1. dl := k - p
+    2. scalona := pusta tablica
+    3. i1 := p
+    4. i2 := sr
+
+    5. Dla i := 1 do dl, wykonuj:
+        6. Jeżeli i1 >= sr lub (i2 < right oraz A[i1] > A[i2]), to:
+            7. Dopisz A[i2] do scalona
+            8. i2 := i2 + 1
+        10. w przeciwnym przypadku, jeżeli i2 >= k lub A[i1] <= A[i2], to:
+            11. Dopisz A[i1] do scalona
+            12. i1 := i1 + 1
+
+    13. Dla i := 1 do dl, wykonuj:
+        14. A[p + i] := scalona[i]
+```
+
+```
+Procedura SortScal(A, p, k):
+    1. Jeżeli k - p <= 1, to:
+        2. Zakończ
+
+    3. sr := (p + k) div 2
+    
+    4. SortScal(A, p, sr)
+    5. SortScal(A, sr, k)
+    
+    6. Scal(A, p, k, sr)
+```
 
 ### Złożoność
 

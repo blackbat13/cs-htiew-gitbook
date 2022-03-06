@@ -60,7 +60,7 @@ void mergeSort(int array[], int left, int right) {
 /// \param array - array to print
 /// \param n - length of the given array
 void printArray(int array[], int n) {
-    for(int i = 0; i < 10; ++i) {
+    for(int i = 0; i < n; ++i) {
         cout << array[i] << " ";
     }
  
@@ -84,7 +84,3 @@ int main() {
 {% embed url="https://ideone.com/1Pv3RF" %}
 Sortowanie przez scalanie
 {% endembed %}
-
-### Opis implementacji
-
-TODO

@@ -51,7 +51,7 @@ procedura SortowanieKoktajlowe(n, A):
 
 ### Złożoność
 
-TODO
+$$O(n^2)$$ - kwadratowa
 
 ## Implementacja
 

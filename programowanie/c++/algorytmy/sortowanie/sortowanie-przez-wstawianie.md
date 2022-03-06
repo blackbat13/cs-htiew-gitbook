@@ -30,7 +30,7 @@ void insertionSort(int array[], int n) {
 /// \param array - array to print
 /// \param n - length of the given array
 void printArray(int array[], int n) {
-    for(int i = 0; i < 10; ++i) {
+    for(int i = 0; i < n; ++i) {
         cout << array[i] << " ";
     }
  
@@ -54,7 +54,3 @@ int main() {
 {% embed url="https://ideone.com/EGDR98" %}
 Sortowanie przez wstawianie
 {% endembed %}
-
-### Opis implementacji
-
-TODO

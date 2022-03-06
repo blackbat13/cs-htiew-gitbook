@@ -36,11 +36,29 @@ TODO
 
 ### Pseudokod
 
-TODO
+```
+Procedura SortGrzeb(A, n):
+    1. przerwa := n
+    2. zm := 1.3
+    3. posortowana := Fałsz
+    4. Dopóki posortowana != Prawda, wykonuj:
+        5. przerwa := przerwa div zm
+        6. Jeżeli przerwa <= 1, to:
+            7. przerwa := 1
+            8. posortowana := Prawda
+        9. i := 1
+        10. Dopóki i + przerwa < n, wykonuj:
+            11. Jeżeli A[i] > A[i + przerwa], to:
+                12. Zamień(A[i], A[i + przerwa])
+                13. posortowana := Fałsz
+            14. i := i + 1
+```
 
 ### Złożoność
 
-TODO
+#### Pesymistyczna
+
+$$O(n^2)$$ - kwadratowa
 
 ## Implementacja
 

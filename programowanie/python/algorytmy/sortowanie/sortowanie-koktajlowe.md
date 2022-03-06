@@ -33,7 +33,3 @@ print(array)
 {% embed url="https://ideone.com/C38hze" %}
 Sortowanie koktajlowe
 {% endembed %}
-
-### Opis implementacji
-
-TODO
