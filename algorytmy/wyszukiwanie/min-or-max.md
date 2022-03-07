@@ -77,6 +77,10 @@ funkcja SzukajMaks(n, A):
     5. Zwróć maks, zakończ
 ```
 
+### Schemat blokowy
+
+![](../../.gitbook/assets/max_1.png)
+
 ### Złożoność
 
 Podobnie jak w przypadku wyszukiwania liniowego przeglądamy elementy jeden po drugim w poszukiwaniu maksimum.
@@ -146,6 +150,10 @@ funkcja SzukajIndeksMaks(n, A):
     
     7. Zwróć ind, zakończ    
 ```
+
+### Schemat blokowy
+
+![](../../.gitbook/assets/max_2.png)
 
 ### Złożoność
 
