@@ -18,7 +18,7 @@ TODO
 {% hint style="info" %}
 #### Lider zbioru
 
-**Liderem **zbioru $$n-elementowego$$ nazywamy element, którego ilość wystąpień w zbiorze jest większa niż $$\frac{n}{2}$$.
+**Liderem** zbioru $$n-elementowego$$ nazywamy element, którego ilość wystąpień w zbiorze jest większa niż $$\frac{n}{2}$$.
 
 Jeżeli taki element nie istnieje, to zbiór nie ma lidera.
 {% endhint %}
