@@ -2,14 +2,12 @@
 
 ## Opis problemu
 
-TODO
-
 ### Specyfikacja
 
 #### Dane
 
-* $$n$$ - liczba naturalna, ilość elementów w tablicy
-* $$A[1..n]$$ - tablica $$n$$ wartości całkowitych
+* $$n$$ — liczba naturalna, ilość elementów w tablicy
+* $$A[1..n]$$ — tablica $$n$$ wartości całkowitych
 
 #### Wynik
 
@@ -32,8 +30,6 @@ Sortowanie odd-even
 
 ## Rozwiązanie
 
-TODO
-
 ### Pseudokod
 
 ```
@@ -51,7 +47,7 @@ Procedura SortOddEven(A, n):
 
 ### Złożoność
 
-$$O(n^2)$$ - kwadratowa
+$$O(n^2)$$ — kwadratowa
 
 ## Implementacja
 

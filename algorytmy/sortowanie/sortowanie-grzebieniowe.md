@@ -2,14 +2,12 @@
 
 ## Opis problemu
 
-TODO
-
 ### Specyfikacja
 
 #### Dane
 
-* $$n$$ - liczba naturalna, ilość elementów w tablicy
-* $$A[1..n]$$ - tablica $$n$$ wartości całkowitych
+* $$n$$ — liczba naturalna, ilość elementów w tablicy
+* $$A[1..n]$$ — tablica $$n$$ wartości całkowitych
 
 #### Wynik
 
@@ -31,8 +29,6 @@ Sortowanie grzebieniowe
 {% endembed %}
 
 ## Rozwiązanie
-
-TODO
 
 ### Pseudokod
 
@@ -58,7 +54,7 @@ Procedura SortGrzeb(A, n):
 
 #### Pesymistyczna
 
-$$O(n^2)$$ - kwadratowa
+$$O(n^2)$$ — kwadratowa
 
 ## Implementacja
 

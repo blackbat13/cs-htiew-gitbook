@@ -8,7 +8,7 @@ $$
 x^4=x*x*x*x
 $$
 
-Jak widać w powyższym przykładzie, aby podnieść $$x$$ do potęgi 4, musimy wykonać **3 mnożenia**.&#x20;
+Jak widać w powyższym przykładzie, aby podnieść $$x$$ do potęgi 4, musimy wykonać **3 mnożenia**.
 
 Zauważmy jednak, że pewne obliczenia będziemy wykonywać wielokrotnie:
 
@@ -44,16 +44,14 @@ $$
 
 #### Dane:
 
-* $$x$$  - liczba całkowita
-* $$n$$ - liczba naturalna
+* $$x$$ - liczba całkowita, podstawa potęgi
+* $$n$$ - liczba naturalna, wykładnik potęgi
 
 #### Wynik:
 
-* $$x^n$$&#x20;
+* $$x^n$$
 
 ## Rozwiązanie iteracyjne
-
-TODO
 
 ### Pseudokod
 
@@ -76,14 +74,11 @@ $$O(\log{n})$$ - logarytmiczna
 
 ## Rozwiązanie rekurencyjne
 
-TODO
-
 ### Definicja rekurencyjna
 
 $$
 potega(x,n)=\left\{ \begin{array}{c1}
 1 & : \ n = 0 \\
-x & : \ n = 1 \\
 potega(x, n\ div\ 2)^2 & : \ n\ mod\ 2 = 0 \\
 potega(x, n\ div\ 2)^2 * x & : \ n\ mod\ 2 = 1
 \end{array} \right.
@@ -96,16 +91,13 @@ funkcja PotegaRek(x, n)
     1. Jeżeli n = 0, to:
         2. Zwróć 1, zakończ
     
-    3. Jeżeli n = 1, to:
-        4. Zwróć x, zakończ
-    
-    5. wynik := PotegaRek(x, n div 2)
+    3. wynik := PotegaRek(x, n div 2)
 
-    6. Jeżeli n mod 2 = 0, to:
-        7. Zwróć wynik * wynik, zakończ
+    4. Jeżeli n mod 2 = 0, to:
+        5. Zwróć wynik * wynik, zakończ
     
-    8. W przeciwnym przypadku:
-        9. Zwróć wynik * wynik * x, zakończ
+    6. W przeciwnym przypadku:
+        7. Zwróć wynik * wynik * x, zakończ
 ```
 
 ### Złożoność

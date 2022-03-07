@@ -2,7 +2,7 @@
 
 ## Opis problemu
 
-TODO
+Jak policzyć pierwiastek kwadratowy z podanej liczby, gdy nie mamy przy sobie kalkulatora, ani wbudowanych metod programistycznych?
 
 ### Specyfikacja
 
@@ -13,15 +13,9 @@ TODO
 
 #### Wynik
 
-* $$\sqrt{n}$$ policzony z dokładnością $$p$$.&#x20;
-
-### Przykład
-
-TODO
+* $$\sqrt{n}$$ policzony z dokładnością $$p$$
 
 ## Rozwiązanie - metoda Herona
-
-TODO
 
 ### Pseudokod
 
@@ -34,10 +28,6 @@ funkcja MetodaHerona(n, p)
         3. Zamień(x1, x2)
     4. Zwróć x2
 ```
-
-### Złożoność
-
-TODO
 
 ## Implementacja
 

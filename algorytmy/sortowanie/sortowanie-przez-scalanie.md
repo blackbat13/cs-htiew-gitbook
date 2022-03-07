@@ -6,14 +6,12 @@ description: Mergesort
 
 ## Opis problemu
 
-TODO
-
 ### Specyfikacja
 
 #### Dane:
 
-* $$n$$ - liczba naturalna, ilość elementów w tablicy
-* $$A[1..n]$$ - tablica $$n$$ wartości całkowitych
+* $$n$$ — liczba naturalna, ilość elementów w tablicy
+* $$A[1..n]$$ — tablica $$n$$ wartości całkowitych
 
 #### Wynik:
 
@@ -39,8 +37,6 @@ Sortowanie przez scalanie
 {% endfile %}
 
 ## Rozwiązanie
-
-TODO
 
 ### Pseudokod
 
@@ -78,7 +74,7 @@ Procedura SortScal(A, p, k):
 
 ### Złożoność
 
-$$O(n\log{n})$$ - liniowo logarytmiczna
+$$O(n\log{n})$$ — liniowo logarytmiczna
 
 ## Implementacja
 

@@ -2,27 +2,23 @@
 
 ## Opis problemu
 
-TODO
-
 ### Specyfikacja
 
 #### Dane:
 
-* $$n$$ - liczba naturalna, ilość elementów w tablicy
-* $$m$$ - największa liczba w tablicy wyznaczająca zakres elementów
-* $$A[1..n]$$ - tablica $$n$$ wartości całkowitych z przedziału $$[1,m]$$&#x20;
+* $$n$$ — liczba naturalna, ilość elementów w tablicy
+* $$m$$ — największa liczba w tablicy wyznaczająca zakres elementów
+* $$A[1..n]$$ — tablica $$n$$ wartości całkowitych z przedziału $$[1,m]$$&#x20;
 
 #### Wynik:
 
-* Posortowana niemalejąco tablica $$A$$&#x20;
+* Posortowana niemalejąco tablica $$A$$
 
 ### Przykład
 
 TODO
 
 ## Rozwiązanie
-
-TODO
 
 ### Pseudokod
 
@@ -41,7 +37,7 @@ procedura SortZlicz(A, n, m):
 
 ### Złożoność
 
-$$O(n+m)$$ - liniowa
+$$O(n+m)$$ — liniowa
 
 ## Implementacja
 

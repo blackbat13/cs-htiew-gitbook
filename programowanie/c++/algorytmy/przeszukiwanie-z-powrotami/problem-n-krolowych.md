@@ -82,7 +82,3 @@ int main() {
 {% embed url="https://ideone.com/JzMsxF" %}
 Problem n-królowych
 {% endembed %}
-
-### Opis implementacji
-
-TODO

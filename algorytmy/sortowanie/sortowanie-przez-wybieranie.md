@@ -6,18 +6,16 @@ description: Selection sort
 
 ## Opis problemu
 
-TODO
-
 ### Specyfikacja
 
 #### Dane
 
-* $$n$$ - liczba naturalna, ilość elementów w tablicy
-* $$A[1..n]$$ - tablica $$n$$ wartości całkowitych
+* $$n$$ — liczba naturalna, ilość elementów w tablicy
+* $$A[1..n]$$ — tablica $$n$$ wartości całkowitych
 
 #### Wynik
 
-* Posortowana niemalejąco tablica $$A$$&#x20;
+* Posortowana niemalejąco tablica $$A$$
 
 ### Przykład
 
@@ -37,8 +35,6 @@ A := [8, 5, 2, 6, 9, 3, 1, 4, 0, 7]
 {% embed url="https://blackbat13.github.io/visul2/sorting/selection_sort/#array=%5B8%2C5%2C2%2C6%2C9%2C3%2C1%2C4%2C0%2C7%5D" %}
 
 ## Rozwiązanie
-
-TODO
 
 ### Pseudokod
 
@@ -60,7 +56,7 @@ procedura SortWybier(A, n):
 
 ### Złożoność
 
-$$O(n^2)$$ - kwadratowa
+$$O(n^2)$$ — kwadratowa
 
 ## Implementacja
 

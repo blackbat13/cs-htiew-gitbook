@@ -17,7 +17,7 @@ def build_heap(array: [], n: int):
         while j > 0 and array[j] > array[parent_index]:
             array[j], array[parent_index] = array[parent_index], array[j]
             j = parent_index
-            parent_index = (j - 1) // 2;
+            parent_index = (j - 1) // 2
             
 
 def heap_sort(array: [], n: int):

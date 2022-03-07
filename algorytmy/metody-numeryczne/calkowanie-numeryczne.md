@@ -13,49 +13,50 @@ Wyróżniamy dwie podstawowe metody: metodę prostokątów i metodę trapezów.
 * $$f(x)$$  - funkcja, której wykres nas interesuje
 * $$a$$ - liczba rzeczywista, początek przedziału
 * $$b$$ - liczba rzeczywista, koniec przedziału
+* $$n$$ - liczba podziałów (im większa, tym większa dokładność)
 
 #### Wynik
 
-* $$p$$ - przybliżona wartość pola pod wykresem funkcji $$f(x)$$ w przedziale $$[a,b]$$
+* $$pole$$ - przybliżona wartość pola pod wykresem funkcji $$f(x)$$ w przedziale $$[a,b]$$
 
 ## Rozwiązanie - metoda prostokątów
-
-TODO
 
 Idea tej metody jest prosta: podzielmy pole pod wykresem funkcji na prostokąty i policzmy ich pole.
 
 ### Pseudokod
 
 ```
-funkcja MetodaProstokatow(f, a, b):
-    1. p := 0
-    2. n := 1000
-    3. sz := (b - a) / n
-    4. c := a + sz
+funkcja MetodaProstokatow(f, a, b, n):
+    1. pole := 0
+    2. sz := (b - a) / n
+    3. c := a + sz
     
-    5. Dopóki c <= b, wykonuj:
-        6. wys := f(c)
-        7. p := p + sz * wys
-        8. c := c + sz
+    4. Dopóki c <= b, wykonuj:
+        5. wys := f(c)
+        6. pole := pole + sz * wys
+        7. c := c + sz
         
-    9. Zwróć p
+    8. Zwróć pole
 ```
-
-### Złożoność
-
-TODO
 
 ## Rozwiązanie - metoda trapezów
 
-TODO
+W celu uzyskania lepszej dokładności, możemy podzielić pole pod wykresem funkcji na trapezy.
 
 ### Pseudokod
 
-TODO
+```
+funkcja MetodaTrapezow(f, a, b, n):
+    1. pole := 0
+    2. sz := (b - a) / n
+    3. c := a + sz
+    
+    4. Dopóki c <= b, wykonuj:
+        5. pole := pole + (f(c - sz) + f(c) * sz) / 2
+        6. c := c + sz
 
-### Złożoność
-
-TODO
+    7. Zwróć pole
+```
 
 ## Implementacja
 
@@ -69,4 +70,10 @@ TODO
 
 {% content-ref url="../../programowanie/python/algorytmy/metody-numeryczne/calkowanie-numeryczne.md" %}
 [calkowanie-numeryczne.md](../../programowanie/python/algorytmy/metody-numeryczne/calkowanie-numeryczne.md)
+{% endcontent-ref %}
+
+### Kotlin
+
+{% content-ref url="../../programowanie/kotlin/algorithms/numerical-methods/numerical-integration.md" %}
+[numerical-integration.md](../../programowanie/kotlin/algorithms/numerical-methods/numerical-integration.md)
 {% endcontent-ref %}

@@ -77,7 +77,3 @@ fun main() {
 {% embed url="https://ideone.com/DDsmN4" %}
 Problem n królowych
 {% endembed %}
-
-### Opis implementacji
-
-TODO

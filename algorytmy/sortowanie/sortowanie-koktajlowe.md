@@ -2,14 +2,12 @@
 
 ## Opis problemu
 
-TODO
-
 ### Specyfikacja
 
 #### Dane
 
-* $$n$$ - liczba naturalna, ilość elementów w tablicy
-* $$A[1..n]$$ - tablica $$n$$ wartości całkowitych
+* $$n$$ — liczba naturalna, ilość elementów w tablicy
+* $$A[1..n]$$ — tablica $$n$$ wartości całkowitych
 
 #### Wynik
 
@@ -30,8 +28,6 @@ A := [6, 5, 3, 1, 8, 7, 2, 4]
 
 ## Rozwiązanie
 
-TODO
-
 ### Pseudokod
 
 ```
@@ -51,7 +47,7 @@ procedura SortowanieKoktajlowe(n, A):
 
 ### Złożoność
 
-$$O(n^2)$$ - kwadratowa
+$$O(n^2)$$ — kwadratowa
 
 ## Implementacja
 

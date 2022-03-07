@@ -2,27 +2,35 @@
 
 ## Opis problemu
 
-TODO
-
 ## Obliczanie przybliżonej wartości liczby PI
-
-TODO
 
 ### Specyfikacja
 
-TODO
+#### Dane
 
-### Przykład
+* $$n$$ - liczba prób (im większa, tym większa dokładność)
 
-TODO
+#### Wynik
+
+* $$pi$$ - przybliżona wartość liczby $$\pi$$
 
 ### Rozwiązanie
 
-TODO
-
 ### Pseudokod
 
-TODO
+```
+funkcja MonteCarloPI(n)
+    1. wkole := 0
+    2. Dla i := 1 do n, wykonuj:
+        3. x := losowa liczba rzeczywista z przedziału [-1, 1]
+        4. y := losowa liczba rzeczywista z przedziału [-1, 1]
+        5. odl := (x * x) + (y * y)
+        6. Jeżeli odl <= 1, to:
+            7. wkole := wkole + 1
+    
+    8. wynik := (4 * wkole) / n
+    9. Zwróć wynik
+```
 
 ## Implementacja
 

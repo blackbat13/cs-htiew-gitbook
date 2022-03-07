@@ -66,7 +66,3 @@ else:
 {% embed url="https://ideone.com/C4JTOk" %}
 Problem n królowych
 {% endembed %}
-
-### Opis implementacji
-
-TODO

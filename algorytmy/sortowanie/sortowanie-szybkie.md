@@ -12,16 +12,12 @@ TODO
 
 #### Dane:
 
-* $$n$$ - liczba naturalna, ilość elementów w tablicy
-* $$A[1..n]$$ - tablica $$n$$ wartości całkowitych
+* $$n$$ — liczba naturalna, ilość elementów w tablicy
+* $$A[1..n]$$ — tablica $$n$$ wartości całkowitych
 
 #### Wynik:
 
-* Posortowana niemalejąco tablica $$A$$&#x20;
-
-### Przykład
-
-TODO
+* Posortowana niemalejąco tablica $$A$$
 
 ### Prezentacja
 
@@ -30,8 +26,6 @@ Sortowanie szybkie
 {% endfile %}
 
 ## Rozwiązanie
-
-TODO
 
 ### Pseudokod
 
@@ -67,11 +61,11 @@ Procedura SortSzybkie(A, p, k):
 
 #### Pesymistyczna
 
-$$O(n^2)$$ - kwadratowa
+$$O(n^2)$$ — kwadratowa
 
 #### Średnia
 
-$$O(n\log{n})$$ - liniowo logarytmiczna
+$$O(n\log{n})$$ — liniowo logarytmiczna
 
 ## Implementacja
 

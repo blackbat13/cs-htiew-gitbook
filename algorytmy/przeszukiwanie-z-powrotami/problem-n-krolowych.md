@@ -2,8 +2,6 @@
 
 ## Opis problemu
 
-TODO
-
 ### Specyfikacja
 
 #### Dane
@@ -13,10 +11,6 @@ TODO
 #### Wynik
 
 * Jedno z poprawnych ustawień $$n$$ królowych na szachownicy o wymiarach $$n\times n$$, lub informacja, że takie ułożenie nie istnieje.
-
-## Rozwiązanie
-
-TODO
 
 ## Implementacja
 
@@ -28,8 +22,8 @@ TODO
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/inne/problem-n-krolowych.md" %}
-[problem-n-krolowych.md](../../programowanie/python/algorytmy/inne/problem-n-krolowych.md)
+{% content-ref url="../../programowanie/python/algorytmy/backtracking/n-queens.md" %}
+[n-queens.md](../../programowanie/python/algorytmy/backtracking/n-queens.md)
 {% endcontent-ref %}
 
 ### Kotlin

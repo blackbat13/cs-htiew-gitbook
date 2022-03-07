@@ -62,9 +62,9 @@ Metoda Hornera obliczania wartości wielomianu
 
 ### Opis implementacji
 
-Zacznijmy od funkcji pomocniczej `printPolynomial` (**linia 23**), której celem jest wyświetlenie wielomianu w czytelnej formie na ekranie. Nie jest ona niezbędną częścią algorytmu, ale może być pomocna przy weryfikacji poprawności wyniku. Funkcja przyjmuje dwa parametry: tablicę współczynników wielomianu `coef`, oraz stopień wielomianu `n`. W tablicy znajduje się dokładnie $$n+1$$** **liczb. Współczynniki są zapisane w kolejności od najmniejszej potęgi ( $$0$$ ) do największej ( $$n$$ ).
+Zacznijmy od funkcji pomocniczej `printPolynomial` (**linia 23**), której celem jest wyświetlenie wielomianu w czytelnej formie na ekranie. Nie jest ona niezbędną częścią algorytmu, ale może być pomocna przy weryfikacji poprawności wyniku. Funkcja przyjmuje dwa parametry: tablicę współczynników wielomianu `coef`, oraz stopień wielomianu `n`. W tablicy znajduje się dokładnie $$n+1$$ liczb. Współczynniki są zapisane w kolejności od najmniejszej potęgi ($$0$$) do największej ($$n$$).
 
-Na początku funkcji wypisujemy pierwszy współczynnik (**linia 24**). Następnie przechodzimy pętlą przez kolejne elementy tablicy (**linia 25**), wypisując współczynnik przy $$i$$-tej potędze przemnożony przez $$x$$ podniesione do potęgi $$i$$ .  
+Na początku funkcji wypisujemy pierwszy współczynnik (**linia 24**). Następnie przechodzimy pętlą przez kolejne elementy tablicy (**linia 25**), wypisując współczynnik przy $$i$$-tej potędze przemnożony przez $$x$$ podniesione do potęgi $$i$$.  
 
 Przejdźmy teraz do właściwej implementacji algorytmu obliczania wartości wielomianu za pomocą schematu Hornera, czyli do funkcji `hornerPolynomial` (**linia 10**). Funkcja ta przyjmuje podobne parametry jak pomocnicza funkcja `printPolynomial`, ale ponadto przyjmuje także wartość $$x$$, którą mamy przyjąć podczas obliczeń. Współczynniki i stopień wielomianu podane są w takiej samej formie jak wcześniej.
 
