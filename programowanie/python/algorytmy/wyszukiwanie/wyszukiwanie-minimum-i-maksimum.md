@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../algorytmy/wyszukiwanie/wyszukiwanie-maksimum.md" %}
-[wyszukiwanie-maksimum.md](../../../../algorytmy/wyszukiwanie/wyszukiwanie-maksimum.md)
+{% content-ref url="../../../../algorytmy/wyszukiwanie/min-or-max.md" %}
+[min-or-max.md](../../../../algorytmy/wyszukiwanie/min-or-max.md)
 {% endcontent-ref %}
 
 ## Wyszukiwanie wartości minimum i maksimum

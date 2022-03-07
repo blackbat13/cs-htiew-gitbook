@@ -88,7 +88,8 @@ $$O(n)$$ - liniowa
 
 ### Opis problemu
 
-TODO
+W niektórych sytuacjach nie wystarczy nam znać wartość maksymalnego elementu, musimy także poznać jego **pozycję** w tablicy.
+Zmodyfikujmy więc odpowiednio specyfikację naszego problemu.
 
 ### Specyfikacja
 
@@ -120,7 +121,17 @@ Największa wartość w tablicy to $$8$$. Wartość ta znajduje się na pozycji 
 
 ### Rozwiązanie
 
-TODO
+Nowy problem jest bardzo zbliżony do poprzedniego, więc aby go rozwiązać, rozszerzymy nasze poprzednie rozwiązanie.
+Teraz, poza wartością maksymalnego elementu, potrzebujemy zapamiętać dodatkową informację: indeks elementu maksymalnego.
+W tym celu dodajemy nową zmienną, w której zapamiętamy ten indeks. 
+Na początku, gdy jako potencjalne maksimum przyjmujemy wartość pierwszego elementu tablicy, musimy także indeks ustawić na wartość $$1$$, czyli pozycję naszego dotychczasowego maksimum.
+
+Jest jeszcze jedno miejsce, w którym powinniśmy pamiętać o zmianie zapamiętanego indeksu.
+Za każdym razem, gdy znajdziemy większą wartość i zaktualizujemy nasze dotychczasowe maksimum, aktualizujemy także indeks tego maksimum.
+
+Na końcu, po sprawdzeniu wszystkich elementów tablicy, wystarczy zwrócić jako wynik zapamiętany indeks.
+
+Zapiszmy teraz nasz algorytm w postaci pseudokodu.
 
 ### Pseudokod
 
@@ -138,7 +149,16 @@ funkcja SzukajIndeksMaks(n, A):
 
 ### Złożoność
 
+Dodanie nowej zmiennej, w której pamiętamy indeks wyszukiwanego elementu, nie wpływa na złożoność naszego rozwiązania.
+Struktura algorytmu pozostaje niezmieniona, więc złożoność cały czas jest liniowa.
+
 $$O(n)$$ - liniowa
+
+## Wyszukiwanie elementu minimalnego w tablicy
+
+W przypadku poszukiwania elementu minimalnego, postępujemy praktycznie identycznie jak przy poszukiwaniu elementu maksymalnego.
+Tak naprawdę wystarczy zmienić **znak porównania**: z $$<$$ na $$>$$.
+Zaprojektowanie rozwiązania zostawiamy jako samodzielne ćwiczenie dla zainteresowanych.
 
 ## Implementacja
 
