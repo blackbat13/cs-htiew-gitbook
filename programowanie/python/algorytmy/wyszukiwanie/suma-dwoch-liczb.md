@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../algorytmy/wyszukiwanie/suma-dwoch-liczb.md" %}
-[suma-dwoch-liczb.md](../../../../algorytmy/wyszukiwanie/suma-dwoch-liczb.md)
+{% content-ref url="../../../../algorytmy/wyszukiwanie/sum-of-two.md" %}
+[sum-of-two.md](../../../../algorytmy/wyszukiwanie/sum-of-two.md)
 {% endcontent-ref %}
 
 ## Rozwiązanie naiwne
