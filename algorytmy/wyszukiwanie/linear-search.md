@@ -299,7 +299,7 @@ $$O(n)$$ - liniowa
 [linear-search.md](../../programowanie/julia/algorithms/searching/linear-search.md)
 {% endcontent-ref %}
 
-### Julia
+### Rust
 
 {% content-ref url="../../programowanie/rust/algorithms/searching/linear-search.md" %}
 [linear-search.md](../../programowanie/rust/algorithms/searching/linear-search.md)
