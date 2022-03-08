@@ -6,7 +6,7 @@
 
 #### Dane
 
-* $$n$$ - liczba elementów tablicy
+* $$n$$ — liczba elementów tablicy
 * $$tab[1..n]$$ - $$n$$-elementowa tablica 
 
 #### Wynik

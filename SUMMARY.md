@@ -619,6 +619,8 @@
       * [Flood fill](programowanie/kotlin/algorithms/graphs/flood-fill.md)
 * [Julia](programowanie/julia/README.md)
   * [Algorytmy](programowanie/julia/algorithms/README.md)
+    * [Wyszukiwanie](programowanie/julia/algorithms/searching/README.md)
+      * [Wyszukiwanie liniowe](programowanie/julia/algorithms/searching/linear-search.md)
     * [Sortowanie](programowanie/julia/algorithms/sorting/README.md)
       * [Sortowanie bąbelkowe](programowanie/julia/algorithms/sorting/bubble-sort.md)
 * [Blockly](programowanie/blockly/README.md)
