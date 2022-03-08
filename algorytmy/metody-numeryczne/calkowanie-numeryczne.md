@@ -10,16 +10,16 @@ Wyróżniamy dwie podstawowe metody: metodę prostokątów i metodę trapezów.
 
 #### Dane
 
-* $$f(x)$$  - funkcja, której wykres nas interesuje
-* $$a$$ - liczba rzeczywista, początek przedziału
-* $$b$$ - liczba rzeczywista, koniec przedziału
-* $$n$$ - liczba podziałów (im większa, tym większa dokładność)
+* $$f(x)$$ — funkcja, której wykres nas interesuje
+* $$a$$ — liczba rzeczywista, początek przedziału
+* $$b$$ — liczba rzeczywista, koniec przedziału
+* $$n$$ — liczba podziałów (im większa, tym większa dokładność)
 
 #### Wynik
 
-* $$pole$$ - przybliżona wartość pola pod wykresem funkcji $$f(x)$$ w przedziale $$[a,b]$$
+* $$pole$$ — przybliżona wartość pola pod wykresem funkcji $$f(x)$$ w przedziale $$[a,b]$$
 
-## Rozwiązanie - metoda prostokątów
+## Rozwiązanie — metoda prostokątów
 
 Idea tej metody jest prosta: podzielmy pole pod wykresem funkcji na prostokąty i policzmy ich pole.
 
@@ -39,7 +39,7 @@ funkcja MetodaProstokatow(f, a, b, n):
     8. Zwróć pole
 ```
 
-## Rozwiązanie - metoda trapezów
+## Rozwiązanie — metoda trapezów
 
 W celu uzyskania lepszej dokładności, możemy podzielić pole pod wykresem funkcji na trapezy.
 

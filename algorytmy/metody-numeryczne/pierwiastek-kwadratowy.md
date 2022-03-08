@@ -8,14 +8,14 @@ Jak policzyć pierwiastek kwadratowy z podanej liczby, gdy nie mamy przy sobie k
 
 #### Dane
 
-* $$n$$ - liczba rzeczywista.
-* $$p$$ - liczba rzeczywista, dokładność.
+* $$n$$ — liczba rzeczywista.
+* $$p$$ — liczba rzeczywista, dokładność.
 
 #### Wynik
 
 * $$\sqrt{n}$$ policzony z dokładnością $$p$$
 
-## Rozwiązanie - metoda Herona
+## Rozwiązanie — metoda Herona
 
 ### Pseudokod
 

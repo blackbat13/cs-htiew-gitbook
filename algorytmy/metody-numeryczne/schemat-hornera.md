@@ -87,9 +87,9 @@ _**Schemat Hornera**_ ma także zastosowanie przy przeliczaniu liczby z zadanego
 
 #### Dane
 
-* $$n$$ - stopień wielomianu, liczba naturalna
-* $$x$$ - wartość, dla której należy obliczyć wielomian
-* $$a_{n}, a_{n-1}, ..., a_1, a_0$$ - współczynniki wielomianu, podane w kolejności od największej potęgi do najmniejszej
+* $$n$$ — stopień wielomianu, liczba naturalna
+* $$x$$ — wartość, dla której należy obliczyć wielomian
+* $$a_{n}, a_{n-1}, ..., a_1, a_0$$ — współczynniki wielomianu, podane w kolejności od największej potęgi do najmniejszej
 
 #### Wynik
 
@@ -112,7 +112,7 @@ funkcja Horner(n, x, a)
 
 ### Złożoność
 
-$$O(n)$$ - liniowa
+$$O(n)$$ — liniowa
 
 ## Implementacja
 

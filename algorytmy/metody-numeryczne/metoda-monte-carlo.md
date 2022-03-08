@@ -8,11 +8,11 @@
 
 #### Dane
 
-* $$n$$ - liczba prób (im większa, tym większa dokładność)
+* $$n$$ — liczba prób (im większa, tym większa dokładność)
 
 #### Wynik
 
-* $$pi$$ - przybliżona wartość liczby $$\pi$$
+* $$pi$$ — przybliżona wartość liczby $$\pi$$
 
 ### Rozwiązanie
 

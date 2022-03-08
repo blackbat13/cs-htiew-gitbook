@@ -44,8 +44,8 @@ $$
 
 #### Dane:
 
-* $$x$$ - liczba całkowita, podstawa potęgi
-* $$n$$ - liczba naturalna, wykładnik potęgi
+* $$x$$ — liczba całkowita, podstawa potęgi
+* $$n$$ — liczba naturalna, wykładnik potęgi
 
 #### Wynik:
 
@@ -70,7 +70,7 @@ funkcja PotegaIter(x, n)
 
 ### Złożoność
 
-$$O(\log{n})$$ - logarytmiczna
+$$O(\log{n})$$ — logarytmiczna
 
 ## Rozwiązanie rekurencyjne
 
@@ -102,7 +102,7 @@ funkcja PotegaRek(x, n)
 
 ### Złożoność
 
-$$O(\log{n})$$ - logarytmiczna
+$$O(\log{n})$$ — logarytmiczna
 
 ## Implementacja
 
