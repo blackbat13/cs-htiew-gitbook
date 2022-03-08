@@ -22,9 +22,9 @@ Naszym celem będzie więc sprawdzenie, czy w tablicy znajduje się poszukiwana 
 
 #### Dane
 
-* $$n$$ - liczba naturalna, liczba elementów w tablicy
-* $$A[1..n]$$ - tablica n wartości całkowitych
-* $$k$$ - liczba całkowita, szukana wartość
+* $$n$$ — liczba naturalna, liczba elementów w tablicy
+* $$A[1..n]$$ — tablica n wartości całkowitych
+* $$k$$ — liczba całkowita, szukana wartość
 
 #### Wynik
 
@@ -99,7 +99,7 @@ funkcja SzukajLiniowo(n, A, k)
 
 Głównym elementem algorytmu jest pętla przechodząca po kolei przez wszystkie wartości w tablicy. Ta pętla wykonuje dokładnie $$n$$ powtórzeń. Stąd też otrzymujemy złożoność liniową.
 
-$$O(n)$$ - liniowa
+$$O(n)$$ — liniowa
 
 ## Pozycja elementu
 
@@ -115,9 +115,9 @@ Szukana wartość może występować w tablicy wielokrotnie. Nas jednak na pocz�
 
 #### Dane
 
-* $$n$$ - liczba naturalna, liczba elementów w tablicy
-* $$A[1..n]$$ - tablica n wartości całkowitych
-* $$k$$ - liczba całkowita, szukana wartość
+* $$n$$ — liczba naturalna, liczba elementów w tablicy
+* $$A[1..n]$$ — tablica n wartości całkowitych
+* $$k$$ — liczba całkowita, szukana wartość
 
 #### Wynik
 
@@ -184,7 +184,7 @@ funkcja SzukajLiniowo(n, A, k)
 
 ### Złożoność 
 
-$$O(n)$$ - liniowa
+$$O(n)$$ — liniowa
 
 ## Wszystkie pozycje elementu
 
@@ -196,9 +196,9 @@ Wiemy już jak sprawdzić, czy wartość występuje w tablicy, a także jak ją 
 
 #### Dane
 
-* $$n$$ - liczba naturalna, liczba elementów w tablicy
-* $$A[1..n]$$ - tablica n wartości całkowitych
-* $$k$$ - liczba całkowita, szukana wartość
+* $$n$$ — liczba naturalna, liczba elementów w tablicy
+* $$A[1..n]$$ — tablica n wartości całkowitych
+* $$k$$ — liczba całkowita, szukana wartość
 
 #### Wynik
 
@@ -265,9 +265,15 @@ procedura SzukajLiniowo(n, A, k):
 
 ### Złożoność
 
-$$O(n)$$ - liniowa
+$$O(n)$$ — liniowa
 
 ## Implementacja
+
+### Pascal
+
+{% content-ref url="../../programowanie/pascal/algorithms/searching/linear-search.md" %}
+[linear-search.md](../../programowanie/pascal/algorithms/searching/linear-search.md)
+{% endcontent-ref %}
 
 ### C++
 

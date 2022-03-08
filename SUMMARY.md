@@ -192,6 +192,10 @@
 ## Programowanie
 
 * [Wstęp](programowanie/wstep.md)
+* [Pascal](programowanie/pascal/README.md)
+  * [Algorytmy](programowanie/pascal/algorithms/README.md)
+    * [Wyszukiwanie](programowanie/pascal/algorithms/searching/README.md)
+      * [Wyszukiwanie liniowe](programowanie/pascal/algorithms/searching/linear-search.md)
 * [C++](programowanie/c++/README.md)
   * [Wprowadzenie](programowanie/c++/wprowadzenie/README.md)
     * [Szablon](programowanie/c++/wprowadzenie/szablon.md)
