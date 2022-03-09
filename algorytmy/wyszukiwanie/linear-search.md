@@ -293,16 +293,22 @@ $$O(n)$$ — liniowa
 [wyszukiwanie-liniowe.md](../../programowanie/blockly/algorytmy/wyszukiwanie/wyszukiwanie-liniowe.md)
 {% endcontent-ref %}
 
-### Kotlin
+### C
 
-{% content-ref url="../../programowanie/kotlin/algorithms/searching/linear-search.md" %}
-[linear-search.md](../../programowanie/kotlin/algorithms/searching/linear-search.md)
+{% content-ref url="../../programowanie/c/algorithms/searching/linear-search.md" %}
+[linear-search.md](../../programowanie/c/algorithms/searching/linear-search.md)
 {% endcontent-ref %}
 
 ### Julia
 
 {% content-ref url="../../programowanie/julia/algorithms/searching/linear-search.md" %}
 [linear-search.md](../../programowanie/julia/algorithms/searching/linear-search.md)
+{% endcontent-ref %}
+
+### Kotlin
+
+{% content-ref url="../../programowanie/kotlin/algorithms/searching/linear-search.md" %}
+[linear-search.md](../../programowanie/kotlin/algorithms/searching/linear-search.md)
 {% endcontent-ref %}
 
 ### Rust
