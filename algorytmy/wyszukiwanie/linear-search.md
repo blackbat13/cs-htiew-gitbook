@@ -293,8 +293,6 @@ $$O(n)$$ — liniowa
 [wyszukiwanie-liniowe.md](../../programowanie/blockly/algorytmy/wyszukiwanie/wyszukiwanie-liniowe.md)
 {% endcontent-ref %}
 
----
-
 ### C
 
 {% content-ref url="../../programowanie/c/algorithms/searching/linear-search.md" %}
