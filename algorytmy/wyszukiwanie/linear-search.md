@@ -246,7 +246,7 @@ W ogólności zwrócenie listy, czy też tablicy jako wynik działania bywa prob
 
 Zastanówmy się, jak zmodyfikować poprzednie rozwiązanie. Jakie są różnice pomiędzy tą wersją problemu, a poprzednią, w której jako wynik zwracaliśmy indeks tylko jednego, pierwszego wystąpienia wartości w tablicy. 
 
-Po pierwsze, teraz chcemy wypisać **wszystkie** indeksy, pod którymi pojawia się szukana wartość. W takim razie **nie możemy kończyć działania po znalezieniu pierwszego wystąpienia**, musimy iść dalej. Mówiąc dokładniej, musimy przejrzeć **całą** tablicę. W takim razie dokonujemy dwóch zmian w instrukcji 3: zamiast _zwróć_ zrobimy _wypisz_ i usuniemy polecenie _zakończ_.
+Po pierwsze, teraz chcemy wypisać **wszystkie** indeksy, pod którymi pojawia się szukana wartość. W takim razie **nie możemy kończyć działania po znalezieniu pierwszego wystąpienia**, musimy iść dalej. Mówiąc dokładniej, musimy przejrzeć **całą** tablicę. Dokonajmy więc dwóch zmian w instrukcji 3: zamiast _zwróć_ zrobimy _wypisz_ i usuniemy polecenie _zakończ_.
 
 Potrzebujemy dokonać jeszcze jednej zmiany. Zauważmy, że teraz nie musimy się zastanawiać nad tym, co zrobić w przypadku, gdy poszukiwany element nie występuje w tablicy. W takim przypadku po prostu nic nie wypiszemy na ekran. Dlatego usuwamy ostatnią instrukcję (numer 4), w której zwracamy wynik -1.
 
@@ -267,7 +267,7 @@ procedura SzukajLiniowo(n, A, k):
 
 $$O(n)$$ — liniowa
 
-## Implementacja
+## Implementacje — główne
 
 ### Pascal
 
@@ -292,6 +292,8 @@ $$O(n)$$ — liniowa
 {% content-ref url="../../programowanie/blockly/algorytmy/wyszukiwanie/wyszukiwanie-liniowe.md" %}
 [wyszukiwanie-liniowe.md](../../programowanie/blockly/algorytmy/wyszukiwanie/wyszukiwanie-liniowe.md)
 {% endcontent-ref %}
+
+## Implementacje — pozostałe
 
 ### C
 
