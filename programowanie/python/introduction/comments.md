@@ -27,7 +27,7 @@ Jeżeli nie przypiszemy ich do żadnej zmiennej, ich wartość zostanie zignorow
 ## Komentarze dokumentacyjne
 
 W języku Python komentarze dokumentacyjne mogą być zarówno jednolinijkowe jak i wielolinijkowe.
-W obu przypadkach towrzymy je tak samo.
+W obu przypadkach tworzymy je tak samo.
 To, co może odróżniać Python od innych języków to fakt, że dokumentując funkcję czy klasę, komentarze umieszczamy wewnątrz definicji, a nie przed nią.
 
 Istnieje co najmniej kilka różnych formatów pisania dokumentacji.
