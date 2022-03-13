@@ -575,8 +575,6 @@
   * [Algorytmy](programowanie/c/algorithms/README.md)
     * [Wyszukiwanie](programowanie/c/algorithms/searching/README.md)
       * [Wyszukiwanie liniowe](programowanie/c/algorithms/searching/linear-search.md)
-    * [Sortowanie](programowanie/c/algorithms/sorting/README.md)
-      * [Sortowanie bąbelkowe](programowanie/c/algorithms/sorting/bubble-sort.md)
 * [Julia](programowanie/julia/README.md)
   * [Algorytmy](programowanie/julia/algorithms/README.md)
     * [Wyszukiwanie](programowanie/julia/algorithms/searching/README.md)
