@@ -669,6 +669,10 @@
   * [Algorytmy](programowanie/rust/algorithms/README.md)
     * [Wyszukiwanie](programowanie/rust/algorithms/searching/README.md)
       * [Wyszukiwanie liniowe](programowanie/rust/algorithms/searching/linear-search.md)
+* [Swift](programowanie/swift/README.md)
+  * [Algorytmy](programowanie/swift/algorithms/README.md)
+    * [Wyszukiwanie](programowanie/swift/algorithms/searching/README.md)
+      * [Wyszukiwanie liniowe](programowanie/swift/algorithms/searching/linear-search.md)
 
 ## Algorytmika - zadania
 

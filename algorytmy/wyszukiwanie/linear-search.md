@@ -324,3 +324,9 @@ $$O(n)$$ — liniowa
 {% content-ref url="../../programowanie/rust/algorithms/searching/linear-search.md" %}
 [linear-search.md](../../programowanie/rust/algorithms/searching/linear-search.md)
 {% endcontent-ref %}
+
+### Swift
+
+{% content-ref url="../../programowanie/swift/algorithms/searching/linear-search.md" %}
+[linear-search.md](../../programowanie/swift/algorithms/searching/linear-search.md)
+{% endcontent-ref %}
