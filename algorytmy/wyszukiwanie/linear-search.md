@@ -313,6 +313,12 @@ $$O(n)$$ — liniowa
 [linear-search.md](../../programowanie/kotlin/algorithms/searching/linear-search.md)
 {% endcontent-ref %}
 
+### Lua
+
+{% content-ref url="../../programowanie/lua/algorithms/searching/linear-search.md" %}
+[linear-search.md](../../programowanie/lua/algorithms/searching/linear-search.md)
+{% endcontent-ref %}
+
 ### Rust
 
 {% content-ref url="../../programowanie/rust/algorithms/searching/linear-search.md" %}

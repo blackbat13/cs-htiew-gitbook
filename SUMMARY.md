@@ -660,6 +660,9 @@
       * [Sortowanie topologiczne](programowanie/kotlin/algorithms/graphs/topological-sort.md)
       * [Flood fill](programowanie/kotlin/algorithms/graphs/flood-fill.md) -->
 * [Lua](programowanie/lua/README.md)
+  * [Algorytmy](programowanie/lua/algorithms/README.md)
+    * [Wyszukiwanie](programowanie/lua/algorithms/searching/README.md)
+      * [Wyszukiwanie liniowe](programowanie/lua/algorithms/searching/linear-search.md)
   * [Symulacje](programowanie/lua/simulations/README.md)
     * [Gra w życie](programowanie/lua/simulations/game-of-life.md)
 * [Rust](programowanie/rust/README.md)
