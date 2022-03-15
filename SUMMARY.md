@@ -673,6 +673,10 @@
   * [Algorytmy](programowanie/swift/algorithms/README.md)
     * [Wyszukiwanie](programowanie/swift/algorithms/searching/README.md)
       * [Wyszukiwanie liniowe](programowanie/swift/algorithms/searching/linear-search.md)
+* [TypeScript](programowanie/typescript/README.md)
+  * [Algorytmy](programowanie/typescript/algorithms/README.md)
+    * [Wyszukiwanie](programowanie/typescript/algorithms/searching/README.md)
+      * [Wyszukiwanie liniowe](programowanie/typescript/algorithms/searching/linear-search.md)
 
 ## Algorytmika - zadania
 
