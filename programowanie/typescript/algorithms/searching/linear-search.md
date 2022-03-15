@@ -10,7 +10,7 @@
 
 ### Implementacja
 
-```ts
+```typescript
 function linearSearch(array: number[], value: number): boolean {
     for (let i: number = 0; i < array.length; ++i) {
         if (array[i] == value) {
@@ -50,7 +50,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: tabl
 
 ### Implementacja
 
-```ts
+```typescript
 function linearSearch(array: number[], value: number): number {
     for (let i: number = 0; i < array.length; ++i) {
         if (array[i] == value) {
@@ -90,7 +90,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: tabl
 
 ### Implementacja
 
-```ts
+```typescript
 function linearSearch(array: number[], value: number) {
     for (let i: number = 0; i < array.length; ++i) {
         if (array[i] == value) {
