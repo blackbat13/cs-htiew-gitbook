@@ -59,6 +59,7 @@
   * [Znajdowanie lidera w zbiorze](algorytmy/wyszukiwanie/znajdowanie-lidera-w-zbiorze.md)
   * [Najdłuższy spójny podciąg rosnący](algorytmy/wyszukiwanie/najdluzszy-spojny-podciag-rosnacy.md)
   * [Suma dwóch liczb](algorytmy/wyszukiwanie/sum-of-two.md)
+  * [Sumy prefiksowe](algorytmy/wyszukiwanie/prefix-sum.md)
 * [Przeszukiwanie z powrotami](algorytmy/przeszukiwanie-z-powrotami/README.md)
   * [Problem n królowych](algorytmy/przeszukiwanie-z-powrotami/problem-n-krolowych.md)
   * [Permutacje](algorytmy/przeszukiwanie-z-powrotami/permutations.md)
