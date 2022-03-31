@@ -14,52 +14,34 @@
 
 using namespace std;
 
-/// Incidence list of the graph
-vector<vector<int> > graph;
-
-/// Prepares example graph adding vertices to incidence list
-void prepareExampleGraph() {
-    graph = vector<vector<int> >(6);
-    graph[0].push_back(2);
-
-    graph[1].push_back(0);
-    graph[1].push_back(2);
-
-    graph[3].push_back(1);
-    graph[3].push_back(0);
-    graph[3].push_back(4);
-
-    graph[4].push_back(2);
-    graph[4].push_back(1);
-
-    graph[5].push_back(0);
-    graph[5].push_back(4);
-}
-
-vector<int> topologicalSort() {
-    vector<int> in_ranks = vector<int>(graph.size());
+vector<int> topologicalSort(vector<vector<int> > &graph) {
+    vector<int> inRanks = vector<int>(graph.size());
     vector<bool> removed = vector<bool>(graph.size());
     vector<int> result;
+    bool change;
+    
     for (int i = 0; i < graph.size(); i++) {
         for (int j = 0; j < graph[i].size(); j++) {
-            in_ranks[graph[i][j]]++;
+            inRanks[graph[i][j]]++;
         }
     }
 
-    bool change = true;
+    change = true;
 
     while (change && result.size() < graph.size()) {
         change = false;
+        
         for (int i = 0; i < graph.size(); i++) {
-            if (removed[i] || in_ranks[i] > 0) {
+            if (removed[i] || inRanks[i] > 0) {
                 continue;
             }
 
             change = true;
             result.push_back(i);
             removed[i] = true;
+            
             for (int j = 0; j < graph[i].size(); j++) {
-                in_ranks[graph[i][j]]--;
+                inRanks[graph[i][j]]--;
             }
         }
     }
@@ -68,15 +50,22 @@ vector<int> topologicalSort() {
 }
 
 int main() {
-    prepareExampleGraph();
+	vector<vector<int> > graph = {
+		{2},
+		{0, 2},
+		{},
+		{1, 0, 4},
+		{2, 1},
+		{0, 4},
+	};
     
-    vector<int> result = topologicalSort();
+    vector<int> result = topologicalSort(graph);
     
     if (result.size() < graph.size()) {
         cout << "Graph has a cycle" << endl;
     } else {
-        for (int i = 0; i < result.size(); i++) {
-            cout << result[i] << " ";
+        for (int el : result) {
+            cout << el << " ";
         }
 
         cout << endl;
@@ -93,8 +82,6 @@ Sortowanie topologiczne
 {% endembed %}
 
 ### Opis implementacji
-
-TODO
 
 ![Przykładowy graf wykorzystany w implementacji](../../../../.gitbook/assets/example_graph_topological_sort.png)
 

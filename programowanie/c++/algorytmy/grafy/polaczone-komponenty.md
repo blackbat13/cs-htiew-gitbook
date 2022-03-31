@@ -14,63 +14,29 @@
 
 using namespace std;
 
-/// Incidence list of the graph
-vector<vector<int> > graph;
-
-/// True if node was visited, false otherwise
-vector<bool> visited;
-
-/// Prepares example graph adding vertices to incidence list
-void prepareExampleGraph() {
-    graph = vector<vector<int> >(7);
-    graph[0].push_back(1);
-    graph[0].push_back(6);
-
-    graph[1].push_back(0);
-    graph[1].push_back(6);
-    graph[1].push_back(3);
-    graph[1].push_back(2);
-
-    graph[2].push_back(1);
-    graph[2].push_back(3);
-
-    graph[3].push_back(2);
-    graph[3].push_back(1);
-    graph[3].push_back(6);
-    graph[3].push_back(5);
-
-    graph[5].push_back(3);
-    graph[5].push_back(6);
-
-    graph[6].push_back(0);
-    graph[6].push_back(1);
-    graph[6].push_back(3);
-    graph[6].push_back(5);
-}
-
-/// Recursive dfs algorithm
-/// \param node - current node to visit
-void dfs(int node) {
+void dfs(vector<vector<int> > &graph, vector<bool> &visited, int node) {
     if (visited[node]) {
         return;
     }
 
     visited[node] = true;
+    
     for (int i = 0; i < graph[node].size(); i++) {
-        int next_node = graph[node][i];
-        if (!visited[next_node]) {
-            dfs(next_node);
+        int nextNode = graph[node][i];
+        if (!visited[nextNode]) {
+            dfs(graph, visited, nextNode);
         }
     }
 }
 
-int countConnectedComponents() {
+int countConnectedComponents(vector<vector<int> > &graph) {
     int result = 0;
-    visited = vector<bool>(graph.size(), false);
+    vector<bool> visited = vector<bool>(graph.size(), false);
+    
     for (int i = 0; i < graph.size(); i++) {
         if (!visited[i]) {
             result++;
-            dfs(i);
+            dfs(graph, visited, i);
         }
     }
 
@@ -78,9 +44,19 @@ int countConnectedComponents() {
 }
 
 int main() {
-    prepareExampleGraph();
+    vector<vector<int> > graph = {
+		{1, 6}, 
+		{0, 6, 3, 2},
+		{1, 3},
+		{2, 1, 6, 5},
+		{},
+		{3, 6},
+		{0, 1, 3, 5},
+	};
+	
+	int connectedComponentsCount = countConnectedComponents(graph);
 
-    cout << "Number of connected components in the graph: " << countConnectedComponents() << endl;
+    cout << "Number of connected components in the graph: " << connectedComponentsCount << endl;
 
     return 0;
 }

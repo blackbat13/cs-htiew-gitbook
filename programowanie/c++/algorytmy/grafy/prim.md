@@ -16,7 +16,6 @@
 
 using namespace std;
 
-/// Structure for representing an edge in a weighted graph
 struct edge {
     int from;
     int to;
@@ -33,52 +32,13 @@ struct edge {
     }
 };
 
-/// Incidence list of the weighted graph
-vector<vector<edge> > graph;
-
-vector<edge> min_spanning_tree;
-
-vector<bool> visited;
-
-/// Prepares example graph adding vertices to incidence list
-void prepareExampleGraph() {
-    graph = vector<vector<edge> >(7);
-    graph[0].push_back(edge(0, 1, 5));
-    graph[0].push_back(edge(0, 6, 5));
-
-    graph[1].push_back(edge(1, 0, 5));
-    graph[1].push_back(edge(1, 6, 5));
-    graph[1].push_back(edge(1, 3, 3));
-    graph[1].push_back(edge(1, 2, 3));
-
-    graph[2].push_back(edge(2, 1, 3));
-    graph[2].push_back(edge(2, 3, 1));
-
-    graph[3].push_back(edge(3, 2, 1));
-    graph[3].push_back(edge(3, 1, 3));
-    graph[3].push_back(edge(3, 6, 3));
-    graph[3].push_back(edge(3, 4, 5));
-    graph[3].push_back(edge(3, 5, 4));
-
-    graph[4].push_back(edge(4, 3, 5));
-    graph[4].push_back(edge(4, 5, 2));
-
-    graph[5].push_back(edge(5, 4, 2));
-    graph[5].push_back(edge(5, 3, 4));
-    graph[5].push_back(edge(5, 6, 5));
-
-    graph[6].push_back(edge(6, 0, 5));
-    graph[6].push_back(edge(6, 1, 5));
-    graph[6].push_back(edge(6, 3, 3));
-    graph[6].push_back(edge(6, 5, 5));
-}
-
-void prim(int node) {
+void prim(vector<vector<edge> > &graph, vector<edge> &minSpanningTree, int node) {
     priority_queue<edge> edges;
-
-    min_spanning_tree = vector<edge>();
-    visited = vector<bool>(graph.size());
+    
+    vector<bool> visited = vector<bool>(graph.size());
     visited[node] = true;
+    
+    minSpanningTree = vector<edge>();
 
     for (int i = 0; i < graph[node].size(); i++) {
         edges.push(graph[node][i]);
@@ -93,7 +53,7 @@ void prim(int node) {
         }
 
         visited[current.to] = true;
-        min_spanning_tree.push_back(current);
+        minSpanningTree.push_back(current);
 
         for (int i = 0; i < graph[current.to].size(); i++) {
             edge next = graph[current.to][i];
@@ -105,12 +65,21 @@ void prim(int node) {
 }
 
 int main() {
-    prepareExampleGraph();
+	vector<vector<edge> > graph = {
+		{edge(0, 1, 5), edge(0, 6, 5)}, 
+		{edge(1, 0, 5), edge(1, 6, 5), edge(1, 3, 3), edge(1, 2, 3)},
+		{edge(2, 1, 3), edge(2, 3, 1)},
+		{edge(3, 2, 1), edge(3, 1, 3), edge(3, 6, 3), edge(3, 4, 5), edge(3, 5, 4)},
+		{edge(4, 3, 5), edge(4, 5, 2)},
+		{edge(5, 4, 2), edge(5, 3, 4), edge(5, 6, 5)},
+		{edge(6, 0, 5), edge(6, 1, 5), edge(6, 3, 3), edge(6, 5, 5)},
+	};
+	
+	vector<edge> minSpanningTree;
+    
+    prim(graph, minSpanningTree, 0);
 
-    prim(0);
-
-    for (int i = 0; i < min_spanning_tree.size(); i++) {
-        edge current = min_spanning_tree[i];
+    for(edge current : minSpanningTree) {
         cout << current.from << " <-(" << current.distance << ")-> " << current.to << endl;
     }
 
@@ -126,13 +95,13 @@ Algorytm Prima
 
 ### Opis implementacji
 
-Na początku definiujemy strukturę `edge` do reprezentacji krawędzi grafu (**linia 9**). Ponieważ mamy do czynienia z grafem ważonym, w strukturze przechowujemy trzy wartości: 
+Na początku definiujemy strukturę `edge` do reprezentacji krawędzi grafu (**linia 8**). Ponieważ mamy do czynienia z grafem ważonym, w strukturze przechowujemy trzy wartości: 
 
-* wierzchołek początkowy krawędzi - zmienna `from` (**linia 10**),
-* wierzchołek docelowy krawędzi - zmienna `to` (**linia 11**),
-* waga/długość krawędzi - zmienna `distance` (**linia 12**)
+* wierzchołek początkowy krawędzi - zmienna `from` (**linia 9**),
+* wierzchołek docelowy krawędzi - zmienna `to` (**linia 10**),
+* waga/długość krawędzi - zmienna `distance` (**linia 11**)
 
-Dla ułatwienia definiujemy także konstruktor dla naszej struktury (**linia 14**). Ponieważ krawędzie chcemy przechowywać w kolejce priorytetowej, musimy także zdefiniować `operator<` do porównywania krawędzi (**linia 20**). Warto tutaj zwrócić uwagę na to, że kolejka priorytetowa z stl jest typu max, co oznacza, że domyślnie zwracałaby nam krawędź o największej wadze. Ponieważ do algorytmu Prima potrzebujemy pobierać krawędzie o najmniejszej wadze najpierw, odwracamy porządek krawędzi podczas porównywania ich wagi (**linia 21**).
+Dla ułatwienia definiujemy także konstruktor dla naszej struktury (**linia 13**). Ponieważ krawędzie chcemy przechowywać w kolejce priorytetowej, musimy także zdefiniować `operator<` do porównywania krawędzi (**linia 19**). Warto tutaj zwrócić uwagę na to, że kolejka priorytetowa z stl jest typu max, co oznacza, że domyślnie zwracałaby nam krawędź o największej wadze. Ponieważ do algorytmu Prima potrzebujemy pobierać krawędzie o najmniejszej wadze najpierw, odwracamy porządek krawędzi podczas porównywania ich wagi (**linia 20**).
 
 ![Przykładowy graf wykorzystany w implementacji](../../../../.gitbook/assets/example_graph_weighted.png)
 
