@@ -394,6 +394,7 @@
     * [Obsługa wejścia i wyjścia](programowanie/python/introduction/input-output.md)
     * [Instrukcje warunkowe](programowanie/python/introduction/condittional-instruction.md)
     * [Pętle](programowanie/python/introduction/loops.md)
+    * [Listy](programowanie/python/introduction/lists.md)
     * [Funkcje](programowanie/python/introduction/functions.md)
     * [Instrukcje charakterystyczne dla języka](programowanie/python/introduction/characteristic.md)
   * [Ćwiczenia](programowanie/python/exercises/README.md)
