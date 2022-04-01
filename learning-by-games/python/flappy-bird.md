@@ -179,7 +179,9 @@ def draw():
 
 ### Ustawiamy pozycję rur
 
-Główną trudnością w naszej grze będzie niewielka przestrzeń pomiędzy rurami, przez którą musimy przelecieć. Żeby gra nie była zbyt przewidywalna, ta przestrzeń powinna pojawiać się na losowej wysokości. Stworzymy więc funkcję `ustaw_rury` za pomocą której będziemy losować nową pozycję rur.
+Główną trudnością w naszej grze będzie niewielka przestrzeń pomiędzy rurami, przez którą musimy przelecieć. 
+Żeby gra nie była zbyt przewidywalna, ta przestrzeń powinna pojawiać się na losowej wysokości. 
+Stworzymy więc funkcję `ustaw_rury` za pomocą której będziemy losować nową pozycję rur.
 
 ```python
 def ustaw_rury():
@@ -197,7 +199,8 @@ pgzrun.go()
 
 ### Przemieszczamy rury
 
-W każdej klatce animacji nasze rury powinny przemieszczać się w lewą stronę. W tym celu w części aktualizującej będziemy je przesuwać o 3 piksele w lewo.
+W każdej klatce animacji nasze rury powinny przemieszczać się w lewą stronę. 
+W tym celu w części aktualizującej będziemy je przesuwać o $$3$$ piksele w lewo.
 
 ```python
 def update():
@@ -270,9 +273,126 @@ ustaw_rury()
 pgzrun.go()
 ```
 
-### Koniec gry
+## Koniec gry
 
 Kiedy nasza gra się kończy? Gdy trafimy w rurę, lub wylecimy poza ekran.
+
+### Reset gry
+
+Zacznijmy od zastanowienia się, co chcemy zrobić, gdy gra się skończy, tzn. gdy gracz przegra.
+Możemy oczywiście wyświetlić komunikat o przegranej i wyłączyć grę.
+Nasza gra ma jednak z założenia wysoki poziom trudności, więc uruchamianie jej raz za razem po każdej przegranej bardzo szybko stałoby się uciążliwe.
+Zamiast tego po przegranej **zresetujemy grę**, tzn. zaczniemy ją od nowa.
+W tym celu stworzymy nową funkcję *resetuj*.
+
+Co powinniśmy zrobić, aby zresetować grę?
+Jakie jej ustawienia musimy przywrócić do początkowych wartości?
+Potrzebujemy przywrócić naszego gracza, ptaka, na początkową pozycję i nadać mu właściwą prędkość.
+Przytałoby się także ponownie ustawić rury, abyśmy przypadkiem nie wylądowali w środku jeden z nich.
+
+```python
+def resetuj():
+    ptak.x = 75
+    ptak.y = 200
+    ptak.py = 0
+    ustaw_rury()
+```
+
+Gotową funkcję dopisujemy w wolnym miejscu, np. pod funkcją *update*.
+
+### Ucieczka poza ekran
+
+Gdy wylecimy ptakiem poza ekran, gra ma się zakończyć, tzn. zacząć od nowa.
+Co to znaczy, że nasz aktor przemieścił się poza ekran?
+To znaczy, że jego współrzędne znajdują się poza ekranem.
+
+Ponieważ nasza postać porusza się jedynie góra-dół, ograniczymy się do sprawdzenia, czy nie wylecieliśmy z góry albo z dołu ekranu.
+Jeżeli wylecieliśmy z góry ekranu, to znaczy, że nasza współrzędna $$y$$ jest mniejsza od $$0$$.
+
+```python
+if ptak.y < 0:
+```
+
+Jeżeli natomiast wylecieliśmy z dołu ekranu, to znaczy, że nasza współrzędna $$y$$ jest większa od wysokości (**HEIGHT**) ekranu.
+
+```python
+if ptak.y < 0 or ptak.y > HEIGHT:
+```
+
+Co chcemy zrobić, gdy ptak wyleci poza ekran?
+Chcemy zrestartować grę, wywołujemy więc przygotowaną wcześniej funkcję *resetuj*.
+
+```python
+if ptak.y < 0 or ptak.y > WIDTH:
+    resetuj()
+```
+
+Gotową instrukcję dopisujemy na koniec części aktualizującej, czyli funkcji *update*.
+
+```python
+def update():
+    ptak.py += grawitacja
+    ptak.y += ptak.py
+
+    rura_gora.left -= 3
+    rura_dol.left -= 3
+
+    if rura_gora.x < -100:
+        ustaw_rury()
+
+    if ptak.y < 0 or ptak.y > WIDTH:
+        resetuj()
+```
+
+### Kolizja z rurą
+
+W jaki sposób wykryć, że ptak uderzył w rurę?
+Musimy sprawdzić, czy aktor reprezentujący ptaka i aktor reprezentujący rurę są ze sobą w **kolizji**.
+Co to oznacza, że dwaj aktorzy są ze sobą w kolizji?
+To znaczy, że prostokąty, które reprezentują ich grafiki, **nachodzą na siebie**.
+Można to sprawdzić na wiele sposobów, ale biblioteka PyGameZero ma do tego wbudowaną funkcję: **colliderect**.
+
+W celu sprawdzenie, czy ptak jest w kolizji z górną rurą, zapiszemy:
+
+```python
+if ptak.colliderect(rura_gora):
+```
+
+Oczywiście nie interesuje nas tylko uderzenie w górną rurę, ale także i w dolną.
+W gruncie rzeczy ptak może zachaczyć o górną rurę **lub** dolną.
+Dodajmy więc to do naszego warunku.
+
+```python
+if ptak.colliderect(rura_gora) or ptak.colliderect(rura_dol):
+```
+
+Co chcemy zrobić, gdy ptak uderzy w którąś z rur?
+Podobnie jak w przypadku, gdy ptak wyleci poza ekran, chcemy zresetować grę.
+
+```python
+if ptak.colliderect(rura_gora) or ptak.colliderect(rura_dol):
+    resetuj() 
+```
+
+Gotową instrukcję dopisujemy na koniec części aktualizującej, czyli funkcji *update*.
+
+```python
+def update():
+    ptak.py += grawitacja
+    ptak.y += ptak.py
+
+    rura_gora.left -= 3
+    rura_dol.left -= 3
+
+    if rura_gora.x < -100:
+        ustaw_rury()
+
+    if ptak.y < 0 or ptak.y > WIDTH:
+        resetuj()
+
+    if ptak.colliderect(rura_gora) or ptak.colliderect(rura_dol):
+        resetuj() 
+```
 
 ### Pełny kod
 

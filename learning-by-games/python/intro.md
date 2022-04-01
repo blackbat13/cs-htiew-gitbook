@@ -18,4 +18,4 @@ Następnie pobieramy i instalujemy środowisko programistyczne:
 
 {% embed url="https://www.jetbrains.com/pycharm/download/" %}
 
-Darmowa wersja **Community **stanowczo wystarczy do nauki języka i tworzenia własnych gier.
+Darmowa wersja **Community** stanowczo wystarczy do nauki języka i tworzenia własnych gier.

@@ -84,7 +84,9 @@ def draw():
 
 ### Żółta linia
 
-Mamy kolor tła, teraz dodajmy żółtą linię. W tym celu użyjemy polecenia screen.draw.line do narysowania linii. Żeby narysować linię musimy podać jej początek i koniec, a także kolor. Gdybyśmy chcieli narysować żółtą linię przez cały ekran, wyglądałoby to tak:
+Mamy kolor tła, teraz dodajmy żółtą linię. W tym celu użyjemy polecenia screen.draw.line do narysowania linii. 
+Żeby narysować linię musimy podać jej początek i koniec, a także kolor. 
+Gdybyśmy chcieli narysować żółtą linię przez cały ekran, wyglądałoby to tak:
 
 ```python
 screen.draw.line((WIDTH / 2, 0), (WIDTH / 2, HEIGHT), color = "yellow")
@@ -157,15 +159,15 @@ lewa = Actor("lewa.png")
 ### Ustalamy pozycję lewej paletki
 
 Nasza lewa paletka będzie znajdować się z lewej strony ekranu.
-Nie chcemy jednak, by dotykała krawędzi, damy jej więc pewien niewielki margines, np. $20$ pikseli.
+Nie chcemy jednak, by dotykała krawędzi, damy jej więc pewien niewielki margines, np. $$20$$ pikseli.
 Dzięki temu nasza gra będzie wyglądała estetyczniej.
-Ustalamy więc współrzędną $x$ lewej paletki.
+Ustalamy więc współrzędną $$x$$ lewej paletki.
 
 ```python
 lewa.x = 20
 ```
 
-Trzeba jeszcze pomyśleć o drugiej współrzędnej: $y$.
+Trzeba jeszcze pomyśleć o drugiej współrzędnej: $$y$$.
 Początkowo umieśćmy paletkę na środku, czyli w połowie wysokości ekranu gry.
 
 ```python
@@ -222,6 +224,47 @@ pgzrun.go()
 Prawą paletkę tworzymy bardzo podobnie do lewej.
 Najważniejszą różnicą będzie oczywiście jej grafika i początkowe położenie.
 
+### Tworzymy aktora
+
+Najpierw musimy utworzyć aktora i zapisać go w nowej zmiennej, którą nazwiemy _prawa_.
+Naszego aktora tworzymy na podstawie grafiki *prawa.png*.
+
+```python
+prawa = Actor("prawa.png")
+```
+
+### Ustalamy pozycję prawej paletki
+
+Nasza prawa paletka będzie znajdować się z prawej strony ekranu.
+Nie chcemy jednak, by dotykała krawędzi, damy jej więc pewien niewielki margines, taki jak dla lewej paletyki, czyli $$20$$ pikseli.
+Dzięki temu nasza gra będzie wyglądała estetyczniej.
+Ustalamy więc współrzędną $$x$$ prawej paletki.
+Ponieważ umieszczamy ją z prawej strony ekranu, to aby obliczyć jej pozycję, od szerokości ekranu (**WIDTH**) odejmujemy ustalony wcześniej margines.
+
+```python
+prawa.x = WIDTH - 20
+```
+
+Trzeba jeszcze pomyśleć o drugiej współrzędnej: $$y$$.
+Początkowo umieśćmy paletkę na środku, czyli w połowie wysokości ekranu gry, tak samo jak lewą paletkę.
+
+```python
+prawa.y = HEIGHT / 2
+```
+
+### Rysujemy paletkę
+
+Skoro już umieściliśmy naszą prawą paletkę w jej początkowej pozycji, możemy ją narysować na ekranie.
+Do części rysującej, zaraz pod poleceniem rysującym lewą paletkę, dopisujemy polecenie rysujące prawą paletkę: _prawa.draw()_.
+
+```python
+def draw():
+    screen.fill(kolor_tla)
+    screen.draw.line((WIDTH / 2, 40), (WIDTH / 2, HEIGHT - 40), color = "yellow")
+    lewa.draw()
+    prawa.draw()
+```
+
 ### Pełny kod
 
 Dotychczasowy pełny kod naszej gry przedstawiony jest poniżej.
@@ -263,6 +306,39 @@ pgzrun.go()
 ## Piłka
 
 Piłkę dodamy podobnie jak paletki, ale umieścimy ją na środku ekranu.
+
+### Tworzymy aktora
+
+Najpierw musimy utworzyć aktora i zapisać go w nowej zmiennej, którą nazwiemy _pilka_.
+Naszego aktora tworzymy na podstawie grafiki *pilka.png*.
+
+```python
+pilka = Actor("pilka.png")
+```
+
+### Ustalamy pozycję piłki
+
+Nasza piłka będzie początkow znajdować się na środku ekranu.
+Dlatego do współrzędnej $$x$$ przypisujemy połowę szerokości (**WIDTH**) ekranu, a do współrzędnej $$y$$ przypisujemy połowę wysokości (**HEIGHT**) ekranu.
+
+```python
+pilka.x = WIDTH / 2
+pilka.y = HEIGHT / 2
+```
+
+### Rysujemy piłkę
+
+Skoro już umieściliśmy naszą piłkę w jej początkowej pozycji, możemy ją narysować na ekranie.
+Do części rysującej, zaraz pod poleceniem rysującym prawą paletkę, dopisujemy polecenie rysujące piłkę: _pilka.draw()_.
+
+```python
+def draw():
+    screen.fill(kolor_tla)
+    screen.draw.line((WIDTH / 2, 40), (WIDTH / 2, HEIGHT - 40), color = "yellow")
+    lewa.draw()
+    prawa.draw()
+    pilka.draw()
+```
 
 ### Pełny kod
 
@@ -309,6 +385,17 @@ pgzrun.go()
 
 ## Ruch graczy
 
+Paletki chcemy poruszać jedynie w dwóch kierunkach: w górę i w dół.
+Obie paletki będziemy sterować za pomocą klawiatury.
+Lewą paletkę obsłużymy klawiszami **W** i **S**, a prawą paletkę obsłużymy **strzałkami w górę i w dół**.
+
+### Funkcja odczytująca ruchy
+
+W celu zachowania czytelności naszego kodu, napiszemy sobie nową **funkcję**, tzn. wydzielony fragment kodu, który będzie realizował konkretne zadanie.
+To zadanie będzie polegało na odczytaniu wciśniętych klawiszy z klawiatury i wykonaniu odpowiedniego ruchu paletek.
+Nazwiemy naszą funkcję *ruch_graczy*.
+Wewnątrz funkcji będziemy sprawdzać, czy dany klawisz na klawiaturze jest wciśnięty, a jeżeli tak, to wykonamy stosowny ruch paletki, tzn. zmienimy jej współrzędne.
+
 ```python
 def ruch_graczy():
     if keyboard.w:
@@ -324,7 +411,20 @@ def ruch_graczy():
         prawa.y += prawa.py
 ```
 
+### Wywołujemy funkcję w części aktualizującej
+
+Aby zobaczyć rezultaty naszego działania, potrzebujemy jeszcze **użyć** naszej funkcji.
+Ruch graczy to **aktualizacja** pozycji graczy na ekranie, dlatego naszą nową funkcję *ruch_graczy* **wywołujemy** w części aktualizującej (**update**), zastępując jej dotychczasową zawartość (*pass*).
+
+```python
+def update():
+    ruch_graczy()
+```
+
 ### Ograniczenie ruchu graczy
+
+Nie chcemy, by paletki mogły wychodzić poza ekran, dlatego dodajemy dodatkowe warunki do naszych instrukcji.
+Przed wykonaniem danego ruchu sprawdzimy, czy paletka znajduje się wystarczająco daleko od brzegu ekranu, aby ten ruch móc wykonać.
 
 ```python
 def ruch_graczy():
@@ -452,7 +552,7 @@ def draw():
         pilka.draw()
         wypisz_punkty()
 
-        # Eysujemy linię dzielącą pole gry
+        # Rysujemy linię dzielącą pole gry
         screen.draw.line((WIDTH / 2, 40), (WIDTH / 2, HEIGHT - 40), color=kolor)
 
 # Wypisujemy wynik końca gry
@@ -566,11 +666,7 @@ pgzrun.go()
 
 ### Testujemy działanie
 
-TODO
-
 ## Wersja z bonusami
-
-TODO
 
 ### Pełny program
 
@@ -807,11 +903,7 @@ pgzrun.go()
 
 ### Testujemy działanie
 
-TODO
-
 ## Przeciwko komputerowi
-
-TODO
 
 ### Pełny program
 
@@ -970,10 +1062,3 @@ pgzrun.go()
 ```
 
 ### Testujemy działanie
-
-TODO
-
-## Zadania dodatkowe
-
-TODO
-

@@ -106,8 +106,6 @@ print("Tak!")
 
 {% embed url="https://replit.com/@damiankurpiewski/Zgadywanie1#main.py" %}
 
-TODO - filmik
-
 ## Zgadywanie ciepło-zimno
 
 Zgadywanie w "ciemno" nie jest w cale takie proste. Oczywiście, gdy mamy odgadnąć liczbę od $$1$$ do $$10$$ to w najgorszym przypadku będziemy potrzebowali dziesięciu prób, żeby w końcu odgadnąć prawidłowo. Co jednak, gdy chcielibyśmy pytać o liczby z większego przedziału, np. od $$1$$ do $$100$$, albo od $$1$$ do $$1000$$? Bez żadnych wskazówek odgadnięcie wylosowanej wartości będzie bardzo trudne.
@@ -196,8 +194,6 @@ print("Trafiona!")
 
 {% embed url="https://replit.com/@damiankurpiewski/Zgadywanie2" %}
 
-TODO - filmik
-
 ## Zgadywanie ze zliczeniem prób
 
 Nasza modyfikacja "ciepło-zimno" powinna ułatwić zgadywanie. Ile jednak prób zazwyczaj potrzebujemy, żeby odgadnąć? Policzmy to!
@@ -281,8 +277,6 @@ print("Liczba prób:", ile_prob)
 ### Testujemy działanie
 
 {% embed url="https://replit.com/@damiankurpiewski/Zgadywanie3" %}
-
-TODO - filmik
 
 ## Zgadywanie z własnego zakresu
 
@@ -395,9 +389,3 @@ print("Liczba prób:", ile_prob)
 ### Testujemy działanie
 
 {% embed url="https://replit.com/@damiankurpiewski/Zgadywanie4" %}
-
-TODO - filmik
-
-## Zadania dodatkowe
-
-TODO
