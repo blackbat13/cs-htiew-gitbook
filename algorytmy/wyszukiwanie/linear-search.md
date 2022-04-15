@@ -313,6 +313,12 @@ $$O(n)$$ — liniowa
 [linear-search.md](../../programowanie/go/algorithms/searching/linear-search.md)
 {% endcontent-ref %}
 
+### JavaScript
+
+{% content-ref url="../../programowanie/javascript/algorithms/searching/linear-search.md" %}
+[linear-search.md](../../programowanie/javascript/algorithms/searching/linear-search.md)
+{% endcontent-ref %}
+
 ### Julia
 
 {% content-ref url="../../programowanie/julia/algorithms/searching/linear-search.md" %}

@@ -10,9 +10,9 @@
 
 ### Implementacja
 
-```typescript
-function linearSearch(array: number[], value: number): boolean {
-    for (let i: number = 0; i < array.length; ++i) {
+```javascript
+function linearSearch(array, value) {
+    for (let i = 0; i < array.length; i++) {
         if (array[i] == value) {
             return true;
         }
@@ -22,10 +22,10 @@ function linearSearch(array: number[], value: number): boolean {
 }
 
 
-let array: number[] = [8, 2, 9, 10, 5, 4, 2, 7, 18, 0];
-let value: number = 7;
+let array = [8, 2, 9, 10, 5, 4, 2, 7, 18, 0];
+let value = 7;
 
-let result: boolean = linearSearch(array, value);
+let result = linearSearch(array, value);
 
 if (result) {
     console.log("Liczba jest w tablicy");
@@ -36,7 +36,7 @@ if (result) {
 
 ### Link do implementacji
 
-{% embed url="https://replit.com/@damiankurpiewski/LinearSearch1TypeScript" %}
+{% embed url="https://ideone.com/XjQi4e" %}
 Wyszukiwanie liniowe - istnienie elementu
 {% endembed %}
 
@@ -50,9 +50,9 @@ W części głównej programu na początku przygotowujemy dane do problemu: tabl
 
 ### Implementacja
 
-```typescript
-function linearSearch(array: number[], value: number): number {
-    for (let i: number = 0; i < array.length; ++i) {
+```javascript
+function linearSearch(array, value) {
+    for (let i = 0; i < array.length; i++) {
         if (array[i] == value) {
             return i;
         }
@@ -62,10 +62,10 @@ function linearSearch(array: number[], value: number): number {
 }
 
 
-let array: number[] = [8, 2, 9, 10, 5, 4, 2, 7, 18, 0];
-let value: number = 7;
+let array = [8, 2, 9, 10, 5, 4, 2, 7, 18, 0];
+let value = 7;
 
-let index: number = linearSearch(array, value);
+let index = linearSearch(array, value);
 
 if (index == -1) {
     console.log("Liczby nie ma w tablicy");
@@ -76,7 +76,7 @@ if (index == -1) {
 
 ### Link do implementacji
 
-{% embed url="https://replit.com/@damiankurpiewski/LinearSearch2TypeScript" %}
+{% embed url="https://ideone.com/dOYSUM" %}
 Wyszukiwanie liniowe - pozycja elementu
 {% endembed %}
 
@@ -90,9 +90,9 @@ W części głównej programu na początku przygotowujemy dane do problemu: tabl
 
 ### Implementacja
 
-```typescript
-function linearSearch(array: number[], value: number) {
-    for (let i: number = 0; i < array.length; ++i) {
+```javascript
+function linearSearch(array, value) {
+    for (let i = 0; i < array.length; i++) {
         if (array[i] == value) {
             console.log(i);
         }
@@ -100,8 +100,8 @@ function linearSearch(array: number[], value: number) {
 }
 
 
-let array: number[] = [8, 2, 8, 4, 5, 6, 7, 8, 9, 8];
-let value: number = 8;
+let array = [8, 2, 8, 4, 5, 6, 7, 8, 9, 8];
+let value = 8;
 
 console.log("Indeksy, pod którymi znajduje się poszukiwana liczba:")
 linearSearch(array, value);
@@ -109,7 +109,7 @@ linearSearch(array, value);
 
 ### Link do implementacji
 
-{% embed url="https://replit.com/@damiankurpiewski/LinearSearch3TypeScript" %}
+{% embed url="https://ideone.com/j8Bkmv" %}
 Wyszukiwanie liniowe - wszystkie pozycje elementu
 {% endembed %}
 
