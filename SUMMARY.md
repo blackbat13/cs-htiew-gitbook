@@ -725,6 +725,16 @@
 * [SZKOpuł](algorithmic-exercises/szkopul/README.md)
   * [10 Wspaniałych](algorithmic-exercises/szkopul/10-wspanialych/README.md)
     * [C++](algorithmic-exercises/szkopul/10-wspanialych/c++.md)
+  * [Akcje](algorithmic-exercises/szkopul/akcje/README.md)
+    * [C++](algorithmic-exercises/szkopul/akcje/c++.md)
+* [Olimpiada Informatyczna Juniorów](algorithmic-exercises/oig/README.md)
+  * [... albo psikus!](algorithmic-exercises/oig/albo-psikus/README.md)
+    * [C++](algorithmic-exercises/oig/albo-psikus/c++.md)
+    * [Python](algorithmic-exercises/oig/albo-psikus/python.md)
+* [Olimpiada Informatyczna](algorithmic-exercises/oi/README.md)
+  * [Anagramy](algorithmic-exercises/oi/anagramy/README.md)
+    * [C++](algorithmic-exercises/oi/anagramy/c++.md)
+    * [Python](algorithmic-exercises/oi/anagramy/python.md)
 
 ## Nauka programowania poprzez tworzenie gier <a href="learning-by-games" id="learning-by-games"></a>
 
