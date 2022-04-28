@@ -722,6 +722,9 @@
   * [Permutacja](algorithmic-exercises/level-1/permutation.md)
   * [Gazeta](algorithmic-exercises/level-1/newspaper.md)
   * [Kodowanie obrazka](algorithmic-exercises/level-1/image-coding.md)
+* [SZKOpuł](algorithmic-exercises/szkopul/README.md)
+  * [10 Wspaniałych](algorithmic-exercises/szkopul/10-wspanialych/README.md)
+    * [C++](algorithmic-exercises/szkopul/10-wspanialych/c++.md)
 
 ## Nauka programowania poprzez tworzenie gier <a href="learning-by-games" id="learning-by-games"></a>
 
