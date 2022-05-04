@@ -727,6 +727,8 @@
     * [C++](algorithmic-exercises/szkopul/10-wspanialych/c++.md)
   * [Akcje](algorithmic-exercises/szkopul/akcje/README.md)
     * [C++](algorithmic-exercises/szkopul/akcje/c++.md)
+  * [Pikieta](algorithmic-exercises/szkopul/pikieta/README.md)
+    * [C++](algorithmic-exercises/szkopul/pikieta/c++.md)
 * [Olimpiada Informatyczna Juniorów](algorithmic-exercises/oig/README.md)
   * [... albo psikus!](algorithmic-exercises/oig/albo-psikus/README.md)
     * [C++](algorithmic-exercises/oig/albo-psikus/c++.md)
