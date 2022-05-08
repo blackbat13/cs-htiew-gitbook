@@ -15,7 +15,7 @@ Jak zwykle, zacznijmy od formalnej specyfikacji, by lepiej zrozumieć problem, z
 #### Dane:
 
 * $$n$$ - liczba naturalna, ilość elementów w tablicy
-* $$A[1..n]$$ - posortowana niemalejąco tablica $$n$$ wartości całkowitych
+* $$A[1..n]$$ - $$n-elementowa$$ tablica liczb całkowitych, posortowana niemalejąco, indeksowana od jedynki
 * $$k$$ - liczba całkowita, szukana wartość
 
 #### Wynik:
