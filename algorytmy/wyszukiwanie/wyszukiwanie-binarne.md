@@ -2,7 +2,13 @@
 
 ## Opis problemu
 
-TODO
+W wielu przypadkach, gdy musimy coś znaleźć, np. książkę na półce w bibliotece, to będziemy mieć do czynienia z konkretnym porządkiem.
+Książki mogą być ułożone według tematyki, **posortowane** po nazwisku autora i tytule.
+Znacząco ułatwia to znalezienie pożądanej pozycji, ponieważ **wiemy, gdzie szukać**.
+
+Tak samo jest też w świecie algorytmiki. Gdy pracujemy na danych **posortowanych**, to zazwyczaj możemy skonstruować efektywne algorytmy do rozwiązania problemu. 
+
+Jak zwykle, zacznijmy od formalnej specyfikacji, by lepiej zrozumieć problem, z którym będziemy się mierzyć.
 
 ### Specyfikacja
 
@@ -18,7 +24,15 @@ TODO
 
 ### Przykład
 
-TODO
+#### Dane
+
+```
+n := 5
+A := [1, 2, 5, 7, 9]
+k := 7 
+```
+
+**Wynik**: $$4$$ 
 
 ## Rozwiązanie iteracyjne
 
