@@ -746,6 +746,9 @@
   * [Anagramy](algorithmic-exercises/oi/anagramy/README.md)
     * [C++](algorithmic-exercises/oi/anagramy/c++.md)
     * [Python](algorithmic-exercises/oi/anagramy/python.md)
+  * [Minusy](algorithmic-exercises/oi/minusy/README.md)
+    * [C++](algorithmic-exercises/oi/minusy/c++.md)
+    * [Python](algorithmic-exercises/oi/minusy/python.md)
 
 ## Nauka programowania poprzez tworzenie gier <a href="learning-by-games" id="learning-by-games"></a>
 
