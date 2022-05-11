@@ -1,3 +1,7 @@
+---
+description: I OI, etap III, dzień pierwszy
+---
+
 # Anagramy
 
 ## Treść zadania

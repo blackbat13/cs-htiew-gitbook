@@ -1,5 +1,5 @@
 ---
-description: Etap III, dzień próbny
+description: IX OI, etap III, dzień próbny
 ---
 
 # Minusy
