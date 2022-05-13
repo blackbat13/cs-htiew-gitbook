@@ -574,6 +574,8 @@
       * [Minkowski Sausage](programowanie/blockly/algorytmy/fraktale-1/minkowski-sausage.md)
       * [Zbiór Cantora](programowanie/blockly/algorytmy/fraktale-1/zbior-cantora.md)
 * [C](programowanie/c/README.md)
+  * [Wprowadzenie](programowanie/c/introduction/README.md)
+    * [Obsługa wejścia-wyjścia](programowanie/c/introduction/input-output.md)
   * [Algorytmy](programowanie/c/algorithms/README.md)
     * [Wyszukiwanie](programowanie/c/algorithms/searching/README.md)
       * [Wyszukiwanie liniowe](programowanie/c/algorithms/searching/linear-search.md)
