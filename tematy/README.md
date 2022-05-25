@@ -26,7 +26,7 @@ Dydaktyka informatyki jest dużym wyzwaniem, szczególnie w szkole. Wcześniej p
 
 ### Krótka prezentacja na temat projektu
 
-{% file src=".gitbook/assets/Trudne Tematy w Najprostszy Sposób.pdf" %}
+{% file src="../.gitbook/assets/Trudne Tematy w Najprostszy Sposób.pdf" %}
 Prezentacja
 {% endfile %}
 
@@ -34,4 +34,4 @@ Prezentacja
 
 ![Uznanie autorstwa-Na tych samych warunkach 4.0](.gitbook/assets/88x31.png)
 
-{% file src=".gitbook/assets/Licencja.pdf" %}
+{% file src="../.gitbook/assets/Licencja.pdf" %}
