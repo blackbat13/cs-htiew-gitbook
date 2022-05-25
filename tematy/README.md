@@ -32,6 +32,6 @@ Prezentacja
 
 ### **Licencja**
 
-![Uznanie autorstwa-Na tych samych warunkach 4.0](.gitbook/assets/88x31.png)
+![Uznanie autorstwa-Na tych samych warunkach 4.0](../.gitbook/assets/88x31.png)
 
 {% file src="../.gitbook/assets/Licencja.pdf" %}
