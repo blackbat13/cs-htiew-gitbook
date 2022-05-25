@@ -38,6 +38,7 @@
 * [Omówienie podstawy programowej](cs-didactics/core-curriculum-discussion.md)
 * [Nauczanie zdalne](cs-didactics/remote-learning.md)
 * [Programowanie w szkole](cs-didactics/programming-in-school.md)
+* [Nabieranie nauczycieli](cs-didactics/tricking-teachers.md)
 
 ## Algorytmy
 
