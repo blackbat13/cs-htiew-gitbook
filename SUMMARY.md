@@ -735,6 +735,8 @@
     * [C++](algorithmic-exercises/szkopul/akcje/c++.md)
   * [A+B](algorithmic-exercises/szkopul/apb/README.md)
     * [C++](algorithmic-exercises/szkopul/apb/c++.md)
+  * [Gra](algorithmic-exercises/szkopul/gra/README.md)
+    * [C++](algorithmic-exercises/szkopul/gra/c++.md)
   * [Kamyki](algorithmic-exercises/szkopul/kamyki/README.md)
     * [C++](algorithmic-exercises/szkopul/kamyki/c++.md)
   * [Pikieta](algorithmic-exercises/szkopul/pikieta/README.md)
