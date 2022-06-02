@@ -733,8 +733,6 @@
     * [Python](algorithmic-exercises/szkopul/210/python.md)
   * [Akcje](algorithmic-exercises/szkopul/akcje/README.md)
     * [C++](algorithmic-exercises/szkopul/akcje/c++.md)
-  * [A+B](algorithmic-exercises/szkopul/apb/README.md)
-    * [C++](algorithmic-exercises/szkopul/apb/c++.md)
   * [Gra](algorithmic-exercises/szkopul/gra/README.md)
     * [C++](algorithmic-exercises/szkopul/gra/c++.md)
   * [Kamyki](algorithmic-exercises/szkopul/kamyki/README.md)
@@ -760,7 +758,9 @@
   * [Minusy](algorithmic-exercises/oi/minusy/README.md)
     * [C++](algorithmic-exercises/oi/minusy/c++.md)
     * [Python](algorithmic-exercises/oi/minusy/python.md)
-
+* [Potyczki Algorytmiczne](algorithmic-exercises/potyczki-algorytmiczne/README.md)
+  * [A+B](algorithmic-exercises/potyczki-algorytmiczne/apb/README.md)
+    * [C++](algorithmic-exercises/potyczki-algorytmiczne/apb/c++.md)
 ## Nauka programowania poprzez tworzenie gier <a href="learning-by-games" id="learning-by-games"></a>
 
 * [Wstęp](learning-by-games/intro.md)
