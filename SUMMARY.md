@@ -735,6 +735,8 @@
     * [C++](algorithmic-exercises/szkopul/akcje/c++.md)
   * [Anagramy](algorithmic-exercises/szkopul/anagramy/README.md)
     * [C++](algorithmic-exercises/szkopul/anagramy/c++.md)
+  * [Astronom Janusz](algorithmic-exercises/szkopul/astronom-janusz/README.md)
+    * [C++](algorithmic-exercises/szkopul/astronom-janusz/c++.md)
   * [Gra](algorithmic-exercises/szkopul/gra/README.md)
     * [C++](algorithmic-exercises/szkopul/gra/c++.md)
   * [Kamyki](algorithmic-exercises/szkopul/kamyki/README.md)
