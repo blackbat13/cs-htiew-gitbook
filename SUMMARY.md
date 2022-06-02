@@ -733,6 +733,8 @@
     * [Python](algorithmic-exercises/szkopul/210/python.md)
   * [Akcje](algorithmic-exercises/szkopul/akcje/README.md)
     * [C++](algorithmic-exercises/szkopul/akcje/c++.md)
+  * [Anagramy](algorithmic-exercises/szkopul/anagramy/README.md)
+    * [C++](algorithmic-exercises/szkopul/anagramy/c++.md)
   * [Gra](algorithmic-exercises/szkopul/gra/README.md)
     * [C++](algorithmic-exercises/szkopul/gra/c++.md)
   * [Kamyki](algorithmic-exercises/szkopul/kamyki/README.md)
