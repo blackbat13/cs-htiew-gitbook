@@ -749,6 +749,8 @@
   * [... albo psikus!](algorithmic-exercises/oig/albo-psikus/README.md)
     * [C++](algorithmic-exercises/oig/albo-psikus/c++.md)
     * [Python](algorithmic-exercises/oig/albo-psikus/python.md)
+  * [Basen](algorithmic-exercises/oig/basen/README.md)
+    * [C++](algorithmic-exercises/oig/basen/c++.md)
   * [Bierki](algorithmic-exercises/oig/bierki/README.md)
     * [C++](algorithmic-exercises/oig/bierki/c++.md)
     * [Python](algorithmic-exercises/oig/bierki/python.md)
