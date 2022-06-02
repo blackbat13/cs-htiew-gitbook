@@ -3,23 +3,25 @@
 ## Implementacja
 
 ```cpp
+#include <algorithm>
 #include <cstdio>
 #include <iostream>
-#include <set>
 
 using namespace std;
 
 int main() {
-    int n, crd;
-    set<int> cards;
+    int n;
     int result = 0;
 
     scanf("%d", &n); 
 
+    int cards[n];
+
     for (int i = 0; i < n; i++) {
-        scanf("%d", &crd);
-        cards.insert(crd);
-    };
+        scanf("%d", &cards[i]);
+    }
+
+    sort(cards, cards + n);
 
     for(auto el: cards) {
         result = max(result, el - result);
