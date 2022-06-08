@@ -577,6 +577,7 @@
 * [C](programowanie/c/README.md)
   * [Wprowadzenie](programowanie/c/introduction/README.md)
     * [Obsługa wejścia-wyjścia](programowanie/c/introduction/input-output.md)
+    * [Projekty](programowanie/c/introduction/projects.md)
   * [Algorytmy](programowanie/c/algorithms/README.md)
     * [Wyszukiwanie](programowanie/c/algorithms/searching/README.md)
       * [Wyszukiwanie liniowe](programowanie/c/algorithms/searching/linear-search.md)
@@ -769,8 +770,8 @@
 * [Potyczki Algorytmiczne](algorithmic-exercises/potyczki-algorytmiczne/README.md)
   * [A+B](algorithmic-exercises/potyczki-algorytmiczne/apb/README.md)
     * [C++](algorithmic-exercises/potyczki-algorytmiczne/apb/c++.md)
-## Nauka programowania poprzez tworzenie gier <a href="learning-by-games" id="learning-by-games"></a>
 
+## Nauka programowania poprzez tworzenie gier <a href="learning-by-games" id="learning-by-games"></a>
 * [Wstęp](learning-by-games/intro.md)
 * [Python 3](learning-by-games/python/README.md)
   * [Wstęp](learning-by-games/python/intro.md)
