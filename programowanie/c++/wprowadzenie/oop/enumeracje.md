@@ -30,10 +30,10 @@ int main() {
       std::cout << "User role: " << currentRole << std::endl;
       break;
     case moderator:
-    std::cout << "Moderator role: " << currentRole << std::endl;
+      std::cout << "Moderator role: " << currentRole << std::endl;
       break;
     case admin:
-    std::cout << "Admin role: " << currentRole << std::endl;
+      std::cout << "Admin role: " << currentRole << std::endl;
       break;
   }
 
