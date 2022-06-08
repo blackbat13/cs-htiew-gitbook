@@ -577,6 +577,7 @@
 * [C](programowanie/c/README.md)
   * [Wprowadzenie](programowanie/c/introduction/README.md)
     * [Obsługa wejścia-wyjścia](programowanie/c/introduction/input-output.md)
+    * [Enumeracje](programowanie/c/introduction/enumerations.md)
     * [Projekty](programowanie/c/introduction/projects.md)
   * [Algorytmy](programowanie/c/algorithms/README.md)
     * [Wyszukiwanie](programowanie/c/algorithms/searching/README.md)
