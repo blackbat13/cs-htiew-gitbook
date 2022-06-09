@@ -764,6 +764,8 @@
   * [Anagramy](algorithmic-exercises/oi/anagramy/README.md)
     * [C++](algorithmic-exercises/oi/anagramy/c++.md)
     * [Python](algorithmic-exercises/oi/anagramy/python.md)
+  * [Gra w dzielniki](algorithmic-exercises/oi/gra-w-dzielniki/README.md)
+    * [C++](algorithmic-exercises/oi/gra-w-dzielniki/c++.md)
   * [Gra w minima](algorithmic-exercises/oi/gra-w-minima/README.md)
     * [C++](algorithmic-exercises/oi/gra-w-minima/c++.md)
   * [Minusy](algorithmic-exercises/oi/minusy/README.md)
