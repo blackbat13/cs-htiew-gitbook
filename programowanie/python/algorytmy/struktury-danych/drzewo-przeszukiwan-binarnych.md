@@ -84,3 +84,9 @@ if __name__ == "__main__":
 
     bst.clear()
 ```
+
+### Opis implementacji
+
+![Przykładowe drzewo wykorzystane w implementacji](<../../../../.gitbook/assets/image (10).png>)
+
+{% embed url="http://graphonline.ru/en/?graph=iTYRccYJVswEnVGe" %}
