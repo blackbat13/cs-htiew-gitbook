@@ -366,3 +366,9 @@ $$O(n)$$ — liniowa
 {% content-ref url="../../programowanie/typescript/algorithms/searching/linear-search.md" %}
 [linear-search.md](../../programowanie/typescript/algorithms/searching/linear-search.md)
 {% endcontent-ref %}
+
+### Visual Basic
+
+{% content-ref url="../../programowanie/visual-basic/algorithms/searching/linear-search.md" %}
+[linear-search.md](../../programowanie/visual-basic/algorithms/searching/linear-search.md)
+{% endcontent-ref %}

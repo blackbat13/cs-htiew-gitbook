@@ -712,6 +712,10 @@
   * [Algorytmy](programowanie/typescript/algorithms/README.md)
     * [Wyszukiwanie](programowanie/typescript/algorithms/searching/README.md)
       * [Wyszukiwanie liniowe](programowanie/typescript/algorithms/searching/linear-search.md)
+* [Visual Basic](programowanie/visual-basic/README.md)
+  * [Algorytmy](programowanie/visual-basic/algorithms/README.md)
+    * [Wyszukiwanie](programowanie/visual-basic/algorithms/searching/README.md)
+      * [Wyszukiwanie liniowe](programowanie/visual-basic/algorithms/searching/linear-search.md)
 
 ## Algorytmika - zadania
 
