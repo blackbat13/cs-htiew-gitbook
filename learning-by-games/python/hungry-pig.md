@@ -588,3 +588,11 @@ def restart():
 
 pgzrun.go()
 ```
+
+## Pełna gra
+
+Pełna implementacja dostępna jest poniżej.
+
+{% embed url="https://github.com/blackbat13/pighuntpgzero" %}
+Głodna świnia
+{% endembed %}
