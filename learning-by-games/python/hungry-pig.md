@@ -4,6 +4,12 @@
 
 Stworzymy prostą grę, w której naszym graczem będzie świnia. Świnie, jak wiadomo, lubią jeść. Naszym celem będzie więc nakarmienie świni, a dokładniej: doprowadzenie jej do jedzenia. Na ekranie będą się pojawiać w losowych miejscach warzywa, a my będziemy tak sterować świnią, żeby zjadła jak najwięcej. Po każdym posiłku świnia będzie przyspieszać, więc gra będzie stawała się coraz trudniejsza. Koniec gry nastąpi, gdy świnia ucieknie poza ekran.
 
+### Czego się nauczysz
+
+* Jak sterować postacią z klawiatury
+* Jak wykrywać kolizję pomiędzy postaciami
+* Jak obsłużyć koniec gry i jej restart
+
 ### Materiały do pobrania
 
 #### Grafiki
