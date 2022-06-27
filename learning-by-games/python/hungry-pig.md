@@ -583,7 +583,7 @@ def draw():
     screen.draw.text(f"{pig.points}", center=(WIDTH / 2, 50), fontsize=60, color="#fdee00", fontname="kenney_bold")
     if pig.dead:
         screen.draw.text(f"GAME OVER", center=(WIDTH / 2, HEIGHT / 2), fontsize=70, color="#e30022", fontname="kenney_bold")
-    
+
 
 def update():
     if pig.dead:
@@ -633,3 +633,141 @@ def on_key_down(key):
 
 pgzrun.go()
 ```
+
+## Restart gry
+
+Warto dodać do naszej gry możliwość rozpoczęcia ponownej rozgrywki, gdy gra już się zakończy. W ten sposób nie będziemy musieli wyłączać i ponownie włączać okna gry. Zacznijmy od dodania pomocniczej funkcji **restart**, za pomocą której przywrócimy początkowe ustawienia, takie jak: grafikę świni, pozycję świni, prędkość świni, punkty oraz stan gry. Funkcję dopisujemy na samym dole, zaraz przed instrukcją `pgzrun.go()`.
+
+```python
+def restart():
+    pig.image = "pig_down"
+    pig.x = 400
+    pig.y = 400
+    pig.vx = 0
+    pig.vy = 0
+    pig.v = 3
+    pig.points = 0
+    pig.dead = False
+```
+
+Teraz pozostaje pytanie: kiedy i w jaki sposób restartować grę? Chcemy, aby gracz mógł zrestartować rozgrywkę zaraz po jej zakończeniu. Powiedzmy, że jak gra się już zakończyła i gracz naciśnie **spację**, to rozpocznie się kolejna rozgrywka. Dopiszmy więc stosowną instrukcję do funkcji `on_key_down`.
+
+```python
+def on_key_down(key):
+    if pig.dead:
+        if key == keys.SPACE:
+            restart()
+
+        return
+```
+
+Teraz możemy już restartować naszą rozgrywkę. Warto jeszcze wyświetlić dodatkowy komunikat po zakończeniu gry. W części rysującej, zaraz pod komunikatem "GAME OVER", dopisujemy:
+
+```python
+screen.draw.text(f"Press SPACE to try again", center=(WIDTH / 2, 2 * HEIGHT / 3), fontsize=30, color="#e30022", fontname="kenney_bold")
+```
+
+### Pełen kod
+
+```python
+import pgzrun
+import random
+
+TITLE = "Hungry Pig"
+WIDTH = 800
+HEIGHT = 800
+
+pig = Actor("pig_down")
+pig.x = 400
+pig.y = 400
+pig.vx = 0
+pig.vy = 0
+pig.v = 3
+pig.points = 0
+pig.dead = False
+
+beet = Actor("beetroot")
+beet.x = 200
+beet.y = 200
+
+
+def draw():
+    screen.blit("bg", (0, 0))
+    pig.draw()
+    beet.draw()
+    screen.draw.text(f"{pig.points}", center=(WIDTH / 2, 50), fontsize=60, color="#fdee00", fontname="kenney_bold")
+    if pig.dead:
+        screen.draw.text(f"GAME OVER", center=(WIDTH / 2, HEIGHT / 2), fontsize=70, color="#e30022", fontname="kenney_bold")
+        screen.draw.text(f"Press SPACE to try again", center=(WIDTH / 2, 2 * HEIGHT / 3), fontsize=30, color="#e30022", fontname="kenney_bold")
+
+
+def update():
+    if pig.dead:
+        return
+
+    pig.x += pig.vx
+    pig.y += pig.vy
+
+    if pig.colliderect(beet):
+        beet.x = random.randint(50, WIDTH - 50)
+        beet.y = random.randint(50, HEIGHT - 50)
+        pig.v += 0.8
+        pig.points += 1
+        sounds.pig.play()
+
+    if pig.x < 0 or pig.x > WIDTH or pig.y < 0 or pig.y > HEIGHT:
+        pig.dead = True
+        pig.x = WIDTH / 2
+        pig.y = HEIGHT / 3
+        pig.image = "pig_dead"
+
+
+def on_key_down(key):
+    if pig.dead:
+        if key == keys.SPACE:
+            restart()
+			
+        return
+
+    if key == keys.LEFT:
+        pig.vx = -pig.v
+        pig.vy = 0
+        pig.image = "pig_left"
+
+    if key == keys.RIGHT:
+        pig.vx = pig.v
+        pig.vy = 0
+        pig.image = "pig_right"
+
+    if key == keys.UP:
+        pig.vx = 0
+        pig.vy = -pig.v
+        pig.image = "pig_up"
+
+    if key == keys.DOWN:
+        pig.vx = 0
+        pig.vy = pig.v
+        pig.image = "pig_down"
+		
+
+def restart():
+    pig.image = "pig_down"
+    pig.x = 400
+    pig.y = 400
+    pig.vx = 0
+    pig.vy = 0
+    pig.v = 3
+    pig.points = 0
+    pig.dead = False
+
+
+pgzrun.go()
+```
+
+## Pełna gra
+
+Pełna implementacja dostępna jest poniżej.
+
+{% embed url="https://github.com/blackbat13/pighuntpgzero" %}
+Głodna świnia
+{% endembed %}
