@@ -456,3 +456,180 @@ def on_key_down(key):
 
 pgzrun.go()
 ```
+
+## Koniec gry
+
+Cóż to za gra, która się nie kończy? Nasza gra będzie kończyć się, gdy świnia wyjdzie poza ekran. W celu zapamiętania, że gra się już zakończyła, dopiszemy do świni nową zmienną **dead** którą na początku ustawimy na wartość **False**.
+
+```python
+pig = Actor("pig_down")
+pig.x = 400
+pig.y = 400
+pig.vx = 0
+pig.vy = 0
+pig.v = 3
+pig.points = 0
+pig.dead = False
+```
+
+### Wyświetlamy komunikat
+
+Zacznijmy od wyświetlenia na ekranie komunikatu o zakończeniu gry. W części rysującej, gdy gra jest zakończona, tzn. gdy zmienna `pig.dead` ma wartość **True**, wyświetlimy na ekranie komunikat **GAME OVER**.
+
+```python
+if pig.dead:
+    screen.draw.text(f"GAME OVER", center=(WIDTH / 2, HEIGHT / 2), fontsize=70, color="#e30022", fontname="kenney_bold")
+```
+
+Całość dopisujemy na koniec części rysującej.
+
+```python
+def draw():
+    screen.blit("bg", (0, 0))
+    pig.draw()
+    beet.draw()
+    screen.draw.text(f"{pig.points}", center=(WIDTH / 2, 50), fontsize=60, color="#fdee00", fontname="kenney_bold")
+    if pig.dead:
+        screen.draw.text(f"GAME OVER", center=(WIDTH / 2, HEIGHT / 2), fontsize=70, color="#e30022", fontname="kenney_bold")
+```
+
+Warto przetestować, czy komunikat wyświetla się poprawnie, tymczasowo zmieniając wartość zmiennej `pig.dead` na **True**.
+
+### Sprawdzamy wyjście poza ekran
+
+Nasza gra się kończy, gdy świnia wyjdzie poza ekran gry. Aby sprawdzić, czy tak się stało, wystarczy sprawdzić wartości współrzędnych naszej świni. Jeżeli są mniejsze od zera, albo większe od odpowiednio szerokości i wysokości, to znaczy, że świnia wyszła poza ekran. Dopisujemy więc odpowiedni warunek na koniec części aktualizującej.
+
+```python
+if pig.x < 0 or pig.x > WIDTH or pig.y < 0 or pig.y > HEIGHT:
+```
+
+Gdy świnia wyjdzie poza ekran to gra się kończy, ustawiamy więc zmienną `pig.dead` na wartość **True**.
+
+```python
+if pig.x < 0 or pig.x > WIDTH or pig.y < 0 or pig.y > HEIGHT:
+    pig.dead = True
+```
+
+Dla lepszego efektu możemy także przemieścić świnię zaraz nad napis **GAME OVER** i zmienić jej grafikę na __pig_dead.png__.
+
+```python
+if pig.x < 0 or pig.x > WIDTH or pig.y < 0 or pig.y > HEIGHT:
+    pig.dead = True
+    pig.x = WIDTH / 2
+    pig.y = HEIGHT / 3
+    pig.image = "pig_dead"
+```
+
+Tak teraz powinna wyglądać nasza część aktualizująca:
+
+```python
+def update():
+    pig.x += pig.vx
+    pig.y += pig.vy
+
+    if pig.colliderect(beet):
+        beet.x = random.randint(50, WIDTH - 50)
+        beet.y = random.randint(50, HEIGHT - 50)
+        pig.v += 0.8
+        pig.points += 1
+        sounds.pig.play()
+
+    if pig.x < 0 or pig.x > WIDTH or pig.y < 0 or pig.y > HEIGHT:
+        pig.dead = True
+        pig.x = WIDTH / 2
+        pig.y = HEIGHT / 3
+        pig.image = "pig_dead"
+```
+
+### Zamrożenie rozgrywki
+
+Gdy teraz przetestujemy naszą grę, to zauważymy, że rozgrywka dalej się toczy po zakończeniu gry, tzn. dalej można poruszać świnią i zjadać buraki. Oczywiście nie chcemy, by tak się działo. W tym celu należy dopisać prostą instrukcję warunkową na początek części aktualizującej, a także na początek części odpowiedzialnej za odczytywanie klikniętych przycisków z klawiatury.
+
+```python
+if pig.dead:
+    return
+```
+
+Dzięki temu, jeżeli gra jest już zakończona, to żadne dalsze instrukcje w danej części nie będą już wykonywane.
+
+### Pełen kod
+
+```python
+import pgzrun
+import random
+
+TITLE = "Hungry Pig"
+WIDTH = 800
+HEIGHT = 800
+
+pig = Actor("pig_down")
+pig.x = 400
+pig.y = 400
+pig.vx = 0
+pig.vy = 0
+pig.v = 3
+pig.points = 0
+pig.dead = False
+
+beet = Actor("beetroot")
+beet.x = 200
+beet.y = 200
+
+
+def draw():
+    screen.blit("bg", (0, 0))
+    pig.draw()
+    beet.draw()
+    screen.draw.text(f"{pig.points}", center=(WIDTH / 2, 50), fontsize=60, color="#fdee00", fontname="kenney_bold")
+    if pig.dead:
+        screen.draw.text(f"GAME OVER", center=(WIDTH / 2, HEIGHT / 2), fontsize=70, color="#e30022", fontname="kenney_bold")
+    
+
+def update():
+    if pig.dead:
+        return
+
+    pig.x += pig.vx
+    pig.y += pig.vy
+
+    if pig.colliderect(beet):
+        beet.x = random.randint(50, WIDTH - 50)
+        beet.y = random.randint(50, HEIGHT - 50)
+        pig.v += 0.8
+        pig.points += 1
+        sounds.pig.play()
+
+    if pig.x < 0 or pig.x > WIDTH or pig.y < 0 or pig.y > HEIGHT:
+        pig.dead = True
+        pig.x = WIDTH / 2
+        pig.y = HEIGHT / 3
+        pig.image = "pig_dead"
+
+
+def on_key_down(key):
+    if pig.dead:
+        return
+
+    if key == keys.LEFT:
+        pig.vx = -pig.v
+        pig.vy = 0
+        pig.image = "pig_left"
+
+    if key == keys.RIGHT:
+        pig.vx = pig.v
+        pig.vy = 0
+        pig.image = "pig_right"
+
+    if key == keys.UP:
+        pig.vx = 0
+        pig.vy = -pig.v
+        pig.image = "pig_up"
+
+    if key == keys.DOWN:
+        pig.vx = 0
+        pig.vy = pig.v
+        pig.image = "pig_down"
+
+
+pgzrun.go()
+```
