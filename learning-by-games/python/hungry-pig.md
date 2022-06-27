@@ -81,7 +81,7 @@ Zacznijmy od naszej głównej postaci: świni.
 
 ### Dodajemy aktora
 
-Jak przyjrzymy się grafikom, to zobaczymy, że mamy kilka grafik reprezentujących świnię w zależności od kierunku, w którym jest obrócona. Wykorzystamy to przy poruszaniu się świni. Na początku jednak skorzystamy z grafiki __pig_down.png__. Na górze naszego programy, zaraz pod ustawieniami wymiarów okna, tworzymy naszego nowego aktora, którego nazwiemy **pig**, za pomocą polecenia `Actor()`. Naszą postać umieścimy na początku na środku ekranu, czyli pod współrzędnymi $$(400, 400)$$.
+Jak przyjrzymy się grafikom, to zobaczymy, że mamy kilka grafik reprezentujących świnię w zależności od kierunku, w którym jest obrócona. Wykorzystamy to przy poruszaniu się świni. Na początku jednak skorzystamy z grafiki __pig_down.png__. Na górze naszego programu, zaraz pod ustawieniami wymiarów okna, tworzymy naszego nowego aktora, którego nazwiemy **pig**, za pomocą polecenia `Actor()`. Naszą postać umieścimy na początku na środku ekranu, czyli pod współrzędnymi $$(400, 400)$$.
 
 ```python
 pig = Actor("pig_down")
@@ -471,7 +471,7 @@ pgzrun.go()
 
 ## Koniec gry
 
-Cóż to za gra, która się nie kończy? Nasza gra będzie kończyć się, gdy świnia wyjdzie poza ekran. W celu zapamiętania, że gra się już zakończyła, dopiszemy do świni nową zmienną **dead** którą na początku ustawimy na wartość **False**.
+Cóż to za gra, która się nie kończy? Nasza gra będzie kończyć się, gdy świnia wyjdzie poza ekran. W celu zapamiętania, że gra się już zakończyła, dopiszemy do świni nową zmienną **dead**, którą na początku ustawimy na wartość **False**.
 
 ```python
 pig = Actor("pig_down")
