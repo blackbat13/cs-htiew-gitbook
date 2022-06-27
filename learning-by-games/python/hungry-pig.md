@@ -152,7 +152,7 @@ def on_key_down(key):
         pig.image = "pig_down"
 ```
 
-### Pełen kod
+### Pełny kod
 
 ```python
 import pgzrun
@@ -287,7 +287,7 @@ def update():
         sounds.pig.play()
 ```
 
-### Pełen kod
+### Pełny kod
 
 ```python
 import pgzrun
@@ -390,7 +390,7 @@ if pig.colliderect(beet):
     sounds.pig.play()
 ```
 
-### Pełen kod
+### Pełny kod
 
 ```python
 import pgzrun
@@ -552,7 +552,7 @@ if pig.dead:
 
 Dzięki temu, jeżeli gra jest już zakończona, to żadne dalsze instrukcje w danej części nie będą już wykonywane.
 
-### Pełen kod
+### Pełny kod
 
 ```python
 import pgzrun
@@ -667,7 +667,7 @@ Teraz możemy już restartować naszą rozgrywkę. Warto jeszcze wyświetlić do
 screen.draw.text(f"Press SPACE to try again", center=(WIDTH / 2, 2 * HEIGHT / 3), fontsize=30, color="#e30022", fontname="kenney_bold")
 ```
 
-### Pełen kod
+### Pełny kod
 
 ```python
 import pgzrun
