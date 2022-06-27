@@ -36,6 +36,12 @@ Umieszczamy w katalogu **fonts**.
 Czcionki do gry Głodna Świnia
 {% endfile %}
 
+#### Struktura projektu
+
+Po dodaniu potrzebnych materiałów, struktura projektu powinna wyglądać mniej więcej tak jak na grafice poniżej.
+
+![Struktura projektu](../../.gitbook/assets/hungry_pig_structure.png)
+
 ### Źródła
 
 - [https://kenney.nl/](https://kenney.nl/)
