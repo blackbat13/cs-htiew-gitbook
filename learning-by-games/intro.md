@@ -4,10 +4,10 @@ Większość kursów programistycznych wygląda bardzo podobnie: poznajemy podst
 
 Jest to jeden z powodów, dla których proponuję inne podejście do nauki programowania. Naukę poprzez tworzenie gier i animacji. 
 
-TODO
-
 ## Grafiki i dźwięki
 
-Wszystkie grafiki i dźwięki pochodzą ze strony:
+Wszystkie grafiki, dźwięki i czcionki używane w projektach są na licencji CC0 lub zbliżonych.
+
+Większość grafik i dźwięków pochodzi ze strony:
 
 {% embed url="https://kenney.nl/" %}
