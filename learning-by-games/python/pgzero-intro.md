@@ -141,11 +141,11 @@ pyinstaller --collect-all pgzero main.py --distpath . --add-data "images;images"
 ```
 
 {% hint style="warning" %}
-Skrypt należy dostosować do naszego projektu, a konkretnie do katalogów, jakich używamy. Powyższy skrypt będzie działał, jeżeli nasza gra używa
-- grafik (`--add-data "images;images"`)
-- czcionek (`--add-data "fonts;fonts"`)
-- efektów dźwiękowych (`--add-data "sounds;sounds"`)
-- muzyki (`--add-data "music;music"`)
+Skrypt należy dostosować do naszego projektu, a konkretnie do katalogów, jakich używamy. Powyższy skrypt będzie działał, jeżeli nasza gra używa:
+- grafik (`--add-data "images;images"`),
+- czcionek (`--add-data "fonts;fonts"`),
+- efektów dźwiękowych (`--add-data "sounds;sounds"`),
+- muzyki (`--add-data "music;music"`).
 
 Jeżeli nie mamy któregoś z katalogów w naszym projekcie, to ze skryptu należy usunąć odpowiednie polecenie. Np., jeżeli nasza gra korzysta **tylko** z grafik, to skrypt powinien wyglądać tak:
 ```
