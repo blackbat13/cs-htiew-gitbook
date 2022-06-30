@@ -113,3 +113,48 @@ Efekt może nie jest bardzo satysfakcjonujący, ale to oznacza, że biblioteka z
 Gra działa w nieskończonej, ukrytej pętli. Przez cały czas, od uruchomienia aż do zakończenia gry wykonywane są dwie główne akcje: rysowanie i aktualizacja.
 Nazywamy to **pętlą gry**. Co każdą klatkę animacji aktualizowane są pozycje graczy, ich interakcja z graczem i sobą nawzajem, życia przeciwników, punkty itp.
 Ogólnie aktualizowany jest **stan gry**. Wszystkie te zmiany są także nanoszone na ekran, czyli rysowane w oknie gry.
+
+## Plik .exe
+
+Standardowo do uruchomienia naszych gier potrzebny będzie Python, wraz z zainstalowaną biblioteką pgzero.
+Naturalnym jednak jest, że chcemy się pochwalić innym naszymi grami!
+Nie wszystkim będzie jednak łatwo wytłumaczyć, jak zainstalować Pythona i uruchomić naszą grę.
+Dlatego potrzebny nam jest plik **wykonywalny**: taki, który wystarczy uruchomić na innym komputerze i wszystko będzie działać, nawet bez Pythona!
+Pytanie brzmi: jak taki plik utworzyć? 
+Potrzebne będą nam dwie rzeczy: biblioteka **pyinstaller** oraz krótki skrypt.
+
+### Instalacja biblioteki
+
+Na dole ekranu programu PyCharm szukamy zakładki **Terminal.** Otwieramy ją i w oknie, które się pojawi wpisujemy następujące polecenie:
+
+`pip install pyinstaller`
+
+Zatwierdzamy je przyciskiem _Enter_ i czekamy aż biblioteka się zainstaluje.
+
+### Skrypt
+
+W katalogu głównym naszego projektu tworzymy nowy plik o nazwie **setup.bat**.
+W pliku wpisujemy:
+
+```
+pyinstaller --collect-all pgzero main.py --distpath . --add-data "images;images" --add-data "fonts;fonts" --add-data "sounds;sounds" --add-data "music;music" --onefile --noconfirm --windowed --clean
+```
+
+{% hint style="warning" %}
+Skrypt należy dostosować do naszego projektu, a konkretnie do katalogów, jakich używamy. Powyższy skrypt będzie działał, jeżeli nasza gra używa
+- grafik (`--add-data "images;images"`)
+- czcionek (`--add-data "fonts;fonts"`)
+- efektów dźwiękowych (`--add-data "sounds;sounds"`)
+- muzyki (`--add-data "music;music"`)
+
+Jeżeli nie mamy któregoś z katalogów w naszym projekcie, to ze skryptu należy usunąć odpowiednie polecenie. Np., jeżeli nasza gra korzysta **tylko** z grafik, to skrypt powinien wyglądać tak:
+```
+pyinstaller --collect-all pgzero main.py --distpath . --add-data "images;images" --onefile --noconfirm --windowed --clean
+```
+{% endhint %}
+
+### Tworzymy plik wykonywalny
+
+W zakładce **Terminal** uruchamiamy plik __setup.bat__ wpisując `.\setup.bat` i zatwierdzając przyciskiem _Enter_.
+Teraz wystarczy poczekać, aż operacje się zakończą. 
+Po wszystkim zostanie utworzony w głównym katalogu naszej gry plik **main.exe** który możemy uruchomić, a także przekazać znajomym, by i oni mogli zagrać w naszą grę!
