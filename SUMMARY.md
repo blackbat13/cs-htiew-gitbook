@@ -794,10 +794,10 @@
   * [Symulacja rzutu kością](learning-by-games/python/dice-simulator.md)
   * [Gra w zgadywanie](learning-by-games/python/guessing-game.md)
   * [Wstęp do PygameZero](learning-by-games/python/pgzero-intro.md)
-  * [Złap kosmitę](learning-by-games/python/catch-alien.md)
+  <!-- * [Złap kosmitę](learning-by-games/python/catch-alien.md) -->
   * [Głodna świnia](learning-by-games/python/hungry-pig.md)
-  * [Pong](learning-by-games/python/pong.md)
   * [Flappy Bird](learning-by-games/python/flappy-bird.md)
+  * [Pong](learning-by-games/python/pong.md)
   * [Asteroidy](learning-by-games/python/asteroids.md)
   * [Kosmos](learning-by-games/python/cosmos.md)
   * [Czołgi 1](learning-by-games/python/tanks-1.md)
