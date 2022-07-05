@@ -192,7 +192,7 @@ Napisz program zgodny z poniższą specyfikacją.
 
 #### Wynik
 
-* Czas podany w czytelnej formie ** **$$H:M:S$$ ($$H$$ - godziny, $$M$$ - minuty, $$S$$ - sekundy)
+* Czas podany w czytelnej formie $$H:M:S$$ ($$H$$ - godziny, $$M$$ - minuty, $$S$$ - sekundy)
 
 ### Przykład
 

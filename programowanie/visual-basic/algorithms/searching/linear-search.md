@@ -22,8 +22,8 @@ Module Search
         Return False
     End Function
     
-	Sub Main()
-		Dim array as Integer() = {4, 8, 1, 3, 8, 0, 2, 5, 2}
+    Sub Main()
+        Dim array as Integer() = {4, 8, 1, 3, 8, 0, 2, 5, 2}
         Dim number as Integer = 0
 
         Dim result as Boolean = LinearSearch(array, number)
@@ -33,7 +33,7 @@ Module Search
         Else
             Console.WriteLine("Liczby nie ma w tablicy")
         End If
-	End Sub
+    End Sub
 End Module
 ```
 
@@ -59,8 +59,8 @@ Module Search
         Return -1
     End Function
     
-	Sub Main()
-		Dim array as Integer() = {4, 8, 1, 3, 8, 0, 2, 5, 2}
+    Sub Main()
+        Dim array as Integer() = {4, 8, 1, 3, 8, 0, 2, 5, 2}
         Dim number as Integer = 0
 
         Dim index as Integer = LinearSearch(array, number)
@@ -70,7 +70,7 @@ Module Search
         Else
             Console.WriteLine("Liczba jest w tablicy pod indeksem {0}", index)
         End If
-	End Sub
+    End Sub
 End Module
 ```
 
@@ -94,14 +94,14 @@ Module Search
         Next
     End Sub
     
-	Sub Main()
-		Dim array as Integer() = {4, 8, 1, 3, 8, 0, 2, 5, 8}
+    Sub Main()
+        Dim array as Integer() = {4, 8, 1, 3, 8, 0, 2, 5, 8}
         Dim number as Integer = 8
 
         Console.WriteLine("Indeksy, pod którymi znajduje się szukana liczba:")
 
         LinearSearch(array, number)
-	End Sub
+    End Sub
 End Module
 ```
 
