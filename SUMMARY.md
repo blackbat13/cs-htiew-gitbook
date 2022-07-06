@@ -816,6 +816,7 @@
   * [Asteroidy](learning-by-games/lua/asteroids.md)
   * [Latający samolocik](learning-by-games/lua/flying-plane.md)
 * [JavaScript](learning-by-games/javascript/README.md)
+  * [Głodna świnia](learning-by-games/javascript/hungry-pig.md)
   * [Złap kosmitę](learning-by-games/javascript/catch-alien.md)
 
 ## Grafika komputerowa
