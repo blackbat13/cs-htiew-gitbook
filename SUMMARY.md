@@ -812,6 +812,7 @@
   * [HitmanZero - jeden gracz](learning-by-games/python/hitmanzero-one-player.md)
   * [HitmanZero - dwóch graczy](learning-by-games/python/hitmanzero-two-players.md)
 * [Lua](learning-by-games/lua/README.md)
+  * [Głodna świnia](learning-by-games/lua/hungry-pig.md)
   * [Asteroidy](learning-by-games/lua/asteroids.md)
   * [Latający samolocik](learning-by-games/lua/flying-plane.md)
 * [JavaScript](learning-by-games/javascript/README.md)
