@@ -42,7 +42,7 @@ Po dodaniu potrzebnych materiałów, struktura projektu powinna wyglądać mniej
 
 ## Nasz cel
 
-{% embed url="https://blackbat13.github.io/hungrypigkaboomjs" %}
+{% embed url="https://blackbat13.github.io/HungryPigKaboomJS/" %}
 Głodna świnia
 {% endembed %}
 
@@ -73,7 +73,7 @@ scene("game", () => {
 
 Aby nasza gra zaczynała się od sceny **game**, na końcu kodu dopisujemy instrukcję `go("game")`. Nasz kod powinien wyglądać teraz tak:
 
-```js
+```javascript
 import kaboom from "https://unpkg.com/kaboom/dist/kaboom.mjs";
 
 kaboom({
