@@ -50,7 +50,7 @@ Głodna świnia
 
 Zaczynamy od utworzenia okna gry i podstawowej konfiguracji projektu. Wymiary okna ustawimy na $$800\times800$$, ponieważ tak mamy przygotowaną grafikę tła (__bg.png__). Wszystko umieszczamy w pliku __index.html__. 
 
-```js
+```javascript
 <script type="module">
     import kaboom from "https://unpkg.com/kaboom/dist/kaboom.mjs";
 
@@ -65,7 +65,7 @@ Zaczynamy od utworzenia okna gry i podstawowej konfiguracji projektu. Wymiary ok
 
 Początkowo stworzymy jedną scenę o nazwie **game**, która będzie główną sceną naszej gry, tzn. sceną, w której będzie się toczyć zasadnicza rozgrywka. Scenę tworzymy za pomocą polecenia `scene`.
 
-```js
+```javascript
 scene("game", () => {
 
 });
@@ -92,7 +92,7 @@ go("game");
 
 Aby dodać tło do naszej gry, najpierw musimy je załadować z pliku __bg.png__ za pomocą polecenia `loadSprite`. Polecenie wywołujemy zaraz pod wywołaniem `kaboom`:
 
-```js
+```javascript
 import kaboom from "https://unpkg.com/kaboom/dist/kaboom.mjs";
 
 kaboom({
@@ -107,7 +107,7 @@ loadSprite("bg", "images/bg.png");
 
 Tło wyświetlimy na ekranie dodając nowy element do naszej głównej sceny za pomocą poleceń `add` oraz `sprite`.
 
-```js
+```javascript
 scene("game", () => {
     add([
         sprite("bg"),
@@ -117,7 +117,7 @@ scene("game", () => {
 
 ### Pełen kod
 
-```js
+```javascript
 import kaboom from "https://unpkg.com/kaboom/dist/kaboom.mjs";
 
 kaboom({
@@ -145,7 +145,7 @@ Zacznijmy od naszej głównej postaci: świni.
 Jak przyjrzymy się grafikom, to zobaczymy, że mamy kilka grafik reprezentujących świnię w zależności od kierunku, w którym jest obrócona. Wykorzystamy to przy poruszaniu się świni. Najpierw musimy załadować grafiki z plików. Nowe instrukcje dopiszemy zaraz pod instrukcją ładującą tło (`loadSprite("bg", "images/bg.png")`).
 Warto także od razu załadować dźwięk świni z pliku __pig.wav__, za pomocą polecenia `loadSound`.
 
-```js
+```javascript
 loadSprite("pig_down", "images/pig_down.png");
 loadSprite("pig_up", "images/pig_up.png");
 loadSprite("pig_left", "images/pig_left.png");
@@ -159,7 +159,7 @@ loadSound("pig", "sounds/pig.wav");
 
 Na początku skorzystamy z grafiki __pig_down__. Na górze naszej głównej sceny, zaraz pod poleceniem dodającym tło, tworzymy naszego nowego aktora, którego zapiszemy w zmiennej  **pig**, za pomocą polecenia `add`. Naszą postać umieścimy na początku na środku ekranu, czyli pod współrzędnymi $$(400, 400)$$, które możemy pobrać za pomocą polecenia `center()`. Naszą świnię będziemy ustawiać względem jej środka, dlatego też skorzystamy z polecenia `origin`, jako parametr podając wartość **"center"**. Ponieważ będziemy chcieli wykrywać kolizję świni z innymi elementami gry, dopiszemy do niej także polecenie `area()`. Dobrą praktyką jest dodawanie pomocniczych nazw do naszych aktorów, tzw. tagów, tak więc do naszej świni dodamy tag **"pig"**.
 
-```js
+```javascript
 const pig = add([
     sprite("pig_down"),
     pos(center()),
@@ -182,7 +182,7 @@ Dopisujemy więc nowe parametry do naszej świni. Aby na początku świnia stał
 
 Parametry dopiszemy zaraz pod poleceniem tworzącym naszą świnię.
 
-```js
+```javascript
 pig.vx = 0;
 pig.vy = 0;
 pig.v = 3;
@@ -191,7 +191,7 @@ pig.v = 3;
 Teraz czas zastosować prędkość do pozycji świni, tak aby mogła poruszać się po ekranie. W tym celu zdefiniujemy funkcję `onUpdate` w naszej głównej scenie **game**.
 Wewnątrz zaktualizujemy pozycję świni na ekranie poprzez dodanie prędkości do współrzędnych położenia naszego aktora.
 
-```js
+```javascript
 onUpdate("pig", () => {
     pig.pos.x += pig.vx;
     pig.pos.y += pig.vy;
@@ -202,7 +202,7 @@ Oczywiście w tym momencie świnia nie będzie się jeszcze poruszać, ponieważ
 
 Teraz czas wreszcie dodać obsługę sterowania. W tym celu będziemy potrzebowali nowych funkcji, które pozwolą nam reagować na zdarzenia wciśnięcia klawisza na klawiaturze: `onKeyPress`. Dopiszemy je na dole naszej sceny, pod funkcją `onUpdate`. Wewnątrz funkcji będziemy reagować na kliknięcia przycisków na klawiaturze. W zależności od klikniętego przycisku, będziemy wykonywać inne operacje. Jeżeli kliknięta zostanie np. strzałka w lewo, to ustawimy prędkość poziomą **vx** świni na **-v**, wyzerujemy prędkość pionową i zmienimy grafikę na __pig_left__.
 
-```js
+```javascript
 onKeyPress("left", () => {
     pig.vx = -pig.v;
     pig.vy = 0;
@@ -212,7 +212,7 @@ onKeyPress("left", () => {
 
 Podobnie postępujemy z pozostałymi kierunkami, odpowiednio zmieniając prędkości świni i jej grafikę.
 
-```js
+```javascript
 onKeyPress("right", () => {
     pig.vx = pig.v;
     pig.vy = 0;
@@ -234,7 +234,7 @@ onKeyPress("down", () => {
 
 ### Pełny kod
 
-```js
+```javascript
 import kaboom from "https://unpkg.com/kaboom/dist/kaboom.mjs";
 
 kaboom({
@@ -313,7 +313,7 @@ Nasza świnia będzie żywić się burakami. Na ekranie zawsze będzie dokładni
 
 Nasz burak będzie reprezentowany przez grafikę __beetroot.png__. Na początku musimy załadować grafikę korzystając z polecenia `loadSprite`. Dopisujemy nowe polecenie na górze naszego programu, zaraz pod poleceniami ładującymi grafiki świni.
 
-```js
+```javascript
 ...
 loadSprite("bg", "images/bg.png");
 loadSprite("pig_down", "images/pig_down.png");
@@ -329,7 +329,7 @@ loadSprite("beet", "images/beetroot.png");
 
 Naszego aktora zapiszemy w zmiennej `beet`. Utworzymy go w scenie **game** i początkowo umieścimy w dowolnym miejscu na ekranie, np. pod współrzędnymi $$(200, 200)$$. Podobnie jak przy świni, do buraka dopiszemy także polecenia `origin` oraz `area`, a także tag **"beet"**.
 
-```js
+```javascript
 const beet = add([
     sprite("beet"),
     pos(200, 200),
@@ -345,7 +345,7 @@ Podczas poruszania się po ekranie, gdy świnia wejdzie w kolizję z burakiem, t
 
 W celu stwierdzenia, że świnia jest w kolizji z burakiem, skorzystamy z instrukcji **onCollide**:
 
-```js
+```javascript
 pig.onCollide("beet", () => {
 });
 ```
@@ -354,26 +354,26 @@ Wszystko będziemy zapisywać w naszej głównej scenie **game**, zaraz pod pole
 
 Po wykryciu kolizji zacznijmy od przemieszczenia buraka w losowe miejsce. Osobno wylosujemy nowe wartości dla współrzędnych $$x$$ oraz $$y$$. Aby jednak burak nie pojawił się na brzegu ekranu, warto zadbać o odpowiedni margines, np $$50$$ pikseli. W celu wylosowania wartości skorzystamy z funkcji **rand**, do której, jako argumenty, przekazujemy przedział, z jakiego chcemy wylosować wartość.
 
-```js
+```javascript
 beet.pos.x = rand(50, width() - 50);
 beet.pos.y = rand(50, height() - 50);
 ```
 
 Następnie zwiększamy prędkość świni. W tym celu modyfikujemy parametr **v**, dodając do niego jakąś niewielką liczbę, np. $$0.8$$. Warto poeksperymentować z różnymi wartościami by dobrać odpowiedni dla siebie poziom trudności.
 
-```js
+```javascript
 pig.v += 0.8;
 ```
 
 Na koniec warto jeszcze dodać efekty dźwiękowe.
 
-```js
+```javascript
 play("pig");
 ```
 
 Cały kod obsługujący kolizję z burakiem prezentuje się następująco:
 
-```js
+```javascript
 pig.onCollide("beet", () => {
     beet.pos.x = rand(50, width() - 50);
     beet.pos.y = rand(50, height() - 50);
@@ -386,7 +386,7 @@ pig.onCollide("beet", () => {
 
 Umieszczamy naszą instrukcję w scenie **game**.
 
-```js
+```javascript
 scene("game", () => {
     add([
         sprite("bg"),
@@ -456,7 +456,7 @@ scene("game", () => {
 
 ### Pełny kod
 
-```js
+```javascript
 import kaboom from "https://unpkg.com/kaboom/dist/kaboom.mjs";
 
 kaboom({
@@ -547,7 +547,7 @@ go("game");
 
 Cóż to za gra bez punktów! Dodanie jednak punktów do naszej gry to żaden problem. Punkty będziemy dostawać za każdego zjedzonego buraka. Na początku dopisujemy punkty w postaci nowej zmiennej **points**. Początkowo punkty ustawiamy na $$0$$. Nową zmienną utworzymy w scenie **game**, zaraz nad funkcją wykrywającą kolizję świni i buraka.
 
-```js
+```javascript
 let points = 0;
 ```
 
@@ -555,7 +555,7 @@ let points = 0;
 
 Zanim przejdziemy do zliczania punktów, wyświetlmy je na ekranie gry. W tym celu dodamy nowy element do naszej sceny za pomocą polecenia `add`. Nowe instrukcje dopisujemy zaraz pod zmienną `points`.
 
-```js
+```javascript
 const pointsLabel = add([
     text(points),
     pos(width() / 2, 50),
@@ -567,7 +567,7 @@ const pointsLabel = add([
 
 Jak już ustaliliśmy, punkty będziemy dostawać za każdego zjedzonego buraka. W takim razie, do części, w której wykrywamy kolizję z burakiem, dopisujemy zwiększanie punktów: `points += 1`. Po zwiększeniu liczby punktów należy także zaktualizować tekst etykiety `pointsLabel` wyświetlającej punkty: `pointsLabel.text = points`.
 
-```js
+```javascript
 pig.onCollide("beet", () => {
     beet.pos.x = rand(50, width() - 50);
     beet.pos.y = rand(50, height() - 50);
@@ -580,7 +580,7 @@ pig.onCollide("beet", () => {
 
 ### Pełny kod
 
-```js
+```javascript
 import kaboom from "https://unpkg.com/kaboom/dist/kaboom.mjs";
 
 kaboom({
