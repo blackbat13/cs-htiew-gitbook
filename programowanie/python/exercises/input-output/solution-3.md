@@ -8,11 +8,11 @@ Napisz program zgodny z poniższą specyfikacją.
 
 #### Dane
 
-* $$a, b$$ - dwie liczby całkowite, różne od zera
+* $$a, b$$ - dwie liczby całkowite, różne od zera.
 
 #### Wynik
 
-* Wynik dzielenia liczb $$a$$ i $$b$$ 
+* Iloraz (wynik dzielenia), iloczyn (wynik mnożenia), suma oraz różnica liczb $$a$$ i $$b$$.
 
 ## Rozwiązanie
 
@@ -20,7 +20,13 @@ Napisz program zgodny z poniższą specyfikacją.
 a = int(input("Podaj pierwszą liczbę: "))
 b = int(input("Podaj drugą liczbę: "))
 
-wynik = a / b
+iloraz = a / b
+iloczyn = a * b
+suma = a + b
+roznica = a - b
 
-print(f"{a} / {b} = {wynik}")
+print("Iloraz:", iloraz)
+print("Iloczyn:", iloczyn)
+print("Suma:", suma)
+print("Różnica:", roznica)
 ```

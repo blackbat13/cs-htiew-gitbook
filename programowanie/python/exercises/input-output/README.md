@@ -8,7 +8,7 @@ Napisz program zgodny z poniższą specyfikacją.
 
 #### Dane
 
-* $$imie$$ - ciąg znaków, małych i wielkich liter alfabetu angielskiego
+* $$imie$$ - ciąg znaków, małych i wielkich liter alfabetu angielskiego.
 
 #### Wynik
 
@@ -32,11 +32,11 @@ Napisz program zgodny z poniższą specyfikacją.
 
 #### Dane
 
-* $$a, b$$ - dwie liczby całkowite
+* $$a, b$$ - dwie liczby całkowite.
 
 #### Wynik
 
-* Suma liczb $$a$$ i $$b$$ 
+* Suma liczb $$a$$ i $$b$$.
 
 ### Przykład
 
@@ -57,11 +57,11 @@ Napisz program zgodny z poniższą specyfikacją.
 
 #### Dane
 
-* $$a, b$$ - dwie liczby całkowite, różne od zera
+* $$a, b$$ - dwie liczby całkowite, różne od zera.
 
 #### Wynik
 
-* Wynik dzielenia liczb $$a$$ i $$b$$ 
+* Iloraz (wynik dzielenia), iloczyn (wynik mnożenia), suma oraz różnica liczb $$a$$ i $$b$$.
 
 ### Przykład
 
@@ -72,7 +72,13 @@ a := 1
 b := 2
 ```
 
-**Wynik**: $$0.5$$ 
+**Wynik**: 
+```
+Iloraz: 0.5
+Iloczyn: 2
+Suma: 3
+Różnica: -1
+``` 
 
 ## Zadanie 4
 
@@ -82,11 +88,11 @@ Napisz program zgodny z poniższą specyfikacją.
 
 #### Dane
 
-* $$a, b$$ - dwie liczby naturalne, większe od zera
+* $$a, b$$ - dwie liczby naturalne, większe od zera.
 
 #### Wynik
 
-* Wynik dzielenia całkowitego oraz reszta z dzielenia liczb $$a$$ i $$b$$ 
+* Wynik dzielenia całkowitego oraz reszta z dzielenia liczb $$a$$ i $$b$$.
 
 ### Przykład
 
@@ -97,7 +103,7 @@ a := 7
 b := 3
 ```
 
-**Wynik**: $$2$$, reszty $$1$$ 
+**Wynik**: $$2$$, reszty $$1$$.
 
 ## Zadanie 5
 
@@ -106,14 +112,14 @@ Napisz program zgodny z poniższą specyfikacją.
 {% hint style="info" %}
 **Podpowiedź**
 
-Skorzystaj z funkcji **`sqrt`** z biblioteki **`cmath`**.
+Skorzystaj z funkcji **`sqrt`** z biblioteki **`math`**.
 {% endhint %}
 
 ### Specyfikacja
 
 #### Dane
 
-* $$a$$ - liczba naturalna
+* $$a$$ - liczba naturalna.
 
 #### Wynik
 
@@ -137,11 +143,11 @@ Napisz program zgodny z poniższą specyfikacją. Wykorzystaj funkcję **min**.
 
 #### Dane
 
-* $$a, b$$ - dwie liczby całkowite
+* $$a, b$$ - dwie liczby całkowite.
 
 #### Wynik
 
-* Mniejsza z liczb $$a$$ i $$b$$, lub dowolna gdy są sobie równe
+* Mniejsza z liczb $$a$$ i $$b$$, lub dowolna gdy są sobie równe.
 
 ### Przykład
 
@@ -162,11 +168,11 @@ Napisz program zgodny z poniższą specyfikacją. Wykorzystaj funkcję **max**.
 
 #### Dane
 
-* $$a, b, c$$ - trzy liczby całkowite
+* $$a, b, c$$ - trzy liczby całkowite.
 
 #### Wynik
 
-* Największa z liczb $$a$$, $$b$$ i $$c$$ , lub dowolna gdy są sobie równe
+* Największa z liczb $$a$$, $$b$$ i $$c$$ , lub dowolna gdy są sobie równe.
 
 ### Przykład
 
@@ -188,11 +194,11 @@ Napisz program zgodny z poniższą specyfikacją.
 
 #### Dane
 
-* $$sekundy$$ - liczba naturalna
+* $$sekundy$$ - liczba naturalna.
 
 #### Wynik
 
-* Czas podany w czytelnej formie $$H:M:S$$ ($$H$$ - godziny, $$M$$ - minuty, $$S$$ - sekundy)
+* Czas podany w czytelnej formie $$H:M:S$$ ($$H$$ - godziny, $$M$$ - minuty, $$S$$ - sekundy).
 
 ### Przykład
 
