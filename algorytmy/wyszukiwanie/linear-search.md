@@ -307,6 +307,12 @@ $$O(n)$$ — liniowa
 [linear-search.md](../../programowanie/dart/algorithms/searching/linear-search.md)
 {% endcontent-ref %}
 
+### Elixir
+
+{% content-ref url="../../programowanie/elixir/algorithms/searching/linear-search.md" %}
+[linear-search.md](../../programowanie/elixir/algorithms/searching/linear-search.md)
+{% endcontent-ref %}
+
 ### Go
 
 {% content-ref url="../../programowanie/go/algorithms/searching/linear-search.md" %}
