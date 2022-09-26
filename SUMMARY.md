@@ -775,6 +775,8 @@
   * [H4x0r](algorithmic-exercises/oig/h4x0r/README.md)
     * [C++](algorithmic-exercises/oig/h4x0r/c++.md)
     * [Python](algorithmic-exercises/oig/h4x0r/python.md)
+  * [Skarpetki](algorithmic-exercises/oig/skarpetki/README.md)
+    * [C++](algorithmic-exercises/oig/skarpetki/c++.md)
   * [Wynik meczu](algorithmic-exercises/oig/wynik-meczu/README.md)
     * [C++](algorithmic-exercises/oig/wynik-meczu/c++.md)
   * [Zmiennoliterowe słowo](algorithmic-exercises/oig/zmiennoliterowe-slowo/README.md)
