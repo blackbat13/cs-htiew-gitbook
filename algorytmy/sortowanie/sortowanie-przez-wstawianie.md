@@ -44,6 +44,7 @@ procedura SortWstaw(A, n):
         2. j := i
         3. Dopóki j > 1 oraz A[j] < A[j-1], to:
             4. Zamień(A[j], A[j - 1])
+            5. j := j - 1
 ```
 
 ### Złożoność
