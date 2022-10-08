@@ -804,7 +804,7 @@
   * [Symulacja rzutu kością](learning-by-games/python/dice-simulator.md)
   * [Gra w zgadywanie](learning-by-games/python/guessing-game.md)
   * [Wstęp do PygameZero](learning-by-games/python/pgzero-intro.md)
-  <!-- * [Złap kosmitę](learning-by-games/python/catch-alien.md) -->
+  * [Złap słońce](learning-by-games/python/catch-the-sun.md)
   * [Głodna świnia](learning-by-games/python/hungry-pig.md)
   * [Flappy Bird](learning-by-games/python/flappy-bird.md)
   * [Pong](learning-by-games/python/pong.md)
