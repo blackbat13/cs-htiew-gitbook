@@ -19,10 +19,6 @@ Umieszczamy w katalogu **images**.
 
 ![Źródło: [kenney.nl](https://www.kenney.nl/)](../../.gitbook/assets/sun.png)
 
-### Struktura plików
-
-TODO
-
 ### Importujemy biblioteki
 
 Zastanówmy się, jakich "narzędzi" będziemy potrzebować. Podstawowym elementem będzie oczywiście nasza biblioteka do tworzenia gier. Docelowo nasze słońce będzie się pojawiało w **losowych** miejscach na ekranie, przyda nam się także biblioteka do liczb losowych. 
