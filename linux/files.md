@@ -42,6 +42,18 @@ Pliki usunięte za pomocą polecenia ``rm`` nie trafiają do kosza, tylko są be
 rm <nazwa pliku>
 ```
 
+### Opcje
+
+Polecenie ``rm`` posiada kilka przydatnych opcji. Opiszemy niektóre z nich.
+
+#### Usuwanie bez potwierdzenia: -f
+
+Opcja ``-f`` (ang. __force__) powoduje usunięcie plików bez pytania o potwierdzenie operacji.
+
+#### Rekursywne usuwanie: -R
+
+Opcja ``-R`` (ang. __recursive__) powoduje usunięcie podanego katalogu wraz z jego pełną zawartością.
+
 ## Kopiowanie plików: cp
 
 Do skopiowania pliku skorzystamy z polecenia **cp** (ang. __copy__).
@@ -60,4 +72,14 @@ Nie zawsze chcemy kopiować pliki, czasem chcemy je po prostu przenieść, lub z
 
 ```
 mv <ścieżka do istniejącego pliku> <ścieżka do nowej lokalizacji>
+```
+
+## Określenie typu pliku: file
+
+Ponieważ w systemie Linux rozszerzenia nie mają znaczenia, aby poznać typ pliku możemy skorzystać z polecenia **file**.
+
+### Składnia
+
+```
+file <ścieżka do pliku>
 ```
