@@ -804,23 +804,23 @@
   * [Symulacja rzutu kością](learning-by-games/python/dice-simulator.md)
   * [Gra w zgadywanie](learning-by-games/python/guessing-game.md)
   * [Wstęp do PygameZero](learning-by-games/python/pgzero-intro.md)
-  <!-- * [Złap kosmitę](learning-by-games/python/catch-alien.md) -->
+  * [Złap słońce](learning-by-games/python/catch-the-sun.md)
   * [Głodna świnia](learning-by-games/python/hungry-pig.md)
   * [Flappy Bird](learning-by-games/python/flappy-bird.md)
   * [Pong](learning-by-games/python/pong.md)
   * [Asteroidy](learning-by-games/python/asteroids.md)
-  * [Kosmos](learning-by-games/python/cosmos.md)
-  * [Czołgi 1](learning-by-games/python/tanks-1.md)
-  * [Czołgi 2](learning-by-games/python/tanks-2.md)
-  * [Gra w kolory](learning-by-games/python/colors-game.md)
-  * [Kolorowa piłka](learning-by-games/python/colorful-ball.md)
-  * [Snake](learning-by-games/python/snake.md)
+  <!-- * [Kosmos](learning-by-games/python/cosmos.md) -->
+  <!-- * [Czołgi 1](learning-by-games/python/tanks-1.md) -->
+  <!-- * [Czołgi 2](learning-by-games/python/tanks-2.md) -->
+  <!-- * [Gra w kolory](learning-by-games/python/colors-game.md) -->
+  <!-- * [Kolorowa piłka](learning-by-games/python/colorful-ball.md) -->
+  <!-- * [Snake](learning-by-games/python/snake.md) -->
   * [Echo](learning-by-games/python/echo.md)
-  * [Pochatujmy!](learning-by-games/python/chat.md)
+  <!-- * [Pochatujmy!](learning-by-games/python/chat.md) -->
   * [Gra Nim](learning-by-games/python/nim.md)
-  * [Gra Nim online](learning-by-games/python/nim-online.md)
-  * [HitmanZero - jeden gracz](learning-by-games/python/hitmanzero-one-player.md)
-  * [HitmanZero - dwóch graczy](learning-by-games/python/hitmanzero-two-players.md)
+  <!-- * [Gra Nim online](learning-by-games/python/nim-online.md) -->
+  <!-- * [HitmanZero - jeden gracz](learning-by-games/python/hitmanzero-one-player.md) -->
+  <!-- * [HitmanZero - dwóch graczy](learning-by-games/python/hitmanzero-two-players.md) -->
 * [Lua](learning-by-games/lua/README.md)
   * [Głodna świnia](learning-by-games/lua/hungry-pig.md)
   * [Asteroidy](learning-by-games/lua/asteroids.md)
