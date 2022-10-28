@@ -3,7 +3,7 @@
 Zestaw materiałów do nauki programowania i rozwiązywania zadań algorytmicznych w języku Dart.
 
 {% embed url="https://dart.dev/" %}
-Dart
+Oficjalna strona języka Dart
 {% endembed %}
 
 ## Popularność języka

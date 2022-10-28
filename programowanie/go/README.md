@@ -1,6 +1,6 @@
 # Go
 
-Zestaw materiałów do nauki programowania i rozwiązywania zadań algorytmicznych w języku Go.
+Go to otwarto-źródłowy język programowania wspierany przez Google. Wykorzystywany jest m.in. do tworzenia aplikacji webowych i konsolowych.
 
 {% embed url="https://go.dev/" %}
 Go

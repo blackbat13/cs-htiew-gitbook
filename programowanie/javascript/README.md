@@ -1,9 +1,9 @@
 # JavaScript
 
-Zestaw materiałów do nauki programowania i rozwiązywania zadań algorytmicznych w języku JavaScript.
+JavaScript zwany jest także językiem Internetu. Wykorzystywany jest przede wszystkim na stronach internetowych, głównie do obsługi interakcji z użytkownikiem. Między innymi dlatego cieszy się dużą popularnością. Wbrew swojej nazwie, JavaScript ma niewiele wspólnego z językiem Java, a historycznie bliżej mu do języka C.
 
 {% embed url="https://www.javascript.com/" %}
-JavaScript
+Strona języka JavaScript
 {% endembed %}
 
 ## Popularność języka
