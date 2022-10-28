@@ -836,6 +836,10 @@
   * [Efekt vintage](graphics/gimp/tutorials/vintage_effect.md)
   * [Wyróżnienie elementu](graphics/gimp/tutorials/color_reveal.md)
 
+## Tworzenie stron internetowych
+
+* [Wprowadzenie](web-design/README.md)
+
 ## Sieci komputerowe
 
 * [Słownik pojęć](networking/terms.md)
