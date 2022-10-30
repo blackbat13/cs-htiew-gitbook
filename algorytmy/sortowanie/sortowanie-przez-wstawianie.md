@@ -6,6 +6,8 @@ description: Insertion sort
 
 ## Opis problemu
 
+Siedzisz przy stole, karty już rozdane. Spoglądasz na karty trzymane w ręce i stwierdzasz, że jak ich nie ułożysz w sensownej kolejności to się nie połapiesz. Zaczynasz więc od drugiej karty i przesuwasz ją w lewo, by trafiła na swoje miejsce. Teraz bierzesz trzecią i ponownie przesuwasz ją w lewo, aż będzie poprawnie ułożona. Podobnie postępujesz z czwartą i kolejnymi kartami: każdą kolejną bierzesz do ręki i przesuwasz w lewo, aż **wstawisz** ją na właściwe miejsce na ręce. Tym o to sposobem zrealizowałeś algorytm **sortowania przez wstawianie**.
+
 ### Specyfikacja
 
 #### Dane:
@@ -18,6 +20,8 @@ description: Insertion sort
 * Posortowana niemalejąco tablica $$A$$
 
 ### Przykład
+
+Na początek przyjrzyjmy się poniższym animacjom. Spróbuj prześledzić jak kolejne wartości zamieniają się miejscami. Czy potrafisz, własnymi słowami, opisać przebieg algorytmu?
 
 #### Dane
 
@@ -36,6 +40,8 @@ A := [6, 5, 3, 1, 8, 7, 2, 4]
 
 ## Rozwiązanie
 
+Zaczynamy od drugiego elementu tablicy. Będziemy go przesuwać w lewo tak długo, aż nie trafi na swoje miejsce. Innymi słowy będziemy przesuwać go w lewo, dopóki nie trafi na początek tablicy i dopóki element po jego lewej stronie będzie większy. I tak postępujemy z każdym kolejnym elementem tablicy.
+
 ### Pseudokod
 
 ```
@@ -50,6 +56,8 @@ procedura SortWstaw(A, n):
 ### Złożoność
 
 $$O(n^2)$$ — kwadratowa
+
+Dwie zagnieżdżone pętle. Chociaż warunkowa pętla wewnętrzna wykonuje zawsze co najwyżej tyle obrotów, ile wynosi indeks obecnie przesuwanego elementu, to i tak otrzymujemy złożoność kwadratową, co można dość łatwo samodzielnie policzyć.
 
 ## Implementacja
 
