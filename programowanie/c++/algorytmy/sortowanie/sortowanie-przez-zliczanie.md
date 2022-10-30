@@ -16,18 +16,15 @@ using namespace std;
 /// Sort ascending array of specified length
 /// \param array - array to sort
 /// \param n - length of the given array
-void countingSort(int array[], int n) {
-    int occurrences[100];
+void countingSort(int array[], int n, int m) {
+    int occurrences[m + 1] = {};
     int k = 0;
-    for (int i = 0; i < 100; i++) {
-        occurrences[i] = 0;
-    }
 
     for (int i = 0; i < n; i++) {
         occurrences[array[i]]++;
     }
 
-    for (int i = 0; i < 100; i++) {
+    for (int i = 0; i <= m; i++) {
         for (int j = 0; j < occurrences[i]; j++) {
             array[k] = i;
             k++;
@@ -49,8 +46,9 @@ void printArray(int array[], int n) {
 int main() {
     int array[10] = {7, 3, 0, 1, 5, 2, 5, 19, 10, 5};
     int n = 10;
+    int m = 20;
     
-    countingSort(array, n);
+    countingSort(array, n, m);
 
     printArray(array, n);
 
@@ -60,6 +58,6 @@ int main() {
 
 ### Link do implementacji
 
-{% embed url="https://ideone.com/pUF5Jp" %}
+{% embed url="https://ideone.com/6dHsYZ" %}
 Sortowanie przez zliczanie
 {% endembed %}
