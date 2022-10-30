@@ -36,7 +36,7 @@ Następnie przechodzimy przez kolejne elementy naszej tablicy i zwiększamy licz
 
 ```
 procedura SortZlicz(A, n, m):
-    1. liczniki := tablica [1..m] wypełniona zerami
+    1. liczniki := tablica [0..m] wypełniona zerami
     2. Od i := 1 do n, wykonuj:
         3. liczniki[A[i]] := liczniki[A[i]] + 1
 
