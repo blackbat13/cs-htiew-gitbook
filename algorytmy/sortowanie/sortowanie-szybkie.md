@@ -6,7 +6,12 @@ description: Quicksort
 
 ## Opis problemu
 
-TODO
+Sortowanie szybkie to jeden ze szczególnych algorytmów. W ogólności jest bardzo wydajną metodą sortowania, ale w szczególnych przypadkach jego złożoność jest nie lepsza niż sortowania bąbelkowego.
+
+Sortowanie szybkie opiera się bardzo mocno na rekurencji i podziale tablicy na dwie części. Ogólna idea przedstawia się następująco:
+1. Znajdujemy element środkowy, tzw. pivot.
+2. Elementy mniejsze przemieszczamy od pivota przemieszczamy na jego lewą stroną, elementy większe natomiast przemieszczamy na prawo.
+3. Rekurencyjnie sortujemy lewą część i prawą część tablicy.
 
 ### Specyfikacja
 
@@ -19,13 +24,13 @@ TODO
 
 * Posortowana niemalejąco tablica $$A$$
 
-### Prezentacja
+## Rozwiązanie
+
+By lepiej zrozumieć ten zaawansowany algorytm, prześledźmy jego przebieg na poniższej prezentacji.
 
 {% file src="../../.gitbook/assets/Sortowanie Szybkie.pdf" %}
 Sortowanie szybkie
 {% endfile %}
-
-## Rozwiązanie
 
 ### Pseudokod
 
