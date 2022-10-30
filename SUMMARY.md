@@ -54,7 +54,7 @@
   * [Złożoność](algorytmy/wprowadzenie/zlozonosc.md)
 * [Wyszukiwanie](algorytmy/wyszukiwanie/README.md)
   * [Wyszukiwanie liniowe](algorytmy/wyszukiwanie/linear-search.md)
-  * [Wyszukiwanie binarne](algorytmy/wyszukiwanie/wyszukiwanie-binarne.md)
+  * [Wyszukiwanie binarne](algorytmy/wyszukiwanie/binary-search.md)
   * [Wyszukiwanie minimum i maksimum](algorytmy/wyszukiwanie/min-or-max.md)
   * [Jednoczesne wyszukiwanie minimum i maksimum](algorytmy/wyszukiwanie/jednoczesne-znajdowanie-minimum-i-maksimum.md)
   * [Znajdowanie lidera w zbiorze](algorytmy/wyszukiwanie/znajdowanie-lidera-w-zbiorze.md)
