@@ -45,7 +45,7 @@ Gdy już wyjdziemy z pętli pozostaje nam sprawdzić, czy znaleźliśmy poszukiw
 ### Pseudokod
 
 ```
-funkcja SzukajBinIter(n, A, k)
+funkcja SzukajBinarnie(n, A, k)
     1. pocz := 1
     2. kon := n
     3. Dopóki pocz < kon, wykonuj:
@@ -78,7 +78,7 @@ W rozwiązaniu rekurencyjnym zamiast rozmiaru tablicy podajemy początek i konie
 ### Pseudokod
 
 ```
-funkcja SzukajBinRek(A, k, pocz, kon)
+funkcja SzukajBinarnie(A, k, pocz, kon)
     1. Jeżeli pocz >= kon, to:
         2. Jeżeli A[pocz] == k, to:
             3. Zwróć pocz, zakończ
@@ -88,10 +88,10 @@ funkcja SzukajBinRek(A, k, pocz, kon)
     6. srodek := (pocz + kon) div 2
     
     7. Jeżeli k > A[srodek], to:
-        8. Zwróć SzukajBinRek(A, k, srodek+1, kon)
+        8. Zwróć SzukajBinarnie(A, k, srodek+1, kon)
     
     9. W przeciwnym przypadku:
-        10. Zwróć SzukajBinRek(A, k, pocz, srodek)
+        10. Zwróć SzukajBinarnie(A, k, pocz, srodek)
 ```
 
 ### Złożoność 
