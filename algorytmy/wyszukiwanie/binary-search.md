@@ -67,6 +67,10 @@ funkcja SzukajBinarnie(n, A, k)
 **div** oznacza dzielenie całkowite
 {% endhint %}
 
+### Schemat blokowy
+
+![](../../.gitbook/assets/binarne\_iter.png)
+
 ### Złożoność
 
 $$O(\log n)$$ - logarytmiczna
