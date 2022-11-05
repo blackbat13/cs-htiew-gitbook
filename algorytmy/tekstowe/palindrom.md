@@ -6,23 +6,19 @@ description: Sprawdzanie, czy wyraz jest palindromem
 
 ## Opis problemu
 
-TODO
-
-{% hint style="info" %}
 **Palindrom** to wyraz, który czytany od lewej do prawej i od prawej do lewej jest taki sam.
-{% endhint %}
 
 ### Specyfikacja
 
-#### Dane:
+#### Dane
 
-* $$n$$ - długość tekstu
-* $$tekst[1..n]$$ - ciąg znaków o długości $$n$$, numerowanych od jedynki
+* $$n$$ — długość tekstu
+* $$tekst[1..n]$$ — ciąg znaków o długości $$n$$, numerowanych od jedynki
 
-#### Wynik:
+#### Wynik
 
-* $$True$$ - jeżeli $$tekst$$ jest palindromem
-* $$False$$ - w przeciwnym przypadku
+* $$True$$ — jeżeli $$tekst$$ jest palindromem
+* $$False$$ — w przeciwnym przypadku
 
 ### Przykład 1
 
@@ -60,7 +56,7 @@ Wyraz **tama** czytany od tyłu to **amat**, nie jest on więc palindromem.
 
 ## Rozwiązanie
 
-TODO
+Jednym ze sposobów na sprawdzenie, czy wyraz jest palindromem, jest przejście znak po znaku od lewej aż do środka i porównywanie ze znakami od prawej strony. Można to zrealizować za pomocą jednej pętli i odpowiedniego obliczania indeksu znaku "od końca". Dla przykładu, jeżeli mamy wyraz o długości $$6$$ znaków, to będziemy ze sobą porównywali parami znaki na pozycjach: $$(1, 6), (2, 5), (3, 4)$$. W momencie gdy tylko stwierdzimy, że znaki na odpowiadających sobie pozycjach się różnią, możemy zwrócić jako wynik *fałsz*, ponieważ oznacza to, że wyraz nie jest palindromem. Jeżeli natomiast przejdziemy tak przez wszystkie pary znaków i nie stwierdzimy sprzeczności, to po wyjściu z pętli wiemy, że wyraz jest palindromem, zwracamy więc wartość *prawda*.
 
 ### Pseudokod
 
@@ -75,7 +71,9 @@ funkcja czyPalindrom(n, tekst):
 
 ### Złożoność
 
-$$O(n/2)\to O(n)$$ - liniowa&#x20;
+$$O(n/2)\to O(n)$$ — liniowa
+
+Przechodzimy pętlą od $$1$$ do połowy długości wyrazu (czyli do $$\lfloor\frac{n}{2}\rfloor$$) porównując ze sobą odpowiednie pary znaków, stąd złożoność liniowa.
 
 ## Implementacja
 
