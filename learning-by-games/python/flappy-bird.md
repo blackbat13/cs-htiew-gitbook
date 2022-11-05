@@ -323,7 +323,7 @@ Co chcemy zrobić, gdy ptak wyleci poza ekran?
 Chcemy zrestartować grę, wywołujemy więc przygotowaną wcześniej funkcję *resetuj*.
 
 ```python
-if ptak.y < 0 or ptak.y > WIDTH:
+if ptak.y < 0 or ptak.y > HEIGHT:
     resetuj()
 ```
 
@@ -359,7 +359,7 @@ if ptak.colliderect(rura_gora):
 ```
 
 Oczywiście nie interesuje nas tylko uderzenie w górną rurę, ale także i w dolną.
-W gruncie rzeczy ptak może zachaczyć o górną rurę **lub** dolną.
+W gruncie rzeczy ptak może zahaczyć o górną rurę **lub** dolną.
 Dodajmy więc to do naszego warunku.
 
 ```python
@@ -371,7 +371,7 @@ Podobnie jak w przypadku, gdy ptak wyleci poza ekran, chcemy zresetować grę.
 
 ```python
 if ptak.colliderect(rura_gora) or ptak.colliderect(rura_dol):
-    resetuj() 
+    resetuj()
 ```
 
 Gotową instrukcję dopisujemy na koniec części aktualizującej, czyli funkcji *update*.
