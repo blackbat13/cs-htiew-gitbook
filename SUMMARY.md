@@ -859,6 +859,12 @@
 * [Prawa dostępu](linux/permissions.md)
 * [Procesy](linux/processes.md)
 * [Grep](linux/grep.md)
+* [Bash](linux/bash/README.md)
+  * [Obsługa wejścia-wyjścia](linux/bash/input-output.md)
+  * [Obliczenia](linux/bash/math.md)
+  * [Polecenia](linux/bash/commands.md)
+  * [Pliki](linux/bash/files.md)
+  * [Instrukcja warunkowa](linux/bash/conditionals.md)
 
 <!-- ## E-głosowanie
 
