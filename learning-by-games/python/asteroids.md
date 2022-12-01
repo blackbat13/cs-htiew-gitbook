@@ -38,6 +38,8 @@ Muzyka do gry Asteroidy
 Założenie gry jest proste: poruszamy statkiem u dołu ekranu, omijamy asteroidy, strzelamy do nich i zdobywamy punkty!
 Powyższa animacja pokazuje, jak będzie wyglądać nasza gra.
 
+## Podstawowy szablon
+
 ### Biblioteki
 
 Na początek dopisujemy odpowiednie biblioteki do naszej gry.
@@ -62,6 +64,31 @@ HEIGHT = 900
 def draw():
     screen.blit("tlo", (0, 0))
 ```
+
+### Pełny kod
+
+```python
+import pgzrun
+import pygame
+import random
+
+
+WIDTH = 600
+HEIGHT = 900
+
+
+def draw():
+    screen.blit("tlo", (0, 0))
+
+
+def update():
+    pass
+
+
+pgzrun.go()
+```
+
+## Statek
 
 ### Tworzymy statek
 
@@ -98,6 +125,41 @@ def update():
         statek.x += statek.px
 ```
 
+### Pełny kod
+
+```python
+import pgzrun
+import pygame
+import random
+
+
+WIDTH = 600
+HEIGHT = 900
+
+statek = Actor("statek")
+statek.x = WIDTH / 2
+statek.y = HEIGHT - 60
+statek.px = 5
+
+
+def draw():
+    screen.blit("tlo", (0, 0))
+    statek.draw()
+
+
+def update():
+    mysz_x, mysz_y = pygame.mouse.get_pos()
+    if mysz_x < statek.x:
+        statek.x -= statek.px
+    if mysz_x > statek.x:
+        statek.x += statek.px
+
+
+pgzrun.go()
+```
+
+## Meteory
+
 ### Przygotowujemy meteory
 
 Czas przygotować meteory.
@@ -125,9 +187,11 @@ def dodaj_meteor():
 
 ### Dodajemy losowo meteory
 
-W części aktualizującej będziemy losowo dodawać meteory w każdej klatce, z odpowiednio małym prawdopodobieństwem.
+W części **aktualizującej** będziemy losowo dodawać meteory w każdej klatce, z odpowiednio małym prawdopodobieństwem.
 
 ```python
+def update():
+    ...
     if random.randint(0, 250) <= 1:
         dodaj_meteor()
 ```
@@ -137,9 +201,12 @@ W części aktualizującej będziemy losowo dodawać meteory w każdej klatce, z
 Teraz czas na aktualizację pozycji meteorów.
 W tym celu musimy przejść przez wszystkie elementy naszej listy i dla każdego wykonać odpowiednie operacje.
 Robimy to w części aktualizującej.
+Ponieważ będziemy usuwać meteory, które wyleciały poza ekran, to w pętli musimy przejść przez **kopię** listy meteory: `meteory[:]`.
 
 ```python
-    for met in meteory:
+def update():
+    ...
+    for met in meteory[:]:
         met.y += met.py
         if met.y > HEIGHT + 50:
             meteory.remove(met)
@@ -147,14 +214,69 @@ Robimy to w części aktualizującej.
 
 ### Rysujemy meteory
 
-Aby narysować meteory, musimy ponownie przejść przez całą listę i narysować każdy meteor osobno.
+Aby narysować meteory, w części **rysującej** musimy ponownie przejść przez całą listę i narysować każdy meteor osobno.
 
 ```python
+def draw():
+    ...
     for met in meteory:
         met.draw()
 ```
 
-### Pełna gra
+### Pełny kod
+
+```python
+import pgzrun
+import pygame
+import random
+
+
+WIDTH = 600
+HEIGHT = 900
+
+statek = Actor("statek")
+statek.x = WIDTH / 2
+statek.y = HEIGHT - 60
+statek.px = 5
+
+meteory = []
+
+
+def draw():
+    screen.blit("tlo", (0, 0))
+    statek.draw()
+    for met in meteory:
+        met.draw()
+
+
+def update():
+    mysz_x, mysz_y = pygame.mouse.get_pos()
+    if mysz_x < statek.x:
+        statek.x -= statek.px
+    if mysz_x > statek.x:
+        statek.x += statek.px
+    if random.randint(0, 250) <= 1:
+        dodaj_meteor()
+    for met in meteory[:]:
+        met.y += met.py
+        if met.y > HEIGHT + 50:
+            meteory.remove(met)
+
+
+def dodaj_meteor():
+    grafika = random.choice(["meteor1", "meteor2", "meteor3", "meteor4"])
+    met = Actor(grafika)
+    met.x = random.randint(20, WIDTH - 20)
+    met.y = -10
+    met.py = random.randint(2, 10)
+    met.pa = random.randint(-5, 5)
+    meteory.append(met)
+
+
+pgzrun.go()
+```
+
+## Pełna gra
 
 ```python
 import pgzrun
