@@ -4,7 +4,7 @@
 
 System binarny, zwany także systemem dwójkowym, to podstawowy system liczbowy dla komputerów. Liczby w tym systemie reprezentujemy korzystając z dwóch cyfr: $$0$$ i $$1$$. Pozwala to na stosunkowo łatwą techniczną interpretację przesyłanych danych, np. niskie i wysokie napięcie.
 
-## Konwersja z dziesiętnego na binarny - opis
+## Konwersja z dziesiętnego na binarny
 
 Konwersja z systemu dziesiętnego na binarny polega na dzieleniu całkowitym liczby przez $$2$$ i zapisywaniu reszt z dzielenia tak długo, aż jako wynik dzielenia otrzymamy $$0$$. Następnie otrzymane reszty z dzielenia odczytujemy od końca i w ten sposób otrzymujemy zapis binarny liczby naturalnej. W celu lepszego zrozumienia opisanej procedury przeanalizujmy poniższy przykład.
 
@@ -27,9 +27,9 @@ $$
 25_{10}=11001_2
 $$
 
-## Konwersja z dziesiętnego na binarny - algorytm
+### Algorytm
 
-Opiszemy teraz bardziej formalnie algorytm konwersji liczb naturalnych z systemu dziesiętnego na binarny.
+Opiszemy teraz bardziej formalnie algorytm konwersji liczb naturalnych z systemu dziesiętnego na binarny. Zacznijmy od specyfikacji.
 
 ### Specyfikacja
 
@@ -53,7 +53,7 @@ Funkcja DziesietnyNaBinarny(n):
     6. Zwróc binarna
 ```
 
-## Konwersja z binarnego na dziesiętny - opis
+## Konwersja z binarnego na dziesiętny
 
 W systemie binarnym, podobnie jak w innych systemach, do każdej cyfry przypisana jest potęga podstawy systemu: w tym wypadku potęga liczby dwa. Ostatniej cyfrze (tzw. najmniej znaczącemu bitowi) przypisujemy potęgę zerową ($$2^0$$). Przedostatniej: pierwszą potęgę ($$2^1$$). Kolejnej: $$2^2$$ itd. W celu obliczenia wartości liczby binarnej w systemie dziesiętnym, każdą cyfrę przemnażamy przez przypisaną do niej potęgę dwójki i wynik sumujemy, tak jak pokazano na poniższym przykładzie.
 
