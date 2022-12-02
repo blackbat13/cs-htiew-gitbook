@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../kotlin/algorytmy/metody-numeryczne/broken-reference/" %}
-[broken-reference](../../../kotlin/algorytmy/metody-numeryczne/broken-reference/)
+{% content-ref url="../../../../algorytmy/numeral-systems/u2.md" %}
+[System U2](../../../../algorytmy/numeral-systems/u2.md)
 {% endcontent-ref %}
 
 ## Z U2 do dziesiętnego
@@ -38,7 +38,3 @@ print(f"{number_u2} (U2) = {number_decimal} (10)")
 {% embed url="https://ideone.com/5KbrSA" %}
 Konwersja z systemu U2 do dziesiętnego
 {% endembed %}
-
-### Opis implementacji
-
-TODO

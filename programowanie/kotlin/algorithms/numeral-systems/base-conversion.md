@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="../../../../algorytmy/numeral-systems/README.md" %}
+[Systemy liczbowe](../../../../algorytmy/numeral-systems/README.md)
 {% endcontent-ref %}
 
 ## Konwersja z dziesiętnego
@@ -39,10 +39,6 @@ print(f'{number} (10) = {converted} ({base})')
 Konwersja z dziesiętnego
 {% endembed %}
 
-### Opis implementacji
-
-TODO
-
 ## Konwersja na dziesiętny
 
 ```python
@@ -77,7 +73,3 @@ print(f'{number} ({base}) = {converted} (10)')
 {% embed url="https://ideone.com/KxEbY6" %}
 Konwersja na dziesiętny
 {% endembed %}
-
-### Opis implementacji
-
-TODO

@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="../../../../algorytmy/numeral-systems/README.md" %}
+[Systemy liczbowe](../../../../algorytmy/numeral-systems/README.md)
 {% endcontent-ref %}
 
 ## Konwersja z dziesiętnego
@@ -49,10 +49,6 @@ int main() {
 Konwersja z dziesiętnego
 {% endembed %}
 
-### Opis implementacji
-
-TODO
-
 ## Konwersja na dziesiętny
 
 ```cpp
@@ -97,7 +93,3 @@ int main() {
 {% embed url="https://ideone.com/xzzAaC" %}
 Konwersja na dziesiętny
 {% endembed %}
-
-### Opis implementacji
-
-TODO
