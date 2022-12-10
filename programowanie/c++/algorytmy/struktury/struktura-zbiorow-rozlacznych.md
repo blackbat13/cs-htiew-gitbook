@@ -83,7 +83,3 @@ int main() {
 {% embed url="https://ideone.com/PoJw34" %}
 Struktura zbiorów rozłącznych
 {% endembed %}
-
-### Opis implementacji
-
-TODO
