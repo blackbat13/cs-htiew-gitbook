@@ -70,8 +70,6 @@ Zliczanie liczby spójnych składowych w grafie nieskierowanym
 
 ### Opis implementacji
 
-TODO
-
 ![Przykładowy graf wykorzystany w implementacji](../../../../.gitbook/assets/example_graph_disconnected.png)
 
 {% embed url="http://graphonline.ru/en/?graph=ntlitKWvBAKeDOgo" %}
