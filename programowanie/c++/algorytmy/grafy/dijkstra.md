@@ -93,9 +93,6 @@ Algorytm Dijkstry
 
 ### Opis implementacji
 
-TODO
-
 ![Przykładowy graf wykorzystany w implementacji](../../../../.gitbook/assets/example_graph_weighted.png)
 
 {% embed url="http://graphonline.ru/en/?graph=DZlFqSBPNgdHwNXK" %}
-
