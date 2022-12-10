@@ -113,5 +113,5 @@ main-debug: $(OBJS)
 all: main
 
 clean:
-    rm -f $(OBJS) $(DEPS) main main-debug
+    rm -f $(OBJS) main main-debug
 ```
