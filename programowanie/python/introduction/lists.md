@@ -25,7 +25,7 @@ Możemy ją jednak wypełnić wartościami. Wówczas lista będzie miała długo
 tab = [1, 2, 3, 4, 5]
 ```
 
-### Tablica o długości zadanej przez zmienną
+### Lista o długości zadanej przez zmienną
 
 Nie możemy podać, ile elementów ma mieć lista, możemy ją jednak wygenerować używając tzw. _list comprehension_.
 
