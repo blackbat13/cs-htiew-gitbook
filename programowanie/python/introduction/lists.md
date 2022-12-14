@@ -45,6 +45,15 @@ W celu odczytania wartości zapisanej pod zadanym indeksem używamy notacji nawi
 print(tab[2])
 ```
 
+### Ujemne indeksy
+
+Standardowo, by dostać się do zadanego elementu listy, podajemy jego indeks licząc od początku listy.
+Możemy też jednak liczyć odległość od końca listy. Wtedy korzystamy z ujemnych indeksów, gdzie $$-1$$ oznacza ostatni element listy, $$-2$$ przedostatni itd.
+
+```python
+print(tab[-1])
+```
+
 ### Zmiana wartości pod zadanym indeksem
 
 Poszczególne elementy listy możemy traktować podobnie do zmiennych, możemy więc na nich przeprowadzać standardowe operacje, w szczególności przypisanie nowej wartości.
