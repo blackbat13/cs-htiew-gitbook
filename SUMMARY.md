@@ -872,6 +872,13 @@
   * [Instrukcja warunkowa](linux/awk/conditionals.md)
   * [Bloki](linux/awk/blocks.md)
   * [Pętle](linux/awk/loops.md)
+* [Perl](linux/perl/README.md)
+  * [Obsługa wejścia-wyjścia](linux/perl/input-output.md)
+  * [Tablice](linux/perl/arrays.md)
+  * [Instrukcja warunkowa](linux/perl/conditionals.md)
+  * [Pętle](linux/perl/loops.md)
+  * [Pliki](linux/perl/files.md)
+  * [Fork](linux/perl/fork.md)
 
 <!-- ## E-głosowanie
 
