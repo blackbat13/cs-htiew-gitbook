@@ -1,5 +1,7 @@
 # Obliczenia
 
+W celu wykonania obliczeń arytmetycznych zamykamy je w podwójne nawiasy okrągłe opatrzone z przodu znakiem dolara: `$(( ))`.
+
 ### Przykład
 
 ```bash
