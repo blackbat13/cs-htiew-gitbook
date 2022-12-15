@@ -8,19 +8,19 @@
 # gt : greater than
 if [ 150 -gt 25 ]
 then
-echo "Warunek wiekszosci spelniony"
+    echo "Warunek wiekszosci spelniony"
 fi
 
 # lt: less than
 if [ 25 -lt  150 ]
 then
-echo "Warunek mniejszosci spelniony"
+    echo "Warunek mniejszosci spelniony"
 fi
 
 # eq: equal
 if [ 25 -eq  25 ]
 then
-echo "Warunek rownosci spelniony"
+    echo "Warunek rownosci spelniony"
 fi
 ```
 
