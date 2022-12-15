@@ -867,6 +867,11 @@
   * [Polecenia](linux/bash/commands.md)
   * [Pliki](linux/bash/files.md)
   * [Instrukcja warunkowa](linux/bash/conditionals.md)
+* [AWK](linux/awk/README.md)
+  * [Wyrazy](linux/awk/words.md)
+  * [Instrukcja warunkowa](linux/awk/conditionals.md)
+  * [Bloki](linux/awk/blocks.md)
+  * [Pętle](linux/awk/loops.md)
 
 <!-- ## E-głosowanie
 
