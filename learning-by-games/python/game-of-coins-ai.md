@@ -316,3 +316,335 @@ if __name__ == "__main__":
     game = GameOfCoins([Human_Player(), AI_Player(algorithm)])
     game.play()
 ```
+
+## Gra z grafiką
+
+Teraz zajmiemy się tworzeniem graficznej wersji naszej gry z wykorzystaniem **Pygame Zero**.
+
+### Grafiki do pobrania
+
+Zanim zaczniemy, pobierz poniższe grafiki, rozpakuj i umieść w katalogu **images** w projekcie gry.
+
+{% file src="../../.gitbook/assets/gameOfCoins-grafiki.zip" %}
+Grafiki do gry w monety
+{% endfile %}
+
+### Szablon gry
+
+Na początku utwórz nowy plik **gameOfCoinsPygame.py**.
+Wewnątrz umieszczamy standardowy szablon.
+
+```python
+import pgzrun
+import random
+
+WIDTH = 840
+HEIGHT = 600
+
+
+def draw():
+    screen.fill("white")
+
+
+def update():
+    pass
+
+
+pgzrun.go()
+```
+
+### Biblioteki
+
+Poza standardowymi bibliotekami pgzrun i random będą nam jeszcze potrzebne dwie inne: **easyAI** oraz utworzona przez nas "biblioteka" **gameOfCoins**.
+Na samej górze dopisujemy więc:
+
+```python
+from gameOfCoins import GameOfCoins
+from easyAI import *
+```
+
+### Inicjalizacja
+
+Ponieważ kilka elementów musimy sobie przygotować przed uruchomieniem gry (np. monety, obiekt gry), to utworzymy sobie nową funkcję, na końcu, zaraz przed `pgzrun.go()`.
+
+```python
+...
+def init():
+    pass
+
+pgzrun.go()
+```
+
+Naszą funkcję wywołamy sobie zaraz przed uruchomieniem gry.
+
+```python
+def init():
+    pass
+
+init()
+pgzrun.go()
+```
+
+### Tworzymy obiekt gry
+
+W naszej graficznej wersji będziemy korzystać z wcześniej przygotowanej klasy **GameOfCoins**.
+W tym celu na początku kodu, zaraz przed `draw()`, tworzymy sobie zmienną **game**, która na wstępnie będzie miała przypisaną pustą wartość.
+
+```python
+...
+game = None
+
+def draw():
+    ...
+```
+
+W części inicjalizującej utworzymy obiekt naszej gry, a także zdefiniujemy graczy, podobnie jak robiliśmy wcześniej.
+
+```python
+...
+def init():
+    global game
+
+    algorithm = Negamax(13)
+    game = GameOfCoins([Human_Player(), AI_Player(algorithm)])
+...
+```
+
+### Przygotowujemy monety
+
+Monety będziemy przechowywać w liście, którą tworzymy na początku kodu:
+
+```python
+...
+coins = []
+
+def draw():
+    ...
+```
+
+Nasze monety przygotujemy sobie w części inicjalizującej.
+
+```python
+...
+def init():
+    ...
+    x = 55
+    y = 50
+
+    for i in range(1, game.pile + 1):
+        coins.append(Actor("coin", (x, y)))
+        x += 84 + 20
+
+        if i % 8 == 0:
+            y += 84 + 30
+            x = 55
+...
+```
+
+Wyświetlamy monety na ekranie w części rysującej **draw**.
+
+```python
+...
+def draw():
+    ...
+    for cn in coins:
+        cn.draw()
+...
+```
+
+Po uruchomieniu powinniśmy zobaczyć kilka rzędów monet na ekranie.
+
+### Przygotowujemy dostępne ruchy
+
+Dostępne dla gracza ruchy będziemy reprezentować za pomocą kości do gry.
+Na początku przygotowujemy pustą listę kości.
+
+```python
+...
+dices = []
+
+def draw():
+    ...
+```
+
+Teraz czas wypełnić naszą listę odpowiednimi wartościami.
+
+```python
+...
+def init():
+    ...
+    x = WIDTH / 2 - (len(game.possible_moves()) * 88 - 20) / 2 + 34
+    y = HEIGHT - 88
+    for move in game.possible_moves():
+        dices.append(Actor(f"dice{move}", (x, y)))
+        x += 68 + 20
+...
+```
+
+Możemy już wyświetlić kości na ekranie.
+
+```python
+...
+def draw():
+    ...
+    for die in dices:
+        die.draw()
+...
+```
+
+Jak teraz uruchomimy grę, powinniśmy zobaczyć kości z możliwymi do wykonania ruchami.
+
+### Usuwamy monety
+
+Zanim przejdziemy do wykonywania ruchów to przyda nam się dodatkowa funkcja do usuwania monet z planszy, którą nazwiemy **remove_coins**.
+Umieszczamy ją przed funkcją **init**.
+
+```python
+...
+def remove_coins(number):
+    for i in range(number):
+        coins.pop()
+
+def init():
+    ...
+```
+
+### Odczytujemy ruch gracza
+
+Teraz możemy przejść do odczytania ruchu gracza.
+Tworzymy funkcję **on_mouse_down**, która pozwala nam odczytywać kliknięcia myszy.
+Umieszczamy ją pod funkcją **update**.
+
+```python
+...
+def update():
+    ...
+
+def on_mouse_down(pos):
+    for i in range(len(dices)):
+        if dices[i].collidepoint(pos) and game.current_player == 1:
+            move = game.possible_moves()[i]
+            if int(move) <= game.pile:
+                game.play_move(move)
+                remove_coins(int(move))
+...
+```
+
+### Wykonujemy ruch AI
+
+Teraz przyszła wreszcie pora na ruch sztucznej inteligencji.
+Ruchy AI będziemy wykonywać w części aktualizującej **update**.
+
+```python
+...
+def update():
+    if game.current_player == 2 and not game.is_over():
+        move = game.get_move()
+        remove_coins(int(move))
+        game.play_move(move)
+...
+```
+
+Teraz możemy już zagrać ze sztuczną inteligencją!
+
+### Pełna gra
+
+```python
+import pgzrun
+from gameOfCoins import GameOfCoins
+from easyAI import *
+import random
+
+WIDTH = 840
+HEIGHT = 600
+
+game = None
+
+dices = []
+
+coins = []
+
+win = 0
+timer = 120
+
+
+def draw():
+    screen.fill("white")
+    for die in dices:
+        die.draw()
+
+    for cn in coins:
+        cn.draw()
+
+    if win == 1:
+        screen.draw.text("You win!", center=(WIDTH / 2, HEIGHT / 3), color="blue", fontsize=120)
+    elif win == 2:
+        screen.draw.text("AI wins!", center=(WIDTH / 2, HEIGHT / 3), color="blue", fontsize=120)
+    elif timer > 0 and game.current_player == 2:
+        screen.draw.text("AI thinks...", center=(WIDTH / 2, HEIGHT - 200), color="red", fontsize=90)
+    elif game.current_player == 1:
+        screen.draw.text("Your move!", center=(WIDTH / 2, HEIGHT - 200), color="red", fontsize=90)
+
+
+def update():
+    global win, timer
+
+    timer -= 1
+
+    if game.current_player == 2 and not game.is_over() and timer <= 0:
+        move = game.get_move()
+        remove_coins(int(move))
+        game.play_move(move)
+
+        if game.is_over():
+            win = 1
+
+
+def on_mouse_down(pos):
+    global win, timer
+
+    for i in range(len(dices)):
+        if dices[i].collidepoint(pos) and game.current_player == 1:
+            move = game.possible_moves()[i]
+            if int(move) <= game.pile:
+                game.play_move(move)
+                remove_coins(int(move))
+                timer = random.randint(120, 260)
+
+                if game.is_over():
+                    win = 2
+
+
+def remove_coins(number):
+    for i in range(number):
+        coins.pop()
+
+
+def init():
+    global game
+
+    algorithm = Negamax(13)
+
+    game = GameOfCoins([Human_Player(), AI_Player(algorithm)])
+
+    x = WIDTH / 2 - (len(game.possible_moves()) * 88 - 20) / 2 + 34
+    y = HEIGHT - 88
+    for move in game.possible_moves():
+        dices.append(Actor(f"dice{move}", (x, y)))
+        x += 68 + 20
+
+    x = 55
+    y = 50
+
+    for i in range(1, game.pile + 1):
+        coins.append(Actor("coin", (x, y)))
+        x += 84 + 20
+
+        if i % 8 == 0:
+            y += 84 + 30
+            x = 55
+
+
+init()
+pgzrun.go()
+```
