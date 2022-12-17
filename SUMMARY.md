@@ -811,7 +811,7 @@
   * [Flappy Bird](learning-by-games/python/flappy-bird.md)
   * [Pong](learning-by-games/python/pong.md)
   * [Asteroidy](learning-by-games/python/asteroids.md)
-  <!-- * [Kosmos](learning-by-games/python/cosmos.md) -->
+  * [Kosmos](learning-by-games/python/cosmos.md)
   <!-- * [Czołgi 1](learning-by-games/python/tanks-1.md) -->
   <!-- * [Czołgi 2](learning-by-games/python/tanks-2.md) -->
   <!-- * [Gra w kolory](learning-by-games/python/colors-game.md) -->
