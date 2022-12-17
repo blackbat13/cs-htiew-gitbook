@@ -820,6 +820,7 @@
   * [Echo](learning-by-games/python/echo.md)
   <!-- * [Pochatujmy!](learning-by-games/python/chat.md) -->
   * [Gra Nim](learning-by-games/python/nim.md)
+  * [Gra w monety z AI](learning-by-games/python/game-of-coins-ai.md)
   <!-- * [Gra Nim online](learning-by-games/python/nim-online.md) -->
   <!-- * [HitmanZero - jeden gracz](learning-by-games/python/hitmanzero-one-player.md) -->
   <!-- * [HitmanZero - dwóch graczy](learning-by-games/python/hitmanzero-two-players.md) -->
