@@ -124,4 +124,11 @@ print("Wygrałem!")
 
 ### Uruchamiamy grę
 
+Teraz czas, aby uruchomić swoją pierwszą grę!
+Spróbuj uruchomić ją kilka razy i podać różne wartości.
+Czy komputer zawsze wygra?
+
+Możesz także przetestować naszą grę w poniższym okienku.
+Kliknij zielony przycisk z napisem **Run**, aby ją uruchomić.
+
 {% embed url="https://replit.com/@damiankurpiewski/NaiwnaGra" %}
