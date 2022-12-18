@@ -33,7 +33,7 @@ ukryta = random.randint(1, 10)
 
 Przyszedł czas na komunikację z użytkownikiem. Najpierw użytkownik wprowadzi jakąś liczbę, następnie komputer sprawdzi, czy jest ona taka sama, jak wylosowana na początku wartość. Jeżeli nie, to użytkownik będzie miał kolejną próbę. I tak w kółko, aż nie odgadnie.
 
-Można się domyśleć, że będziemy potrzebowali pętli. Nie wiemy jednak, ile prób będzie potrzebował wykonać użytkownik, zanim uda mu się odgadnąć. Może wystarczy jedna próba, a może będzie potrzeba ich $$10$$ . Jak więc zastosować pętlę?
+Można się domyśleć, że będziemy potrzebowali pętli. Nie wiemy jednak, ile prób będzie potrzebował wykonać użytkownik, zanim uda mu się odgadnąć. Może wystarczy jedna próba, a może będzie potrzeba ich $$10$$. Jak więc zastosować pętlę?
 
 ### Wczytujemy liczbę od użytkownika
 
@@ -44,7 +44,7 @@ liczba = int(input("Podaj liczbę: "))
 ```
 
 {% hint style="warning" %}
- Pamiętamy, żeby skorzystać z polecenia `int`, ponieważ potrzebujemy liczbę, a nie tekst!
+Pamiętamy, żeby skorzystać z polecenia `int`, ponieważ potrzebujemy liczbę, a nie tekst!
 {% endhint %}
 
 ### Zgadujemy aż do skutku
@@ -71,7 +71,7 @@ while liczba != ukryta:
 
 ### Powiadamiamy użytkownika o sukcesie
 
-Teraz pozostało nam wypisać stosowny komunikat, gdy użytkownik odgadnie ukrytą wartość. Jak sprawdzić, że użytkownikowi się udało? Moglibyśmy porównać ze sobą wartości zmiennych `liczba` i `ukryta`. Nie ma jednak takiej potrzeby. Z naszej pętli możemy wyjść tylko wtedy, gdy jej **warunek przestanie być prawdziw**y, tzn. gdy `liczba` i `ukryta` będą sobie równe. To znaczy, że gdy wyjdziemy z pętli, użytkownik odgadł poprawnie. W takim razie, po wyjściu z pętli (czyli bez wcięcia) wypisujemy stosowny komunikat:
+Teraz pozostało nam wypisać stosowny komunikat, gdy użytkownik odgadnie ukrytą wartość. Jak sprawdzić, że użytkownikowi się udało? Moglibyśmy porównać ze sobą wartości zmiennych `liczba` i `ukryta`. Nie ma jednak takiej potrzeby. Z naszej pętli możemy wyjść tylko wtedy, gdy jej **warunek przestanie być prawdziwy**, tzn. gdy `liczba` i `ukryta` będą sobie równe. To znaczy, że gdy wyjdziemy z pętli, użytkownik odgadł poprawnie. W takim razie, po wyjściu z pętli (czyli bez wcięcia) wypisujemy stosowny komunikat:
 
 ```python
 print("Tak!")
@@ -103,6 +103,13 @@ print("Tak!")
 ```
 
 ### Testujemy działanie
+
+Uruchom swoją grę.
+Ile prób zajęło Ci odgadnięcie liczby?
+Uruchom ją ponownie.
+Za którym razem teraz udało Ci się odgadnąć?
+
+Możesz także przetestować działanie gry poniżej.
 
 {% embed url="https://replit.com/@damiankurpiewski/Zgadywanie1#main.py" %}
 
@@ -192,6 +199,11 @@ print("Trafiona!")
 
 ### Testujemy działanie
 
+Uruchom grę i spróbuj odgadnąć liczbę.
+Czy potrafisz wymyśleć **strategię**, która pozwoli Ci odgadnąć w jak najmniejszej liczbie prób?
+
+Poniżej możesz także przetestować działanie gry.
+
 {% embed url="https://replit.com/@damiankurpiewski/Zgadywanie2" %}
 
 ## Zgadywanie ze zliczeniem prób
@@ -275,6 +287,12 @@ print("Liczba prób:", ile_prob)
 ```
 
 ### Testujemy działanie
+
+Uruchom grę kilkukrotnie.
+Jaka była najmniejsza liczba prób potrzebna do odgadnięcia liczby?
+A jaka była największa?
+
+Poniżej także możesz przetestować działanie gry.
 
 {% embed url="https://replit.com/@damiankurpiewski/Zgadywanie3" %}
 
@@ -387,5 +405,11 @@ print("Liczba prób:", ile_prob)
 ```
 
 ### Testujemy działanie
+
+Uruchom swoją skończoną grę.
+Spróbuj zgadywać dla różnych przedziałów.
+Jaki jest największy przedział, w którym uda Ci się odgadnąć liczbę?
+
+Poniżej także możesz przetestować działanie gry.
 
 {% embed url="https://replit.com/@damiankurpiewski/Zgadywanie4" %}
