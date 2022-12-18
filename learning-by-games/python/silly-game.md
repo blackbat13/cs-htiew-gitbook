@@ -69,8 +69,10 @@ liczba = int(liczba_tekst)
 
 Już teraz warto uruchomić program i sprawdzić, czy wszystko działa.
 
+W celu uruchomienia naszej gry klikamy **prawym przyciskiem myszy** gdzieś w edytorze i wybieramy zieloną strzałkę z napisem **Run 'naiwna_gra'**.
+
 {% hint style="warning" %}
-Pamiętaj, żeby testować swoje programy jak najczęściej! Pozwoli to na bieżąco rozwiązywać wszelkie błędy i uniknąć późniejszej frustracji.
+Pamiętaj, żeby testować swoje gry i programy jak najczęściej! Pozwoli to na bieżąco rozwiązywać wszelkie błędy i uniknąć późniejszej frustracji.
 {% endhint %}
 
 ### Tworzymy nową, większą liczbę
