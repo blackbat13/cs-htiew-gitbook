@@ -14,7 +14,7 @@ Jako przykład losowości często podaje się rzut kością: aby wylosować licz
 
 ## Pojedynczy rzut
 
-Zaczniemy od pojedynczego rzutu kością. Zamysł jest prosty: program losuje liczbę od $$1$$ do $$6$$ , a następnie wypisuje ją na ekranie z odpowiednim komunikatem.
+Zaczniemy od pojedynczego rzutu kością. Zamysł jest prosty: program losuje liczbę od $$1$$ do $$6$$, a następnie wypisuje ją na ekranie z odpowiednim komunikatem.
 
 ### Losujemy liczbę
 
@@ -66,6 +66,15 @@ print("Kości zostały rzucone. Wynik to:", wynik)
 ```
 
 ### Testujemy działanie
+
+Czas przetestować nasz program.
+Warto uruchomić go kilkukrotnie.
+Czy za każdym razem uzyskamy inny wynik?
+A może wyniki będą się powtarzać?
+
+Wybierz jakąś liczbę od $$1$$ do $$6$$. Za którym uruchomieniem program ją wylosował?
+
+Poniżej także możesz sprawdzić, jakie liczby zostaną wylosowane.
 
 {% embed url="https://replit.com/@damiankurpiewski/Kosci1" %}
 
@@ -139,6 +148,10 @@ for i in range(ile_razy):
 ```
 
 ### Testujemy działanie
+
+Uruchamiamy swój program i sprawdzamy, jakie wyniki tym razem dostaniemy.
+
+Możesz także sprawdzić działanie programu poniżej.
 
 {% embed url="https://replit.com/@damiankurpiewski/Kosci2" %}
 
@@ -226,6 +239,11 @@ print("Szóstka wypadła", szostki, "razy")
 ```
 
 ### Testujemy działanie
+
+Czas uruchomić finalną wersję naszego symulatora rzutu kością!
+Ile szóstek Tobie uda się wylosować?
+
+Poniżej możesz także przetestować działanie programu.
 
 {% embed url="https://replit.com/@damiankurpiewski/Kosci3" %}
 
