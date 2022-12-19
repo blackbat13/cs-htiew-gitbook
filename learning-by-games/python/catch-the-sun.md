@@ -19,6 +19,14 @@ Umieszczamy w katalogu **images**.
 
 ![Źródło: [kenney.nl](https://www.kenney.nl/)](../../.gitbook/assets/sun.png)
 
+## Podstawowy szablon
+
+Zaczynamy od utworzenia podstawowego szablonu naszej gry.
+Jeśli jeszcze tego nie zrobiliśmy, jest to także dobry moment na utworzenie nowego **projektu**. 
+Możemy go nazwać np. *ZlapSlonce* (bez polskich znaków). 
+Instalujemy także bibliotekę *pgzero* i tworzymy plik *main.py* (jeżeli nie został utworzony automatycznie).
+Pobieramy także pokazaną wyżej grafikę słońca i umieszczamy ją w katalogu *images* wewnątrz naszego projektu.
+W celu utworzenia nowego katalogu klikamy prawym przyciskiem myszy na głównym katalogu projektu (w naszym przypadku *ZlapSlonce*) i wybieramy New->directory.
 ### Importujemy biblioteki
 
 Zastanówmy się, jakich "narzędzi" będziemy potrzebować. Podstawowym elementem będzie oczywiście nasza biblioteka do tworzenia gier. Docelowo nasze słońce będzie się pojawiało w **losowych** miejscach na ekranie, przyda nam się także biblioteka do liczb losowych. 
@@ -70,6 +78,9 @@ pgzrun.go()
 
 ### Pełny program z komentarzami
 
+Nasza pełna gra powinna wyglądać teraz podobnie, jak pokazano poniżej.
+Komentarza oczywiście są opcjonalne, ale pozwalają lepiej zrozumieć, co się dzieje w danym miejscu w kodzie.
+
 ```python
 # Importujemy bibliotekę Pygame Zero do tworzenia gier
 import pgzrun
@@ -100,11 +111,11 @@ W tym momencie warto już uruchomić naszą "grę" i sprawdzić, czy wszystko dz
 
 ## Rysowanie słońca
 
-Teraz zajmiemy się dodaniem do gry naszej głównej postaci: słońca. Postacie w *pygame zero* reprezentować będziemy jako **aktorów**. Każdy aktor ma swoje właściwości, takie jak grafika czy położenie na ekranie. Aktorzy mogą też wchodzić w interakcję z innymi postaciami (także aktorami) i pozostałymi elementami gry.
+Teraz zajmiemy się dodaniem do gry naszej głównej postaci: słońca. Postacie w *Pygame Pero* reprezentować będziemy jako **aktorów**. Każdy aktor ma swoje właściwości, takie jak grafika czy położenie na ekranie. Aktorzy mogą też wchodzić w interakcję z innymi postaciami (także aktorami) i pozostałymi elementami gry.
 
 ### Tworzymy nowego aktora gry
 
-Zaczniemy od utworzenia naszego nowego aktora: słońca. W tym celu potrzebna nam będzie nowa zmienna, w której zapamiętamy informacje o aktorze. Zmienną nazwiemy *sun*, czyli słońce po angielsku. Naszego aktora utworzymy zaraz na początku naszego programu, zaraz pod zdefiniowaniem rozmiarów okna gry. W celu utworzenia nowego aktora skorzystamy z polecenia `Actor`, a jako argument podamy nazwę grafiki reprezentującej nasze słońce. Pamiętaj, że grafika musi się znajdować w katalogu **images**.
+Zaczniemy od utworzenia naszego nowego aktora: słońca. W tym celu potrzebna nam będzie nowa zmienna, w której zapamiętamy informacje o aktorze. Zmienną nazwiemy *sun*, czyli słońce po angielsku. Naszego aktora utworzymy zaraz na początku naszego programu, zaraz pod zdefiniowaniem rozmiarów okna gry, a przed częścią rysującą *draw*. W celu utworzenia nowego aktora skorzystamy z polecenia `Actor`, a jako argument podamy nazwę grafiki reprezentującej nasze słońce. Pamiętaj, że grafika musi się znajdować w katalogu **images**.
 
 ```python
 sun = Actor("sun")
@@ -112,7 +123,7 @@ sun = Actor("sun")
 
 ### Rysujemy słońce na ekranie
 
-Gdy już utworzyliśmy naszego aktora, czas go narysować na ekranie. W tym celu dodamy instrukcję `sun.draw()` na **końcu** części rysującej (`draw`).
+Gdy już utworzyliśmy naszego aktora, czas go narysować na ekranie. W tym celu dodajemy instrukcję `sun.draw()` na **końcu** części rysującej (`draw`).
 
 ```python
 def draw():
@@ -121,6 +132,8 @@ def draw():
 ```
 
 ### Pełny program
+
+Kod naszej gry prezentuje się dotąd tak, jak pokazano poniżej.
 
 ```python
 import pgzrun
@@ -157,9 +170,9 @@ W tym momencie nasze słońce jest dość statyczne. Chcemy jednak, by zaznało 
 
 ### Przemieszczamy słońce w losowe miejsce
 
-Zacznijmy od przemieszczenia słońca w losowe miejsce. Będziemy teraz pracować w części **aktualizującej** (`update`), ponieważ nasze słońce powinno się przemieszczać przez cały czas trwania gry. Aby przemieścić słońce w inne miejsce na ekranie, powinniśmy zmienić jego **współrzędne**, tzn. parametry `sun.x` oraz `sun.y`. Przypiszemy im losowe wartości korzystając z metody `random.randint`, do której jako parametry przekażemy przedział, z którego chcemy wylosować wartość. Musimy pamiętać, że współrzędna $x$ powinna się mieścić w szerokości (**WIDTH**) ekranu, a współrzędna $y$ powinna się mieścić w wysokości (**HEIGHT**) ekranu. Dodatkowo warto dodać niewielki margines, powiedzmy $80$ pikseli, tak aby nasze słońce nie wychodziło poza brzegi okna gry.
+Zacznijmy od przemieszczenia słońca w losowe miejsce. Będziemy teraz pracować w części **aktualizującej** (`update`), ponieważ nasze słońce powinno się przemieszczać przez cały czas trwania gry. Aby przemieścić słońce w inne miejsce na ekranie, powinniśmy zmienić jego **współrzędne**, tzn. parametry `sun.x` oraz `sun.y`. Przypiszemy im losowe wartości korzystając z metody `random.randint`, do której jako parametry przekażemy przedział, z którego chcemy wylosować wartość. Musimy pamiętać, że współrzędna $$x$$ powinna się mieścić w szerokości (**WIDTH**) ekranu, a współrzędna $$y$$ powinna się mieścić w wysokości (**HEIGHT**) ekranu. Dodatkowo warto dodać niewielki **margines**, powiedzmy $$80$$ pikseli, tak aby nasze słońce nie wychodziło poza brzegi okna gry.
 
-W części aktualizującej (`update`) usuwamy więc instrukcję `pass` i dopisujemy losowanie nowych współrzędnych naszego słońca.
+W części aktualizującej (`update`) usuwamy więc instrukcję `pass` i dopisujemy losowanie nowych współrzędnych naszego słońca (pamiętając o wcięciach).
 
 ```python
 def update():
@@ -178,7 +191,7 @@ sun = Actor("sun")
 sun.timer = 0
 ```
 
-Teraz, w części aktualizującej, powinniśmy zmniejszać nasz timer o jeden w każdej **klatce** gry. Następnie sprawdzimy, czy timer osiągnął wartość mniejszą lub równą zero, a jeżeli tak, to ustawimy słońce w losowym miejscu (tak jak poprzednio) i ustawimy timer na jakąś ustaloną z góry wartość, np $60$. Zakładając, że nasza gra będzie działać w sześćdziesięciu klatkach na sekundę, to wartość $60$ będzie odpowiadać jednej sekundzie.
+Teraz, w części aktualizującej, powinniśmy zmniejszać nasz timer o jeden w każdej **klatce** gry. Następnie sprawdzimy, czy timer osiągnął wartość mniejszą lub równą zero, a jeżeli tak, to ustawimy słońce w losowym miejscu (tak jak poprzednio) i ustawimy timer na jakąś ustaloną z góry wartość, np $$60$$. Zakładając, że nasza gra będzie działać w sześćdziesięciu klatkach na sekundę, to wartość $$60$$ będzie odpowiadać jednej sekundzie.
 
 ```python
 def update():
@@ -191,6 +204,8 @@ def update():
 ```
 
 ### Pełny program
+
+Dotychczasowy kod naszej gry zaprezentowany jest poniżej.
 
 ```python
 import pgzrun
@@ -226,11 +241,11 @@ Uruchamiamy ponownie i sprawdzamy, czy nasze słońce porusza się już w bardzi
 
 ## Zliczanie punktów
 
-Czas na zliczanie punktów. W tym celu będziemy potrzebowali miejsce (zmienną), gdzie zapamiętamy punkty. Wyświetlimy je na ekranie i będziemy dodawać (lub odejmować) za każde kliknięcie.
+Czas na zliczanie punktów. W tym celu będziemy potrzebowali miejsca (zmienną), gdzie zapamiętamy punkty. Wyświetlimy je na ekranie i będziemy dodawać (lub odejmować) za każde kliknięcie.
 
 ### Wyświetlamy punkty
 
-Na początku dopiszemy punkty do naszego aktora, podobnie jak zrobiliśmy z parametrem *timer*. Punkty zaczynamy zliczać od zera.
+Na początku dopiszemy punkty do naszego aktora, podobnie jak zrobiliśmy z parametrem *timer*. Punkty zaczynamy zliczać od zera, a nazwiemy je **points**, czyli punkty z angielskiego.
 
 ```python
 sun = Actor("sun")
@@ -238,24 +253,63 @@ sun.timer = 0
 sun.points = 0
 ```
 
-Teraz czas wyświetlić punkty na ekranie, tak abyśmy mogli sprawdzać, czy naliczają się poprawnie. W tym celu skorzystamy z metody `screen.draw.text`, którą umieścimy na samym końcu części rysującej (`draw`).
+Teraz czas wyświetlić punkty na ekranie, tak abyśmy mogli sprawdzać, czy naliczają się poprawnie. W tym celu skorzystamy z metody `screen.draw.text`, którą umieścimy na samym końcu części rysującej (`draw`). Do tej metody musimy przekazać kilka parametrów. W celu ułatwienia sobie pracy, przed wartością każdego parametru dopiszemy jego nazwę i znak przyipsania $$=$$.
+Parametry, jakie przekażemy, to:
+
+- **text** - Tekst do wyświetlenia na ekranie, czyli nasza liczba punktów. Ponieważ musimy podać tekst, a nie liczbę, to punkty zamieniamy na tekst za pomocą funkcji **str**: `str(sun.points)`.
+- **center** - Współrzędne miejsca, w którym ma się znaleźć **środek** wyświetlanego tekstu. Chcemy, aby punkty były wyświetlane u góry ekranu (np. $$50$$ pikseli od góry), na środku (czyli w połowie szerokości). W takim razie podajemy parę współrzędnych zapisaną w nawiasach okrągłych: `(WIDTH / 2, 50)`.
+- **color** - Kolor wyświetlanego tekstu. Podobnie jak przy tle możemy wybrać własny kolor, np. czerwony (**red**).
+- **fontsize** - Rozmiar czcionki. Jeżeli chcemy, by punkty były dobrze widoczne, warto podać jakąś dużą wartość, np. $$100$$.
+
+Pełne wywołanie metody `screen.draw.text` będzie więc wyglądało następująco:
 
 ```python
-screen.draw.text(str(sun.points), center=(WIDTH / 2, 50), color="red", fontsize=100)
+def draw():
+    ...
+    screen.draw.text(text=str(sun.points), center=(WIDTH / 2, 50), color="red", fontsize=100)
 ```
 
-Pełna implementacja funkcji rysującej wygląda więc następująco:
+Pełna implementacja funkcji rysującej wygląda natomiast tak:
 
 ```python
 def draw():
     screen.fill("skyblue")
     sun.draw()
-    screen.draw.text(str(sun.points), center=(WIDTH / 2, 50), color="red", fontsize=100)
+    screen.draw.text(text=str(sun.points), center=(WIDTH / 2, 50), color="red", fontsize=100)
 ```
+
+Teraz możemy uruchomić naszą grę i zobaczyć, czy podoba nam się sposób wyświetlania punktów. Jeżeli nie, to zawsze możemy go poprawić.
 
 ### Zliczanie punktów
 
-W celu zliczania punktów skorzystamy z metody odczytującej kliknięcia na ekranie.
+W celu zliczania punktów skorzystamy z funkcji odczytującej kliknięcia na ekranie.
+Funkcja ta nazywa się `on_mouse_down` i przyjmuje parametr `pos` określający **pozycję**, czyli współrzędne, kliknięcia myszy na ekranie.
+
+Naszą nową funkcję dopisujemy na końcu naszego kodu, zaraz pod częścią aktualizującą (**update**), ale **przed** wywołaniem `pgzrun.go()`.
+
+```python
+def on_mouse_down(pos):
+```
+
+Wewnątrz funkcji sprawdzamy, czy kliknęliśmy w słońce, czy też nie. Sprawdzimy to za pomocą **instrukcji warunkowej** (*if*), a także skorzystamy z metody **collidepoint**, która pozwala sprawdzić, czy zadany aktor (w naszym przypadku słońce) jest w **kolizji** z punktem na ekranie (w naszym przypadku z miejscem kliknięcia myszy). Metodę tą wywołamy na naszym aktorze **sun**, a przekażemy do niej jako paramter współrzędne kliknięcia myszy (**pos**).
+
+Nasza instrukcja będzie więc wyglądała następująco:
+
+```python
+def on_mouse_down(pos):
+    if sun.collidepoint(pos):
+```
+
+Jeżeli faktycznie udało nam się kliknąć w słońce, to powinniśmy zrobić dwie rzeczy: zwiększyć liczbę punktów o jeden (`sun.points += 1`) oraz zresetować timer (`sun.timer = 0`). Spróbujmy więc to zapisać.
+
+```python
+def on_mouse_down(pos):
+    if sun.collidepoint(pos):
+        sun.points += 1
+        sun.timer = 0
+```
+
+Co jednak w przeciwnym przypadku (**else**), gdy nie udało nam się trafić w słońce? Wtedy powinniśmy stracić jeden punkt (`sun.points -= 1`) i także zresetować timer (`sun.timer = 0`). Nasza funkcja będzie więc wyglądała następująco:
 
 ```python
 def on_mouse_down(pos):
@@ -267,15 +321,15 @@ def on_mouse_down(pos):
         sun.timer = 0
 ```
 
+Warto w tym momencie uruchomić naszą grę i sprawdzić, jak zmieniają się punkty wyświetlane na ekranie.
+
 ### Zwiększanie poziomu trudności
 
-Aby gra stawała się coraz trudniejsza, im więcej mamy punktów, uzależnimy wartość parametru *timer* od liczby zdobytych punktów. W tym celu zmodyfikujemy linijkę w części aktualizującej, gdzie resetujemy nasz licznik.
+Aby gra stawała się tym trudniejsza, im więcej mamy punktów, uzależnijmy wartość parametru *timer* od liczby zdobytych punktów. W tym celu zmodyfikujemy linijkę w części aktualizującej, gdzie resetujemy nasz licznik. Możemy to zrobić na kilka sposobów. Jednym z pomysłów jest odjęcie od liczby $$60$$ (reprezentującej jedną sekundę) liczby zdobytych punktów. W ten sposób, im więcej będziemy mieli punktów, tym słońce będzie szybciej przeskakiwać po ekranie. Natomiast jak będzie nam słabo szło i często będziemy tracić punkty, to słońce będzie wolniejsze i łatwiejsze do złapania.
 
-```python
-sun.timer = 60 - sun.points
-```
+W ostatniej linicje części *update* zamiast `sun.timer = 0` zapisujemy `sun.timer = 60 - sun.points`.
 
-Pełna implementacja funkcji aktualizującej wygląda więc następująco:
+Pełna implementacja funkcji aktualizującej wygląda więc teraz następująco:
 
 ```python
 def update():
@@ -288,6 +342,8 @@ def update():
 ```
 
 ### Pełny program
+
+Tak prezentuje się kod naszej pełnej gry:
 
 ```python
 import pgzrun
@@ -304,7 +360,7 @@ sun.points = 0
 def draw():
     screen.fill("skyblue")
     sun.draw()
-    screen.draw.text(str(sun.points), center=(WIDTH / 2, 50), color="red", fontsize=100)
+    screen.draw.text(text=str(sun.points), center=(WIDTH / 2, 50), color="red", fontsize=100)
 
 
 def update():
@@ -328,6 +384,6 @@ def on_mouse_down(pos):
 pgzrun.go()
 ```
 
-### Testujemy działanie
+### Gramy
 
 Czas zagrać w naszą grę! Ile punktów Tobie uda się zdobyć?

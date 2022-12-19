@@ -114,7 +114,7 @@ Gra działa w nieskończonej, ukrytej pętli. Przez cały czas, od uruchomienia 
 Nazywamy to **pętlą gry**. Co każdą klatkę animacji aktualizowane są pozycje graczy, ich interakcja z graczem i sobą nawzajem, życia przeciwników, punkty itp.
 Ogólnie aktualizowany jest **stan gry**. Wszystkie te zmiany są także nanoszone na ekran, czyli rysowane w oknie gry.
 
-## Plik .exe
+## Dla zaawansowanych: plik .exe
 
 Standardowo do uruchomienia naszych gier potrzebny będzie Python, wraz z zainstalowaną biblioteką pgzero.
 Naturalnym jednak jest, że chcemy się pochwalić innym naszymi grami!
