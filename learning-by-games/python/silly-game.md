@@ -88,6 +88,10 @@ W celu uruchomienia naszej gry klikamy **prawym przyciskiem myszy** gdzieś w ed
 Pamiętaj, żeby testować swoje gry i programy jak najczęściej! Pozwoli to na bieżąco rozwiązywać wszelkie błędy i uniknąć późniejszej frustracji.
 {% endhint %}
 
+{% hint style="info" %}
+Pycharm na bieżąco zapisuje zmiany w plikach, więc nie musisz się martwić, że utracisz swoje dane.
+{% endhint %}
+
 ### Tworzymy nową, większą liczbę
 
 Przejdźmy teraz do roli komputera. Jego zadaniem jest wypisanie liczby o jeden większej od tej, którą podał użytkownik. W tym celu utworzymy nową liczbę, o jeden większą od tej wczytanej od użytkownika. Tworzymy nową zmienną `nowa_liczba` i przypisujemy do niej wynik dodania liczby $$1$$ do wartości wczytanej od użytkownika zapisanej w zmiennej `liczba`:
