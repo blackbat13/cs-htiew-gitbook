@@ -30,9 +30,18 @@ Jest to jednak idealna gra na początek. Przejdźmy więc do działania!
 
 {% embed url="https://youtu.be/WxS5iz4bNxM" %}
 
+{% hint style="info" %}
+W naszym projekcie będziemy mogli stworzyć wiele różnych aplikacji i gier. Czasem jednak wygodniej będzie utworzyć nowy projekt do kolejnej gry, aby zachować lepszy porządek. Wszystko zależy od Ciebie!
+{% endhint %}
+
 ### Tworzymy nowy plik
 
 Klikamy prawym przyciskiem myszy na główny katalog naszej gry, następnie wybieramy **New->Python file**. Nazwijmy nasz plik *naiwna_gra*.
+Utworzony przez Ciebie plik powinien mieć **rozszerzenie .py**. Oznacza to, że cała nazwa pliku będzie wyglądała następująco: *naiwna_gra.py*. 
+
+{% hint style="info" %}
+Rozszerzenie **.py** to format skryptów zapisanych w języku Python.
+{% endhint %}
 
 ### Wczytujemy liczbę od gracza
 
@@ -48,11 +57,15 @@ Nie wystarczy jednak tylko wywołać odpowiednie polecenie. Musimy jeszcze gdzie
 liczba_tekst = input("Podaj liczbę: ")
 ```
 
-Gdy używamy polecenia `input`, to wartość wpisana przez użytkownika będzie zawsze wczytana jako **tekst**. My jednak potrzebujemy liczbę. W tym celu skorzystamy z kolejnego polecenia: `int`. Posłuży nam ono do zamiany tekstu na liczbę. Jako parametr tego polecenia podajemy tekst do zamiany na liczbę, w naszym przypadku ten tekst zapisany jest w zmiennej `liczba_tekst`:
+Gdy używamy polecenia `input`, to wartość wpisana przez użytkownika będzie zawsze wczytana jako **tekst**. My jednak potrzebujemy liczbę. W tym celu skorzystamy z kolejnego polecenia: `int` (ang. **integer** czyli liczba całkowita). Posłuży nam ono do zamiany tekstu na liczbę całkowitą. Jako parametr tego polecenia podajemy tekst do zamiany na liczbę, w naszym przypadku ten tekst zapisany jest w zmiennej `liczba_tekst`:
 
 ```python
 int(liczba_tekst)
 ```
+
+{% hint style="info" %}
+W celu zamiany wprowadzonego tekstu na liczbę rzeczywistą skorzystalibyśmy z polecenia `float`.
+{% endhint %}
 
 Oczywiście wynik polecenia musimy gdzieś zapisać. Zapamiętamy go w nowej zmiennej o nazwie `liczba`:
 
