@@ -64,7 +64,7 @@ W języku Python zmienne nazywamy zwyczajowo z małych liter alfabetu angielskie
 {% endhint %}
 
 {% hint style="warning" %}
-W nazwach zmiennych nie możemy używać spacji ani innych białych znaków, takich jak tabulacje. Powinniśmy także unikać polskich znaków czy liter innych niż litery alfabetu angieslkiego. Ponadto nazwa zmiennej nie może zaczynać się od cyfry i nie powinna zawierać większości znaków specjalnych takich jak dolar (`$`) czy ampersant (`&`).
+W nazwach zmiennych nie możemy używać spacji ani innych białych znaków, takich jak tabulacje. Powinniśmy także unikać polskich znaków czy liter innych niż litery alfabetu angielskiego. Ponadto nazwa zmiennej nie może zaczynać się od cyfry i nie powinna zawierać większości znaków specjalnych takich jak dolar (`$`) czy ampersant (`&`).
 {% endhint %}
 
 Gdy używamy polecenia `input`, to wartość wpisana przez użytkownika będzie zawsze wczytana jako **tekst**. My jednak potrzebujemy liczbę. W tym celu skorzystamy z kolejnego polecenia: `int` (ang. **integer** czyli liczba całkowita). Posłuży nam ono do zamiany tekstu na liczbę całkowitą. Jako parametr tego polecenia podajemy tekst do zamiany na liczbę, w naszym przypadku ten tekst zapisany jest w zmiennej `liczba_tekst`:
@@ -171,5 +171,5 @@ Kliknij zielony przycisk z napisem **Run**, aby ją uruchomić.
 {% hint style="info" %}
 ### Błędy
 
-Podczas tworzenia kolejnych gier i programów popełnianie błędów stanie się chlebem powszednim. Nie należy się nimi przejmować, wręcz przeciwnie! Niektóre błędy mogą wręcz przynieść nieoczekiwane i zaskakujące rezultaty. Oczywiście czasami zdarzy nam się także popełnić błąd, który uniemożliwi uruchomienie naszego programu. W takim przypadku, przy próbie uruchomienia, w konsoli pojawią się stosowne komunikaty zaznaczone czerwonym kolerem. Warto się przyjrzeć tym komunikatom! Często będą wskazywać linijkę, w której wystąpił błąd, a także opiszą przyczynę samego błędu. Na początku w większości błędy będą ograniczać się do braku jakiegoś znaku, np. naiwasu końcowego, albo literówki w nazwie zmiennej czy polecenia.
+Podczas tworzenia kolejnych gier i programów popełnianie błędów stanie się chlebem powszednim. Nie należy się nimi przejmować, wręcz przeciwnie! Niektóre błędy mogą wręcz przynieść nieoczekiwane i zaskakujące rezultaty. Oczywiście czasami zdarzy nam się także popełnić błąd, który uniemożliwi uruchomienie naszego programu. W takim przypadku, przy próbie uruchomienia, w konsoli pojawią się stosowne komunikaty zaznaczone czerwonym kolorem. Warto się przyjrzeć tym komunikatom! Często będą wskazywać linijkę, w której wystąpił błąd, a także opiszą przyczynę samego błędu. Na początku w większości błędy będą ograniczać się do braku jakiegoś znaku, np. nawiasu końcowego, albo literówki w nazwie zmiennej czy polecenia.
 {% endhint %}
