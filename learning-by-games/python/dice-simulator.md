@@ -4,17 +4,21 @@
 
 Losowość w grach jest bardzo ważna, to dzięki niej różne mechaniki gry i jej postaci mogą zachowywać się w nieprzewidywalny sposób. Dlatego, zanim przejdziemy dalej, potrzebujemy zrozumieć, jak możemy skorzystać z losowości w Pythonie. 
 
-Jako przykład losowości często podaje się rzut kością: aby wylosować liczbę od $$1$$ do $$6$$ , rzuć kością. To właśnie zrobimy. Napiszemy symulator rzutu kością, a dokładniej program, który będzie losował liczbę od $$1$$ do $$6$$ i wypisywał ją na ekranie.
+Jako przykład losowości często podaje się rzut kością: aby wylosować liczbę od $$1$$ do $$6$$, rzuć kością. To właśnie zrobimy. Napiszemy symulator rzutu kością, a dokładniej program, który będzie losował liczbę od $$1$$ do $$6$$ i wypisywał ją na ekranie.
 
 ### Czego się nauczysz
 
-* Losowania liczby z zadanego przedziału
-* Wykorzystania pętli iteracyjnej do powtarzania operacji
-* Zliczania liczby "udanych" rzutów
+* Losowania liczby z zadanego przedziału.
+* Wykorzystania pętli iteracyjnej do powtarzania operacji.
+* Zliczania liczby "udanych" rzutów.
 
 ## Pojedynczy rzut
 
 Zaczniemy od pojedynczego rzutu kością. Zamysł jest prosty: program losuje liczbę od $$1$$ do $$6$$, a następnie wypisuje ją na ekranie z odpowiednim komunikatem.
+
+{% hint style="info" %}
+Nową grę możesz utworzyć w nowym projekcie, albo możesz dodać nowy plik do swojego poprzedniego projektu.
+{% endhint %}
 
 ### Losujemy liczbę
 
@@ -32,7 +36,7 @@ Teraz możemy już skorzystać z polecenia losującego liczbę z zadanego przedz
 Sposób korzystania z bibliotek i zawartych w nich poleceń/funkcji zależy od tego, jak bibliotekę zaimportujemy.
 {% endhint %}
 
-Polecenie randint przyjmuje dwa parametry: początek i koniec przedziału, z jakiego chcemy wylosować liczbę. Innymi słowy musimy podać zakres **od do**. W naszym przypadku będzie to odpowiednio $$1$$ i $$6$$ .
+Polecenie randint przyjmuje dwa parametry: początek i koniec przedziału, z jakiego chcemy wylosować liczbę. Innymi słowy musimy podać zakres **od do**. W naszym przypadku będzie to odpowiednio $$1$$ i $$6$$.
 
 ```python
 random.randint(1, 6)
@@ -41,7 +45,7 @@ random.randint(1, 6)
 Nie wystarczy jednak tylko wywołać polecenie losujące liczbę z zadanego przedziału, trzeba jeszcze gdzieś zapisać wynik tego polecenia, tzn. **wylosowaną liczbę**. Zapiszemy ją w zmiennej `wynik`:
 
 ```python
-wynik = randint(1, 6)
+wynik = random.randint(1, 6)
 ```
 
 ### Wypisujemy wynik

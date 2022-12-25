@@ -10,8 +10,8 @@ Na początku pisałem, że tworzenie aplikacji konsolowym jest nudne. Od czegoś
 
 ### Czego się nauczysz
 
-* Tworzenia zmiennych i prostych operacji na nich
-* Komunikacji z użytkownikiem
+* Tworzenia zmiennych i prostych operacji na nich.
+* Komunikacji z użytkownikiem.
 
 ## Gra
 
