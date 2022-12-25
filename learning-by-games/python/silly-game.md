@@ -58,7 +58,7 @@ liczba_tekst = input("Podaj liczbę: ")
 ```
 
 {% hint style="info" %}
-**Zmienne** możemy traktować jak "pudełka na dane*. Możemy w nich przechowywać różne wartości, jednak każde pudełko może przechowywać tylko jedną wartość naraz i tylko jednego **typu**.
+**Zmienne** możemy traktować jak "pudełka na dane". Możemy w nich przechowywać różne wartości, jednak każde pudełko może przechowywać tylko jedną wartość naraz i tylko jednego **typu**.
 
 W języku Python zmienne nazywamy zwyczajowo z małych liter alfabetu angielskiego, a kolejne wyrazy w nazwie zmiennej oddzielamy znakiem podłogi (`_`).
 {% endhint %}
