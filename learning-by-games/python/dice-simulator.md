@@ -78,6 +78,8 @@ A może wyniki będą się powtarzać?
 
 Wybierz jakąś liczbę od $$1$$ do $$6$$. Za którym uruchomieniem program ją wylosował?
 
+Spróbuj także zmienić zakres losowanych wartości i sprawdzić, jak to wpłynie na działanie programu.
+
 Poniżej także możesz sprawdzić, jakie liczby zostaną wylosowane.
 
 {% embed url="https://replit.com/@damiankurpiewski/Kosci1" %}
@@ -88,13 +90,13 @@ Wiemy już jak symulować pojedynczy rzut kością. Czasem jednak potrzebujemy r
 
 ### Wczytujemy dane
 
-Do powtórzenia rzutu kością skorzystamy z **pętli iteracyjnej**. Zanim jednak do tego przejdziemy, musimy się dowiedzieć od użytkownika,  ile rzutów kością mamy wykonać:
+Do powtórzenia rzutu kością skorzystamy z **pętli iteracyjnej**. Zanim jednak do tego przejdziemy, musimy się dowiedzieć od użytkownika, ile rzutów kością mamy wykonać:
 
 ```python
 input("Podaj liczbę rzutów kością:")
 ```
 
-Oczekujemy od użytkownika liczby, więc musimy skorzystać z polecenia `int`, aby zamienić wczytaną wartość na liczbę. Możemy to zrobić w jednej linii, bez korzystania z pomocniczej zmiennej, tak jak to robiliśmy wcześniej:
+Oczekujemy od użytkownika liczby naturalnej, więc musimy skorzystać z polecenia `int`, aby zamienić wczytaną wartość na liczbę. Możemy to zrobić w jednej linii, bez korzystania z pomocniczej zmiennej, tak jak to robiliśmy wcześniej:
 
 ```python
 int(input("Podaj liczbę rzutów kością: "))
@@ -108,7 +110,7 @@ ile_razy = int(input("Podaj liczbę rzutów kością: "))
 
 ### Powtarzamy rzuty kością
 
-Teraz już wiemy, ile rzutów kością mamy wykonać. Wiemy też, z poprzedniego ćwiczenia, jak wykonać pojedynczy rzut kością. W celu powtórzenia tej operacji zadaną liczbę razy, skorzystamy z **pętli iteracyjnej **`for`:
+Teraz już wiemy, ile rzutów kością mamy wykonać. Wiemy też, z poprzedniego ćwiczenia, jak wykonać pojedynczy rzut kością. W celu powtórzenia tej operacji zadaną liczbę razy, skorzystamy z **pętli iteracyjnej** `for`:
 
 ```python
 for i in range(ile_razy):
@@ -122,6 +124,13 @@ for i in range(ile_razy):
 ```
 
 Aby było wiadomo, że ta operacja ma zostać wykonana **wewnątrz pętli** (czyli ma zostać powtórzona zadaną liczbę razy), to zapisujemy ją z pojedynczym **wcięciem** (tabulacją).
+
+{% hint style="warning" %}
+Wcięcia są bardzo ważne w języku Python, więc zwracaj na nie uwagę!
+Często sprawdzaj, czy kolejne linijki są poprawnie wyrównane i nie ma jakiejś dodatkowej, niechcianej spacji.
+
+Jeżeli gdzieś zastosujemy nieprawidłowe wcięcia, to przy próbie uruchomienia naszego programu Python wyświetli nam w konsoli napis "**identation error**".
+{% endhint %}
 
 Nie wystarczy jednak samo wylosowanie liczby, przydałoby się ją także wypisać na ekranie. To także musimy wykonać **wewnątrz pętli**, dlatego pamiętamy o **wcięciu**.
 

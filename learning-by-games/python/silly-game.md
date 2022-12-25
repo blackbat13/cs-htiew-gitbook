@@ -149,3 +149,9 @@ Możesz także przetestować naszą grę w poniższym okienku.
 Kliknij zielony przycisk z napisem **Run**, aby ją uruchomić.
 
 {% embed url="https://replit.com/@damiankurpiewski/NaiwnaGra" %}
+
+{% hint style="info" %}
+### Błędy
+
+Podczas tworzenia kolejnych gier i programów popełnianie błędów stanie się chlebem powszednim. Nie należy się nimi przejmować, wręcz przeciwnie! Niektóre błędy mogą wręcz przynieść nieoczekiwane i zaskakujące rezultaty. Oczywiście czasami zdarzy nam się także popełnić błąd, który uniemożliwi uruchomienie naszego programu. W takim przypadku, przy próbie uruchomienia, w konsoli pojawią się stosowne komunikaty zaznaczone czerwonym kolerem. Warto się przyjrzeć tym komunikatom! Często będą wskazywać linijkę, w której wystąpił błąd, a także opiszą przyczynę samego błędu. Na początku w większości błędy będą ograniczać się do braku jakiegoś znaku, np. naiwasu końcowego, albo literówki w nazwie zmiennej czy polecenia.
+{% endhint %}
