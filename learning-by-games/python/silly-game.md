@@ -139,6 +139,14 @@ print(nowa_liczba)
 print("Wygrałem!")
 ```
 
+{% hint style="info" %}
+### Komentarze
+
+Komentarze to fragmenty naszego kodu, które **nie wpływają** na działanie programu. Można je traktować jak notatki na marginesie. W tym kursie będziemy używać komentarzy, aby wytłumaczyć działanie wybranych fragmentów kodu. Często używa się komentarzy także do tego, aby zakomentować wybrane instrukcje, których nie chcemy usuwać, ale nie chcemy też, by były aktywne. 
+
+W języku Python komentarze zaczynamy od znaku hash (`#`). Wszystko po tym znaku w danej linijce traktowane jest jako komentarz.
+{% endhint %}
+
 ### Uruchamiamy grę
 
 Teraz czas, aby uruchomić swoją pierwszą grę!
