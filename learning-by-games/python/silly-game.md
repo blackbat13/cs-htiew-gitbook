@@ -57,6 +57,16 @@ Nie wystarczy jednak tylko wywołać odpowiednie polecenie. Musimy jeszcze gdzie
 liczba_tekst = input("Podaj liczbę: ")
 ```
 
+{% hint style="info" %}
+**Zmienne** możemy traktować jak "pudełka na dane*. Możemy w nich przechowywać różne wartości, jednak każde pudełko może przechowywać tylko jedną wartość naraz i tylko jednego **typu**.
+
+W języku Python zmienne nazywamy zwyczajowo z małych liter alfabetu angielskiego, a kolejne wyrazy w nazwie zmiennej oddzielamy znakiem podłogi (`_`).
+{% endhint %}
+
+{% hint style="warning" %}
+W nazwach zmiennych nie możemy używać spacji ani innych białych znaków, takich jak tabulacje. Powinniśmy także unikać polskich znaków czy liter innych niż litery alfabetu angieslkiego. Ponadto nazwa zmiennej nie może zaczynać się od cyfry i nie powinna zawierać większości znaków specjalnych takich jak dolar (`$`) czy ampersant (`&`).
+{% endhint %}
+
 Gdy używamy polecenia `input`, to wartość wpisana przez użytkownika będzie zawsze wczytana jako **tekst**. My jednak potrzebujemy liczbę. W tym celu skorzystamy z kolejnego polecenia: `int` (ang. **integer** czyli liczba całkowita). Posłuży nam ono do zamiany tekstu na liczbę całkowitą. Jako parametr tego polecenia podajemy tekst do zamiany na liczbę, w naszym przypadku ten tekst zapisany jest w zmiennej `liczba_tekst`:
 
 ```python
