@@ -129,7 +129,7 @@ Aby było wiadomo, że ta operacja ma zostać wykonana **wewnątrz pętli** (czy
 Wcięcia są bardzo ważne w języku Python, więc zwracaj na nie uwagę!
 Często sprawdzaj, czy kolejne linijki są poprawnie wyrównane i nie ma jakiejś dodatkowej, niechcianej spacji.
 
-Jeżeli gdzieś zastosujemy nieprawidłowe wcięcia, to przy próbie uruchomienia naszego programu Python wyświetli nam w konsoli napis "**identation error**".
+Jeżeli gdzieś zastosujemy nieprawidłowe wcięcia, to przy próbie uruchomienia naszego programu Python wyświetli nam w konsoli napis "**IndentationError**".
 {% endhint %}
 
 Nie wystarczy jednak samo wylosowanie liczby, przydałoby się ją także wypisać na ekranie. To także musimy wykonać **wewnątrz pętli**, dlatego pamiętamy o **wcięciu**.
