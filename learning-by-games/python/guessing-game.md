@@ -51,7 +51,7 @@ Pamiętamy, żeby skorzystać z polecenia `int`, ponieważ potrzebujemy liczbę,
 
 Teraz chcielibyśmy sprawdzić, czy użytkownik odgadł, a jeżeli nie, to powtórzyć operację wczytania liczby. Spróbujmy to sformułować inaczej: chcemy wczytywać liczby od użytkownika, **dopóki** ten nie odgadnie ukrytej wartości. Innymi słowy, dopóki wartości zmiennych `liczba` i `ukryta` będą różne, to będziemy powtarzać operację wczytania liczby od użytkownika.
 
-Do zrealizowania tego zadania posłuży nam pętla **warunkowa **`while`:
+Do zrealizowania tego zadania posłuży nam pętla **warunkowa** `while`:
 
 ```python
 while liczba != ukryta:
@@ -97,7 +97,7 @@ while liczba != ukryta:
     # Ponownie prosimy użytkownika o podanie liczby
     liczba = int(input("Podaj liczbę: "))
 
-# Skoro wyszliśmy z pętli, to znaczy, że użytkownik odgadł wyosowaną przez komputer liczbę
+# Skoro wyszliśmy z pętli, to znaczy, że użytkownik odgadł wylosowaną przez komputer liczbę
 # Wypisujemy więc stosowny komunikat
 print("Tak!")
 ```
@@ -115,7 +115,7 @@ Możesz także przetestować działanie gry poniżej.
 
 ## Zgadywanie ciepło-zimno
 
-Zgadywanie w "ciemno" nie jest w cale takie proste. Oczywiście, gdy mamy odgadnąć liczbę od $$1$$ do $$10$$ to w najgorszym przypadku będziemy potrzebowali dziesięciu prób, żeby w końcu odgadnąć prawidłowo. Co jednak, gdy chcielibyśmy pytać o liczby z większego przedziału, np. od $$1$$ do $$100$$, albo od $$1$$ do $$1000$$? Bez żadnych wskazówek odgadnięcie wylosowanej wartości będzie bardzo trudne.
+Zgadywanie w "ciemno" nie jest wcale takie proste. Oczywiście, gdy mamy odgadnąć liczbę od $$1$$ do $$10$$ to w najgorszym przypadku będziemy potrzebowali dziesięciu prób, żeby w końcu odgadnąć prawidłowo. Co jednak, gdy chcielibyśmy pytać o liczby z większego przedziału, np. od $$1$$ do $$100$$, albo od $$1$$ do $$1000$$? Bez żadnych wskazówek odgadnięcie wylosowanej wartości będzie bardzo trudne.
 
 Dlatego zmodyfikujemy naszą grę, by dać graczowi większe szanse na szybkie odgadnięcie liczby. Dodamy coś w rodzaju podpowiedzi jakie występują w grze "**ciepło-zimno**". Dla tych, którzy nie znają tej gry, krótkie wyjaśnienie. Jeden z graczy chowa jakiś przedmiot w pomieszczeniu, a drugi próbuje go odnaleźć. Gdy zbliża się do schowanego przedmiotu dostaje podpowiedź "**ciepło**", a gdy idzie w złym kierunku: "**zimno**".
 
@@ -137,7 +137,7 @@ Nasza podpowiedź będzie uzależniona od liczby podanej przez gracza i ukrytej 
 
 ### Sprawdzamy, czy ukryta jest mniejsza
 
-Zacznijmy od pierwszego komunikatu. Musimy porównać ze sobą wartości zmiennych `ukryta` i `liczba`. Jeżeli `ukryta` jest mniejsza od `liczba`, to wyświetlamy komunika "Mniejsza!".
+Zacznijmy od pierwszego komunikatu. Musimy porównać ze sobą wartości zmiennych `ukryta` i `liczba`. Jeżeli `ukryta` jest mniejsza od `liczba`, to wyświetlamy komunikat "Mniejsza!".
 
 Tworzymy więc odpowiednią **instrukcję warunkową** i dopisujemy ją do naszej gry. Pamiętajmy, że tę instrukcję musimy dodać **wewnątrz pętli**, ponieważ podpowiedzi będziemy wyświetlać po każdej nieudanej próbie gracza. Pamiętamy więc o wcięciach i dopisujemy, zaraz na początku naszej pętli:
 
@@ -186,13 +186,13 @@ while liczba != ukryta:
         
     # Jeżeli wylosowana wartość jest większa od tej podanej przez użytkownika
     if ukryta > liczba:
-        # Informaujemy użytkownika o tym, że wartość, której szuka, jest większa
+        # Informujemy użytkownika o tym, że wartość, której szuka, jest większa
         print("Większa!")
 
     # Ponownie prosimy użytkownika o podanie liczby
     liczba = int(input("Podaj liczbę: "))
 
-# Skoro wyszliśmy z pętli, to znaczy, że użytkownik odgadł wyosowaną przez komputer liczbę
+# Skoro wyszliśmy z pętli, to znaczy, że użytkownik odgadł wylosowaną przez komputer liczbę
 # Wypisujemy więc stosowny komunikat
 print("Trafiona!")
 ```
@@ -269,7 +269,7 @@ while liczba != ukryta:
 
     # Jeżeli wylosowana wartość jest większa od tej podanej przez użytkownika
     if ukryta > liczba:
-        # Informaujemy użytkownika o tym, że wartość, której szuka, jest większa
+        # Informujemy użytkownika o tym, że wartość, której szuka, jest większa
         print("Większa!")
 
     # Zliczamy kolejną próbę zwiększając wartość licznika ile_prob
@@ -278,7 +278,7 @@ while liczba != ukryta:
     # Ponownie prosimy użytkownika o podanie liczby
     liczba = int(input("Podaj liczbę: "))
 
-# Skoro wyszliśmy z pętli, to znaczy, że użytkownik odgadł wyosowaną przez komputer liczbę
+# Skoro wyszliśmy z pętli, to znaczy, że użytkownik odgadł wylosowaną przez komputer liczbę
 # Wypisujemy więc stosowny komunikat
 print("Trafiona!")
 
@@ -387,7 +387,7 @@ while liczba != ukryta:
 
     # Jeżeli wylosowana wartość jest większa od tej podanej przez użytkownika
     if ukryta > liczba:
-        # Informaujemy użytkownika o tym, że wartość, której szuka, jest większa
+        # Informujemy użytkownika o tym, że wartość, której szuka, jest większa
         print("Większa!")
 
     # Zliczamy kolejną próbę zwiększając wartość licznika ile_prob
@@ -396,7 +396,7 @@ while liczba != ukryta:
     # Ponownie prosimy użytkownika o podanie liczby
     liczba = int(input("Podaj liczbę: "))
 
-# Skoro wyszliśmy z pętli, to znaczy, że użytkownik odgadł wyosowaną przez komputer liczbę
+# Skoro wyszliśmy z pętli, to znaczy, że użytkownik odgadł wylosowaną przez komputer liczbę
 # Wypisujemy więc stosowny komunikat
 print("Trafiona!")
 
