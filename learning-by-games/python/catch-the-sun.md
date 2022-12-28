@@ -198,6 +198,10 @@ def update():
     sun.y = random.randint(80, HEIGHT - 80)
 ```
 
+{% hint style="info" %}
+Domyślnie współrzędne $$x, y$$ aktora oznaczają położenie jego środka na ekranie.
+{% endhint %}
+
 Gdy teraz uruchomimy naszą grę zobaczymy, że słońce faktycznie skacze po ekranie w losowych miejscach. Jest jednak zbyt szybkie, byśmy dali radę je złapać. Musimy je spowolnić.
 
 ### Odliczamy czas
