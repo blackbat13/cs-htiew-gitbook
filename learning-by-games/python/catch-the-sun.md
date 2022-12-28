@@ -146,7 +146,7 @@ def draw():
 ```
 
 {% hint style="info" %}
-Kolejność, w jakiej rysujemy kolejne elementy na ekranie, ma znaczenie. Możemy je sobie wyobrazić jak kolejne obrazki, które kładziemy jeden na drugim. Gdybyśmy najpier narysowali słońce, a dopiero potem tło, to niebieski kolor przykryłby naszego aktora.
+Kolejność, w jakiej rysujemy kolejne elementy na ekranie, ma znaczenie. Możemy je sobie wyobrazić jak kolejne obrazki, które kładziemy jeden na drugim. Gdybyśmy najpierw narysowali słońce, a dopiero potem tło, to niebieski kolor przykryłby naszego aktora.
 {% endhint %}
 
 ### Pełny program
