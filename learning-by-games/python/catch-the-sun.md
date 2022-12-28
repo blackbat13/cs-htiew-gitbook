@@ -166,7 +166,7 @@ sun = Actor("sun")
 
 
 def draw():
-    screen.fill(kolor_tla)
+    screen.fill("skyblue")
     # Rysujemy słońce
     sun.draw()
 
