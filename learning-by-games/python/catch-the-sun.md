@@ -6,19 +6,23 @@ Każdy potrzebuje witaminy D, złapmy więc trochę słońca! Nie jest to jednak
 
 ### Czego się nauczysz
 
-* Jak dodać i narysować postać w grze: aktora
-* Jak zmieniać pozycję aktora na ekranie
-* Jak odczytywać kliknięcia myszy i wykrywać ich kolizję z aktorem
-* Jak wyświetlać i zliczać punkty
+* Jak dodać i narysować postać w grze: aktora.
+* Jak zmieniać pozycję aktora na ekranie.
+* Jak odczytywać kliknięcia myszy i wykrywać ich kolizję z aktorem.
+* Jak wyświetlać i zliczać punkty.
 
 ### Materiały do pobrania
 
 #### Grafiki
 
-Umieszczamy w katalogu **images**.
+Pobieramy poniższą grafikę: klikamy prawym przyciskiem myszy i wybieramy *Zapisz obraz jako*. Zapisujemy obraz w wybranym przez siebie miejscu i nazywamy **sun.png**.
+Grafikę umieszczamy w katalogu **images** w naszym projekcie. W celu utworzenia katalogu klikamy prawym przyciskiem myszy na główny katalog projektu, a następnie wybieramy *New -> Directory*. Teraz wystarczy przeciągnąć nasze słońce do katalogu images i zatwierdzić zmiany klikając niebieski przycisk z napisem *Refactor*.
 
 ![Źródło: [kenney.nl](https://www.kenney.nl/)](../../.gitbook/assets/sun.png)
 
+{% hint style="warning" %}
+Wszystkie grafiki, z których będziemy korzystać w naszej grzy, powinny znaleźć się w katalogu *images*, inaczej biblioteka nie znajdzie tych grafik. 
+{% endhint %}
 ## Podstawowy szablon
 
 Zaczynamy od utworzenia podstawowego szablonu naszej gry.
@@ -26,7 +30,6 @@ Jeśli jeszcze tego nie zrobiliśmy, jest to także dobry moment na utworzenie n
 Możemy go nazwać np. *ZlapSlonce* (bez polskich znaków). 
 Instalujemy także bibliotekę *pgzero* i tworzymy plik *main.py* (jeżeli nie został utworzony automatycznie).
 Pobieramy także pokazaną wyżej grafikę słońca i umieszczamy ją w katalogu *images* wewnątrz naszego projektu.
-W celu utworzenia nowego katalogu klikamy prawym przyciskiem myszy na głównym katalogu projektu (w naszym przypadku *ZlapSlonce*) i wybieramy New->directory.
 ### Importujemy biblioteki
 
 Zastanówmy się, jakich "narzędzi" będziemy potrzebować. Podstawowym elementem będzie oczywiście nasza biblioteka do tworzenia gier. Docelowo nasze słońce będzie się pojawiało w **losowych** miejscach na ekranie, przyda nam się także biblioteka do liczb losowych. 
@@ -40,7 +43,7 @@ import random
 
 ### Określamy wymiary okna gry
 
-Nasza gra nie musi mieć dużego okna. Co więcej, im mniejsze będzie okno gry, tym gra będzie łatwiejsza! Dlaczego? Słońce będzie miało mniej miejsca do ucieczki, łatwiej więc będzie je złapać. Zacznijmy więc od niewielkiego, dość standardowego wymiaru $800\times600$. W każdej chwili możemy te wymiary zmienić.
+Nasza gra nie musi mieć dużego okna. Co więcej, im mniejsze będzie okno gry, tym gra będzie łatwiejsza! Dlaczego? Słońce będzie miało mniej miejsca do ucieczki, łatwiej więc będzie je złapać. Zacznijmy więc od niewielkiego, dość standardowego wymiaru $$800\times600$$. W każdej chwili możemy te wymiary zmienić.
 
 ```python
 WIDTH = 800
@@ -55,6 +58,7 @@ Nasza gra, jak i każda inna, powinna mieć jakieś tło. To będzie prosta gra,
 screen.fill("skyblue")
 ```
 
+Listę dostępnych (nazwanych) kolorów można znaleźć tutaj: (https://pygame-zero.readthedocs.io/en/latest/colors_ref.html)[https://pygame-zero.readthedocs.io/en/latest/colors_ref.html].
 Zachęcam do sprawdzenia innych kolorów i wybrania takiego, który Tobie odpowiada. Pamiętaj: to Twoja gra!
 
 Wypełnienie kolorem umieścimy w części rysującej, tzn. w części `draw`. Pełna implementacja funkcji rysującej wygląda więc następująco:
@@ -79,7 +83,7 @@ pgzrun.go()
 ### Pełny program z komentarzami
 
 Nasza pełna gra powinna wyglądać teraz podobnie, jak pokazano poniżej.
-Komentarza oczywiście są opcjonalne, ale pozwalają lepiej zrozumieć, co się dzieje w danym miejscu w kodzie.
+Komentarze oczywiście są opcjonalne, ale pozwalają lepiej zrozumieć, co się dzieje w danym miejscu w kodzie.
 
 ```python
 # Importujemy bibliotekę Pygame Zero do tworzenia gier

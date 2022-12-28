@@ -6,9 +6,9 @@ Poznaliśmy już niezbędne podstawy programowania w języku Python, pora więc 
 
 ### Czego się nauczysz
 
-* Instalacji bibliotek
-* Zasady działania podstawowego szablonu PygameZero
-* Podziału kodu na części (funkcje)
+* Instalacji bibliotek.
+* Zasady działania podstawowego szablonu PygameZero.
+* Podziału kodu na części/podprogramy (funkcje).
 
 ## Instalacja biblioteki
 
@@ -133,7 +133,7 @@ Zatwierdzamy je przyciskiem _Enter_ i czekamy aż biblioteka się zainstaluje.
 
 ### Skrypt
 
-W katalogu głównym naszego projektu tworzymy nowy plik o nazwie **setup.bat**.
+W katalogu głównym naszego projektu tworzymy nowy plik o nazwie **setup.bat** (prawy przycisk na główny katalog projektu, a następnie *New -> File*).
 W pliku wpisujemy:
 
 ```
@@ -147,7 +147,7 @@ Skrypt należy dostosować do naszego projektu, a konkretnie do katalogów, jaki
 - efektów dźwiękowych (`--add-data "sounds;sounds"`),
 - muzyki (`--add-data "music;music"`).
 
-Jeżeli nie mamy któregoś z katalogów w naszym projekcie, to ze skryptu należy usunąć odpowiednie polecenie. Np., jeżeli nasza gra korzysta **tylko** z grafik, to skrypt powinien wyglądać tak:
+Jeżeli nie mamy któregoś z katalogów w naszym projekcie, to ze skryptu należy usunąć odpowiednie polecenie. Np. jeżeli nasza gra korzysta **tylko** z grafik, to skrypt powinien wyglądać tak:
 ```
 pyinstaller --collect-all pgzero main.py --distpath . --add-data "images;images" --onefile --noconfirm --windowed --clean
 ```
@@ -157,4 +157,4 @@ pyinstaller --collect-all pgzero main.py --distpath . --add-data "images;images"
 
 W zakładce **Terminal** uruchamiamy plik __setup.bat__ wpisując `.\setup.bat` i zatwierdzając przyciskiem _Enter_.
 Teraz wystarczy poczekać, aż operacje się zakończą. 
-Po wszystkim zostanie utworzony w głównym katalogu naszej gry plik **main.exe** który możemy uruchomić, a także przekazać znajomym, by i oni mogli zagrać w naszą grę!
+Po wszystkim zostanie utworzony w głównym katalogu naszej gry plik **main.exe**, który możemy uruchomić, a także przekazać znajomym, by i oni mogli zagrać w naszą grę!
