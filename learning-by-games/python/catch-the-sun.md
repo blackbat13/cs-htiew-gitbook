@@ -23,6 +23,7 @@ Grafikę umieszczamy w katalogu **images** w naszym projekcie. W celu utworzenia
 {% hint style="warning" %}
 Wszystkie grafiki, z których będziemy korzystać w naszej grzy, powinny znaleźć się w katalogu *images*, inaczej biblioteka nie znajdzie tych grafik. 
 {% endhint %}
+
 ## Podstawowy szablon
 
 Zaczynamy od utworzenia podstawowego szablonu naszej gry.
@@ -52,16 +53,16 @@ HEIGHT = 600
 
 ### Tworzymy tło
 
-Nasza gra, jak i każda inna, powinna mieć jakieś tło. To będzie prosta gra, więc i niech tło będzie proste: wypełnimy je wybranym przez siebie kolorem. Ponieważ słońce zazwyczaj możemy zaobserwować na niebieskim niebie, takiego też koloru użyjemy. W celu wypełnienia tła wybranym kolorem skorzystamy z metody `screen.fill`, do której jako **argument** przekażemy wybrany kolor za pomocą jego angielskiej nazwy *skyblue*, podanej w formie tekstu:
+Nasza gra, jak i każda inna, powinna mieć jakieś tło. To będzie prosta gra, więc i niech tło będzie proste: wypełnimy je wybranym przez siebie kolorem. Wypełnienie kolorem umieścimy w części rysującej, tzn. w części `draw`. Ponieważ słońce zazwyczaj możemy zaobserwować na niebieskim niebie, takiego też koloru użyjemy. W celu wypełnienia tła wybranym kolorem skorzystamy z metody `screen.fill`, do której jako **argument** przekażemy wybrany kolor za pomocą jego angielskiej nazwy *skyblue*, podanej w formie tekstu:
 
 ```python
 screen.fill("skyblue")
 ```
 
-Listę dostępnych (nazwanych) kolorów można znaleźć tutaj: (https://pygame-zero.readthedocs.io/en/latest/colors_ref.html)[https://pygame-zero.readthedocs.io/en/latest/colors_ref.html].
+Listę dostępnych (nazwanych) kolorów można znaleźć tutaj: [https://pygame-zero.readthedocs.io/en/latest/colors_ref.html](https://pygame-zero.readthedocs.io/en/latest/colors_ref.html).
 Zachęcam do sprawdzenia innych kolorów i wybrania takiego, który Tobie odpowiada. Pamiętaj: to Twoja gra!
 
-Wypełnienie kolorem umieścimy w części rysującej, tzn. w części `draw`. Pełna implementacja funkcji rysującej wygląda więc następująco:
+Pełna implementacja funkcji rysującej wygląda więc następująco:
 
 ```python
 def draw():
