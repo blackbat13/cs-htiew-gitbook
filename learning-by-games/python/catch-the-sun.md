@@ -199,7 +199,7 @@ def update():
 ```
 
 {% hint style="info" %}
-Domyślnie współrzędne $$x, y$$ aktora oznaczają położenie jego środka na ekranie.
+Domyślnie współrzędne $$x, y$$ aktora oznaczają położenie jego lewego górnego rogu na ekranie.
 {% endhint %}
 
 Gdy teraz uruchomimy naszą grę zobaczymy, że słońce faktycznie skacze po ekranie w losowych miejscach. Jest jednak zbyt szybkie, byśmy dali radę je złapać. Musimy je spowolnić.
@@ -275,11 +275,11 @@ sun.timer = 0
 sun.points = 0
 ```
 
-Teraz czas wyświetlić punkty na ekranie, tak abyśmy mogli sprawdzać, czy naliczają się poprawnie. W tym celu skorzystamy z metody `screen.draw.text`, którą umieścimy na samym końcu części rysującej (`draw`). Do tej metody musimy przekazać kilka parametrów. W celu ułatwienia sobie pracy, przed wartością każdego parametru dopiszemy jego nazwę i znak przyipsania $$=$$.
+Teraz czas wyświetlić punkty na ekranie, tak abyśmy mogli sprawdzać, czy naliczają się poprawnie. W tym celu skorzystamy z metody `screen.draw.text`, którą umieścimy na samym końcu części rysującej (`draw`). Do tej metody musimy przekazać kilka parametrów. W celu ułatwienia sobie pracy, przed wartością każdego parametru dopiszemy jego nazwę i znak przypisania $$=$$.
 Parametry, jakie przekażemy, to:
 
 - **text** - Tekst do wyświetlenia na ekranie, czyli nasza liczba punktów. Ponieważ musimy podać tekst, a nie liczbę, to punkty zamieniamy na tekst za pomocą funkcji **str**: `str(sun.points)`.
-- **center** - Współrzędne miejsca, w którym ma się znaleźć **środek** wyświetlanego tekstu. Chcemy, aby punkty były wyświetlane u góry ekranu (np. $$50$$ pikseli od góry), na środku (czyli w połowie szerokości). W takim razie podajemy parę współrzędnych zapisaną w nawiasach okrągłych: `(WIDTH / 2, 50)`.
+- **center** - Współrzędne miejsca, w którym ma się znaleźć **środek** wyświetlanego tekstu. Chcemy, aby punkty były wyświetlane na środku ekranu (czyli w połowie szerokości), u góry (np. $$50$$ pikseli od góry). W takim razie podajemy parę współrzędnych zapisaną w nawiasach okrągłych: `(WIDTH / 2, 50)`.
 - **color** - Kolor wyświetlanego tekstu. Podobnie jak przy tle możemy wybrać własny kolor, np. czerwony (**red**).
 - **fontsize** - Rozmiar czcionki. Jeżeli chcemy, by punkty były dobrze widoczne, warto podać jakąś dużą wartość, np. $$100$$.
 
@@ -305,7 +305,7 @@ Teraz możemy uruchomić naszą grę i zobaczyć, czy podoba nam się sposób wy
 ### Zliczanie punktów
 
 W celu zliczania punktów skorzystamy z funkcji odczytującej kliknięcia na ekranie.
-Funkcja ta nazywa się `on_mouse_down` i przyjmuje parametr `pos` określający **pozycję**, czyli współrzędne, kliknięcia myszy na ekranie.
+Funkcja ta nazywa się `on_mouse_down` i przyjmuje parametr `pos` określający **pozycję**, czyli współrzędne kliknięcia myszy na ekranie.
 
 Naszą nową funkcję dopisujemy na końcu naszego kodu, zaraz pod częścią aktualizującą (**update**), ale **przed** wywołaniem `pgzrun.go()`.
 
@@ -349,7 +349,7 @@ Warto w tym momencie uruchomić naszą grę i sprawdzić, jak zmieniają się pu
 
 Aby gra stawała się tym trudniejsza, im więcej mamy punktów, uzależnijmy wartość parametru *timer* od liczby zdobytych punktów. W tym celu zmodyfikujemy linijkę w części aktualizującej, gdzie resetujemy nasz licznik. Możemy to zrobić na kilka sposobów. Jednym z pomysłów jest odjęcie od liczby $$60$$ (reprezentującej jedną sekundę) liczby zdobytych punktów. W ten sposób, im więcej będziemy mieli punktów, tym słońce będzie szybciej przeskakiwać po ekranie. Natomiast jak będzie nam słabo szło i często będziemy tracić punkty, to słońce będzie wolniejsze i łatwiejsze do złapania.
 
-W ostatniej linicje części *update* zamiast `sun.timer = 0` zapisujemy `sun.timer = 60 - sun.points`.
+W ostatniej linicje części *update* zamiast `sun.timer = 60` zapisujemy `sun.timer = 60 - sun.points`.
 
 Pełna implementacja funkcji aktualizującej wygląda więc teraz następująco:
 
