@@ -22,6 +22,7 @@ Grafikę umieszczamy w katalogu **images** w naszym projekcie. W celu utworzenia
 
 {% hint style="warning" %}
 Wszystkie grafiki, z których będziemy korzystać w naszej grzy, powinny znaleźć się w katalogu *images*, inaczej biblioteka nie znajdzie tych grafik. 
+Ponadto nazwy grafik nie mogą zawierać wielkich liter.
 {% endhint %}
 
 ## Podstawowy szablon
@@ -116,7 +117,7 @@ W tym momencie warto już uruchomić naszą "grę" i sprawdzić, czy wszystko dz
 
 ## Rysowanie słońca
 
-Teraz zajmiemy się dodaniem do gry naszej głównej postaci: słońca. Postacie w *Pygame Pero* reprezentować będziemy jako **aktorów**. Każdy aktor ma swoje właściwości, takie jak grafika czy położenie na ekranie. Aktorzy mogą też wchodzić w interakcję z innymi postaciami (także aktorami) i pozostałymi elementami gry.
+Teraz zajmiemy się dodaniem do gry naszej głównej postaci: słońca. Postacie w *Pygame Zero* reprezentować będziemy jako **aktorów**. Każdy aktor ma swoje właściwości, takie jak grafika czy położenie na ekranie. Aktorzy mogą też wchodzić w interakcję z innymi postaciami (także aktorami) i pozostałymi elementami gry.
 
 ### Tworzymy nowego aktora gry
 
@@ -125,6 +126,14 @@ Zaczniemy od utworzenia naszego nowego aktora: słońca. W tym celu potrzebna na
 ```python
 sun = Actor("sun")
 ```
+
+{% hint style="info" %}
+W nazwie grafiki możemy, ale nie musimy podawać rozszerzenia, tzn. moglibyśmy równie dobrze napisać:
+
+```
+sun = Actor("sun.png")
+```
+{% endhint %}
 
 ### Rysujemy słońce na ekranie
 
@@ -135,6 +144,10 @@ def draw():
     screen.fill("skyblue")
     sun.draw()
 ```
+
+{% hint style="info" %}
+Kolejność, w jakiej rysujemy kolejne elementy na ekranie, ma znaczenie. Możemy je sobie wyobrazić jak kolejne obrazki, które kładziemy jeden na drugim. Gdybyśmy najpier narysowali słońce, a dopiero potem tło, to niebieski kolor przykryłby naszego aktora.
+{% endhint %}
 
 ### Pełny program
 
