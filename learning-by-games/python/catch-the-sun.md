@@ -21,7 +21,7 @@ Grafikę umieszczamy w katalogu **images** w naszym projekcie. W celu utworzenia
 ![Źródło: [kenney.nl](https://www.kenney.nl/)](../../.gitbook/assets/sun.png)
 
 {% hint style="warning" %}
-Wszystkie grafiki, z których będziemy korzystać w naszej grzy, powinny znaleźć się w katalogu *images*, inaczej biblioteka nie znajdzie tych grafik. 
+Wszystkie grafiki, z których będziemy korzystać w naszej grze, powinny znaleźć się w katalogu *images*, inaczej biblioteka nie znajdzie tych grafik. 
 Ponadto nazwy grafik nie mogą zawierać wielkich liter.
 {% endhint %}
 
@@ -349,7 +349,7 @@ Warto w tym momencie uruchomić naszą grę i sprawdzić, jak zmieniają się pu
 
 Aby gra stawała się tym trudniejsza, im więcej mamy punktów, uzależnijmy wartość parametru *timer* od liczby zdobytych punktów. W tym celu zmodyfikujemy linijkę w części aktualizującej, gdzie resetujemy nasz licznik. Możemy to zrobić na kilka sposobów. Jednym z pomysłów jest odjęcie od liczby $$60$$ (reprezentującej jedną sekundę) liczby zdobytych punktów. W ten sposób, im więcej będziemy mieli punktów, tym słońce będzie szybciej przeskakiwać po ekranie. Natomiast jak będzie nam słabo szło i często będziemy tracić punkty, to słońce będzie wolniejsze i łatwiejsze do złapania.
 
-W ostatniej linicje części *update* zamiast `sun.timer = 60` zapisujemy `sun.timer = 60 - sun.points`.
+W ostatniej linijce części *update* zamiast `sun.timer = 60` zapisujemy `sun.timer = 60 - sun.points`.
 
 Pełna implementacja funkcji aktualizującej wygląda więc teraz następująco:
 
@@ -409,3 +409,7 @@ pgzrun.go()
 ### Gramy
 
 Czas zagrać w naszą grę! Ile punktów Tobie uda się zdobyć?
+
+## Zadanie dodatkowe
+
+Spróbuj dodać do gry wyświetlanie największej liczby punktów, jakie udało się zdobyć w obecnej rozgrywce. **Podpowiedź**: dopisz nową zmienną do słońca i wyświetl ją na ekranie (podobnie jak punkty), a przy każdym nowym zdobytym punkcie sprawdzaj, czy udało się zdobyć więcej punktów niż dotychczas, a jeżeli tak to zmień wartość nowej zmiennej.
