@@ -8,13 +8,13 @@ Dzisiaj spróbujemy tę grę odtworzyć w trochę bardziej współczesnym środo
 
 ### Czego się nauczysz
 
-* Obsługi dwóch graczy jednocześnie
-* Symulacji prostej fizyki odbijania się piłki
-* Obsługi zakończenia gry i wyświetlenia wyniku
+* Obsługi dwóch graczy jednocześnie.
+* Symulacji prostej fizyki odbijania się piłki.
+* Obsługi zakończenia gry i wyświetlenia wyniku.
 
 ### Grafiki do pobrania
 
-Zanim zaczniemy, pobierz poniższe grafiki, rozpakuj i umieść w katalogu **images** w projekcie gry.
+Umieszczamy w katalogu **images**.
 
 {% file src="../../.gitbook/assets/grafiki_pong.zip" %}
 Grafiki do gry Pong
@@ -28,15 +28,20 @@ Zaczniemy od stworzenia klasycznej wersji gry Pong. Na początek przyjrzyjmy si�
 
 Spróbujmy przeanalizować powyższą animację. Zacznijmy od wyróżniania elementów graficznych:
 
-* Szare tło
-* Żółta linia po środku dzieląca planszę na dwie części
-* Punkty wyświetlane na górze ekranu
-* Dwie paletki - jedna przy lewym brzegu, druga przy prawym
-* Piłka
+* Szare tło.
+* Żółta linia po środku dzieląca planszę na dwie części.
+* Punkty wyświetlane na górze ekranu.
+* Dwie paletki - jedna przy lewym brzegu, druga przy prawym.
+* Piłka.
+
+## Wstępna konfiguracja
+
+Zaczynamy standardowo: tworzymy nowy projekt, instalujemy bibliotekę, pobieramy materiały i umieszczamy je w odpowiednich miejscach.
+Nasz projekt możemy nazwać np. "Pong". Gdy już utworzymy projekt, tworzymy w nim nowy katalog: *images*. Następnie pobieramy wyżej wymienione materiały, rozpakowujemy je, a zawartość przerzucamy do katalogu *images*. Pozostało nam jeszcze zainstalować bibliotekę: w okienku terminala wypisujemy standardowo polecenie `pip install pgzero`.
 
 ## Podstawowy szablon
 
-Jak zwykle zaczynamy od standardowego szablonu. Jako wymiary gry przyjmiemy $$800\times600$$ (szerokość $$800$$ i wysokość $$600$$).
+Jako wymiary gry przyjmiemy $$800\times600$$ (szerokość $$800$$ i wysokość $$600$$).
 
 Ustalmy także tytuł naszej gry: "Pong".
 
@@ -67,19 +72,19 @@ Na początek rzecz prosta - tło gry. Jak już ustaliliśmy na tło składa się
 
 ### Szare tło
 
-Dla ułatwienia kolor tła zapamiętamy w zmiennej `kolor_tla`, którą dodamy zaraz pod tytułem gry. Chcemy mieć lekki odcień szarości.
+Dla ułatwienia kolor tła zapamiętamy w zmiennej `bg_color`, którą dodamy zaraz pod tytułem gry. Chcemy mieć lekki odcień szarości.
 W tym celu ustalamy kolor za pomocą trzech wartości: **(R, G, B)**.
 W celu uzyskania odcieniu szarości wystarczy podać trzy takie same liczby, np. $$64$$.
 
 ```python
-kolor_tla = (64, 64, 64)
+bg_color = (64, 64, 64)
 ```
 
 Jak już mamy kolor, to wypełnijmy nim całe tło. Dodajemy instrukcję `screen.fill` w części rysującej.
 
 ```python
 def draw():
-    screen.fill(kolor_tla)
+    screen.fill(bg_color)
 ```
 
 ### Żółta linia
@@ -102,7 +107,7 @@ Oczywiście, żeby narysować linię na ekraniu, musimy dopisać powyższe polec
 
 ```python
 def draw():
-    screen.fill(kolor_tla)
+    screen.fill(bg_color)
     screen.draw.line((WIDTH / 2, 40), (WIDTH / 2, HEIGHT - 40), color = "yellow")
 ```
 
@@ -119,11 +124,11 @@ HEIGHT = 600
 
 TITLE = "PONG"
 
-kolor_tla = (64, 64, 64)
+bg_color = (64, 64, 64)
 
 
 def draw():
-    screen.fill(kolor_tla)
+    screen.fill(bg_color)
     screen.draw.line((WIDTH / 2, 40), (WIDTH / 2, HEIGHT - 40), color = "yellow")
     
     
@@ -149,11 +154,11 @@ Naszych aktorów dodamy zaraz pod kolorem tła, czyli na górze programu.
 
 ### Tworzymy aktora
 
-Najpierw musimy utworzyć aktora i zapisać go w nowej zmiennej, którą nazwiemy _lewa_.
-Naszego aktora tworzymy na podstawie grafiki *lewa.png*.
+Najpierw musimy utworzyć aktora i zapisać go w nowej zmiennej, którą nazwiemy `left`.
+Naszego aktora tworzymy na podstawie grafiki *left.png*.
 
 ```python
-lewa = Actor("lewa.png")
+left = Actor("left")
 ```
 
 ### Ustalamy pozycję lewej paletki
@@ -164,26 +169,26 @@ Dzięki temu nasza gra będzie wyglądała estetyczniej.
 Ustalamy więc współrzędną $$x$$ lewej paletki.
 
 ```python
-lewa.x = 20
+left.x = 20
 ```
 
 Trzeba jeszcze pomyśleć o drugiej współrzędnej: $$y$$.
 Początkowo umieśćmy paletkę na środku, czyli w połowie wysokości ekranu gry.
 
 ```python
-lewa.y = HEIGHT / 2
+left.y = HEIGHT / 2
 ```
 
 ### Rysujemy paletkę
 
 Skoro już umieściliśmy naszą lewą paletkę w jej początkowej pozycji, możemy ją narysować na ekranie.
-Do części rysującej, zaraz pod poleceniem rysującym żółtą linię, dopisujemy polecenie rysujące lewą paletkę: _lewa.draw()_.
+Do części rysującej, zaraz pod poleceniem rysującym żółtą linię, dopisujemy polecenie rysujące lewą paletkę: `left.draw()`.
 
 ```python
 def draw():
-    screen.fill(kolor_tla)
+    screen.fill(bg_color)
     screen.draw.line((WIDTH / 2, 40), (WIDTH / 2, HEIGHT - 40), color = "yellow")
-    lewa.draw()
+    left.draw()
 ```
 
 ### Pełny kod
@@ -199,15 +204,15 @@ HEIGHT = 600
 
 TITLE = "PONG"
 
-kolor_tla = (64, 64, 64)
+bg_color = (64, 64, 64)
 
-lewa = Actor("lewa.png")
-lewa.x = 20
-lewa.y = HEIGHT / 2
+left = Actor("left")
+left.x = 20
+left.y = HEIGHT / 2
 
 
 def draw():
-    screen.fill(kolor_tla)
+    screen.fill(bg_color)
     screen.draw.line((WIDTH / 2, 40), (WIDTH / 2, HEIGHT - 40), color = "yellow")
     lewa.draw()
 
@@ -226,11 +231,11 @@ Najważniejszą różnicą będzie oczywiście jej grafika i początkowe położ
 
 ### Tworzymy aktora
 
-Najpierw musimy utworzyć aktora i zapisać go w nowej zmiennej, którą nazwiemy _prawa_.
-Naszego aktora tworzymy na podstawie grafiki *prawa.png*.
+Najpierw musimy utworzyć aktora i zapisać go w nowej zmiennej, którą nazwiemy `right`.
+Naszego aktora tworzymy na podstawie grafiki *right.png*.
 
 ```python
-prawa = Actor("prawa.png")
+right = Actor("right")
 ```
 
 ### Ustalamy pozycję prawej paletki
@@ -242,27 +247,27 @@ Ustalamy więc współrzędną $$x$$ prawej paletki.
 Ponieważ umieszczamy ją z prawej strony ekranu, to aby obliczyć jej pozycję, od szerokości ekranu (**WIDTH**) odejmujemy ustalony wcześniej margines.
 
 ```python
-prawa.x = WIDTH - 20
+right.x = WIDTH - 20
 ```
 
 Trzeba jeszcze pomyśleć o drugiej współrzędnej: $$y$$.
 Początkowo umieśćmy paletkę na środku, czyli w połowie wysokości ekranu gry, tak samo jak lewą paletkę.
 
 ```python
-prawa.y = HEIGHT / 2
+right.y = HEIGHT / 2
 ```
 
 ### Rysujemy paletkę
 
 Skoro już umieściliśmy naszą prawą paletkę w jej początkowej pozycji, możemy ją narysować na ekranie.
-Do części rysującej, zaraz pod poleceniem rysującym lewą paletkę, dopisujemy polecenie rysujące prawą paletkę: _prawa.draw()_.
+Do części rysującej, zaraz pod poleceniem rysującym lewą paletkę, dopisujemy polecenie rysujące prawą paletkę: `right.draw()`.
 
 ```python
 def draw():
-    screen.fill(kolor_tla)
-    screen.draw.line((WIDTH / 2, 40), (WIDTH / 2, HEIGHT - 40), color = "yellow")
-    lewa.draw()
-    prawa.draw()
+    ...
+
+    left.draw()
+    right.draw()
 ```
 
 ### Pełny kod
@@ -278,22 +283,22 @@ HEIGHT = 600
 
 TITLE = "PONG"
 
-kolor_tla = (64, 64, 64)
+bg_color = (64, 64, 64)
 
-lewa = Actor("lewa.png")
-lewa.x = 20
-lewa.y = HEIGHT / 2
+left = Actor("left")
+left.x = 20
+left.y = HEIGHT / 2
 
-prawa = Actor("prawa.png")
-prawa.x = WIDTH - 20
-prawa.y = HEIGHT / 2
+right = Actor("right")
+right.x = WIDTH - 20
+right.y = HEIGHT / 2
 
 
 def draw():
-    screen.fill(kolor_tla)
+    screen.fill(bg_color)
     screen.draw.line((WIDTH / 2, 40), (WIDTH / 2, HEIGHT - 40), color = "yellow")
-    lewa.draw()
-    prawa.draw()
+    left.draw()
+    right.draw()
     
     
 def update():
@@ -309,11 +314,11 @@ Piłkę dodamy podobnie jak paletki, ale umieścimy ją na środku ekranu.
 
 ### Tworzymy aktora
 
-Najpierw musimy utworzyć aktora i zapisać go w nowej zmiennej, którą nazwiemy _pilka_.
-Naszego aktora tworzymy na podstawie grafiki *pilka.png*.
+Najpierw musimy utworzyć aktora i zapisać go w nowej zmiennej, którą nazwiemy `ball`.
+Naszego aktora tworzymy na podstawie grafiki *ball.png*.
 
 ```python
-pilka = Actor("pilka.png")
+ball = Actor("ball.png")
 ```
 
 ### Ustalamy pozycję piłki
@@ -322,8 +327,8 @@ Nasza piłka będzie początkow znajdować się na środku ekranu.
 Dlatego do współrzędnej $$x$$ przypisujemy połowę szerokości (**WIDTH**) ekranu, a do współrzędnej $$y$$ przypisujemy połowę wysokości (**HEIGHT**) ekranu.
 
 ```python
-pilka.x = WIDTH / 2
-pilka.y = HEIGHT / 2
+ball.x = WIDTH / 2
+ball.y = HEIGHT / 2
 ```
 
 ### Rysujemy piłkę
@@ -333,11 +338,9 @@ Do części rysującej, zaraz pod poleceniem rysującym prawą paletkę, dopisuj
 
 ```python
 def draw():
-    screen.fill(kolor_tla)
-    screen.draw.line((WIDTH / 2, 40), (WIDTH / 2, HEIGHT - 40), color = "yellow")
-    lewa.draw()
-    prawa.draw()
-    pilka.draw()
+    ...
+
+    ball.draw()
 ```
 
 ### Pełny kod
@@ -353,27 +356,27 @@ HEIGHT = 600
 
 TITLE = "PONG"
 
-kolor_tla = (64, 64, 64)
+bg_color = (64, 64, 64)
 
-lewa = Actor("lewa.png")
-lewa.x = 20
-lewa.y = HEIGHT / 2
+left = Actor("left")
+left.x = 20
+left.y = HEIGHT / 2
 
-prawa = Actor("prawa.png")
-prawa.x = WIDTH - 20
-prawa.y = HEIGHT / 2
+right = Actor("right")
+right.x = WIDTH - 20
+right.y = HEIGHT / 2
 
-pilka = Actor("pilka.png")
-pilka.x = WIDTH / 2
-pilka.y = HEIGHT / 2
+ball = Actor("ball.png")
+ball.x = WIDTH / 2
+ball.y = HEIGHT / 2
 
 
 def draw():
-    screen.fill(kolor_tla)
+    screen.fill(bg_color)
     screen.draw.line((WIDTH / 2, 40), (WIDTH / 2, HEIGHT - 40), color = "yellow")
-    lewa.draw()
-    prawa.draw()
-    pilka.draw()
+    left.draw()
+    right.draw()
+    ball.draw()
     
     
 def update():
@@ -389,26 +392,30 @@ Paletki chcemy poruszać jedynie w dwóch kierunkach: w górę i w dół.
 Obie paletki będziemy sterować za pomocą klawiatury.
 Lewą paletkę obsłużymy klawiszami **W** i **S**, a prawą paletkę obsłużymy **strzałkami w górę i w dół**.
 
+### Prędkość graczy
+
+Musimy dopisać do naszych paletek ich prędkość pionową: **vy**. W tym celu pod lewą i prawą paletką dopisujemy odpowiednio `left.vy = 5` oraz `right.vy = 5`. 
+
 ### Funkcja odczytująca ruchy
 
 W celu zachowania czytelności naszego kodu, napiszemy sobie nową **funkcję**, tzn. wydzielony fragment kodu, który będzie realizował konkretne zadanie.
 To zadanie będzie polegało na odczytaniu wciśniętych klawiszy z klawiatury i wykonaniu odpowiedniego ruchu paletek.
-Nazwiemy naszą funkcję *ruch_graczy*.
+Nazwiemy naszą funkcję `move_players`.
 Wewnątrz funkcji będziemy sprawdzać, czy dany klawisz na klawiaturze jest wciśnięty, a jeżeli tak, to wykonamy stosowny ruch paletki, tzn. zmienimy jej współrzędne.
 
 ```python
-def ruch_graczy():
+def move_players():
     if keyboard.w:
-        lewa.y -= lewa.py
+        left.y -= left.vy
 
     if keybaord.s:
-        lewa.y += lewa.py
+        left.y += left.vy
 
     if keyboard.up:
-        prawa.y -= prawa.py
+        right.y -= right.vy
 
     if keyboard.down:
-        prawa.y += prawa.py
+        right.y += right.vy
 ```
 
 ### Wywołujemy funkcję w części aktualizującej
@@ -418,7 +425,7 @@ Ruch graczy to **aktualizacja** pozycji graczy na ekranie, dlatego naszą nową 
 
 ```python
 def update():
-    ruch_graczy()
+    move_players()
 ```
 
 ### Ograniczenie ruchu graczy
@@ -427,18 +434,18 @@ Nie chcemy, by paletki mogły wychodzić poza ekran, dlatego dodajemy dodatkowe 
 Przed wykonaniem danego ruchu sprawdzimy, czy paletka znajduje się wystarczająco daleko od brzegu ekranu, aby ten ruch móc wykonać.
 
 ```python
-def ruch_graczy():
-    if keyboard.w and lewa.top > 40:
-        lewa.y -= lewa.py
+def move_players():
+    if keyboard.w and left.top > 40:
+        left.y -= left.vy
 
-    if keybaord.s and lewa.bottom < HEIGHT - 40:
-        lewa.y += lewa.py
+    if keybaord.s and left.bottom < HEIGHT - 40:
+        left.y += left.vy
 
-    if keyboard.up and prawa.top > 40:
-        prawa.y -= prawa.py
+    if keyboard.up and right.top > 40:
+        right.y -= right.vy
 
-    if keyboard.down and prawa.bottom < HEIGHT - 40:
-        prawa.y += prawa.py
+    if keyboard.down and right.bottom < HEIGHT - 40:
+        right.y += right.vy
 ```
 
 ### Pełny kod
@@ -664,11 +671,9 @@ def ruch_pilki():
 pgzrun.go()
 ```
 
-### Testujemy działanie
-
 ## Wersja z bonusami
 
-### Pełny program
+### Pełna gra - wersja z bonusami
 
 ```python
 import random
@@ -901,11 +906,9 @@ pgzrun.go()
 
 ```
 
-### Testujemy działanie
-
 ## Przeciwko komputerowi
 
-### Pełny program
+### Pełna gra - wersja gry przeciwko komputerowi
 
 ```python
 import random
@@ -1060,5 +1063,3 @@ def ruch_pilki():
 
 pgzrun.go()
 ```
-
-### Testujemy działanie
