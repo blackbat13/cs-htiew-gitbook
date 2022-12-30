@@ -52,6 +52,11 @@ Po dodaniu potrzebnych materiałów, struktura projektu powinna wyglądać mniej
 
 ![Głodna świnia - animacja](../../.gitbook/assets/hungry_pig.gif)
 
+## Wstępna konfiguracja
+
+Zaczynamy standardowo: tworzymy nowy projekt, instalujemy bibliotekę, pobieramy materiały i umieszczamy je w odpowiednich miejscach.
+Nasz projekt możemy nazwać np. "GlodnaSwinia", albo "HungryPig". Gdy już utworzymy projekt, tworzymy w nim trzy nowe katalogi: *images*, *sounds*, oraz *fonts*. Następnie pobieramy wyżej wymienione materiały, rozpakowujemy je, a zawartość przerzucamy do odpowiednich katalogów. Pozostało nam jeszcze zainstalować bibliotekę: w okienku terminala wypisujemy standardowo polecenie `pip install pgzero`.
+
 ## Tworzymy okno gry
 
 Zaczynamy od utworzenia okna gry i podstawowej konfiguracji projektu. 
