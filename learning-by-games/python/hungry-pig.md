@@ -6,9 +6,9 @@ Stworzymy prostą grę, w której naszym graczem będzie świnia. Świnie, jak w
 
 ### Czego się nauczysz
 
-* Jak sterować postacią z klawiatury
-* Jak wykrywać kolizję pomiędzy postaciami
-* Jak obsłużyć koniec gry i jej restart
+* Jak sterować postacią z klawiatury.
+* Jak wykrywać kolizję pomiędzy postaciami.
+* Jak obsłużyć koniec gry i jej restart.
 
 ### Materiały do pobrania
 
@@ -54,19 +54,71 @@ Po dodaniu potrzebnych materiałów, struktura projektu powinna wyglądać mniej
 
 ## Tworzymy okno gry
 
-Zaczynamy od utworzenia okna gry i podstawowej konfiguracji projektu. Wymiary okna ustawimy na $$800\times800$$, ponieważ tak mamy przygotowaną grafikę tła (__bg.png__). Tło wyświetlimy na ekranie w części rysującej za pomocą polecenia `screen.blit()`, podając nazwę grafiki oraz współrzędne lewego górnego rogu, gdzie tło ma zostać narysowane. Możemy także ustawić tytuł naszej gry, np. "Hungry Pig", czyli z angielskiego "głodna świnia".
+Zaczynamy od utworzenia okna gry i podstawowej konfiguracji projektu. 
+
+### Biblioteki
+
+Będziemy korzystać ze standardowych, dwóch bibliotek:
+
+```
+import pgzrun
+import random
+```
+
+### Wymiary okna
+
+Wymiary okna ustawimy na $$800\times800$$, ponieważ tak mamy przygotowaną grafikę tła (**bg.png**). 
+
+```python
+WIDTH = 800
+HEIGHT = 800
+```
+
+### Tytuł gry
+
+Możemy także ustawić tytuł naszej gry, np. "Hungry Pig", czyli z angielskiego "głodna świnia". W tym celu przypiszemy nasz tytuł do zmiennej **TITLE**. Podobnie jak w przypadku `WIDTH` i `HEIGHT` zmienna ta jest związana z biblioteką *Pygame Zero* i musi zostać zapisana drukowanymi literami.
+
+```python
+TITLE = "Pygame Zero Hungry Pig"
+```
+
+### Tło
+
+Tło wyświetlimy na ekranie w części rysującej (*draw*) za pomocą polecenia `screen.blit()`, podając nazwę grafiki oraz współrzędne lewego górnego rogu, gdzie tło ma zostać narysowane. Współrzędne podajemy jako parę (krotkę) wartości, więc zamykamy je w dodatkowych nawiasach okrągłych. Polecenie rysujące tło będzie więc wyglądało następująco: `screen.blit("bg", (0, 0))`. 
+
+```python
+def draw():
+    screen.blit("bg", (0, 0))
+```
+
+### Pozostałe
+
+Dopisujemy jeszcze część aktualizującą (*update*), na początek jedynie z poleceniem `pass`, a także polecenie uruchamiające naszą grę: `pgzrun.go()`.
+
+```python
+def update():
+    pass
+
+
+pgzrun.go()
+```
+
+### Pełen kod
 
 ```python
 import pgzrun
 import random
 
-TITLE = "PyGameZero Hungry Pig"
+
 WIDTH = 800
 HEIGHT = 800
 
+TITLE = "PyGameZero Hungry Pig"
+
 
 def draw():
-    screen.blit("bg.png", (0, 0))
+    screen.blit("bg", (0, 0))
+
 
 def update():
     pass
@@ -77,11 +129,11 @@ pgzrun.go()
 
 ## Świnia
 
-Zacznijmy od naszej głównej postaci: świni. 
+Teraz, gdy mamy już przygotowany podstawowy szablon i tło naszej gry, możemy przejść do dodania głównej postaci: świni. 
 
 ### Dodajemy aktora
 
-Jak przyjrzymy się grafikom, to zobaczymy, że mamy kilka grafik reprezentujących świnię w zależności od kierunku, w którym jest obrócona. Wykorzystamy to przy poruszaniu się świni. Na początku jednak skorzystamy z grafiki __pig_down.png__. Na górze naszego programu, zaraz pod ustawieniami wymiarów okna, tworzymy naszego nowego aktora, którego nazwiemy **pig**, za pomocą polecenia `Actor()`. Naszą postać umieścimy na początku na środku ekranu, czyli pod współrzędnymi $$(400, 400)$$.
+Jak przyjrzymy się grafikom, to zobaczymy, że mamy kilka grafik reprezentujących świnię w zależności od kierunku, w którym jest obrócona. Wykorzystamy to przy poruszaniu się świni. Na początku jednak skorzystamy z grafiki **pig_down.png**. Na górze naszego programu, zaraz pod ustawieniami wymiarów okna i tytułu, tworzymy naszego nowego aktora, którego nazwiemy **pig**, za pomocą polecenia `Actor()`. Naszą postać umieścimy na początku na środku ekranu, czyli pod współrzędnymi $$(400, 400)$$.
 
 ```python
 pig = Actor("pig_down")
@@ -127,9 +179,9 @@ def update():
     pig.y += pig.vy
 ```
 
-Oczywiście w tym momencie świnia nie będzie się jeszcze poruszać, ponieważ ustawiliśmy jej prędkości na $$0$$. Warto dla testów tymczasowo zmienić prędkości **vx** i **vy**, a następnie uruchomić grę by sprawdzić, czy wszystko działa poprawnie.
+Oczywiście w tym momencie świnia nie będzie się jeszcze poruszać, ponieważ ustawiliśmy jej prędkości na $$0$$. Warto dla testów tymczasowo zmienić prędkości **vx** i/lub **vy**, a następnie uruchomić grę by sprawdzić, czy wszystko działa poprawnie.
 
-Teraz czas wreszcie dodać obsługę sterowania. W tym celu będziemy potrzebowali nowej funkcji, która pozwoli nam reagować na zdarzenia wciśnięcia klawisza na klawiaturze: `on_key_down(key)`. Dopiszemy ją na dole naszego programu, pod funkcją `update`, ale przed poleceniem `pgzrun.go()`. Wewnątrz funkcji będziemy reagować na kliknięcia przycisków na klawiaturze. W zależności od klikniętego przycisku, będziemy wykonywać inne operacje. Jeżeli kliknięta zostanie np. strzałka w lewo, to ustawimy prędkość poziomą **vx** świni na **-v**, wyzerujemy prędkość pionową i zmienimy grafikę na __pig_left.png__.
+Teraz czas wreszcie dodać obsługę sterowania. W tym celu będziemy potrzebowali nowej funkcji, która pozwoli nam reagować na zdarzenia wciśnięcia klawisza na klawiaturze: `on_key_down(key)`. Dopiszemy ją na dole naszego programu, pod funkcją `update`, ale przed poleceniem `pgzrun.go()`. Wewnątrz funkcji będziemy reagować na kliknięcia przycisków na klawiaturze. W zależności od klikniętego przycisku, będziemy wykonywać inne operacje. Kliknięty klawisz rozpoznamy dzięki parametrowi **key**, który przyjmuje nasza funkcja. Dla przykładu, żeby stwierdzić, czy kliknęliśmy klawisz strzałki w lewo, porównamy zmienną **key** z wartością **keys.LEFT**: `if key == keys.LEFT:`. Jeżeli kliknięta zostanie np. strzałka w lewo, to ustawimy prędkość poziomą **vx** świni na **-v** (`pig.vx = -pig.v`), wyzerujemy prędkość pionową (`pig.vy = 0`) i zmienimy grafikę na **pig_left.png** (`pig.image = "pig_left"`). 
 
 ```python
 def on_key_down(key):
@@ -140,6 +192,41 @@ def on_key_down(key):
 ```
 
 Podobnie postępujemy z pozostałymi kierunkami, odpowiednio zmieniając prędkości świni i jej grafikę.
+
+#### Ruch w prawo
+
+```python
+def on_key_down(key):
+    ...
+    if key == keys.RIGHT:
+        pig.vx = pig.v
+        pig.vy = 0
+        pig.image = "pig_right"
+```
+
+#### Ruch do góry
+
+```python
+def on_key_down(key):
+    ...
+    if key == keys.UP:
+        pig.vx = 0
+        pig.vy = -pig.v
+        pig.image = "pig_up"
+```
+
+#### Ruch w dół
+
+```python
+def on_key_down(key):
+    ...
+    if key == keys.DOWN:
+        pig.vx = 0
+        pig.vy = pig.v
+        pig.image = "pig_down"
+```
+
+#### Pełna obsługa klawiszy ruchu
 
 ```python
 def on_key_down(key):
@@ -170,9 +257,11 @@ def on_key_down(key):
 import pgzrun
 import random
 
-TITLE = "Hungry Pig"
+
 WIDTH = 800
 HEIGHT = 800
+
+TITLE = "Hungry Pig"
 
 pig = Actor("pig_down")
 pig.x = 400
@@ -219,11 +308,11 @@ pgzrun.go()
 
 ## Buraki
 
-Nasza świnia będzie żywić się burakami. Na ekranie zawsze będzie dokładnie jeden burak. Gdy świnia zje buraka, ten pojawi się ponownie w nowym, losowym miejscu na ekranie.
+Nasza świnia będzie żywić się burakami. Na ekranie zawsze będzie **dokładnie jeden** burak. Gdy świnia zje buraka, ten pojawi się ponownie w nowym, losowym miejscu na ekranie.
 
 ### Dodajemy aktora
 
-Naszego aktora zapiszemy w zmiennej `beet`. Utworzymy go na podstawie grafiki __beetroot.png__ i początkowo umieścimy w dowolnym miejscu na ekranie, np. pod współrzędnymi $$(200, 200)$$.
+Naszego aktora zapiszemy w zmiennej `beet`. Utworzymy go na podstawie grafiki ***beetroot.png*** i początkowo umieścimy w dowolnym miejscu na ekranie, np. pod współrzędnymi $$(200, 200)$$.
 
 ```python
 beet = Actor("beetroot")
@@ -237,8 +326,7 @@ W części rysującej dopisujemy instrukcję, która wyświetli naszego nowego a
 
 ```python
 def draw():
-    screen.blit("bg", (0, 0))
-    pig.draw()
+    ...
     beet.draw()
 ```
 
@@ -305,9 +393,11 @@ def update():
 import pgzrun
 import random
 
-TITLE = "Hungry Pig"
+
 WIDTH = 800
 HEIGHT = 800
+
+TITLE = "Hungry Pig"
 
 pig = Actor("pig_down")
 pig.x = 400
@@ -373,19 +463,17 @@ pig.points = 0
 
 ### Wyświetlamy punkty
 
-Zanim przejdziemy do zliczania punktów, wyświetlmy je na ekranie gry. W tym celu, w części rysującej **draw**, dopisujemy polecenie `screen.draw.text`. Jako parametry podamy tekst do wyświetlenia, czyli nasze punkty zamienione na tekst, a także pozycję tekstu na ekranie (**center**), rozmiar czcionki (**fontsize**), kolor tekstu (**color**) oraz nazwę czcionki (**fontname**).
+Zanim przejdziemy do zliczania punktów, wyświetlmy je na ekranie gry. W tym celu, w części rysującej **draw**, dopisujemy polecenie `screen.draw.text`. Jako parametry podamy tekst do wyświetlenia, czyli nasze punkty zamienione na tekst, a także pozycję środka tekstu na ekranie (**center**), rozmiar czcionki (**fontsize**), kolor tekstu (**color**) oraz nazwę czcionki (**fontname**).
 
 ```python
 screen.draw.text(f"{pig.points}", center=(WIDTH / 2, 50), fontsize=60, color="#fdee00", fontname="kenney_bold")
 ```
 
-Polecenie dopisujemy na koniec części rysujacej.
+Polecenie dopisujemy na koniec części rysującej.
 
 ```python
 def draw():
-    screen.blit("bg", (0, 0))
-    pig.draw()
-    beet.draw()
+    ...
     screen.draw.text(f"{pig.points}", center=(WIDTH / 2, 50), fontsize=60, color="#fdee00", fontname="kenney_bold")
 ```
 
@@ -408,9 +496,11 @@ if pig.colliderect(beet):
 import pgzrun
 import random
 
-TITLE = "Hungry Pig"
+
 WIDTH = 800
 HEIGHT = 800
+
+TITLE = "Hungry Pig"
 
 pig = Actor("pig_down")
 pig.x = 400
@@ -570,9 +660,11 @@ Dzięki temu, jeżeli gra jest już zakończona, to żadne dalsze instrukcje w d
 import pgzrun
 import random
 
-TITLE = "Hungry Pig"
+
 WIDTH = 800
 HEIGHT = 800
+
+TITLE = "Hungry Pig"
 
 pig = Actor("pig_down")
 pig.x = 400
@@ -685,9 +777,11 @@ screen.draw.text(f"Press SPACE to try again", center=(WIDTH / 2, 2 * HEIGHT / 3)
 import pgzrun
 import random
 
-TITLE = "Hungry Pig"
+
 WIDTH = 800
 HEIGHT = 800
+
+TITLE = "Hungry Pig"
 
 pig = Actor("pig_down")
 pig.x = 400
