@@ -163,7 +163,7 @@ pgzrun.go()
 
 ## Rury
 
-Czas dodać naszego przeciwnika w grze: rury. Jak zwykle zaczynamy od dodania nowych aktorów. Tym razem będzie ich dwóch: górna rura (`pipe_top`) i dolna rura (`pipe_bottom`). Utworzymy ich tak jak zazwyczaj z niewielką różnicą: ustalimy im odpowiednie _**kotwice**_. Kotwica pozwala nam wybrać punkt grafiki, według którego będziemy ją umieszczać na ekranie. Można to sobie wyobrazić jako miejsce, w którym "trzymamy" grafikę, gdy ją przemieszczamy. Domyślnie grafikę poruszamy względem jej środka, ale możemy też wybrać inne miejsce zaczepienia. Ze względu na charakter rur w naszej grze jest to duże ułatwienie.
+Czas dodać naszego przeciwnika w grze: rury. Jak zwykle zaczynamy od dodania nowych aktorów. Tym razem będzie ich dwóch: górna rura (`pipe_top`) i dolna rura (`pipe_bottom`). Utworzymy ich tak jak zazwyczaj z niewielką różnicą: ustalimy im odpowiednie **kotwice**. Kotwica pozwala nam wybrać punkt grafiki, według którego będziemy ją umieszczać na ekranie. Można to sobie wyobrazić jako miejsce, w którym "trzymamy" grafikę, gdy ją przemieszczamy. Domyślnie grafikę poruszamy względem jej środka, ale możemy też wybrać inne miejsce zaczepienia. Ze względu na charakter rur w naszej grze jest to duże ułatwienie.
 
 Dla górnej rury ustawimy kotwicę w jej lewym **dolnym** rogu. Dla dolnej rury natomiast ustawimy kotwicę w jej lewym **górnym** rogu.
 
@@ -295,7 +295,7 @@ W tym celu stworzymy nową funkcję *reset*.
 Co powinniśmy zrobić, aby zresetować grę?
 Jakie jej ustawienia musimy przywrócić do początkowych wartości?
 Potrzebujemy przywrócić naszego gracza, ptaka, na początkową pozycję i nadać mu właściwą prędkość.
-Przytałoby się także ponownie ustawić rury, abyśmy przypadkiem nie wylądowali w środku jeden z nich.
+Przydałoby się także ponownie ustawić rury, abyśmy przypadkiem nie wylądowali w środku jeden z nich.
 
 ```python
 def reset():
@@ -350,7 +350,7 @@ W jaki sposób wykryć, że ptak uderzył w rurę?
 Musimy sprawdzić, czy aktor reprezentujący ptaka i aktor reprezentujący rurę są ze sobą w **kolizji**.
 Co to oznacza, że dwaj aktorzy są ze sobą w kolizji?
 To znaczy, że prostokąty, które reprezentują ich grafiki, **nachodzą na siebie**.
-Można to sprawdzić na wiele sposobów, ale biblioteka PyGameZero ma do tego wbudowaną funkcję: **colliderect**.
+Można to sprawdzić na wiele sposobów, ale biblioteka Pygame Zero ma do tego wbudowaną funkcję: **colliderect**.
 
 W celu sprawdzenie, czy ptak jest w kolizji z górną rurą, zapiszemy:
 
