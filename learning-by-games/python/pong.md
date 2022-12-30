@@ -106,7 +106,7 @@ Teraz dostosujmy naszą linię, dodając niewielkie marginesy: $$40$$ pikseli z 
 screen.draw.line((WIDTH / 2, 40), (WIDTH / 2, HEIGHT - 40), color = "yellow")
 ```
 
-Oczywiście, żeby narysować linię na ekraniu, musimy dopisać powyższe polecenie w części rysującej, zaraz pod wypełnieniem ekranu kolorem tła.
+Oczywiście, żeby narysować linię na ekranie, musimy dopisać powyższe polecenie w części rysującej, zaraz pod wypełnieniem ekranu kolorem tła.
 
 ```python
 def draw():
@@ -252,7 +252,7 @@ right = Actor("right")
 ### Ustalamy pozycję prawej paletki
 
 Nasza prawa paletka będzie znajdować się z prawej strony ekranu.
-Nie chcemy jednak, by dotykała krawędzi, damy jej więc pewien niewielki margines, taki jak dla lewej paletyki, czyli $$20$$ pikseli.
+Nie chcemy jednak, by dotykała krawędzi, damy jej więc pewien niewielki margines, taki jak dla lewej paletki, czyli $$20$$ pikseli.
 Dzięki temu nasza gra będzie wyglądała estetyczniej.
 Ustalamy więc współrzędną $$x$$ prawej paletki.
 Ponieważ umieszczamy ją z prawej strony ekranu, to aby obliczyć jej pozycję, od szerokości ekranu (**WIDTH**) odejmujemy ustalony wcześniej margines.
@@ -338,7 +338,7 @@ ball = Actor("ball")
 
 ### Ustalamy pozycję piłki
 
-Nasza piłka będzie początkow znajdować się na środku ekranu.
+Nasza piłka będzie początkowo znajdować się na środku ekranu.
 Dlatego do współrzędnej $$x$$ przypisujemy połowę szerokości (**WIDTH**) ekranu, a do współrzędnej $$y$$ przypisujemy połowę wysokości (**HEIGHT**) ekranu.
 
 ```python
@@ -349,7 +349,7 @@ ball.y = HEIGHT / 2
 ### Rysujemy piłkę
 
 Skoro już umieściliśmy naszą piłkę w jej początkowej pozycji, możemy ją narysować na ekranie.
-Do części rysującej, zaraz pod poleceniem rysującym prawą paletkę, dopisujemy polecenie rysujące piłkę: _pilka.draw()_.
+Do części rysującej, zaraz pod poleceniem rysującym prawą paletkę, dopisujemy polecenie rysujące piłkę: *pilka.draw()*.
 
 ```python
 def draw():
@@ -544,7 +544,7 @@ ball.vx = 5
 ball.vy = 5
 ```
 
-### Przemieszcanie piłki
+### Przemieszczanie piłki
 
 Podobnie jak w przypadku paletek, do obsługi ruchu piłki także stworzymy nową funkcję, którą nazwiemy `move_ball`. Naszą funkcję dopiszemy na końcu kodu, zaraz przed poleceniem `pgzrun.go()`.
 
@@ -736,6 +736,20 @@ def move_ball():
         reset_ball()
 ```
 
+### Ruch piłki po resecie
+
+Obecnie, gdy nasza piłka wyleci z jednej strony ekranu, to wróci na środek i będzie się dalej poruszać w tym samym kierunku co wcześniej. Może to sprawić, że gracz, który właśnie nie zdołał odbić piłki będzie miał utrudnioną sytuację. W tym celu warto sprawić, by piłka po powrocie na środek poruszała się w losowo wybranym kierunku. Zmodyfikujemy więc naszą funkcję *reset_ball* dopisując do niej dwie linijki zmieniające prędkość piłki.
+
+Ponieważ chcemy, by piłka poruszała się cały czas tak samo szybko, to dla każdej z prędkości (poziomej i pionowej) mamy do wyboru dwie wartości: $$-5$$ lub $$5$$. Aby wylosować pomiędzy tymi dwiema wartościami skorzystamy z funkcji `random.choice`, do której podamy dwie wartości zamknięte w nawiasie kwadratowym i oddzielone przecinkiem (w ten sposób tworzymy **listę**, ale o listach powiemy sobie więcej w późniejszym temacie). Nasze losowanie będzie więc wyglądało następująco: `random.choice([-5, 5])`. Pozostało nam przypisać wyniki losowania do prędkości piłki.
+
+```python
+def reset_ball():
+    ...
+
+    ball.vx = random.choice([-5, 5])
+    ball.vy = random.choice([-5, 5])
+```
+
 ### Pełny kod
 
 Dotychczasowy pełny kod naszej gry przedstawiony jest poniżej.
@@ -820,12 +834,14 @@ def move_ball():
     if right.colliderect(ball):
         ball.vx *= -1
 
-    # Jeżeli piłka wypadła z lewej strony, to prawy gracz dostaje punkt
+    # Jeżeli piłka wypadła z lewej strony
     if ball.left <= 0:
+        # Resetujemy pozycję piłki
         reset_ball()
 
-    # Jeżeli piłka wypadła z prawej strony, to lewy graczdostaje punkt
+    # Jeżeli piłka wypadła z prawej strony
     if ball.right >= WIDTH:
+        # Resetujemy pozycję piłki
         reset_ball()
     
 
@@ -834,6 +850,476 @@ def reset_ball():
     # Określamy początkowe współrzędne piłki
     ball.x = WIDTH / 2
     ball.y = HEIGHT / 2
+    # Losowo wybieramy początkową prędkość piłki
+    ball.vx = random.choice([-5, 5])
+    ball.vy = random.choice([-5, 5])
+
+
+pgzrun.go()
+```
+
+## Punkty
+
+Przyszedł czas na zliczanie punktów!
+
+### Zapamiętujemy punkty
+
+Punkty zdobyte przez graczy zapamiętamy w paletkach. W tym celu dopisujemy do lewej i prawej paletki (zaraz pod ustaleniem ich prędkości) zmienną **points** z początkową wartością $$0$$: `left.points = 0` oraz `right.points = 0`.
+
+### Wyświetlamy punkty
+
+Zanim przejdziemy do zliczania punktów wyświetlimy je na ekranie. By zachować porządek i czytelność kodu dodamy nową funkcję: `draw_points`. Dopiszemy ją zaraz pod częścią rysującą (*draw*).
+
+```python
+def draw_points():
+```
+
+#### Punkty lewego gracza
+
+Zacznijmy od wypisania punktów lewego gracza. Skorzystamy z funkcji `screen.draw.text`. Jako tekst podamy punkty lewego gracza (*left.points*) z dopiskiem "Lewy: ": `f"Lewy: {left.points}"`. Kolor tekstu (*color*) ustawimy na żółty (*yellow*): `color="yellow"`. Środek tekstu (*center*) umieścimy z lewej strony ekranu, u góry: `center=(WIDTH / 4 - 20, 20)`. Jako rozmiar czcionki (*fontsize*) przyjmiemy wartość $$48$$: `fontsize=48`.
+
+```python
+def draw_points():
+    screen.draw.text(f"Lewy: {left.points}",
+                     color="yellow",
+                     center=(WIDTH / 4 - 20, 20),
+                     fontsize=48)
+```
+
+#### Punkty prawego gracza
+
+Teraz wypiszmy punkty prawego gracza. Postępujmy podobnie, tylko jako pozycję środka tekstu przyjmiemy prawą, górną stronę ekranu: `center=(WIDTH / 2 + WIDTH / 4 - 20, 20)`.
+
+```python
+def draw_points():
+    screen.draw.text(f"Lewy: {left.points}",
+                     color="yellow",
+                     center=(WIDTH / 4 - 20, 20),
+                     fontsize=48)
+
+    screen.draw.text(f"Prawy: {right.points}",
+                     color="yellow",
+                     center=(WIDTH / 2 + WIDTH / 4 - 20, 20),
+                     fontsize=48)
+```
+
+#### Wywołujemy rysowanie punktów
+
+Pozostało nam wywołać naszą funkcję *draw_points* na końcu części rysującej *draw*.
+
+```python
+def draw():
+    ...
+
+    draw_points()
+```
+
+### Zliczamy punkty
+
+Gdy już widzimy punkty na ekranie to możemy przejść do ich zliczania. Punkty będziemy zwiększać, gdy piłka wypadnie z lewej lub prawej strony ekranu. Lewy gracz dostanie punkt, gdy piłka wypadnie z prawej strony, natomiast prawy gracz dostanie punkt, gdy piłka wypadnie z lewej strony.
+
+Zwiększanie punktów dopiszemy w części odpowiadającej za ruch piłki (*move_ball*), zaraz pod instrukcjami sprawdzającymi, czy piłka wypadła poza ekran.
+
+```python
+def move_ball():
+    ...
+
+    if ball.left <= 0:
+        reset_ball()
+        right.points += 1
+
+    if ball.right >= WIDTH:
+        reset_ball()
+        left.points += 1 
+```
+
+### Pełny kod
+
+Dotychczasowy pełny kod naszej gry przedstawiony jest poniżej.
+
+```python
+import pgzrun
+import random
+
+
+WIDTH = 800
+HEIGHT = 600
+
+TITLE = "PONG"
+
+bg_color = (64, 64, 64)
+
+left = Actor("left")
+left.x = 20
+left.y = HEIGHT / 2
+left.vy = 5
+# Definiujemy punkty lewej paletki
+left.points = 0
+
+right = Actor("right")
+right.x = WIDTH - 20
+right.y = HEIGHT / 2
+right.vy = 5
+# Definiujemy punkty prawej paletki
+right.points = 0
+
+ball = Actor("ball")
+ball.x = WIDTH / 2
+ball.y = HEIGHT / 2
+ball.vx = 5
+ball.vy = 5
+
+
+def draw():
+    screen.fill(bg_color)
+    screen.draw.line((WIDTH / 2, 40), (WIDTH / 2, HEIGHT - 40), color = "yellow")
+    left.draw()
+    right.draw()
+    ball.draw()
+    # Wypisujemy punkty
+    draw_points()
+
+
+# Pomocnicza funkcja wypisująca na ekranie punkty graczy
+def draw_points():
+    # Wypisujemy wynik lewego gracza
+    screen.draw.text(f"Lewy: {left.points}",
+                     color="yellow",
+                     center=(WIDTH / 4 - 20, 20),
+                     fontsize=48)
+
+    # Wypisujemy wynik prawego gracza
+    screen.draw.text(f"Prawy: {right.points}",
+                     color="yellow",
+                     center=(WIDTH / 2 + WIDTH / 4 - 20, 20),
+                     fontsize=48)
+    
+    
+def update():
+    move_players()
+    move_ball()
+
+
+def move_players():
+    if keyboard.w and left.top > 40:
+        left.y -= left.vy
+
+    if keybaord.s and left.bottom < HEIGHT - 40:
+        left.y += left.vy
+
+    if keyboard.up and right.top > 40:
+        right.y -= right.vy
+
+    if keyboard.down and right.bottom < HEIGHT - 40:
+        right.y += right.vy
+    
+
+def move_ball():
+    ball.x += ball.vx
+    ball.y += ball.vy
+
+    if ball.top <= 40:
+        ball.vy *= -1
+
+    if ball.bottom >= HEIGHT - 40:
+        ball.vy *= -1
+
+    if left.colliderect(ball):
+        ball.vx *= -1
+
+    if right.colliderect(ball):
+        ball.vx *= -1
+
+    if ball.left <= 0:
+        reset_ball()
+        # Prawy gracz dostaje punkt
+        right.points += 1
+
+    if ball.right >= WIDTH:
+        reset_ball()
+        # Lewy gracz dostaje punkt
+        left.points += 1
+    
+
+def reset_ball():
+    ball.x = WIDTH / 2
+    ball.y = HEIGHT / 2
+    ball.vx = random.choice([-5, 5])
+    ball.vy = random.choice([-5, 5])
+
+
+pgzrun.go()
+```
+
+## Koniec gry
+
+Czas zająć się zakończeniem gry. Gra się zakończy, gdy któryś z graczy uzyska $$11$$ punktów. 
+
+### Zapamiętujemy zwycięzcę 
+
+Zaczniemy od zapamiętania, która z paletek wygrała. W tym celu dopiszemy do lewej i prawej paletki zmienną **win** z początkową wartością **False**. Zmienne dopisujemy odpowiednio pod punktami lewej i prawej paletki: `left.win = False` oraz `right.win = False`.
+
+### Wyświetlamy zwycięzcę
+
+Do wyświetlenia zwycięzcy na ekranie dopiszemy nową funkcję **draw_result**. Dopiszemy ją zaraz pod funkcją *draw_points*.
+
+```python
+def draw_result():
+```
+
+Najpierw sprawdzimy, czy to lewy gracz jest zwycięzcą.
+
+```python
+def draw_result():
+    if left.win:
+```
+
+Jeżeli tak, to wypisujemy stosowny komunikat na ekranie.
+
+```python
+def draw_result():
+    if left.win:
+        screen.draw.text("LEWY WYGRYWA!!!",
+                            color="yellow",
+                            center=(WIDTH / 2, HEIGHT / 2),
+                            fontsize=96)
+```
+
+Teraz sprawdzamy, czy to prawa paletka wygrała.
+
+```python
+def draw_result():
+    if left.win:
+        screen.draw.text("LEWY WYGRYWA!!!",
+                            color="yellow",
+                            center=(WIDTH / 2, HEIGHT / 2),
+                            fontsize=96)
+    
+    if right.win:
+```
+
+Wypisujemy więc stosowny komunikat na ekranie.
+
+```python
+def draw_result():
+    if left.win:
+        screen.draw.text("LEWY WYGRYWA!!!",
+                            color="yellow",
+                            center=(WIDTH / 2, HEIGHT / 2),
+                            fontsize=96)
+    
+    if right.win:
+        screen.draw.text("PRAWY WYGRYWA!!!",
+                            color="yellow",
+                            center=(WIDTH / 2, HEIGHT / 2),
+                            fontsize=96)
+```
+
+Teraz przyszła pora na wykorzystanie naszej funkcji. Dopisujemy wywołanie naszej funkcji na końcu części rysującej (*draw*).
+
+```python
+def draw():
+    ...
+
+    draw_result()
+```
+
+### Ustalamy zwycięzcę
+
+Zwycięzcę ustalimy w części przemieszczającej piłkę (*move_ball*) sprawdzając, czy któryś z graczy zdobył $$11$$ punktów. 
+
+Najpierw sprawdzimy, czy prawa paletka uzyskała $$11$$ punktów.
+
+```python
+def move_ball():
+    ...
+
+    if right.points == 11:
+```
+
+Jeżeli tak, to zmieniamy wartość jej zmiennej *win* na **True**.
+
+```python
+def move_ball():
+    ...
+
+    if right.points == 11:
+        right.win = True
+```
+
+Podobnie postępujemy z lewą paletką.
+
+```python
+def move_ball():
+    ...
+
+    if right.points == 11:
+        right.win = True
+
+    if left.points == 11:
+        left.win = True
+```
+
+### Zatrzymanie gry
+
+Gdy któryś z graczy uzyska $$11$$ punktów gra powinna się zatrzymać. W tym celu, w części aktualizującej (*update*) będziemy aktualizować grę tylko wtedy, gdy żaden z graczy jeszcze nie wygrał. Zmieniamy więc implementację funkcji *update*.
+
+W celu sprawdzenia, czy gra wciąż trwa, sprawdzimy, czy nieprawdą jest (**not**), że wygrał gracz lewy (**left.win**) lub (**or**) wygrał gracz prawy (**right.win**).
+
+```python
+def update():
+    if not (left.win or right.win):
+```
+
+Teraz dopisujemy wywołania naszych funkcji.
+
+```python
+def update():
+    if not (left.win or right.win):
+        move_players()
+        move_ball()
+```
+
+### Pełny kod
+
+Dotychczasowy pełny kod naszej gry przedstawiony jest poniżej.
+
+```python
+import pgzrun
+import random
+
+
+WIDTH = 800
+HEIGHT = 600
+
+TITLE = "PONG"
+
+bg_color = (64, 64, 64)
+
+left = Actor("left")
+left.x = 20
+left.y = HEIGHT / 2
+left.vy = 5
+left.points = 0
+# Zapamiętujemy, czy lewa paletka jest zwycięzcą
+left.win = False
+
+right = Actor("right")
+right.x = WIDTH - 20
+right.y = HEIGHT / 2
+right.vy = 5
+right.points = 0
+# Zapamiętujemy, czy prawa paletka jest zwycięzcą
+right.win = False
+
+ball = Actor("ball")
+ball.x = WIDTH / 2
+ball.y = HEIGHT / 2
+ball.vx = 5
+ball.vy = 5
+
+
+def draw():
+    screen.fill(bg_color)
+    screen.draw.line((WIDTH / 2, 40), (WIDTH / 2, HEIGHT - 40), color = "yellow")
+    left.draw()
+    right.draw()
+    ball.draw()
+    draw_points()
+    # Wypisujemy wynik gry
+    draw_result()
+
+
+def draw_points():
+    screen.draw.text(f"Lewy: {left.points}",
+                     color="yellow",
+                     center=(WIDTH / 4 - 20, 20),
+                     fontsize=48)
+
+    screen.draw.text(f"Prawy: {right.points}",
+                     color="yellow",
+                     center=(WIDTH / 2 + WIDTH / 4 - 20, 20),
+                     fontsize=48)
+
+
+# Pomocnicza funkcja wypisująca na ekranie wynik końca gry
+def draw_result():
+    # Jeżeli to lewy gracz wygrał
+    if left.win:
+        screen.draw.text("LEWY WYGRYWA!!!",
+                            color="yellow",
+                            center=(WIDTH / 2, HEIGHT / 2),
+                            fontsize=96)
+
+    # Jeżeli prawy gracz jest zwycięzcą
+    if right.win:
+        screen.draw.text("PRAWY WYGRYWA!!!",
+                            color="yellow",
+                            center=(WIDTH / 2, HEIGHT / 2),
+                            fontsize=96) 
+    
+
+def update():
+    # Jeżeli gra nie została jeszcze zakończona
+    if not (left.win or right.win):
+        move_players()
+        move_ball()
+
+
+def move_players():
+    if keyboard.w and left.top > 40:
+        left.y -= left.vy
+
+    if keybaord.s and left.bottom < HEIGHT - 40:
+        left.y += left.vy
+
+    if keyboard.up and right.top > 40:
+        right.y -= right.vy
+
+    if keyboard.down and right.bottom < HEIGHT - 40:
+        right.y += right.vy
+    
+
+def move_ball():
+    ball.x += ball.vx
+    ball.y += ball.vy
+
+    if ball.top <= 40:
+        ball.vy *= -1
+
+    if ball.bottom >= HEIGHT - 40:
+        ball.vy *= -1
+
+    if left.colliderect(ball):
+        ball.vx *= -1
+
+    if right.colliderect(ball):
+        ball.vx *= -1
+
+    if ball.left <= 0:
+        reset_ball()
+        right.points += 1
+
+    if ball.right >= WIDTH:
+        reset_ball()
+        left.points += 1
+
+    # Jeżeli prawa paletka uzyskała 11 punktów to wygrywa i gra się kończy
+    if right.points == 11:
+        right.win = True
+        ball.game_over = True
+
+    # Jeżeli lewa paletka uzyskała 11 punktów to wygrywa i gra się kończy
+    if left.points == 11:
+        left.win = True
+        ball.game_over = True
+    
+
+def reset_ball():
+    ball.x = WIDTH / 2
+    ball.y = HEIGHT / 2
+    ball.vx = random.choice([-5, 5])
+    ball.vy = random.choice([-5, 5])
 
 
 pgzrun.go()
@@ -888,45 +1374,23 @@ ball.y = HEIGHT / 2
 # Definiujemy początkową prędkość piłki
 ball.vx = 5
 ball.vy = 5
-# Zapamiętujemy, czy rozgrywka się już zakończyła
-ball.game_over = False
 
 
 def draw():
     # Wypełniamy ekran kolorem tła
     screen.fill(bg_color)
-
-    # Jeżeli gra się zakończyła
-    if ball.game_over:
-        # Wypisujemy wynik gry
-        draw_result()
-    else: # W przeciwnym przypadku, gdy rozgrywka wciąż trwa
-        # Rysujemy lewą paletkę
-        left.draw()
-        # Rysujemy prawą paletkę
-        right.draw()
-        # Rysujemy piłkę
-        ball.draw()
-        # Wypisujemy punkty
-        draw_points()
-
-        # Rysujemy linię dzielącą pole gry
-        screen.draw.line((WIDTH / 2, 40), (WIDTH / 2, HEIGHT - 40), color="yellow")
-
-
-# Pomocnicza funkcja wypisująca na ekranie wynik końca gry
-def draw_result():
-    # Jeżeli to lewy gracz wygrał
-    if left.win:
-        screen.draw.text("LEWY WYGRYWA!!!",
-                            color="yellow",
-                            center=(WIDTH / 2, HEIGHT / 2),
-                            fontsize=96)
-    else: # W przeciwnym przeypadku, jeżeli prawy gracz jest zwycięzcą
-        screen.draw.text("PRAWY WYGRYWA!!!",
-                            color="yellow",
-                            center=(WIDTH / 2, HEIGHT / 2),
-                            fontsize=96)
+    # Rysujemy linię dzielącą pole gry
+    screen.draw.line((WIDTH / 2, 40), (WIDTH / 2, HEIGHT - 40), color="yellow")
+    # Rysujemy lewą paletkę
+    left.draw()
+    # Rysujemy prawą paletkę
+    right.draw()
+    # Rysujemy piłkę
+    ball.draw()
+    # Wypisujemy punkty
+    draw_points()
+    # Wypisujemy wynik gry
+    draw_result()
 
 
 # Pomocnicza funkcja wypisująca na ekranie punkty graczy
@@ -944,10 +1408,27 @@ def draw_points():
                      fontsize=48)
 
 
+# Pomocnicza funkcja wypisująca na ekranie wynik końca gry
+def draw_result():
+    # Jeżeli to lewy gracz wygrał
+    if left.win:
+        screen.draw.text("LEWY WYGRYWA!!!",
+                            color="yellow",
+                            center=(WIDTH / 2, HEIGHT / 2),
+                            fontsize=96)
+
+    # Jeżeli prawy gracz jest zwycięzcą
+    if right.win: 
+        screen.draw.text("PRAWY WYGRYWA!!!",
+                            color="yellow",
+                            center=(WIDTH / 2, HEIGHT / 2),
+                            fontsize=96)
+
+
 # Aktualizujemy stan gry - ruchy graczy i piłki
 def update():
     # Jeżeli gra nie została jeszcze zakończona
-    if not ball.game_over:
+    if not (left.win or right.win):
         # Odczytujemy ruchy graczy
         move_players()
         # Poruszamy piłkę
@@ -993,25 +1474,27 @@ def move_ball():
     if right.colliderect(ball):
         ball.vx *= -1
 
-    # Jeżeli piłka wypadła z lewej strony, to prawy gracz dostaje punkt
+    # Jeżeli piłka wypadła z lewej strony
     if ball.left <= 0:
+        # Resetujemy pozycję piłki
         reset_ball()
+        # Prawy gracz dostaje punkt
         right.points += 1
 
-        # Jeżeli prawa paletka uzyskała 11 punktów to wygrywa i gra się kończy
-        if right.points == 11:
-            right.win = True
-            ball.game_over = True
-
-    # Jeżeli piłka wypadła z prawej strony, to lewy graczdostaje punkt
+    # Jeżeli piłka wypadła z prawej strony
     if ball.right >= WIDTH:
+        # Resetujemy pozycję piłki
         reset_ball()
+        # Lewy gracz dostaje punkt
         left.points += 1
 
-        # Jeżeli lewa paletka uzyskała 11 punktów to wygrywa i gra się kończy
-        if left.points == 11:
-            left.win = True
-            ball.game_over = True
+    # Jeżeli prawa paletka uzyskała 11 punktów to wygrywa i gra się kończy
+    if right.points == 11:
+        right.win = True
+
+    # Jeżeli lewa paletka uzyskała 11 punktów to wygrywa i gra się kończy
+    if left.points == 11:
+        left.win = True
 
 
 # Pomocnicza funkcja resetująca pozycję piłki
@@ -1022,6 +1505,7 @@ def reset_ball():
     # Losowo wybieramy początkową prędkość piłki
     ball.vx = random.choice([-5, 5])
     ball.vy = random.choice([-5, 5])
+
 
 pgzrun.go()
 ```
