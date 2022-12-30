@@ -197,6 +197,7 @@ def on_key_down(key):
 ```
 
 Podobnie postępujemy z pozostałymi kierunkami, odpowiednio zmieniając prędkości świni i jej grafikę.
+Listę wszystkich dostępnych klawiszy możemy znaleźć na stronie biblioteki Pygame Zero: [https://pygame-zero.readthedocs.io/en/stable/hooks.html#keys](https://pygame-zero.readthedocs.io/en/stable/hooks.html#keys).
 
 #### Ruch w prawo
 
