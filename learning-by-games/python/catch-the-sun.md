@@ -410,6 +410,14 @@ pgzrun.go()
 
 Czas zagrać w naszą grę! Ile punktów Tobie uda się zdobyć?
 
+## Pełna gra
+
+Pełna implementacja dostępna jest poniżej.
+
+{% embed url="https://github.com/blackbat13/CatchTheSunPgZero" %}
+Złap Słońce
+{% endembed %}
+
 ## Zadanie dodatkowe
 
 Spróbuj dodać do gry wyświetlanie największej liczby punktów, jakie udało się zdobyć w obecnej rozgrywce. **Podpowiedź**: dopisz nową zmienną do słońca i wyświetl ją na ekranie (podobnie jak punkty), a przy każdym nowym zdobytym punkcie sprawdzaj, czy udało się zdobyć więcej punktów niż dotychczas, a jeżeli tak to zmień wartość nowej zmiennej.
