@@ -591,6 +591,150 @@ set_pipes()
 pgzrun.go()
 ```
 
+## Punkty
+
+Czas na zdobywanie punktów!
+
+### Zapamiętujemy punkty
+
+W celu zapamiętania punktów dopiszemy nową zmienną do naszego aktora ptaka. Nazwiemy ją **points** i przypiszemy jej początkową wartość $$0$$. Nową zmienną dopisujemy na górze kodu, zaraz pod przypisaniem prędkości pionowej do ptaka.
+
+```python
+bird = Actor("bird1.png")
+bird.x = 75
+bird.y = 200
+bird.vy = 0
+bird.points = 0
+```
+
+### Wyświetlamy punkty na ekranie
+
+Na końcu części rysującej dopiszemy wyświetlanie punktów za pomocą funkcji `screen.draw.text`.
+
+```python
+def draw():
+    ...
+
+    screen.draw.text(str(bird.points), center=(WIDTH // 2, 30), fontsize=70)
+```
+
+### Zliczamy punkty
+
+Punkty będziemy dostawać za każdą pokonaną przeszkodę. Dlatego, w funkcji aktualizującej rury (*update_pipes*), w miejscu gdzie ponownie ustawiamy rury, gdy te znikną z ekranu, dodamy graczowi jeden punkt.
+
+```python
+def update_pipes():
+    ...
+
+    if pipe_top.x < -100:
+        set_pipes()
+        bird.points += 1
+```
+
+### Resetujemy punkty
+
+Nie chcielibyśmy, żeby gra kontynuowała zliczanie punktów po przegranej, tylko żeby punkty były liczone od nowa. W tym celu, w funkcji resetującej grę (*reset*) dopiszemy wyzerowanie punktów gracza. W celu zachowania porządku kodu dopiszemy to zaraz przed wywołaniem funkcji *set_pipes*, chociaż kolejność nie będzie miała wpływu na działanie gry.
+
+```python
+def reset():
+    ...
+
+    bird.points = 0
+    set_pipes()
+```
+
+### Pełny kod
+
+Dotychczasowy pełny kod naszej gry przedstawiony jest poniżej.
+
+```python
+import pgzrun
+import random
+
+
+WIDTH = 400
+HEIGHT = 700
+
+TITLE = "Pygame Zero Flappy Bird"
+
+GRAVITY = 0.3
+FLAP = 7
+SPEED = 3
+GAP_SIZE = 180
+
+bird = Actor("bird1.png")
+bird.x = 75
+bird.y = 200
+bird.vy = 0
+# Zliczamy zdobyte przez gracza punkty
+bird.points = 0
+
+pipe_top = Actor("top")
+pipe_top.anchor = ("left", "bottom")
+
+pipe_bottom = Actor("bottom")
+pipe_bottom.anchor = ("left", "top")
+
+
+def draw():
+    screen.blit("bg.png", (0, 0))
+    pipe_top.draw()
+    pipe_bottom.draw()
+    bird.draw()
+    # Wypisujemy liczbę punktów na ekranie
+    screen.draw.text(str(bird.points), center=(WIDTH // 2, 30), fontsize=70)
+
+
+def update():
+    update_bird()
+    update_pipes()
+    
+
+def update_bird():
+    bird.vy += GRAVITY
+    bird.y += bird.vy
+
+    if bird.colliderect(pipe_top) or bird.colliderect(pipe_bottom) or bird.y > HEIGHT or bird.y < 0:
+        reset()
+
+
+def update_pipes():
+    pipe_top.x -= SPEED
+    pipe_bottom.x -= SPEED
+
+    if pipe_top.x < -100:
+        set_pipes()
+        # Zwiększamy liczbę punktów
+        bird.points += 1
+
+
+def on_mouse_down(pos):
+    bird.vy = -FLAP
+
+
+def set_pipes():
+    gap_y = random.randint(200, 500)
+
+    pipe_top.x = WIDTH
+    pipe_top.y = gap_y - GAP_SIZE // 2
+
+    pipe_bottom.x = WIDTH
+    pipe_bottom.y = gap_y + GAP_SIZE // 2
+
+
+def reset():
+    bird.x = 75
+    bird.y = 200
+    bird.vy = 0
+    # Zapamiętujemy liczbę punktów zdobytych przez gracza
+    bird.points = 0
+    set_pipes()
+
+
+set_pipes()
+pgzrun.go()
+```
+
 ## Pełna gra
 
 ```python
@@ -622,10 +766,10 @@ bird.x = 75
 bird.y = HEIGHT + 20
 # Ustalamy początkową prędkość pionową ptaka
 bird.vy = 0
-# Zapamiętujemy, czy gra się zakończyła
-bird.dead = True
 # Zliczamy zdobyte przez gracza punkty
 bird.points = 0
+# Zapamiętujemy, czy gra się zakończyła
+bird.dead = True
 
 # Tworzymy górną rurę
 pipe_top = Actor("top")
