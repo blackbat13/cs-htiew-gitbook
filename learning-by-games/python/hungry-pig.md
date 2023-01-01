@@ -115,20 +115,25 @@ import pgzrun
 import random
 
 
+# Określamy szerokość i wysokość okna gry
 WIDTH = 800
 HEIGHT = 800
 
-TITLE = "PyGameZero Hungry Pig"
+# Podajemy tytuł okna naszej gry
+TITLE = "Pygame Zero Hungry Pig"
 
 
+# Funkcja rysująca stan gry na ekranie
 def draw():
-    screen.blit("bg", (0, 0))
+    # Wyświetlamy tło
 
 
+# Funkcja aktualizująca stan gry
 def update():
     pass
 
 
+# Uruchamiamy grę
 pgzrun.go()
 ```
 
@@ -138,12 +143,12 @@ Teraz, gdy mamy już przygotowany podstawowy szablon i tło naszej gry, możemy 
 
 ### Dodajemy aktora
 
-Jak przyjrzymy się grafikom, to zobaczymy, że mamy kilka grafik reprezentujących świnię w zależności od kierunku, w którym jest obrócona. Wykorzystamy to przy poruszaniu się świni. Na początku jednak skorzystamy z grafiki **pig_down.png**. Na górze naszego programu, zaraz pod ustawieniami wymiarów okna i tytułu, tworzymy naszego nowego aktora, którego nazwiemy **pig**, za pomocą polecenia `Actor()`. Naszą postać umieścimy na początku na środku ekranu, czyli pod współrzędnymi $$(400, 400)$$.
+Jak przyjrzymy się grafikom, to zobaczymy, że mamy kilka grafik reprezentujących świnię w zależności od kierunku, w którym jest obrócona. Wykorzystamy to przy poruszaniu się świni. Na początku jednak skorzystamy z grafiki **pig_down.png**. Na górze naszego programu, zaraz pod ustawieniami wymiarów okna i tytułu, tworzymy naszego nowego aktora, którego nazwiemy **pig**, za pomocą polecenia `Actor()`. Naszą postać umieścimy na początku na środku ekranu. Współrzędne możemy obliczyć dzieląc odpowiednio szerokość i wysokość erkanu na dwa.
 
 ```python
 pig = Actor("pig_down")
-pig.x = 400
-pig.y = 400
+pig.x = WIDTH / 2
+pig.y = HEIGHT / 2
 ```
 
 ### Rysujemy świnię na ekranie
@@ -169,8 +174,8 @@ Dopisujemy więc nowe parametry do naszej świni. Aby na początku świnia stał
 
 ```python
 pig = Actor("pig_down")
-pig.x = 400
-pig.y = 400
+pig.x = WIDTH / 2
+pig.y = Height / 2
 pig.vx = 0
 pig.vy = 0
 pig.v = 3
@@ -204,6 +209,7 @@ Listę wszystkich dostępnych klawiszy możemy znaleźć na stronie biblioteki P
 ```python
 def on_key_down(key):
     ...
+
     if key == keys.RIGHT:
         pig.vx = pig.v
         pig.vy = 0
@@ -215,6 +221,7 @@ def on_key_down(key):
 ```python
 def on_key_down(key):
     ...
+
     if key == keys.UP:
         pig.vx = 0
         pig.vy = -pig.v
@@ -226,6 +233,7 @@ def on_key_down(key):
 ```python
 def on_key_down(key):
     ...
+
     if key == keys.DOWN:
         pig.vx = 0
         pig.vy = pig.v
@@ -267,42 +275,55 @@ import random
 WIDTH = 800
 HEIGHT = 800
 
-TITLE = "Hungry Pig"
+TITLE = "Pygame Zero Hungry Pig"
 
+# Tworzymy aktora świni
 pig = Actor("pig_down")
-pig.x = 400
-pig.y = 400
+# Określamy początkową pozycję świni na ekranie
+pig.x = WIDTH / 2
+pig.y = HEIGHT / 2
+# Określamy początkową prędkość poziomą i pionową świni
 pig.vx = 0
 pig.vy = 0
+# Określamy początkową prędkość główną świni
 pig.v = 3
 
 
 def draw():
     screen.blit("bg", (0, 0))
+    # Rysujemy świnię
     pig.draw()
 
 
 def update():
+    # Przemieszczamy świnię zgodnie z jej prędkością w poziomie i pionie
     pig.x += pig.vx
     pig.y += pig.vy
 
 
+# Funkcja odczytująca kliknięcia klawiszy na klawiaturze
 def on_key_down(key):
+    # Sprawdzamy, czy naciśnięto klawisz strzałki w lewo
     if key == keys.LEFT:
+        # Zmieniamy prędkość świni
         pig.vx = -pig.v
         pig.vy = 0
+        # Zmieniamy grafikę świni
         pig.image = "pig_left"
 
+    # Sprawdzamy, czy naciśnięto klawisz strzałki w prawo
     if key == keys.RIGHT:
         pig.vx = pig.v
         pig.vy = 0
         pig.image = "pig_right"
 
+    # Sprawdzamy, czy naciśnięto klawisz strzałki w górę
     if key == keys.UP:
         pig.vx = 0
         pig.vy = -pig.v
         pig.image = "pig_up"
 
+    # Sprawdzamy, czy naciśnięto klawisz strzałki w dół
     if key == keys.DOWN:
         pig.vx = 0
         pig.vy = pig.v
@@ -333,6 +354,7 @@ W części rysującej dopisujemy instrukcję, która wyświetli naszego nowego a
 ```python
 def draw():
     ...
+
     beet.draw()
 ```
 
@@ -340,50 +362,46 @@ def draw():
 
 Podczas poruszania się po ekranie, gdy świnia wejdzie w kolizję z burakiem, to go zje. Po zjedzeniu buraka świnia powinna przyspieszyć, wydać odpowiedni odgłos, a sam burak powinien przemieścić się w losowe miejsce na ekranie.
 
+Wszystko będziemy zapisywać w części aktualizującej **update**, zaraz pod zmianą pozycji świni.
+
 W celu stwierdzenia, że świnia jest w kolizji z burakiem, skorzystamy z instrukcji **colliderect**:
 
 ```python
-if pig.colliderect(beet):
-```
+def update():
+    ...
 
-Wszystko będziemy zapisywać w części aktualizującej **update**, zaraz pod zmianą pozycji świni.
+    if pig.colliderect(beet):
+```
 
 Po wykryciu kolizji zacznijmy od przemieszczenia buraka w losowe miejsce. Osobno wylosujemy nowe wartości dla współrzędnych $$x$$ oraz $$y$$. Aby jednak burak nie pojawił się na brzegu ekranu, warto zadbać o odpowiedni margines, np $$50$$ pikseli. W celu wylosowania wartości skorzystamy z biblioteki **random** oraz funkcji **randint**, do której, jako argumenty, przekazujemy przedział, z jakiego chcemy wylosować wartość.
 
 ```python
-beet.x = random.randint(50, WIDTH - 50)
-beet.y = random.randint(50, HEIGHT - 50)
+def update():
+    ...
+    
+    if pig.colliderect(beet):
+        beet.x = random.randint(50, WIDTH - 50)
+        beet.y = random.randint(50, HEIGHT - 50)
 ```
 
 Następnie zwiększamy prędkość świni. W tym celu modyfikujemy parametr **v**, dodając do niego jakąś niewielką liczbę, np. $$0.8$$. Warto poeksperymentować z różnymi wartościami by dobrać odpowiedni dla siebie poziom trudności.
 
 ```python
-pig.v += 0.8
+def update():
+    ...
+    
+    if pig.colliderect(beet):
+        beet.x = random.randint(50, WIDTH - 50)
+        beet.y = random.randint(50, HEIGHT - 50)
+        pig.v += 0.8
 ```
 
 Na koniec warto jeszcze dodać efekty dźwiękowe. W tym celu piszemy `sounds.`, następnie nazwa pliku z dźwiękiem znajdującego się w katalogu *sounds*, np. `sounds.pig`, a na koniec, po kolejnej kropce, polecenie `play()`.
 
 ```python
-sounds.pig.play()
-```
-
-Cały kod stwierdzający kolizję z burakiem prezentuje się następująco:
-
-```python
-if pig.colliderect(beet):
-    beet.x = random.randint(50, WIDTH - 50)
-    beet.y = random.randint(50, HEIGHT - 50)
-    pig.v += 0.8
-    sounds.pig.play()
-```
-
-Umieszczamy naszą instrukcję w części aktualizującej.
-
-```python
 def update():
-    pig.x += pig.vx
-    pig.y += pig.vy
-
+    ...
+    
     if pig.colliderect(beet):
         beet.x = random.randint(50, WIDTH - 50)
         beet.y = random.randint(50, HEIGHT - 50)
@@ -401,7 +419,7 @@ import random
 WIDTH = 800
 HEIGHT = 800
 
-TITLE = "Hungry Pig"
+TITLE = "Pygame Zero Hungry Pig"
 
 pig = Actor("pig_down")
 pig.x = 400
@@ -410,7 +428,9 @@ pig.vx = 0
 pig.vy = 0
 pig.v = 3
 
+# Tworzymy aktora buraka
 beet = Actor("beetroot")
+# Określamy początkowe położenie buraka na ekranie
 beet.x = 200
 beet.y = 200
 
@@ -418,6 +438,7 @@ beet.y = 200
 def draw():
     screen.blit("bg", (0, 0))
     pig.draw()
+    # Rysujemy buraka
     beet.draw()
 
 
@@ -425,10 +446,14 @@ def update():
     pig.x += pig.vx
     pig.y += pig.vy
 
+    # Jeżeli świnia wpadła na buraka
     if pig.colliderect(beet):
+        # Przemieszczamy buraka w nowe, losowe miejsce na ekranie
         beet.x = random.randint(50, WIDTH - 50)
         beet.y = random.randint(50, HEIGHT - 50)
+        # Przyspieszamy świnię
         pig.v += 0.8
+        # Odgrywamy dźwięk świni
         sounds.pig.play()
 
 
@@ -459,7 +484,7 @@ pgzrun.go()
 
 ## Punkty
 
-Cóż to za gra bez punktów! Dodanie jednak punktów do naszej gry to żaden problem. Punkty będziemy dostawać za każdego zjedzonego buraka. Na początku dopisujemy punkty w postaci nowej zmiennej **points** do naszej świni. Początkowo punkty ustawiamy na $$0$$.
+Cóż to za gra bez punktów! Dodanie jednak punktów do naszej gry to żaden problem. Punkty będziemy dostawać za każdego zjedzonego buraka. Na początku dopisujemy punkty w postaci nowej zmiennej **points** do naszej świni. Początkowo punkty ustawiamy na $$0$$. Nową wartość dopisujemy zaraz pod ustaleniem głównej prędkości świni.
 
 ```python
 pig.points = 0
@@ -467,31 +492,29 @@ pig.points = 0
 
 ### Wyświetlamy punkty
 
-Zanim przejdziemy do zliczania punktów, wyświetlmy je na ekranie gry. W tym celu, w części rysującej **draw**, dopisujemy polecenie `screen.draw.text`. Jako parametry podamy tekst do wyświetlenia, czyli nasze punkty zamienione na tekst, a także pozycję środka tekstu na ekranie (**center**), rozmiar czcionki (**fontsize**), kolor tekstu (**color**) oraz nazwę czcionki (**fontname**).
-
-```python
-screen.draw.text(f"{pig.points}", center=(WIDTH / 2, 50), fontsize=60, color="#fdee00", fontname="kenney_bold")
-```
-
-Polecenie dopisujemy na koniec części rysującej.
+Zanim przejdziemy do zliczania punktów, wyświetlmy je na ekranie gry. W tym celu, na końcu części rysującej **draw**, dopisujemy polecenie `screen.draw.text`. Jako parametry podamy tekst do wyświetlenia, czyli nasze punkty zamienione na tekst, a także pozycję środka tekstu na ekranie (**center**), rozmiar czcionki (**fontsize**), kolor tekstu (**color**) oraz nazwę czcionki (**fontname**). Czcionka, z której chcemy skorzystać, musi znajdować się w katalogu *fonts*.
 
 ```python
 def draw():
     ...
+
     screen.draw.text(f"{pig.points}", center=(WIDTH / 2, 50), fontsize=60, color="#fdee00", fontname="kenney_bold")
 ```
 
 ### Zliczamy punkty
 
-Jak już ustaliliśmy, punkty będziemy dostawać za każdego zjedzonego buraka. W takim razie, do części, w której wykrywamy kolizję z burakiem, dopisujemy zwiększanie punktów: `pig.points += 1`. Warto to dopisać zaraz pod zwiększeniem prędkości świni, tak aby zachować czytelność kodu, ale kolejność nie ma dużego znaczenia.
+Jak już ustaliliśmy, punkty będziemy dostawać za każdego zjedzonego buraka. W takim razie, do części, w której wykrywamy kolizję z burakiem, dopisujemy zwiększanie punktów: `pig.points += 1`. Warto to dopisać zaraz pod zwiększeniem prędkości świni, tak aby zachować czytelność kodu, ale kolejność nie ma dużego znaczenia. Równie dobrze moglibyśmy tę linijkę dopisać po wywołaniu dźwięku świni.
 
 ```python
-if pig.colliderect(beet):
-    beet.x = random.randint(50, WIDTH - 50)
-    beet.y = random.randint(50, HEIGHT - 50)
-    pig.v += 0.8
-    pig.points += 1
-    sounds.pig.play()
+def update():
+    ...
+
+    if pig.colliderect(beet):
+        beet.x = random.randint(50, WIDTH - 50)
+        beet.y = random.randint(50, HEIGHT - 50)
+        pig.v += 0.8
+        pig.points += 1
+        sounds.pig.play()
 ```
 
 ### Pełny kod
@@ -504,7 +527,7 @@ import random
 WIDTH = 800
 HEIGHT = 800
 
-TITLE = "Hungry Pig"
+TITLE = "Pygame Zero Hungry Pig"
 
 pig = Actor("pig_down")
 pig.x = 400
@@ -512,6 +535,7 @@ pig.y = 400
 pig.vx = 0
 pig.vy = 0
 pig.v = 3
+# Określamy początkową liczbę punktów gracza
 pig.points = 0
 
 beet = Actor("beetroot")
@@ -523,6 +547,7 @@ def draw():
     screen.blit("bg", (0, 0))
     pig.draw()
     beet.draw()
+    # Wypisujemy liczbę zdobytych punktów
     screen.draw.text(f"{pig.points}", center=(WIDTH / 2, 50), fontsize=60, color="#fdee00", fontname="kenney_bold")
     
 
@@ -534,6 +559,7 @@ def update():
         beet.x = random.randint(50, WIDTH - 50)
         beet.y = random.randint(50, HEIGHT - 50)
         pig.v += 0.8
+        # Zwiększamy liczbę punktów
         pig.points += 1
         sounds.pig.play()
 
@@ -565,36 +591,29 @@ pgzrun.go()
 
 ## Koniec gry
 
-Cóż to za gra, która się nie kończy? Nasza gra będzie kończyć się, gdy świnia wyjdzie poza ekran. W celu zapamiętania, że gra się już zakończyła, dopiszemy do świni nową zmienną **dead**, którą na początku ustawimy na wartość **False**.
+Cóż to za gra, która się nie kończy? Nasza gra będzie kończyć się, gdy świnia wyjdzie poza ekran. W celu zapamiętania, że gra się już zakończyła, dopiszemy do świni nową zmienną **dead**, którą na początku ustawimy na wartość **False**. Nową wartość dopisujemy zaraz pod przypisaniem do świni liczby punktów.
 
 ```python
-pig = Actor("pig_down")
-pig.x = 400
-pig.y = 400
-pig.vx = 0
-pig.vy = 0
-pig.v = 3
-pig.points = 0
 pig.dead = False
 ```
 
 ### Wyświetlamy komunikat
 
-Zacznijmy od wyświetlenia na ekranie komunikatu o zakończeniu gry. W części rysującej, gdy gra jest zakończona, tzn. gdy zmienna `pig.dead` ma wartość **True**, wyświetlimy na ekranie komunikat **GAME OVER**.
-
-```python
-if pig.dead:
-    screen.draw.text(f"GAME OVER", center=(WIDTH / 2, HEIGHT / 2), fontsize=70, color="#e30022", fontname="kenney_bold")
-```
-
-Całość dopisujemy na koniec części rysującej.
+Zacznijmy od wyświetlenia na ekranie komunikatu o zakończeniu gry. W części rysującej, na samym końcu, sprawdzimy, czy gra jest zakończona, tzn. czy zmienna `pig.dead` ma wartość **True**. 
 
 ```python
 def draw():
-    screen.blit("bg", (0, 0))
-    pig.draw()
-    beet.draw()
-    screen.draw.text(f"{pig.points}", center=(WIDTH / 2, 50), fontsize=60, color="#fdee00", fontname="kenney_bold")
+    ...
+
+    if pig.dead:
+```
+
+Jeżeli tak jest, to wyświetlimy na ekranie komunikat **GAME OVER**.
+
+```python
+def draw():
+    ...
+
     if pig.dead:
         screen.draw.text(f"GAME OVER", center=(WIDTH / 2, HEIGHT / 2), fontsize=70, color="#e30022", fontname="kenney_bold")
 ```
@@ -606,40 +625,28 @@ Warto przetestować, czy komunikat wyświetla się poprawnie, tymczasowo zmienia
 Nasza gra się kończy, gdy świnia wyjdzie poza ekran gry. Aby sprawdzić, czy tak się stało, wystarczy sprawdzić wartości współrzędnych naszej świni. Jeżeli są mniejsze od zera, albo większe od odpowiednio szerokości i wysokości, to znaczy, że świnia wyszła poza ekran. Dopisujemy więc odpowiedni warunek na koniec części aktualizującej.
 
 ```python
-if pig.x < 0 or pig.x > WIDTH or pig.y < 0 or pig.y > HEIGHT:
+def update():
+    ...
+
+    if pig.x < 0 or pig.x > WIDTH or pig.y < 0 or pig.y > HEIGHT:
 ```
 
 Gdy świnia wyjdzie poza ekran to gra się kończy, ustawiamy więc zmienną `pig.dead` na wartość **True**.
 
 ```python
-if pig.x < 0 or pig.x > WIDTH or pig.y < 0 or pig.y > HEIGHT:
-    pig.dead = True
+def update():
+    ...
+
+    if pig.x < 0 or pig.x > WIDTH or pig.y < 0 or pig.y > HEIGHT:
+        pig.dead = True
 ```
 
-Dla lepszego efektu możemy także przemieścić świnię zaraz nad napis **GAME OVER** i zmienić jej grafikę na __pig_dead.png__.
-
-```python
-if pig.x < 0 or pig.x > WIDTH or pig.y < 0 or pig.y > HEIGHT:
-    pig.dead = True
-    pig.x = WIDTH / 2
-    pig.y = HEIGHT / 3
-    pig.image = "pig_dead"
-```
-
-Tak teraz powinna wyglądać nasza część aktualizująca:
+Dla lepszego efektu możemy także przemieścić świnię zaraz nad napis **GAME OVER** i zmienić jej grafikę na *pig_dead.png*.
 
 ```python
 def update():
-    pig.x += pig.vx
-    pig.y += pig.vy
-
-    if pig.colliderect(beet):
-        beet.x = random.randint(50, WIDTH - 50)
-        beet.y = random.randint(50, HEIGHT - 50)
-        pig.v += 0.8
-        pig.points += 1
-        sounds.pig.play()
-
+    ...
+    
     if pig.x < 0 or pig.x > WIDTH or pig.y < 0 or pig.y > HEIGHT:
         pig.dead = True
         pig.x = WIDTH / 2
@@ -652,8 +659,19 @@ def update():
 Gdy teraz przetestujemy naszą grę, to zauważymy, że rozgrywka dalej się toczy po zakończeniu gry, tzn. dalej można poruszać świnią i zjadać buraki. Oczywiście nie chcemy, by tak się działo. W tym celu należy dopisać prostą instrukcję warunkową na początek części aktualizującej, a także na początek części odpowiedzialnej za odczytywanie klikniętych przycisków z klawiatury.
 
 ```python
-if pig.dead:
-    return
+def update():
+    if pig.dead:
+        return
+
+    ...
+```
+
+```python
+def on_key_down(key):
+    if pig.dead:
+        return
+
+    ...
 ```
 
 Dzięki temu, jeżeli gra jest już zakończona, to żadne dalsze instrukcje w danej części nie będą już wykonywane.
@@ -668,15 +686,16 @@ import random
 WIDTH = 800
 HEIGHT = 800
 
-TITLE = "Hungry Pig"
+TITLE = "Pygame Zero Hungry Pig"
 
 pig = Actor("pig_down")
-pig.x = 400
-pig.y = 400
+pig.x = WIDTH / 2
+pig.y = HEIGHT / 2
 pig.vx = 0
 pig.vy = 0
 pig.v = 3
 pig.points = 0
+# Zapamiętujemy, czy gra się zakońćzyła
 pig.dead = False
 
 beet = Actor("beetroot")
@@ -689,12 +708,16 @@ def draw():
     pig.draw()
     beet.draw()
     screen.draw.text(f"{pig.points}", center=(WIDTH / 2, 50), fontsize=60, color="#fdee00", fontname="kenney_bold")
+    # Jeżeli gra się zakończyła
     if pig.dead:
+        # Wypisujemy komunikat o zakończeniu gry
         screen.draw.text(f"GAME OVER", center=(WIDTH / 2, HEIGHT / 2), fontsize=70, color="#e30022", fontname="kenney_bold")
 
 
 def update():
+    # Jeżeli gra się zakońćzyła
     if pig.dead:
+        # To nie aktualizujemy już elementów naszej gry
         return
 
     pig.x += pig.vx
@@ -707,15 +730,21 @@ def update():
         pig.points += 1
         sounds.pig.play()
 
+    # Jeżeli świnia wypadła poza ekran
     if pig.x < 0 or pig.x > WIDTH or pig.y < 0 or pig.y > HEIGHT:
+        # Zapamiętujemy, że gra się zakończyła
         pig.dead = True
+        # Zmieniamy pozycję świni
         pig.x = WIDTH / 2
         pig.y = HEIGHT / 3
+        # Zmieniamy grafikę świni
         pig.image = "pig_dead"
 
 
 def on_key_down(key):
+    # Jeżeli gra się zakończyła
     if pig.dead:
+        # Kończymy, aby nie można już było poruszać świnią
         return
 
     if key == keys.LEFT:
@@ -781,20 +810,133 @@ screen.draw.text(f"Press SPACE to try again", center=(WIDTH / 2, 2 * HEIGHT / 3)
 import pgzrun
 import random
 
-
 WIDTH = 800
 HEIGHT = 800
 
-TITLE = "Hungry Pig"
+TITLE = "Pygame Zero Hungry Pig"
 
 pig = Actor("pig_down")
-pig.x = 400
-pig.y = 400
+pig.x = WIDTH / 2
+pig.y = HEIGHT / 2
 pig.vx = 0
 pig.vy = 0
 pig.v = 3
 pig.points = 0
 pig.dead = False
+
+beet = Actor("beetroot")
+beet.x = 200
+beet.y = 200
+
+
+def draw():
+    screen.blit("bg", (0, 0))
+    pig.draw()
+    beet.draw()
+    screen.draw.text(f"{pig.points}", center=(WIDTH / 2, 50), fontsize=60, color="#fdee00", fontname="kenney_bold")
+    if pig.dead:
+        screen.draw.text(f"GAME OVER", center=(WIDTH / 2, HEIGHT / 2), fontsize=70, color="#e30022", fontname="kenney_bold")
+        # Wypisujemy komunikat o możliwości ponownego rozpoczęcia rozgrywki
+        screen.draw.text(f"Press SPACE to try again", center=(WIDTH / 2, 2 * HEIGHT / 3), fontsize=30, color="#e30022", fontname="kenney_bold")
+
+
+def update():
+    if pig.dead:
+        return
+
+    pig.x += pig.vx
+    pig.y += pig.vy
+
+    if pig.colliderect(beet):
+        beet.x = random.randint(50, WIDTH - 50)
+        beet.y = random.randint(50, HEIGHT - 50)
+        pig.v += 0.8
+        pig.points += 1
+        sounds.pig.play()
+
+    if pig.x < 0 or pig.x > WIDTH or pig.y < 0 or pig.y > HEIGHT:
+        pig.dead = True
+        pig.x = WIDTH / 2
+        pig.y = HEIGHT / 3
+        pig.image = "pig_dead"
+
+
+def on_key_down(key):
+    if pig.dead:
+        # Sprawdzamy, czy naciśnięto przycisk spacji
+        if key == keys.SPACE:
+            # Restartujemy grę
+            restart()
+		
+        return
+
+    if key == keys.LEFT:
+        pig.vx = -pig.v
+        pig.vy = 0
+        pig.image = "pig_left"
+
+    if key == keys.RIGHT:
+        pig.vx = pig.v
+        pig.vy = 0
+        pig.image = "pig_right"
+
+    if key == keys.UP:
+        pig.vx = 0
+        pig.vy = -pig.v
+        pig.image = "pig_up"
+
+    if key == keys.DOWN:
+        pig.vx = 0
+        pig.vy = pig.v
+        pig.image = "pig_down"
+		
+
+# Funkcja restartująca grę
+def restart():
+    # Ustawiamy początkową grafikę świni
+    pig.image = "pig_down"
+    # Ustawiamy początkową pozycję świni na ekranie
+    pig.x = WIDTH / 2
+    pig.y = HEIGHT / 2
+    # Ustawiamy początkową prędkość poziomą i pionową świni
+    pig.vx = 0
+    pig.vy = 0
+    # Ustawiamy początkową prędkość główną świni
+    pig.v = 3
+    # Ustawiamy początkową liczbę punktów
+    pig.points = 0
+    # Zapamiętujemy, czy gra się zakończyła
+    pig.dead = False
+
+
+pgzrun.go()
+```
+
+## Czyszczenie
+
+Na koniec warto przyjrzeć się naszemu kodowi i zastanowić się, czy nie możemy czegoś uprościć, albo skrócić. Jak spojrzymy na to, jak tworzymy aktora świni i na to, jak wygląda nasza funkcja restartująca grę, to zobaczymy wiele podobieństw. Naturalnym jest, że przy restarcie gry będziemy ustawiać takie same parametry świni jak na początku gry! W związku z tym możemy oczyścić nasz kod usuwając zbędne powtórzenia. Z początku kodu usuwamy instrukcje przypisujące parametry do świni, od instrukcji `pig.x = WIDTH / 2` po instrukcję `pig.dead = False`. Teraz pozostało nam wywołać naszą funkcję *restart* zaraz przed uruchomieniem gry, czyli zaraz przed linijką `pgzrun.go()`.
+
+```python
+...
+
+restart()
+pgzrun.go()
+```
+
+### Pełny kod
+
+### Pełny kod
+
+```python
+import pgzrun
+import random
+
+WIDTH = 800
+HEIGHT = 800
+
+TITLE = "Pygame Zero Hungry Pig"
+
+pig = Actor("pig_down")
 
 beet = Actor("beetroot")
 beet.x = 200
@@ -836,7 +978,7 @@ def on_key_down(key):
     if pig.dead:
         if key == keys.SPACE:
             restart()
-			
+		
         return
 
     if key == keys.LEFT:
@@ -862,8 +1004,8 @@ def on_key_down(key):
 
 def restart():
     pig.image = "pig_down"
-    pig.x = 400
-    pig.y = 400
+    pig.x = WIDTH / 2
+    pig.y = HEIGHT / 2
     pig.vx = 0
     pig.vy = 0
     pig.v = 3
@@ -871,12 +1013,152 @@ def restart():
     pig.dead = False
 
 
+# Wywołujemy funkcję restart, aby ustawić początkowe parametry naszej gry
+restart()
 pgzrun.go()
 ```
 
 ## Pełna gra
 
-Pełna implementacja dostępna jest poniżej.
+```python
+# Importujemy potrzebne biblioteki
+import pgzrun
+import random
+
+
+# Określamy szerokość i wysokość okna gry
+WIDTH = 800
+HEIGHT = 800
+
+# Podajemy tytuł okna naszej gry
+TITLE = "Pygame Zero Hungry Pig"
+
+# Tworzymy aktora świni
+pig = Actor("pig_down")
+
+# Tworzymy aktora buraka
+beet = Actor("beetroot")
+# Określamy początkowe położenie buraka na ekranie
+beet.x = 200
+beet.y = 200
+
+
+# Funkcja rysująca stan gry na ekranie
+def draw():
+    # Wyświetlamy tło
+    screen.blit("bg", (0, 0))
+    # Rysujemy świnię
+    pig.draw()
+    # Rysujemy buraka
+    beet.draw()
+    # Wypisujemy liczbę zdobytych punktów
+    screen.draw.text(f"{pig.points}", center=(WIDTH / 2, 50), fontsize=60, color="#fdee00", fontname="kenney_bold")
+    # Jeżeli gra się zakończyła
+    if pig.dead:
+        # Wypisujemy komunikat o zakończeniu gry
+        screen.draw.text(f"GAME OVER", center=(WIDTH / 2, HEIGHT / 2), fontsize=70, color="#e30022", fontname="kenney_bold")
+        # Wypisujemy komunikat o możliwości ponownego rozpoczęcia rozgrywki
+        screen.draw.text(f"Press SPACE to try again", center=(WIDTH / 2, 2 * HEIGHT / 3), fontsize=30, color="#e30022", fontname="kenney_bold")
+
+
+# Funkcja aktualizująca stan gry
+def update():
+    # Jeżeli gra się zakońćzyła
+    if pig.dead:
+        # To nie aktualizujemy już elementów naszej gry
+        return
+
+    # Przemieszczamy świnię zgodnie z jej prędkością w poziomie i pionie
+    pig.x += pig.vx
+    pig.y += pig.vy
+
+    # Jeżeli świnia wpadła na buraka
+    if pig.colliderect(beet):
+        # Przemieszczamy buraka w nowe, losowe miejsce na ekranie
+        beet.x = random.randint(50, WIDTH - 50)
+        beet.y = random.randint(50, HEIGHT - 50)
+        # Przyspieszamy świnię
+        pig.v += 0.8
+        # Zwiększamy liczbę punktów
+        pig.points += 1
+        # Odgrywamy dźwięk świni
+        sounds.pig.play()
+
+    # Jeżeli świnia wypadła poza ekran
+    if pig.x < 0 or pig.x > WIDTH or pig.y < 0 or pig.y > HEIGHT:
+        # Zapamiętujemy, że gra się zakończyła
+        pig.dead = True
+        # Zmieniamy pozycję świni
+        pig.x = WIDTH / 2
+        pig.y = HEIGHT / 3
+        # Zmieniamy grafikę świni
+        pig.image = "pig_dead"
+
+
+# Funkcja odczytująca kliknięcia klawiszy na klawiaturze
+def on_key_down(key):
+    # Jeżeli gra się zakończyła
+    if pig.dead:
+        # Sprawdzamy, czy naciśnięto przycisk spacji
+        if key == keys.SPACE:
+            # Restartujemy grę
+            restart()
+		
+        # Kończymy, aby nie można już było poruszać świnią
+        return
+
+    # Sprawdzamy, czy naciśnięto klawisz strzałki w lewo
+    if key == keys.LEFT:
+        # Zmieniamy prędkość świni
+        pig.vx = -pig.v
+        pig.vy = 0
+        # Zmieniamy grafikę świni
+        pig.image = "pig_left"
+
+    # Sprawdzamy, czy naciśnięto klawisz strzałki w prawo
+    if key == keys.RIGHT:
+        pig.vx = pig.v
+        pig.vy = 0
+        pig.image = "pig_right"
+
+    # Sprawdzamy, czy naciśnięto klawisz strzałki w górę
+    if key == keys.UP:
+        pig.vx = 0
+        pig.vy = -pig.v
+        pig.image = "pig_up"
+
+    # Sprawdzamy, czy naciśnięto klawisz strzałki w dół
+    if key == keys.DOWN:
+        pig.vx = 0
+        pig.vy = pig.v
+        pig.image = "pig_down"
+		
+
+# Funkcja restartująca grę
+def restart():
+    # Ustawiamy początkową grafikę świni
+    pig.image = "pig_down"
+    # Ustawiamy początkową pozycję świni na ekranie
+    pig.x = WIDTH / 2
+    pig.y = HEIGHT / 2
+    # Ustawiamy początkową prędkość poziomą i pionową świni
+    pig.vx = 0
+    pig.vy = 0
+    # Ustawiamy początkową prędkość główną świni
+    pig.v = 3
+    # Ustawiamy początkową liczbę punktów
+    pig.points = 0
+    # Zapamiętujemy, czy gra się zakończyła
+    pig.dead = False
+
+
+# Wywołujemy funkcję restart, aby ustawić początkowe parametry naszej gry
+restart()
+# Uruchamiamy grę
+pgzrun.go()
+```
+
+Pełna implementacja dostępna jest także poniżej.
 
 {% embed url="https://github.com/blackbat13/pighuntpgzero" %}
 Głodna świnia
