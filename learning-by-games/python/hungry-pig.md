@@ -925,8 +925,6 @@ pgzrun.go()
 
 ### Pełny kod
 
-### Pełny kod
-
 ```python
 import pgzrun
 import random
