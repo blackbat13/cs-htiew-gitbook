@@ -14,3 +14,9 @@ Wszystkie grafiki, dźwięki i czcionki używane w projektach są na licencji CC
 Większość grafik i dźwięków pochodzi ze strony:
 
 {% embed url="https://kenney.nl/" %}
+
+### Inne źródła
+
+{% embed url="https://opengameart.org"}
+
+{% embed url="https://www.zapsplat.com/"}
