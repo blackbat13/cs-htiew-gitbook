@@ -361,7 +361,7 @@ Następnie zwiększamy prędkość świni. W tym celu modyfikujemy parametr **v*
 pig.v += 0.8
 ```
 
-Na koniec warto jeszcze dodać efekty dźwiękowe.
+Na koniec warto jeszcze dodać efekty dźwiękowe. W tym celu piszemy `sounds.`, następnie nazwa pliku z dźwiękiem znajdującego się w katalogu *sounds*, np. `sounds.pig`, a na koniec, po kolejnej kropce, polecenie `play()`.
 
 ```python
 sounds.pig.play()
@@ -374,7 +374,6 @@ if pig.colliderect(beet):
     beet.x = random.randint(50, WIDTH - 50)
     beet.y = random.randint(50, HEIGHT - 50)
     pig.v += 0.8
-    pig.points += 1
     sounds.pig.play()
 ```
 
@@ -389,7 +388,6 @@ def update():
         beet.x = random.randint(50, WIDTH - 50)
         beet.y = random.randint(50, HEIGHT - 50)
         pig.v += 0.8
-        pig.points += 1
         sounds.pig.play()
 ```
 
