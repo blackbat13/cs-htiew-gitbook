@@ -22,7 +22,7 @@ Grafiki do gry Pong
 
 ## Nasz cel
 
-![Pong - wersja klasyczna](../../.gitbook/assets/pongGame.gif)
+![Pong](../../.gitbook/assets/pongGame.gif)
 
 Spróbujmy przeanalizować powyższą animację. Wyróżnijmy elementy graficzne, co pomoże nam zaimplementować naszą grę:
 
@@ -455,7 +455,7 @@ def move_players():
     if keyboard.w and left.top > 40:
         left.y -= left.vy
 
-    if keybaord.s and left.bottom < HEIGHT - 40:
+    if keyboard.s and left.bottom < HEIGHT - 40:
         left.y += left.vy
 
     if keyboard.up and right.top > 40:
@@ -515,7 +515,7 @@ def move_players():
     if keyboard.w and left.top > 40:
         left.y -= left.vy
 
-    if keybaord.s and left.bottom < HEIGHT - 40:
+    if keyboard.s and left.bottom < HEIGHT - 40:
         left.y += left.vy
 
     # Prawy gracz porusza się za pomocą strzałek góra i dół
@@ -800,7 +800,7 @@ def move_players():
     if keyboard.w and left.top > 40:
         left.y -= left.vy
 
-    if keybaord.s and left.bottom < HEIGHT - 40:
+    if keyboard.s and left.bottom < HEIGHT - 40:
         left.y += left.vy
 
     if keyboard.up and right.top > 40:
@@ -1002,7 +1002,7 @@ def move_players():
     if keyboard.w and left.top > 40:
         left.y -= left.vy
 
-    if keybaord.s and left.bottom < HEIGHT - 40:
+    if keyboard.s and left.bottom < HEIGHT - 40:
         left.y += left.vy
 
     if keyboard.up and right.top > 40:
@@ -1268,7 +1268,7 @@ def move_players():
     if keyboard.w and left.top > 40:
         left.y -= left.vy
 
-    if keybaord.s and left.bottom < HEIGHT - 40:
+    if keyboard.s and left.bottom < HEIGHT - 40:
         left.y += left.vy
 
     if keyboard.up and right.top > 40:
@@ -1439,7 +1439,7 @@ def move_players():
     if keyboard.w and left.top > 40:
         left.y -= left.vy
 
-    if keybaord.s and left.bottom < HEIGHT - 40:
+    if keyboard.s and left.bottom < HEIGHT - 40:
         left.y += left.vy
 
     # Prawy gracz porusza się za pomocą strzałek góra i dół
@@ -1507,6 +1507,12 @@ def reset_ball():
 
 pgzrun.go()
 ```
+
+Pełna implementacja dostępna jest również poniżej.
+
+{% embed url="https://github.com/blackbat13/PongPygameZero" %}
+Pong
+{% endembed %}
 
 <!-- ## Wersja z bonusami
 
