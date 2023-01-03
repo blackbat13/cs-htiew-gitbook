@@ -98,11 +98,13 @@ WIDTH = 800
 HEIGHT = 600
 
 
+# Funkcja rysująca stan gry na ekranie
 def draw():
-    # Wypełniamy ekran wybranym kolorem
+    # Wypełniamy tło wybranym kolorem
     screen.fill("skyblue")
 
 
+# Funkcja aktualizująca stan gry
 def update():
     pass
 
@@ -161,7 +163,7 @@ import random
 WIDTH = 800
 HEIGHT = 600
 
-# Tworzymy nową postać, nowego aktora naszej gry, na podstawie grafiki sun.png
+# Tworzymy aktora słońca
 sun = Actor("sun")
 
 
@@ -225,7 +227,7 @@ def update():
         sun.timer = 60
 ```
 
-### Pełny program
+### Pełny kod
 
 Dotychczasowy kod naszej gry zaprezentowany jest poniżej.
 
@@ -237,6 +239,7 @@ WIDTH = 800
 HEIGHT = 600
 
 sun = Actor("sun")
+# Licznik czasu
 sun.timer = 0
 
 
@@ -246,11 +249,15 @@ def draw():
 
 
 def update():
+    # Zmiejszamy licznik czasu
     sun.timer -= 1
 
+    # Jeżeli licznik czasu spadł do zera
     if sun.timer <= 0:
+        # Wybieramy nowe, losowe współrzędne położenia słońca na ekranie
         sun.x = random.randint(80, WIDTH - 80)
         sun.y = random.randint(80, HEIGHT - 80)
+        # Ustalamy początkową wartość licznika czasu
         sun.timer = 60
 
 
@@ -363,9 +370,9 @@ def update():
         sun.timer = 60 - sun.points
 ```
 
-### Pełny program
+### Pełny kod
 
-Tak prezentuje się kod naszej pełnej gry:
+Dotychczasowy pełny kod naszej gry przedstawiony jest poniżej.
 
 ```python
 import pgzrun
@@ -376,12 +383,14 @@ HEIGHT = 600
 
 sun = Actor("sun")
 sun.timer = 0
+# Zliczamy zdobyte przez gracza punkty
 sun.points = 0
 
 
 def draw():
     screen.fill("skyblue")
     sun.draw()
+    # Wypisujemy liczbę punktów
     screen.draw.text(text=str(sun.points), center=(WIDTH / 2, 50), color="red", fontsize=100)
 
 
@@ -391,32 +400,100 @@ def update():
     if sun.timer <= 0:
         sun.x = random.randint(80, WIDTH - 80)
         sun.y = random.randint(80, HEIGHT - 80)
+        # Ustalamy początkową wartość licznika czasu
         sun.timer = 60 - sun.points
 
 
+# Funkcja odczytująca kliknięcia myszy
 def on_mouse_down(pos):
+    # Jeżeli kliknęliśmy na słońce
     if sun.collidepoint(pos):
+        # Zwiększamy liczbę punktów
         sun.points += 1
+        # Zerujemy licznik czasu, aby słońce się przemieściło
         sun.timer = 0
-    else:
+    else: # W przeciwnym przypadku, gdy nie udało nam się kliknąć w słońce
+        # Zmniejszamy liczbę punktów
         sun.points -= 1
+        # Zerujemy licznik czasu, aby słońce się przemieściło
         sun.timer = 0
 
 
 pgzrun.go()
 ```
 
-### Gramy
-
-Czas zagrać w naszą grę! Ile punktów Tobie uda się zdobyć?
-
 ## Pełna gra
 
-Pełna implementacja dostępna jest poniżej.
+```python
+# Importujemy potrzebne biblioteki
+import pgzrun
+import random
+
+
+# Ustalamy wymiary okna gry
+WIDTH = 800
+HEIGHT = 600
+
+# Tworzymy aktora słońca
+sun = Actor("sun")
+# Licznik czasu
+sun.timer = 0
+# Zliczamy zdobyte przez gracza punkty
+sun.points = 0
+
+
+# Funkcja rysująca stan gry na ekranie
+def draw():
+    # Wypełniamy tło niebieskim kolorem
+    screen.fill("skyblue")
+    # Rysujemy słońce
+    sun.draw()
+    # Wypisujemy liczbę punktów
+    screen.draw.text(text=str(sun.points), center=(WIDTH / 2, 50), color="red", fontsize=100)
+
+
+# Funkcja aktualizująca stan gry
+def update():
+    # Zmiejszamy licznik czasu
+    sun.timer -= 1
+
+    # Jeżeli licznik czasu spadł do zera
+    if sun.timer <= 0:
+        # Wybieramy nowe, losowe współrzędne położenia słońca na ekranie
+        sun.x = random.randint(80, WIDTH - 80)
+        sun.y = random.randint(80, HEIGHT - 80)
+        # Ustalamy początkową wartość licznika czasu
+        sun.timer = 60 - sun.points
+
+
+# Funkcja odczytująca kliknięcia myszy
+def on_mouse_down(pos):
+    # Jeżeli kliknęliśmy na słońce
+    if sun.collidepoint(pos):
+        # Zwiększamy liczbę punktów
+        sun.points += 1
+        # Zerujemy licznik czasu, aby słońce się przemieściło
+        sun.timer = 0
+    else: # W przeciwnym przypadku, gdy nie udało nam się kliknąć w słońce
+        # Zmniejszamy liczbę punktów
+        sun.points -= 1
+        # Zerujemy licznik czasu, aby słońce się przemieściło
+        sun.timer = 0
+
+
+# Uruchamiamy grę
+pgzrun.go()
+```
+
+Pełna implementacja dostępna jest również poniżej.
 
 {% embed url="https://github.com/blackbat13/CatchTheSunPgZero" %}
 Złap Słońce
 {% endembed %}
+
+### Gramy
+
+Czas zagrać w naszą grę! Ile punktów Tobie uda się zdobyć?
 
 ## Zadanie dodatkowe
 

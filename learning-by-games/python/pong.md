@@ -20,13 +20,11 @@ Umieszczamy w katalogu **images**.
 Grafiki do gry Pong
 {% endfile %}
 
-## Wersja klasyczna
-
-Zaczniemy od stworzenia klasycznej wersji gry Pong. Na początek przyjrzyjmy się temu, co jest naszym celem.
+## Nasz cel
 
 ![Pong - wersja klasyczna](../../.gitbook/assets/pongGame.gif)
 
-Spróbujmy przeanalizować powyższą animację. Zacznijmy od wyróżniania elementów graficznych:
+Spróbujmy przeanalizować powyższą animację. Wyróżnijmy elementy graficzne, co pomoże nam zaimplementować naszą grę:
 
 * szare tło,
 * żółta linia po środku dzieląca planszę na dwie części,
@@ -1325,7 +1323,7 @@ def reset_ball():
 pgzrun.go()
 ```
 
-## Pełna gra - wersja podstawowa
+## Pełna gra
 
 ```python
 import pgzrun
