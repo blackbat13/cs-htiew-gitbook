@@ -6,9 +6,10 @@ Dzisiaj odtworzymy jedną z kultowych gier mobilnych: Flappy Bird.
 
 ### Czego się nauczysz
 
-* Jak dodać grawitację i skok do gry.
+* Jak dodać grawitację i skok/latanie do gry.
 * Jak stworzyć i obsłużyć proste menu.
 * Jak stworzyć "nieskończoną" grę bazującą na prostych założeniach.
+* Jak zaimplementować proste efekty wizualne.
 
 ### Grafiki do pobrania
 
@@ -155,6 +156,14 @@ def on_mouse_down(pos):
     bird.vy = -FLAP
 ```
 
+Dodajmy także odtworzenie dźwięku machnięcia skrzydełkami (*wing*).
+
+```python
+def on_mouse_down(pos):
+    bird.vy = -FLAP
+    sounds.wing.play()
+```
+
 ### Pełny kod
 
 Dotychczasowy pełny kod naszej gry przedstawiony jest poniżej.
@@ -206,6 +215,8 @@ def update_bird():
 def on_mouse_down(pos):
     # Symulujemy wzlot ptaka
     bird.vy = -FLAP
+    # Odtwarzamy dźwięk machnięcia skrzydełkami
+    sounds.wing.play()
 
 
 pgzrun.go()
@@ -380,6 +391,7 @@ def update_pipes():
 
 def on_mouse_down(pos):
     bird.vy = -FLAP
+    sounds.wing.play()
 
 
 # Pomocnicza funkcja ustawiająca rury
@@ -466,13 +478,24 @@ def update_bird():
     if bird.colliderect(pipe_top) or bird.colliderect(pipe_bottom):
 ```
 
-Co chcemy zrobić, gdy ptak uderzy w którąś z rur? Chcemy zresetować grę. Wywołujemy więc naszą funkcję *reset*.
+Co chcemy zrobić, gdy ptak uderzy w którąś z rur? Najpierw odtwórzmy dźwięk uderzenia: *hit*.
 
 ```python
 def update_bird():
     ...
 
     if bird.colliderect(pipe_top) or bird.colliderect(pipe_bottom):
+        sounds.hit.play()
+```
+
+Chcemy także zresetować grę. Wywołujemy więc naszą funkcję *reset*.
+
+```python
+def update_bird():
+    ...
+
+    if bird.colliderect(pipe_top) or bird.colliderect(pipe_bottom):
+        sounds.hit.play()
         reset()
 ```
 
@@ -488,6 +511,7 @@ def update_bird():
     ...
 
     if bird.colliderect(pipe_top) or bird.colliderect(pipe_bottom) or bird.y < 0:
+        sounds.hit.play()
         reset()
 ```
 
@@ -498,6 +522,7 @@ def update_bird():
     ...
 
     if bird.colliderect(pipe_top) or bird.colliderect(pipe_bottom) or bird.y < 0 or bird.y > HEIGHT:
+        sounds.hit.play()
         reset()
 ```
 
@@ -550,6 +575,8 @@ def update_bird():
 
     # Jeżeli ptak wpadł na górną lub dolną rurę, lub gdy wyleciał poza ekran z dołu lub z góry
     if bird.colliderect(pipe_top) or bird.colliderect(pipe_bottom) or bird.y > HEIGHT or bird.y < 0:
+        # Odtwarzamy dźwięk uderzenia
+        sounds.hit.play()
         # Resetujemy grę
         reset()
 
@@ -564,6 +591,7 @@ def update_pipes():
 
 def on_mouse_down(pos):
     bird.vy = -FLAP
+    sounds.wing.play()
 
 
 def set_pipes():
@@ -631,6 +659,18 @@ def update_pipes():
         bird.points += 1
 ```
 
+Po zdobyciu punktu warto także odtworzyć efekt dźwiękowy o nazwie *point*.
+
+```python
+def update_pipes():
+    ...
+
+    if pipe_top.x < -100:
+        set_pipes()
+        bird.points += 1
+        sounds.point.play()
+```
+
 ### Resetujemy punkty
 
 Nie chcielibyśmy, żeby gra kontynuowała zliczanie punktów po przegranej, tylko żeby punkty były liczone od nowa. W tym celu, w funkcji resetującej grę (*reset*) dopiszemy wyzerowanie punktów gracza. W celu zachowania porządku kodu dopiszemy to zaraz przed wywołaniem funkcji *set_pipes*, chociaż kolejność nie będzie miała wpływu na działanie gry.
@@ -695,6 +735,7 @@ def update_bird():
     bird.y += bird.vy
 
     if bird.colliderect(pipe_top) or bird.colliderect(pipe_bottom) or bird.y > HEIGHT or bird.y < 0:
+        sounds.hit.play()
         reset()
 
 
@@ -706,10 +747,13 @@ def update_pipes():
         set_pipes()
         # Zwiększamy liczbę punktów
         bird.points += 1
+        # Odtwarzamy dźwięk zdobycia punktu
+        sounds.point.play()
 
 
 def on_mouse_down(pos):
     bird.vy = -FLAP
+    sounds.wing.play()
 
 
 def set_pipes():
@@ -732,6 +776,505 @@ def reset():
 
 
 set_pipes()
+pgzrun.go()
+```
+
+## Menu
+
+Przejdźmy teraz do kwestii obsługi menu gry. Nasze menu będzie proste, ponieważ będzie zawierało tylko jeden przycisk do rozpoczęcia gry.
+
+### Tworzymy przycisk
+
+Nasz przycisk będzie kolejnym aktorem, którego utworzymy na podstawie grafiki *start1.png* i zapamiętamy w nowej zmiennej **start**. Aktora utworzymy zaraz pod stworzeniem rur.
+
+```python
+start = Actor("start1")
+```
+
+Nasz przycisk umieścimy pośrodku ekranu, tzn. w połowie szerokości i wysokości. Przypisujemy mu więc odpowiednie współrzędne.
+
+```python
+start = Actor("start1")
+start.x = WIDTH / 2
+start.y = HEIGHT / 2
+```
+
+### Rysujemy przycisk
+
+Przycisk narysujemy wówczas, gdy gra się zakończy. O zakończeniu gry poinformuje nas nowa zmienna *bird.dead*, którą dopiszemy do naszego ptaka, zaraz pod punktami, i nadamy jej początkową wartość *TRUE*. 
+
+```python
+bird.dead = True
+```
+
+Jeżeli ta zmienna ma wartość *TRUE*, to rysujemy przycisk na końcu części rysującej.
+
+```python
+def draw():
+    ...
+
+    if bird.dead:
+        start.draw()
+```
+
+### Klikamy na przycisk
+
+Cóż to za przycisk, który nie reaguje na kliknięcia? Interakcję z przyciskiem obsłużymy wewnątrz funkcji odczytującej kliknięcia myszy, czyli *on_mouse_down*. Najpierw jednak zmodyfikujmy naszą funkcję, tak aby nie można było latać ptakiem, gdy gra się już zakończyła. W tym celu dwie instrukcje, które mamy zapisane w tej funkcji, czyli podfrunięcie i odtworzenie dźwięku, wykonamy tylko wtedy, gdy gra **nie jest** (**not**) zakończona.
+
+```python
+def on_mouse_down(pos):
+    if not bird.dead:
+        bird.vy = -FLAP
+        sounds.wing.play()
+```
+
+**W przeciwnym przypadku jeżeli** (**elif**) pozycja kliknięcia myszy (**pos**) jest w **kolizji** z przyciskiem **start**: `start.collidepoint(pos)`. Jeżeli tak, to zresetujemy grę wywołując naszą funkcję *reset*.
+
+```python
+def on_mouse_down(pos):
+    if not bird.dead:
+        bird.vy = -FLAP
+        sounds.wing.play()
+    elif start.collidepoint(pos):
+        reset()
+```
+
+Teraz jeszcze jednak nasza gra nie wystartuje poprawnie, ponieważ nie zmieniamy wartości zmiennej *bird.dead*, w związku z czym dla programu gra jest cały czas zakończona. Dlatego do naszej funkcji *reset* dopisujemy zmianę wartości wspomnianej zmiennej na *FALSE*. Dla zachowania porządku dopiszemy to zaraz pod wyzerowaniem liczby punktów, a przed ponownym ustawieniem rur.
+
+```python
+def reset():
+    ...
+    
+    bird.dead = False
+    set_pipes()
+```
+
+Możemy także usunąć wywołanie funkcji *set_pipes* znajdujące się na **końcu** naszego kodu, zaraz przed wywołaniem *pgzrun.go()*, ponieważ teraz ustawieniem gry po jej starcie zajmie się funkcja *reset*, którą wywołujemy po kliknięciu przycisku *start*.
+
+### Kończymy grę po kolizji
+
+Teraz nasze menu powinno już działać, gdy uruchomimy grę. Gdy jednak uderzymy w przeszkodę, to gra się po prostu zrestartuje. Zmieńmy to! Jeżeli uderzymy w przeszkodę, co sprawdzamy na końcu funkcji *update_bird*, to nie będziemy resetować gry, tylko zmienimy wartość zmiennej na *bird.dead* na *TRUE*.
+
+```python
+def update_bird():
+    ...
+
+    if bird.colliderect(pipe_top) or bird.colliderect(pipe_bottom) or bird.y > HEIGHT or bird.y < 0:
+        sounds.hit.play()
+        bird.dead = True
+```
+
+### Zatrzymujemy rury
+
+Przydałoby się także zatrzymać rury, gdy gra się zakończy, tak byśmy nie mogli nabijać punktów w nieskończoność! W tym celu, na początku funkcji *update_pipes* sprawdzimy, czy gra się już zakończyła. Jeżeli tak, to wyjdziemy z funkcji bez aktualizacji pozycji rur korzystając z polecenia **return**.
+
+```python
+def update_pipes():
+    if bird.dead:
+        return
+    
+    ...
+```
+
+### Pełny kod
+
+Dotychczasowy pełny kod naszej gry przedstawiony jest poniżej.
+
+```python
+import pgzrun
+import random
+
+
+WIDTH = 400
+HEIGHT = 700
+
+TITLE = "Pygame Zero Flappy Bird"
+
+GRAVITY = 0.3
+FLAP = 7
+SPEED = 3
+GAP_SIZE = 180
+
+bird = Actor("bird1.png")
+bird.x = 75
+bird.y = 200
+bird.vy = 0
+bird.points = 0
+# Zapamiętujemy, czy gra się zakończyła
+bird.dead = True
+
+pipe_top = Actor("top")
+pipe_top.anchor = ("left", "bottom")
+
+pipe_bottom = Actor("bottom")
+pipe_bottom.anchor = ("left", "top")
+
+# Tworzymy przycisk startu
+start = Actor("start1")
+# Ustalamy pozycję przycisku na ekranie
+start.x = WIDTH / 2
+start.y = HEIGHT / 2
+
+
+def draw():
+    screen.blit("bg.png", (0, 0))
+    pipe_top.draw()
+    pipe_bottom.draw()
+    bird.draw()
+    screen.draw.text(str(bird.points), center=(WIDTH // 2, 30), fontsize=70)
+    # Jeżeli gra się zakończyła
+    if bird.dead:
+        # Rysujemy przycisk startu gry
+        start.draw()
+
+
+def update():
+    update_bird()
+    update_pipes()
+    
+
+def update_bird():
+    bird.vy += GRAVITY
+    bird.y += bird.vy
+
+    if bird.colliderect(pipe_top) or bird.colliderect(pipe_bottom) or bird.y > HEIGHT or bird.y < 0:
+        sounds.hit.play()
+        # Zapamiętujemy, że gra się zakończyła
+        bird.dead = True
+
+
+def update_pipes():
+    # Jeżeli gra się zakończyła
+    if bird.dead:
+        # Kończymy i nie przeprowadzamy już dalszej aktualizacji ptaka
+        return
+
+    pipe_top.x -= SPEED
+    pipe_bottom.x -= SPEED
+
+    if pipe_top.x < -100:
+        set_pipes()
+        bird.points += 1
+        sounds.point.play()
+
+
+def on_mouse_down(pos):
+    # Jeżeli gra jeszcze trwa
+    if not bird.dead:
+        bird.vy = -FLAP
+        sounds.wing.play()
+    elif start.collidepoint(pos): # W przeciwnym przypadku, gdy kliknęliśmy na przycisk start i gra jest już zakończona
+        # Resetujemy stan gry
+        reset() 
+
+
+def set_pipes():
+    gap_y = random.randint(200, 500)
+
+    pipe_top.x = WIDTH
+    pipe_top.y = gap_y - GAP_SIZE // 2
+
+    pipe_bottom.x = WIDTH
+    pipe_bottom.y = gap_y + GAP_SIZE // 2
+
+
+def reset():
+    bird.x = 75
+    bird.y = 200
+    bird.vy = 0
+    bird.points = 0
+    # Zapamiętujemy, czy gra się już zakończyła
+    bird.dead = False
+    set_pipes()
+
+
+pgzrun.go()
+```
+
+## Efekty wizualne
+
+Pora na ostatnie szlify. Teraz dodamy kilka efektów wizualnych, takich jak obrót ptaka, zmiana jego grafiki, czy też efekt najechania wskaźnikiem myszki na przycisk.
+
+### Efekt spadania po kolizji
+
+Po kolizji ptaka z przeszkodą zmienimy jego grafikę (**bird.image**) na *bird_dead*, a także ustawimy mu kąt obrotu (**bird.angle**) na $$-90$$, tak aby był skierowany w dół.
+
+```python
+def update_bird():
+    ...
+
+    if bird.colliderect(pipe_top) or bird.colliderect(pipe_bottom) or bird.y > HEIGHT or bird.y < 0:
+        sounds.hit.play()
+        bird.dead = True
+        bird.image = "bird_dead"
+        bird.angle = -90
+```
+
+Teraz jeszcze powinniśmy przywrócić właściwą grafikę ptaka gdy restartujemy grę, aby nie mieć latającego ptaka zombie. Dlatego w funkcji *reset*, zaraz pod zmianą wartości zmiennej *bird.dead*, zmienimy grafikę ptaka na początkową, czyli *bird1*.
+
+```python
+def reset():
+    ...
+
+    bird.image = "bird1"
+    set_pipes()
+```
+
+### Obracanie ptaka i machanie skrzydełkami
+
+Obrotem ptaka i zmianą jego grafiki tak, by ptak "machał" skrzydełkami, zajmiemy się **na końcu** funkcji aktualizującej ptaka (*update_bird*). Ponieważ ptaka chcemy obracać tylko wtedy, gdy gra się jeszcze nie zakończyła (ponieważ gdy gra jest zakończona, to ptak spada w dół), to najpierw sprawdzimy, czy **nieprawda że** (**not**) gra jest zakończona (*bird.dead*).
+
+```python
+def update_bird():
+    ...
+
+    if not bird.dead:
+```
+
+Teraz przyszła pora na zajęcie się obrotem ptaka i zmianą jego grafik. Te dwie rzeczy uzależnimy od jego prędkości, a konkretnie od tego, czy leci do góry, czy spada w dół.
+
+Jeżeli prędkość pionowa ptaka jest mniejsza od zera, oznacza to, że ptak wzlatuje do góry. W takim razie zmienimy jego grafikę na *bird2*, a obrót **zwiększymy** o $$3$$, by obrócił się do góry.
+
+```python
+def update_bird():
+    ...
+
+    if not bird.dead:
+        if bird.vy < 0:
+            bird.image = "bird2"
+            bird.angle += 3
+```
+
+W przeciwnym przypadku, tzn. gdy ptak spada w dół, zmienimy jego grafikę na *bird1* i **zmiejszymy** jego kąt obrotu o $$3$$, by obrócił się do dołu.
+
+```python
+def update_bird():
+    ...
+
+    if not bird.dead:
+        if bird.vy < 0:
+            bird.image = "bird2"
+            bird.angle += 3
+        else:
+            bird.image = "bird1"
+            bird.angle -= 3
+```
+
+Aby zapobiec kręceniu się ptaka w kółko powinniśmy ograniczyć jego **maksymalny** i **minimalny** kąt obrotu. Powiedzmy, że chcemy zachować obrót w zakresie od $$-45$$ do $$45$$. W tym celu najpierw sprawdzimy, czy kąt obrotu przekroczył wartość $$45$$, a jeżeli tak, to przywrócimy jego maksymalną wartość, czyli właśnie $$45$$.
+
+```python
+def update_bird():
+    ...
+
+    if not bird.dead:
+        if bird.vy < 0:
+            bird.image = "bird2"
+            bird.angle += 3
+        else:
+            bird.image = "bird1"
+            bird.angle -= 3
+
+        if bird.angle > 45:
+            bird.angle = 45
+```
+
+Podobnie robimy w drugą stronę, czyli gdy kąt obrotu jest mniejszy od $$-45$$. Wówczas przywracamy minimalną wartość $$-45$$.
+
+```python
+def update_bird():
+    ...
+
+    if not bird.dead:
+        if bird.vy < 0:
+            bird.image = "bird2"
+            bird.angle += 3
+        else:
+            bird.image = "bird1"
+            bird.angle -= 3
+
+        if bird.angle > 45:
+            bird.angle = 45
+
+        if bird.angle < -45:
+            bird.angle = -45
+```
+
+### Podświetlenie przycisku
+
+Aby zasymulować efekt "podświetlania" przycisku po najechaniu na niego myszką, będziemy wyświetlać grafikę *start2*, gdy wskaźnik myszy znajduje się na przycisku, a grafikę *start1* w przeciwnym przypadku. W tym celu potrzebujemy znać obecną pozycję wskaźnika myszy na ekranie. Do tego posłuży nam funkcja **on_mouse_down**, która przyjmuje parametr **pos**, w którym zapisana będzie pozycja wskaźnika myszy na ekranie, gdy ten zostanie poruszony.
+
+Naszą funkcję zapiszemy zaraz pod funkcją odczytującą kliknięcia myszy (*on_mouse_down*).
+
+```python
+def on_mouse_move(pos):
+```
+
+Teraz sprawdzimy, czy wskaźnik myszy znajduje się na przycisku *start*. W tym celu skorzystamy ponownie z metody **collidepoint**, podobnie jak w przypadku odczytywania kliknięć w przycisk.
+
+```python
+def on_mouse_move(pos):
+    if start.collidepoint(pos):
+```
+
+Jeżeli wskaźnik myszy znajduje się na przycisku, to zmieniamy jego grafikę na **start2**.
+
+```python
+def on_mouse_move(pos):
+    if start.collidepoint(pos):
+        start.image = "start2"
+```
+
+W przeciwnym przypadku zmieniamy grafikę na **start1**.
+
+```python
+def on_mouse_move(pos):
+    if start.collidepoint(pos):
+        start.image = "start2"
+    else:
+        start.image = "start1"
+```
+
+### Pełny kod
+
+Dotychczasowy pełny kod naszej gry przedstawiony jest poniżej.
+
+```python
+import pgzrun
+import random
+
+
+WIDTH = 400
+HEIGHT = 700
+
+TITLE = "Pygame Zero Flappy Bird"
+
+GRAVITY = 0.3
+FLAP = 7
+SPEED = 3
+GAP_SIZE = 180
+
+bird = Actor("bird1.png")
+bird.x = 75
+bird.y = 200
+bird.vy = 0
+bird.points = 0
+bird.dead = True
+
+pipe_top = Actor("top")
+pipe_top.anchor = ("left", "bottom")
+
+pipe_bottom = Actor("bottom")
+pipe_bottom.anchor = ("left", "top")
+
+start = Actor("start1")
+start.x = WIDTH / 2
+start.y = HEIGHT / 2
+
+
+def draw():
+    screen.blit("bg.png", (0, 0))
+    pipe_top.draw()
+    pipe_bottom.draw()
+    bird.draw()
+    screen.draw.text(str(bird.points), center=(WIDTH // 2, 30), fontsize=70)
+    if bird.dead:
+        start.draw()
+
+
+def update():
+    update_bird()
+    update_pipes()
+    
+
+def update_bird():
+    bird.vy += GRAVITY
+    bird.y += bird.vy
+
+    if bird.colliderect(pipe_top) or bird.colliderect(pipe_bottom) or bird.y > HEIGHT or bird.y < 0:
+        sounds.hit.play()
+        bird.dead = True
+        # Zmieniamy grafikę ptaka
+        bird.image = "bird_dead"
+        # Zmieniamy kąt ptaka, by był skierowany w dół
+        bird.angle = -90
+
+    if not bird.dead:
+        # Jeżeli prędkość pionowa ptaka jest ujemna, tzn. gdy ptak leci do góry
+        if bird.vy < 0:
+            # Zmieniamy grafikę ptaka
+            bird.image = "bird2"
+            # Zwiększamy jego kąt obrotu - obracamy go przeciwnie do ruchu wskazówek zegara
+            bird.angle += 3
+        else: # W przeciwnym przypadku, gdy prędkość pionowa ptaka jest dodatnia, tzn. gdy ptak leci w dół
+            # Zmieniamy grafikę praka
+            bird.image = "bird1"
+            # Zmniejszamy jego kąt obrotu - obracamy go zgodnie z ruchem wskasówek zegara
+            bird.angle -= 3
+
+        # Jeżeli kąt obrotu przekroczył 45
+        if bird.angle > 45:
+            # Przywracamy kąt 45
+            bird.angle = 45
+
+        # Jeżeli kąt obrotu jest poniżej -45
+        if bird.angle < -45:
+            # Przywracamy kąt -45
+            bird.angle = -45
+
+
+def update_pipes():
+    if bird.dead:
+        return
+
+    pipe_top.x -= SPEED
+    pipe_bottom.x -= SPEED
+
+    if pipe_top.x < -100:
+        set_pipes()
+        bird.points += 1
+        sounds.point.play()
+
+
+def on_mouse_down(pos):
+    if not bird.dead:
+        bird.vy = -FLAP
+        sounds.wing.play()
+    elif start.collidepoint(pos):
+        reset() 
+
+
+# Funkcja odczytująca ruch myszy
+def on_mouse_move(pos):
+    # Jeżeli wskaźnik myszy jest w kolizji z przyciskiem startu
+    if start.collidepoint(pos):
+        # Zmianiamy grafikę przycisku
+        start.image = "start2"
+    else: # W przeciwnym przypadku, gdy wskaźnik myszy nie znajduje się na przycisku
+        # Ustalamy inną grafikę przycisku
+        start.image = "start1"
+
+
+def set_pipes():
+    gap_y = random.randint(200, 500)
+
+    pipe_top.x = WIDTH
+    pipe_top.y = gap_y - GAP_SIZE // 2
+
+    pipe_bottom.x = WIDTH
+    pipe_bottom.y = gap_y + GAP_SIZE // 2
+
+
+def reset():
+    bird.x = 75
+    bird.y = 200
+    bird.vy = 0
+    bird.points = 0
+    bird.dead = False
+    # Ustalamy początkową grafikę ptaka
+    bird.image = "bird1"
+    set_pipes()
+
+
 pgzrun.go()
 ```
 
@@ -763,7 +1306,7 @@ GAP_SIZE = 180
 bird = Actor("bird1")
 # Ustalamy jego pozycję na ekranie
 bird.x = 75
-bird.y = HEIGHT + 20
+bird.y = 200
 # Ustalamy początkową prędkość pionową ptaka
 bird.vy = 0
 # Zliczamy zdobyte przez gracza punkty
@@ -790,31 +1333,26 @@ start.y = HEIGHT / 2
 def draw():
     # Rysujemy tło gry
     screen.blit("bg", (0, 0))
-
-    # Jeżeli ptak znajduje się poniżej dolnej krawędzi ekranu
-    if bird.y > HEIGHT:
-        # Rysujemy przycisk startu gry
-        start.draw()
-    else: # W przeciwnym przypadku, gdy ptak jest w obrębie ekranu (lub ponad górną krawędzią)
-        # Rysujemy górną rurę
-        pipe_top.draw()
-        # Rysujemy dolną rurę
-        pipe_bottom.draw()
-        # Rysujemy ptaka
-        bird.draw()
-
+    # Rysujemy górną rurę
+    pipe_top.draw()
+    # Rysujemy dolną rurę
+    pipe_bottom.draw()
+    # Rysujemy ptaka
+    bird.draw()
     # Wypisujemy liczbę punktów na ekranie
     screen.draw.text(str(bird.points), center=(WIDTH // 2, 30), fontsize=70)
+    # Jeżeli gra się zakończyła
+    if bird.dead:
+        # Rysujemy przycisk startu gry
+        start.draw()
 
 
 # Funkcja aktualizująca stan gry
 def update():
     # Aktualizujemy ptaka
     update_bird()
-    # Jeżeli gra jeszcze się nie zakońćzyła
-    if not bird.dead:
-        # Aktualizujemy rury
-        update_pipes()
+    # Aktualizujemy rury
+    update_pipes()
 
 
 # Pomocnicza funkcja aktualizująca ptaka
@@ -824,47 +1362,49 @@ def update_bird():
     # Przemieszczamy ptaka zgodnie z jego prędkością
     bird.y += bird.vy
 
-    # Jeżeli gra się zakończyła
-    if bird.dead:
-        # Kończymy i nie przeprowadzamy już dalszej aktualizacji ptaka
-        return
-
-    # Jeżeli prędkość pionowa ptaka jest ujemna, tzn. gdy ptak leci do góry
-    if bird.vy < 0:
-        # Zmieniamy grafikę ptaka
-        bird.image = "bird2"
-        # Zwiększamy jego kąt obrotu - obracamy go przeciwnie do ruchu wskazówek zegara
-        bird.angle += 3
-    else: # W przeciwnym przypadku, gdy prędkość pionowa ptaka jest dodatnia, tzn. gdy ptak leci w dół
-        # Zmieniamy grafikę praka
-        bird.image = "bird1"
-        # Zmniejszamy jego kąt obrotu - obracamy go zgodnie z ruchem wskasówek zegara
-        bird.angle -= 3
-
-    # Jeżeli kąt obrotu przekroczył 45
-    if bird.angle > 45:
-        # Przywracamy kąt 45
-        bird.angle = 45
-
-    # Jeżeli kąt obrotu jest poniżej -45
-    if bird.angle < -45:
-        # Przywracamy kąt -45
-        bird.angle = -45
-
     # Jeżeli ptak wpadł na górną lub dolną rurę, lub gdy wyleciał poza ekran z dołu lub z góry
     if bird.colliderect(pipe_top) or bird.colliderect(pipe_bottom) or bird.y > HEIGHT or bird.y < 0:
-        # Zmieniamy grafikę ptaka
-        bird.image = "bird_dead"
-        # Zapamiętujemy, że gra się zakończyła
-        bird.dead = True
-        # Zmieniamy kąt ptaka, by był skierowany w dół
-        bird.angle = -90
         # Odtwarzamy dźwięk uderzenia
         sounds.hit.play()
+        # Zapamiętujemy, że gra się zakończyła
+        bird.dead = True
+        # Zmieniamy grafikę ptaka
+        bird.image = "bird_dead"
+        # Zmieniamy kąt ptaka, by był skierowany w dół
+        bird.angle = -90
 
+    # Jeżeli gra wciąż trwa
+    if not bird.dead:
+        # Jeżeli prędkość pionowa ptaka jest ujemna, tzn. gdy ptak leci do góry
+        if bird.vy < 0:
+            # Zmieniamy grafikę ptaka
+            bird.image = "bird2"
+            # Zwiększamy jego kąt obrotu - obracamy go przeciwnie do ruchu wskazówek zegara
+            bird.angle += 3
+        else: # W przeciwnym przypadku, gdy prędkość pionowa ptaka jest dodatnia, tzn. gdy ptak leci w dół
+            # Zmieniamy grafikę praka
+            bird.image = "bird1"
+            # Zmniejszamy jego kąt obrotu - obracamy go zgodnie z ruchem wskasówek zegara
+            bird.angle -= 3
+
+        # Jeżeli kąt obrotu przekroczył 45
+        if bird.angle > 45:
+            # Przywracamy kąt 45
+            bird.angle = 45
+
+        # Jeżeli kąt obrotu jest poniżej -45
+        if bird.angle < -45:
+            # Przywracamy kąt -45
+            bird.angle = -45
+        
 
 # Pomocnicza funkcja aktualizująca rury
 def update_pipes():
+    # Jeżeli gra się zakończyła
+    if bird.dead:
+        # Kończymy i nie przeprowadzamy już dalszej aktualizacji rur
+        return
+
     # Przemieszczamy górną i dolną rurę zgodnie z prędkością przemieszczania się rur
     pipe_top.x -= SPEED
     pipe_bottom.x -= SPEED
@@ -879,6 +1419,19 @@ def update_pipes():
         sounds.point.play()
 
 
+# Funkcja odczytująca kliknięcia myszy
+def on_mouse_down(pos):
+    # Jeżeli gra jeszcze trwa
+    if not bird.dead:
+        # Symulujemy wzlot ptaka
+        bird.vy = -FLAP
+        # Odtwarzamy dźwięk machnięcia skrzydełkami
+        sounds.wing.play()
+    elif start.collidepoint(pos): # W przeciwnym przypadku, gdy kliknęliśmy na przycisk start i gra jest już zakończona
+        # Resetujemy stan gry
+        reset() 
+
+
 # Funkcja odczytująca ruch myszy
 def on_mouse_move(pos):
     # Jeżeli wskaźnik myszy jest w kolizji z przyciskiem startu
@@ -890,19 +1443,6 @@ def on_mouse_move(pos):
         start.image = "start1"
 
 
-# Funkcja odczytująca kliknięcia myszy
-def on_mouse_down(pos):
-    # Jeżeli gra jeszcze trwa
-    if not bird.dead:
-        # Symulujemy wzlot ptaka
-        bird.vy = -FLAP
-        # Odtwarzamy dźwięk machnięcia skrzydełkami
-        sounds.wing.play()
-    elif start.collidepoint(pos) and bird.dead: # W przeciwnym przypadku, gdy kliknęliśmy na przycisk start i gra jest już zakończona
-        # Resetujemy stan gry
-        reset() 
-
-
 # Pomocnicza funkcja resetująca stan gry
 def reset():
     # Ustalamy początkową pozycję ptaka na ekranie
@@ -910,10 +1450,10 @@ def reset():
     bird.y = 200
     # Ustalamy początkową prędkość pionową ptaka
     bird.vy = 0
-    # Zapamiętujemy, czy gra się już zakończyła
-    bird.dead = False
     # Zapamiętujemy liczbę punktów zdobytych przez gracza
     bird.points = 0
+    # Zapamiętujemy, czy gra się już zakończyła
+    bird.dead = False
     # Ustalamy początkową grafikę ptaka
     bird.image = "bird1"
     # Ustawiamy rury
