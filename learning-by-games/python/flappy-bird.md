@@ -849,8 +849,6 @@ def reset():
     set_pipes()
 ```
 
-Możemy także usunąć wywołanie funkcji *set_pipes* znajdujące się na **końcu** naszego kodu, zaraz przed wywołaniem *pgzrun.go()*, ponieważ teraz ustawieniem gry po jej starcie zajmie się funkcja *reset*, którą wywołujemy po kliknięciu przycisku *start*.
-
 ### Kończymy grę po kolizji
 
 Teraz nasze menu powinno już działać, gdy uruchomimy grę. Gdy jednak uderzymy w przeszkodę, to gra się po prostu zrestartuje. Zmieńmy to! Jeżeli uderzymy w przeszkodę, co sprawdzamy na końcu funkcji *update_bird*, to nie będziemy resetować gry, tylko zmienimy wartość zmiennej na *bird.dead* na *TRUE*.
@@ -988,6 +986,7 @@ def reset():
     set_pipes()
 
 
+set_pipes()
 pgzrun.go()
 ```
 
@@ -1275,6 +1274,7 @@ def reset():
     set_pipes()
 
 
+set_pipes()
 pgzrun.go()
 ```
 
@@ -1474,6 +1474,8 @@ def set_pipes():
     pipe_bottom.y = gap_y + GAP_SIZE // 2
 
 
+# Ustawiamy rury na początku gry
+set_pipes()
 # Uruchamiamy grę
 pgzrun.go()
 ```
