@@ -84,7 +84,7 @@ Zacznijmy od naszej głównej postaci: ptaka.
 Na samym początku dodajemy nowego aktora z grafiki *bird1.png*. Umieścimy go z lewej strony ekranu, na środku, pod współrzędnymi $$(75, 200)$$.
 
 ```python
-bird = Actor("bird1.png")
+bird = Actor("bird1")
 bird.x = 75
 bird.y = 200
 ```
@@ -95,7 +95,7 @@ Wyświetlmy naszą nową postać na ekranie. Na końcu części rysującej dopis
 
 ```python
 def draw():
-    screen.blit("bg.png", (0, 0))
+    screen.blit("bg", (0, 0))
     bird.draw()
 ```
 
@@ -224,7 +224,7 @@ pgzrun.go()
 
 ## Rury
 
-Czas dodać naszego przeciwnika w grze: rury. Jak zwykle zaczynamy od dodania nowych aktorów. Tym razem będzie ich dwóch: górna rura (`pipe_top`) i dolna rura (`pipe_bottom`). Utworzymy ich tak jak zazwyczaj z niewielką różnicą: ustalimy im odpowiednie **kotwice**. Kotwica pozwala nam wybrać punkt grafiki, według którego będziemy ją umieszczać na ekranie. Można to sobie wyobrazić jako miejsce, w którym "trzymamy" grafikę, gdy ją przemieszczamy. Domyślnie grafikę poruszamy względem jej środka, ale możemy też wybrać inne miejsce zaczepienia. Ze względu na charakter rur w naszej grze jest to duże ułatwienie.
+Czas dodać naszego przeciwnika w grze: rury. Jak zwykle zaczynamy od dodania nowych aktorów. Tym razem będzie ich dwóch: górna rura (`pipe_top`) i dolna rura (`pipe_bottom`). Utworzymy ich tak jak zazwyczaj z niewielką różnicą: ustalimy im odpowiednie **kotwice** (ang. *anchor*). Kotwica pozwala nam wybrać punkt grafiki, według którego będziemy ją umieszczać na ekranie. Można to sobie wyobrazić jako miejsce, w którym "trzymamy" grafikę, gdy ją przemieszczamy. Domyślnie grafikę poruszamy względem jej środka, ale możemy też wybrać inne miejsce zaczepienia. Ze względu na charakter rur w naszej grze jest to duże ułatwienie.
 
 Dla górnej rury ustawimy kotwicę w jej lewym **dolnym** rogu. Dla dolnej rury natomiast ustawimy kotwicę w jej lewym **górnym** rogu.
 
@@ -250,19 +250,37 @@ def draw():
 
 ### Ustawiamy pozycję rur
 
-Główną trudnością w naszej grze będzie niewielka przestrzeń pomiędzy rurami, przez którą musimy przelecieć. 
-Żeby gra nie była zbyt przewidywalna, ta przestrzeń powinna pojawiać się na losowej wysokości. 
-Stworzymy więc funkcję `set_pipes` za pomocą której będziemy losować nową pozycję rur.
+Główną trudnością w naszej grze będzie niewielka przestrzeń pomiędzy rurami, przez którą musimy przelecieć. Rozmiar tej przestrzeni zapiszemy jako **ustawienie** w zmiennej **GAP_SIZE**. Naszą nową zmienną zapisujemy zaraz pod zmienną *FLAP* i nadamy jej wartość $$180$$.
+
+```python
+GAP_SIZE = 180
+```
+
+Żeby gra nie była zbyt przewidywalna, przestrzeń pomiędzy rurami powinna pojawiać się na losowej wysokości. 
+Stworzymy więc funkcję `set_pipes` za pomocą której będziemy losować nową pozycję rur. Naszą funkcję dopiszemy na końcu naszego kodu, zaraz przed wywołaniem *pgzrun.go()*.
+
+```python
+def set_pipes():
+```
+
+Pierwszą operacją w naszej funkcji będzie wylosowanie pozycji pionowej **środka** naszej dziury. Zapiszemy ją w zmiennej **gap_y**, a do wylosowania wartości skorzystamy z funkcji **random.randint**. Jako przedział losowanej wartości warto podać takie liczby, żeby dziura nie pojawiała się na skraju ekranu, czyli np. $$(200, 500)$$.
+
+```python
+def set_pipes():
+    gap_y = random.randint(200, 500)
+```
+
+Teraz możemy przypisać nowe pozycje naszych rur. Ustawimy je poza prawą stroną ekranu, tak by mogły płynnie "wjechać" na ekran gry. W tym celu do ich współrzędnej *x* przypiszemy szerokość (*WIDTH*) ekranu. Jeżeli chodzi o współrzędną *y* to górna rura powinna być położona **ponad** współrzędną *gap_y*, a dolna **pod** nią. Obie natomiast powinny być oddalone od tego środka dokładnie o połowę rozmiaru przerwy (*GAP_SIZE*).
 
 ```python
 def set_pipes():
     gap_y = random.randint(200, 500)
 
     pipe_top.x = WIDTH
-    pipe_top.y = gap_y - GAP_SIZE // 2
+    pipe_top.y = gap_y - GAP_SIZE / 2
 
     pipe_bottom.x = WIDTH
-    pipe_bottom.y = gap_y + GAP_SIZE // 2
+    pipe_bottom.y = gap_y + GAP_SIZE / 2
 ```
 
 Teraz czas wywołać naszą funkcję. Zrobimy to zaraz przed uruchomieniem gry, czyli tuż przed instrukcją `pgzrun.go()`.
@@ -340,8 +358,8 @@ TITLE = "Pygame Zero Flappy Bird"
 
 GRAVITY = 0.3
 FLAP = 7
-SPEED = 3
 GAP_SIZE = 180
+SPEED = 3
 
 bird = Actor("bird1.png")
 bird.x = 75
@@ -401,11 +419,11 @@ def set_pipes():
 
     # Ustawiamy pozycję górnej rury
     pipe_top.x = WIDTH
-    pipe_top.y = gap_y - GAP_SIZE // 2
+    pipe_top.y = gap_y - GAP_SIZE / 2
 
     # Ustawiamy pozycję dolnej rury
     pipe_bottom.x = WIDTH
-    pipe_bottom.y = gap_y + GAP_SIZE // 2
+    pipe_bottom.y = gap_y + GAP_SIZE / 2
 
 
 # Ustawiamy rury na początku gry
@@ -542,8 +560,8 @@ TITLE = "Pygame Zero Flappy Bird"
 
 GRAVITY = 0.3
 FLAP = 7
-SPEED = 3
 GAP_SIZE = 180
+SPEED = 3
 
 bird = Actor("bird1.png")
 bird.x = 75
@@ -598,10 +616,10 @@ def set_pipes():
     gap_y = random.randint(200, 500)
 
     pipe_top.x = WIDTH
-    pipe_top.y = gap_y - GAP_SIZE // 2
+    pipe_top.y = gap_y - GAP_SIZE / 2
 
     pipe_bottom.x = WIDTH
-    pipe_bottom.y = gap_y + GAP_SIZE // 2
+    pipe_bottom.y = gap_y + GAP_SIZE / 2
 
 
 # Pomocnicza funkcja resetująca stan gry
@@ -699,8 +717,8 @@ TITLE = "Pygame Zero Flappy Bird"
 
 GRAVITY = 0.3
 FLAP = 7
-SPEED = 3
 GAP_SIZE = 180
+SPEED = 3
 
 bird = Actor("bird1.png")
 bird.x = 75
@@ -760,10 +778,10 @@ def set_pipes():
     gap_y = random.randint(200, 500)
 
     pipe_top.x = WIDTH
-    pipe_top.y = gap_y - GAP_SIZE // 2
+    pipe_top.y = gap_y - GAP_SIZE / 2
 
     pipe_bottom.x = WIDTH
-    pipe_bottom.y = gap_y + GAP_SIZE // 2
+    pipe_bottom.y = gap_y + GAP_SIZE / 2
 
 
 def reset():
@@ -890,8 +908,8 @@ TITLE = "Pygame Zero Flappy Bird"
 
 GRAVITY = 0.3
 FLAP = 7
-SPEED = 3
 GAP_SIZE = 180
+SPEED = 3
 
 bird = Actor("bird1.png")
 bird.x = 75
@@ -970,10 +988,10 @@ def set_pipes():
     gap_y = random.randint(200, 500)
 
     pipe_top.x = WIDTH
-    pipe_top.y = gap_y - GAP_SIZE // 2
+    pipe_top.y = gap_y - GAP_SIZE / 2
 
     pipe_bottom.x = WIDTH
-    pipe_bottom.y = gap_y + GAP_SIZE // 2
+    pipe_bottom.y = gap_y + GAP_SIZE / 2
 
 
 def reset():
@@ -1149,8 +1167,8 @@ TITLE = "Pygame Zero Flappy Bird"
 
 GRAVITY = 0.3
 FLAP = 7
-SPEED = 3
 GAP_SIZE = 180
+SPEED = 3
 
 bird = Actor("bird1.png")
 bird.x = 75
@@ -1257,10 +1275,10 @@ def set_pipes():
     gap_y = random.randint(200, 500)
 
     pipe_top.x = WIDTH
-    pipe_top.y = gap_y - GAP_SIZE // 2
+    pipe_top.y = gap_y - GAP_SIZE / 2
 
     pipe_bottom.x = WIDTH
-    pipe_bottom.y = gap_y + GAP_SIZE // 2
+    pipe_bottom.y = gap_y + GAP_SIZE / 2
 
 
 def reset():
@@ -1297,10 +1315,10 @@ TITLE = "Pygame Zero Flappy Bird"
 GRAVITY = 0.3
 # Prędkość wzlotowa
 FLAP = 7
-# Prędkość przemieszczania się rur
-SPEED = 3
 # Rozmiar przestrzeni pomiędzy rurami
 GAP_SIZE = 180
+# Prędkość przemieszczania się rur
+SPEED = 3
 
 # Tworzymy aktora ptaka
 bird = Actor("bird1")
@@ -1467,11 +1485,11 @@ def set_pipes():
 
     # Ustawiamy pozycję górnej rury
     pipe_top.x = WIDTH
-    pipe_top.y = gap_y - GAP_SIZE // 2
+    pipe_top.y = gap_y - GAP_SIZE / 2
 
     # Ustawiamy pozycję dolnej rury
     pipe_bottom.x = WIDTH
-    pipe_bottom.y = gap_y + GAP_SIZE // 2
+    pipe_bottom.y = gap_y + GAP_SIZE / 2
 
 
 # Ustawiamy rury na początku gry
