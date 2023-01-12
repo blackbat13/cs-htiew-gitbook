@@ -458,7 +458,8 @@ def reset():
     bird.vy = 0
 ```
 
-Przydałoby się także ponownie ustawić rury, abyśmy przypadkiem nie wylądowali w środku jeden z nich.
+Przydałoby się także ponownie ustawić rury, abyśmy przypadkiem nie wylądowali w środku jednej
+ z nich.
 
 ```python
 def reset():
@@ -478,7 +479,7 @@ Można to sprawdzić na wiele sposobów, ale biblioteka Pygame Zero ma do tego w
 
 Kolizję ptaka będziemy sprawdzać w funkcji aktualizującej ptaka, czyli *update_bird*.
 
-W celu sprawdzenie, czy ptak jest w kolizji z górną rurą, zapiszemy:
+W celu sprawdzenia, czy ptak jest w kolizji z górną rurą, zapiszemy:
 
 ```python
 def update_bird():
