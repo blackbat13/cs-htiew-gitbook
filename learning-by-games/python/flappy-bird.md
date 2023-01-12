@@ -245,7 +245,7 @@ def draw():
     screen.blit("bg", (0, 0))
     pipe_top.draw()
     pipe_bottom.draw()
-    ptak.draw()
+    bird.draw()
 ```
 
 ### Ustawiamy pozycję rur
