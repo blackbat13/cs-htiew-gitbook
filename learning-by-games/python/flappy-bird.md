@@ -662,7 +662,7 @@ Na końcu części rysującej dopiszemy wyświetlanie punktów za pomocą funkcj
 def draw():
     ...
 
-    screen.draw.text(str(bird.points), center=(WIDTH // 2, 30), fontsize=70)
+    screen.draw.text(str(bird.points), center=(WIDTH / 2, 30), fontsize=70)
 ```
 
 ### Zliczamy punkty
@@ -741,7 +741,7 @@ def draw():
     pipe_bottom.draw()
     bird.draw()
     # Wypisujemy liczbę punktów na ekranie
-    screen.draw.text(str(bird.points), center=(WIDTH // 2, 30), fontsize=70)
+    screen.draw.text(str(bird.points), center=(WIDTH / 2, 30), fontsize=70)
 
 
 def update():
@@ -938,7 +938,7 @@ def draw():
     pipe_top.draw()
     pipe_bottom.draw()
     bird.draw()
-    screen.draw.text(str(bird.points), center=(WIDTH // 2, 30), fontsize=70)
+    screen.draw.text(str(bird.points), center=(WIDTH / 2, 30), fontsize=70)
     # Jeżeli gra się zakończyła
     if bird.dead:
         # Rysujemy przycisk startu gry
@@ -1194,7 +1194,7 @@ def draw():
     pipe_top.draw()
     pipe_bottom.draw()
     bird.draw()
-    screen.draw.text(str(bird.points), center=(WIDTH // 2, 30), fontsize=70)
+    screen.draw.text(str(bird.points), center=(WIDTH / 2, 30), fontsize=70)
     if bird.dead:
         start.draw()
 
@@ -1359,7 +1359,7 @@ def draw():
     # Rysujemy ptaka
     bird.draw()
     # Wypisujemy liczbę punktów na ekranie
-    screen.draw.text(str(bird.points), center=(WIDTH // 2, 30), fontsize=70)
+    screen.draw.text(str(bird.points), center=(WIDTH / 2, 30), fontsize=70)
     # Jeżeli gra się zakończyła
     if bird.dead:
         # Rysujemy przycisk startu gry
