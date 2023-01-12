@@ -193,7 +193,7 @@ bird.vy = 0
 
 
 def draw():
-    screen.blit("bg.png", (0, 0))
+    screen.blit("bg", (0, 0))
     # Rysujemy ptaka
     bird.draw()
 
@@ -242,7 +242,7 @@ Gdy już mamy aktorów, czas ich wyświetlić na ekranie. Dodajemy dwie instrukc
 
 ```python
 def draw():
-    screen.blit("bg.png", (0, 0))
+    screen.blit("bg", (0, 0))
     pipe_top.draw()
     pipe_bottom.draw()
     ptak.draw()
@@ -361,7 +361,7 @@ FLAP = 7
 GAP_SIZE = 180
 SPEED = 3
 
-bird = Actor("bird1.png")
+bird = Actor("bird1")
 bird.x = 75
 bird.y = 200
 bird.vy = 0
@@ -376,7 +376,7 @@ pipe_bottom.anchor = ("left", "top")
 
 
 def draw():
-    screen.blit("bg.png", (0, 0))
+    screen.blit("bg", (0, 0))
     # Rysujemy górną rurę
     pipe_top.draw()
     # Rysujemy dolną rurę
@@ -563,7 +563,7 @@ FLAP = 7
 GAP_SIZE = 180
 SPEED = 3
 
-bird = Actor("bird1.png")
+bird = Actor("bird1")
 bird.x = 75
 bird.y = 200
 bird.vy = 0
@@ -576,7 +576,7 @@ pipe_bottom.anchor = ("left", "top")
 
 
 def draw():
-    screen.blit("bg.png", (0, 0))
+    screen.blit("bg", (0, 0))
     pipe_top.draw()
     pipe_bottom.draw()
     bird.draw()
@@ -646,7 +646,7 @@ Czas na zdobywanie punktów!
 W celu zapamiętania punktów dopiszemy nową zmienną do naszego aktora ptaka. Nazwiemy ją **points** i przypiszemy jej początkową wartość $$0$$. Nową zmienną dopisujemy na górze kodu, zaraz pod przypisaniem prędkości pionowej do ptaka.
 
 ```python
-bird = Actor("bird1.png")
+bird = Actor("bird1")
 bird.x = 75
 bird.y = 200
 bird.vy = 0
@@ -720,7 +720,7 @@ FLAP = 7
 GAP_SIZE = 180
 SPEED = 3
 
-bird = Actor("bird1.png")
+bird = Actor("bird1")
 bird.x = 75
 bird.y = 200
 bird.vy = 0
@@ -735,7 +735,7 @@ pipe_bottom.anchor = ("left", "top")
 
 
 def draw():
-    screen.blit("bg.png", (0, 0))
+    screen.blit("bg", (0, 0))
     pipe_top.draw()
     pipe_bottom.draw()
     bird.draw()
@@ -911,7 +911,7 @@ FLAP = 7
 GAP_SIZE = 180
 SPEED = 3
 
-bird = Actor("bird1.png")
+bird = Actor("bird1")
 bird.x = 75
 bird.y = 200
 bird.vy = 0
@@ -933,7 +933,7 @@ start.y = HEIGHT / 2
 
 
 def draw():
-    screen.blit("bg.png", (0, 0))
+    screen.blit("bg", (0, 0))
     pipe_top.draw()
     pipe_bottom.draw()
     bird.draw()
@@ -1170,7 +1170,7 @@ FLAP = 7
 GAP_SIZE = 180
 SPEED = 3
 
-bird = Actor("bird1.png")
+bird = Actor("bird1")
 bird.x = 75
 bird.y = 200
 bird.vy = 0
@@ -1189,7 +1189,7 @@ start.y = HEIGHT / 2
 
 
 def draw():
-    screen.blit("bg.png", (0, 0))
+    screen.blit("bg", (0, 0))
     pipe_top.draw()
     pipe_bottom.draw()
     bird.draw()
