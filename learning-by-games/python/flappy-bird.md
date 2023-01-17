@@ -1224,7 +1224,7 @@ def update_bird():
             # Zwiększamy jego kąt obrotu - obracamy go przeciwnie do ruchu wskazówek zegara
             bird.angle += 3
         else: # W przeciwnym przypadku, gdy prędkość pionowa ptaka jest dodatnia, tzn. gdy ptak leci w dół
-            # Zmieniamy grafikę praka
+            # Zmieniamy grafikę ptaka
             bird.image = "bird1"
             # Zmniejszamy jego kąt obrotu - obracamy go zgodnie z ruchem wskasówek zegara
             bird.angle -= 3
@@ -1401,7 +1401,7 @@ def update_bird():
             # Zwiększamy jego kąt obrotu - obracamy go przeciwnie do ruchu wskazówek zegara
             bird.angle += 3
         else: # W przeciwnym przypadku, gdy prędkość pionowa ptaka jest dodatnia, tzn. gdy ptak leci w dół
-            # Zmieniamy grafikę praka
+            # Zmieniamy grafikę ptaka
             bird.image = "bird1"
             # Zmniejszamy jego kąt obrotu - obracamy go zgodnie z ruchem wskasówek zegara
             bird.angle -= 3
