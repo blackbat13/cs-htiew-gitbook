@@ -1015,7 +1015,7 @@ Pora na ostatnie szlify. Teraz dodamy kilka efektów wizualnych, takich jak obr�
 
 ### Efekt spadania po kolizji
 
-Po kolizji ptaka z przeszkodą zmienimy jego grafikę (**bird.image**) na *bird_dead*, a także ustawimy mu kąt obrotu (**bird.angle**) na $$-90$$, tak aby był skierowany w dół.
+Po kolizji ptaka z przeszkodą zmienimy jego grafikę (**bird.image**) na *dead*, a także ustawimy mu kąt obrotu (**bird.angle**) na $$-90$$, tak aby był skierowany w dół.
 
 ```python
 def update_bird():
@@ -1024,7 +1024,7 @@ def update_bird():
     if bird.colliderect(pipe_top) or bird.colliderect(pipe_bottom) or bird.y > HEIGHT or bird.y < 0:
         sounds.hit.play()
         bird.dead = True
-        bird.image = "bird_dead"
+        bird.image = "dead"
         bird.angle = -90
 ```
 
@@ -1212,7 +1212,7 @@ def update_bird():
         sounds.hit.play()
         bird.dead = True
         # Zmieniamy grafikę ptaka
-        bird.image = "bird_dead"
+        bird.image = "dead"
         # Zmieniamy kąt ptaka, by był skierowany w dół
         bird.angle = -90
 
@@ -1388,7 +1388,7 @@ def update_bird():
         # Zapamiętujemy, że gra się zakończyła
         bird.dead = True
         # Zmieniamy grafikę ptaka
-        bird.image = "bird_dead"
+        bird.image = "dead"
         # Zmieniamy kąt ptaka, by był skierowany w dół
         bird.angle = -90
 
