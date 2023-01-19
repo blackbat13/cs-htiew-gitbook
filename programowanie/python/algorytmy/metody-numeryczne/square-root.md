@@ -43,7 +43,7 @@ W części głównej definiujemy dane wejściowe do naszego problemu (**linie 11
 
 ## Metoda Herona z wykresem
 
-{% code lineNumbers="true" %}
+{% code title="index.js" overflow="wrap" lineNumbers="true" %}
 ```python
 import matplotlib.pyplot as plt
 
