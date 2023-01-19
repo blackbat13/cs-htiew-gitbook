@@ -8,6 +8,7 @@
 
 ## Obliczanie wartości liczby PI
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 import random
 
@@ -38,6 +39,7 @@ estimated_pi = monte_carlo_pi(points_count)
 
 print(f"PI ~= {estimated_pi}")
 ```
+{% endcode %}
 
 ### Link do implementacji
 

@@ -8,6 +8,7 @@
 
 ## Metoda prostokątów
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def f(x: float) -> float:
     return x * x + 2 * x
@@ -32,6 +33,7 @@ n = 100
 area = rectangles_method(a, b, n)
 print(area)
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -45,6 +47,7 @@ TODO
 
 ## Metoda trapezów
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def f(x: float) -> float:
     return x * x + 2 * x
@@ -70,6 +73,7 @@ n = 100
 area = trapezes_method(a, b, n)
 print(area)
 ```
+{% endcode %}
 
 ### Link do implementacji
 

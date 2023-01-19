@@ -8,6 +8,7 @@
 
 ## Konwersja z dziesiętnego
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def from_dec(number: int, new_base: int) -> str:
     converted = ""
@@ -32,6 +33,7 @@ converted = from_dec(number, base)
 
 print(f'{number} (10) = {converted} ({base})')
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -41,6 +43,7 @@ Konwersja z dziesiętnego
 
 ## Konwersja na dziesiętny
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def to_dec(number: str, base: int) -> int:
     converted = 0
@@ -67,6 +70,7 @@ converted = to_dec(number, base)
 
 print(f'{number} ({base}) = {converted} (10)')
 ```
+{% endcode %}
 
 ### Link do implementacji
 

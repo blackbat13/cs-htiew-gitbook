@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def horner_polynomial(coef: [], x: float, n: float) -> float:
     """
@@ -50,6 +51,7 @@ print_polynomial(coef, n)
 result = horner_polynomial(coef, x, n)
 print(f"f({x}) = {result}")
 ```
+{% endcode %}
 
 ### Link do implementacji
 

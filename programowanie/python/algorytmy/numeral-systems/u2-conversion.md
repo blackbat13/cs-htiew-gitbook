@@ -8,6 +8,7 @@
 
 ## Z U2 do dziesiętnego
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def u2_to_decimal(number: str) -> int:
     power = 2 ** (len(number) - 1)
@@ -32,6 +33,7 @@ number_decimal = u2_to_decimal(number_u2)
 
 print(f"{number_u2} (U2) = {number_decimal} (10)")
 ```
+{% endcode %}
 
 ### Link do implementacji
 
