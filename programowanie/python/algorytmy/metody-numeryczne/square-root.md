@@ -8,6 +8,7 @@
 
 ## Metoda Herona
 
+{% code lineNumbers="true" %}
 ```python
 def sqrt(n: float, p: float) -> float:
     x1 = n / 2
@@ -26,6 +27,7 @@ result = sqrt(n, p)
 
 print(f"sqrt({n}) ~= {result}")
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -41,6 +43,7 @@ W części głównej definiujemy dane wejściowe do naszego problemu (**linie 11
 
 ## Metoda Herona z wykresem
 
+{% code lineNumbers="true" %}
 ```python
 import matplotlib.pyplot as plt
 
@@ -69,6 +72,7 @@ print(f"sqrt({n}) ~= {result}")
 
 plt.show()
 ```
+{% endcode %}
 
 ### Opis implementacji
 
