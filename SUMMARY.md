@@ -495,7 +495,7 @@
       * [Konwersja w systemie U2](programowanie/python/algorytmy/numeral-systems/u2-conversion.md)
     * [Metody numeryczne](programowanie/python/algorytmy/metody-numeryczne/README.md)
       * [Schemat Hornera](programowanie/python/algorytmy/metody-numeryczne/schemat-hornera.md)
-      * [Pierwiastek kwadratowy](programowanie/python/algorytmy/metody-numeryczne/pierwiastek-kwadratowy.md)
+      * [Pierwiastek kwadratowy](programowanie/python/algorytmy/metody-numeryczne/square-root.md)
       * [Całkowanie numeryczne](programowanie/python/algorytmy/metody-numeryczne/calkowanie-numeryczne.md)
       * [Szybkie potęgowanie](programowanie/python/algorytmy/metody-numeryczne/szybkie-potegowanie.md)
       * [Metoda Monte Carlo](programowanie/python/algorytmy/metody-numeryczne/metoda-monte-carlo.md)

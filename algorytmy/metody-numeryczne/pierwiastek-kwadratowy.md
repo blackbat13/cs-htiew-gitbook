@@ -39,6 +39,6 @@ funkcja MetodaHerona(n, p)
 
 ### Python
 
-{% content-ref url="../../programowanie/python/algorytmy/metody-numeryczne/pierwiastek-kwadratowy.md" %}
-[pierwiastek-kwadratowy.md](../../programowanie/python/algorytmy/metody-numeryczne/pierwiastek-kwadratowy.md)
+{% content-ref url="../../programowanie/python/algorytmy/metody-numeryczne/square-root.md" %}
+[square-root.md](../../programowanie/python/algorytmy/metody-numeryczne/square-root.md)
 {% endcontent-ref %}
