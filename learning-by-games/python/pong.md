@@ -75,7 +75,7 @@ Na początek rzecz prosta - tło gry. Jak już ustaliliśmy na tło składa się
 
 Dla ułatwienia kolor tła zapamiętamy w zmiennej `bg_color`, którą dodamy zaraz pod tytułem gry. Chcemy mieć lekki odcień szarości.
 W tym celu ustalamy kolor za pomocą trzech wartości: **(R, G, B)**.
-W celu uzyskania odcieniu szarości wystarczy podać trzy takie same liczby, np. $$64$$.
+W celu uzyskania odcienia szarości wystarczy podać trzy takie same liczby, np. $$64$$.
 
 ```python
 bg_color = (64, 64, 64)
