@@ -672,7 +672,7 @@ def move_ball():
 
 ### Wypadnięcie poza ekran
 
-Pozostało nam obsłużyć przypadek, gdy jedna z paletek nie zdąży odbić piłki i ta "wyleci* z lewej lub prawej strony ekranu.
+Pozostało nam obsłużyć przypadek, gdy jedna z paletek nie zdąży odbić piłki i ta *wyleci* z lewej lub prawej strony ekranu.
 
 Zacznijmy od pytania: co powinno stać się z piłką w takiej sytuacji? Najprościej będzie zresetować jej pozycję, tzn. przywrócić ją na środek ekranu. W tym celu utworzymy nową funkcję `reset_ball`, którą dopiszemy na końcu naszego kodu, zaraz przed `pgzrun.go()`.
 
