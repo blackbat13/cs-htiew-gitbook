@@ -8,8 +8,8 @@ Istnieje wiele aplikacji pozwalających komunikować się przez sieć, a dzisiaj
 
 ### Czego się nauczysz
 
-* "Turowej" komunikacji przez sieć
-* Łączenia klientów w pary
+* "Turowej" komunikacji przez sieć.
+* Łączenia klientów w pary.
 
 ## Serwer
 

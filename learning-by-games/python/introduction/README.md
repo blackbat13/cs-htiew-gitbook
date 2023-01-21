@@ -1,4 +1,4 @@
-# Wstęp
+# Wprowadzenie
 
 Zanim zaczniemy, należy skonfigurować nasze środowisko programistyczne. Będziemy używać **Pythona** w wersji **3**, a jako **IDE** (program, w którym będziemy pisać nasze programy) wybierzemy **PyCharm Community Edition**. Oczywiście można skorzystać z dowolnego środowiska, ale to uważam osobiście za jedno z lepszych i do niego będę się odwoływał w tym kursie.
 

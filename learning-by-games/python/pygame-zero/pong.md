@@ -223,7 +223,7 @@ def draw():
     screen.fill(bg_color)
     screen.draw.line((WIDTH / 2, 40), (WIDTH / 2, HEIGHT - 40), color = "yellow")
     # Rysujemy lewą paletkę
-    lewa.draw()
+    left.draw()
 
     
 def update():
@@ -347,7 +347,7 @@ ball.y = HEIGHT / 2
 ### Rysujemy piłkę
 
 Skoro już umieściliśmy naszą piłkę w jej początkowej pozycji, możemy ją narysować na ekranie.
-Do części rysującej, zaraz pod poleceniem rysującym prawą paletkę, dopisujemy polecenie rysujące piłkę: *pilka.draw()*.
+Do części rysującej, zaraz pod poleceniem rysującym prawą paletkę, dopisujemy polecenie rysujące piłkę: *ball.draw()*.
 
 ```python
 def draw():
@@ -438,7 +438,7 @@ def move_players():
 ### Wywołujemy funkcję w części aktualizującej
 
 Aby zobaczyć rezultaty naszego działania, potrzebujemy jeszcze **użyć** naszej funkcji.
-Ruch graczy to **aktualizacja** pozycji graczy na ekranie, dlatego naszą nową funkcję *ruch_graczy* **wywołujemy** w części aktualizującej (**update**), zastępując jej dotychczasową zawartość (*pass*).
+Ruch graczy to **aktualizacja** pozycji graczy na ekranie, dlatego naszą nową funkcję *move_players* **wywołujemy** w części aktualizującej (**update**), zastępując jej dotychczasową zawartość (*pass*).
 
 ```python
 def update():
@@ -511,7 +511,7 @@ def update():
 
 # Pomocnicza funkcja odczytująca ruchy graczy
 def move_players():
-    # Lewy gracz porusza się za pomocą klawiszy w i s
+    # Lewy gracz porusza się za pomocą klawiszy w oraz s
     if keyboard.w and left.top > 40:
         left.y -= left.vy
 

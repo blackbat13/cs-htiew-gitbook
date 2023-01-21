@@ -1,8 +1,16 @@
-# Wstęp do PygameZero
+# Gry 2D - Pygame Zero
 
 ## Wstęp
 
-Poznaliśmy już niezbędne podstawy programowania w języku Python, pora więc przejść do tworzenia bardziej interaktywnych gier dwuwymiarowych. W tym celu wykorzystamy bibliotekę przeznaczoną właśnie do tworzenia takich gier: **PyGameZero**. Nie jest ona częścią domyślnej instalacji języka Python, musimy więc ją samodzielnie zainstalować.
+Poznaliśmy już niezbędne podstawy programowania w języku Python, pora więc przejść do tworzenia bardziej interaktywnych gier dwuwymiarowych. W tym kursie wykorzystamy jedną z bibliotek do tworzenia takich gier: **PyGame Zero**.
+
+Ci z Was, którzy interesują się tworzeniem gier mogli już wcześniej słyszeć o bibliotece **PyGame**, jednej z najpopularniejszych do tworzenia gier w języku Python. **PyGame Zero** jest "uproszczoną" wersją tej biblioteki, idealną do rozpoczęcia nauki tego pięknego języka. Nie jest ona częścią domyślnej instalacji języka Python, musimy więc ją samodzielnie zainstalować.
+
+### Biblioteka
+
+{% embed url="https://pygame-zero.readthedocs.io/en/stable/index.html" %}
+Pygame Zero
+{% endembed %}
 
 ### Czego się nauczysz
 

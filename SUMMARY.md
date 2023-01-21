@@ -801,29 +801,31 @@
 ## Nauka programowania poprzez tworzenie gier <a href="learning-by-games" id="learning-by-games"></a>
 * [Wstęp](learning-by-games/intro.md)
 * [Python 3](learning-by-games/python/README.md)
-  * [Wstęp](learning-by-games/python/intro.md)
-  * [Prosta (naiwna) gra](learning-by-games/python/silly-game.md)
-  * [Symulacja rzutu kością](learning-by-games/python/dice-simulator.md)
-  * [Gra w zgadywanie](learning-by-games/python/guessing-game.md)
-  * [Wstęp do PygameZero](learning-by-games/python/pgzero-intro.md)
-  * [Złap słońce](learning-by-games/python/catch-the-sun.md)
-  * [Głodna świnia](learning-by-games/python/hungry-pig.md)
-  * [Flappy Bird](learning-by-games/python/flappy-bird.md)
-  * [Pong](learning-by-games/python/pong.md)
-  * [Asteroidy](learning-by-games/python/asteroids.md)
-  * [Kosmos](learning-by-games/python/cosmos.md)
-  <!-- * [Czołgi 1](learning-by-games/python/tanks-1.md) -->
-  <!-- * [Czołgi 2](learning-by-games/python/tanks-2.md) -->
-  <!-- * [Gra w kolory](learning-by-games/python/colors-game.md) -->
-  <!-- * [Kolorowa piłka](learning-by-games/python/colorful-ball.md) -->
-  <!-- * [Snake](learning-by-games/python/snake.md) -->
-  * [Echo](learning-by-games/python/echo.md)
-  <!-- * [Pochatujmy!](learning-by-games/python/chat.md) -->
-  * [Gra Nim](learning-by-games/python/nim.md)
-  * [Gra w monety z AI](learning-by-games/python/game-of-coins-ai.md)
-  <!-- * [Gra Nim online](learning-by-games/python/nim-online.md) -->
-  <!-- * [HitmanZero - jeden gracz](learning-by-games/python/hitmanzero-one-player.md) -->
-  <!-- * [HitmanZero - dwóch graczy](learning-by-games/python/hitmanzero-two-players.md) -->
+  * [Wprowadzenie](learning-by-games/python/introduction/README.md)
+    * [Prosta (naiwna) gra](learning-by-games/python/introduction/silly-game.md)
+    * [Symulacja rzutu kością](learning-by-games/python/introduction/dice-simulator.md)
+    * [Gra w zgadywanie](learning-by-games/python/introduction/guessing-game.md)
+  * [Gry 2D - Pygame Zero](learning-by-games/python/pygame-zero/README.md)
+    * [Złap słońce](learning-by-games/python/pygame-zero/catch-the-sun.md)
+    * [Głodna świnia](learning-by-games/python/pygame-zero/hungry-pig.md)
+    * [Flappy Bird](learning-by-games/python/pygame-zero/flappy-bird.md)
+    * [Pong](learning-by-games/python/pygame-zero/pong.md)
+    * [Asteroidy](learning-by-games/python/pygame-zero/asteroids.md)
+    * [Kosmos](learning-by-games/python/pygame-zero/cosmos.md)
+    * [Gra Nim](learning-by-games/python/pygame-zero/nim.md)
+    <!-- * [Czołgi 1](learning-by-games/python/pygame-zero/tanks-1.md)
+    * [Czołgi 2](learning-by-games/python/pygame-zero/tanks-2.md)
+    * [Gra w kolory](learning-by-games/python/pygame-zero/colors-game.md)
+    * [Kolorowa piłka](learning-by-games/python/pygame-zero/colorful-ball.md)
+    * [Snake](learning-by-games/python/pygame-zero/snake.md) -->
+  * [Gry sieciowe](learning-by-games/python/internet/README.md)
+    * [Echo](learning-by-games/python/internet/echo.md)
+    <!-- * [Pochatujmy!](learning-by-games/python/internet/chat.md)
+    * [Gra Nim online](learning-by-games/python/internet/nim-online.md)
+    * [HitmanZero - jeden gracz](learning-by-games/python/internet/hitmanzero-one-player.md)
+    * [HitmanZero - dwóch graczy](learning-by-games/python/internet/hitmanzero-two-players.md) -->
+  * [Sztuczna inteligencja](learning-by-games/python/ai/README.md)
+    * [Gra w monety z AI](learning-by-games/python/ai/game-of-coins-ai.md)
 * [Lua](learning-by-games/lua/README.md)
   * [Głodna świnia](learning-by-games/lua/hungry-pig.md)
   * [Asteroidy](learning-by-games/lua/asteroids.md)

@@ -6,10 +6,10 @@ Stworzymy kolejną, prostą grę tekstową: grę w zgadywanie! Reguły są prost
 
 ### Czego się nauczysz
 
-* Wybierania losowej liczby
-* Korzystania z pętli warunkowej
-* Korzystania z instrukcji warunkowych
-* Zliczania liczby przebiegów pętli
+* Wybierania losowej liczby.
+* Korzystania z pętli warunkowej.
+* Korzystania z instrukcji warunkowych.
+* Zliczania liczby przebiegów pętli.
 
 ## Proste zgadywanie
 
