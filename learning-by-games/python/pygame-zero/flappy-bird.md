@@ -15,7 +15,7 @@ Dzisiaj odtworzymy jedną z kultowych gier mobilnych: Flappy Bird.
 
 Umieszczamy w katalogu **images**.
 
-{% file src="../../.gitbook/assets/flappy_images.zip" %}
+{% file src="../../../.gitbook/assets/flappy_images.zip" %}
 Grafiki do gry Flappy Bird
 {% endfile %}
 
@@ -23,7 +23,7 @@ Grafiki do gry Flappy Bird
 
 Umieszczamy w katalogu **sounds**.
 
-{% file src="../../.gitbook/assets/flappy_sounds.zip" %}
+{% file src="../../../.gitbook/assets/flappy_sounds.zip" %}
 Efekty dźwiękowe do gry Flappy Bird
 {% endfile %}
 
@@ -35,7 +35,7 @@ Efekty dźwiękowe do gry Flappy Bird
 
 ## Nasz cel
 
-![Flappy Bird - animacja](../../.gitbook/assets/flappyGame.gif)
+![Flappy Bird - animacja](../../../.gitbook/assets/flappyGame.gif)
 
 ## Wstępna konfiguracja
 

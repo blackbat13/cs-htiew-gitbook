@@ -16,7 +16,7 @@ Stworzymy prostą grę, w której naszym graczem będzie świnia. Świnie, jak w
 
 Umieszczamy w katalogu **images**.
 
-{% file src="../../.gitbook/assets/hungry_pig_images.zip" %}
+{% file src="../../../.gitbook/assets/hungry_pig_images.zip" %}
 Grafiki do gry Głodna Świnia
 {% endfile %}
 
@@ -24,7 +24,7 @@ Grafiki do gry Głodna Świnia
 
 Umieszczamy w katalogu **sounds**.
 
-{% file src="../../.gitbook/assets/hungry_pig_sounds.zip" %}
+{% file src="../../../.gitbook/assets/hungry_pig_sounds.zip" %}
 Dźwięki do gry Głodna Świnia
 {% endfile %}
 
@@ -32,7 +32,7 @@ Dźwięki do gry Głodna Świnia
 
 Umieszczamy w katalogu **fonts**.
 
-{% file src="../../.gitbook/assets/hungry_pig_fonts.zip" %}
+{% file src="../../../.gitbook/assets/hungry_pig_fonts.zip" %}
 Czcionki do gry Głodna Świnia
 {% endfile %}
 
@@ -40,7 +40,7 @@ Czcionki do gry Głodna Świnia
 
 Po dodaniu potrzebnych materiałów, struktura projektu powinna wyglądać mniej więcej tak jak na grafice poniżej.
 
-![Struktura projektu](../../.gitbook/assets/hungry_pig_structure.png)
+![Struktura projektu](../../../.gitbook/assets/hungry_pig_structure.png)
 
 ### Źródła
 
@@ -50,7 +50,7 @@ Po dodaniu potrzebnych materiałów, struktura projektu powinna wyglądać mniej
 
 ## Nasz cel
 
-![Głodna świnia - animacja](../../.gitbook/assets/hungry_pig.gif)
+![Głodna świnia - animacja](../../../.gitbook/assets/hungry_pig.gif)
 
 ## Wstępna konfiguracja
 

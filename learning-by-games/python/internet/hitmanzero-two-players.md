@@ -6,7 +6,7 @@ TODO
 
 Grafiki zostały pobrane ze strony [https://kenney.nl/](https://kenney.nl)
 
-{% file src="../../.gitbook/assets/hitman_grafiki.zip" %}
+{% file src="../../../.gitbook/assets/hitman_grafiki.zip" %}
 Grafiki do gry
 {% endfile %}
 

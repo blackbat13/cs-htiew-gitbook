@@ -15,25 +15,25 @@ Stworzymy naszą pierwszą grę kosmiczną!
 
 ### Grafiki do pobrania
 
-{% file src="../../.gitbook/assets/grafiki_asteroidy.zip" %}
+{% file src="../../../.gitbook/assets/grafiki_asteroidy.zip" %}
 Grafiki do gry Asteroidy
 {% endfile %}
 
 ### Dźwięki do pobrania
 
-{% file src="../../.gitbook/assets/sounds_asteroidy.zip" %}
+{% file src="../../../.gitbook/assets/sounds_asteroidy.zip" %}
 Dźwięki do gry Asteroidy
 {% endfile %}
 
 ### Muzyka do pobrania
 
-{% file src="../../.gitbook/assets/music_asteroidy.zip" %}
+{% file src="../../../.gitbook/assets/music_asteroidy.zip" %}
 Muzyka do gry Asteroidy
 {% endfile %}
 
 ## Gra
 
-![Asteroidy](../../.gitbook/assets/asteroidsGame.gif)
+![Asteroidy](../../../.gitbook/assets/asteroidsGame.gif)
 
 Założenie gry jest proste: poruszamy statkiem u dołu ekranu, omijamy asteroidy, strzelamy do nich i zdobywamy punkty!
 Powyższa animacja pokazuje, jak będzie wyglądać nasza gra.

@@ -16,13 +16,13 @@ Dzisiaj spróbujemy tę grę odtworzyć w trochę bardziej współczesnym środo
 
 Umieszczamy w katalogu **images**.
 
-{% file src="../../.gitbook/assets/pong_images.zip" %}
+{% file src="../../../.gitbook/assets/pong_images.zip" %}
 Grafiki do gry Pong
 {% endfile %}
 
 ## Nasz cel
 
-![Pong](../../.gitbook/assets/pongGame.gif)
+![Pong](../../../.gitbook/assets/pongGame.gif)
 
 Spróbujmy przeanalizować powyższą animację. Wyróżnijmy elementy graficzne, co pomoże nam zaimplementować naszą grę:
 

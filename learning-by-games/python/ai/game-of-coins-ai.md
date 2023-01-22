@@ -14,8 +14,8 @@ Tak, dzisiaj stworzymy grę, w której naszym przeciwnikiem będzie komputer ste
 
 ### Czego się nauczysz
 
-- Tworzenia klas
-- Wykorzystania sztucznej inteligencji do wykonywania ruchów
+- Tworzenia klas.
+- Wykorzystania sztucznej inteligencji do wykonywania ruchów.
 
 ## Biblioteka
 
@@ -325,7 +325,7 @@ Teraz zajmiemy się tworzeniem graficznej wersji naszej gry z wykorzystaniem **P
 
 Zanim zaczniemy, pobierz poniższe grafiki, rozpakuj i umieść w katalogu **images** w projekcie gry.
 
-{% file src="../../.gitbook/assets/gameOfCoins-grafiki.zip" %}
+{% file src="../../../.gitbook/assets/gameOfCoins-grafiki.zip" %}
 Grafiki do gry w monety
 {% endfile %}
 

@@ -18,7 +18,7 @@ Każdy potrzebuje witaminy D, złapmy więc trochę słońca! Nie jest to jednak
 Pobieramy poniższą grafikę: klikamy prawym przyciskiem myszy i wybieramy *Zapisz obraz jako*. Zapisujemy obraz w wybranym przez siebie miejscu i nazywamy **sun.png**.
 Grafikę umieszczamy w katalogu **images** w naszym projekcie. W celu utworzenia katalogu klikamy prawym przyciskiem myszy na główny katalog projektu, a następnie wybieramy *New -> Directory*. Teraz wystarczy przeciągnąć nasze słońce do katalogu images i zatwierdzić zmiany klikając niebieski przycisk z napisem *Refactor*.
 
-![Źródło: [kenney.nl](https://www.kenney.nl/)](../../.gitbook/assets/sun.png)
+![Źródło: [kenney.nl](https://www.kenney.nl/)](../../../.gitbook/assets/sun.png)
 
 {% hint style="warning" %}
 Wszystkie grafiki, z których będziemy korzystać w naszej grze, powinny znaleźć się w katalogu *images*, inaczej biblioteka nie znajdzie tych grafik. 

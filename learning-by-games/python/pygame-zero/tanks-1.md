@@ -10,7 +10,7 @@ TODO
 
 ### Grafiki do gry
 
-{% file src="../../.gitbook/assets/grafiki_czolgi.zip" %}
+{% file src="../../../.gitbook/assets/grafiki_czolgi.zip" %}
 Grafiki do gry Czołgi 1
 {% endfile %}
 

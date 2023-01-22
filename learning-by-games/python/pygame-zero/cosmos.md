@@ -8,27 +8,27 @@ Jak długo uda nam się przetrwać?
 
 ### Czego się nauczysz
 
-- Poruszania postacią zgodnie z kierunkiem obrotu
-- Kierowania przeciwników w stronę gracza
-- Śledzenia kolizji wielu elementów gry
-- Podziału kodu na czytelne części
-- Śledzenia czasu gry
+- Poruszania postacią zgodnie z kierunkiem obrotu.
+- Kierowania przeciwników w stronę gracza.
+- Śledzenia kolizji wielu elementów gry.
+- Podziału kodu na czytelne części.
+- Śledzenia czasu gry.
 
 ### Grafiki do pobrania
 
-{% file src="../../.gitbook/assets/grafiki_kosmos.zip" %}
+{% file src="../../../.gitbook/assets/grafiki_kosmos.zip" %}
 Grafiki do gry Kosmos
 {% endfile %}
 
 ### Dźwięki do pobrania
 
-{% file src="../../.gitbook/assets/dzwieki_kosmos.zip" %}
+{% file src="../../../.gitbook/assets/dzwieki_kosmos.zip" %}
 Dźwięki do gry Kosmos
 {% endfile %}
 
 ## Gra
 
-![Kosmos](../../.gitbook/assets/cosmos.gif)
+![Kosmos](../../../.gitbook/assets/cosmos.gif)
 
 ## Szablon
 
