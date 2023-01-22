@@ -670,6 +670,37 @@ def move_ball():
         ball.vx *= -1
 ```
 
+### Naprawienie "wpadania" piłki w paletkę
+
+Gdy teraz uruchomimy grę i spróbujemy odbić piłkę, to czasami możemy zauważyć, że piłka na chwilę utknie w paletce i będzie się jakby odbijać wewnątrz niej. Dzieje się tak ze względu na to, jak działa wykrywanie kolizji pomiędzy elementami, a także ze względu na nasz sposób odbijania się piłki od paletki. Możemy to jednak bardzo łatwo naprawić. Wystarczy, że przy kolizji piłki z paletką sprawdzimy dodatkowo, czy piłka porusza się we właściwym kierunku. Jeżeli piłka uderzyła w lewą paletkę, to znaczy, że powinna była poruszać się w lewo. Jeżeli podczas kolizji piłka poruszałaby się w prawo, to znaczy, że już wcześniej odbiliśmy piłkę od tej paletki i utknęła ona wewnątrz niej.
+
+Dodajemy więc dodatkowy warunek do sprawdzenia przy wykryciu kolizji z lewą paletką. Musimy sprawdzić, czy piłka porusza się w lewo, czyli czy jej prędkość *vx* jest **ujemna**, tzn. mniejsza od zera.
+
+```python
+def move_ball():
+    ...
+
+    if left.colliderect(ball) and ball.vx < 0:
+        ball.vx *= -1
+
+    if right.colliderect(ball):
+        ball.vx *= -1
+```
+
+Podobnie postąpimy przy kolizji z prawą paletką. Tym razem jednak musimy sprawdzić, czy piłka poruszała się w prawą stronę, tzn. czy prędkość piłki jest dodatnia (większa od zera).
+
+```python
+def move_ball():
+    ...
+
+    if left.colliderect(ball) and ball.vx < 0:
+        ball.vx *= -1
+
+    if right.colliderect(ball) and ball.vx > 0:
+        ball.vx *= -1
+```
+
+
 ### Wypadnięcie poza ekran
 
 Pozostało nam obsłużyć przypadek, gdy jedna z paletek nie zdąży odbić piłki i ta *wyleci* z lewej lub prawej strony ekranu.
@@ -825,11 +856,11 @@ def move_ball():
         ball.vy *= -1
 
     # Odbijamy piłkę od lewej paletki
-    if left.colliderect(ball):
+    if left.colliderect(ball) and ball.vx < 0:
         ball.vx *= -1
 
     # Odpijamy piłkę od prawej paletki
-    if right.colliderect(ball):
+    if right.colliderect(ball) and ball.vx > 0:
         ball.vx *= -1
 
     # Jeżeli piłka wypadła z lewej strony
@@ -1022,10 +1053,10 @@ def move_ball():
     if ball.bottom >= HEIGHT - 40:
         ball.vy *= -1
 
-    if left.colliderect(ball):
+    if left.colliderect(ball) and ball.vx < 0:
         ball.vx *= -1
 
-    if right.colliderect(ball):
+    if right.colliderect(ball) and ball.vx > 0:
         ball.vx *= -1
 
     if ball.left <= 0:
@@ -1288,10 +1319,10 @@ def move_ball():
     if ball.bottom >= HEIGHT - 40:
         ball.vy *= -1
 
-    if left.colliderect(ball):
+    if left.colliderect(ball) and ball.vx < 0:
         ball.vx *= -1
 
-    if right.colliderect(ball):
+    if right.colliderect(ball) and ball.vx > 0:
         ball.vx *= -1
 
     if ball.left <= 0:
@@ -1465,11 +1496,11 @@ def move_ball():
         ball.vy *= -1
 
     # Odbijamy piłkę od lewej paletki
-    if left.colliderect(ball):
+    if left.colliderect(ball) and ball.vx < 0:
         ball.vx *= -1
 
     # Odpijamy piłkę od prawej paletki
-    if right.colliderect(ball):
+    if right.colliderect(ball) and ball.vx > 0:
         ball.vx *= -1
 
     # Jeżeli piłka wypadła z lewej strony
