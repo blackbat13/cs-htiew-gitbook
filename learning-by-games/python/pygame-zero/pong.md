@@ -20,6 +20,10 @@ Umieszczamy w katalogu **images**.
 Grafiki do gry Pong
 {% endfile %}
 
+### Źródła
+
+- [https://kenney.nl/](https://kenney.nl/)
+
 ## Nasz cel
 
 ![Pong](../../../.gitbook/assets/pongGame.gif)
@@ -1336,12 +1340,10 @@ def move_ball():
     # Jeżeli prawa paletka uzyskała 11 punktów to wygrywa i gra się kończy
     if right.points == 11:
         right.win = True
-        ball.game_over = True
 
     # Jeżeli lewa paletka uzyskała 11 punktów to wygrywa i gra się kończy
     if left.points == 11:
         left.win = True
-        ball.game_over = True
     
 
 def reset_ball():
