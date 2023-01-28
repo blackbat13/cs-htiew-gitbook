@@ -25,6 +25,10 @@ Grafiki do gry typu idle
 - [https://kenney.nl/](https://kenney.nl/)
 - [https://comigo.itch.io/farm-puzzle-animals](https://comigo.itch.io/farm-puzzle-animals)
 
+## Nasz cel
+
+![Idle Pig - animacja](../../../.gitbook/assets/IdlePig.gif)
+
 ## Wstępna konfiguracja
 
 Zaczynamy standardowo: tworzymy nowy projekt, instalujemy bibliotekę, pobieramy materiały i umieszczamy je w odpowiednich miejscach.
@@ -484,7 +488,7 @@ def bot():
         pig.vy = pig.v
         pig.image = "pig_down"
 		
-        
+
 pygame.mouse.set_visible(False)
 pgzrun.go()
 ```
