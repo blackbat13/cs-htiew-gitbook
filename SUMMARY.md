@@ -213,6 +213,7 @@
     * [Operacje arytmetyczne](programowanie/c++/wprowadzenie/operacje-arytmetyczne.md)
     * [Funkcje matematyczne](programowanie/c++/wprowadzenie/funkcje-matematyczne.md)
     * [Obsługa wejścia/wyjścia - strumienie](programowanie/c++/wprowadzenie/obsluga-wejscia-wyjscia-strumienie.md)
+    * [Obsługa plików - strumienie](programowanie/c++/wprowadzenie/files-stream.md)
     * [Instrukcja warunkowa](programowanie/c++/wprowadzenie/instrukcja-warunkowa.md)
     * [Pętla warunkowa](programowanie/c++/wprowadzenie/petla-warunkowa.md)
     * [Pętla iteracyjna](programowanie/c++/wprowadzenie/petla-iteracyjna.md)
