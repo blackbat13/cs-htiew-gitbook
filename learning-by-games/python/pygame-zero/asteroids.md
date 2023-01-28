@@ -792,6 +792,162 @@ def on_mouse_down(pos):
 pgzrun.go()
 ```
 
+## Punkty
+
+Czas na zdobywanie i zliczanie punktów! Punkty zapamiętamy w naszym statku w zmiennej *points*, dopisujemy więc nową zmienną do statku zaraz pod instrukcją przypisującą prędkość poziomą statkowi (`ship.vx = 5`).
+
+```python
+ship.points = 0
+```
+
+Zanim przejdziemy do zliczania punktów, wyświetlmy je na ekranie. Dopiszemy więc instrukcję *screen.draw.text* na końcu funkcji *draw*. 
+
+```python
+def draw():
+    ...
+    screen.draw.text()
+```
+
+Punkty zapisane w statku są liczbą, zamieniamy je więc na tekst za pomocą funkcji **str**.
+
+```python
+def draw():
+    ...
+    screen.draw.text(str(ship.points))
+```
+
+Środek (*center*) naszych punktów umieścimy w połowie szerokości ekranu ($$WIDTH / 2$$) na samej górze, zachowując niewielki margines ($$20$$).
+
+```python
+def draw():
+    ...
+    screen.draw.text(str(ship.points), center=(WIDTH / 2, 20))
+```
+
+Rozmiar czcionki (*fontsize*) ustawimy na $$50$$.
+
+```python
+def draw():
+    ...
+    screen.draw.text(str(ship.points), center=(WIDTH / 2, 20), fontsize=50)
+```
+
+Pozostało nam ustawić kolor (*color*) na żółty (*yellow*).
+
+```python
+def draw():
+    ...
+    screen.draw.text(str(ship.points), center=(WIDTH / 2, 20), fontsize=50, color="yellow")
+```
+
+Teraz punkty powinny być widoczne na ekranie. Możemy przejść do ich zliczania. Będziemy dostawać po jednym punkcie za każdą zniszczoną asteroidę. Asteroidy niszczymy w naszej funkcji *update_laser_hits*. Dlatego jak już usuniemy asteroidę z listy, zaraz przed instrukcją *break*, dodamy jeden punkt do *ship.points*.
+
+```python
+def update_lasers_hits():
+    for laser in lasers_list[:]:
+        for asteroid in asteroids_list[:]:
+            if laser.colliderect(asteroid):
+                ...
+                ship.points += 1
+                break
+```
+
+### Pełny kod
+
+```python
+import pgzrun
+import pygame
+import random
+
+
+WIDTH = 600
+HEIGHT = 900
+
+ship = Actor("ship")
+ship.x = WIDTH / 2
+ship.y = HEIGHT - 60
+ship.vx = 5
+ship.points = 0
+
+asteroids_list = []
+lasers_list = []
+
+
+def draw():
+    screen.blit("bg", (0, 0))
+    for asteroid in asteroids_list:
+        asteroid.draw()
+
+    for laser in lasers_list:
+        laser.draw()
+
+    ship.draw()
+    screen.draw.text(str(ship.points), center=(WIDTH / 2, 20), fontsize=50, color="yellow")
+    
+
+def update():
+    mouse_x, mouse_y = pygame.mouse.get_pos()
+    if mouse_x < ship.x:
+        ship.x -= ship.px
+
+    if mouse_x > ship.x:
+        ship.x += ship.vx
+
+    if random.random() < 0.05:
+        add_asteroid()
+
+    update_asteroids()
+    update_lasers()
+    update_lasers_hits()
+    
+
+def update_asteroids():
+    for asteroid in asteroids_list[:]:
+        asteroid.y += asteroid.vy
+        if asteroid.y > HEIGHT + 50:
+            asteroids_list.remove(asteroid)
+
+
+def update_lasers():
+    for laser in lasers_list[:]:
+        laser += laser.vy
+        if laser.y < -laser.height:
+            lasers_list.remove(laser)
+
+
+def update_lasers_hits():
+    for laser in lasers_list[:]:
+        for asteroid in asteroids_list[:]:
+            if laser.colliderect(asteroid):
+                lasers_list.remove(laser)
+                asteroids_list.remove(asteroid)
+                ship.points += 1
+                break
+
+
+def add_asteroid():
+    asteroid = Actor("asteroid1")
+    asteroid.x = random.randint(20, WIDTH-20)
+    asteroid.y = -10
+    asteroid.vy = random.randint(2, 10)
+    asteroids_list.append(asteroid)
+
+
+def add_laser():
+    laser = Actor("laser")
+    laser.pos = ship.pos
+    laser.vy = -8
+    lasers_list.append(laser)
+
+
+def on_mouse_down(pos):
+    add_laser()
+    sounds.laser.play()
+
+
+pgzrun.go()
+```
+
 <!-- ## Pełna gra
 
 ```python
