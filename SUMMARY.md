@@ -812,6 +812,7 @@
     * [Pong](learning-by-games/python/pygame-zero/pong.md)
     * [Asteroidy](learning-by-games/python/pygame-zero/asteroids.md)
     * [Kosmos](learning-by-games/python/pygame-zero/cosmos.md)
+    * [Gra typu idle](learning-by-games/python/pygame-zero/idle.md)
     * [Gra Nim](learning-by-games/python/pygame-zero/nim.md)
     <!-- * [Czołgi 1](learning-by-games/python/pygame-zero/tanks-1.md)
     * [Czołgi 2](learning-by-games/python/pygame-zero/tanks-2.md)
