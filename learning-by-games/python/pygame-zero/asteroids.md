@@ -7,27 +7,27 @@ Stworzymy naszą pierwszą grę kosmiczną!
 
 ### Czego się nauczysz
 
-- Pracy z listami
-- Dodawania nowych elementów do gry w trakcie jej działania
-- Usuwania elementów gry w trakcie jej działania
-- Odczytywania pozycji myszki
-- Planowania wykonania akcji z opóźnieniem
+- Pracy z listami.
+- Dodawania nowych elementów do gry w trakcie jej działania.
+- Usuwania elementów gry w trakcie jej działania.
+- Odczytywania pozycji myszki.
+- Planowania wykonania akcji z opóźnieniem.
 
 ### Grafiki do pobrania
 
-{% file src="../../../.gitbook/assets/grafiki_asteroidy.zip" %}
+{% file src="../../../.gitbook/assets/images_asteroids.zip" %}
 Grafiki do gry Asteroidy
 {% endfile %}
 
 ### Dźwięki do pobrania
 
-{% file src="../../../.gitbook/assets/sounds_asteroidy.zip" %}
+{% file src="../../../.gitbook/assets/sounds_asteroids.zip" %}
 Dźwięki do gry Asteroidy
 {% endfile %}
 
 ### Muzyka do pobrania
 
-{% file src="../../../.gitbook/assets/music_asteroidy.zip" %}
+{% file src="../../../.gitbook/assets/music_asteroids.zip" %}
 Muzyka do gry Asteroidy
 {% endfile %}
 
@@ -37,6 +37,11 @@ Muzyka do gry Asteroidy
 
 Założenie gry jest proste: poruszamy statkiem u dołu ekranu, omijamy asteroidy, strzelamy do nich i zdobywamy punkty!
 Powyższa animacja pokazuje, jak będzie wyglądać nasza gra.
+
+# Wstępna konfiguracja
+
+Zaczynamy standardowo: tworzymy nowy projekt, instalujemy bibliotekę, pobieramy materiały i umieszczamy je w odpowiednich miejscach.
+Nasz projekt możemy nazwać np. "Asteroids" albo "Asteroidy". Gdy już utworzymy projekt, tworzymy w nim nowe katalogi *images*, *sounds* oraz *music*. Następnie pobieramy wyżej wymienione materiały, rozpakowujemy je, a zawartość przerzucamy do odpowiednich katalogów. Pozostało nam jeszcze zainstalować bibliotekę: w okienku terminala wypisujemy standardowo polecenie `pip install pgzero`.
 
 ## Podstawowy szablon
 
@@ -53,8 +58,8 @@ import random
 
 ### Przygotowujemy ekran gry
 
-Na początek ustalamy rozmiar okna i wyświetlamy tło naszej gry.
-Rozmiar okna powinien być zgodny z rozmiarem grafiki tła.
+Na początek ustalamy rozmiar okna i wyświetlamy tło naszej gry z grafiki *bg.png* za pomocą funkcji `screen.blit` w części rysującej *draw*.
+Rozmiar okna powinien być zgodny z rozmiarem grafiki tła, tzn $$600\times900$$.
 
 ```python
 WIDTH = 600
@@ -62,8 +67,21 @@ HEIGHT = 900
 
 
 def draw():
-    screen.blit("tlo", (0, 0))
+    screen.blit("bg", (0, 0))
 ```
+
+### Aktualizacja
+
+Potrzebna jest nam jeszcze funkcja *update*, którą standardowo umieszczamy pod funkcją *draw* i wpisujemy w niej jedną instrukcję: **pass**.
+
+```python
+def update():
+    pass
+```
+
+### Uruchomienie gry
+
+Na końcu naszego kodu dopisujemy instrukcję `pgzrun.go()` uruchamiającą naszą grę.
 
 ### Pełny kod
 
@@ -78,7 +96,7 @@ HEIGHT = 900
 
 
 def draw():
-    screen.blit("tlo", (0, 0))
+    screen.blit("bg", (0, 0))
 
 
 def update():
@@ -90,39 +108,92 @@ pgzrun.go()
 
 ## Statek
 
+Głównym aktorem naszej gry, w którego wcieli się gracz, będzie statek kosmiczny. Będziemy go wyświetlać na dole ekranu i poruszać na boki za pomocą myszy.
 ### Tworzymy statek
 
-Czas dodać głównego aktora naszej gry: statek kosmiczny.
-Umieścimy go na środku ekranu, na samym dole, z niewielkim marginesem dla przejrzystości.
+Naszego aktora tworzymy na górze, zaraz przed funkcją *draw*. Utworzymy go na podstawie grafiki *ship.png* i zapiszemy w zmiennej *ship*.
 
 ```python
-statek = Actor("statek")
-statek.x = WIDTH / 2
-statek.y = HEIGHT - 60
-statek.px = 5
+ship = Actor("ship")
 ```
 
-Gdy już mamy utworzonego aktora, możemy go wyświetlić na ekranie.
+Statek umieścimy na środku ekranu ($$WIDTH / 2$$), na samym dole z zachowaniem marginesu $$60$$ pikseli ($$HEIGHT - 60$$).
+
+```python
+ship = Actor("ship")
+ship.x = WIDTH / 2
+ship.y = HEIGHT - 60
+```
+
+### Rysujemy statek
+
+Gdy już mamy utworzonego aktora, możemy go wyświetlić na ekranie. Dopisujemy instrukcję rysującą statek (`ship.draw()`) na końcu funkcji *draw*.
 
 ```python
 def draw():
-    screen.blit("tlo", (0, 0))
-    statek.draw()
+    ...
+    ship.draw()
 ```
 
 ### Poruszamy statkiem
 
 Statkiem będziemy poruszać w lewo/prawo.
-Nasza postać będzie sterowana za pomocą myszki: statek będzie leciał w kierunku, w którym znajduje się wskaźnik myszy.
-W części aktualizującej odczytujemy aktualną pozycję wskaźnika myszy i poruszamy statkiem we właściwym kierunku.
+Nasza postać będzie sterowana za pomocą myszki: statek będzie leciał w kierunku, w którym znajduje się wskaźnik myszy. W tym celu musimy nadać naszemu statkowi jakąś prędkość poziomą. Dopiszemy więc do naszego statku zmienną **vx** z początkową wartością np. $$5$$, zaraz pod ustaleniem pozycji statku na ekranie.
+
+```python
+ship.vx = 5
+```
+
+W części aktualizującej usuwamy instrukcję *pass*. Na początku odczytamy aktualną pozycję wskaźnika myszy za pomocą funkcji `pygame.mouse.get_pos()` z biblioteki *pygame*. Ponieważ funkcja ta zwraca nam współrzędne wskaźnika myszy ($$x$$ oraz $$y$$), to jej wynik zapiszemy w dwóch zmiennych: **mouse_x** oraz **mouse_y**.
 
 ```python
 def update():
-    mysz_x, mysz_y = pygame.mouse.get_pos()
-    if mysz_x < statek.x:
-        statek.x -= statek.px
-    if mysz_x > statek.x:
-        statek.x += statek.px
+    mouse_x, mouse_y = pygame.mouse.get_pos()
+```
+
+Teraz pozostało nam sprawdzić, z której strony znajduje się wskaźnik myszy względem statku: z lewej czy z prawej. Jeżeli współrzędna $$x$$ myszy jest mniejsza od współrzędnej $$x$$ statku, to znaczy, że mysz znajduje się z lewej strony statku. Dopisujemy więc instrukcję warunkową ze wspomnianym warunkiem na koniec funkcji *update*.
+
+```python
+def update():
+    ...
+    if mouse_x < ship.x:
+```
+
+Jeżeli tak jest, to powinniśmy statek przesunąć w lewo zgodnie z jego prędkością. W tym celu odejmujemy prędkość statku (**vx**) od jego współrzędnej $$x$$.
+
+```python
+def update():
+    ...
+    if mouse_x < ship.x:
+        ship.x -= ship.vx
+```
+
+Podobnie postępujemy przy ruchu w prawą stronę. Zaczynamy od warunku: sprawdzamy, czy współrzędna $$x$$ myszy jest większa od współrzędnej $$x$$ statku.
+
+```python
+def update():
+    ...
+    if mouse_x > ship.x:
+```
+
+Poruszamy statkiem w prawo, tzn. dodajemy jego prędkość do pozycji $$x$$.
+
+```python
+def update():
+    ...
+    if mouse_x > ship.x:
+        ship.x += ship.vx
+```
+
+Pełna funkcja *update* będzie więc wyglądała tak jak poniżej.
+
+```python
+def update():
+    mouse_x, mouse_y = pygame.mouse.get_pos()
+    if mouse_x < ship.x:
+        ship.x -= ship.px
+    if mouse_x > ship.x:
+        ship.x += ship.vx
 ```
 
 ### Pełny kod
@@ -136,91 +207,194 @@ import random
 WIDTH = 600
 HEIGHT = 900
 
-statek = Actor("statek")
-statek.x = WIDTH / 2
-statek.y = HEIGHT - 60
-statek.px = 5
+ship = Actor("ship")
+ship.x = WIDTH / 2
+ship.y = HEIGHT - 60
+ship.vx = 5
 
 
 def draw():
-    screen.blit("tlo", (0, 0))
-    statek.draw()
+    screen.blit("bg", (0, 0))
+    ship.draw()
 
 
 def update():
-    mysz_x, mysz_y = pygame.mouse.get_pos()
-    if mysz_x < statek.x:
-        statek.x -= statek.px
-    if mysz_x > statek.x:
-        statek.x += statek.px
+    mouse_x, mouse_y = pygame.mouse.get_pos()
+    if mouse_x < ship.x:
+        ship.x -= ship.px
+
+    if mouse_x > ship.x:
+        ship.x += ship.vx
 
 
 pgzrun.go()
 ```
 
-## Meteory
+## Asteroidy
 
-### Przygotowujemy meteory
+Główe zagrożenie w naszej grze będą stanowić asteroidy "spadające" z góry ekranu.
 
-Czas przygotować meteory.
-Chcemy, aby było w grze wyświetlało się kilka meteorów naraz. 
-W tym celu potrzebna nam będzie **lista**.
-Na początku tworzymy pustą listę.
+### Przygotowujemy asteroidy
+
+Czas przygotować asteroidy.
+Chcemy, aby było w grze wyświetlało się kilka asteroid naraz. 
+W tym celu potrzebna nam będzie **lista**. Lista pozwala nam przechowywać wiele elementów jeden po drugim, zapisanych w jednej zmiennej o typie listy właśnie.
+Na początku tworzymy pustą listę, którą przechowamy w zmiennej **asteroids_list**. W celu utworzenia pustej listy do naszej zmiennej przypiszemy puste nawiasy kwadratowe: **[]**. Nową zmienną utworzymy pod statkiem, czyli zaraz nad funkcją *draw*.
 
 ```python
-meteory = []
+asteroids_list = []
 ```
 
-Teraz utworzymy funkcję, za pomocą której będziemy dodawać losowe meteory.
-Na początku meteor będzie znajdował się nad ekranem, tak by efekt "spadania" wyglądał naturalniej.
+Teraz utworzymy funkcję, za pomocą której będziemy dodawać losowe asteroidy w trakcie trwania gry.
+Na początku asteroid będzie znajdował się nad ekranem, tak by efekt "spadania" wyglądał naturalniej. Na końcu naszego kodu, zaraz przed instrukcją *pgzrun.go()* tworzymy nową funkcję **add_asteroid**.
 
 ```python
-def dodaj_meteor():
-    grafika = random.choice(["meteor1", "meteor2", "meteor3", "meteor4"])
-    met = Actor(grafika)
-    met.x = random.randint(20, WIDTH - 20)
-    met.y = -10
-    met.py = random.randint(2, 10)
-    met.pa = random.randint(-5, 5)
-    meteory.append(met)
+def add_ateroid():
+```
+
+Na początku utworzymy nowego aktora z grafiki *asteroid1.png* i zapiszemy go w zmiennej **asteroid**.
+
+```python
+def add_ateroid():
+    asteroid = Actor("asteroid1")
+```
+
+Przypiszmy teraz naszej asteroidzie właściwe współrzędne. Jako współrzędną $$x$$ przyjmiemy losową wartość z przedziału $$<20, WIDTH-20>$$ wylosowaną za pomocą funkcji `random.randint` z biblioteki *random*.
+
+
+```python
+def add_ateroid():
+    ...
+    asteroid.x = random.randint(20, WIDTH-20)
+```
+
+Do współrzędnej $$y$$ przypiszemy wartość $$-10$$, tak by nowa asteroida znalazła się ponad górną krawędzią ekranu.
+
+```python
+def add_ateroid():
+    ...
+    asteroid.y = -10
+```
+
+Teraz pozostało nam wylosować prędkość pionową, którą zapiszemy w asteroidzie w zmiennej $$vy$$. Wartość prędkości pionowej wylosujemy z przedziału $$<2, 10>$$, ponownie korzystając z funkcji `random.randint`.
+
+```python
+def add_ateroid():
+    ...
+    asteroid.vy = random.randint(2, 10)
+```
+
+Pozostało nam dopisać naszą nową asteroidę do listy asteroid. W tym celu skorzystamy z metody **append**, która dodaje nowy element do listy. Metodę tę wywołamy pisząc `asteroids_list.append` w nawiasach podając naszą nową asteroidę.
+
+```python
+def add_ateroid():
+    ...
+    asteroids_list.append(asteroid)
+```
+
+Nasza pełna funkcja *add_asteroid* przedstawiona jest poniżej.
+
+
+```python
+def add_ateroid():
+    asteroid = Actor("asteroid1")
+    asteroid.x = random.randint(20, WIDTH-20)
+    asteroid.y = -10
+    asteroid.vy = random.randint(2, 10)
+    asteroids_list.append(asteroid)
 ```
 
 ### Dodajemy losowo meteory
 
-W części **aktualizującej** będziemy losowo dodawać meteory w każdej klatce, z odpowiednio małym prawdopodobieństwem.
+W części aktualizującej (*update*) będziemy losowo dodawać meteory w każdej klatce, z odpowiednio małym prawdopodobieństwem. W tym celu sprawdzimy, czy wylosowana liczba rzeczywista z przedziału $$<0, 1)$$ jest mniejsza od jakiejś ustalonej wartości, np. $$0.05$$. Liczbę rzeczywistą wylosujemy za pomocą funkcji `random.random()`. Instrukcję warunkową z wspomnianym warunkiem dopisujemy na końcu funkcji *update*.
 
 ```python
 def update():
     ...
-    if random.randint(0, 250) <= 1:
-        dodaj_meteor()
+    if random.random() < 0.05:
 ```
 
-### Przemieszczamy meteory
+Jeżeli warunek jet spełniony to dodamy nową asteroidę wywołując naszą funkcję *add_asteroid*.
 
-Teraz czas na aktualizację pozycji meteorów.
+```python
+def update():
+    ...
+    if random.random() < 0.05:
+        add_asteroid()
+```
+
+### Przemieszczamy asteroidy
+
+Teraz czas na aktualizację pozycji asteroid.
 W tym celu musimy przejść przez wszystkie elementy naszej listy i dla każdego wykonać odpowiednie operacje.
 Robimy to w części aktualizującej.
-Ponieważ będziemy usuwać meteory, które wyleciały poza ekran, to w pętli musimy przejść przez **kopię** listy meteory: `meteory[:]`.
+Ponieważ będziemy usuwać asteroidy, które wyleciały poza ekran, to w pętli musimy przejść przez **kopię** listy asteroid, którą tworzymy pisząc dwukropek w nawiasach kwadratowych po nazwie listy: `asteroids_list[:]`.
+
+Dla zachowania porządku aktualizację asteroid zapiszemy w nowej funkcji **update_asteroids**, którą utworzymy zaraz pod funkcją *update*.
+
+```python
+def update_asteroids():
+```
+
+Zaczynamy od napisania pętli przechodzącej przez wszystkie asteroidy w kopii listy.
+
+```python
+def update_asteroids():
+    for asteroid in asteroids_list[:]:
+```
+
+Dla każdej asteroidy będziemy przemieszczać ją zgodnie z jej prędkością, więc do jej współrzędnej $$y$$ dodajemy jej prędkość *vy*.
+
+```python
+def update_asteroids():
+    for asteroid in asteroids_list[:]:
+        asteroid.y += asteroid.vy
+```
+
+Żeby nasza gra nie spowalniała po pewnym czasie, powinniśmy na bieżąco usuwać asteroidy, których już nie widać na ekranie. Dlatego dopisujemy w pętli instrukcję warunkową sprawdzającą, czy asteroida wyleciała poza ekran, tzn. czy jej współrzędna $$y$$ jest większa od $$HEIGHT + 50$$ (dodajemy $$50$$ tak by cała asteroida zdążyła wylecieć poza ekran).
+
+```python
+def update_asteroids():
+    for asteroid in asteroids_list[:]:
+        asteroid.y += asteroid.vy
+        if asteroid.y > HEIGHT + 50:
+```
+
+Jeżeli asteroida opuściła ekran gry to usuwamy ją z listy za pomocą metody **remove**, jako argument podając asteroidę do usunięcia, podobnie jak robiliśmy przy dodawaniu asteroidy do listy.
+
+```python
+def update_asteroids():
+    for asteroid in asteroids_list[:]:
+        asteroid.y += asteroid.vy
+        if asteroid.y > HEIGHT + 50:
+            asteroids_list.remove(asteroid)
+```
+
+Pozostało nam wywołać naszą nową funkcję na końcu funkcji *update*.
 
 ```python
 def update():
     ...
-    for met in meteory[:]:
-        met.y += met.py
-        if met.y > HEIGHT + 50:
-            meteory.remove(met)
+    update_asteroids()
 ```
 
-### Rysujemy meteory
+### Rysujemy asteroidy
 
-Aby narysować meteory, w części **rysującej** musimy ponownie przejść przez całą listę i narysować każdy meteor osobno.
+Pozostało nam narysować asteroidy na ekranie. W tym celu w części rysującej (*draw*) musimy ponownie przejść przez całą listę i narysować każdą asteroidę osobno. Na końcu funkcji *draw* dopisujemy więc pętlę przechodzącą przez każdą asteroidę z listy asteroid (tym razem nie musimy tworzyć kopii listy, ponieważ nie będziemy nic usuwać).
 
 ```python
 def draw():
     ...
-    for met in meteory:
-        met.draw()
+    for asteroid in asteroids_list:
+```
+
+Wewnątrz pętli rysujemy asteroidy wywołując metodę *draw* na zmiennej *asteroid*.
+
+```python
+def draw():
+    ...
+    for asteroid in asteroids_list:
+        asteroid.draw()
 ```
 
 ### Pełny kod
@@ -234,43 +408,48 @@ import random
 WIDTH = 600
 HEIGHT = 900
 
-statek = Actor("statek")
-statek.x = WIDTH / 2
-statek.y = HEIGHT - 60
-statek.px = 5
+ship = Actor("ship")
+ship.x = WIDTH / 2
+ship.y = HEIGHT - 60
+ship.vx = 5
 
-meteory = []
+asteroids_list = []
 
 
 def draw():
-    screen.blit("tlo", (0, 0))
-    statek.draw()
-    for met in meteory:
-        met.draw()
+    screen.blit("bg", (0, 0))
+    ship.draw()
+    for asteroid in asteroids_list:
+        asteroid.draw()
 
 
 def update():
-    mysz_x, mysz_y = pygame.mouse.get_pos()
-    if mysz_x < statek.x:
-        statek.x -= statek.px
-    if mysz_x > statek.x:
-        statek.x += statek.px
-    if random.randint(0, 250) <= 1:
-        dodaj_meteor()
-    for met in meteory[:]:
-        met.y += met.py
-        if met.y > HEIGHT + 50:
-            meteory.remove(met)
+    mouse_x, mouse_y = pygame.mouse.get_pos()
+    if mouse_x < ship.x:
+        ship.x -= ship.px
+
+    if mouse_x > ship.x:
+        ship.x += ship.vx
+
+    if random.random() < 0.05:
+        add_asteroid()
+
+    update_asteroids()
+    
+
+def update_asteroids():
+    for asteroid in asteroids_list[:]:
+        asteroid.y += asteroid.vy
+        if asteroid.y > HEIGHT + 50:
+            asteroids_list.remove(asteroid)
 
 
-def dodaj_meteor():
-    grafika = random.choice(["meteor1", "meteor2", "meteor3", "meteor4"])
-    met = Actor(grafika)
-    met.x = random.randint(20, WIDTH - 20)
-    met.y = -10
-    met.py = random.randint(2, 10)
-    met.pa = random.randint(-5, 5)
-    meteory.append(met)
+def add_ateroid():
+    asteroid = Actor("asteroid1")
+    asteroid.x = random.randint(20, WIDTH-20)
+    asteroid.y = -10
+    asteroid.vy = random.randint(2, 10)
+    asteroids_list.append(asteroid)
 
 
 pgzrun.go()
