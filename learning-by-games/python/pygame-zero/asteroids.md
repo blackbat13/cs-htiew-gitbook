@@ -192,7 +192,7 @@ Pełna funkcja *update* będzie więc wyglądała tak jak poniżej.
 def update():
     mouse_x, mouse_y = pygame.mouse.get_pos()
     if mouse_x < ship.x:
-        ship.x -= ship.px
+        ship.x -= ship.vx
     if mouse_x > ship.x:
         ship.x += ship.vx
 ```
@@ -307,12 +307,12 @@ def add_asteroid():
 
 ### Dodajemy losowo asteroidy
 
-W części aktualizującej (*update*) będziemy losowo dodawać asteroidy w każdej klatce, z odpowiednio małym prawdopodobieństwem. W tym celu sprawdzimy, czy wylosowana liczba rzeczywista z przedziału $$<0, 1)$$ jest mniejsza od jakiejś ustalonej wartości, np. $$0.05$$. Liczbę rzeczywistą wylosujemy za pomocą funkcji `random.random()`. Instrukcję warunkową z wspomnianym warunkiem dopisujemy na końcu funkcji *update*.
+W części aktualizującej (*update*) będziemy losowo dodawać asteroidy w każdej klatce, z odpowiednio małym prawdopodobieństwem. W tym celu sprawdzimy, czy wylosowana liczba rzeczywista z przedziału $$<0, 1)$$ jest mniejsza od jakiejś ustalonej wartości, np. $$0.02$$. Liczbę rzeczywistą wylosujemy za pomocą funkcji `random.random()`. Instrukcję warunkową z wspomnianym warunkiem dopisujemy na końcu funkcji *update*.
 
 ```python
 def update():
     ...
-    if random.random() < 0.05:
+    if random.random() < 0.02:
 ```
 
 Jeżeli warunek jet spełniony to dodamy nową asteroidę wywołując naszą funkcję *add_asteroid*.
@@ -320,7 +320,7 @@ Jeżeli warunek jet spełniony to dodamy nową asteroidę wywołując naszą fun
 ```python
 def update():
     ...
-    if random.random() < 0.05:
+    if random.random() < 0.02:
         add_asteroid()
 ```
 
@@ -441,12 +441,12 @@ def draw():
 def update():
     mouse_x, mouse_y = pygame.mouse.get_pos()
     if mouse_x < ship.x:
-        ship.x -= ship.px
+        ship.x -= ship.vx
 
     if mouse_x > ship.x:
         ship.x += ship.vx
 
-    if random.random() < 0.05:  # Jeżeli wylosowaliśmy odpowiednio małą liczbę
+    if random.random() < 0.02:  # Jeżeli wylosowaliśmy odpowiednio małą liczbę
         add_asteroid()  # Dodajemy nową asteroidę do gry
 
     update_asteroids()  # Aktualizujemy pozycje asteroid
@@ -607,7 +607,7 @@ Wewnątrz pętli przemieszczamy nasz laser zgodnie z jego prędkością, więc d
 ```python
 def update_lasers():
     for laser in lasers_list[:]:
-        laser += laser.vy
+        laser.y += laser.vy
 ```
 
 Teraz pora sprawdzić, czy laser wyleciał poza ekran. W tym celu sprawdzimy, czy jego pozycja $$y$$ jest mniejsza od ujemnej wartości jego wysokości. W ten sposób upewnimy się, że cały laser wyleciał poza ekran, a nie tylko jego część. Wysokość lasera możemy odczytać pisząc `laser.height`. Dopisujemy więc instrukcję warunkową.
@@ -615,7 +615,7 @@ Teraz pora sprawdzić, czy laser wyleciał poza ekran. W tym celu sprawdzimy, cz
 ```python
 def update_lasers():
     for laser in lasers_list[:]:
-        laser += laser.vy
+        laser.y += laser.vy
         if laser.y < -laser.height:
 ```
 
@@ -624,7 +624,7 @@ Jeżeli laser wyleci poza ekran, to chcemy go usunąć z listy laserów i tym sa
 ```python
 def update_lasers():
     for laser in lasers_list[:]:
-        laser += laser.vy
+        laser.y += laser.vy
         if laser.y < -laser.height:
             lasers_list.remove(laser)
 ```
@@ -734,12 +734,12 @@ def draw():
 def update():
     mouse_x, mouse_y = pygame.mouse.get_pos()
     if mouse_x < ship.x:
-        ship.x -= ship.px
+        ship.x -= ship.vx
 
     if mouse_x > ship.x:
         ship.x += ship.vx
 
-    if random.random() < 0.05:
+    if random.random() < 0.02:
         add_asteroid()
 
     update_asteroids()
@@ -756,7 +756,7 @@ def update_asteroids():
 
 def update_lasers():  # Pomocnicza funkcja aktualizująca pozycje laserów
     for laser in lasers_list[:]:  # Przechodzimy przez wszystkie lasery na liście
-        laser += laser.vy  # Przemieszczamy laser zgodnie z jego prędkością
+        laser.y += laser.vy  # Przemieszczamy laser zgodnie z jego prędkością
         if laser.y < -laser.height:  # Jeżeli laser wyleciał poza ekran
             lasers_list.remove(laser)  # Usuwamy laser z gry
 
@@ -889,12 +889,12 @@ def draw():
 def update():
     mouse_x, mouse_y = pygame.mouse.get_pos()
     if mouse_x < ship.x:
-        ship.x -= ship.px
+        ship.x -= ship.vx
 
     if mouse_x > ship.x:
         ship.x += ship.vx
 
-    if random.random() < 0.05:
+    if random.random() < 0.02:
         add_asteroid()
 
     update_asteroids()
@@ -911,7 +911,7 @@ def update_asteroids():
 
 def update_lasers():
     for laser in lasers_list[:]:
-        laser += laser.vy
+        laser.y += laser.vy
         if laser.y < -laser.height:
             lasers_list.remove(laser)
 
@@ -1033,7 +1033,7 @@ def update_asteroids():
         elif
 ```
 
-Jako warunek sprawdzimy, czy asteroida jest w kolizji ze statkiem, korzystając z metody **collidesrect**.
+Jako warunek sprawdzimy, czy asteroida jest w kolizji ze statkiem, korzystając z metody **colliderect**.
 
 ```python
 def update_asteroids():
@@ -1041,7 +1041,7 @@ def update_asteroids():
         asteroid.y += asteroid.vy
         if asteroid.y > HEIGHT + 50:
             asteroids_list.remove(asteroid)
-        elif asteroid.collidesrect(ship):
+        elif asteroid.colliderect(ship):
 ```
 
 Jeżeli asteroida uderzyła w statek, to stracimy jedno życie.
@@ -1052,7 +1052,7 @@ def update_asteroids():
         asteroid.y += asteroid.vy
         if asteroid.y > HEIGHT + 50:
             asteroids_list.remove(asteroid)
-        elif asteroid.collidesrect(ship):
+        elif asteroid.colliderect(ship):
             ship.lifes -= 1
 ```
 
@@ -1064,9 +1064,55 @@ def update_asteroids():
         asteroid.y += asteroid.vy
         if asteroid.y > HEIGHT + 50:
             asteroids_list.remove(asteroid)
-        elif asteroid.collidesrect(ship):
+        elif asteroid.colliderect(ship):
             ship.lifes -= 1
             asteroids_list.remove(asteroid)
+```
+
+Dopiszemy także użycie odpowiedniego dźwięku po uderzeniu asteroidy w statek. Do dyspozycji mamy dwa dźwięki: odgłos tarczy (*shield*) oraz odgłos wybuchu (*explosion*). Pierwszego użyjemy, gdy statek ma jeszcze jakieś życia. Będzie to symulować uderzenie asteroidy w tarcze ochronne statku. W tym celu dopisujemy instrukcję warunkową (*if*) sprawdzającą, czy statek ma więcej żyć niż zero (*ship.lifes > 0*).
+
+```python
+def update_asteroids():
+    for asteroid in asteroids_list[:]:
+        asteroid.y += asteroid.vy
+        if asteroid.y > HEIGHT + 50:
+            asteroids_list.remove(asteroid)
+        elif asteroid.colliderect(ship):
+            ship.lifes -= 1
+            asteroids_list.remove(asteroid)
+            if ship.lifes > 0:
+```
+
+Jeżeli tak, to odtwarzamy dźwięk tarczy: `sounds.shield.play()`.
+
+```python
+def update_asteroids():
+    for asteroid in asteroids_list[:]:
+        asteroid.y += asteroid.vy
+        if asteroid.y > HEIGHT + 50:
+            asteroids_list.remove(asteroid)
+        elif asteroid.colliderect(ship):
+            ship.lifes -= 1
+            asteroids_list.remove(asteroid)
+            if ship.lifes > 0:
+                sounds.shield.play()
+```
+
+W przeciwnym przypadku (*else*), tzn. gdy życia się już skończyły, odtworzymy odgłos wybuchu: `sounds.explosion.play()`.
+
+```python
+def update_asteroids():
+    for asteroid in asteroids_list[:]:
+        asteroid.y += asteroid.vy
+        if asteroid.y > HEIGHT + 50:
+            asteroids_list.remove(asteroid)
+        elif asteroid.colliderect(ship):
+            ship.lifes -= 1
+            asteroids_list.remove(asteroid)
+            if ship.lifes > 0:
+                sounds.shield.play()
+            else:
+                sounds.explosion.play()
 ```
 
 ### Koniec gry
@@ -1160,12 +1206,12 @@ def update():
 
     mouse_x, mouse_y = pygame.mouse.get_pos()
     if mouse_x < ship.x:
-        ship.x -= ship.px
+        ship.x -= ship.vx
 
     if mouse_x > ship.x:
         ship.x += ship.vx
 
-    if random.random() < 0.05:
+    if random.random() < 0.02:
         add_asteroid()
 
     update_asteroids()
@@ -1178,14 +1224,18 @@ def update_asteroids():
         asteroid.y += asteroid.vy
         if asteroid.y > HEIGHT + 50:
             asteroids_list.remove(asteroid)
-        elif asteroid.collidesrect(ship):  # Sprawdzamy, czy asteroida zderzyła się ze statkiem
+        elif asteroid.colliderect(ship):  # Sprawdzamy, czy asteroida zderzyła się ze statkiem
             ship.lifes -= 1  # Zmniejszamy liczbę pozostałych żyć
             asteroids_list.remove(asteroid)  # Usuwamy asteroidę z gry
+            if ship.lifes > 0:  # Jeżeli pozostały jeszcze jakieś życia
+                sounds.shield.play()  # Odtwarzamy dźwięk tarczy
+            else:  # W przeciwnym przypadku, gdy życia się już skończyły
+                sounds.explosion.play()  # Odtwarzamy dźwięk wybuchu
 
 
 def update_lasers():
     for laser in lasers_list[:]:
-        laser += laser.vy
+        laser.y += laser.vy
         if laser.y < -laser.height:
             lasers_list.remove(laser)
 
@@ -1339,12 +1389,12 @@ def update():
 
     mouse_x, mouse_y = pygame.mouse.get_pos()
     if mouse_x < ship.x:
-        ship.x -= ship.px
+        ship.x -= ship.vx
 
     if mouse_x > ship.x:
         ship.x += ship.vx
 
-    if random.random() < 0.05:
+    if random.random() < 0.02:
         add_asteroid()
 
     update_asteroids()
@@ -1357,14 +1407,18 @@ def update_asteroids():
         asteroid.y += asteroid.vy
         if asteroid.y > HEIGHT + 50:
             asteroids_list.remove(asteroid)
-        elif asteroid.collidesrect(ship):
+        elif asteroid.colliderect(ship):
             ship.lifes -= 1
             asteroids_list.remove(asteroid)
+            if ship.lifes > 0:
+                sounds.shield.play()
+            else:
+                sounds.explosion.play()
 
 
 def update_lasers():
     for laser in lasers_list[:]:
-        laser += laser.vy
+        laser.y += laser.vy
         if laser.y < -laser.height:
             lasers_list.remove(laser)
 
@@ -1509,12 +1563,12 @@ def update():
 
     mouse_x, mouse_y = pygame.mouse.get_pos()
     if mouse_x < ship.x:
-        ship.x -= ship.px
+        ship.x -= ship.vx
 
     if mouse_x > ship.x:
         ship.x += ship.vx
 
-    if random.random() < 0.05:
+    if random.random() < 0.02:
         add_asteroid()
 
     update_asteroids()
@@ -1527,14 +1581,18 @@ def update_asteroids():
         asteroid.y += asteroid.vy
         if asteroid.y > HEIGHT + 50:
             asteroids_list.remove(asteroid)
-        elif asteroid.collidesrect(ship):
+        elif asteroid.colliderect(ship):
             ship.lifes -= 1
             asteroids_list.remove(asteroid)
+            if ship.lifes > 0:
+                sounds.shield.play()
+            else:
+                sounds.explosion.play()
 
 
 def update_lasers():
     for laser in lasers_list[:]:
-        laser += laser.vy
+        laser.y += laser.vy
         if laser.y < -laser.height:
             lasers_list.remove(laser)
 
@@ -1643,12 +1701,12 @@ def update():
 
     mouse_x, mouse_y = pygame.mouse.get_pos()
     if mouse_x < ship.x:
-        ship.x -= ship.px
+        ship.x -= ship.vx
 
     if mouse_x > ship.x:
         ship.x += ship.vx
 
-    if random.random() < 0.05:
+    if random.random() < 0.02:
         add_asteroid()
 
     update_asteroids()
@@ -1661,14 +1719,18 @@ def update_asteroids():
         asteroid.y += asteroid.vy
         if asteroid.y > HEIGHT + 50:
             asteroids_list.remove(asteroid)
-        elif asteroid.collidesrect(ship):
+        elif asteroid.colliderect(ship):
             ship.lifes -= 1
             asteroids_list.remove(asteroid)
+            if ship.lifes > 0:
+                sounds.shield.play()
+            else:
+                sounds.explosion.play()
 
 
 def update_lasers():
     for laser in lasers_list[:]:
-        laser += laser.vy
+        laser.y += laser.vy
         if laser.y < -laser.height:
             lasers_list.remove(laser)
 
@@ -1720,3 +1782,13 @@ music.set_volume(0.3)
 
 pgzrun.go()
 ```
+
+Pełna implementacja dostępna jest również poniżej.
+
+{% embed url="https://github.com/blackbat13/AsteroidsPygameZero" %}
+Asteroidy
+{% endembed %}
+
+## Zadanie dodatkowe
+
+Spróbuj dodać do gry zwiększanie liczby żyć, gdy zdobędziemy odpowiednią liczbę punktów. Np. każde $$100$$ punktów daje nam kolejne życie. Podobnie możesz zrobić z amunicją.
