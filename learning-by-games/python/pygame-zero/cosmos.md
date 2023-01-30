@@ -32,13 +32,13 @@ Dźwięki do gry Kosmos
 
 ## Szablon
 
-Tym bardziej zaczniemy od bardziej rozbudowanego niż zwykle szablonu gry.
+Tym razem zaczniemy od bardziej rozbudowanego niż zwykle szablonu gry.
 Przygotujemy sobie kilka funkcji, które później będziemy uzupełniać właściwą zawartością.
 Dzięki temu nasz kod stanie się czytelniejszy, a nasza praca prostsza.
 
 ### Biblioteki
 
-Oprócz podstawowych bibliotek *pgzrun* do obsługi gry oraz *random* do liczb losowych, przyda nam się także biblioteka *math* do obliczeń matematycznych, które będą nam potrzebny przy ruchach postaci.
+Oprócz podstawowych bibliotek *pgzrun* do obsługi gry oraz *random* do liczb losowych, przyda nam się także biblioteka *math* do obliczeń matematycznych, które będą nam potrzebne przy ruchach postaci.
 
 ```python
 import pgzrun
@@ -62,20 +62,20 @@ MARGIN = 20
 
 W naszej grze znajdzie się kilka rodzajów elementów, nie licząc samego gracza. Będą to:
 
-- asteroidy (*asteroids*),
-- przeciwnicy (*enemies*),
-- lasery wystrzelone przez gracza (*playerLasers*),
-- lasery wystrzelone przez przecinika (*enemyLasers*).
+- asteroidy (*asteroids_list*),
+- przeciwnicy (*enemies_list*),
+- lasery wystrzelone przez gracza (*player_lasers_list*),
+- lasery wystrzelone przez przecinika (*enemy_lasers_list*).
 
-Ponieważ tych elementów może być wiele jednocześnie na ekranie, to każdy z typów zapamiętamy w osobnej liście. Na początku do naszych zmiennych przypiszemy pustą listę, czy puste nawiasy kwadratowe (`[]`).
+Ponieważ tych elementów może być wiele jednocześnie na ekranie, to każdy z typów zapamiętamy w osobnej liście. Na początku do naszych zmiennych przypiszemy pustą listę, czyli puste nawiasy kwadratowe (`[]`).
 
 ```python
 ...
 
-asteroids = []
-playerLasers = []
-enemyLasers = []
-enemies = []
+asteroids_list = []
+player_lasers_list = []
+enemy_lasers_list = []
+enemies_list = []
 ```
 
 ### Rysowanie
@@ -89,12 +89,12 @@ def draw():
     screen.fill("black")
 ```
 
-Poza główną funkcją rysującą przyda nam się także pomocnicza funkcja rysująca wszystkie elmenty z podanej listy, ponieważ w naszej grze większość elementów będziemy przechowywać w listach. Stworzymy więc funkcję *drawList*, która przyjmie jeden parametr: listę elementów do narysowania. Parametr nazwiemy *list* i podamy go w okrągłych nawiasach po nazwie funkcji: *drawList(list)*.
+Poza główną funkcją rysującą przyda nam się także pomocnicza funkcja rysująca wszystkie elmenty z podanej listy, ponieważ w naszej grze większość elementów będziemy przechowywać w listach. Stworzymy więc funkcję *draw_list*, która przyjmie jeden parametr: listę elementów do narysowania. Parametr nazwiemy *list* i podamy go w okrągłych nawiasach po nazwie funkcji: *draw_list(list)*.
 
 ```python
 ...
 
-def drawList(list):
+def draw_list(list):
 ```
 
 Naszą funkcję uzupełnimy później, teraz tworzymy tylko jej szablon, więc dopiszemy do niej instrukcję *pass*.
@@ -102,20 +102,37 @@ Naszą funkcję uzupełnimy później, teraz tworzymy tylko jej szablon, więc d
 ```python
 ...
 
-def drawList(list):
+def draw_list(list):
     pass
+```
+
+W podobny sposób utworzymy funkcję do rysowania żyć na ekranie, którą nazwiemy *draw_lifes*. Nie będzie ona przyjmować żadnych parametrów. Dopiszemy ją zaraz pod naszą poprzednią funkcją *draw_list*, a wypełnimy jedną instrukcją: *pass*.
+
+```python
+...
+
+def draw_lifes():
+    pass
+```
+
+Możemy też od razu dopisać wywołanie nowej funkcji na końcu funkcji *draw*.
+
+```python
+def draw():
+    ...
+    draw_lifes()
 ```
 
 ### Aktualizacja
 
 Ponieważ w naszej grze będzie wiele elementów, to będziemy musieli wiele rzeczy aktualizować. Aby zapobiec bałaganowi w kodzie, podzielimy sobie aktualizację na następujące funkcje:
 
-- aktualizacja gracza (*updatePlayer*),
-- aktualizacja laserów gracza (*updatePlayerLasers*),
-- aktualizacja asteroid (*updateAsteroids*),
-- aktualizacja przeciwników (*updateEnemies*),
-- aktualizacja laserów przeciwników (*updateEnemyLasers*),
-- aktualizacja kolizji (*updateCollisions*).
+- aktualizacja gracza (*update_player*),
+- aktualizacja laserów gracza (*update_player_lasers*),
+- aktualizacja asteroid (*update_asteroids*),
+- aktualizacja przeciwników (*update_enemies*),
+- aktualizacja laserów przeciwników (*update_enemy_lasers*),
+- aktualizacja kolizji (*update_collisions*).
 
 Wszystkie te funkcje wywołamy po kolei w funkcji *update*:
 
@@ -123,75 +140,81 @@ Wszystkie te funkcje wywołamy po kolei w funkcji *update*:
 ...
 
 def update():
-    updatePlayer()
-    updatePlayerLasers()
-    updateAsteroids()
-    updateEnemies()
-    updateEnemyLasers()
-    updateCollisions()
+    update_player()
+    update_asteroids()
+    update_player_lasers()
+    update_enemies()
+    update_enemy_lasers()
+    update_collisions()
 ```
 
-Teraz pozostało nam stworzyć szablony tych funkcji, wszystkie z jedną instrukcją: *pass*.
+Teraz pozostało nam stworzyć szablony tych funkcji, zaraz pod funkcją *update*, wszystkie z jedną instrukcją: *pass*.
 
 ```python
 ...
 
-def updatePlayer():
+def update_player():
     pass
 
 
-def updatePlayerLasers():
+def update_player_lasers():
     pass
 
 
-def updateAsteroids():
+def update_asteroids():
     pass
 
 
-def updateEnemies():
+def update_enemies():
     pass
 
 
-def updateEnemyLasers():
+def update_enemy_lasers():
     pass
 
 
-def updateCollisions():
+def update_collisions():
+    pass
+```
+
+### Zdarzenia
+
+Potrzebna nam będzie także funkcja odczytująca wciśnięcie klawisza na klawiaturze, z której skorzystamy w przypadku strzelania. W tym celu dopisujemy funkcję `on_key_down(key)`, podobnie jak wcześniej z instrukcją *pass*.
+
+```python
+...
+
+def on_key_down(key):
     pass
 ```
 
 ### Funkcje pomocnicze
 
-Przyda nam się jeszcze pięć funkcji pomocniczych:
+Przydadzą nam się jeszcze cztery funkcje pomocnicze:
 
-- dodanie nowego lasera gracza (*addPlayerLaser*),
-- dodanie nowej asteroidy (*addAsteroid*),
-- dodanie nowego przeciwnika (*addEnemy*),
-- dodanie nowego lasera przeciwnika (*addEnemyLaser(enemy)*),
-- zwiększenie licznika czas (*addTime*).
+- dodanie nowej asteroidy (*add_asteroid*),
+- dodanie nowego przeciwnika (*add_enemy*),
+- wybranie pozycji startowej dla przeciwnika i asteroidy (*choose_position*),
+- zwiększenie licznika czas (*add_time*).
 
 Podobnie jak wcześniej, funkcje stworzymy jako szablony i wypełnimy jedynie instrukcją *pass*.
 
 ```python
 ...
 
-def addPlayerLaser():
+def add_asteroid():
     pass
 
 
-def addAsteroid():
+def add_enemy():
     pass
 
 
-def addEnemy():
+def choose_position():
     pass
 
 
-def addEnemyLaser(enemy):
-    pass
-
-
-def addTime():
+def add_time():
     pass
 ```
 
@@ -216,70 +239,75 @@ WIDTH = 1200
 HEIGHT = 1200
 MARGIN = 20
 
-asteroids = []
-playerLasers = []
-enemyLasers = []
-enemies = []
+asteroids_list = []
+player_lasers_list = []
+enemy_lasers_list = []
+enemies_list = []
 
 
 def draw():
     screen.fill("black")
+    draw_lifes()
 
 
-def drawList(list):
+def draw_list(list):
+    pass
+
+
+def draw_lifes():
     pass
 
 
 def update():
-    updatePlayer()
-    updateAsteroids()
-    updatePlayerLasers()
-    updateEnemies()
-    updateEnemyLasers()
-    updateCollisions()
+    update_player()
+    update_asteroids()
+    update_player_lasers()
+    update_enemies()
+    update_enemy_lasers()
+    update_collisions()
 
 
-def updatePlayer():
+def update_player():
     pass
 
 
-def updateAsteroids():
+def update_asteroids():
     pass
 
 
-def updatePlayerLasers():
+def update_player_lasers():
     pass
 
 
-def updateEnemies():
+def update_enemies():
     pass
 
 
-def updateEnemyLasers():
+def update_enemy_lasers():
     pass
 
 
-def updateCollisions():
+def update_collisions():
     pass
 
 
-def addPlayerLaser():
+def on_key_down(key):
     pass
 
 
-def addAsteroid():
+def add_asteroid():
     pass
 
 
-def addEnemy():
+def add_enemy():
     pass
 
 
-def addEnemyLaser(enemy):
+def choose_position():
     pass
 
 
-def addTime():
+def add_time():
     pass
 
 
@@ -288,46 +316,72 @@ pgzrun.go()
 
 ## Gracz
 
-### Dodajemy gracza
+Naszym graczem będzie statek kosmiczny, podobnie jak w poprzedniej grze *Asteroidy*. Tym razem zapiszemy go w zmiennej *player* i utworzymy na podstawie grafiki *player.png*. Naszego nowego aktora dopisujemy zaraz pod wymiarami okna i marginesem.
 
 ```python
 player = Actor("player")
-player.x = WIDTH / 2
-player.y = HEIGHT - 60
-player.v = 2
-player.va = 2
-player.ac = 0.2
-player.maxv = 8
-player.angle = 0
-player.lifes = 3
-player.time = 0
 ```
 
-### Rysujemy gracza
+Początkowo umieścimy gracza na środku ekranu.
 
-Na końcu części rysującej dopisujemy instrukcję rysującą naszego gracza na ekranie: *player.draw()*.
+```python
+...
+player.x = WIDTH / 2
+player.y = HEIGHT / 2
+``` 
+
+Teraz możemy narysować naszego gracza na ekranie. Instrukcję rysującą dopiszemy w funkcji *draw* zaraz pod wypełnieniem ekranu kolorem tła, a przed wywołaniem funkcji rysującej życia, tak by były one zawsze widoczne.
 
 ```python
 def draw():
     ...
     player.draw()
+    ...
 ```
 
-### Poruszamy graczem
+### Poruszamy statkiem
 
-Przemieszczamy gracza zgodnie z jego kierunkiem ruchu.
+Przejdźmy teraz do ruchu gracza. Będziemy go przemieszczać zgodnie z jego kierunkiem obrotu proporcjonalnie do prędkości. Na początku dopiszmy prędkość (*v*) do naszego gracza, z początkową wartością $$2$$, zaraz pod jego współrzędnymi.
 
 ```python
-def updatePlayer():
+player.v = 2
+```
+
+Ruch gracza zrealizujemy wewnątrz naszej funkcji *update_player*, dlatego usuwamy z niej instrukcję *pass*.
+
+```python
+def update_player():
+```
+
+Do obliczenia ruchu gracza wykorzystamy matematyczną formułę opartą na trygonometrii:
+
+$$
+x += \sin(angle) * v
+y += \cos(angle) * v
+$$
+
+Gdzie *angle* to kąt obrotu gracza, a *v* to jego prędkość. Musimy jednak dostosować funkcję do naszych warunków. Do obliczenia sinusa i cosinusa wykorzystamy odpowiednie funkcji z biblioteki *math*: `math.sin` oraz `math.cos`. Funkcje te jednak przyjmują kąt w **radianach**, a nie stopniach. Kąt obrotu gracza zapisany jest w zmiennej *player.angle* i podany jest w stopniach. Dlatego musimy zamienić stopnie na radiany za pomocą funkcji `math.radians`. Zanim to jednak zrobimy, musimy odpowiednio zmodyfikować ten kąt, ponieważ na naszej grafice statek skierowany jest do góry, a *Pygame Zero* domyślnie traktuje aktorów tak, jakby byli skierowani w prawo. Dlatego od kątu obrotu gracza odejmiemy połowę pełnego obrotu, czyli $$180$$.
+
+```python
+def update_player():
     player.x += math.sin(math.radians(player.angle - 180)) * player.v
     player.y += math.cos(math.radians(player.angle - 180)) * player.v
 ```
 
-Jeżeli wciśnięty jest klawisz **A** (*if keyboard.A*), to obracamy gracza przeciwnie do ruchu wskazówek zegara zgodnie z jego prędkością obrotu (*player.va*). W tym celu dodajemy prędkość obrotu do kąta gracza (*player.angle*).
+### Obracamy statek
+
+Czas zająć się obrotem gracza. Obracać będziemy go na klawisze **A** oraz **D** zgodnie z prędkością obrotu, którą najpierw musimy do gracza dopisać. Dopisujemy więc nową zmienną do gracza, zaraz pod jego prędkością. Nazwiemy ją **va** (*a* od *angle*) i ustawimy jej początkową wartość $$2$$.
 
 ```python
-def updatePlayer():
+player.va = 2
+```
+
+Przejdźmy teraz do obsługi samego obrotu. Nowe instrukcje dopiszemy na końcu funkcji *update_player*. Zacznijmy od obrotu w lewo. Jeżeli wciśnięty jest klawisz **A** (*if keyboard.A*), to obracamy gracza przeciwnie do ruchu wskazówek zegara zgodnie z jego prędkością obrotu (*player.va*). W tym celu dodajemy prędkość obrotu do kąta gracza (*player.angle*).
+
+```python
+def update_player():
     ...
+
     if keyboard.A:
         player.angle += player.va
 ```
@@ -335,20 +389,34 @@ def updatePlayer():
 Podobnie postępujemy przy obrocie zgodnie ze wskazówkami zegara, gdy naciśnięty jest klawisz **D**. Tym razem odejmujemy prędkość obrotu od kąta gracza.
 
 ```python
-def updatePlayer():
+def update_player():
     ...
-    if keyboard.A:
-        player.angle += player.va
 
     if keyboard.D:
         player.angle -= player.va
 ```
 
-Gdy naciśnięty będzie klawisz **W**, to gracz powinien przyspieszać, nie przekraczając jednak swojej maksymalnej prędkości. Aby zwiększyć prędkość gracza (*player.v*) dodamy do niej jego przyspieszenie (*player.ac*).
+### Przyspieszamy statek
+
+Nasz statek powinien mieć jakieś przyspieszenie, żeby gra była ciekawsza. W tym celu dopiszemy do gracza zmienną *ac* (*acceleration*), która będzie oznaczała wartość przyspieszenia. Nową zmienną dopisujemy pod prędkością obrotu i nadajemy jej wartość $$0.2$$.
 
 ```python
-def updatePlayer():
+player.ac = 0.2
+```
+
+Dopiszemy jeszcze prędkość maksymalną, którą zapiszemy w graczu w zmiennej *maxv* z początkową wartością $$8$$.
+
+```python
+player.ac = 0.2
+player.maxv = 8
+```
+
+Wracamy teraz do funkcji *update_player* i dopisujemy instrukcje na jej końcu. Gdy naciśnięty będzie klawisz **W**, to gracz powinien przyspieszać, nie przekraczając jednak swojej maksymalnej prędkości. Aby zwiększyć prędkość gracza (*player.v*) dodamy do niej jego przyspieszenie (*player.ac*).
+
+```python
+def update_player():
     ...
+
     if keyboard.W:
         player.v += player.ac
 ```
@@ -356,8 +424,9 @@ def updatePlayer():
 Następnie powinniśmy sprawdzić, czy prędkość nie przekroczyła prędkości maksymalnej (*player.maxv*). Jeżeli tak się stanie, to powinniśmy przywrócić prędkość maksymalną, tzn. do prędkości przypisać prędkość maksymalną.
 
 ```python
-def updatePlayer():
+def update_player():
     ...
+
     if keyboard.W:
         player.v += player.ac
         if player.v > player.maxv:
@@ -367,8 +436,9 @@ def updatePlayer():
 Podobnie postąpimy w przypadku zwalniania, gdy wciśnięty jest klawisz **S**. Najpierw zmniejszymy prędkość gracza odejmując od niej przyspieszenie.
 
 ```python
-def updatePlayer():
+def update_player():
     ...
+
     if keyboard.S:
         player.v -= player.ac
 ```
@@ -376,8 +446,9 @@ def updatePlayer():
 Następnie sprawdzimy, czy prędkość spadła poniżej zera. Jeżeli tak, to przywrócimy prędkości wartość zero.
 
 ```python
-def updatePlayer():
+def update_player():
     ...
+
     if keyboard.S:
         player.v -= player.ac
         if player.v < 0:
@@ -387,38 +458,43 @@ def updatePlayer():
 ### Przechodzimy przez krawędzie ekranu
 
 ```python
-def updatePlayer():
+def update_player():
     ...
+
     if player.x > WIDTH + MARGIN:
         player.x = -MARGIN
 ```
 
 ```python
-def updatePlayer():
+def update_player():
     ...
-    if player.x > WIDTH + MARGIN:
-        player.x = -MARGIN
 
     if player.x < -MARGIN:
         player.x = WIDTH + MARGIN
 ```
 
 ```python
-def updatePlayer():
+def update_player():
     ...
-    if player.x > WIDTH + MARGIN:
-        player.x = -MARGIN
-
-    if player.x < -MARGIN:
-        player.x = WIDTH + MARGIN
 
     if player.y < -MARGIN:
         player.y = HEIGHT + MARGIN
 ```
 
 ```python
-def updatePlayer():
+def update_player():
     ...
+
+    if player.y > HEIGHT + MARGIN:
+        player.y = -MARGIN
+```
+
+Pełny fragment odpowiedzialny za przechodzenie przez krawędzie ekranu przedstawiony jest poniżej.
+
+```python
+def update_player():
+    ...
+    
     if player.x > WIDTH + MARGIN:
         player.x = -MARGIN
 
@@ -443,41 +519,44 @@ WIDTH = 1200
 HEIGHT = 1200
 MARGIN = 20
 
-asteroids = []
-playerLasers = []
-enemyLasers = []
-enemies = []
-
 player = Actor("player")
 player.x = WIDTH / 2
-player.y = HEIGHT - 60
+player.y = HEIGHT / 2
 player.v = 2
 player.va = 2
 player.ac = 0.2
 player.maxv = 8
-player.angle = 0
-player.lifes = 3
-player.time = 0
+
+asteroids_list = []
+player_lasers_list = []
+enemy_lasers_list = []
+enemies_list = []
+
 
 def draw():
     screen.fill("black")
     player.draw()
+    draw_lifes()
 
 
-def drawList(list):
+def draw_list(list):
+    pass
+
+
+def draw_lifes():
     pass
 
 
 def update():
-    updatePlayer()
-    updateAsteroids()
-    updatePlayerLasers()
-    updateEnemies()
-    updateEnemyLasers()
-    updateCollisions()
+    update_player()
+    update_asteroids()
+    update_player_lasers()
+    update_enemies()
+    update_enemy_lasers()
+    update_collisions()
 
 
-def updatePlayer():
+def update_player():
     player.x += math.sin(math.radians(player.angle - 180)) * player.v
     player.y += math.cos(math.radians(player.angle - 180)) * player.v
 
@@ -486,7 +565,7 @@ def updatePlayer():
 
     if keyboard.D:
         player.angle -= player.va
-
+    
     if keyboard.W:
         player.v += player.ac
         if player.v > player.maxv:
@@ -510,43 +589,43 @@ def updatePlayer():
         player.y = -MARGIN
 
 
-def updateAsteroids():
+def update_asteroids():
     pass
 
 
-def updatePlayerLasers():
+def update_player_lasers():
     pass
 
 
-def updateEnemies():
+def update_enemies():
     pass
 
 
-def updateEnemyLasers():
+def update_enemy_lasers():
     pass
 
 
-def updateCollisions():
+def update_collisions():
     pass
 
 
-def addPlayerLaser():
+def on_key_down(key):
     pass
 
 
-def addAsteroid():
+def add_asteroid():
     pass
 
 
-def addEnemy():
+def add_enemy():
     pass
 
 
-def addEnemyLaser(enemy):
+def choose_position():
     pass
 
 
-def addTime():
+def add_time():
     pass
 
 
@@ -555,53 +634,137 @@ pgzrun.go()
 
 ## Strzelamy
 
+Czas zająć się strzelaniem, które zrealizujemy podobnie, jak w przypadku naszej poprzedniej gry *Asteroidy*.
+
 ### Dodajemy laser
+
+Strzały będziemy oddawać po naciśnięciu spacji. Dlatego zajmiemy się teraz naszą funkcją *on_key_down*, z której usuwamy instrukcję *pass*. Na początku sprawdzimy, czy został wciśnięty klawisz spacji porównując zmienną *key* z wartością `keys.SPACE`.
 
 ```python
 def on_key_down(key):
     if key == keys.SPACE:
-        las = Actor("laser1")
-        las.angle = player.angle
-        las.x = player.x
-        las.y = player.y
-        las.v = 10
-        playerLasers.append(las)
+```
+
+Jeżeli rzeczywiście kliknęliśmy spację, to czas utworzyć nowego aktora na podstawie grafiki *laser1.png*. Zapiszemy go w zmiennej *laser*.
+
+```python
+def on_key_down(key):
+    if key == keys.SPACE:
+        laser = Actor("laser1")
+```
+
+Jego pozycję ustawimy na taką samą, jak pozycja gracza (*player.pos*).
+
+```python
+def on_key_down(key):
+    if key == keys.SPACE:
+        laser = Actor("laser1")
+        laser.pos = player.pos
+```
+
+Podobnie postąpimy z kątem obrotu (*angle*).
+
+```python
+def on_key_down(key):
+    if key == keys.SPACE:
+        laser = Actor("laser1")
+        laser.pos = player.pos
+        laser.angle = player.angle
+```
+
+Zdefiniujemy także prędkość (*v*) i ustawimy ją na $$10$$, tak by zawsze laser był szybszy od statku.
+
+```python
+def on_key_down(key):
+    if key == keys.SPACE:
+        laser = Actor("laser1")
+        laser.pos = player.pos
+        laser.angle = player.angle
+        laser.v = 10
+```
+
+Nasz laser jest gotowy, dopisujemy go więc do listy laserów gracza za pomocą metody **append**.
+
+```python
+def on_key_down(key):
+    if key == keys.SPACE:
+        laser = Actor("laser1")
+        laser.pos = player.pos
+        laser.angle = player.angle
+        laser.v = 10
+        player_lasers_list.append(laser)
+```
+
+Na końcu warto jeszcze odtworzyć dźwięk *laser1*.
+
+```python
+def on_key_down(key):
+    if key == keys.SPACE:
+        laser = Actor("laser1")
+        laser.pos = player.pos
+        laser.angle = player.angle
+        laser.v = 10
+        player_lasers_list.append(laser)
         sounds.laser1.play()
 ```
 
 ### Rysujemy lasery
 
-Zacznijmy od uzupełnienia naszej funkcji *drawList* rysującej wszystkie elementy listy na ekranie.
+Zacznijmy od uzupełnienia naszej funkcji *draw_list* rysującej wszystkie elementy listy na ekranie.
 
 ```python
-def drawList(list):
+def draw_list(list):
     for element in list:
         element.draw()
 ```
 
-Teraz pozostało nam w części rysującej *draw* wywołać naszą funkcję z parametrem *playerLasers*, by narysować wszystkie lasery gracza na ekranie. Ponieważ nie chcemy, by lasery przykrywały grafikę gracza, to narysujemy je przed graczem, czyli przed instrukcją *player.draw()*.
+Teraz pozostało nam w części rysującej *draw* wywołać naszą funkcję z parametrem *player_lasers_list*, by narysować wszystkie lasery gracza na ekranie. Ponieważ nie chcemy, by lasery przykrywały grafikę gracza, to narysujemy je przed graczem, czyli przed instrukcją *player.draw()*.
 
 ```python
 def draw():
-    screen.fill("black")
-
-    drawList(playerLasers)
-
-    player.draw()
+    ...
+    draw_list(player_lasers_list)
+    ...
 ```
 
 ### Poruszamy laserami
 
-```python
-def updatePlayerLasers():
-    for las in playerLasers[:]:
-        las.x += math.sin(math.radians(las.angle - 180)) * las.v
-        las.y += math.cos(math.radians(las.angle - 180)) * las.v
+Poruszanie laserami gracza zrealizujemy w naszej pomocniczej funkcji *update_player_lasers*, z której usuwamy instrukcję *pass*. Ponieważ mamy wiele laserów zapisanych w liście, to zaczniemy od pętli przechodzącej przez **kopię** listy laserów (`player_lasers_list[:]`), ponieważ będziemy je usuwać z listy, gdy wyjdą poza ekran gry.
 
-        if las.x > WIDTH + MARGIN or las.x < -MARGIN:
-            playerLasers.remove(las)
-        elif las.y > HEIGHT + MARGIN or las.y < -MARGIN:
-            playerLasers.remove(las)
+```python
+def update_player_lasers():
+    for laser in player_lasers_list[:]:
+```
+
+Każdy laser będziemy przemieszczać zgodnie z jego kierunkiem obrotu proporcjonalnie do jego prędkości. Wykorzystamy tę samą formułę, co w przypadku ruchu gracza.
+
+```python
+def update_player_lasers():
+    for laser in player_lasers_list[:]:
+        laser.x += math.sin(math.radians(laser.angle - 180)) * laser.v
+        laser.y += math.cos(math.radians(laser.angle - 180)) * laser.v
+```
+
+Teraz pozostało nam sprawdzić, czy laser opóścił już ekran gry. Porównujemy więc jego współrzędne z rozmiarami okna gry zmodyfikowanymi o margines.
+
+```python
+def update_player_lasers():
+    for laser in player_lasers_list[:]:
+        laser.x += math.sin(math.radians(laser.angle - 180)) * laser.v
+        laser.y += math.cos(math.radians(laser.angle - 180)) * laser.v
+    if laser.x > WIDTH + MARGIN or laser.x < -MARGIN or laser.y > HEIGHT + MARGIN or laser.y < -MARGIN:
+```
+
+Jeżeli laser opuści ekran gry, to usuwamy go z listy laserów za pomocą metody **remove**.
+
+```python
+def update_player_lasers():
+    for laser in player_lasers_list[:]:
+        laser.x += math.sin(math.radians(laser.angle - 180)) * laser.v
+        laser.y += math.cos(math.radians(laser.angle - 180)) * laser.v
+
+        if laser.x > WIDTH + MARGIN or laser.x < -MARGIN or laser.y > HEIGHT + MARGIN or laser.y < -MARGIN:
+            player_lasers_list.remove(laser)
 ```
 
 ## Przeciwnicy
@@ -609,69 +772,69 @@ def updatePlayerLasers():
 ### Dodajemy przeciwników
 
 ```python
-def updateEnemies():
-    if random.randint(0, 500) <= 1:
-        addEnemy()
+def update_enemies():
+    if random.random() < 0.01:
+        add_enemy()
+```
 
-
-def addEnemy():
+```python
+def add_enemy():
     enemy = Actor("enemy")
-    side = random.randint(1, 2)
-    if side == 1:
-        enemy.x = random.choice([-MARGIN, WIDTH + MARGIN])
-        enemy.y = random.randint(MARGIN, HEIGHT - MARGIN)
-    else:
-        enemy.x = random.randint(MARGIN, WIDTH - MARGIN)
-        enemy.y = random.choice([-MARGIN, HEIGHT + MARGIN])
-
+    enemy.pos = choose_position()
     enemy.v = random.randint(2, 5)
-    enemies.append(enemy)
+    enemies_list.append(enemy)
+```
+
+```python
+def choose_position():
+    if random.randint(1, 2) == 1:
+        x = random.choice([-MARGIN, WIDTH + MARGIN])
+        y = random.randint(MARGIN, HEIGHT - MARGIN)
+    else:
+        x = random.randint(MARGIN, WIDTH - MARGIN)
+        y = random.choice([-MARGIN, HEIGHT + MARGIN])
+
+    return x, y
 ```
 
 ### Rysujemy przeciwników
 
 ```python
 def draw():
-    screen.fill((0, 0, 0))
-
-    drawList(playerLasers)
-    drawList(enemies)
-
-    player.draw()
+    ...
+    draw_list(enemies_list)
+    ...
 ```
 
 ### Poruszamy przeciwnikami
 
 ```python
-def updateEnemies():
-    if random.randint(0, 500) <= 1:
-        addEnemy()
+def update_enemies():
+    ...
 
-    for enemy in enemies:
+    for enemy in enemies_list:
         enemy.angle = enemy.angle_to(player.pos) - 90
         enemy.x += math.sin(math.radians(enemy.angle - 180)) * enemy.v
         enemy.y += math.cos(math.radians(enemy.angle - 180)) * enemy.v
+
 ```
 
 ### Strzelamy laserami
 
 ```python
-def updateEnemies():
-    if random.randint(0, 500) <= 1:
-        addEnemy()
+def update_enemies():
+    ...
 
     for enemy in enemies:
-        enemy.angle = enemy.angle_to(player.pos) - 90
-        enemy.x += math.sin(math.radians(enemy.angle - 180)) * enemy.v
-        enemy.y += math.cos(math.radians(enemy.angle - 180)) * enemy.v
+        ...
 
-        if random.randint(0, 500) <= 1:
-            las = Actor("laser2")
-            las.angle = enemy.angle
-            las.x = enemy.x
-            las.y = enemy.y
-            las.v = random.randint(5, 10)
-            enemyLasers.append(las)
+        if random.random() < 0.005:
+            laser = Actor("laser2")
+            laser.angle = enemy.angle
+            laser.x = enemy.x
+            laser.y = enemy.y
+            laser.v = random.randint(5, 10)
+            enemy_lasers_list.append(laser)
             sounds.laser2.play()
 ```
 
@@ -679,52 +842,60 @@ def updateEnemies():
 
 ```python
 def draw():
-    screen.fill((0, 0, 0))
-
-    drawList(playerLasers)
-    drawList(enemyLasers)
-    drawList(enemies)
-
-    player.draw()
+    ...
+    draw_list(enemy_lasers_list)
+    ...
 ```
 
 ### Poruszamy laserami
 
 ```python
-def updateEnemyLasers():
-    for las in enemyLasers[:]:
+def update_enemy_lasers():
+    for las in enemy_lasers_list[:]:
         las.x += math.sin(math.radians(las.angle - 180)) * las.v
         las.y += math.cos(math.radians(las.angle - 180)) * las.v
 
         if las.x > WIDTH + MARGIN or las.x < -MARGIN:
-            enemyLasers.remove(las)
+            enemy_lasers_list.remove(las)
         elif las.y > HEIGHT + MARGIN or las.y < -MARGIN:
-            enemyLasers.remove(las)
+            enemy_lasers_list.remove(las)
 ```
 
 ### Sprawdzamy kolizje
 
 ```python
-def updateCollisions():
-    for las in playerLasers[:]:
-        for enemy in enemies[:]:
-            if enemy.colliderect(las):
-                enemies.remove(enemy)
-                playerLasers.remove(las)
+def update_collisions():
+    for laser in player_lasers_list[:]:
+        for met in asteroids_list[:]:
+            if met.colliderect(laser):
+                asteroids_list.remove(met)
+                player_lasers_list.remove(laser)
 
-    for las in enemyLasers[:]:
-        if player.collidepoint(las.pos):
+    for laser in enemy_lasers_list[:]:
+        for met in asteroids_list[:]:
+            if met.colliderect(laser):
+                asteroids_list.remove(met)
+                enemy_lasers_list.remove(laser)
+
+    for laser in player_lasers_list[:]:
+        for enemy in enemies_list[:]:
+            if enemy.colliderect(laser):
+                enemies_list.remove(enemy)
+                player_lasers_list.remove(laser)
+
+    for laser in enemy_lasers_list[:]:
+        if player.collidepoint(laser.pos):
             player.lifes -= 1
             if player.lifes == 0:
                 sounds.game_over.play()
-            enemyLasers.remove(las)
+            enemy_lasers_list.remove(laser)
 
-    for enemy in enemies[:]:
+    for enemy in enemies_list[:]:
         if player.collidepoint(enemy.pos):
             player.lifes -= 1
             if player.lifes == 0:
                 sounds.game_over.play()
-            enemies.remove(enemy)
+            enemies_list.remove(enemy)
 ```
 
 ## Asteroidy
