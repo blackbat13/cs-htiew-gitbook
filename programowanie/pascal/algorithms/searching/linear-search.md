@@ -10,6 +10,7 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```pascal
 program lsearch;
 var
@@ -46,6 +47,7 @@ begin
 	
 end.
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -63,6 +65,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: rozm
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```pascal
 program lsearch;
 var
@@ -100,6 +103,7 @@ begin
 	
 end.
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -117,6 +121,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: rozm
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```pascal
 program lsearch;
 var
@@ -140,6 +145,7 @@ begin
 	linear_search(n, arr, number);
 end.
 ```
+{% endcode %}
 
 ### Link do implementacji
 

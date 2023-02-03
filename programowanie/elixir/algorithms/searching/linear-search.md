@@ -10,6 +10,7 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```elixir
 defmodule Search do
     def linear(array, number) do
@@ -37,6 +38,7 @@ else
     IO.puts "Liczby nie ma w tablicy"
 end
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -54,6 +56,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: list
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```elixir
 defmodule Search do
     def linear(array, number, index) do
@@ -81,6 +84,7 @@ else
     IO.puts "Liczba jest pod indeksem #{index}"
 end
 ```
+{% endcode %}
 
 ### Link do implementacji
 

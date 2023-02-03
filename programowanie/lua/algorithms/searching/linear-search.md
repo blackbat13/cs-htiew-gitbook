@@ -10,6 +10,7 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```lua
 function linearSearch(array, number)
     for i = 1, #(array) do
@@ -33,6 +34,7 @@ else
     print("Liczby nie ma w tablicy")
 end
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -50,6 +52,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: tabl
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```lua
 function linearSearch(array, number)
     for i = 1, #(array) do
@@ -73,6 +76,7 @@ else
     print("Liczba jest pod indeksem:", index)
 end
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -90,6 +94,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: tabl
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```lua
 function linearSearch(array, number)
     for i = 1, #(array) do
@@ -106,6 +111,7 @@ number = 8
 print("Indeksy, pod którymi znajduje się poszukiwana liczba:")
 linearSearch(array, number)
 ```
+{% endcode %}
 
 ### Link do implementacji
 

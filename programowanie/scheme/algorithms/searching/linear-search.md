@@ -10,6 +10,7 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```scheme
 (define linearSearch
   (lambda (array number)
@@ -24,6 +25,7 @@
 
 (display (linearSearch `(8 2 9 10 5 4 2 7 18 0) 7))
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -41,6 +43,7 @@ W części głównej programu na wywołujemy funkcję `linearSearch` z przygotow
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```scheme
 (define linearSearch
   (lambda (array number index)
@@ -55,6 +58,7 @@ W części głównej programu na wywołujemy funkcję `linearSearch` z przygotow
  
 (display (linearSearch `(8 2 9 10 5 4 2 7 18 0) 4 0))
 ```
+{% endcode %}
 
 ### Link do implementacji
 

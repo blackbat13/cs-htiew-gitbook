@@ -10,6 +10,7 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```c
 #include <stdio.h>
 #include <stdbool.h>
@@ -40,6 +41,7 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -57,6 +59,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: tabl
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```c
 #include <stdio.h>
 
@@ -86,6 +89,7 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -103,6 +107,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: tabl
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```c
 #include <stdio.h>
 
@@ -125,6 +130,7 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 

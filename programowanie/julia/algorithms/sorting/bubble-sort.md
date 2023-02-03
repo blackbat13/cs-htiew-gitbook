@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```julia
 function bubbleSort(array)
     sorted = false
@@ -34,6 +35,7 @@ bubbleSort(array)
 
 println(array)
 ```
+{% endcode %}
 
 ### Link do implementacji
 

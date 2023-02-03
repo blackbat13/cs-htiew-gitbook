@@ -10,6 +10,7 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```go
 package main
 
@@ -40,6 +41,7 @@ func main() {
     }
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -57,6 +59,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: tabl
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```go
 package main
 
@@ -87,6 +90,7 @@ func main() {
     }
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -104,6 +108,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: tabl
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```go
 package main
 
@@ -127,6 +132,7 @@ func main() {
 	arr.linearSearch(number)
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 

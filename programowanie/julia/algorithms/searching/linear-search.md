@@ -10,6 +10,7 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```julia
 function linearSearch(array, number)
     for el in array
@@ -33,6 +34,7 @@ else
     println("Poszukiwanej wartości nie ma w liście")
 end
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -48,6 +50,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: list
 
 ## Pozycja elementu
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```julia
 function linearSearch(array, number)
     for i in 1:length(array)
@@ -71,6 +74,7 @@ else
     println("Poszukiwana wartość znajduje się pod indeksem ", index)
 end
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -88,6 +92,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: list
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```julia
 function linearSearch(array, number)
     for i in 1:length(array)
@@ -104,6 +109,7 @@ number = 8
 println("Poszukiwana wartość znajduje się pod następującymi indeksami:")
 linearSearch(array, number)
 ```
+{% endcode %}
 
 ### Link do implementacji
 

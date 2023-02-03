@@ -200,7 +200,7 @@
 
 ## Programowanie
 
-* [Wstęp](programowanie/wstep.md)
+* [Wstęp](programowanie/README.md)
 * [Pascal](programowanie/pascal/README.md)
   * [Algorytmy](programowanie/pascal/algorithms/README.md)
     * [Wyszukiwanie](programowanie/pascal/algorithms/searching/README.md)

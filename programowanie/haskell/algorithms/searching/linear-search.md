@@ -10,6 +10,7 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```haskell
 linearSearch [] num = False
 linearSearch arr num
@@ -27,6 +28,7 @@ main = do
     then putStrLn "Liczba jest w tablicy"
     else putStrLn "Liczby nie ma w tablicy"
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -44,6 +46,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: tabl
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```haskell
 linearSearch [] num ind = -1
 linearSearch arr num ind
@@ -63,6 +66,7 @@ main = do
         putStr "Liczba jest pod indeksem "
         print index
 ```
+{% endcode %}
 
 ### Link do implementacji
 

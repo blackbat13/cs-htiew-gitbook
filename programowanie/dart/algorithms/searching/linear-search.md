@@ -10,6 +10,7 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```dart
 bool linearSearch(List<int> array, int number) {
     for(int element in array) {
@@ -34,6 +35,7 @@ void main() {
     }
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -51,6 +53,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: list
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```dart
 int linearSearch(List<int> array, int number) {
     for(int i = 0; i < array.length; i++) {
@@ -75,6 +78,7 @@ void main() {
     }
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -92,6 +96,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: list
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```dart
 void linearSearch(List<int> array, int number) {
     for(int i = 0; i < array.length; i++) {
@@ -110,6 +115,7 @@ void main() {
     linearSearch(array, number);
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 

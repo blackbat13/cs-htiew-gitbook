@@ -10,6 +10,7 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```visual-basic
 Module Search
     Public Function LinearSearch(array as Integer(), number as Integer) As Boolean
@@ -36,6 +37,7 @@ Module Search
     End Sub
 End Module
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -47,6 +49,7 @@ Wyszukiwanie liniowe - istnienie elementu
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```visual-basic
 Module Search
     Public Function LinearSearch(array as Integer(), number as Integer) As Integer
@@ -73,6 +76,7 @@ Module Search
     End Sub
 End Module
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -84,6 +88,7 @@ Wyszukiwanie liniowe - pozycja elementu
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```visual-basic
 Module Search
     Public Sub LinearSearch(array as Integer(), number as Integer)
@@ -104,6 +109,7 @@ Module Search
     End Sub
 End Module
 ```
+{% endcode %}
 
 ### Link do implementacji
 

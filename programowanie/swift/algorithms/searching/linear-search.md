@@ -10,6 +10,7 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```swift
 func linearSearch(array: [Int], number: Int) -> Bool {
     for el in array {
@@ -33,6 +34,7 @@ if result {
     print("Liczby nie ma w tablicy")
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -50,6 +52,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: tabl
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```swift
 func linearSearch(array: [Int], number: Int) -> Int {
     for i in 0...array.count - 1 {
@@ -73,6 +76,7 @@ if index == -1 {
     print("Liczba jest pod indeksem \(index)")
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -90,6 +94,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: tabl
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```swift
 func linearSearch(array: [Int], number: Int) {
     for i in 0...array.count - 1 {
@@ -106,6 +111,7 @@ let number = 8
 print("Indeksy, pod którymi znajduje się poszukiwana liczba:")
 linearSearch(array: array, number: number)
 ```
+{% endcode %}
 
 ### Link do implementacji
 

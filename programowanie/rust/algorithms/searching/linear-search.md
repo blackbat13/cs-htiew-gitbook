@@ -10,6 +10,7 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```rust
 fn linear_search(array: &[i32], number: i32) -> bool {
     for el in array.iter() {
@@ -34,6 +35,7 @@ fn main() {
     }
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -51,6 +53,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: tabl
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```rust
 fn linear_search(array: &[i32], number: i32) -> i32 {
     for i in 0..array.len() {
@@ -75,6 +78,7 @@ fn main() {
     }
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -92,6 +96,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: tabl
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```rust
 fn linear_search(array: &[i32], number: i32) {
     for i in 0..array.len() {
@@ -109,6 +114,7 @@ fn main() {
     linear_search(&array, number);
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 

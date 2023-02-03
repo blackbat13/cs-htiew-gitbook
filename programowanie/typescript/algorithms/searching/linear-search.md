@@ -10,6 +10,7 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```typescript
 function linearSearch(array: number[], value: number): boolean {
     for (let i: number = 0; i < array.length; ++i) {
@@ -33,6 +34,7 @@ if (result) {
     console.log("Liczby nie ma w tablicy");
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -50,6 +52,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: tabl
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```typescript
 function linearSearch(array: number[], value: number): number {
     for (let i: number = 0; i < array.length; ++i) {
@@ -73,6 +76,7 @@ if (index == -1) {
     console.log("Liczba jest pod indeksem ", index);
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -90,6 +94,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: tabl
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```typescript
 function linearSearch(array: number[], value: number) {
     for (let i: number = 0; i < array.length; ++i) {
@@ -106,6 +111,7 @@ let value: number = 8;
 console.log("Indeksy, pod którymi znajduje się poszukiwana liczba:")
 linearSearch(array, value);
 ```
+{% endcode %}
 
 ### Link do implementacji
 
