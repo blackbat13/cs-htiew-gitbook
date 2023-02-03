@@ -36,9 +36,9 @@ int findLeader(int array[], int length) {
 
 int main() {
     int array[10] = {1, 2, 5, 5, 7, 5, 5, 10, 5, 5};
-    int majority;
 
-    majority = findLeader(array, 10);
+    int majority = findLeader(array, 10);
+    
     cout << "Majority element is: " << majority << endl;
 
     return 0;
