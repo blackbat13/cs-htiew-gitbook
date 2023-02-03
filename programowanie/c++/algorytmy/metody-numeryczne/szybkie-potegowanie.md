@@ -8,33 +8,31 @@
 
 ## Rozwiązanie iteracyjne
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-/// Count a^n using the binary representation of n
-/// \param a - number to rise
-/// \param n - power
-/// \return a^n
 int fastExp(int a, int n) {
-    int w = 1;
+    int result = 1;
 
     while (n > 0) {
         if (n % 2 == 1) {
-            w *= a;
+            result *= a;
         }
 
         a *= a;
         n /= 2;
     }
 
-    return w;
+    return result;
 }
 
 int main() {
     int a = 2;
     int n = 10;
+
     int result = fastExp(a, n);
     
     cout << a << "^" << n << " = " << result << endl;
@@ -42,6 +40,7 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -51,15 +50,12 @@ Szybkie potęgowanie - wersja iteracyjna
 
 ## Rozwiązanie rekurencyjne
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-/// Count a^n using the binary representation of n
-/// \param a - number to rise
-/// \param n - power
-/// \return a^n
 int fastExp(int a, int n) {
     if (n == 0) {
         return 1;
@@ -77,6 +73,7 @@ int fastExp(int a, int n) {
 int main() {
     int a = 2;
     int n = 10;
+
     int result = fastExp(a, n);
     
     cout << a << "^" << n << " = " << result << endl;
@@ -84,6 +81,7 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 

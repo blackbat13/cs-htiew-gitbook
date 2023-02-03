@@ -8,19 +8,16 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-/// Check if one string is a substring of the other
-/// \param a - string to search for
-/// \param b - string to search in
-/// \return true if a is substring of b
 bool isSubstring(string a, string b) {
-    int i, j;
+    int j;
 
-    for (i = 0; i < b.length() - a.length(); i++) {
+    for (int i = 0; i < b.length() - a.length(); i++) {
         j = 0;
         while (j < a.length()) {
             if (a[j] == b[i + j]) {
@@ -39,12 +36,12 @@ bool isSubstring(string a, string b) {
 }
 
 int main() {
-    string a, b;
-    
-    a = "kot";
-    b = "alamakota";
+    string a = "kot";
+    string b = "alamakota";
 
-    if (isSubstring(a, b)) {
+    bool result = isSubstring(a, b);
+
+    if (result) {
         cout << a << " is substring of " << b << endl;
     } else {
         cout << a << " is not substring of " << b << endl;
@@ -53,13 +50,10 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/S5zJSH" %}
 Naiwne wyszukiwanie wzorca w tekście
 {% endembed %}
-
-### Opis implementacji
-
-TODO

@@ -8,14 +8,12 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-/// Sort ascending array of specified length
-/// \param array - array to sort
-/// \param n - length of the given array
 void countingSort(int array[], int n, int m) {
     int occurrences[m + 1] = {};
     int k = 0;
@@ -32,9 +30,6 @@ void countingSort(int array[], int n, int m) {
     }
 }
 
-/// Prints given array
-/// \param array - array to print
-/// \param n - length of the given array
 void printArray(int array[], int n) {
     for(int i = 0; i < n; ++i) {
         cout << array[i] << " ";
@@ -55,6 +50,7 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 

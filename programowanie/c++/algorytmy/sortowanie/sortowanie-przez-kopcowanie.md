@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
@@ -32,9 +33,6 @@ void heapSort(int array[], int n) {
     }
 }
 
-/// Prints given array
-/// \param array - array to print
-/// \param n - length of the given array
 void printArray(int array[], int n) {
     for(int i = 0; i < n; ++i) {
         cout << array[i] << " ";
@@ -54,6 +52,7 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 

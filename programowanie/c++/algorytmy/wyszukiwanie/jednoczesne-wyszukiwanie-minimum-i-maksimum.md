@@ -10,14 +10,12 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-/// Find minimum and maximum value in given array using naive algorithm
-/// \param array - array to search in
-/// \param length - length of given array
 void findMinMaxNaive(int array[], int n) {
     int min, max;
     
@@ -44,6 +42,7 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -53,24 +52,22 @@ Jednoczesne znajdowanie min i max - podejście naiwne
 
 ### Opis implementacji
 
-Funkcja `findMinMaxNaive` (**linia 8**) przyjmuje tablicę o zadanej długości i wypisuje jej elementy minimalny i maksymalny, korzystając z naiwnego algorytmu jednoczesnego znajdowania minimum i maksimum.
+Funkcja `findMinMaxNaive` (**linia 5**) przyjmuje tablicę o zadanej długości i wypisuje jej elementy minimalny i maksymalny, korzystając z naiwnego algorytmu jednoczesnego znajdowania minimum i maksimum.
 
-Na początku tworzymy dwie zmienne do zapamiętania wartości min i max (**linia 9**), a następnie przypisujemy do nich wartość pierwszego elementu przeszukiwanej tablicy (**linie 11 i** **12**). Kolejnym etapem jest przejrzenie wszystkich pozostałych elementów tablicy za pomocą pętli (**linia 14**). Jeżeli sprawdzany element z tablicy ma wartość mniejszą od obecnej wartości minimum (**linia 15**), to zapamiętujemy nową wartość minimum (**linia 16**). W przeciwnym wypadku sprawdzamy, czy obecny element ma wartość większą od obecnej wartości maksimum (**linia 17**), a jeżeli tak to zapamiętujemy nową wartość maksimum (**linia 18**). Na koniec, po przejściu przez wszystkie elementy tablicy, wypisujemy znalezione wartości minimum i maksimum (**linie 22 i 23**).
+Na początku tworzymy dwie zmienne do zapamiętania wartości min i max (**linia 6**), a następnie przypisujemy do nich wartość pierwszego elementu przeszukiwanej tablicy (**linie 8 i 9**). Kolejnym etapem jest przejrzenie wszystkich pozostałych elementów tablicy za pomocą pętli (**linia 11**). Jeżeli sprawdzany element z tablicy ma wartość mniejszą od obecnej wartości minimum (**linia 12**), to zapamiętujemy nową wartość minimum (**linia 13**). W przeciwnym wypadku sprawdzamy, czy obecny element ma wartość większą od obecnej wartości maksimum (**linia 14**), a jeżeli tak to zapamiętujemy nową wartość maksimum (**linia 15**). Na koniec, po przejściu przez wszystkie elementy tablicy, wypisujemy znalezione wartości minimum i maksimum (**linie 19 i 20**).
 
-W części głównej tworzymy przykładową tablicę (**linia 27**), a następnie wywołujemy funkcję `findMinMaxNaive` (**linia 29**).
+W części głównej tworzymy przykładową tablicę (**linia 24**), a następnie wywołujemy funkcję `findMinMaxNaive` (**linia 26**).
 
 ## Podejście optymalne
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-/// Find minimum and maximum value in given array using optimal divide and conquer algorithm
-/// \param array - array to search in
-/// \param length - length of given array
 void findMinMaxOptimal(int array[], int length) {
     int min, max;
     int middle = (length + 1) / 2;
@@ -116,6 +113,7 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -125,19 +123,18 @@ Jednoczesne wyszukiwanie min i max - podejście optymalne
 
 ### Opis implementacji
 
-Funkcja `findMinMaxOptimal` (**linia 8**) przyjmuje tablicę o zadanej długości i wypisuje jej elementy minimalny i maksymalny, korzystając z optymalnego algorytmu jednoczesnego znajdowania minimum i maksimum.
+Funkcja `findMinMaxOptimal` (**linia 5**) przyjmuje tablicę o zadanej długości i wypisuje jej elementy minimalny i maksymalny, korzystając z optymalnego algorytmu jednoczesnego znajdowania minimum i maksimum.
 
-Na początku funkcji definiujemy dwie tablice pomocnicze (**linia 11**): kandydatów na minimum (`minCandidates`) oraz kandydatów na maksimum (`maxCandidates`) . Każda z tych tablic ma długość równą połowie długości tablicy początkowej (zwiększonej o jeden w przypadku tablic o nieparzystej długości).
+Na początku funkcji definiujemy dwie tablice pomocnicze (**linia 8**): kandydatów na minimum (`minCandidates`) oraz kandydatów na maksimum (`maxCandidates`). Każda z tych tablic ma długość równą połowie długości tablicy początkowej (zwiększonej o jeden w przypadku tablic o nieparzystej długości).
 
-Następnie przechodzimy pętlą przez każdą sąsiadującą parę elementów z początkowej tablicy (**linia 13**). Jeżeli pierwszy z elementów jest mniejszy od swojego sąsiada (**linia 14**), to pierwszy z pary wrzucamy do tablicy kandydatów na minimum (**linia 15**), a kolejny do tablicy kandydatów na maksimum (**linia 16**). W przeciwnym wypadku postępujemy na odwrót (**linie 18** **i** **19**).
+Następnie przechodzimy pętlą przez każdą sąsiadującą parę elementów z początkowej tablicy (**linia 10**). Jeżeli pierwszy z elementów jest mniejszy od swojego sąsiada (**linia 11**), to pierwszy z pary wrzucamy do tablicy kandydatów na minimum (**linia 12**), a kolejny do tablicy kandydatów na maksimum (**linia 13**). W przeciwnym wypadku postępujemy na odwrót (**linie 15 i 16**).
 
-Jeżeli początkowa tablica jest nieparzystej długości (**linia 23**), to jej ostatni element dopisujemy do obu tablic pomocniczych: kandydatów na minimum (**linia 24**) i kandydatów na maksimum (**linia 25**) na ostatnie pozycje w tych tablicach.
+Jeżeli początkowa tablica jest nieparzystej długości (**linia 20**), to jej ostatni element dopisujemy do obu tablic pomocniczych: kandydatów na minimum (**linia 21**) i kandydatów na maksimum (**linia 22**) na ostatnie pozycje w tych tablicach.
 
-Następnie przechodzimy do poszukiwania minimum i maksimum. Na początek przyjmujemy początkowe wartości tablic pomocniczych jako obecne wartości minimum i maksimum. Minimum bierzemy z kandydatów na minimum (**linia 28**), a maksimum z kandydatów na maksimum (**linia 29**).
+Następnie przechodzimy do poszukiwania minimum i maksimum. Na początek przyjmujemy początkowe wartości tablic pomocniczych jako obecne wartości minimum i maksimum. Minimum bierzemy z kandydatów na minimum (**linia 25**), a maksimum z kandydatów na maksimum (**linia 26**).
 
-W kolejnym kroku przechodzimy pętlą przez obie tablice pomocnicze (**linia 31**). Najpierw sprawdzamy, czy znaleźliśmy element mniejszy od obecnej wartości minimum w tablicy kandydatów na minimum (**linia 32**). Jeżeli tak, to przyjmujemy nową wartość minimum (**linia 33**).\
-Podobnie postępujemy w przypadku maksimum. Jeżeli w tablicy kandydatów na maksimum znaleźliśmy element większy od obecnej wartości maksimum (**linia 36**), to przyjmujemy nową wartość maksimum (**linia 37**).
+W kolejnym kroku przechodzimy pętlą przez obie tablice pomocnicze (**linia 28**). Najpierw sprawdzamy, czy znaleźliśmy element mniejszy od obecnej wartości minimum w tablicy kandydatów na minimum (**linia 29**). Jeżeli tak, to przyjmujemy nową wartość minimum (**linia 30**). Podobnie postępujemy w przypadku maksimum. Jeżeli w tablicy kandydatów na maksimum znaleźliśmy element większy od obecnej wartości maksimum (**linia 33**), to przyjmujemy nową wartość maksimum (**linia 34**).
 
-Na końcu funkcji wypisujemy znalezione wartości minimum (**linia 41**) oraz maksimum (**linia 42**).
+Na końcu funkcji wypisujemy znalezione wartości minimum (**linia 38**) oraz maksimum (**linia 39**).
 
-W części głównej tworzymy przykładową tablicę (**linia 46**), a następnie wywołujemy funkcję `findMinMaxOptimal` (**linia 48**).
+W części głównej tworzymy przykładową tablicę (**linia 43**), a następnie wywołujemy funkcję `findMinMaxOptimal` (**linia 45**).

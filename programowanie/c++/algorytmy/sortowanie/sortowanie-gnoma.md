@@ -8,14 +8,12 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-/// Sort array of specified length in ascending order
-/// \param array - array to sort
-/// \param n - length of the given array
 void gnomeSort(int array[], int n) {
     int i = 0;
     while (i < n) {
@@ -28,9 +26,6 @@ void gnomeSort(int array[], int n) {
     }
 }
 
-/// Prints given array
-/// \param array - array to print
-/// \param n - length of the given array
 void printArray(int array[], int n) {
     for(int i = 0; i < n; ++i) {
         cout << array[i] << " ";
@@ -50,6 +45,7 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 

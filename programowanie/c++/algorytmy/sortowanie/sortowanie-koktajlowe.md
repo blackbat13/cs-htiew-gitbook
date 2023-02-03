@@ -8,14 +8,12 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-/// Sorts array in ascending order
-/// \param array - array to sort
-/// \param length - length of given array
 void cocktailShakerSort(int array[], int n) {
     for (int i = 0; i <= n / 2; i++) {
         for (int j = i; j < n - i - 1; j++) {
@@ -32,9 +30,6 @@ void cocktailShakerSort(int array[], int n) {
     }
 }
 
-/// Prints given array
-/// \param array - array to print
-/// \param n - length of the given array
 void printArray(int array[], int n) {
     for(int i = 0; i < n; ++i) {
         cout << array[i] << " ";
@@ -54,6 +49,7 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 

@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include "turtle.hpp"
 
@@ -22,15 +23,14 @@ void cantorDust(int rank, int length) {
         turtle.forward(length / 3);
         turtle.penDown();
         cantorDust(rank - 1, length / 3);
-    }
-    else {
+    } else {
         turtle.forward(length);
     }
 }
 
 
 void cantor(int rank, int length){
-    for(int i = 0; i <= rank; i++) {
+    for (int i = 0; i <= rank; i++) {
         cantorDust(i, length);
         turtle.penUp();
         turtle.backward(length);
@@ -53,11 +53,8 @@ int main() {
     return 0;
 } 
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://replit.com/@damiankurpiewski/CantorDust#main.cpp" %}
-
-### Opis implementacji
-
-TODO

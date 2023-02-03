@@ -8,15 +8,12 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-/// Computes Hamming distance between the two words of equal length
-/// \param a - first word
-/// \param b - second word
-/// \return Hamming distance between a and b
 int hammingDistance(string a, string b) {
     int distance = 0;
     
@@ -30,25 +27,20 @@ int hammingDistance(string a, string b) {
 }
 
 int main() {
-    string a, b;
-    int distance;
+    string a = "karolin";
+    string b = "kerstin";
     
-    a = "karolin";
-    b = "kerstin";
+    int distance = hammingDistance(a, b);
     
-    distance = hammingDistance(a, b);
-    
-    cout << "Hamming distance between words " << a << " and " << b << " is " << distance << endl;
+    cout << distance << endl;
+
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/OVl4FY" %}
 Odległość Hamminga
 {% endembed %}
-
-### Opis implementacji
-
-TODO

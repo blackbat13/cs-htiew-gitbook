@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 #include <random>
@@ -23,8 +24,8 @@ double monteCarloPi(int pointsCount) {
     double x, y, distance;
     
     for (int i = 0; i < pointsCount; i++) {
-        x = (double)rand() / (double)RAND_MAX * 2.0;
-        y = (double)rand() / (double)RAND_MAX * 2.0;
+        x = (double) rand() / RAND_MAX * 2.0;
+        y = (double) rand() / RAND_MAX * 2.0;
         distance = ((x - centerX) * (x - centerX)) + ((y - centerY) * (y - centerY));
         
         if (distance <= radius * radius) {
@@ -32,7 +33,7 @@ double monteCarloPi(int pointsCount) {
         }
     }
     
-    return (4.0 * numPointsInCircle) / (double)pointsCount;
+    return (4.0 * numPointsInCircle) / (double) pointsCount;
 }
 
 int main() {
@@ -47,13 +48,10 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/dVtpCL" %}
 Metoda Monte Carlo obliczania przybliżonej wartości PI
 {% endembed %}
-
-### Opis implementacji
-
-TODO

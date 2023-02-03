@@ -10,16 +10,12 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-/// Perform iterative binary search on given array
-/// \param array - array to search in, sorted ascending
-/// \param length - length of array
-/// \param number - element to find
-/// \return index of element in array, or -1 if not found
 int binarySearchIterative(int array[], int length, int number) {
     int left = 0;
     int right = length - 1;
@@ -44,9 +40,8 @@ int binarySearchIterative(int array[], int length, int number) {
 int main() {
     int array[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     int number = 8;
-    int index;
     
-    index = binarySearchIterative(array, 10, number);
+    int index = binarySearchIterative(array, 10, number);
     
     if (index == -1) {
         cout << "Number not found in array" << endl;
@@ -57,6 +52,7 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -64,25 +60,16 @@ int main() {
 Wyszukiwanie binarne - wersja iteracyjna
 {% endembed %}
 
-### Opis implementacji
-
-TODO
-
 ## Wersja rekurencyjna
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-/// Perform recursive binary search on given array
-/// \param array - array to search in, sorted ascending
-/// \param number - element to find
-/// \param left
-/// \param right
-/// \return index of element in array, or -1 if not found
 int binarySearchRecursive(int array[], int number, int left, int right) {
     int middle;
 
@@ -103,9 +90,8 @@ int binarySearchRecursive(int array[], int number, int left, int right) {
 int main() {
     int array[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     int number = 8;
-    int index;
     
-    index = binarySearchRecursive(array, number, 0, 10);
+    int index = binarySearchRecursive(array, number, 0, 10);
     
     if (index == -1) {
         cout << "Number not found in array" << endl;
@@ -116,13 +102,10 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/c250gS" %}
 Wyszukiwanie binarne - wersja rekurencyjna
 {% endembed %}
-
-### Opis implementacji
-
-TODO

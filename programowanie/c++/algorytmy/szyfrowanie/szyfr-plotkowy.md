@@ -10,15 +10,12 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-/// Encodes message using Rail Fence Cipher with given key
-/// \param message - message to encode
-/// \param key - key
-/// \return message encode using Rail Fence with given key
 string encode(string message, int key) {
     string encoded = "";
     int jump, i;
@@ -51,6 +48,7 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -58,23 +56,16 @@ int main() {
 Szyfrowanie szyfrem płotkowym
 {% endembed %}
 
-### Opis implementacji
-
-TODO
-
 ## Deszyfrowanie
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-/// Decodes message using Rail Fence Cipher with given key
-/// \param message - message to encode
-/// \param key - key
-/// \return message decoded using Rail Fence Cipher with given key
 string decode(string message, int key) {
     string decoded = message;
     int j = 0;
@@ -109,13 +100,10 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/EA5DPk" %}
 Deszyfrowanie szyfrem płotkowym
 {% endembed %}
-
-### Opis implementacji
-
-TODO

@@ -10,21 +10,18 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 #include <cmath>
 
 using namespace std;
 
-/// Counts square root of n with precision p using Heron method
-/// \param n - number to count square root of
-/// \param p - precision
-/// \return square root of n with precision p
 double squareRoot(double n, double p) {
-    double x1 = n / 2;
-    double x2 = (x1 + n / x1) / 2.0;
+    double x1 = n / 2.0;
+    double x2 = (x1 + (n / x1)) / 2.0;
     while (fabs(x2 - x1) > p) {
-        x1 = (x2 + n / x2) / 2.0;
+        x1 = (x2 + (n / x2)) / 2.0;
         swap(x1, x2);
     }
 
@@ -32,17 +29,20 @@ double squareRoot(double n, double p) {
 }
 
 int main() {
-    cout << squareRoot(2, 0.00001);
+    double n = 2.0;
+    double p = 0.00001;
+
+    double result = squareRoot(n, p);
+
+    cout << result << endl;
+    
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/I39nGk" %}
 Pierwiastek kwadratowy - metoda Herona
 {% endembed %}
-
-### Opis implementacji
-
-TODO

@@ -10,6 +10,7 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
@@ -48,6 +49,7 @@ int main() {
     return 0;   
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -55,14 +57,11 @@ int main() {
 Szyfrowanie szyfrem Vigenere'a
 {% endembed %}
 
-### Opis implementacji
-
-TODO
-
 ## Deszyfrowanie
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
@@ -101,13 +100,10 @@ int main() {
     return 0;   
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/dHSYqX" %}
 Deszyfrowanie szyfrem Vigenere'a
 {% endembed %}
-
-### Opis implementacji
-
-TODO

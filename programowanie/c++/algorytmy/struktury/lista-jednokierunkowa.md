@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
@@ -140,13 +141,10 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/4LSvUt" %}
 Lista jednokierunkowa
 {% endembed %}
-
-### Opis implementacji
-
-TODO

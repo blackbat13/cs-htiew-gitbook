@@ -10,16 +10,12 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-/// Checks if given number is present in the array
-/// \param array - array to search in
-/// \param length - length of array
-/// \param number - element to find
-/// \return true if the element is present in the array, false otherwise
 bool linearSearch(int array[], int n, int number) {
     for (int i = 0; i < n; i++) {
         if (array[i] == number) {
@@ -46,6 +42,7 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -55,24 +52,20 @@ Wyszukiwanie liniowe - istnienie elementu
 
 ### Opis implementacji
 
-Funkcja `linearSearch` (**linia 10**) zwraca jako wynik wartość prawda/fałsz i przyjmuje trzy argumenty: tablicę do przeszukania, rozmiar tablicy oraz wartość poszukiwanego elementu. Na początku funkcji przechodzimy pętlą przez wszystkie kolejne indeksy w tablicy od $$0$$ do $$n-1$$ włącznie (**linia 11**). Dla każdego indeksu sprawdzamy, czy pod tym indeksem w tablicy znajduje się poszukiwana wartość (**linia 12**). Jeżeli tak, to zwracamy informację o znalezieniu wartości w tablicy (**linia 13**). Po przejściu przez wszystkie indeksy i wyjściu z pętli (tzn. gdy nie znaleźliśmy poszukiwanego elementu) zwracamy wartość `false` informującą, że poszukiwany element nie znajduje się w tablicy (**linia 17**).
+Funkcja `linearSearch` (**linia 5**) zwraca jako wynik wartość prawda/fałsz i przyjmuje trzy argumenty: tablicę do przeszukania, rozmiar tablicy oraz wartość poszukiwanego elementu. Na początku funkcji przechodzimy pętlą przez wszystkie kolejne indeksy w tablicy od $$0$$ do $$n-1$$ włącznie (**linia 6**). Dla każdego indeksu sprawdzamy, czy pod tym indeksem w tablicy znajduje się poszukiwana wartość (**linia 7**). Jeżeli tak, to zwracamy informację o znalezieniu wartości w tablicy (**linia 8**). Po przejściu przez wszystkie indeksy i wyjściu z pętli (tzn. gdy nie znaleźliśmy poszukiwanego elementu) zwracamy wartość `false` informującą, że poszukiwany element nie znajduje się w tablicy (**linia 12**).
 
-W części głównej programu na początku przygotowujemy dane do problemu: tablicę (**linia 21**), jej rozmiar (**linia 22**), oraz wartość poszukiwanego elementu (**linia 23**). Następnie wywołujemy funkcję `linearSearch` z wcześniej przygotowanymi parametrami i jej wynik zapisujemy w nowej zmiennej `result` (**linia 25**). W zależności od wyniku (**linia 27**) wypisujemy odpowiedni komunikat (**linie 28 i 30**).
+W części głównej programu na początku przygotowujemy dane do problemu: tablicę (**linia 16**), jej rozmiar (**linia 17**), oraz wartość poszukiwanego elementu (**linia 18**). Następnie wywołujemy funkcję `linearSearch` z wcześniej przygotowanymi parametrami i jej wynik zapisujemy w nowej zmiennej `result` (**linia 20**). W zależności od wyniku (**linia 22**) wypisujemy odpowiedni komunikat (**linie 23 i 25**).
 
 ## Pozycja elementu
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-/// Perform linear search on given array
-/// \param array - array to search in
-/// \param length - length of array
-/// \param number - element to find
-/// \return index of element in array, or -1 if not found
 int linearSearch(int array[], int n, int number) {
     for (int i = 0; i < n; i++) {
         if (array[i] == number) {
@@ -99,6 +92,7 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -108,23 +102,20 @@ Wyszukiwanie liniowe - pozycja elementu
 
 ### Opis implementacji
 
-Funkcja `linearSearch` (**linia 10**) zwraca jako wynik liczbę całkowitą i przyjmuje trzy argumenty: tablicę do przeszukania, rozmiar tablicy oraz wartość poszukiwanego elementu. Na początku funkcji przechodzimy pętlą przez wszystkie kolejne indeksy w tablicy od $$0$$ do $$n-1$$ włącznie (**linia 11**). Dla każdego indeksu sprawdzamy, czy pod tym indeksem w tablicy znajduje się poszukiwana wartość (**linia 12**). Jeżeli tak, to zwracamy indeks tej wartości w tablicy (**linia 13**). Po przejściu przez wszystkie indeksy i wyjściu z pętli (tzn. gdy nie znaleźliśmy poszukiwanego elementu) zwracamy wartość $$-1$$ informującą, że poszukiwany element nie znajduje się w tablicy (**linia 17**).
+Funkcja `linearSearch` (**linia 5**) zwraca jako wynik liczbę całkowitą i przyjmuje trzy argumenty: tablicę do przeszukania, rozmiar tablicy oraz wartość poszukiwanego elementu. Na początku funkcji przechodzimy pętlą przez wszystkie kolejne indeksy w tablicy od $$0$$ do $$n-1$$ włącznie (**linia 6**). Dla każdego indeksu sprawdzamy, czy pod tym indeksem w tablicy znajduje się poszukiwana wartość (**linia 7**). Jeżeli tak, to zwracamy indeks tej wartości w tablicy (**linia 8**). Po przejściu przez wszystkie indeksy i wyjściu z pętli (tzn. gdy nie znaleźliśmy poszukiwanego elementu) zwracamy wartość $$-1$$ informującą, że poszukiwany element nie znajduje się w tablicy (**linia 12**).
 
-W części głównej programu na początku przygotowujemy dane do problemu: tablicę (**linia 21**), jej rozmiar (**linia 22**), oraz wartość poszukiwanego elementu (**linia 23**). Następnie wywołujemy funkcję `linearSearch` z wcześniej przygotowanymi parametrami i jej wynik zapisujemy w nowej zmiennej `index` (**linia 25**). W zależności od wyniku (**linia 27**) wypisujemy odpowiedni komunikat (**linie 28 i 30**).
+W części głównej programu na początku przygotowujemy dane do problemu: tablicę (**linia 16**), jej rozmiar (**linia 17**), oraz wartość poszukiwanego elementu (**linia 18**). Następnie wywołujemy funkcję `linearSearch` z wcześniej przygotowanymi parametrami i jej wynik zapisujemy w nowej zmiennej `index` (**linia 20**). W zależności od wyniku (**linia 22**) wypisujemy odpowiedni komunikat (**linie 23 i 25**).
 
 ## Wszystkie pozycje elementu
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-/// Prints all positions of the given value
-/// \param array - array to search in
-/// \param length - length of array
-/// \param number - element to find
 void linearSearch(int array[], int n, int number) {
     for (int i = 0; i < n; i++) {
         if (array[i] == number) {
@@ -144,6 +135,7 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -153,6 +145,6 @@ Wyszukiwanie liniowe - wszystkie pozycje elementu
 
 ### Opis implementacji
 
-Funkcja `linearSearch` (**linia 9**) nie zwraca wyniku i przyjmuje trzy argumenty: tablicę do przeszukania, rozmiar tablicy oraz wartość poszukiwanego elementu. Na początku funkcji przechodzimy pętlą przez wszystkie kolejne indeksy w tablicy od $$0$$ do $$n-1$$ włącznie (**linia 10**). Dla każdego indeksu sprawdzamy, czy pod tym indeksem w tablicy znajduje się poszukiwana wartość (**linia 11**). Jeżeli tak, to wypisujemy ten indeks (**linia 12**). 
+Funkcja `linearSearch` (**linia 5**) nie zwraca wyniku i przyjmuje trzy argumenty: tablicę do przeszukania, rozmiar tablicy oraz wartość poszukiwanego elementu. Na początku funkcji przechodzimy pętlą przez wszystkie kolejne indeksy w tablicy od $$0$$ do $$n-1$$ włącznie (**linia 6**). Dla każdego indeksu sprawdzamy, czy pod tym indeksem w tablicy znajduje się poszukiwana wartość (**linia 7**). Jeżeli tak, to wypisujemy ten indeks (**linia 8**). 
 
-W części głównej programu na początku przygotowujemy dane do problemu: tablicę (**linia 18**), jej rozmiar (**linia 19**), oraz wartość poszukiwanego elementu (**linia 20**). Następnie wypisujemy stosowny komunikat i wywołujemy funkcję `linearSearch` z wcześniej przygotowanymi parametrami.
+W części głównej programu na początku przygotowujemy dane do problemu: tablicę (**linia 14**), jej rozmiar (**linia 15**), oraz wartość poszukiwanego elementu (**linia 16**). Następnie wypisujemy stosowny komunikat i wywołujemy funkcję `linearSearch` z wcześniej przygotowanymi parametrami.

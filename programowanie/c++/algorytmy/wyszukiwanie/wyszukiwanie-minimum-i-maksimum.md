@@ -10,15 +10,12 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-/// Finds minimum value in array
-/// \param n - size of the array
-/// \param tab - array
-/// \return minimum value in tab
 int findMin(int n, int tab[]) {
     int min = tab[0];
     
@@ -31,10 +28,6 @@ int findMin(int n, int tab[]) {
     return min;
 }
 
-/// Finds maximum value in array
-/// \param n - size of the array
-/// \param tab - array
-/// \return maximum value in tab
 int findMax(int n, int tab[]) {
     int max = tab[0];
     
@@ -60,6 +53,7 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -67,28 +61,21 @@ int main() {
 Znajdowanie wartości min i maks
 {% endembed %}
 
-### Opis implementacji
-
-TODO
-
 ## Wyszukiwanie indeksów wartości minimum i maksimum
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-/// Finds index of the minimum value in array
-/// \param n - size of the array
-/// \param tab - array
-/// \return index of the minimum value in tab
 int findMinIndex(int n, int tab[]) {
     int minInd = 0;
     
-    for(int i = 1; i < n; i++) {
-        if(tab[i] < tab[minInd]) {
+    for (int i = 1; i < n; i++) {
+        if (tab[i] < tab[minInd]) {
             minInd = i;
         }
     }
@@ -96,15 +83,11 @@ int findMinIndex(int n, int tab[]) {
     return minInd;
 }
 
-/// Finds index of the maximum value in array
-/// \param n - size of the array
-/// \param tab - array
-/// \return index of the maximum value in tab
 int findMaxIndex(int n, int tab[]) {
     int maxInd = 0;
     
-    for(int i = 1; i < n; i++) {
-        if(tab[i] > tab[maxInd]) {
+    for (int i = 1; i < n; i++) {
+        if (tab[i] > tab[maxInd]) {
             maxInd = i;
         }
     }
@@ -125,13 +108,10 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/YHUIyv" %}
 Wyszukiwanie indeksów wartości min i maks
 {% endembed %}
-
-### Opis implementacji
-
-TODO

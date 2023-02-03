@@ -8,36 +8,41 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 #include <cmath>
 
 using namespace std;
 
-/// Computes distance of the given point from the line given by two points
-double pointLineDistance(double lineX1, double lineY1, double lineX2, double lineY2, double pointX, double pointY) {
-    double a = lineY2 - lineY1;
-    double b = lineX2 - lineX1;
-    double result = abs(a * (lineX1 - pointX) + b * (pointY - lineY1)) / sqrt(a * a + b * b);
+double pointLineDistance(double line1X, double line1Y, double line2X, double line2Y, double pointX, double pointY) {
+    double xDiff = line2X - line1X;
+    double yDiff = line2Y - line1Y;
+    
+    double result = abs(yDiff * (line1X - pointX) + xDiff * (pointY - line1Y)) / sqrt(yDiff * yDiff + xDiff * xDiff);
+
     return result;
 }
 
 int main() {
-    double distance;
-    distance = pointLineDistance(-3, -4, 7, 6, -5, -8);
+    double line1X = -3;
+    double line1Y = -4;
+    double line2X = 7;
+    double line2Y = 6;
+    double pointX = -5;
+    double pointY = -8;
+
+    double distance = pointLineDistance(line1X, line1Y, line2X, line2Y, pointX, pointY);
     
-    cout << "Distance of the point (-5, -8) from the line ((-3, -4), (7, 6)) is " << distance << endl;
+    cout << distance << endl;
     
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/0G86jv" %}
 Odległość punktu od prostej
 {% endembed %}
-
-### Opis implementacji
-
-TODO

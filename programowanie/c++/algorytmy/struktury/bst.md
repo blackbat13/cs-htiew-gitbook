@@ -12,12 +12,12 @@ description: BST
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-/// Class representing a Binary Search Tree
 class BST {
     struct node {
         int value;
@@ -35,8 +35,6 @@ public:
         return root;
     }
 
-    /// Adds new value to the tree
-    /// \param value new value to add
     void insert(int value) {
         node *new_node = new node();
         new_node->value = value;
@@ -66,8 +64,6 @@ public:
         }
     }
 
-    /// Inorder tree traversal
-    /// \param current currently visited node
     void inorder(node *current) {
         if(current == nullptr) {
             return;
@@ -78,8 +74,6 @@ public:
         inorder(current->right);
     }
 
-    /// Preorder tree traversal
-    /// \param current currently visited node
     void preorder(node *current) {
         if(current == nullptr) {
             return;
@@ -90,8 +84,6 @@ public:
         preorder(current->right);
     }
 
-    /// Postorder tree traversal
-    /// \param current currently visited node
     void postorder(node *current) {
         if(current == nullptr) {
             return;
@@ -102,8 +94,6 @@ public:
         cout << current->value << " ";
     }
 
-    /// Deletes given subtree
-    /// \param current currently visited node
     void clear(node *current) {
         if(current == nullptr) {
             return;
@@ -142,6 +132,7 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -150,8 +141,6 @@ Drzewa przeszukiwań binarnych
 {% endembed %}
 
 ### Opis implementacji
-
-TODO
 
 ![Przykładowe drzewo wykorzystane w implementacji](<../../../../.gitbook/assets/image (10).png>)
 

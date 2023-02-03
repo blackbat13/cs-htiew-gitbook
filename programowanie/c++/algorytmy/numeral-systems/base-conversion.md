@@ -8,6 +8,7 @@
 
 ## Konwersja z dziesiętnego
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
@@ -42,6 +43,7 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -51,6 +53,7 @@ Konwersja z dziesiętnego
 
 ## Konwersja na dziesiętny
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
  
@@ -60,12 +63,13 @@ int toDec(string number, int base) {
     int converted = 0;
     int power = 1;
     int i = number.length() - 1;
+    int value;
  
     while (i >= 0) {
         if (number[i] <= '9') {
             converted += (number[i] - '0') * power;
         } else {
-            int value = number[i] - 'A' + 10;
+            value = number[i] - 'A' + 10;
             converted += value * power;
         }
  
@@ -87,6 +91,7 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 

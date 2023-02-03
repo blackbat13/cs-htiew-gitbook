@@ -10,15 +10,12 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-/// Get minimal number of coins used to give out amount using greedy algorithm
-/// \param amount - amount to give out
-/// \param coins - array of available coins, sorted in descending order
-/// \return minimum number of coins from array coins used to give out amount
 int changeGreedy(int amount, int coins[]) {
     int result = 0;
     int i = 0;
@@ -33,18 +30,17 @@ int changeGreedy(int amount, int coins[]) {
 }
 
 int main() {
-    int amount, result;
+    int amount = 589;
     int coins[8] = {200, 100, 50, 20, 10, 5, 2, 1};
-    amount = 589;
     
-    result = changeGreedy(amount, coins);
+    int result = changeGreedy(amount, coins);
 
-    cout << "Algorytm zachlanny" << endl;
-    cout << "Kwota " << amount << " moze zostac wydana przy uzyciu " << result << " monet/banknotow." << endl;
+    cout << "Greedy algorithm result: " << result << endl;
 
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -52,19 +48,16 @@ int main() {
 Zachłanne wydawanie reszty
 {% endembed %}
 
-### Opis implementacji
-
-TODO
-
 ## Podejście dynamiczne
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
+
 using namespace std;
 
-/// Prints coins used in dynamic algorithm
 void printUsedCoins(int usedCoins[], int amount) {
 	while (amount > 0) {
         cout << usedCoins[amount] << " ";
@@ -74,8 +67,6 @@ void printUsedCoins(int usedCoins[], int amount) {
     cout << endl;
 }
 
-/// Get minimal number of coins used to give out amount using dynamic algorithm
-/// \param amount - amount to give out
 void changeDynamic(int amount, int numberOfCoins, int coins[]) {
     int partialResults[amount + 1];
     int usedCoins[amount + 1];
@@ -110,25 +101,20 @@ void changeDynamic(int amount, int numberOfCoins, int coins[]) {
 }
 
 int main() {
-    int amount, numberOfCoins;
+    int amount = 14;
+    int numberOfCoins 5;
     int coins[5] = {1, 2, 7, 10};
-    numberOfCoins = 5;
-    amount = 14;
 
-    cout << "Dynamic algorithm" << endl;
+    cout << "Dynamic algorithm result:" << endl;
     changeDynamic(amount, numberOfCoins, coins);
 
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/49zMho" %}
 Wydawanie reszty - podejście dynamiczne
 {% endembed %}
-
-### Opis implementacji
-
-TODO
-

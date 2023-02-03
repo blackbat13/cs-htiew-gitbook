@@ -8,27 +8,16 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-/// Find longest common subsequence of two strings
-/// \param a - first string
-/// \param b - second string
-/// \return longest common subsequence of a and b
 string longestCommonSubsequence(string a, string b) {
-    int matrix[a.length() + 1][b.length() + 1];
+    int matrix[a.length() + 1][b.length() + 1] = {};
     int value, i, j;
     string result = "";
-    
-    for (i = 0; i <= a.length(); i++) {
-        matrix[i][0] = 0;
-    }
-
-    for (i = 0; i <= b.length(); i++) {
-        matrix[0][i] = 0;
-    }
 
     for (i = 1; i <= a.length(); i++) {
         for (j = 1; j <= b.length(); j++) {
@@ -61,25 +50,20 @@ string longestCommonSubsequence(string a, string b) {
 }
 
 int main() {
-    string a, b, lcs;
+    string a = "kitten";
+    string b = "sitting";
     
-    a = "kitten";
-    b = "sitting";
+    string lcs = longestCommonSubsequence(a, b);
     
-    lcs = longestCommonSubsequence(a, b);
-    
-    cout << "Longest common subsequence of words " << a << " and " << b << " is " << lcs << endl;
+    cout << lcs << endl;
     
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/ER5KsX" %}
 Najdłuższy wspólny podciąg
 {% endembed %}
-
-### Opis implementacji
-
-TODO

@@ -12,6 +12,7 @@ description: Najkrótsze ścieżki z jednego wierzchołka
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 #include <vector>
@@ -84,6 +85,7 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 

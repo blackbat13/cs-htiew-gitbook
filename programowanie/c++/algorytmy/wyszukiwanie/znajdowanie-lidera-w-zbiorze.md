@@ -8,15 +8,12 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-/// Find majority element, if exist
-/// \param array - array to search in
-/// \param length - length of array
-/// \return majority element in given array, if there is a majority
 int findLeader(int array[], int length) {
     int currentCandidate, counter;
     counter = 0;
@@ -47,13 +44,10 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/oeuyQq" %}
 Znajdowanie lidera w zbiorze
 {% endembed %}
-
-### Opis implementacji
-
-TODO

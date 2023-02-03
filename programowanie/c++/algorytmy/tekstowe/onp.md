@@ -12,17 +12,13 @@ description: Obliczanie wartości wyrażenia ONP
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 #include <stack>
 
 using namespace std;
 
-/// Computes result of "a op b" where op is +, -, * or /
-/// \param a - first number
-/// \param b - second number
-/// \param op - operator
-/// \return result of "a op b"
 double compute(double a, double b, char op) {
     switch(op) {
         case '+':
@@ -36,9 +32,6 @@ double compute(double a, double b, char op) {
     }
 }
 
-/// Calculate the value of a given Reverse Polish Notation string
-/// \param rpn - string containing the Reverse Polish Notation, we assume that it's correct
-/// \return value of Reverse Polish Notation
 double calculateRPN(string rpn) {
     stack<double> rpnStack;
     double a, b, result;
@@ -49,6 +42,7 @@ double calculateRPN(string rpn) {
         } else {
             b = rpnStack.top();
             rpnStack.pop();
+
             a = rpnStack.top();
             rpnStack.pop();
             
@@ -61,18 +55,16 @@ double calculateRPN(string rpn) {
 }
 
 int main() {
-    string rpn;
-    double result;
+    string rpn = "27+3/13-4*+2/";
     
-    rpn = "27+3/13-4*+2/";
-    
-    result = calculateRpn(rpn);
+    double result = calculateRpn(rpn);
 
-    cout << "Value of rpn string " << rpn << " is: " << calculateRpn(rpn) << endl;
+    cout << result << endl;
 
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -82,10 +74,10 @@ Obliczanie wartości wyrażenia ONP
 
 ### Opis implementacji
 
-Funkcja `calculateRPN` (**linia 27**) oblicza wartość wyrażenia ONP podanego w formie ciągu znaków. Zakładamy, że podane wyrażenie jest poprawne, a każdy znak reprezentuje jednocyfrową liczbę lub operację. 
+Funkcja `calculateRPN` (**linia 19**) oblicza wartość wyrażenia ONP podanego w formie ciągu znaków. Zakładamy, że podane wyrażenie jest poprawne, a każdy znak reprezentuje jednocyfrową liczbę lub operację. 
 
-Na początku tworzymy stos do przechowywania wyników kolejnych obliczeń (**linia 28**), oraz pomocnicze zmienne do przechowywania bieżących wartości ze stosu oraz wyniku pośrednich operacji (**linia 29**). 
+Na początku tworzymy stos do przechowywania wyników kolejnych obliczeń (**linia 20**), oraz pomocnicze zmienne do przechowywania bieżących wartości ze stosu oraz wyniku pośrednich operacji (**linia 21**). 
 
-Następnie przechodzimy pętlą po każdym znaku wyrażenia ONP (**linia 31**). Jeżeli przetwarzany aktualnie znak jest cyfrą (**linia 32**), to dodajemy jego liczbową wartość na stos (**linia 33**). W przeciwnym przypadku mamy do czynienia z operatorem. Pobieramy więc dwie ostatnie wartości ze stosu, zarazem je z niego usuwając (**linie 35-38**). Następnie korzystamy z pomocniczej funkcji `compute` by obliczyć wynik operacji (linia 40), który następnie wrzucamy na stos (**linia 41**).
+Następnie przechodzimy pętlą po każdym znaku wyrażenia ONP (**linia 23**). Jeżeli przetwarzany aktualnie znak jest cyfrą (**linia 24**), to dodajemy jego liczbową wartość na stos (**linia 25**). W przeciwnym przypadku (**linia 26**) mamy do czynienia z operatorem. Pobieramy więc dwie ostatnie wartości ze stosu, zarazem je z niego usuwając (**linie 27-31**). Następnie korzystamy z pomocniczej funkcji `compute` by obliczyć wynik operacji (**linia 33**), który następnie wrzucamy na stos (**linia 34**).
 
-Po przetworzeniu wszystkich znaków z wyrażenia ONP na stosie powinna zostać dokładnie jedna wartość, którą zwracamy jako wynik funkcji (**linia 45**).
+Po przetworzeniu wszystkich znaków z wyrażenia ONP na stosie powinna zostać dokładnie jedna wartość, którą zwracamy jako wynik funkcji (**linia 38**).

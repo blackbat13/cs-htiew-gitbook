@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include "turtle.hpp"
 
@@ -45,11 +46,8 @@ int main() {
     return 0;
 } 
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://replit.com/@damiankurpiewski/MinkowskiCurve#main.cpp" %}
-
-### Opis implementacji
-
-TODO

@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
@@ -17,7 +18,7 @@ int longestGrowingSubstringLength(int n, int tab[]) {
     int mx = 1;
     int length = 1;
     
-    for(int i = 1; i < n; i++) {
+    for (int i = 1; i < n; i++) {
         if (tab[i] > tab[i-1]) {
             length += 1;
             if (length > mx) {
@@ -42,13 +43,10 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/aU2dQW" %}
 Długość najdłuższego spójnego podciągu rosnącego
 {% endembed %}
-
-### Opis implementacji
-
-TODO

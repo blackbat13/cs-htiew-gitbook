@@ -8,14 +8,12 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-/// Sorts the array in ascending order
-/// \param array - array to sort
-/// \param length - length of given array
 void oddEvenSort(int array[], int n) {
     for (int i = 0; i < n; i++) {
         for (int j = i % 2 + 1; j < n; j += 2) {
@@ -26,9 +24,6 @@ void oddEvenSort(int array[], int n) {
     }
 }
 
-/// Prints given array
-/// \param array - array to print
-/// \param n - length of the given array
 void printArray(int array[], int n) {
     for(int i = 0; i < 10; ++i) {
         cout << array[i] << " ";
@@ -48,6 +43,7 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 

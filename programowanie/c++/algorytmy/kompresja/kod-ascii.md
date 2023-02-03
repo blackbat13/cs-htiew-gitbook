@@ -10,21 +10,24 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
+
 using namespace std;
 
 int main() {
     char c;
     
-    for(int i = 0; i <= 127; i++) {
-        c = (char)i;
+    for (int i = 0; i <= 127; i++) {
+        c = (char) i;
         cout << i << " = " << c << endl;
     }
     
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -32,30 +35,25 @@ int main() {
 Podstawowa tablica ASCII
 {% endembed %}
 
-### Opis implementacji
-
-TODO
-
 ## Rozszerzona tablica ASCII
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
+
 using namespace std;
 
 int main() {
     unsigned char c;
     
-    for(int i = 0; i <= 255; i++) {
-        c = (unsigned char)i;
+    for (int i = 0; i <= 255; i++) {
+        c = (unsigned char) i;
         cout << i << " = " << c << endl;
     }
     
     return 0;
 }
 ```
-
-### Opis implementacji
-
-TODO
+{% endcode %}

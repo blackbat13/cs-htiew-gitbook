@@ -8,28 +8,26 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
-/// Check if given string is a palindrome
-/// \param str - string to check
-/// \return true if str is a palindrome, false otherwise
 bool isPalindrome(string str) {
-    string reversed = "";
-    for (int i = 0; i < str.length(); i++) {
-        reversed = str[i] + reversed;
-    }
+    string reversed = str;
+    reverse(reversed.begin(), reversed.end());
 
     return str == reversed;
 }
 
 int main() {
-    string str;
-    str = "kajak";
+    string str = "kajak";
 
-    if (isPalindrome(str)) {
+    bool result = isPalindrome(str);
+
+    if (result) {
         cout << str << " is a palindrome." << endl;
     } else {
         cout << str << " is not a palindrome." << endl;
@@ -38,14 +36,10 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/UUUAe6" %}
 Test palindromu
 {% endembed %}
-
-### Opis implementacji
-
-TODO
-

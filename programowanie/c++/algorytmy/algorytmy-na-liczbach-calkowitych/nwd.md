@@ -14,13 +14,12 @@ description: Największy Wspólny Dzielnik
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-/// Counts gcd(a,b) using subtraction method
-/// \return gcd(a,b)
 int gcd(int a, int b) {
     while (a != b) {
         if (a > b) {
@@ -34,17 +33,17 @@ int gcd(int a, int b) {
 }
 
 int main() {
-    int a, b, result;
+    int a = 32;
+    int b = 12;
     
-    a = 32;
-    b = 12;
-    
-    result = gcd(a, b);
+    int result = gcd(a, b);
 
     cout << "gcd(" << a << "," << b << ") = " << result << endl;
+
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -52,25 +51,20 @@ int main() {
 Obliczanie NWD za pomocą algorytmu z odejmowaniem
 {% endembed %}
 
-### Opis implementacji
-
-TODO
-
 ## Algorytm Euklidesa - wersja iteracyjna
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-/// Counts gcd(a,b) using Euklides iterative algorithm
-/// \return gcd(a,b)
 int gcd(int a, int b) {
     while(b != 0) {
         int b2 = b;
-        b = a%b;
+        b = a % b;
         a = b2;
     }
 
@@ -78,27 +72,23 @@ int gcd(int a, int b) {
 }
 
 int main() {
-    int a, b, result;
+    int a = 32;
+    int b = 12;
     
-    a = 32;
-    b = 12;
-    
-    result = gcd(a, b);
+    int result = gcd(a, b);
 
     cout << "gcd(" << a << "," << b << ") = " << result << endl;
+
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/qHVLNg" %}
 Obliczanie NWD za pomocą iteracyjnego algorytmu Euklidesa
 {% endembed %}
-
-### Opis implementacji
-
-TODO
 
 ## Algorytm Euklidesa - wersja rekurencyjna
 
@@ -109,38 +99,32 @@ TODO
 
 using namespace std;
 
-/// Counts gcd(a,b) using Euklides recursive algorithm
-/// \return gcd(a,b)
 int gcd(int a, int b) {
     if(b == 0) {
         return a;
     }
 
-    return gcd(b, a%b);
+    return gcd(b, a % b);
 }
 
 int main() {
-    int a, b, result;
+    int a = 32;
+    int b = 12;
     
-    a = 32;
-    b = 12;
-    
-    result = gcd(a, b);
+    int result = gcd(a, b);
 
     cout << "gcd(" << a << "," << b << ") = " << result << endl;
+
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/TNVI7N" %}
 Obliczanie NWD za pomocą rekurencyjnego algorytmu Euklidesa
 {% endembed %}
-
-### Opis implementacji
-
-TODO
 
 ## Operacje binarne - wersja iteracyjna
 
@@ -151,8 +135,6 @@ TODO
 
 using namespace std;
 
-/// Computes gcd(a,b) using iterative method
-/// \return gcd(a,b)
 int gcd(int a, int b) {
     int shift;
 
@@ -189,17 +171,17 @@ int gcd(int a, int b) {
 }
 
 int main() {
-    int a, b, result;
+    int a = 32;
+    int b = 12;
     
-    a = 32;
-    b = 12;
-    
-    result = gcd(a, b);
+    int result = gcd(a, b);
 
     cout << "gcd(" << a << "," << b << ") = " << result << endl;
+
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -207,21 +189,16 @@ int main() {
 Binarne NWD - wersja iteracyjna
 {% endembed %}
 
-### Opis implementacji
-
-TODO
-
 ## Operacje binarne - wersja rekurencyjna
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-/// Computes gcd(a,b) using recursive method
-/// \return gcd(a,b)
 int gcd(int a, int b) {
     if (a == b) {
         return a;
@@ -255,24 +232,19 @@ int gcd(int a, int b) {
 }
 
 int main() {
-    int a, b, result;
+    int a = 32;
+    int b = 12;
     
-    a = 32;
-    b = 12;
-    
-    result = gcd(a, b);
+    int result = gcd(a, b);
 
     cout << "gcd(" << a << "," << b << ") = " << result << endl;
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/ujhy7u" %}
 Binarne NWD - wersja rekurencyjna
 {% endembed %}
-
-### Opis implementacji
-
-TODO

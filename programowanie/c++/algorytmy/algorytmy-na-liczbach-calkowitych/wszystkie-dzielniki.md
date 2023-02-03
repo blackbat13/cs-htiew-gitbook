@@ -10,16 +10,15 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-/// Prints all divisors of n
-/// \param n - positive number
 void divisors(int n) {
-	for(int i = 1; i <= n; i++) {
-		if(n % i == 0) {
+	for (int i = 1; i <= n; i++) {
+		if (n % i == 0) {
 			cout << i << endl;
 		}
 	}
@@ -33,6 +32,7 @@ int main() {
 	return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -42,21 +42,20 @@ Wszystkie dzielniki - podejście zupełnie naiwne
 
 ### Opis implementacji
 
-Funkcja `divisors` (**linia 7**) wypisuje wszystkie dzielniki liczby podanej jako parametr. Na początku przechodzimy pętlą przez wszystkie potencjalne dzielniki od $$1$$ do $$n$$ włącznie (**linia 8**). W pętli sprawdzamy, czy reszta z dzielenia liczby $$n$$ i licznika pętli wynosi $$0$$ (**linia 9**), czyli czy n jest podzielne przez sprawdzaną wartość. Jeżeli tak jest, to znaleźliśmy dzielnik, więc go wypisujemy (**linia 10**).
+Funkcja `divisors` (**linia 5**) wypisuje wszystkie dzielniki liczby podanej jako parametr. Na początku przechodzimy pętlą przez wszystkie potencjalne dzielniki od $$1$$ do $$n$$ włącznie (**linia 6**). W pętli sprawdzamy, czy reszta z dzielenia liczby $$n$$ przez licznik pętli wynosi $$0$$ (**linia 7**), czyli czy $$n$$ jest podzielne przez sprawdzaną wartość. Jeżeli tak jest, to znaleźliśmy dzielnik, więc go wypisujemy (**linia 8**).
 
-W części głównej programu najpierw definiujemy dane wejściowe (**linia 16**), a następnie wywołujemy funkcję `divisors` (**linia 18**).
+W części głównej programu najpierw definiujemy dane wejściowe (**linia 14**), a następnie wywołujemy funkcję `divisors` (**linia 16**) i kończymy działanie programu (**linia 18**).
 
 ## Rozwiązanie naiwne
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
 using namespace std;
 
-/// Prints all divisors of n
-/// \param n - positive number
 void divisors(int n) {
 	for (int i = 1; i <= n / 2; i++) {
 		if (n % i == 0) {
@@ -77,6 +76,7 @@ int main() {
 	return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -86,22 +86,21 @@ Wszystkie dzielniki - podejście naiwne
 
 ### Opis implementacji
 
-Funkcja `divisors` (**linia 7**) wypisuje wszystkie dzielniki liczby podanej jako parametr. Na początku przechodzimy pętlą przez wszystkie potencjalne dzielniki od $$1$$ do $$\lfloor n/2\rfloor$$ włącznie (**linia 8**). W pętli sprawdzamy, czy reszta z dzielenia liczby $$n$$ i licznika pętli wynosi $$0$$ (**linia 9**), czyli czy n jest podzielne przez sprawdzaną wartość. Jeżeli tak jest, to znaleźliśmy dzielnik, więc go wypisujemy (**linia 10**). Po wyjściu z pętli musimy jeszcze sprawdzić, czy $$n$$ jest większe od $$1$$ (**linia 14**). Jeżeli tak jest, to musimy wypisać jeszcze jeden dzielnik: $$n$$ (**linia 15**).
+Funkcja `divisors` (**linia 5**) wypisuje wszystkie dzielniki liczby podanej jako parametr. Na początku przechodzimy pętlą przez wszystkie potencjalne dzielniki od $$1$$ do $$\lfloor n/2\rfloor$$ włącznie (**linia 6**). W pętli sprawdzamy, czy reszta z dzielenia liczby $$n$$ przez licznik pętli wynosi $$0$$ (**linia 7**), czyli czy $$n$$ jest podzielne przez sprawdzaną wartość. Jeżeli tak jest, to znaleźliśmy dzielnik, więc go wypisujemy (**linia 8**). Po wyjściu z pętli musimy jeszcze sprawdzić, czy $$n$$ jest większe od $$1$$ (**linia 12**). Jeżeli tak jest, to musimy wypisać jeszcze jeden dzielnik: $$n$$ (**linia 13**).
 
-W części głównej programu najpierw definiujemy dane wejściowe (**linia 20**), a następnie wywołujemy funkcję `divisors` (**linia 22**).
+W części głównej programu najpierw definiujemy dane wejściowe (**linia 18**), a następnie wywołujemy funkcję `divisors` (**linia 20**) i kończymy działanie programu (**linia 22**).
 
 ## Rozwiązanie optymalne
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 #include <cmath>
 
 using namespace std;
 
-/// Prints all divisors of n
-/// \param n - positive number
 void divisors(int n) {
 	for (int i = 1; i <= sqrt(n); i++) {
 		if (n % i == 0) {
@@ -121,6 +120,7 @@ int main() {
 	return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -130,6 +130,6 @@ Wszystkie dzielniki - podejście optymalne
 
 ### Opis implementacji
 
-Funkcja `divisors` (**linia 7**) wypisuje wszystkie dzielniki liczby podanej jako parametr. Na początku przechodzimy pętlą przez wszystkie potencjalne dzielniki od $$1$$ do $$\sqrt{n}$$ włącznie (**linia 9**). W pętli sprawdzamy, czy reszta z dzielenia liczby $$n$$ i licznika pętli wynosi $$0$$ (**linia 10**), czyli czy n jest podzielne przez sprawdzaną wartość. Jeżeli tak jest, to znaleźliśmy dzielnik, więc go wypisujemy (**linia 11**). Po znalezieniu dzielnik musimy jeszcze sprawdzić, czy drugi dzielnik z "pary" jest różny od obecnego (**linia 12**). Jeżeli tak, to go też wypisujemy (**linia 13**).
+Funkcja `divisors` (**linia 6**) wypisuje wszystkie dzielniki liczby podanej jako parametr. Na początku przechodzimy pętlą przez wszystkie potencjalne dzielniki od $$1$$ do $$\sqrt{n}$$ włącznie (**linia 7**). W pętli sprawdzamy, czy reszta z dzielenia liczby $$n$$ przez licznik pętli wynosi $$0$$ (**linia 8**), czyli czy $$n$$ jest podzielne przez sprawdzaną wartość. Jeżeli tak jest, to znaleźliśmy dzielnik, więc go wypisujemy (**linia 9**). Po znalezieniu dzielnika musimy jeszcze sprawdzić, czy drugi dzielnik z "pary" jest różny od obecnego (**linia 10**). Jeżeli tak, to go też wypisujemy (**linia 11**).
 
-W części głównej programu najpierw definiujemy dane wejściowe (**linia 20**), a następnie wywołujemy funkcję `divisors` (**linia 22**).
+W części głównej programu najpierw definiujemy dane wejściowe (**linia 18**), a następnie wywołujemy funkcję `divisors` (**linia 20**) i kończymy działanie programu (**linia 22**).

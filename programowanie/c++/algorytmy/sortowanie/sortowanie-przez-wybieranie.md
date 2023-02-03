@@ -8,14 +8,12 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
+
 using namespace std;
 
-/// Finds the minimum value in the specified range [from, to) and returns its index
-/// \param array - array to search
-/// \param from - beginning of range to search in, inclusive
-/// \param to - end of range to search in, exclusive
 int findMin(int array[], int from, int to) {
     int minValue = array[from], minIndex = from;
     for (int i = from + 1; i < to; i++) {
@@ -28,9 +26,6 @@ int findMin(int array[], int from, int to) {
     return minIndex;
 }
 
-/// Sorts array of specified length in ascending order
-/// \param array - array to sort
-/// \param n - length of the given array
 void selectionSort(int array[], int n) {
     for(int i = 0; i < n; i++) {
         int minIndex = findMin(array, i, n);
@@ -39,9 +34,6 @@ void selectionSort(int array[], int n) {
     }
 }
 
-/// Prints given array
-/// \param array - array to print
-/// \param n - length of the given array
 void printArray(int array[], int n) {
     for(int i = 0; i < n; ++i) {
         cout << array[i] << " ";
@@ -60,6 +52,7 @@ int main() {
     return 0;
 }
 ```
+{% endcode %}
 
 ### Link do implementacji
 
