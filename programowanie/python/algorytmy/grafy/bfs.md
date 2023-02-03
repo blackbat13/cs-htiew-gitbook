@@ -12,6 +12,7 @@ description: Przeszukiwanie grafu wszerz
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 from typing import List
 
@@ -48,13 +49,10 @@ visited = [False for _ in range(len(graph))]
 
 bfs(graph, visited, 0)
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/X87JSj" %}
 BFS
 {% endembed %}
-
-### Opis implementacji
-
-TODO

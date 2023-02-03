@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def bubble_sort(array: list):
 	sorted = False
@@ -27,6 +28,7 @@ bubble_sort(array)
 
 print(array)
 ```
+{% endcode %}
 
 ### Link do implementacji
 

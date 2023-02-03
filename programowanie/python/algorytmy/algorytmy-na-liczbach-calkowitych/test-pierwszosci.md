@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 import math
 
@@ -32,13 +33,10 @@ if is_prime(n):
 else:
     print(f"{n} is not a prime number")
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/PgfLBw" %}
 Test pierwszości
 {% endembed %}
-
-### Opis implementacji
-
-TODO

@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 import turtle
 
@@ -44,11 +45,8 @@ cantor(5, 729)
 turtle.hideturtle()
 turtle.done()
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://replit.com/@damiankurpiewski/Cantor-Dust#main.py" %}
-
-### Opis implementacji
-
-TODO

@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def longest_common_subsequence(a: str, b: str) -> str:
     matrix = [[0 for _ in range(len(b) + 1)] for _ in range(len(a) + 1)]
@@ -45,13 +46,10 @@ lcs = longest_common_subsequence(a, b)
     
 print(f"Longest common subsequence of words {a} and {b} is {lcs}")
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/gdvNTT" %}
 Najdłuższy wspólny podciąg
 {% endembed %}
-
-### Opis implementacji
-
-TODO

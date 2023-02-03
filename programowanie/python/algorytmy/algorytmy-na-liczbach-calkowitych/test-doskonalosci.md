@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def is_perfect(n: int) -> bool:
     sum = 0
@@ -26,13 +27,10 @@ if is_perfect(n):
 else:
     print(f'{n} is not a perfect number')
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/4EALRV" %}
 Test doskonałości
 {% endembed %}
-
-### Opis implementacji
-
-TODO

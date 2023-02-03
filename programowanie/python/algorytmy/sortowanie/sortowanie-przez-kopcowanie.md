@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def build_heap(array: [], n: int):
     for i in range(1, n):
@@ -32,6 +33,7 @@ heap_sort(array, length(array))
 
 print(array)
 ```
+{% endcode %}
 
 ### Link do implementacji
 

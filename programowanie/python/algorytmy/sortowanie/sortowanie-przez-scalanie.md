@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def merge(array: list, left: int, right: int, division: int):
     merged_length = right - left
@@ -45,13 +46,10 @@ merge_sort(array, 0, len(array))
 
 print(array)
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/wSU0Ru" %}
 Sortowanie przez scalanie
 {% endembed %}
-
-### Opis implementacji
-
-TODO

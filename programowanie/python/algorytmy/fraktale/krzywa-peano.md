@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 import turtle
 
@@ -35,11 +36,8 @@ peano_curve(4, 90, 20)
 
 turtle.done()
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://replit.com/@damiankurpiewski/Peano-Curve#main.py" %}
-
-### Opis implementacji
-
-TODO

@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def gnome_sort(array: list, n: int):
     i = 0
@@ -26,6 +27,7 @@ gnome_sort(array, n)
     
 print(array)
 ```
+{% endcode %}
 
 ### Link do implementacji
 

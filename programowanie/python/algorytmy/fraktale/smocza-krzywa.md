@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 import turtle
 
@@ -35,11 +36,8 @@ dragon_curve(10, 1, 5)
 
 turtle.done()
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://replit.com/@damiankurpiewski/Dragon-Curve#main.py" %}
-
-### Opis implementacji
-
-TODO

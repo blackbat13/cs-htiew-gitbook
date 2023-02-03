@@ -10,6 +10,7 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def is_letter(letter: str) -> bool:
     return ord('a') <= ord(letter) <= ord('z')
@@ -43,6 +44,7 @@ encoded = encode(message)
 
 print(f"Encoded: {encoded}")
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -50,14 +52,11 @@ print(f"Encoded: {encoded}")
 Szyfrowanie szyfrem Thithemius'a
 {% endembed %}
 
-### Opis implementacji
-
-TODO
-
 ## Deszyfrowanie
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def is_letter(letter: str) -> bool:
     return ord('a') <= ord(letter) <= ord('z')
@@ -91,13 +90,10 @@ decoded = decode(message)
 
 print(f"Decoded: {decoded}")
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/PzZXD9" %}
 Deszyfrowanie szyfrem Trithemius'a
 {% endembed %}
-
-### Opis implementacji
-
-TODO

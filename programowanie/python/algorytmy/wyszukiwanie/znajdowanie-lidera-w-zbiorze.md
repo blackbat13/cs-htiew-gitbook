@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def count_occurrences(element: int, array: list) -> int:
     count = 0
@@ -45,13 +46,10 @@ majority = find_majority(array)
 
 print(majority)
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/9kFDlI" %}
 Znajdowanie lidera w zbiorze
 {% endembed %}
-
-### Opis implementacji
-
-TODO

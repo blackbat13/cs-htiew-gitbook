@@ -10,6 +10,7 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def sum_of_two(n : int, tab : list, k : int):
     for i in range(n):
@@ -27,6 +28,7 @@ k = 18
 
 sum_of_two(n, tab, k)
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -34,14 +36,11 @@ sum_of_two(n, tab, k)
 Suma dwóch - rozwiązanie naiwne
 {% endembed %}
 
-### Opis implementacji
-
-TODO
-
 ## Rozwiązanie optymalne
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def sum_of_two(n : int, tab : list, k : int):
     left = 0
@@ -65,13 +64,10 @@ k = 18
 
 sum_of_two(n, tab, k)
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/qarXHf" %}
 Suma dwóch - rozwiązanie optymalne
 {% endembed %}
-
-### Opis implementacji
-
-TODO

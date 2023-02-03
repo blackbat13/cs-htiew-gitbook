@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def are_anagrams(a: str, b: str) -> bool:
     return sorted(a) == sorted(b)
@@ -21,13 +22,10 @@ if are_anagrams(a, b):
 else:
     print(f"{a} i {b} nie są anagramami")
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/EZQcCD" %}
 Test anagramów
 {% endembed %}
-
-### Opis implementacji
-
-TODO

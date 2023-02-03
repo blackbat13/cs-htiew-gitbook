@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 class Stack:
     def __init__(self):
@@ -57,3 +58,4 @@ if __name__ == "__main__":
         print(stack.top())
         stack.pop()
 ```
+{% endcode %}

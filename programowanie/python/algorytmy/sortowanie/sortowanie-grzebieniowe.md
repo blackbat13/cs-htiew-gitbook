@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def comb_sort(array: list, n: int):
     gap = n
@@ -35,6 +36,7 @@ comb_sort(array, n)
     
 print(array)
 ```
+{% endcode %}
 
 ### Link do implementacji
 

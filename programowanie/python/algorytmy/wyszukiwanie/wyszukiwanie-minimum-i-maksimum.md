@@ -10,6 +10,7 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def find_min(n: int, tab: list) -> int:
     min_val = tab[0]
@@ -40,6 +41,7 @@ max_val = find_max(n, tab)
 print("Min:", min_val)
 print("Max:", max_val)
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -47,14 +49,11 @@ print("Max:", max_val)
 Wyszukiwanie wartości minimum i maksimum
 {% endembed %}
 
-### Opis implementacji
-
-TODO
-
 ## Wyszukiwanie indeksów wartości minimum i maksimum
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def find_min_ind(n: int, tab: list) -> int:
     min_ind = 0
@@ -85,13 +84,10 @@ max_ind = find_max_ind(n, tab)
 print("Min index:", min_ind)
 print("Max index:", max_ind)
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/Yy748p" %}
 Wyszukiwanie indeksów wartości min i maks
 {% endembed %}
-
-### Opis implementacji
-
-TODO

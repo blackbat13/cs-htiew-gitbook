@@ -10,6 +10,7 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def is_letter(character: str) -> bool:
     """
@@ -46,6 +47,7 @@ message = 'computer science'
 encoded = encode(message, 3)
 print(f'Encoded: {encoded}')
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -53,14 +55,11 @@ print(f'Encoded: {encoded}')
 Szyfrowanie szyfrem Cezara
 {% endembed %}
 
-### Opis implementacji
-
-TODO
-
 ## Deszyfrowanie
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def is_letter(character: str) -> bool:
     """
@@ -97,13 +96,10 @@ message = 'frpsxwhu vflhqfh'
 decoded = decode(message, 3)
 print(f'Decoded: {decoded}')
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/BWheBr" %}
 Deszyfrowanie szyfrem Cezara
 {% endembed %}
-
-### Opis implementacji
-
-TODO

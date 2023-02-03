@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def det3(matrix) -> int:
     return matrix[0][0] * matrix[1][1] * matrix[2][2] + matrix[1][0] * matrix[2][1] * matrix[0][2] + matrix[2][0] * \
@@ -24,6 +25,7 @@ result = det3(matrix)
 
 print(result)
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -33,4 +35,6 @@ Wyznacznik macierzy 3x3
 
 ### Opis implementacji
 
-TODO
+Funkcja `det3` (**linia 1**) wylicza wyznacznik macierzy $$3\times3$$ przekazanej jako parametr funkcji. Wewnątrz funkcji mamy tylko jedną operację zwracającą wyznacznik macierzy obliczony zgodnie ze wzorem.
+
+W części głównej najpierw przygotowujemy macierz (**linia 7**), następnie obliczamy jej wyznacznik (**linia 9**) i wypisujemy go na ekranie (**linia 11**).

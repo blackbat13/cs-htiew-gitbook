@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def compute(a: float, b: float, op: str) -> float:
 	if op == "+":
@@ -41,13 +42,10 @@ rpn = "27+3/13-4*+2/"
 result = calculate_rpn(rpn)
 print(result)
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/RuReCs" %}
 Obliczanie wartości wyrażenia ONP
 {% endembed %}
-
-### Opis implementacji
-
-TODO

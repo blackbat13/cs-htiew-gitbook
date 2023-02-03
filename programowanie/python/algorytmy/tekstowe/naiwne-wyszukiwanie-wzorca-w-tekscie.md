@@ -8,6 +8,7 @@
 
 ## Znajdowanie miejsca pierwszego wystąpienia wzorca w tekście 
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def substring_pos(a: str, b: str) -> int:
     for i in range(len(a) - len(b)):
@@ -30,13 +31,10 @@ if pos == -1:
 else:
     print(f'{b} is substring of {a} and starts at position {pos}')
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/mZaOZo" %}
 Znajdowanie miejsca pierwszego wystąpienia wzorca w tekście
 {% endembed %}
-
-### Opis implementacji
-
-TODO

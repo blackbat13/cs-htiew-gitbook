@@ -12,6 +12,7 @@ description: Najkrótsze ścieżki z zadanego wierzchołka
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 import math
 from typing import List, Tuple
@@ -55,13 +56,10 @@ distances = dijkstra(graph, 0)
 
 print(distances)
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/BSdXrf" %}
 Dijkstra
 {% endembed %}
-
-### Opis implementacji
-
-TODO

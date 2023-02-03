@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def insertion_sort(array: list):
     for i in range(1, len(array)):
@@ -24,13 +25,10 @@ insertion_sort(array)
 
 print(array)
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/ublO4B" %}
 Sortowanie przez wstawianie
 {% endembed %}
-
-### Opis implementacji
-
-TODO

@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def levenshtein_distance(a: str, b: str) -> int:
     matrix = [[i + j for j in range(len(b) + 1)] for i in range(len(a) + 1)]
@@ -32,14 +33,10 @@ distance = levenshtein_distance(a, b)
 
 print(f"Odległość Levenshteina pomiędzy wyrazami {a} i {b} wynosi {distance}")
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/6oJ6Ra" %}
 Odległość Levenshteina
 {% endembed %}
-
-### Opis implementacji
-
-TODO
-

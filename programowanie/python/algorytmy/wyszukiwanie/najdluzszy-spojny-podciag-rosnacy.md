@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def longest_growing_substring_length(n: int, tab: list) -> int:
     mx = 1
@@ -30,13 +31,10 @@ n = 10
 result = longest_growing_substring_length(n, tab)
 print(result)
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/66djuO" %}
 Długość najdłuższego spójnego podciągu rosnącego
 {% endembed %}
-
-### Opis implementacji
-
-TODO

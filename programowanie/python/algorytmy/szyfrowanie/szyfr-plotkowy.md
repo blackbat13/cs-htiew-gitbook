@@ -10,6 +10,7 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def encode(message: str, key: int) -> str:
     """
@@ -41,6 +42,7 @@ encoded = encode(message, 3)
 
 print(f"Encoded: {encoded}")
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -48,14 +50,11 @@ print(f"Encoded: {encoded}")
 Szyfrowanie szyfrem płotkowym
 {% endembed %}
 
-### Opis implementacji
-
-TODO
-
 ## Deszyfrowanie
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def decode(message: str, key: int) -> str:
     """
@@ -89,13 +88,10 @@ decoded = decode(message, 3)
 
 print(f"Decoded: {decoded}")
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/b1On0g" %}
 Deszyfrowanie szyfrem płotkowym
 {% endembed %}
-
-### Opis implementacji
-
-TODO

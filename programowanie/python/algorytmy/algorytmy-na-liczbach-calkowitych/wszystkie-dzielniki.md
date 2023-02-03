@@ -10,6 +10,7 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def divisors(n: int):
 	for i in range(1, n + 1):
@@ -21,6 +22,7 @@ n = 12
  
 divisors(n)
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -28,14 +30,11 @@ divisors(n)
 Wszystkie dzielniki - podejście zupełnie naiwne
 {% endembed %}
 
-### Opis implementacji
-
-TODO
-
 ## Rozwiązanie naiwne
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def divisors(n: int):
 	for i in range(1, (n // 2) + 1):
@@ -50,6 +49,7 @@ n = 12
  
 divisors(n)
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -57,14 +57,11 @@ divisors(n)
 Wszystkie dzielniki - podejście naiwne
 {% endembed %}
 
-### Opis implementacji
-
-TODO
-
 ## Rozwiązanie optymalne
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 from math import sqrt, ceil
 
@@ -81,13 +78,10 @@ n = 12
  
 divisors(n)
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/jZpx7E" %}
 Wszystkie dzielniki - podejście optymalne
 {% endembed %}
-
-### Opis implementacji
-
-TODO

@@ -10,6 +10,7 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def binary_search_iterative(array: list, number: int) -> int:
     left = 0
@@ -38,6 +39,7 @@ index = binary_search_iterative(array, number)
 
 print(index)
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -45,14 +47,11 @@ print(index)
 Wyszukiwanie binarne - wersja iteracyjna
 {% endembed %}
 
-### Opis implementacji
-
-TODO
-
 ## Wersja rekurencyjna
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def binary_search_recursive(array: list, number: int, left: int, right: int) -> int:
     if left < right:
@@ -77,13 +76,10 @@ index = binary_search_recursive(array, number, 0, len(array))
 
 print(index)
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/eYCLlP" %}
 Wyszukiwanie binarne - wersja rekurencyjna
 {% endembed %}
-
-### Opis implementacji
-
-TODO

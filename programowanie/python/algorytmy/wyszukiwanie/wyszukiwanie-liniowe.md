@@ -10,6 +10,7 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def linear_search(array: list, number: int) -> bool:
     for el in array:
@@ -29,6 +30,7 @@ if result:
 else:
     print("Poszukiwanej wartości nie ma w liście")
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -44,6 +46,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: list
 
 ## Pozycja elementu
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def linear_search(array: list, number: int) -> int:
     for i in range(len(array)):
@@ -63,6 +66,7 @@ if index == -1:
 else:
     print("Poszukiwana wartość znajduje się pod indeksem", index)
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -80,6 +84,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: list
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def linear_search(array: list, number: int):
     for i in range(len(array)):
@@ -93,6 +98,7 @@ number = 8
 print("Poszukiwana wartość znajduje się pod następującymi indeksami:")
 linear_search(array, number)
 ```
+{% endcode %}
 
 ### Link do implementacji
 

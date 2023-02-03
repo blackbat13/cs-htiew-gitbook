@@ -12,6 +12,7 @@ description: Najkrótsze ścieżki pomiędzy wszystkimi wierzchołkami
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 import math
 from typing import List
@@ -44,13 +45,10 @@ floyd_warshall(graph)
 
 pprint(graph)
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/G2g8p8" %}
 Floyd-Warshall
 {% endembed %}
-
-### Opis implementacji
-
-TODO

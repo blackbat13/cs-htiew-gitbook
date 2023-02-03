@@ -10,10 +10,12 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 for i in range(128):
     print(chr(i))
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -29,10 +31,12 @@ Podstawowa tablica ASCII zawiera 128 znaków numerowanych od zera. Przechodzimy 
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 for i in range(256):
     print(chr(i))
 ```
+{% endcode %}
 
 ### Link do implementacji
 

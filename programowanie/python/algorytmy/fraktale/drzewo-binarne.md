@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 import turtle
 
@@ -36,6 +37,7 @@ binary_tree(5, 400)
 
 turtle.done()
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -49,4 +51,4 @@ Funkcja `binary_tree` (**linia 4**) przyjmuje dwa argumenty: stopień drzewa i p
 
 Na koniec, po ewentualnym narysowaniu rozgałęzień, cofamy żółwia o zadaną długość (**linia 14**), tym samym wracając do ustawienia z początku wywołania funkcji.
 
-TODO
+W kodzie głównym ustawiamy żółwia tak, aby rysowane drzewo mieściło się na ekranie (**linie 17-22**). Następnie rysujemy drzewo binarne za pomocą naszej funkcji `binary_tree` (**linia 24**), a na koniec kończymy działanie żółwia (**linia 26**).

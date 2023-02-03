@@ -14,6 +14,7 @@ description: Największy Wspólny Dzielnik
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def gcd(a: int, b: int) -> int:
     while a != b:
@@ -32,6 +33,7 @@ result = gcd(a, b)
 
 print(f"GCD({a}, {b}) = {result}")
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -39,14 +41,11 @@ print(f"GCD({a}, {b}) = {result}")
 NWD z odejmowaniem
 {% endembed %}
 
-### Opis implementacji
-
-TODO
-
 ## Algorytm Euklidesa - wersja iteracyjna
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def gcd(a: int, b: int) -> int:
     while b != 0:
@@ -64,6 +63,7 @@ result = gcd(a, b)
 
 print(f"GCD({a},{b}) = {result}")
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -71,14 +71,11 @@ print(f"GCD({a},{b}) = {result}")
 Algorytm Euklidesa - wersja iteracyjna
 {% endembed %}
 
-### Opis implementacji
-
-TODO
-
 ## Algorytm Euklidesa - wersja rekurencyjna
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def gcd(a: int, b: int) -> int:
     if b == 0:
@@ -94,13 +91,10 @@ result = gcd(a, b)
 
 print(f"GCD({a},{b}) = {result}")
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/b8Zfab" %}
 Algorytm Euklidesa - wersja rekurencyjna
 {% endembed %}
-
-### Opis implementacji
-
-TODO

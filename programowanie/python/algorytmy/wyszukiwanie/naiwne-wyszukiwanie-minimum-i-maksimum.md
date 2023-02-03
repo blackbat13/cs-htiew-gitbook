@@ -10,6 +10,7 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def find_min_max(array: list) -> (int, int):
     min = array[0]
@@ -30,6 +31,7 @@ min, max = find_min_max(array)
 
 print(f'Minimum: {min}, Maximum: {max}')
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -37,12 +39,9 @@ print(f'Minimum: {min}, Maximum: {max}')
 Jednoczesne wyszukiwanie minimum i maksimum - podejście naiwne
 {% endembed %}
 
-### Opis implementacji
-
-TODO
-
 ## Podejście optymalne
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def find_min_max(array: list) -> (int, int):
     min_candidates = []
@@ -78,13 +77,10 @@ min, max = find_min_max(array)
 
 print(f'Minimum: {min}, Maximum: {max}')
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/CtHqmV" %}
 Jednoczesne wyszukiwanie minimum i maksimum - podejście optymalne
 {% endembed %}
-
-### Opis implementacji
-
-TODO

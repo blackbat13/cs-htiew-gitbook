@@ -10,6 +10,7 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def encode(message: str, key: str) -> str:
     encoded = ""
@@ -36,6 +37,7 @@ encoded = encode(message, key)
 
 print(f"Encoded: {encoded}")
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -43,14 +45,11 @@ print(f"Encoded: {encoded}")
 Szyfrowanie szyfrem Vigenere'a
 {% endembed %}
 
-### Opis implementacji
-
-TODO
-
 ## Deszyfrowanie
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def decode(message: str, key: str) -> str:
     decoded = ""
@@ -77,13 +76,10 @@ decoded = decode(message, key)
 
 print(f"Decoded: {decoded}")
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/95wFXH" %}
 Deszyfrowanie szyfrem Vigenere'a
 {% endembed %}
-
-### Opis implementacji
-
-TODO

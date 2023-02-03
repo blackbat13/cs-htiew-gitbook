@@ -10,6 +10,7 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def find(letter, tab):
     for i in range(6):
@@ -69,6 +70,7 @@ message = "science"
 encoded = encode(key, message)
 print(encoded)
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -76,14 +78,11 @@ print(encoded)
 Szyfrowanie szyfrem Playfaira
 {% endembed %}
 
-### Opis implementacji
-
-TODO
-
 ## Deszyfrowanie
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def find(letter, tab):
     for i in range(6):
@@ -143,13 +142,10 @@ message = "ómdćjućx"
 decoded = decode(key, message)
 print(decoded)
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/wzq3j7" %}
 Deszyfrowanie szyfrem Playfaira
 {% endembed %}
-
-### Opis implementacji
-
-TODO

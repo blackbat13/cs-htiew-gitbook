@@ -12,6 +12,7 @@ description: Przeszukiwanie grafu w głąb
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 from typing import List
 
@@ -42,13 +43,10 @@ visited = [False for _ in range(len(graph))]
 
 dfs(graph, visited, 0)
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/nFGslg" %}
 DFS
 {% endembed %}
-
-### Opis implementacji
-
-TODO

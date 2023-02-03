@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def cocktail_shaker_sort(array: list, n: int):
     for i in range(n//2+1):
@@ -27,6 +28,7 @@ cocktail_shaker_sort(array, n)
     
 print(array)
 ```
+{% endcode %}
 
 ### Link do implementacji
 

@@ -10,6 +10,7 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def is_letter(character: str) -> bool:
     """
@@ -54,13 +55,10 @@ decoded = encode(encoded, key)
 print(f"Encoded: {encoded}")
 print(f"Decoded: {decoded}")
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/bbGaVQ" %}
 Szyfr Beauforta
 {% endembed %}
-
-### Opis implementacji
-
-TODO

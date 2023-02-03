@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 from pprint import pprint
 
@@ -60,6 +61,7 @@ if result:
 else:
     print("No result exists")
 ```
+{% endcode %}
 
 ### Link do implementacji
 

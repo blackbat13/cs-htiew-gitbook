@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 import turtle
 
@@ -38,13 +39,9 @@ turtle.pendown()
 sierpinski_square(3, 300)
 
 turtle.done()
-
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://replit.com/@damiankurpiewski/Sierpinski-Square#main.py" %}
-
-### Opis implementacji
-
-TODO

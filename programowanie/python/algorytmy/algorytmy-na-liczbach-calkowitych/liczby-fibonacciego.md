@@ -10,6 +10,7 @@
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def fib(n: int) -> int:
     f1 = 1
@@ -29,6 +30,7 @@ result = fib(n)
 
 print(f"fib({n}) = {result}")
 ```
+{% endcode %}
 
 ### Link do implementacji
 
@@ -36,14 +38,11 @@ print(f"fib({n}) = {result}")
 Liczby Fibonacciego - wersja iteracyjna
 {% endembed %}
 
-### Opis implementacji
-
-TODO
-
 ## Wersja rekurencyjna
 
 ### Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def fib(n: int) -> int:
     if n <= 2:
@@ -58,14 +57,10 @@ result = fib(n)
 
 print(f"fib({n}) = {result}")
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/tdrBFE" %}
 Liczby Fibonacciego - wersja rekurencyjna
 {% endembed %}
-
-### Opis implementacji
-
-TODO
-

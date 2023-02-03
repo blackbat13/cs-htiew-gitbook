@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def is_palindrome(a: str) -> bool:
     return a == a[::-1]
@@ -20,13 +21,10 @@ if is_palindrome(a):
 else:
     print(f'{a} nie jest palindromem')
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/nsapMq" %}
 Test palindromu
 {% endembed %}
-
-### Opis implementacji
-
-TODO

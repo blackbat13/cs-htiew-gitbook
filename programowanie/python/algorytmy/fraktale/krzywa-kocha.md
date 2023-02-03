@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 import turtle
 
@@ -34,11 +35,8 @@ koch_curve(3, 200)
 
 turtle.done()
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://replit.com/@damiankurpiewski/Koch-Curve#main.py" %}
-
-### Opis implementacji
-
-TODO

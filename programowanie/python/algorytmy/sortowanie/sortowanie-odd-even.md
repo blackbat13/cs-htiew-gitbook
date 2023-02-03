@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def odd_even_sort(array: list):
     for i in range(len(array)):
@@ -22,6 +23,7 @@ odd_even_sort(array)
 
 print(array)
 ```
+{% endcode %}
 
 ### Link do implementacji
 

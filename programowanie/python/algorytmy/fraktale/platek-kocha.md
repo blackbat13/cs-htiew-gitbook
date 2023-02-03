@@ -8,6 +8,7 @@
 
 ## Implementacja 
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 import turtle
 
@@ -40,11 +41,8 @@ koch_snowflake(3, 100)
 
 turtle.done()
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://replit.com/@damiankurpiewski/Koch-Snowflake#main.py" %}
-
-### Opis implementacji
-
-TODO

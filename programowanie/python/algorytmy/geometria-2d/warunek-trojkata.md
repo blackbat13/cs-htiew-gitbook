@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def can_create_triangle(a: int, b: int, c: int) -> bool:
     return a < b + c and b < a + c and c < a + b
@@ -22,13 +23,10 @@ if can_create_triangle(a, b, c):
 else:
     print(f'Z odcników od długościach {a}, {b} oraz {c} nie można zbudować trójkąta')
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/2anTf3" %}
 Warunek trójkąta
 {% endembed %}
-
-### Opis implementacji
-
-TODO

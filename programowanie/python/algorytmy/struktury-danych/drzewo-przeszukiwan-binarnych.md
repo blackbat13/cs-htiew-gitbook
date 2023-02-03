@@ -12,6 +12,7 @@ description: BST
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 class BinarySearchTree:
     def __init__(self):
@@ -84,6 +85,7 @@ if __name__ == "__main__":
 
     bst.clear()
 ```
+{% endcode %}
 
 ### Opis implementacji
 

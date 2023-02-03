@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 class DisjointUnion:
     """
@@ -73,3 +74,4 @@ if __name__ == "__main__":
     print(disjoint_union.is_in_union(0, 1))
     print(disjoint_union.is_in_union(1, 2))
 ```
+{% endcode %}

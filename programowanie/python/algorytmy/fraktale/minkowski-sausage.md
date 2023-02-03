@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 import turtle
 
@@ -40,11 +41,8 @@ minkowski_sausage(3, 100)
 
 turtle.done()
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://replit.com/@damiankurpiewski/Minkowski-Sausage#main.py" %}
-
-### Opis implementacji
-
-TODO

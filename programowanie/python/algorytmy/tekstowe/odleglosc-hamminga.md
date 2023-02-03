@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def hamming_distance(a: str, b: str) -> int:
     distance = 0
@@ -27,14 +28,10 @@ distance = hamming_distance(a, b)
     
 print(f"Odległość Hamminga pomiędzy wyrazami {a} i {b} wynosi {distance}")
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/QpQzhH" %}
 Odległość Hamminga
 {% endembed %}
-
-### Opis implementacji
-
-TODO
-

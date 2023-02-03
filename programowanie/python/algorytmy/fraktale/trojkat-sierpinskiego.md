@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 import turtle
 
@@ -36,11 +37,8 @@ sierpinski_triangle(4, 300)
 
 turtle.done()
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://replit.com/@damiankurpiewski/Sierpinski-Triangle#main.py" %}
-
-### Opis implementacji
-
-TODO

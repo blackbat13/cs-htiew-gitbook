@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def quick_sort(array: list, left: int, right: int):
     if right <= left:
@@ -42,13 +43,10 @@ quick_sort(array, 0, len(array) - 1)
 
 print(array)
 ```
+{% endcode %}
 
 ### Link do implementacji
 
 {% embed url="https://ideone.com/z29zNR" %}
 Sortowanie szybkie
 {% endembed %}
-
-### Opis implementacji
-
-TODO
