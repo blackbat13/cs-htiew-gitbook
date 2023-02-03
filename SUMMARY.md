@@ -42,7 +42,6 @@
 
 ## Algorytmy
 
-* [Spis Treści](algorytmy/spis-tresci.md)
 * [Wprowadzenie](algorytmy/wprowadzenie/README.md)
   * [Algorytmy liniowe](algorytmy/wprowadzenie/algorytmy-liniowe.md)
   * [Sposoby opisu algorytmów](algorytmy/wprowadzenie/sposoby-opisu-algorytmow.md)
