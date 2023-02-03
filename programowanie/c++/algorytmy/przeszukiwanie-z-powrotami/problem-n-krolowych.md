@@ -14,13 +14,9 @@
 
 using namespace std;
 
-bool checkNewPosition(int x, int y, int positions[]) {
-    for (int i = 0; i < x; i++) {
-        if (positions[i] == y) {
-            return false;
-        }
-            
-        if (y - positions[i] == x - i) {
+bool checkNewPosition(int row, int column, int positions[]) {
+    for (int i = 0; i < row; i++) {
+        if (positions[i] == column || column - positions[i] == row - i) {
             return false;
         }
     }
@@ -28,19 +24,19 @@ bool checkNewPosition(int x, int y, int positions[]) {
     return true;
 }
 
-bool findSolution(int n, int queenId, int positions[]) {
-    if (queenId == n) {
+bool findSolution(int n, int row, int positions[]) {
+    if (row == n) {
         return true;
     }
 
-    for (int i = 0; i < n; i++) {
-        if (!checkNewPosition(queenId, i, positions)) {
+    for (int column = 0; column < n; column++) {
+        if (!checkNewPosition(row, column, positions)) {
             continue;
         }
 
-        positions[queenId] = i;
+        positions[row] = column;
         
-        if (findSolution(n, queenId + 1, positions)) {
+        if (findSolution(n, row + 1, positions)) {
             return true;
         }
     }
@@ -49,9 +45,9 @@ bool findSolution(int n, int queenId, int positions[]) {
 }
 
 void printCheckboard(int n, int positions[]) {
-    for(int i = 0; i < n; i++) {
-        for(int j = 0; j < n; j++) {
-            if (positions[i] == j) {
+    for (int row = 0; row < n; row++) {
+        for (int column = 0; column < n; column++) {
+            if (positions[row] == column) {
                 cout << "1 ";
             } else {
                 cout << "0 ";
