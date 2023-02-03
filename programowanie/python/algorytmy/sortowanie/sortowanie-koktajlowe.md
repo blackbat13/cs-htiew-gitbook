@@ -10,21 +10,20 @@
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-def cocktail_shaker_sort(array: list, n: int):
-    for i in range(n//2+1):
-        for j in range(i, n-i-1):
+def cocktail_shaker_sort(array: list):
+    for i in range(len(array) // 2 + 1):
+        for j in range(i, len(array) - i - 1):
             if array[j] > array[j + 1]:
                 array[j], array[j + 1] = array[j + 1], array[j]
         
-        for j in range(n - 1 - i, i, -1):
+        for j in range(len(array) - 1 - i, i, -1):
             if array[j] < array[j - 1]:
                 array[j], array[j - 1] = array[j - 1], array[j]
 
 
 array = [7, 3, 0, 1, 5, 2, 5, 19, 10, 5]
-n = 10
 
-cocktail_shaker_sort(array, n)
+cocktail_shaker_sort(array)
     
 print(array)
 ```
