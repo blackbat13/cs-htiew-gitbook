@@ -130,8 +130,8 @@ $$O(\sqrt{n})$$
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/test-pierwszosci.md" %}
-[test-pierwszosci.md](../../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/test-pierwszosci.md)
+{% content-ref url="../../programowanie/c++/algorytmy/integers/prime-test.md" %}
+[prime-test.md](../../programowanie/c++/algorytmy/integers/prime-test.md)
 {% endcontent-ref %}
 
 ### Python

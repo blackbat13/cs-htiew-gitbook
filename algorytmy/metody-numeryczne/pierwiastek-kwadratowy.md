@@ -33,8 +33,8 @@ funkcja MetodaHerona(n, p)
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/metody-numeryczne/pierwiastek-kwadratowy.md" %}
-[pierwiastek-kwadratowy.md](../../programowanie/c++/algorytmy/metody-numeryczne/pierwiastek-kwadratowy.md)
+{% content-ref url="../../programowanie/c++/algorytmy/numerical-methods/square-root.md" %}
+[pierwiastek-kwadratowy.md](../../programowanie/c++/algorytmy/numerical-methods/square-root.md)
 {% endcontent-ref %}
 
 ### Python

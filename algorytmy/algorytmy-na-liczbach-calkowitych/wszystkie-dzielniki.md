@@ -123,8 +123,8 @@ $$O(\sqrt{n})$$
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/wszystkie-dzielniki.md" %}
-[wszystkie-dzielniki.md](../../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/wszystkie-dzielniki.md)
+{% content-ref url="../../programowanie/c++/algorytmy/integers/divisors.md" %}
+[wszystkie-dzielniki.md](../../programowanie/c++/algorytmy/integers/divisors.md)
 {% endcontent-ref %}
 
 ### Python

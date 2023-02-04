@@ -55,8 +55,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/rozklad-na-czynniki-pierwsze.md" %}
-[rozklad-na-czynniki-pierwsze.md](../../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/rozklad-na-czynniki-pierwsze.md)
+{% content-ref url="../../programowanie/c++/algorytmy/integers/prime-factors.md" %}
+[prime-factors.md](../../programowanie/c++/algorytmy/integers/prime-factors.md)
 {% endcontent-ref %}
 
 ### Python

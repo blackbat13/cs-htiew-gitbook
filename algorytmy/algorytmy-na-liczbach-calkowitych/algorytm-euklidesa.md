@@ -101,14 +101,14 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/nwd.md" %}
-[nwd.md](../../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/nwd.md)
+{% content-ref url="../../programowanie/c++/algorytmy/integers/gcd.md" %}
+[gcd.md](../../programowanie/c++/algorytmy/integers/gcd.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/nwd.md" %}
+[nwd.md](../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/nwd.md)
 {% endcontent-ref %}
 
 ### Blockly

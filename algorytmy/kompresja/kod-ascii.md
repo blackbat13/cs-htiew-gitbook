@@ -8,8 +8,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/kompresja/kod-ascii.md" %}
-[kod-ascii.md](../../programowanie/c++/algorytmy/kompresja/kod-ascii.md)
+{% content-ref url="../../programowanie/c++/algorytmy/coding-and-compression/ascii.md" %}
+[kod-ascii.md](../../programowanie/c++/algorytmy/coding-and-compression/ascii.md)
 {% endcontent-ref %}
 
 ### Python

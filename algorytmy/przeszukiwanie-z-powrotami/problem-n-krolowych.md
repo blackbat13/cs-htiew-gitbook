@@ -16,8 +16,8 @@
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/przeszukiwanie-z-powrotami/problem-n-krolowych.md" %}
-[problem-n-krolowych.md](../../programowanie/c++/algorytmy/przeszukiwanie-z-powrotami/problem-n-krolowych.md)
+{% content-ref url="../../programowanie/c++/algorytmy/backtracking/n-queens.md" %}
+[problem-n-krolowych.md](../../programowanie/c++/algorytmy/backtracking/n-queens.md)
 {% endcontent-ref %}
 
 ### Python

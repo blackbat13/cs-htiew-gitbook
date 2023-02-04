@@ -133,8 +133,8 @@ $$O(\sqrt{n})$$
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/test-doskonalosci.md" %}
-[test-doskonalosci.md](../../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/test-doskonalosci.md)
+{% content-ref url="../../programowanie/c++/algorytmy/integers/perfect-test.md" %}
+[perfect-test.md](../../programowanie/c++/algorytmy/integers/perfect-test.md)
 {% endcontent-ref %}
 
 ### Python

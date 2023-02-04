@@ -61,8 +61,8 @@ $$O(n\log{n})$$ — liniowo logarytmiczna
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/sito-eratostenesa.md" %}
-[sito-eratostenesa.md](../../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/sito-eratostenesa.md)
+{% content-ref url="../../programowanie/c++/algorytmy/integers/eratosthenes-sieve.md" %}
+[eratosthenes-sieve.md](../../programowanie/c++/algorytmy/integers/eratosthenes-sieve.md)
 {% endcontent-ref %}
 
 ### Python

@@ -118,8 +118,8 @@ $$O(n)$$ — liniowa
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/metody-numeryczne/schemat-hornera.md" %}
-[schemat-hornera.md](../../programowanie/c++/algorytmy/metody-numeryczne/schemat-hornera.md)
+{% content-ref url="../../programowanie/c++/algorytmy/numerical-methods/horner.md" %}
+[schemat-hornera.md](../../programowanie/c++/algorytmy/numerical-methods/horner.md)
 {% endcontent-ref %}
 
 ### Python

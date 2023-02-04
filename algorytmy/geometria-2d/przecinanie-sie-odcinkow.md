@@ -12,8 +12,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/geometria-2d/przecinanie-sie-odcinkow.md" %}
-[przecinanie-sie-odcinkow.md](../../programowanie/c++/algorytmy/geometria-2d/przecinanie-sie-odcinkow.md)
+{% content-ref url="../../programowanie/c++/algorytmy/2d-geometry/segments-crossing.md" %}
+[przecinanie-sie-odcinkow.md](../../programowanie/c++/algorytmy/2d-geometry/segments-crossing.md)
 {% endcontent-ref %}
 
 ### Python

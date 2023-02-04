@@ -62,8 +62,8 @@ funkcja MetodaTrapezow(f, a, b, n):
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/metody-numeryczne/calkowanie-numeryczne.md" %}
-[calkowanie-numeryczne.md](../../programowanie/c++/algorytmy/metody-numeryczne/calkowanie-numeryczne.md)
+{% content-ref url="../../programowanie/c++/algorytmy/numerical-methods/numerical-integration.md" %}
+[calkowanie-numeryczne.md](../../programowanie/c++/algorytmy/numerical-methods/numerical-integration.md)
 {% endcontent-ref %}
 
 ### Python

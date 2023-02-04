@@ -72,12 +72,12 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/liczby-fibbonacciego.md" %}
-[liczby-fibbonacciego.md](../../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/liczby-fibbonacciego.md)
+{% content-ref url="../../programowanie/c++/algorytmy/integers/fibonacci-numbers.md" %}
+[fibonacci-numbers.md](../../programowanie/c++/algorytmy/integers/fibonacci-numbers.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/liczby-fibonacciego.md" %}
+[liczby-fibonacciego.md](../../programowanie/python/algorytmy/algorytmy-na-liczbach-calkowitych/liczby-fibonacciego.md)
 {% endcontent-ref %}

@@ -108,8 +108,8 @@ $$O(\log{n})$$ — logarytmiczna
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/metody-numeryczne/szybkie-potegowanie.md" %}
-[szybkie-potegowanie.md](../../programowanie/c++/algorytmy/metody-numeryczne/szybkie-potegowanie.md)
+{% content-ref url="../../programowanie/c++/algorytmy/numerical-methods/fast-exp.md" %}
+[szybkie-potegowanie.md](../../programowanie/c++/algorytmy/numerical-methods/fast-exp.md)
 {% endcontent-ref %}
 
 ### Python

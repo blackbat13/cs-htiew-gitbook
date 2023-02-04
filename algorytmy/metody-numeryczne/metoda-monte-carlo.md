@@ -36,8 +36,8 @@ funkcja MonteCarloPI(n)
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/metody-numeryczne/metoda-monte-carlo.md" %}
-[metoda-monte-carlo.md](../../programowanie/c++/algorytmy/metody-numeryczne/metoda-monte-carlo.md)
+{% content-ref url="../../programowanie/c++/algorytmy/numerical-methods/monte-carlo.md" %}
+[metoda-monte-carlo.md](../../programowanie/c++/algorytmy/numerical-methods/monte-carlo.md)
 {% endcontent-ref %}
 
 ### Python

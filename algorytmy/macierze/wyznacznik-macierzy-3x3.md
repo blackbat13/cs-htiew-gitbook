@@ -12,8 +12,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/macierze/wyznacznik-macierzy-3x3.md" %}
-[wyznacznik-macierzy-3x3.md](../../programowanie/c++/algorytmy/macierze/wyznacznik-macierzy-3x3.md)
+{% content-ref url="../../programowanie/c++/algorytmy/matrix/det3.md" %}
+[wyznacznik-macierzy-3x3.md](../../programowanie/c++/algorytmy/matrix/det3.md)
 {% endcontent-ref %}
 
 ### Python

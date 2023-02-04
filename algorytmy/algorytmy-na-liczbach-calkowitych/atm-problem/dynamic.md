@@ -4,8 +4,8 @@
 
 ### C++
 
-{% content-ref url="../../../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/wydawanie-reszty.md" %}
-[wydawanie-reszty.md](../../../programowanie/c++/algorytmy/algorytmy-na-liczbach-calkowitych/wydawanie-reszty.md)
+{% content-ref url="../../../programowanie/c++/algorytmy/integers/change.md" %}
+[wydawanie-reszty.md](../../../programowanie/c++/algorytmy/integers/change.md)
 {% endcontent-ref %}
 
 ### Python

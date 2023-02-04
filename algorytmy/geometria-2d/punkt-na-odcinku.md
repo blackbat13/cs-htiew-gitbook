@@ -12,8 +12,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/geometria-2d/punkt-na-odcinku.md" %}
-[punkt-na-odcinku.md](../../programowanie/c++/algorytmy/geometria-2d/punkt-na-odcinku.md)
+{% content-ref url="../../programowanie/c++/algorytmy/2d-geometry/point-on-segment.md" %}
+[punkt-na-odcinku.md](../../programowanie/c++/algorytmy/2d-geometry/point-on-segment.md)
 {% endcontent-ref %}
 
 ### Python
