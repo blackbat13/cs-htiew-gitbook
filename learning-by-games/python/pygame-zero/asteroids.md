@@ -328,11 +328,42 @@ def update():
         add_asteroid()
 ```
 
+### Rysujemy asteroidy
+
+Teraz zajmiemy się rysowaniem asteroid na ekranie. W tym celu w części rysującej (*draw*) musimy ponownie przejść przez całą listę i narysować każdą asteroidę osobno. Wewnątrz funkcji *draw*, zaraz po wypełnieniu ekranu grafiką tła, a przed narysowaniem statku (tak żeby statek był zawsze na wierzchu), dopisujemy pętlę przechodzącą przez każdą asteroidę z listy asteroid.
+
+```python
+def draw():
+    ...
+    for asteroid in asteroids_list:
+    ...
+```
+
+Wewnątrz pętli rysujemy asteroidy wywołując metodę *draw* na zmiennej *asteroid*.
+
+```python
+def draw():
+    ...
+    for asteroid in asteroids_list:
+        asteroid.draw()
+    ...
+```
+
+Pełna funkcja rysująca pokazana jest poniżej.
+
+```python
+def draw():
+    screen.blit("bg", (0, 0))
+    for asteroid in asteroids_list:
+        asteroid.draw()
+        
+    ship.draw()
+```
+
 ### Przemieszczamy asteroidy
 
-Teraz czas na aktualizację pozycji asteroid.
-W tym celu musimy przejść przez wszystkie elementy naszej listy i dla każdego wykonać odpowiednie operacje.
-Robimy to w części aktualizującej.
+Teraz czas na aktualizację pozycji asteroid. W tym celu musimy przejść przez wszystkie elementy naszej listy i dla każdego wykonać odpowiednie operacje. Robimy to w części aktualizującej. 
+
 Ponieważ będziemy usuwać asteroidy, które wyleciały poza ekran, to w pętli musimy przejść przez **kopię** listy asteroid, którą tworzymy pisząc dwukropek w nawiasach kwadratowych po nazwie listy: `asteroids_list[:]`.
 
 Dla zachowania porządku aktualizację asteroid zapiszemy w nowej funkcji **update_asteroids**, którą utworzymy zaraz pod funkcją *update*.
@@ -383,38 +414,6 @@ def update():
     update_asteroids()
 ```
 
-### Rysujemy asteroidy
-
-Pozostało nam narysować asteroidy na ekranie. W tym celu w części rysującej (*draw*) musimy ponownie przejść przez całą listę i narysować każdą asteroidę osobno. Wewnątrz funkcji *draw*, zaraz po wypełnieniu ekranu grafiką tła, a przed narysowaniem statku (tak żeby statek był zawsze na wierzchu), dopisujemy pętlę przechodzącą przez każdą asteroidę z listy asteroid (tym razem nie musimy tworzyć kopii listy, ponieważ nie będziemy nic usuwać).
-
-```python
-def draw():
-    ...
-    for asteroid in asteroids_list:
-    ...
-```
-
-Wewnątrz pętli rysujemy asteroidy wywołując metodę *draw* na zmiennej *asteroid*.
-
-```python
-def draw():
-    ...
-    for asteroid in asteroids_list:
-        asteroid.draw()
-    ...
-```
-
-Pełna funkcja rysująca pokazana jest poniżej.
-
-```python
-def draw():
-    screen.blit("bg", (0, 0))
-    for asteroid in asteroids_list:
-        asteroid.draw()
-        
-    ship.draw()
-```
-
 ### Pełny kod
 
 ```python
@@ -456,11 +455,11 @@ def update():
     update_asteroids()  # Aktualizujemy pozycje asteroid
     
 
-def update_asteroids():
-    for asteroid in asteroids_list[:]:
-        asteroid.y += asteroid.vy
-        if asteroid.y > HEIGHT + 50:
-            asteroids_list.remove(asteroid)
+def update_asteroids():  # Pomocnicza funkcja aktualizująca pozycję asteroid
+    for asteroid in asteroids_list[:]:  # Przechodzimy przez kopię listy asteroid
+        asteroid.y += asteroid.vy  # Przemieszczamy asteroidę zgodnie z jej prędkością
+        if asteroid.y > HEIGHT + 50:  # Jeżeli asteroida wyleciała poza ekran
+            asteroids_list.remove(asteroid)  # Usuwamy ją z listy asteroid
 
 
 def add_asteroid():  # Pomocnicza funkcja dodająca nową asteroidę do gry
@@ -1658,133 +1657,133 @@ Nasza gra jest już gotowa, a jej pełen kod pokazany jest poniżej.
 ```python
 import pgzrun
 import pygame
-import random
+import random # Biblioteka do liczb losowych
 
 
-WIDTH = 600
-HEIGHT = 900
+WIDTH = 600  # Ustawiamy szerokość okna gry
+HEIGHT = 900  # Ustawiamy wysokość okna gry
 
-ship = Actor("ship")
-ship.x = WIDTH / 2
-ship.y = HEIGHT - 60
-ship.vx = 5
-ship.points = 0
-ship.lifes = 3
-ship.ammunition = 5
+ship = Actor("ship")  # Tworzymy nowego aktora reprezentującego statek
+ship.x = WIDTH / 2  # Ustawiamy pozycję poziomą statku na połowę szerokości ekranu
+ship.y = HEIGHT - 60  # Ustawiamy statek na dole ekranu, z niewielkim marginesem
+ship.vx = 5  # Zapamiętujemy prędkość poziomą statku
+ship.points = 0  # Zapamiętujemy liczbę zdobytych punktów
+ship.lifes = 3  # Zapamiętujemy liczbę dostępnych żyć
+ship.ammunition = 5  # Liczba dostępnej amunicji
 
-asteroids_list = []
-lasers_list = []
+asteroids_list = []  # Lista, w której zapisujemy wszystkie asteroidy
+lasers_list = []  # Lista, w której zapisujemy wszystkie lasery
 
 
-def draw():
-    screen.blit("bg", (0, 0))
-    for asteroid in asteroids_list:
-        asteroid.draw()
+def draw():  # Funkcja rysująca elementy gry
+    screen.blit("bg", (0, 0))  # Rysujemy tło gry
+    for asteroid in asteroids_list:  # Przechodzimy pętlą przez wszystkie asteroidy
+        asteroid.draw()  # Rysujemy asteroidę na ekranie gry
 
-    for laser in lasers_list:
-        laser.draw()
+    for laser in lasers_list:  # Przechodzimy przez wszystkie lasery na liście
+        laser.draw()  # Rysujemy laser na ekranie gry
 
-    ship.draw()
-    screen.draw.text(str(ship.points), center=(WIDTH / 2, 20), fontsize=50, color="yellow")
-    draw_lifes()
-    if ship.lifes <= 0:
-        screen.draw.text("GAME OVER", center=(WIDTH / 2, HEIGHT / 2), fontsize=90, color="yellow")
+    ship.draw()  # Rysujemy statek na ekranie
+    screen.draw.text(str(ship.points), center=(WIDTH / 2, 20), fontsize=50, color="yellow")  # Wyświetlamy liczbę zdoboytych punktów na ekranie gry
+    draw_lifes()  # Rysujemy życia na ekranie
+    if ship.lifes <= 0:  # Jeżeli skończyły nam się życia
+        screen.draw.text("GAME OVER", center=(WIDTH / 2, HEIGHT / 2), fontsize=90, color="yellow")  # Wyświetlamy napis "GAME OVER" na środku ekranu gry
     
 
-def draw_lifes():
-    for life_id in range(1, ship.lifes + 1):
-        life = Actor("life")
-        life.x = life_id * life.width
-        life.y = life.height / 2
-        life.draw()
+def draw_lifes():  # Pomocnicza funkcja rysująca życia
+    for life_id in range(1, ship.lifes + 1):  # Przechodzimy pętlą od jeden do liczby dostępnych żyć włącznie
+        life = Actor("life")  # Tworzymy aktora reprezentującego życie
+        life.x = life_id * life.width  # Ustawiamy pozycję poziomą aktora
+        life.y = life.height / 2  # Ustawiamy pozycję aktora w pionie
+        life.draw()  # Rysujemy życie na ekranie
 
 
-def update():
-    if ship.lifes <= 0:
-        return
+def update():  # Funkcja aktualizująca elementy gry
+    if ship.lifes <= 0:  # Jeżeli skończyły nam się życia
+        return  # Kończymy działanie funkcji
 
-    mouse_x, mouse_y = pygame.mouse.get_pos()
-    if mouse_x < ship.x:
-        ship.x -= ship.vx
+    mouse_x, mouse_y = pygame.mouse.get_pos()  # Odczytujemy obecną pozycję wskaźnika myszy
+    if mouse_x < ship.x:  # Jeżeli wskaźnik myszy jest z lewej strony statku
+        ship.x -= ship.vx  # Przemieszczamy statek w lewo zgodnie z jego prędkością
 
-    if mouse_x > ship.x:
-        ship.x += ship.vx
+    if mouse_x > ship.x:  # Jeżeli wskaźnik myszy jest z prawej strony statku
+        ship.x += ship.vx  # Przemieszczamy statek w prawo zgodnie z jego prędkością
 
-    if random.random() < 0.02:
-        add_asteroid()
+    if random.random() < 0.02:  # Jeżeli wylosowaliśmy odpowiednio małą liczbę
+        add_asteroid()  # Dodajemy nową asteroidę do gry
 
-    update_asteroids()
-    update_lasers()
-    update_lasers_hits()
+    update_asteroids()  # Aktualizujemy pozycje asteroid
+    update_lasers()  # Aktualizujemy pozycje laserów
+    update_lasers_hits()  # Aktualizujemy trafienia laserów w asteroidy
     
 
-def update_asteroids():
-    for asteroid in asteroids_list[:]:
-        asteroid.y += asteroid.vy
-        if asteroid.y > HEIGHT + 50:
-            asteroids_list.remove(asteroid)
-        elif asteroid.colliderect(ship):
-            ship.lifes -= 1
-            asteroids_list.remove(asteroid)
-            if ship.lifes > 0:
-                sounds.shield.play()
-            else:
-                sounds.explosion.play()
+def update_asteroids():  # Pomocnicza funkcja aktualizująca pozycję asteroid
+    for asteroid in asteroids_list[:]:  # Przechodzimy przez kopię listy asteroid
+        asteroid.y += asteroid.vy  # Przemieszczamy asteroidę zgodnie z jej prędkością
+        if asteroid.y > HEIGHT + 50:   # Jeżeli asteroida wyleciała poza ekran
+            asteroids_list.remove(asteroid)  # Usuwamy ją z listy asteroid
+        elif asteroid.colliderect(ship):  # Sprawdzamy, czy asteroida zderzyła się ze statkiem
+            ship.lifes -= 1  # Zmniejszamy liczbę pozostałych żyć
+            asteroids_list.remove(asteroid)  # Usuwamy asteroidę z gry
+            if ship.lifes > 0:  # Jeżeli pozostały jeszcze jakieś życia
+                sounds.shield.play()  # Odtwarzamy dźwięk tarczy
+            else:  # W przeciwnym przypadku, gdy życia się już skończyły
+                sounds.explosion.play()  # Odtwarzamy dźwięk wybuchu
 
 
-def update_lasers():
-    for laser in lasers_list[:]:
-        laser.y += laser.vy
-        if laser.y < -laser.height:
-            lasers_list.remove(laser)
+def update_lasers():  # Pomocnicza funkcja aktualizująca pozycje laserów
+    for laser in lasers_list[:]:  # Przechodzimy przez wszystkie lasery na liście
+        laser.y += laser.vy  # Przemieszczamy laser zgodnie z jego prędkością
+        if laser.y < -laser.height:  # Jeżeli laser wyleciał poza ekran
+            lasers_list.remove(laser)  # Usuwamy laser z gry
 
 
-def update_lasers_hits():
-    for laser in lasers_list[:]:
-        for asteroid in asteroids_list[:]:
-            if laser.colliderect(asteroid):
-                lasers_list.remove(laser)
-                asteroids_list.remove(asteroid)
-                ship.points += 1
-                break
+def update_lasers_hits():  # Pomocnicza funkcja sprawdzająca uderzenia laserów w asteroidy
+    for laser in lasers_list[:]:  # Przechodzimy przez wszystkie lasery na liście
+        for asteroid in asteroids_list[:]:  # Przechodzimy przez wszystkie asteroidy na liście
+            if laser.colliderect(asteroid):  # Sprawdzamy, czy laser trafił w asteroidę
+                lasers_list.remove(laser)  # Usuwamy laser z gry
+                asteroids_list.remove(asteroid)  # Usuwamy asteroidę z gry
+                ship.points += 1  # Zwiększamy liczbę punktów po zestrzeleniu asteroidy
+                break  # Kończymy pętlę przechodzącą po asteroidach i przechodzimy do kolejnego lasera
 
 
-def add_asteroid():
-    image_id = random.randint(1, 4)
-    asteroid = Actor("asteroid" + str(image_id))
-    asteroid.x = random.randint(20, WIDTH-20)
-    asteroid.y = -10
-    asteroid.vy = random.randint(2, 10)
-    asteroids_list.append(asteroid)
+def add_asteroid():   # Pomocnicza funkcja dodająca nową asteroidę do gry
+    image_id = random.randint(1, 4)  # Losujemy numer grafiki asteroidy
+    asteroid = Actor("asteroid" + str(image_id))  # Tworzymy nowego aktora na podstawie losowej grafiki asteroidy
+    asteroid.x = random.randint(20, WIDTH - 20)  # Ustawiamy losową pozycję poziomą asteroidy
+    asteroid.y = -10  # Ustawiamy pionową pozycję asteroidy tak, by była poza ekranem gry
+    asteroid.vy = random.randint(2, 10)  # Ustawiamy losową pozycję asteroidy
+    asteroids_list.append(asteroid)  # Dodajemy nową asteroidę do listy asteroid
 
 
-def add_laser():
-    laser = Actor("laser")
-    laser.pos = ship.pos
-    laser.vy = -8
-    lasers_list.append(laser)
+def add_laser():  # Pomocnicza funkcja dodająca nowy laser do gry
+    laser = Actor("laser")  # Tworzymy nowego aktora reprezentującego laser
+    laser.pos = ship.pos  # Ustawiamy pozycję lasera na pozycję statku
+    laser.vy = -8  # Ustawiamy prędkość lasera
+    lasers_list.append(laser)  # Dodajemy laser do listy laserów
 
 
-def on_mouse_down(pos):
-    if ship.ammunition <= 0:
-        return
+def on_mouse_down(pos):  # Funkcja odczytująca kliknięcia myszy
+    if ship.ammunition <= 0:  # Jeżeli nie mamy już amunicji
+        return  # Kończymy działanie funkcji, w ten sposób nie oddając już strzału
 
-    add_laser()
-    sounds.laser.play()
-    ship.ammunition -= 1
-    clock.schedule(regenerate_ammo, 1)
-
-
-def regenerate_ammo():
-    ship.ammunition += 1
+    add_laser()  # Dodajemy nowy laser do gry
+    sounds.laser.play()  # Odtwarzamy dźwięk oddania strzału
+    ship.ammunition -= 1  # Zmniejszamy liczbę pozostałej amunicji o jeden
+    clock.schedule(regenerate_ammo, 1)  # Ustawiamy wywołanie regeneracji amunicji po upłynięciu jednej sekundy
 
 
-pygame.mouse.set_visible(False)
+def regenerate_ammo():  # Pomocnicza funkcja regenerująca amunicję
+    ship.ammunition += 1  # Regenerujemy amunicję dodając wartość 1 do zmiennej ammunition zapisanej w statku
 
-music.play("space")
-music.set_volume(0.3)
 
-pgzrun.go()
+pygame.mouse.set_visible(False)  # Ukrywamy wskaźnik myszy
+
+music.play("space")  # Odtwarzamy muzykę w grze
+music.set_volume(0.3)  # Ustawiamy głośność muzyki
+
+pgzrun.go()  # Uruchamiamy grę
 ```
 
 Pełna implementacja dostępna jest również poniżej.
