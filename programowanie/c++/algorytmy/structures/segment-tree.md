@@ -1,4 +1,4 @@
-# Drzewa przedziałowe
+# Drzewo przedziałowe
 
 ## Opis problemu
 

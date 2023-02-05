@@ -28,8 +28,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/struktury/lista-jednokierunkowa.md" %}
-[lista-jednokierunkowa.md](../../programowanie/c++/algorytmy/struktury/lista-jednokierunkowa.md)
+{% content-ref url="../../programowanie/c++/algorytmy/structures/singly-linked-list.md" %}
+[singly-linked-list.md](../../programowanie/c++/algorytmy/structures/singly-linked-list.md)
 {% endcontent-ref %}
 
 ### Python

@@ -28,8 +28,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/struktury/stos.md" %}
-[stos.md](../../programowanie/c++/algorytmy/struktury/stos.md)
+{% content-ref url="../../programowanie/c++/algorytmy/structures/stack.md" %}
+[stack.md](../../programowanie/c++/algorytmy/structures/stack.md)
 {% endcontent-ref %}
 
 ### Python

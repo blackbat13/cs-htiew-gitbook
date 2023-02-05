@@ -28,8 +28,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/struktury/lista-dwukierunkowa.md" %}
-[lista-dwukierunkowa.md](../../programowanie/c++/algorytmy/struktury/lista-dwukierunkowa.md)
+{% content-ref url="../../programowanie/c++/algorytmy/structures/doubly-linked-list.md" %}
+[doubly-linked-list.md](../../programowanie/c++/algorytmy/structures/doubly-linked-list.md)
 {% endcontent-ref %}
 
 ### Python

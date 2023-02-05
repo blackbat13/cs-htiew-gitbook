@@ -28,8 +28,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/struktury/struktura-zbiorow-rozlacznych.md" %}
-[struktura-zbiorow-rozlacznych.md](../../programowanie/c++/algorytmy/struktury/struktura-zbiorow-rozlacznych.md)
+{% content-ref url="../../programowanie/c++/algorytmy/structures/disjoint-set-union.md" %}
+[disjoint-set-union.md](../../programowanie/c++/algorytmy/structures/disjoint-set-union.md)
 {% endcontent-ref %}
 
 ### Python

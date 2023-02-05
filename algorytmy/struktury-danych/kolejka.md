@@ -28,8 +28,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/struktury/kolejka.md" %}
-[kolejka.md](../../programowanie/c++/algorytmy/struktury/kolejka.md)
+{% content-ref url="../../programowanie/c++/algorytmy/structures/queue.md" %}
+[queue.md](../../programowanie/c++/algorytmy/structures/queue.md)
 {% endcontent-ref %}
 
 ### Python

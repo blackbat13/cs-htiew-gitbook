@@ -32,8 +32,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/struktury/bst.md" %}
-[bst.md](../../programowanie/c++/algorytmy/struktury/bst.md)
+{% content-ref url="../../programowanie/c++/algorytmy/structures/bst.md" %}
+[bst.md](../../programowanie/c++/algorytmy/structures/bst.md)
 {% endcontent-ref %}
 
 ### Python
