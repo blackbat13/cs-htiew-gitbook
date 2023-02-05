@@ -61,8 +61,8 @@ $$O(n\log{n})$$ — liniowo logarytmiczna
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/sortowanie/sortowanie-przez-kopcowanie.md" %}
-[sortowanie-przez-kopcowanie.md](../../programowanie/c++/algorytmy/sortowanie/sortowanie-przez-kopcowanie.md)
+{% content-ref url="../../programowanie/c++/algorytmy/sorting/heap-sort.md" %}
+[heap-sort.md](../../programowanie/c++/algorytmy/sorting/heap-sort.md)
 {% endcontent-ref %}
 
 ### Python

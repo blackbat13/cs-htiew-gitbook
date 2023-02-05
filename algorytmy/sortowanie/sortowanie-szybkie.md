@@ -76,8 +76,8 @@ $$O(n\log{n})$$ — liniowo logarytmiczna
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/sortowanie/sortowanie-szybkie.md" %}
-[sortowanie-szybkie.md](../../programowanie/c++/algorytmy/sortowanie/sortowanie-szybkie.md)
+{% content-ref url="../../programowanie/c++/algorytmy/sorting/quick-sort.md" %}
+[quick-sort.md](../../programowanie/c++/algorytmy/sorting/quick-sort.md)
 {% endcontent-ref %}
 
 ### Python

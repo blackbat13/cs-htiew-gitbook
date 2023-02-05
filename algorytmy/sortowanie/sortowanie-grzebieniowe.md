@@ -60,8 +60,8 @@ $$O(n^2)$$ — kwadratowa
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/sortowanie/sortowanie-grzebieniowe.md" %}
-[sortowanie-grzebieniowe.md](../../programowanie/c++/algorytmy/sortowanie/sortowanie-grzebieniowe.md)
+{% content-ref url="../../programowanie/c++/algorytmy/sorting/comb-sort.md" %}
+[comb-sort.md](../../programowanie/c++/algorytmy/sorting/comb-sort.md)
 {% endcontent-ref %}
 
 ### Python

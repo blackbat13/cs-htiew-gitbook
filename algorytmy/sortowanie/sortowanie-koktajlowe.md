@@ -53,8 +53,8 @@ $$O(n^2)$$ — kwadratowa
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/sortowanie/sortowanie-koktajlowe.md" %}
-[sortowanie-koktajlowe.md](../../programowanie/c++/algorytmy/sortowanie/sortowanie-koktajlowe.md)
+{% content-ref url="../../programowanie/c++/algorytmy/sorting/cocktail-shaker-sort.md" %}
+[cocktail-shaker-sort.md](../../programowanie/c++/algorytmy/sorting/cocktail-shaker-sort.md)
 {% endcontent-ref %}
 
 ### Python

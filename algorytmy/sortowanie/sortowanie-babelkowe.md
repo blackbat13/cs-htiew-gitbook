@@ -99,8 +99,8 @@ Najłatwiej jest policzyć złożoność na najprostszej, naiwnej wersji algoryt
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/sortowanie/sortowanie-babelkowe.md" %}
-[sortowanie-babelkowe.md](../../programowanie/c++/algorytmy/sortowanie/sortowanie-babelkowe.md)
+{% content-ref url="../../programowanie/c++/algorytmy/sorting/bubble-sort.md" %}
+[bubble-sort.md](../../programowanie/c++/algorytmy/sorting/bubble-sort.md)
 {% endcontent-ref %}
 
 ### Python

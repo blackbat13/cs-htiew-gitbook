@@ -59,8 +59,8 @@ Mamy tutaj do czynienia z dwoma liniowymi przejściami. Najpierw przechodzimy ra
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/sortowanie/sortowanie-przez-zliczanie.md" %}
-[sortowanie-przez-zliczanie.md](../../programowanie/c++/algorytmy/sortowanie/sortowanie-przez-zliczanie.md)
+{% content-ref url="../../programowanie/c++/algorytmy/sorting/counting-sort.md" %}
+[counting-sort.md](../../programowanie/c++/algorytmy/sorting/counting-sort.md)
 {% endcontent-ref %}
 
 ### Python

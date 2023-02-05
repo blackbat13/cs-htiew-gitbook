@@ -53,8 +53,8 @@ $$O(n^2)$$ — kwadratowa
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/sortowanie/sortowanie-odd-even.md" %}
-[sortowanie-odd-even.md](../../programowanie/c++/algorytmy/sortowanie/sortowanie-odd-even.md)
+{% content-ref url="../../programowanie/c++/algorytmy/sorting/odd-even-sort.md" %}
+[odd-even-sort.md](../../programowanie/c++/algorytmy/sorting/odd-even-sort.md)
 {% endcontent-ref %}
 
 ### Python

@@ -63,8 +63,8 @@ Prześledzenie złożoności algorytmu sortowania gnoma może wydawać się niet
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/sortowanie/sortowanie-gnoma.md" %}
-[sortowanie-gnoma.md](../../programowanie/c++/algorytmy/sortowanie/sortowanie-gnoma.md)
+{% content-ref url="../../programowanie/c++/algorytmy/sorting/gnome-sort.md" %}
+[gnome-sort.md](../../programowanie/c++/algorytmy/sorting/gnome-sort.md)
 {% endcontent-ref %}
 
 ### Python

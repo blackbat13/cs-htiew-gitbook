@@ -63,8 +63,8 @@ Dwie zagnieżdżone pętle. Chociaż warunkowa pętla wewnętrzna wykonuje zawsz
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/sortowanie/sortowanie-przez-wstawianie.md" %}
-[sortowanie-przez-wstawianie.md](../../programowanie/c++/algorytmy/sortowanie/sortowanie-przez-wstawianie.md)
+{% content-ref url="../../programowanie/c++/algorytmy/sorting/insertion-sort.md" %}
+[insertion-sort.md](../../programowanie/c++/algorytmy/sorting/insertion-sort.md)
 {% endcontent-ref %}
 
 ### Python

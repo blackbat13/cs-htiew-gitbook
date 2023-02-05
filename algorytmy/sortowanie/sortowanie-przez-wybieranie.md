@@ -72,8 +72,8 @@ Wyszukiwanie minimum ma złożoność liniową. Wywołujemy ten algorytm $$n-1$$
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/sortowanie/sortowanie-przez-wybieranie.md" %}
-[sortowanie-przez-wybieranie.md](../../programowanie/c++/algorytmy/sortowanie/sortowanie-przez-wybieranie.md)
+{% content-ref url="../../programowanie/c++/algorytmy/sorting/selection-sort.md" %}
+[selection-sort.md](../../programowanie/c++/algorytmy/sorting/selection-sort.md)
 {% endcontent-ref %}
 
 ### Python
