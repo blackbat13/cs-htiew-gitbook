@@ -28,8 +28,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/grafy/sortowanie-topologiczne.md" %}
-[sortowanie-topologiczne.md](../../programowanie/c++/algorytmy/grafy/sortowanie-topologiczne.md)
+{% content-ref url="../../programowanie/c++/algorytmy/graphs/topological-sort.md" %}
+[topological-sort.md](../../programowanie/c++/algorytmy/graphs/topological-sort.md)
 {% endcontent-ref %}
 
 ### Python

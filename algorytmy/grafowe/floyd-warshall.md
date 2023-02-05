@@ -32,8 +32,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/grafy/floyd-warshall.md" %}
-[floyd-warshall.md](../../programowanie/c++/algorytmy/grafy/floyd-warshall.md)
+{% content-ref url="../../programowanie/c++/algorytmy/graphs/floyd-warshall.md" %}
+[floyd-warshall.md](../../programowanie/c++/algorytmy/graphs/floyd-warshall.md)
 {% endcontent-ref %}
 
 ### Python

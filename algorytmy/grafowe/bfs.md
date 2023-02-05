@@ -28,8 +28,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/grafy/bfs.md" %}
-[bfs.md](../../programowanie/c++/algorytmy/grafy/bfs.md)
+{% content-ref url="../../programowanie/c++/algorytmy/graphs/bfs.md" %}
+[bfs.md](../../programowanie/c++/algorytmy/graphs/bfs.md)
 {% endcontent-ref %}
 
 ### Python

@@ -30,8 +30,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/grafy/dfs.md" %}
-[dfs.md](../../programowanie/c++/algorytmy/grafy/dfs.md)
+{% content-ref url="../../programowanie/c++/algorytmy/graphs/dfs.md" %}
+[dfs.md](../../programowanie/c++/algorytmy/graphs/dfs.md)
 {% endcontent-ref %}
 
 ### Python

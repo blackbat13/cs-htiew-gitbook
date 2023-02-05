@@ -32,8 +32,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/grafy/dijkstra.md" %}
-[dijkstra.md](../../programowanie/c++/algorytmy/grafy/dijkstra.md)
+{% content-ref url="../../programowanie/c++/algorytmy/graphs/dijkstra.md" %}
+[dijkstra.md](../../programowanie/c++/algorytmy/graphs/dijkstra.md)
 {% endcontent-ref %}
 
 ### Python

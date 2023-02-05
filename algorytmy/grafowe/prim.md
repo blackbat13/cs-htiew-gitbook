@@ -28,8 +28,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/grafy/prim.md" %}
-[prim.md](../../programowanie/c++/algorytmy/grafy/prim.md)
+{% content-ref url="../../programowanie/c++/algorytmy/graphs/prim.md" %}
+[prim.md](../../programowanie/c++/algorytmy/graphs/prim.md)
 {% endcontent-ref %}
 
 ### Python

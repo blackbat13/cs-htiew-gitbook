@@ -28,8 +28,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/grafy/polaczone-komponenty.md" %}
-[polaczone-komponenty.md](../../programowanie/c++/algorytmy/grafy/polaczone-komponenty.md)
+{% content-ref url="../../programowanie/c++/algorytmy/graphs/connected-components.md" %}
+[connected-components.md](../../programowanie/c++/algorytmy/graphs/connected-components.md)
 {% endcontent-ref %}
 
 ### Python

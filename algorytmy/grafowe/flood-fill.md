@@ -43,8 +43,8 @@ funkcja FloodFill(x, y):
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/grafy/flood-fill.md" %}
-[flood-fill.md](../../programowanie/c++/algorytmy/grafy/flood-fill.md)
+{% content-ref url="../../programowanie/c++/algorytmy/graphs/flood-fill.md" %}
+[flood-fill.md](../../programowanie/c++/algorytmy/graphs/flood-fill.md)
 {% endcontent-ref %}
 
 ### Python
