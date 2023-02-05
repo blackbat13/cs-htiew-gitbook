@@ -16,8 +16,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/szyfrowanie/szyfr-beauforta.md" %}
-[szyfr-beauforta.md](../../programowanie/c++/algorytmy/szyfrowanie/szyfr-beauforta.md)
+{% content-ref url="../../programowanie/c++/algorytmy/cryptography/beaufort.md" %}
+[beaufort.md](../../programowanie/c++/algorytmy/cryptography/beaufort.md)
 {% endcontent-ref %}
 
 ### Python

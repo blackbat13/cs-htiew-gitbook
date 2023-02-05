@@ -40,8 +40,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/szyfrowanie/szyfr-cezara.md" %}
-[szyfr-cezara.md](../../programowanie/c++/algorytmy/szyfrowanie/szyfr-cezara.md)
+{% content-ref url="../../programowanie/c++/algorytmy/cryptography/caesar.md" %}
+[caesar.md](../../programowanie/c++/algorytmy/cryptography/caesar.md)
 {% endcontent-ref %}
 
 ### Python

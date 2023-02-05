@@ -16,8 +16,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/szyfrowanie/szyfr-vigenerea.md" %}
-[szyfr-vigenerea.md](../../programowanie/c++/algorytmy/szyfrowanie/szyfr-vigenerea.md)
+{% content-ref url="../../programowanie/c++/algorytmy/cryptography/vigenere.md" %}
+[vigenere.md](../../programowanie/c++/algorytmy/cryptography/vigenere.md)
 {% endcontent-ref %}
 
 ### Python

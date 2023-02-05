@@ -16,8 +16,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/szyfrowanie/szyfr-trithemiusa.md" %}
-[szyfr-trithemiusa.md](../../programowanie/c++/algorytmy/szyfrowanie/szyfr-trithemiusa.md)
+{% content-ref url="../../programowanie/c++/algorytmy/cryptography/trithemius.md" %}
+[trithemius.md](../../programowanie/c++/algorytmy/cryptography/trithemius.md)
 {% endcontent-ref %}
 
 ### Python

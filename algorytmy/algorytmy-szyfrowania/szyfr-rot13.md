@@ -16,8 +16,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/szyfrowanie/szyfr-rot13.md" %}
-[szyfr-rot13.md](../../programowanie/c++/algorytmy/szyfrowanie/szyfr-rot13.md)
+{% content-ref url="../../programowanie/c++/algorytmy/cryptography/rot13.md" %}
+[rot13.md](../../programowanie/c++/algorytmy/cryptography/rot13.md)
 {% endcontent-ref %}
 
 ### Python

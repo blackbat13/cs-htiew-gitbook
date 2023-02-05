@@ -16,8 +16,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/szyfrowanie/szyfr-playfaira.md" %}
-[szyfr-playfaira.md](../../programowanie/c++/algorytmy/szyfrowanie/szyfr-playfaira.md)
+{% content-ref url="../../programowanie/c++/algorytmy/cryptography/playfair.md" %}
+[playfair.md](../../programowanie/c++/algorytmy/cryptography/playfair.md)
 {% endcontent-ref %}
 
 ### Python
