@@ -12,8 +12,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/fraktale/smocza-krzywa.md" %}
-[smocza-krzywa.md](../../programowanie/c++/algorytmy/fraktale/smocza-krzywa.md)
+{% content-ref url="../../programowanie/c++/algorytmy/fractals/dragon-curve.md" %}
+[dragon-curve.md](../../programowanie/c++/algorytmy/fractals/dragon-curve.md)
 {% endcontent-ref %}
 
 ### Python

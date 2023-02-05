@@ -23,8 +23,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/fraktale/platek-kocha.md" %}
-[platek-kocha.md](../../programowanie/c++/algorytmy/fraktale/platek-kocha.md)
+{% content-ref url="../../programowanie/c++/algorytmy/fractals/koch-snowflake.md" %}
+[koch-snowflake.md](../../programowanie/c++/algorytmy/fractals/koch-snowflake.md)
 {% endcontent-ref %}
 
 ### Python

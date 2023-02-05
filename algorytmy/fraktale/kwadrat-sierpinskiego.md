@@ -12,8 +12,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/fraktale/kwadrat-sierpinskiego.md" %}
-[kwadrat-sierpinskiego.md](../../programowanie/c++/algorytmy/fraktale/kwadrat-sierpinskiego.md)
+{% content-ref url="../../programowanie/c++/algorytmy/fractals/sierpinski-square.md" %}
+[sierpinski-square.md](../../programowanie/c++/algorytmy/fractals/sierpinski-square.md)
 {% endcontent-ref %}
 
 ### Python

@@ -12,8 +12,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/fraktale/zbior-cantora.md" %}
-[zbior-cantora.md](../../programowanie/c++/algorytmy/fraktale/zbior-cantora.md)
+{% content-ref url="../../programowanie/c++/algorytmy/fractals/cantor-dust.md" %}
+[cantor-dust.md](../../programowanie/c++/algorytmy/fractals/cantor-dust.md)
 {% endcontent-ref %}
 
 ### Python

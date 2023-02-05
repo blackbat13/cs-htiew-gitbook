@@ -47,8 +47,8 @@ funkcja DrzewoBinarne(n, w):
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/fraktale/drzewo-binarne.md" %}
-[drzewo-binarne.md](../../programowanie/c++/algorytmy/fraktale/drzewo-binarne.md)
+{% content-ref url="../../programowanie/c++/algorytmy/fractals/binary-tree.md" %}
+[binary-tree.md](../../programowanie/c++/algorytmy/fractals/binary-tree.md)
 {% endcontent-ref %}
 
 ### Python

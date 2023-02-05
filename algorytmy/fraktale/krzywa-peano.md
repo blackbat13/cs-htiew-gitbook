@@ -12,8 +12,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/fraktale/krzywa-peano.md" %}
-[krzywa-peano.md](../../programowanie/c++/algorytmy/fraktale/krzywa-peano.md)
+{% content-ref url="../../programowanie/c++/algorytmy/fractals/peano-curve.md" %}
+[peano-curve.md](../../programowanie/c++/algorytmy/fractals/peano-curve.md)
 {% endcontent-ref %}
 
 ### Python

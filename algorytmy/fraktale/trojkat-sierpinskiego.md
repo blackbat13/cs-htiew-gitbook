@@ -39,8 +39,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/fraktale/trojkat-sierpinskiego.md" %}
-[trojkat-sierpinskiego.md](../../programowanie/c++/algorytmy/fraktale/trojkat-sierpinskiego.md)
+{% content-ref url="../../programowanie/c++/algorytmy/fractals/sierpinski-triangle.md" %}
+[sierpinski-triangle.md](../../programowanie/c++/algorytmy/fractals/sierpinski-triangle.md)
 {% endcontent-ref %}
 
 ### Python

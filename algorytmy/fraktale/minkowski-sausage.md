@@ -12,8 +12,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/fraktale/minkowski-sausage.md" %}
-[minkowski-sausage.md](../../programowanie/c++/algorytmy/fraktale/minkowski-sausage.md)
+{% content-ref url="../../programowanie/c++/algorytmy/fractals/minkowski-sausage.md" %}
+[minkowski-sausage.md](../../programowanie/c++/algorytmy/fractals/minkowski-sausage.md)
 {% endcontent-ref %}
 
 ### Python

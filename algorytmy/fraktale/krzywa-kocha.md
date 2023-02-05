@@ -23,8 +23,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/fraktale/krzywa-kocha.md" %}
-[krzywa-kocha.md](../../programowanie/c++/algorytmy/fraktale/krzywa-kocha.md)
+{% content-ref url="../../programowanie/c++/algorytmy/fractals/koch-curve.md" %}
+[koch-curve.md](../../programowanie/c++/algorytmy/fractals/koch-curve.md)
 {% endcontent-ref %}
 
 ### Python
