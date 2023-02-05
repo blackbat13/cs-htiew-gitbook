@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Informatyka: Trudne Tematy w Najprostszy Sposób](README.md)
-* [Kontakt](kontakt.md)
+* [Kontakt](contact.md)
 
 ## Tematy
 
