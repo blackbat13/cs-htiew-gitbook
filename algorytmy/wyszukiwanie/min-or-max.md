@@ -172,8 +172,8 @@ Zaprojektowanie rozwiązania zostawiamy jako samodzielne ćwiczenie dla zaintere
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/wyszukiwanie/wyszukiwanie-minimum-i-maksimum.md" %}
-[wyszukiwanie-minimum-i-maksimum.md](../../programowanie/c++/algorytmy/wyszukiwanie/wyszukiwanie-minimum-i-maksimum.md)
+{% content-ref url="../../programowanie/c++/algorytmy/searching/min-or-max.md" %}
+[min-or-max.md](../../programowanie/c++/algorytmy/searching/min-or-max.md)
 {% endcontent-ref %}
 
 ### Python

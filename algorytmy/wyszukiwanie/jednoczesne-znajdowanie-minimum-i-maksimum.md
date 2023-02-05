@@ -102,8 +102,8 @@ Najpierw dokonujemy podziału na dwie tablice pomocnicze wykonując $$\frac{n}{2
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/wyszukiwanie/jednoczesne-wyszukiwanie-minimum-i-maksimum.md" %}
-[jednoczesne-wyszukiwanie-minimum-i-maksimum.md](../../programowanie/c++/algorytmy/wyszukiwanie/jednoczesne-wyszukiwanie-minimum-i-maksimum.md)
+{% content-ref url="../../programowanie/c++/algorytmy/searching/min-max-search.md" %}
+[min-max-search.md](../../programowanie/c++/algorytmy/searching/min-max-search.md)
 {% endcontent-ref %}
 
 ### Python

@@ -106,8 +106,8 @@ $$O(\log n)$$ - logarytmiczna
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/wyszukiwanie/wyszukiwanie-binarne.md" %}
-[wyszukiwanie-binarne.md](../../programowanie/c++/algorytmy/wyszukiwanie/wyszukiwanie-binarne.md)
+{% content-ref url="../../programowanie/c++/algorytmy/searching/binary-search.md" %}
+[binary-search.md](../../programowanie/c++/algorytmy/searching/binary-search.md)
 {% endcontent-ref %}
 
 ### Python

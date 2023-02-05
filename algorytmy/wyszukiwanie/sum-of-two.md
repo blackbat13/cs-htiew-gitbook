@@ -105,8 +105,8 @@ $$O(n)$$ - liniowa
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/wyszukiwanie/suma-dwoch-liczb.md" %}
-[suma-dwoch-liczb.md](../../programowanie/c++/algorytmy/wyszukiwanie/suma-dwoch-liczb.md)
+{% content-ref url="../../programowanie/c++/algorytmy/searching/sum-of-two.md" %}
+[sum-of-two.md](../../programowanie/c++/algorytmy/searching/sum-of-two.md)
 {% endcontent-ref %}
 
 ### Python

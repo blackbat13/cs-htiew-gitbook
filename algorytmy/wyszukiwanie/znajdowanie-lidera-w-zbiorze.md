@@ -122,8 +122,8 @@ $$O(n)$$ — liniowa
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/wyszukiwanie/znajdowanie-lidera-w-zbiorze.md" %}
-[znajdowanie-lidera-w-zbiorze.md](../../programowanie/c++/algorytmy/wyszukiwanie/znajdowanie-lidera-w-zbiorze.md)
+{% content-ref url="../../programowanie/c++/algorytmy/searching/majority.md" %}
+[majority.md](../../programowanie/c++/algorytmy/searching/majority.md)
 {% endcontent-ref %}
 
 ### Python

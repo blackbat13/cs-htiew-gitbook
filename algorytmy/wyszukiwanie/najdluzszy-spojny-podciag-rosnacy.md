@@ -76,8 +76,8 @@ $$O(n)$$ - liniowa
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/wyszukiwanie/najdluzszy-spojny-podciag-rosnacy.md" %}
-[najdluzszy-spojny-podciag-rosnacy.md](../../programowanie/c++/algorytmy/wyszukiwanie/najdluzszy-spojny-podciag-rosnacy.md)
+{% content-ref url="../../programowanie/c++/algorytmy/searching/longest-growing-substring.md" %}
+[longest-growing-substring.md](../../programowanie/c++/algorytmy/searching/longest-growing-substring.md)
 {% endcontent-ref %}
 
 ### Python

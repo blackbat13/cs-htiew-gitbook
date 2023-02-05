@@ -277,8 +277,8 @@ $$O(n)$$ — liniowa
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/wyszukiwanie/wyszukiwanie-liniowe.md" %}
-[wyszukiwanie-liniowe.md](../../programowanie/c++/algorytmy/wyszukiwanie/wyszukiwanie-liniowe.md)
+{% content-ref url="../../programowanie/c++/algorytmy/searching/linear-search.md" %}
+[linear-search.md](../../programowanie/c++/algorytmy/searching/linear-search.md)
 {% endcontent-ref %}
 
 ### Python
