@@ -45,8 +45,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/tekstowe/najdluzszy-wspolny-podciag.md" %}
-[najdluzszy-wspolny-podciag.md](../../programowanie/c++/algorytmy/tekstowe/najdluzszy-wspolny-podciag.md)
+{% content-ref url="../../programowanie/c++/algorytmy/text/longest-common-subsequence.md" %}
+[longest-common-subsequence.md](../../programowanie/c++/algorytmy/text/longest-common-subsequence.md)
 {% endcontent-ref %}
 
 ### Python

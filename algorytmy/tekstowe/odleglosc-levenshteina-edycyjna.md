@@ -12,8 +12,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/tekstowe/odleglosc-levenshteina-edycyjna.md" %}
-[odleglosc-levenshteina-edycyjna.md](../../programowanie/c++/algorytmy/tekstowe/odleglosc-levenshteina-edycyjna.md)
+{% content-ref url="../../programowanie/c++/algorytmy/text/levenshtein-distance.md" %}
+[levenshtein-distance.md](../../programowanie/c++/algorytmy/text/levenshtein-distance.md)
 {% endcontent-ref %}
 
 ### Python

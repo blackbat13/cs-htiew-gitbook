@@ -48,8 +48,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/tekstowe/onp.md" %}
-[onp.md](../../programowanie/c++/algorytmy/tekstowe/onp.md)
+{% content-ref url="../../programowanie/c++/algorytmy/text/rpn.md" %}
+[rpn.md](../../programowanie/c++/algorytmy/text/rpn.md)
 {% endcontent-ref %}
 
 ### Python

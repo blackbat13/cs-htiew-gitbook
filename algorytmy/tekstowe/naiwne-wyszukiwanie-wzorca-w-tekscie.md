@@ -78,8 +78,8 @@ $$O(n*m)\to O(n^2)$$ - kwadratowa
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/tekstowe/naiwne-wyszukiwanie-wzorca-w-tekscie.md" %}
-[naiwne-wyszukiwanie-wzorca-w-tekscie.md](../../programowanie/c++/algorytmy/tekstowe/naiwne-wyszukiwanie-wzorca-w-tekscie.md)
+{% content-ref url="../../programowanie/c++/algorytmy/text/naive-substring-search.md" %}
+[naive-substring-search.md](../../programowanie/c++/algorytmy/text/naive-substring-search.md)
 {% endcontent-ref %}
 
 ### Python

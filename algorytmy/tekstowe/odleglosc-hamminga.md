@@ -12,8 +12,8 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/tekstowe/odleglosc-hamminga.md" %}
-[odleglosc-hamminga.md](../../programowanie/c++/algorytmy/tekstowe/odleglosc-hamminga.md)
+{% content-ref url="../../programowanie/c++/algorytmy/text/hamming-distance.md" %}
+[hamming-distance.md](../../programowanie/c++/algorytmy/text/hamming-distance.md)
 {% endcontent-ref %}
 
 ### Python

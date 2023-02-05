@@ -79,8 +79,8 @@ Przechodzimy pętlą od $$1$$ do połowy długości wyrazu (czyli do $$\lfloor\f
 
 ### C++
 
-{% content-ref url="../../programowanie/c++/algorytmy/tekstowe/palindrom.md" %}
-[palindrom.md](../../programowanie/c++/algorytmy/tekstowe/palindrom.md)
+{% content-ref url="../../programowanie/c++/algorytmy/text/palindrome.md" %}
+[palindrome.md](../../programowanie/c++/algorytmy/text/palindrome.md)
 {% endcontent-ref %}
 
 ### Python
