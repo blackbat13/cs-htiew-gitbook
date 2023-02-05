@@ -31,7 +31,11 @@ Dźwięki do gry Asteroidy
 Muzyka do gry Asteroidy
 {% endfile %}
 
-## Gra
+### Źródła
+
+- [https://kenney.nl/](https://kenney.nl/)
+
+## Nasz cel
 
 ![Asteroidy](../../../.gitbook/assets/asteroidsGame.gif)
 

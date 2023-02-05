@@ -26,7 +26,11 @@ Grafiki do gry Kosmos
 Dźwięki do gry Kosmos
 {% endfile %}
 
-## Gra
+### Źródła
+
+- [https://kenney.nl/](https://kenney.nl/)
+
+## Nasz cel
 
 ![Kosmos](../../../.gitbook/assets/cosmos.gif)
 
