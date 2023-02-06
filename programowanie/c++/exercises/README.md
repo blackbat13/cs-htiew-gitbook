@@ -11,5 +11,3 @@ Zadania podzielone są ze względu na tematy. Tematy ułożone są w sugerowanej
 {% hint style="danger" %}
 **Zajrzyj do przykładowego rozwiązania dopiero, jak samodzielnie wykonasz zadanie.**
 {% endhint %}
-
-****
