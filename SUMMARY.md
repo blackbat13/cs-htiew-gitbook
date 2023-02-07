@@ -908,11 +908,11 @@
 
 ## Inne tematy
 
-* [Prawa autorskie](inne-tematy/prawa-autorskie.md)
-* [Fake news i postprawda](inne-tematy/fake-news-i-postprawda.md)
-* [Typowe problemy z komputerem](inne-tematy/typowe-problemy-z-komputerem.md)
-* [Zasady tworzenia prezentacji](inne-tematy/zasady-tworzenia-prezentacji.md)
-* [Programowanie funkcyjne - wprowadzenie](inne-tematy/programowanie-funkcyjne-wprowadzenie.md)
+* [Prawa autorskie](other/copyright.md)
+* [Fake news i postprawda](other/fake-news-and-post-truth.md)
+* [Typowe problemy z komputerem](other/common-computer-problems.md)
+* [Zasady tworzenia prezentacji](other/presentation-rules.md)
+* [Programowanie funkcyjne - wprowadzenie](other/functional-programming-introduction.md)
 
 ## Matura z informatyki
 

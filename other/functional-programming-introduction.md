@@ -2,7 +2,7 @@
 
 ## Opis
 
-Krótkie wprowadzenie do programowania funkcyjnego.
+Programowanie funkcyjne to jeden z paradygmatów programowania. Poniższa prezentacja zawiera krótkie wprowadzenie do tego tematu.
 
 ### Prezentacja
 
