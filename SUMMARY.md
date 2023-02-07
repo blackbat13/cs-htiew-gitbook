@@ -819,12 +819,12 @@
     * [Gra w kolory](learning-by-games/python/pygame-zero/colors-game.md)
     * [Kolorowa piłka](learning-by-games/python/pygame-zero/colorful-ball.md)
     * [Snake](learning-by-games/python/pygame-zero/snake.md) -->
-  * [Gry sieciowe](learning-by-games/python/internet/README.md)
-    * [Echo](learning-by-games/python/internet/echo.md)
-    <!-- * [Pochatujmy!](learning-by-games/python/internet/chat.md)
-    * [Gra Nim online](learning-by-games/python/internet/nim-online.md)
-    * [HitmanZero - jeden gracz](learning-by-games/python/internet/hitmanzero-one-player.md)
-    * [HitmanZero - dwóch graczy](learning-by-games/python/internet/hitmanzero-two-players.md) -->
+  * [Gry sieciowe](learning-by-games/python/online/README.md)
+    * [Echo](learning-by-games/python/online/echo.md)
+    <!-- * [Pochatujmy!](learning-by-games/python/online/chat.md)
+    * [Gra Nim online](learning-by-games/python/online/nim-online.md)
+    * [HitmanZero - jeden gracz](learning-by-games/python/online/hitmanzero-one-player.md)
+    * [HitmanZero - dwóch graczy](learning-by-games/python/online/hitmanzero-two-players.md) -->
   * [Sztuczna inteligencja](learning-by-games/python/ai/README.md)
     * [Gra w monety z AI](learning-by-games/python/ai/game-of-coins-ai.md)
 * [Lua](learning-by-games/lua/README.md)
