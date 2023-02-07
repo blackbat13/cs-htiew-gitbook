@@ -24,6 +24,6 @@ TODO
 
 ### Blockly
 
-{% content-ref url="../../programowanie/blockly/algorytmy/fraktale-1/kwadrat-sierpinskiego.md" %}
-[kwadrat-sierpinskiego.md](../../programowanie/blockly/algorytmy/fraktale-1/kwadrat-sierpinskiego.md)
+{% content-ref url="../../programowanie/blockly/algorytmy/fractals/kwadrat-sierpinskiego.md" %}
+[kwadrat-sierpinskiego.md](../../programowanie/blockly/algorytmy/fractals/kwadrat-sierpinskiego.md)
 {% endcontent-ref %}

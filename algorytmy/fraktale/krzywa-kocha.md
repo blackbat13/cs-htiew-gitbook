@@ -35,6 +35,6 @@ TODO
 
 ### Blockly
 
-{% content-ref url="../../programowanie/blockly/algorytmy/fraktale-1/krzywa-kocha.md" %}
-[krzywa-kocha.md](../../programowanie/blockly/algorytmy/fraktale-1/krzywa-kocha.md)
+{% content-ref url="../../programowanie/blockly/algorytmy/fractals/krzywa-kocha.md" %}
+[krzywa-kocha.md](../../programowanie/blockly/algorytmy/fractals/krzywa-kocha.md)
 {% endcontent-ref %}

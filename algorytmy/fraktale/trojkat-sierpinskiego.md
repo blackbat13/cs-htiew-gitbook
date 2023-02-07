@@ -51,6 +51,6 @@ TODO
 
 ### Blockly
 
-{% content-ref url="../../programowanie/blockly/algorytmy/fraktale-1/trojkat-sierpinskiego.md" %}
-[trojkat-sierpinskiego.md](../../programowanie/blockly/algorytmy/fraktale-1/trojkat-sierpinskiego.md)
+{% content-ref url="../../programowanie/blockly/algorytmy/fractals/trojkat-sierpinskiego.md" %}
+[trojkat-sierpinskiego.md](../../programowanie/blockly/algorytmy/fractals/trojkat-sierpinskiego.md)
 {% endcontent-ref %}

@@ -24,6 +24,6 @@ TODO
 
 ### Blockly
 
-{% content-ref url="../../programowanie/blockly/algorytmy/fraktale-1/smocza-krzywa.md" %}
-[smocza-krzywa.md](../../programowanie/blockly/algorytmy/fraktale-1/smocza-krzywa.md)
+{% content-ref url="../../programowanie/blockly/algorytmy/fractals/smocza-krzywa.md" %}
+[smocza-krzywa.md](../../programowanie/blockly/algorytmy/fractals/smocza-krzywa.md)
 {% endcontent-ref %}

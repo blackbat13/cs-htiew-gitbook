@@ -24,6 +24,6 @@ TODO
 
 ### Blockly
 
-{% content-ref url="../../programowanie/blockly/algorytmy/fraktale-1/krzywa-peano.md" %}
-[krzywa-peano.md](../../programowanie/blockly/algorytmy/fraktale-1/krzywa-peano.md)
+{% content-ref url="../../programowanie/blockly/algorytmy/fractals/krzywa-peano.md" %}
+[krzywa-peano.md](../../programowanie/blockly/algorytmy/fractals/krzywa-peano.md)
 {% endcontent-ref %}

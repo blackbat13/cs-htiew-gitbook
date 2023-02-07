@@ -24,6 +24,6 @@ TODO
 
 ### Blockly
 
-{% content-ref url="../../programowanie/blockly/algorytmy/fraktale-1/zbior-cantora.md" %}
-[zbior-cantora.md](../../programowanie/blockly/algorytmy/fraktale-1/zbior-cantora.md)
+{% content-ref url="../../programowanie/blockly/algorytmy/fractals/zbior-cantora.md" %}
+[zbior-cantora.md](../../programowanie/blockly/algorytmy/fractals/zbior-cantora.md)
 {% endcontent-ref %}

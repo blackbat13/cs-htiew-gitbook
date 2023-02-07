@@ -24,6 +24,6 @@ TODO
 
 ### Blockly
 
-{% content-ref url="../../programowanie/blockly/algorytmy/fraktale-1/minkowski-sausage.md" %}
-[minkowski-sausage.md](../../programowanie/blockly/algorytmy/fraktale-1/minkowski-sausage.md)
+{% content-ref url="../../programowanie/blockly/algorytmy/fractals/minkowski-sausage.md" %}
+[minkowski-sausage.md](../../programowanie/blockly/algorytmy/fractals/minkowski-sausage.md)
 {% endcontent-ref %}

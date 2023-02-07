@@ -59,6 +59,6 @@ funkcja DrzewoBinarne(n, w):
 
 ### Blockly
 
-{% content-ref url="../../programowanie/blockly/algorytmy/fraktale-1/drzewo-binarne.md" %}
-[drzewo-binarne.md](../../programowanie/blockly/algorytmy/fraktale-1/drzewo-binarne.md)
+{% content-ref url="../../programowanie/blockly/algorytmy/fractals/drzewo-binarne.md" %}
+[drzewo-binarne.md](../../programowanie/blockly/algorytmy/fractals/drzewo-binarne.md)
 {% endcontent-ref %}

@@ -35,6 +35,6 @@ TODO
 
 ### Blockly
 
-{% content-ref url="../../programowanie/blockly/algorytmy/fraktale-1/platek-kocha.md" %}
-[platek-kocha.md](../../programowanie/blockly/algorytmy/fraktale-1/platek-kocha.md)
+{% content-ref url="../../programowanie/blockly/algorytmy/fractals/platek-kocha.md" %}
+[platek-kocha.md](../../programowanie/blockly/algorytmy/fractals/platek-kocha.md)
 {% endcontent-ref %}
