@@ -857,6 +857,18 @@
 * [Wireshark](networking/wireshark/README.md)
   * [Połączenia HTTPS](networking/wireshark/https.md)
 
+## Bazy danych
+
+* [Wstęp](databases/README.md)
+* [SQL](databases/sql/README.md)
+  * [Ćwiczenia](databases/sql/exercises/README.md)
+    * [SELECT](databases/sql/exercises/select/README.md)
+    * [WHERE](databases/sql/exercises/where/README.md)
+    * [ORDER BY](databases/sql/exercises/order-by/README.md)
+    * [JOIN](databases/sql/exercises/join/README.md)
+    * [GROUP BY](databases/sql/exercises/group-by/README.md)
+
+
 ## Linux
 
 * [Wprowadzenie do systemu Linux](linux/introduction.md)
