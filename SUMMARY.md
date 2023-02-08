@@ -406,6 +406,7 @@
     * [Listy](programowanie/python/introduction/lists.md)
     * [Funkcje](programowanie/python/introduction/functions.md)
     * [Instrukcje charakterystyczne dla języka](programowanie/python/introduction/characteristic.md)
+    * [Wydajność](programming/python//introduction/performance.md)
   * [Ćwiczenia](programowanie/python/exercises/README.md)
     * [Obsługa wejścia/wyjścia](programowanie/python/exercises/input-output/README.md)
       * [Rozwiązanie 1](programowanie/python/exercises/input-output/solution-1.md)
