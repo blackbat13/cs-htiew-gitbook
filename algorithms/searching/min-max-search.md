@@ -42,9 +42,9 @@ funckja SzukajMinMax(n, A):
     1. min := A[1]
     2. max := A[1]
     3. Od i := 2 do n, wykonuj:
-        4. Jeżeli min < A[i], to:
+        4. Jeżeli min > A[i], to:
             5. min := A[i]
-        6. Jeżeli max > A[i], to:
+        6. Jeżeli max < A[i], to:
             7. max := A[i]
     8. Zwróć min, max
 ```
@@ -85,9 +85,9 @@ funkcja SzukajMinMax(n, A):
     14. min := kandMin[1]
     15. max := kandMax[1]
     16. Od i := 2 do (n div 2), wykonuj:
-        17. Jeżeli min < kandMin[i], to:
+        17. Jeżeli min > kandMin[i], to:
             18. min := kandMin[i]
-        19. Jeżeli max > kandMax[i], to:
+        19. Jeżeli max < kandMax[i], to:
             20. max := kandMax[i]
     21. Zwróc min, max
 ```
