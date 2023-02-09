@@ -55,7 +55,7 @@
   * [Wyszukiwanie liniowe](algorithms/searching/linear-search.md)
   * [Wyszukiwanie binarne](algorithms/searching/binary-search.md)
   * [Wyszukiwanie minimum i maksimum](algorithms/searching/min-or-max.md)
-  * [Jednoczesne wyszukiwanie minimum i maksimum](algorithms/searching/jednoczesne-znajdowanie-minimum-i-maksimum.md)
+  * [Jednoczesne wyszukiwanie minimum i maksimum](algorithms/searching/min-max-search.md)
   * [Znajdowanie lidera w zbiorze](algorithms/searching/majority.md)
   * [Najdłuższy spójny podciąg rosnący](algorithms/searching/longest-growing-substring.md)
   * [Suma dwóch liczb](algorithms/searching/sum-of-two.md)
@@ -744,8 +744,10 @@
   * [Różnice w sekwencji](algorithmic-exercises/level-1/happy-jumps.md)
   * [Promocja](algorithmic-exercises/level-1/sale.md)
   * [Permutacja](algorithmic-exercises/level-1/permutation.md)
+  * [Gra w liczby](algorithmic-exercises/level-1/number-game.md)
   * [Gazeta](algorithmic-exercises/level-1/newspaper.md)
   * [Kodowanie obrazka](algorithmic-exercises/level-1/image-coding.md)
+  * [Nawiasy](algorithmic-exercises/level-1/parentheses.md)
 * [SZKOpuł](algorithmic-exercises/szkopul/README.md)
   * [10 Wspaniałych](algorithmic-exercises/szkopul/10-wspanialych/README.md)
     * [C++](algorithmic-exercises/szkopul/10-wspanialych/c++.md)
@@ -896,12 +898,6 @@
   * [Pętle](linux/perl/loops.md)
   * [Pliki](linux/perl/files.md)
   * [Fork](linux/perl/fork.md)
-
-<!-- ## E-głosowanie
-
-* [Wstęp](e-voting/README.md)
-* [Prêt à Voter](e-voting/pret-a-voter.md)
-* [ThreeBallot](e-voting/threeballot.md) -->
 
 ## Etyczne hakowanie
 
