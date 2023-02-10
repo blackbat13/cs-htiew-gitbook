@@ -43,11 +43,29 @@ Zastanówmy się teraz, ile razy takie przejście przez całą tablicę, porówn
 ### Pseudokod
 
 ```
-procedura SortowanieBabelkowe(n, A):
+procedura SortowanieBąbelkowe(n, A):
     1. Dla i := 1 do n, wykonuj:
         2. Dla j := 1 do n - 1, wykonuj:
-            3. Jeżeli A[j] > A[j+1], to:
-                4. Zamień(A[j], A[j+1])
+            3. Jeżeli A[j] > A[j + 1], to:
+                4. Zamień(A[j], A[j + 1])
+```
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+    START(["SortowanieBąbelkowe(n, A)"]) --> K0[i := 1]
+    K0 --> K1{i <= n}
+    K1 -- PRAWDA --> K2p[j := 1]
+    K2p --> K2{j <= n - 1}
+    K2 -- PRAWDA --> K3{"A[j] > A[j + 1]"}
+    K3 -- PRAWDA --> K4["Zamień(A[j], A[j + 1])"]
+    K4 --> K2i[j := j + 1]
+    K3 -- FAŁSZ --> K2i
+    K2i --> K2
+    K2 -- FAŁSZ --> K1i[i := i + 1]
+    K1i --> K1
+    K1 -- FAŁSZ ------> STOP([STOP])
 ```
 
 ## Rozwiązanie 2: optymalizacja I
@@ -59,11 +77,29 @@ Ta obserwacja pozwala nam skrócić wewnętrzną pętlę i uzależnić jej liczb
 ### Pseudokod
 
 ```
-procedura SortowanieBabelkowe(n, A):
+procedura SortowanieBąbelkowe(n, A):
     1. Dla i := 1 do n, wykonuj:
         2. Dla j := 1 do n - i, wykonuj:
             3. Jeżeli A[j] > A[j+1], to:
                 4. Zamień(A[j], A[j+1])
+```
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+    START(["SortowanieBąbelkowe(n, A)"]) --> K0[i := 1]
+    K0 --> K1{i <= n}
+    K1 -- PRAWDA --> K2p[j := 1]
+    K2p --> K2{j <= n - i}
+    K2 -- PRAWDA --> K3{"A[j] > A[j + 1]"}
+    K3 -- PRAWDA --> K4["Zamień(A[j], A[j + 1])"]
+    K4 --> K2i[j := j + 1]
+    K3 -- FAŁSZ --> K2i
+    K2i --> K2
+    K2 -- FAŁSZ --> K1i[i := i + 1]
+    K1i --> K1
+    K1 -- FAŁSZ ------> STOP([STOP])
 ```
 
 ## Rozwiązanie 3: optymalizacja II
@@ -76,15 +112,33 @@ Zrealizujemy to poprzez dodanie nowej zmiennej ``posortowane``, w której zapami
 
 ```
 procedura SortowanieBabelkowe(n, A):
-    1. posortowane := Fałsz
+    1. posortowane := FAŁSZ
     2. i := 0
-    3. Dopóki posortowane = Fałsz, wykonuj:
-        4. posortowane := Prawda
+    3. Dopóki posortowane = FAŁSZ, wykonuj:
+        4. posortowane := PRAWDA
         5. Dla j := 1 do n - i, wykonuj:
-            6. Jeżeli A[j] > A[j+1], to:
-                7. Zamień(A[j], A[j+1])
+            6. Jeżeli A[j] > A[j + 1], to:
+                7. Zamień(A[j], A[j + 1])
                 8. posortowane := Fałsz
         9. i := i + 1
+```
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+    START(["SortowanieBąbelkowe(n, A)"]) --> K1[posortowane := FAŁSZ\ni := 0]
+    K1 --> K3{posortowane = FAŁSZ}
+    K3 -- PRAWDA --> K4[posortowane := PRAWDA\nj := 1]
+    K4 --> K5{j <= n - i}
+    K5 -- PRAWDA --> K6{"A[j] > A[j + 1]"}
+    K6 -- PRAWDA --> K7["Zamień(A[j], A[j + 1])\nposortowane := FAŁSZ"]
+    K7 --> K5i[j := j + 1]
+    K6 -- FAŁSZ --> K5i
+    K5i --> K5
+    K5 -- FAŁSZ --> K9[i := i + 1]
+    K9 --> K3
+    K3 -- FAŁSZ ------> STOP([STOP])
 ```
 
 ## Złożoność
