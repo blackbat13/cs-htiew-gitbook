@@ -2,8 +2,6 @@
 
 Krótkie wprowadzenie do pojęć i zagadnień niezbędnych do pracy z algorytmami.
 
-Schematy blokowe zostały przygotowane za pomocą aplikacji [GitMind](https://gitmind.com).
-
 ## Polecane książki
 
 * Maciej M. Sysło "**Algorytmy**"
