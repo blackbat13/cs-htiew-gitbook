@@ -69,7 +69,22 @@ funkcja SzukajBinarnie(n, A, k)
 
 ### Schemat blokowy
 
-![](../../.gitbook/assets/binarne\_iter.png)
+```mermaid
+flowchart TD
+	START(["SzukajBinarnie(n, A, k)"]) --> O1[pocz := 1\nkon := n]
+	O1 --> C1{pocz < kon}
+	C1 -- PRAWDA --> O2["srodek := (pocz + kon) div 2"]
+	O2 --> C2{"k > A[srodek]"}
+	C2 -- PRAWDA --> O3[pocz := srodek + 1]
+	O3 --> C1
+	C2 -- FAŁSZ --> O4[kon := srodek]
+	O4 --> C1
+	C1 -- FAŁSZ --> C3{"A[pocz] = k"}
+	C3 -- PRAWDA --> R1[/Zwróć pocz/]
+	R1 --> STOP([STOP])
+	C3 -- FAŁSZ --> R2[/Zwróć -1/]
+	R2 --> STOP
+```
 
 ### Złożoność
 
@@ -96,6 +111,24 @@ funkcja SzukajBinarnie(A, k, pocz, kon)
     
     9. W przeciwnym przypadku:
         10. Zwróć SzukajBinarnie(A, k, pocz, srodek)
+```
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+	START(["SzukajBinarnie(A, k, pocz, kon)"]) --> K1{pocz >= kon}
+	K1 -- PRAWDA --> K2{"A[pocz] = k"}
+	K2 -- PRAWDA --> K3[/Zwróć pocz/]
+	K3 --> STOP([STOP])
+	K2 -- FAŁSZ --> K5[/Zwróć -1/]
+	K5 --> STOP
+	K1 -- FAŁSZ --> K6["srodek := (pocz + kon) div 2"]
+	K6 --> K7{"k > A[srodek]"}
+	K7 -- PRAWDA --> K8[/"Zwróć SzukajBinarnie(A, k, srodek + 1, kon)"/]
+	K8 --> STOP
+	K7 -- FAŁSZ --> K9[/"Zwróć SzukajBinarnie(A, k, pocz, srodek)"/]
+	K9 --> STOP
 ```
 
 ### Złożoność 

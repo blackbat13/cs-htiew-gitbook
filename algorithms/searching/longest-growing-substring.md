@@ -59,7 +59,7 @@ Dla lepszego zrozumienia spróbuj wykonać opisaną procedurę na kilku przykła
 ### Pseudokod
 
 ```
-funkcja najdluzszySpojnyPodciagRosnacy(n, tab):
+funkcja NajdluzszySpojnyPodciagRosnacy(n, tab):
     1. maks := 1
     2. dlugosc := 1
     3. Od i := 2 do n, wykonuj:
@@ -77,6 +77,25 @@ funkcja najdluzszySpojnyPodciagRosnacy(n, tab):
 Funkcja przyjmuje dwa parametry, zgodnie ze specyfikacją. Na początku zaczynamy od utworzenia dwóch zmiennych pomocniczych: maksymalnej długości dotąd znalezionych podciągów (**krok 1**) oraz długości obecnie sprawdzanego podciągu (**krok 2**). Następnie przechodzimy pętlą przez kolejne indeksy tablicy poczynając od drugiego elementu (**krok 3**). W pętli porównujemy element pod obecnie sprawdzanym indeksem z poprzednim elementem z tablicy (**krok 4**). Jeżeli obecny element jest większy od poprzedniego, to zwiększamy długość obecnie sprawdzanego podciągu o jeden (**krok 5**) oraz porównujemy ją z maksymalną długością dotąd znalezionych podciągów (**krok 6**). Jeżeli obecna długość jest większa od tej maksymalnej, to zapamiętujemy obecną długość jako maksymalną (**krok 7**).
 
 Jeżeli obecny element nie jest większy od poprzedniego (**krok 8**), to resetujemy długość obecnie sprawdzanego podciągu ustawiając jej wartość $$1$$ (**krok 9**). Na końcu, po wyjściu z pętli, zwracamy jako wynik funkcji maksymalną długość spójnego podciągu rosnącego (**krok 9**).
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+	START(["NajdluzszySpojnyPodciagRosnacy(n, A)"]) --> K1[maks := 1\ndlugosc := 1\ni := 2]
+	K1 --> K3{i <= n}
+	K3 -- PRAWDA --> K4{"A[i] > A[i - 1]"}
+	K4 -- PRAWDA --> K5[dlugosc := dlugosc + 1]
+	K5 --> K6{dlugosc > maks}
+	K6 -- PRAWDA --> K7[maks := dlugosc]
+	K4 -- FAŁSZ --> K9[dlugosc := 1]
+	K9 --> K3i[i := i + 1]
+	K6 -- FAŁSZ --> K3i
+	K7 --> K3i
+	K3i --> K3
+	K3 -- FAŁSZ ---> K10[\Zwróć maks\]
+	K10 ----> STOP([STOP])
+```
 
 ### Złożoność
 

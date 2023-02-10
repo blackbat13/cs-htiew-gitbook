@@ -59,6 +59,23 @@ funkcja SumyPrzedzialow(n, A, m, P):
         5. Wypisz suma
 ```
 
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+	START(["SumyPrzedzialow(n, A, m, P)"]) --> K0[i := 1]
+	K0 --> K1{i <= m}
+	K1 -- PRAWDA --> K2["suma := 0\nj := P[i][1]"]
+	K2 --> K3{"j <= P[i][2]"}
+	K3 -- PRAWDA --> K4["suma := suma + A[j]"]
+	K4 --> K3i[j := j + 1]
+	K3i --> K3
+	K3 -- FAŁSZ --> K5[/Wypisz suma/]
+	K5 --> K1i[i := i + 1]
+	K1i --> K1
+	K1 -- FAŁSZ --> STOP([STOP])
+```
+
 ## Rozwiązanie optymalne
 
 ### Pseudokod
@@ -72,4 +89,22 @@ funkcja SumyPrzedzialow(n, A, m, P):
     5. Od i := 1 do m, wykonuj:
         6. suma := pref[P[i][2]] - pref[P[i][1] - 1]
         7. Wypisz suma
+```
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+	START(["SumyPrzedzialow(n, A, m, P)"]) --> K1["pref := [0..n]\npref[0] := 0"]
+	K1 --> K3{i <= n}
+	K3 -- PRAWDA --> K4["pref[i] := pref[i - 1] + A[i]"]
+    K4 --> K3i[i := i + 1]
+    K3i --> K3
+    K3 -- FAŁSZ --> K5p[i := 1]
+    K5p --> K5{i <= m}
+    K5 -- PRAWDA --> K6["suma := pref[P[i][2]] - pref[P[i][1] - 1]"]
+    K6 --> K7[/Wypisz suma/]
+    K7 --> K5i[i := i + 1]
+    K5i --> K5
+    K5 -- FAŁSZ ----> STOP([STOP])
 ```

@@ -52,9 +52,27 @@ funkcja SumaDwoch(n, A, k):
     1. Dla i := 1 do n - 1, wykonuj:
         2. Dla j := i + 1 do n, wykonuj:
             3. Jeżeli A[i] + A[j] = k, to:
-                4. Wypisz A[i], A[j]
-                5. Zakończ
-    6. Wypisz -1
+                4. Zwróć A[i], A[j]
+    5. Zwróć -1
+```
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+	START(["SumaDwoch(n, A, k)"]) --> K0[i := 1]
+	K0 --> K1{i < n}
+	K1 -- PRAWDA --> K2p[j := i + 1]
+	K2p --> K2{j <= n}
+	K2 -- PRAWDA --> K3{"A[i] + A[j] = k"}
+	K3 -- PRAWDA --> K4[/"Zwróć A[i], A[j]"/]
+	K4 --> STOP([STOP])
+	K3 -- FAŁSZ --> K2i[j := j + 1]
+	K2i --> K2
+	K2 -- FAŁSZ --> K1i[i := i + 1]
+	K1i --> K1
+	K1 -- FAŁSZ --> K6[/Zwróć -1/]
+	K6 --> STOP
 ```
 
 ### Złożoność
@@ -92,9 +110,27 @@ funkcja SumaDwoch(n, A, k):
         6. w przeciwnym przypadku:
             7. prawy := prawy + 1
     8. Jeżeli lewy < prawy, to:
-        9. Wypisz A[lewy], A[prawy]
+        9. Zwróć A[lewy], A[prawy]
     10. w przeciwnym przypadku:
-        11. Wypisz -1
+        11. Zwróć -1
+```
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+	START(["SumaDwoch(n, A, k)"]) --> K1[lewy := 1\nprawy := n]
+	K1 --> K3{"lewy < prawy\noraz\nA[lewy] + A[prawy] != k"}
+	K3 -- PRAWDA --> K4{"A[lewy] + A[prawy] < k"}
+	K4 -- PRAWDA --> K5[lewy := lewy + 1]
+	K5 --> K3
+	K4 -- FAŁSZ --> K7[prawy := prawy + 1]
+	K7 --> K3
+	K3 -- FAŁSZ --> K8{lewy < prawy}
+	K8 -- PRAWDA --> K9[/"Zwróć A[lewy], A[prawy]"/]
+	K9 --> STOP([STOP])
+	K8 -- FAŁSZ --> K11[/Zwróć -1/]
+	K11 --> STOP
 ```
 
 ### Złożoność

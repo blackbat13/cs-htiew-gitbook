@@ -49,6 +49,24 @@ funckja SzukajMinMax(n, A):
     8. Zwróć min, max
 ```
 
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+	START(["SzukajMinMax(n, A)"]) --> K1["min := A[1]\nmax := A[1]\ni := 1"]
+	K1 --> K3{i <= n}
+	K3 -- PRAWDA --> K4{"min > A[i]"}
+	K4 -- PRAWDA --> K5["min := A[i]"]
+	K5 --> K6{"max < A[i]"}
+	K4 -- FAŁSZ --> K6
+	K6 -- PRAWDA --> K7["max := A[i]"]
+	K7 --> K3i[i := i + 1]
+	K6 -- FAŁSZ --> K3i
+	K3i --> K3
+	K3 -- FAŁSZ ---> K8[/Zwróć min, max/]
+	K8 ----> STOP([STOP])
+```
+
 ### Złożoność
 
 $$O(2n)$$ 
@@ -90,6 +108,34 @@ funkcja SzukajMinMax(n, A):
         19. Jeżeli max < kandMax[i], to:
             20. max := kandMax[i]
     21. Zwróc min, max
+```
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+	START(["SzukajMinMax(n, A)"]) --> K1["kandMin := [1 .. n div 2]\nkandMax := [1 .. n div 2]\ni := 1\nk := 1"]
+	K1 --> K5{i + 1 <= n}
+	K5 -- PRAWDA --> K6{"A[i] < A[i + 1]"}
+	K6 -- PRAWDA --> K7["kandMin[k] := A[i]"]
+	K7 --> K8["kandMax[k] := A[i + 1]"]
+	K6 -- FAŁSZ --> K10["kandMin[k] := A[i + 1]"]
+	K10 --> K11["kandMax[k] := A[i]"]
+	K8 --> K12[k := k + 1\ni := i + 2]
+	K11 --> K12
+	K12 --> K5
+	K5 -- FAŁSZ --> K14["min := kandMin[1]\nmax := kandMax[1]\ni := 1"]
+	K14 --> K16{i <= n div 2}
+	K16 -- PRAWDA --> K17{"min > kandMin[i]"}
+	K17 -- PRAWDA --> K18["min := kandMin[i]"]
+	K17 -- FAŁSZ --> K19{"max < kandMax[i]"}
+	K18 --> K19
+	K19 -- PRAWDA --> K20["max := kandMax[i]"]
+	K19 -- FAŁSZ --> K16i[i := i + 1]
+	K20 --> K16i
+	K16i --> K16
+	K16 -- FAŁSZ ---> K21[\"Zwróc min, max"\]
+	K21 ----> STOP([STOP])
 ```
 
 ### Złożoność

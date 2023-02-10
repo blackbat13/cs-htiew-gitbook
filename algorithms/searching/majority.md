@@ -75,6 +75,28 @@ funkcja SzukajLidera(n, A):
     8. Zwróc -1
 ```
 
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+	START(["SzukajLidera(n, A)"]) --> K0[i := 1]
+	K0 --> K1{i <= n}
+	K1 -- PRAWDA --> K2[ile := 0\nj := 1]
+	K2 --> K3{j <= n}
+	K3 -- PRAWDA --> K4{"A[i] = A[j]"}
+	K4 -- PRAWDA --> K5[ile := ile + 1]
+	K4 -- FAŁSZ --> K3i[j := j + 1]
+	K5 --> K3i
+	K3i --> K3
+	K3 -- FAŁSZ --> K6{ile > n / 2}
+	K6 -- PRAWDA --> K7[/"Zwróc A[i]"/]
+	K7 --> STOP([STOP])
+	K6 -- FAŁSZ ---> K1i[i := i + 1]
+	K1i --> K1
+	K1 -- FAŁSZ --> K8[/Zwróc -1/]
+	K8 --> STOP
+```
+
 ### Złożoność
 
 $$O(n^2)$$ — kwadratowa
@@ -112,6 +134,36 @@ funkcja SzukajLidera(n, A)
     
     17. w przeciwnym przypadku:
         18. Zwróć -1, zakończ
+```
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+	START(["SzukajLidera(n, A)"]) --> K1["lider := A[1]\nile := 1\ni := 1"]
+	K1 --> K3{i <= n}
+	K3 -- PRAWDA --> K4{ile = 0}
+	K4 -- PRAWDA --> K5["lider := A[i]"]
+	K5 --> K6[ile := 1]
+	K4 -- FAŁSZ --> K7{"lider = A[i]"}
+	K7 -- PRAWDA --> K8[ile := ile + 1]
+	K7 -- FAŁSZ --> K10[ile := ile - 1]
+	K10 --> K3i[i := i + 1]
+	K8 --> K3i
+	K6 --> K3i
+	K3i --> K3
+	K3 -- FAŁSZ --> K11[ile := 0\ni := 1]
+	K11 --> K12{i <= n}
+	K12 -- PRAWDA --> K13{"A[i] = lider"}
+	K13 -- PRAWDA --> K14[ile := ile + 1]
+	K13 -- FAŁSZ --> K12i[i := i + 1]
+	K14 --> K12i
+	K12i --> K12
+	K12 -- FAŁSZ --> K15{ile > n / 2}
+	K15 -- PRAWDA --> K16[/Zwróć lider/]
+	K16 --> STOP([STOP])
+	K15 -- FAŁSZ --> K18[/Zwróć - 1/]
+	K18 --> STOP
 ```
 
 ### Złożoność

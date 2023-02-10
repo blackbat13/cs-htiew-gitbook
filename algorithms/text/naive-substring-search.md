@@ -30,7 +30,7 @@ tekst := "alamakota"
 wzorzec := "kot"
 ```
 
-**Wynik**: _wzorzec _**znajduje **się w _tekście_.
+**Wynik**: $$6$$.
 
 ### Przykład 2
 
@@ -41,11 +41,9 @@ tekst := "alamakota"
 wzorzec := "koty"
 ```
 
-**Wynik**: _wzorzec _**nie**_ _**znajduje **się w _tekście_.
+**Wynik**: $$-1$$.
 
 ## Rozwiązanie
-
-TODO
 
 Pomocnicza funkcja `TestujWzorzec`sprawdza, czy wzorzec znajduje się w tekście pod indeksem `i`.
 
@@ -54,20 +52,47 @@ Pomocnicza funkcja `TestujWzorzec`sprawdza, czy wzorzec znajduje się w tekście
 ```
 funkcja TestujWzorzec(i, n, tekst, m, wzorzec)
     1. Dla j := 1 do m, wykonuj:
-        2. Jeżeli tekst[i+j-1] != wzorzec[j], to:
-            3. Zwróć False, zakończ
+        2. Jeżeli tekst[i + j - 1] != wzorzec[j], to:
+            3. Zwróć FAŁSZ
         
-    4. Zwróć True, zakończ
+    4. Zwróć PRAWDA
 ```
 
 ```
 funkcja SzukajWzorca(n, tekst, m, wzorzec)
-    1. Dla i := 1 do n-m, wykonuj:
-        2. czy_pasuje := TestujWzorzec(i, n, tekst, m, wzorzec)   
-        3. Jeżeli czy_pasuje = True, to:
-            4. Zwróć i, zakończ
+    1. Dla i := 1 do n - m, wykonuj:
+        2. Jeżeli TestujWzorzec(i, n, tekst, m, wzorzec), to:
+            3. Zwróć i
         
-    5. Zwróć -1, zakończ
+    4. Zwróć -1
+```
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+    START(["TestujWzorzec(i, n, tekst, m, wzorzec)"]) --> K0[j := 1]
+    K0 --> K1{j <= m}
+    K1 -- PRAWDA --> K2{"tekst[i + j - 1] != wzorzec[j]"}
+    K2 -- PRAWDA --> K3[/Zwróć FAŁSZ/]
+    K2 -- FAŁSZ --> K1i[j := j + 1]
+    K1i --> K1
+    K1 -- FAŁSZ --> K4[/Zwróć PRAWDA/]
+    K4 --> STOP([STOP])
+    K3 --> STOP
+```
+
+```mermaid
+flowchart TD
+    START(["SzukajWzorca(n, tekst, m, wzorzec)"]) --> K0[i := 1]
+    K0 --> K1{i <= n - m}
+    K1 -- PRAWDA --> K2{"TestujWzorzec(i, n, tekst, m, wzorzec)"}
+    K2 -- PRAWDA --> K3[/Zwróć i/]
+    K2 -- FAŁSZ --> K1i[i := i + 1]
+    K1i --> K1
+    K1 -- FAŁSZ --> K4[/Zwróć -1/]
+    K4 --> STOP([STOP])
+    K3 --> STOP
 ```
 
 ### Złożoność

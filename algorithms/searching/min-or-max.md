@@ -69,17 +69,28 @@ Zapiszmy teraz nasz algorytm w postaci pseudokodu.
 
 ```
 funkcja SzukajMaks(n, A):
-    1. maks := A[1]
+    1. max := A[1]
     2. Od i := 2 do n, wykonuj:
-        3. Jeżeli maks < A[i], to:
-            4. maks := A[i]
+        3. Jeżeli max < A[i], to:
+            4. max := A[i]
 
-    5. Zwróć maks, zakończ
+    5. Zwróć maks
 ```
 
 ### Schemat blokowy
 
-![](../../.gitbook/assets/max_1.png)
+```mermaid
+flowchart TD
+	START(["FindMax(n, A)"]) --> K1["max := A[1]\ni := 1"]
+	K1 --> K2{i <= n}
+	K2 -- PRAWDA --> K3{"max < A[i]"}
+	K3 -- PRAWDA --> K4["max := A[i]"]
+	K4 --> K2i[i := i + 1]
+	K2i --> K2
+	K3 -- FAŁSZ --> K2i
+	K2 -- FAŁSZ --> K5[\Zwróć max\]
+	K5 ---> STOP([STOP])
+```
 
 ### Złożoność
 
@@ -141,19 +152,30 @@ Zapiszmy teraz nasz algorytm w postaci pseudokodu.
 
 ```
 funkcja SzukajIndeksMaks(n, A):
-    1. maks := A[1]
+    1. max := A[1]
     2. ind := 1
     3. Od i := 2 do n, wykonuj:
-        4. Jeżeli maks < A[i], to:
-            5. maks := A[i]
+        4. Jeżeli max < A[i], to:
+            5. max := A[i]
             6. ind := i
     
-    7. Zwróć ind, zakończ    
+    7. Zwróć ind    
 ```
 
 ### Schemat blokowy
 
-![](../../.gitbook/assets/max_2.png)
+```mermaid
+flowchart TD
+	START(["SzukajIndeksMaks(n, A)"]) --> K1["max := A[1]\nind := 1\ni := 1"]
+	K1 --> K2{i <= n}
+	K2 -- PRAWDA --> K3{"max < A[i]"}
+	K3 -- PRAWDA --> K4["max := A[i]\nind := i"]
+	K4 --> K2i[i := i + 1]
+	K2i --> K2
+	K3 -- FAŁSZ --> K2i
+	K2 -- FAŁSZ --> K5[\Zwróć ind\]
+	K5 ---> STOP([STOP])
+```
 
 ### Złożoność
 
