@@ -8,7 +8,9 @@ Fraktale - wprowadzenie
 
 ## Operacje
 
-- **Przod(dl)** - idzie do przodu o *dl*
-- **Tyl(dl)** - idzie do tyłu o *dl*
-- **Lewo(k)** - obraca się w lewo o *k* stopni
-- **Prawo(k)** - obraca się w prawo o *k* stopni
+- **Przod(długość)** - idzie do przodu o *długość*
+- **Tyl(długość)** - idzie do tyłu o *długość*
+- **Lewo(kąt)** - obraca się w lewo o *kąt* stopni
+- **Prawo(kąt)** - obraca się w prawo o *kąt* stopni
+- **PodnieśPisak()** - podnosi pisak, żółw nie będzie rysować
+- **OpóśćPisak()** - opuszcza pisak, żółw będzie rysować
