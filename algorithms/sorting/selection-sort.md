@@ -47,19 +47,19 @@ Sam algorytm wyszukiwania minimum musimy zmodyfikować tak, by działał na okre
 ### Pseudokod
 
 ```
-funkcja SzukajMin(p, k, A):
+funkcja SzukajIndeksMinimum(p, k, A):
     1. min := A[p]
-    2. min_ind := p
+    2. minInd := p
     3. Od i := p + 1 do k, wykonuj:
         4. Jeżeli A[i] < min, to:
             5. min := A[i]
-            6. min_ind := i
-    7. Zwróc min_ind
+            6. minInd := i
+    7. Zwróć minInd
 
-procedura SortWybier(A, n):
-    1. Od i := 1 do n-1, wykonuj:
-        2. min_ind := SzukajMin(i, n, A)
-        3. Zamień(A[i], A[min_ind])
+procedura SortowaniePrzezWybieranie(A, n):
+    1. Od i := 1 do n - 1, wykonuj:
+        2. minInd := SzukajIndeksMinimum(i, n, A)
+        3. Zamień(A[i], A[minInd])
 ```
 
 ### Złożoność
