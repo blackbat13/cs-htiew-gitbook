@@ -1,7 +1,5 @@
 # Pseudokod
 
-## Rozwiązanie
-
 ```
 1. Wczytaj a, b
 2. Jeżeli a = b, to:
@@ -12,7 +10,7 @@
     7. Wypisz ">"
 ```
 
-### Opis
+## Opis
 
 Na początku wczytujemy dwie wartości od użytkownika (**krok 1**). 
 
