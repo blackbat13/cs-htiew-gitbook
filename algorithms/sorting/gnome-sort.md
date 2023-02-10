@@ -43,7 +43,7 @@ Gnom zaczyna swoją podróż od lewej strony, czyli od pierwszej doniczki, czy t
 ### Pseudokod
 
 ```
-procedura SortGnoma(n, A):
+procedura SortowanieGnoma(n, A):
     1. i := 1
     2. Dopóki i <= n, wykonuj:
         3. Jeżeli i = 1 lub A[i] >= A[i - 1], to:
@@ -51,6 +51,20 @@ procedura SortGnoma(n, A):
         5. W przeciwnym przypadku:
             6. Zamień(A[i], A[i - 1])
             7. i := i - 1
+```
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+    START(["SortowanieGnoma(n, A)"]) --> K1[i := 1]
+    K1 --> K2{i <= n}
+    K2 -- PRAWDA --> K3{"i = 1\nlub\nA[i] >= A[i - 1]"}
+    K3 -- PRAWDA --> K4[i := i + 1]
+    K4 --> K2
+    K3 -- FAŁSZ --> K6["Zamień(A[i], A[i - 1])\ni := i - 1"]
+    K6 --> K2
+    K2 -- FAŁSZ ---> STOP([STOP])
 ```
 
 ### Złożoność
