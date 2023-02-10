@@ -30,7 +30,16 @@ Zwróć uwagę na wcięcia w powyższym zapisie. Zazwyczaj, aby zasygnalizować,
 
 #### Schemat blokowy
 
-![Algorytm przechodzenia na światłach](../../.gitbook/assets/if_siwatla\_1.png)
+```mermaid
+flowchart TD
+    START([START]) --> K1{światło zielone}
+    K1 -- PRAWDA --> K2[Idź]
+    K1 -- FAŁSZ --> K3{światło czerwone}
+    K2 --> K3
+    K3 -- PRAWDA --> K4[Stój]
+    K3 -- FAŁSZ --> STOP([STOP])
+    K4 --> STOP
+```
 
 ### Przykład 2
 
@@ -47,7 +56,14 @@ Ten sam algorytm możemy także skonstruować w nieco odmienny sposób. Zauważm
 
 #### Schemat blokowy
 
-![Algorytm przechodzenia na światłach - alternatywna konstrukcja](../../.gitbook/assets/if_swiatla\_2.png)
+```mermaid
+flowchart TD
+    START([START]) --> K1{światło zielone}
+    K1 -- PRAWDA --> K2[Idź]
+    K1 -- FAŁSZ --> K3[Stój]
+    K2 --> STOP([STOP])
+    K3 --> STOP
+```
 
 ## Złożona instrukcja warunkowa
 
@@ -68,7 +84,18 @@ Rozważmy teraz kolejny przykład: światła drogowe dla kierowców. W przeciwie
 
 #### Schemat blokowy
 
-![Algorytm przejeżdżania na światłach](../../.gitbook/assets/if_swiatla3.png)
+```mermaid
+flowchart TD
+    START([START]) --> K1{światło zielone}
+    K1 -- PRAWDA --> K2[Jedź]
+    K1 -- FAŁSZ --> K3{światło żółte}
+    K3 -- PRAWDA --> K4[Czekaj]
+    K3 -- FAŁSZ --> K5{światło czerwone}
+    K5 -- PRAWDA --> K6[Stój]
+    K6 --> STOP([STOP])
+    K2 --> STOP
+    K4 --> STOP
+```
 
 ### Przykład 2
 
@@ -87,7 +114,17 @@ Podobnie jak poprzednio, nie musimy dokładnie określać wszystkich przypadków
 
 #### Schemat blokowy
 
-![Algorytm przejeżdżania na światłach - alternatywna konstrukcja](../../.gitbook/assets/if_swiatla4.png)
+```mermaid
+flowchart TD
+    START([START]) --> K1{światło zielone}
+    K1 -- PRAWDA --> K2[Jedź]
+    K1 -- FAŁSZ --> K3{światło żółte}
+    K3 -- PRAWDA --> K4[Czekaj]
+    K3 -- FAŁSZ --> K6[Stój]
+    K6 --> STOP([STOP])
+    K2 --> STOP
+    K4 --> STOP
+```
 
 ## Konstrukcja warunków musi być przemyślana
 
@@ -108,7 +145,17 @@ W poprzednich przykładach nie miało znaczenia, w jakiej kolejności rozważamy
 
 #### Schemat blokowy
 
-![](../../.gitbook/assets/if_cena1.png)
+```mermaid
+flowchart TD
+    START([START]) --> K1{cena > 100}
+    K1 -- PRAWDA --> K2[/Wypisz 'Drogie'/]
+    K1 -- FAŁSZ --> K3{cena > 200}
+    K3 -- PRAWDA --> K4[/Wypisz 'Bardzo drogie'/]
+    K3 -- FAŁSZ --> K6[/Wypisz 'Tanie'/]
+    K2 --> STOP([STOP])
+    K4 --> STOP
+    K6 --> STOP
+```
 
 Czy potrafisz stwierdzić, co jest nie tak z powyższą instrukcją warunkową? Sama jej konstrukcja jest poprawna, ale nie do końca przemyślana i może wprowadzać czytelnika w błąd. Spróbuj _zasymulować_ działanie algorytmu dla różnych wartości ceny. Zastanów się, jaka musi być cena, żeby każdy z komunikatów został wypisany, tzn. dla jakich wartości zostanie wypisany komunikat "drogie", dla jakich "bardzo drogie", a dla jakich komunikat "tanie". Poświęć chwilę na samodzielne wykonanie tego ćwiczenia, zanim przejdziesz dalej.
 
@@ -133,4 +180,14 @@ Oczywiście powyższy algorytm można łatwo poprawić zamieniając kolejność 
 
 #### Schemat blokowy
 
-![](../../.gitbook/assets/if_cena2.png)
+```mermaid
+flowchart TD
+    START([START]) --> K1{cena > 200}
+    K1 -- PRAWDA --> K2[/Wypisz 'Bardzo drogie'/]
+    K1 -- FAŁSZ --> K3{cena > 100}
+    K3 -- PRAWDA --> K4[/Wypisz 'Drogie'/]
+    K3 -- FAŁSZ --> K6[/Wypisz 'Tanie'/]
+    K2 --> STOP([STOP])
+    K4 --> STOP
+    K6 --> STOP
+```

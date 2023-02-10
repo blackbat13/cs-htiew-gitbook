@@ -49,7 +49,18 @@ funkcja Rozklad(n):
 
 ### Schemat blokowy
 
-TODO
+```mermaid
+flowchart TD
+	START(["Rozklad(n)"]) --> K1[i := 2]
+	K1 --> K2{n > 1}
+	K2 -- PRAWDA --> K3{n mod i = 0}
+	K3 -- PRAWDA --> K4[/Wypisz i/]
+	K4 --> K5[n := n div i]
+	K5 --> K2
+	K3 -- FAŁSZ --> K7[i := i + 1]
+	K7 --> K2
+	K2 -- FAŁSZ ----> STOP([STOP])
+```
 
 ## Implementacja
 

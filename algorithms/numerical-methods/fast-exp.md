@@ -56,16 +56,31 @@ $$
 ### Pseudokod
 
 ```
-funkcja PotegaIter(x, n)
-    1. w := 1
+funkcja Potega(x, n)
+    1. wynik := 1
     2. Dopóki n > 0, wykonuj:
         3. Jeżeli n mod 2 = 1, to:
-            4. w := w * x
+            4. wynik := wynik * x
         
         5. x := x * x
         6. n := n div 2
     
-    7. Zwróć w, zakończ
+    7. Zwróć wynik
+```
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+	START(["Potega(x, n)"]) --> K1[wynik := 1]
+	K1 --> K2{n > 0}
+	K2 -- PRAWDA --> K3{n mod 2 = 1}
+	K3 -- PRAWDA --> K4[wynik := wynik * x]
+	K3 -- FAŁSZ --> K5[x := x * x\nx := n div 2]
+	K4 --> K5
+	K5 --> K2
+	K2 -- FAŁSZ --> K7[/Zwróć wynik/]
+	K7 ---> STOP([STOP])
 ```
 
 ### Złożoność
@@ -87,17 +102,32 @@ $$
 ### Pseudokod
 
 ```
-funkcja PotegaRek(x, n)
+funkcja Potega(x, n)
     1. Jeżeli n = 0, to:
         2. Zwróć 1, zakończ
     
-    3. wynik := PotegaRek(x, n div 2)
+    3. wynik := Potega(x, n div 2)
 
     4. Jeżeli n mod 2 = 0, to:
         5. Zwróć wynik * wynik, zakończ
     
     6. W przeciwnym przypadku:
         7. Zwróć wynik * wynik * x, zakończ
+```
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+	START(["Potega(x, n)"]) --> K1{n = 0}
+	K1 -- PRAWDA --> K2[/Zwróć 1/]
+	K1 -- FAŁSZ --> K3["wynik := Potega(x, n div 2)"]
+	K2 --> STOP
+	K3 --> K4{n mod 2 = 0}
+	K4 -- PRAWDA --> K5[/Zwróć wynik * wynik/]
+	K4 -- FAŁSZ --> K7[/Zwróć wynik * wynik * x/]
+	K5 --> STOP([STOP])
+	K7 --> STOP
 ```
 
 ### Złożoność

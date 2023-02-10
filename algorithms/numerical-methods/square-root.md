@@ -29,6 +29,18 @@ funkcja MetodaHerona(n, p)
     4. Zwróć x2
 ```
 
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+	START(["MetodaHerona(n, p)"]) --> K1["x1 := n / 2\nx2 := (x1 + (n / x1)) / 2"]
+	K1 --> K3{"|x2 - x1| > p"}
+	K3 -- PRAWDA --> K4["x1 := (x2 + (n / x2)) / 2\nZamień(x1, x2)"]
+	K4 --> K3
+    K3 -- FAŁSZ --> K6[/Zwróć x2/]
+    K6 --> STOP([STOP])
+```
+
 ## Implementacja
 
 ### C++

@@ -28,8 +28,23 @@ funkcja MonteCarloPI(n)
         6. Jeżeli odl <= 1, to:
             7. wkole := wkole + 1
     
-    8. wynik := (4 * wkole) / n
-    9. Zwróć wynik
+    8. Zwróć (4 * wkole) / n
+```
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+	START(["MonteCarloPi(n)"]) --> K1[wkole := 0\ni := 1]
+	K1 --> K2{i <= n}
+	K2 -- PRAWDA --> K3["x := losowa(-1, 1)\ny := losowa(-1, 1)\nodl := x * x + y * y"]
+	K3 --> K6{odl <= 1}
+	K6 -- PRAWDA --> K7[wkole := wkole + 1]
+	K7 --> K2i[i := i + 1]
+	K6 -- FAŁSZ --> K2i
+	K2i --> K2
+	K2 -- FAŁSZ ---> K8[/"Zwróć ((4 * wkole) / n)"/]
+	K8 ---> STOP([STOP])
 ```
 
 ## Implementacja

@@ -33,14 +33,26 @@ Drzewo binarne - algorytm
 
 ```
 funkcja DrzewoBinarne(n, w):
-    1. Idź do przodu o w
+    1. Przod(w)
     2. Jeżeli n > 0, to:
-        3. Obróć się w lewo
-        4. Wywołaj DrzewoBinarne(n - 1, w / 2)
-        5. Obróć się w prawo
-        6. Wywołaj DrzewoBinarne(n - 1, w / 2)
-        7. Obróć się w lewo (do początkowego ustawienia)
-    8. Idź do tyłu o w
+        3. Lewo(45)
+        4. DrzewoBinarne(n - 1, w / 2)
+        5. Prawo(90)
+        6. DrzewoBinarne(n - 1, w / 2)
+        7. Lewo(45)
+    8. Tyl(w)
+```
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+	START(["DrzewoBinarne(n, w)"]) --> K1["Przod(w)"]
+	K1 --> K2{n > 0}
+	K2 -- PRAWDA --> K3["Lewo(45)\nDrzewoBinarne(n - 1, w / 2)\nPrawo(90)\nDrzewoBinarne(n - 1, w / 2)\nLewo(45)"]
+	K3 --> K8["Tyl(w)"]
+	K2 -- FAŁSZ --> K8
+	K8 --> STOP([STOP])
 ```
 
 ## Implementacja

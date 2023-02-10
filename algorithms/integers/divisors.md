@@ -51,7 +51,17 @@ funkcja Dzielniki(n):
 
 ### Schemat blokowy
 
-TODO
+```mermaid
+flowchart TD
+	START(["Dzielniki(n)"]) --> K0[i := 1]
+	K0 --> K1{i <= n}
+	K1 -- PRAWDA --> K2{n mod i = 0}
+	K2 -- PRAWDA --> K3[/Wypisz i/]
+	K3 --> K1i[i := i + 1]
+	K2 -- FAŁSZ --> K1i
+	K1i --> K1
+	K1 -- FAŁSZ ----> STOP([STOP])
+```
 
 ### Złożoność
 
@@ -82,7 +92,20 @@ funkcja Dzielniki(n):
 
 ### Schemat blokowy
 
-TODO
+```mermaid
+flowchart TD
+	START(["Dzielniki(n)"]) --> K0[i := 1]
+	K0 --> K1{i <= n div 2}
+	K1 -- PRAWDA --> K2{n mod i = 0}
+	K2 -- PRAWDA --> K3[/Wypisz i/]
+	K3 --> K1i[i := i + 1]
+	K2 -- FAŁSZ --> K1i
+	K1i --> K1
+	K1 -- FAŁSZ --> K4{n > 1}
+	K4 -- PRAWDA --> K5[/Wypisz n/]
+	K5 --> STOP([STOP])
+	K4 -- FAŁSZ --> STOP
+```
 
 ### Złożoność
 
@@ -111,7 +134,20 @@ funkcja Dzielniki(n):
 
 ### Schemat blokowy
 
-TODO
+```mermaid
+flowchart TD
+	START(["Dzielniki(n)"]) --> K0[i := 1]
+	K0 --> K1{"i <= sqrt(n)"}
+	K1 -- PRAWDA --> K2{n mod i = 0}
+	K2 -- PRAWDA --> K3[/Wypisz i/]
+	K3 --> K4{"(n / i) != i"}
+	K4 -- PRAWDA --> K5[/"Wypisz (n / i)"/]
+	K5 --> K1i[i := i + 1]
+	K4 -- FAŁSZ --> K1i
+	K2 -- FAŁSZ --> K1i
+	K1i --> K1
+	K1 -- FAŁSZ ------> STOP([STOP])
+```
 
 ### Złożoność
 

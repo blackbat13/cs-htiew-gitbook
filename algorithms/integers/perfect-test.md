@@ -95,6 +95,24 @@ funkcja CzyDoskonala(n):
         8. Zwróć FAŁSZ, zakończ
 ```
 
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+	START(["CzyDoskonala(n)"]) --> K1[suma := 0\ni := 1]
+	K1 --> K2{i <= n div 2}
+	K2 -- PRAWDA --> K3{"(n mod i) = 0"}
+	K3 -- PRAWDA --> K4[suma := suma + i]
+	K3 -- FAŁSZ --> K2i[i := i + 1]
+	K4 --> K2i
+	K2i --> K2
+	K2 -- FAŁSZ --> K5{suma = n}
+	K5 -- PRAWDA --> K6[/Zwróć PRAWDA/]
+	K6 --> STOP([STOP])
+	K5 -- FAŁSZ --> K8[/Zwróć FAŁSZ/]
+	K8 --> STOP
+```
+
 ### Złożoność
 
 $$O(\frac{n}{2})$$
@@ -115,15 +133,36 @@ funkcja CzyDoskonala(n)
                 6. suma := suma + (n / i)
             
     7. Jeżeli suma = n, to:
-        8. Zwróć PRAWDA, zakończ
+        8. Zwróć PRAWDA
     
     9. w przeciwnym przypadku:
-        10. Zwróć FAŁSZ, zakończ
+        10. Zwróć FAŁSZ
 ```
 
 {% hint style="info" %}
 **sqrt** oznacza pierwiastek
 {% endhint %}
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+	START(["CzyDoskonala(n)"]) --> K1[suma := 1\ni := 2]
+	K1 --> K2{"i <= sqrt(n)"}
+	K2 -- PRAWDA --> K3{"(n mod i) = 0"}
+	K3 -- PRAWDA --> K4[suma := suma + i]
+	K4 --> K5{"(n / i) != i"}
+	K5 -- PRAWDA --> K6["suma := suma + (n / i)"]
+	K6 --> K2i[i := i + 1]
+	K5 -- FAŁSZ --> K2i
+	K3 -- FAŁSZ --> K2i
+	K2i --> K2
+	K2 -- FAŁSZ --> K7{suma = n}
+	K7 -- PRAWDA ---> K8[/Zwróć PRAWDA/]
+	K8 ---> STOP([STOP])
+	K7 -- FAŁSZ ---> K10[/Zwróć FAŁSZ/]
+	K10 ---> STOP
+```
 
 ### Złożoność
 

@@ -44,7 +44,7 @@ Bardziej ustrukturyzowany sposób zapisu w porównaniu do opisu słownego, ale w
 
 ## Pseudokod
 
-Pseudokod jest czymś pomiędzy listą kroków, a kodem w wybranym języku programowania. Jak nazwa wskazuje, jest to **pseudo**kod. Mamy więc tutaj do czynienia z zapisem bardziej formalnym, niż lista kroków, ale wciąż podlegającym pewnym umownym zapisom i regułom. Brakuje jednak jednego uzgodnionego formalizmu, można spotkać się więc z wieloma różnymi podejściami do zapisu pseudokodu.
+Pseudokod jest czymś pomiędzy listą kroków, a kodem w wybranym języku programowania. Jak nazwa wskazuje, jest to **pseudo** kod. Mamy więc tutaj do czynienia z zapisem bardziej formalnym, niż lista kroków, ale wciąż podlegającym pewnym umownym zapisom i regułom. Brakuje jednak jednego uzgodnionego formalizmu, można spotkać się więc z wieloma różnymi podejściami do zapisu pseudokodu.
 
 ### Przykład
 
@@ -62,45 +62,72 @@ Schemat blokowy jest jednym z najbardziej formalnych i jednoznacznych sposobów 
 
 ### Blok startowy
 
-![Blok startowy](../../.gitbook/assets/blok_start.png)
+```mermaid
+flowchart TD
+    K1([START])
+```
 
 Od niego wszystko się zaczyna. Jego rolą jest określenie początku programu.
 
 ### Blok końcowy - terminator
 
-![Terminator](../../.gitbook/assets/blok_stop.png)
+```mermaid
+flowchart TD
+    K1([STOP])
+```
 
 Określa zakończenie obliczeń.
 
 ### Blok wejścia
 
-![Wejście](../../.gitbook/assets/blok_in.png)
+```mermaid
+flowchart TD
+    K1[/Cztaj n/]
+```
 
 Tutaj wczytujemy dane wejściowe. Ponieważ blok wejścia i wyjścia mają taki sam kształt, dla czytelności dodajemy informację o tym, że wczytujemy dane, zazwyczaj w formie skrótu, np.: wej, czyt, in.
 
 ### Blok wyjścia
 
-![Wyjście](../../.gitbook/assets/blok_out.png)
+```mermaid
+flowchart TD
+    K1[/Wypisz wynik/]
+```
 
 Tutaj wypisujemy komunikaty i wartości, albo też zwracamy wynik obliczeń. Podobnie jak w przypadku bloku wejściowego dodajemy skrót określający rodzaj operacji, np.: wyj, wyp, out.
 
 ### Blok obliczeń
 
-![Obliczenia](../../.gitbook/assets/blok_compute.png)
+```mermaid
+flowchart TD
+    K1[i := i + 1]
+```
 
 W tym bloku dokonujemy wszelkich obliczeń, a także inicjalizacji i przypisania wartości do zmiennych.
 
 ### Blok instrukcji warunkowej
 
-![Instrukcja warunkowa](../../.gitbook/assets/blok_if.png)
+```mermaid
+flowchart TD
+    K1{i < n}
+```
 
 Jedyny blok, z którego wychodzą dwie strzałki, zazwyczaj na lewo i prawo. Do tych strzałek dodajemy zazwyczaj napisy typu "Tak"/"Nie", "Prawda"/"Fałsz", albo "True"/"False" określające, w którym kierunku obliczenia programu powinny dalej podążać w zależności od tego, czy warunek jest spełniony czy też nie.
 
 ### Przykład
 
-![Przykład - schemat blokowy](../../.gitbook/assets/example.png)
-
-
+```mermaid
+flowchart TD
+	START(["START"]) --> K0[wynik := 0\ni := 1]
+	K0 --> K1{i <= n}
+	K1 -- PRAWDA --> K2{n mod i = 0}
+	K2 -- PRAWDA --> K3[wynik := wynik + 1]
+	K3 --> K1i[i := i + 1]
+	K2 -- FAŁSZ --> K1i
+	K1i --> K1
+	K1 -- FAŁSZ ---> K5[/Wypisz wynik/]
+    K5 --> STOP([STOP])
+```
 
 ## Kod w języku programowania
 

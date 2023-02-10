@@ -55,7 +55,17 @@ funkcja NWD(a, b):
 
 ### Schemat blokowy
 
-TODO
+```mermaid
+flowchart TD
+	START(["NWD(a, b)"]) --> K1{a != b}
+	K1 -- PRAWDA --> K2{a > b}
+	K2 -- PRAWDA --> K3[a := a - b]
+	K3 --> K1
+	K2 -- FAŁSZ --> K5[b := b - a]
+	K5 --> K1
+	K1 -- FAŁSZ --> K6[/Zwróć a/]
+	K6 --> STOP([STOP])
+```
 
 ## Wersja z modulo — iteracyjna
 
@@ -78,7 +88,14 @@ funkcja NWD(a, b):
 
 ### Schemat blokowy
 
-TODO
+```mermaid
+flowchart TD
+	START(["NWD(a, b)"]) --> K1{b != 0}
+	K1 -- PRAWDA --> K2[b2 := b\nb := a mod b\na := b2]
+	K2 --> K1
+	K1 -- FAŁSZ --> K5[/Zwróć a/]
+	K5 --> STOP([STOP])
+```
 
 ## Wersja z modulo — rekurencyjna
 
@@ -95,7 +112,14 @@ funkcja NWD(a, b):
 
 ### Schemat blokowy
 
-TODO
+```mermaid
+flowchart TD
+	START(["NWD(a, b)"]) --> K1{b = 0}
+	K1 -- PRAWDA --> K2[/Zwróć a/]
+	K2 --> STOP([STOP])
+	K1 -- FAŁSZ --> K3[/"Zwróć NWD(b, a mod b)"/]
+	K3 --> STOP
+```
 
 ## Implementacja
 

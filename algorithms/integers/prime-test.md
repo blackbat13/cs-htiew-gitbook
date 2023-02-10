@@ -75,14 +75,29 @@ Podsumujmy nasze rozważania w formie gotowego algorytmu.
 funkcja CzyPierwsza(n):
     1. Od i := 2 do n - 1, wykonuj:
         2. Jeżeli (n mod i) = 0, to:
-            3. Zwróć FAŁSZ, zakończ
+            3. Zwróć FAŁSZ
         
-    4. Zwróć PRAWDA, zakończ
+    4. Zwróć PRAWDA
 ```
 
 {% hint style="info" %}
 **mod** oznacza operację reszty z dzielenia
 {% endhint %}
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+	START(["CzyPierwsza(n)"]) --> K0[i := 2]
+	K0 --> K1{i < n}
+	K1 -- PRAWDA --> K2{n mod i = 0}
+	K2 -- PRAWDA --> K3[/Zwróć FAŁSZ/]
+	K3 --> STOP([STOP])
+	K2 -- FAŁSZ --> K1i[i := i + 1]
+	K1i --> K1
+	K1 -- FAŁSZ ----> K4[/Zwróć PRAWDA/]
+	K4 --> STOP
+```
 
 ### Złożoność
 
@@ -98,9 +113,24 @@ TODO
 funkcja CzyPierwsza(n):
     1. Od i := 2 do n div 2, wykonuj:
         2. Jeżeli (n mod i) = 0, to:
-            3. Zwróć FAŁSZ, zakończ
+            3. Zwróć FAŁSZ
         
-    4. Zwróć PRAWDA, zakończ
+    4. Zwróć PRAWDA
+```
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+	START(["CzyPierwsza(n)"]) --> K0[i := 2]
+	K0 --> K1{i <= n div 2}
+	K1 -- PRAWDA --> K2{n mod i = 0}
+	K2 -- PRAWDA --> K3[/Zwróć FAŁSZ/]
+	K3 --> STOP([STOP])
+	K2 -- FAŁSZ --> K1i[i := i + 1]
+	K1i --> K1
+	K1 -- FAŁSZ ----> K4[/Zwróć PRAWDA/]
+	K4 --> STOP
 ```
 
 ### Złożoność
@@ -117,9 +147,24 @@ TODO
 funkcja CzyPierwsza(n):
     1. Od i := 2 do pierwiastka z n, wykonuj:
         2. Jeżeli (n mod i) = 0, to:
-            3. Zwróć FAŁSZ, zakończ
+            3. Zwróć FAŁSZ
         
-    4. Zwróć PRAWDA, zakończ
+    4. Zwróć PRAWDA
+```
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+	START(["CzyPierwsza(n)"]) --> K0[i := 2]
+	K0 --> K1{"i <= sqrt(n)"}
+	K1 -- PRAWDA --> K2{n mod i = 0}
+	K2 -- PRAWDA --> K3[/Zwróć FAŁSZ/]
+	K3 --> STOP([STOP])
+	K2 -- FAŁSZ --> K1i[i := i + 1]
+	K1i --> K1
+	K1 -- FAŁSZ ----> K4[/Zwróć PRAWDA/]
+	K4 --> STOP
 ```
 
 ### Złożoność

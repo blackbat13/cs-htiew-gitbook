@@ -60,7 +60,15 @@ Używając pętli z licznikiem powinniśmy podać **zakres**, z którego licznik
 
 #### Schemat blokowy
 
-![Schemat blokowy z pętląlicznikiem](../../.gitbook/assets/for_ex1.png)
+```mermaid
+flowchart TD
+    START([START]) --> K0[i := 1]
+    K0 --> K1{i <= 5}
+    K1 -- PRAWDA --> K2[/Napisz na tablicy i/]
+    K2 --> K1i[i := i + 1]
+    K1i --> K1
+    K1 -- FAŁSZ ---> STOP([STOP])
+```
 
 Zwróć uwagę, że podobnie jak w przypadku pętli warunkowej, dla pętli iteracyjnej także nie mamy specjalnego bloku. Tak naprawdę w schemacie blokowym pętlę iteracyjną realizujemy jako pętlę warunkową, ponieważ każdą pętlę iteracyjną można zrealizować za pomocą pętli warunkowej.
 

@@ -39,13 +39,20 @@ TODO
 ```
 funkcja Fib(n):
     1. Jeżeli n <= 2, to:
-        2. Zwróć 1 i zakończ
-    3. Zwróć Fib(n - 1) + Fib(n - 2) i zakończ
+        2. Zwróć 1
+    3. Zwróć Fib(n - 1) + Fib(n - 2)
 ```
 
 ### Schemat blokowy
 
-TODO
+```mermaid
+flowchart TD
+	START(["Fib(n)"]) --> K1{n <= 2}
+	K1 -- PRAWDA --> K2[/Zwróć 1/]
+	K2 --> STOP([STOP])
+	K1 -- FAŁSZ --> K3[/"Zwróć Fib(n - 1) + Fib(n - 2)"/]
+	K3 --> STOP
+```
 
 ## Rozwiązanie iteracyjne
 
@@ -66,7 +73,15 @@ funkcja Fib(n):
 
 ### Schemat blokowy
 
-TODO
+```mermaid
+flowchart TD
+	START(["Fib(n)"]) --> K1[f1 := 1\nf2 := 1\ni := 3]
+	K1 --> K3{i <= n + 1}
+	K3 -- PRAWDA --> K4[f3 := f1 + f2\nf1 := f2\nf2 := f3\ni := i +1]
+	K4 --> K3
+	K3 -- FAŁSZ --> K7[/Zwróć f2/]
+	K7 --> STOP([STOP])
+```
 
 ## Implementacja
 

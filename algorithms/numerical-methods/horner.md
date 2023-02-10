@@ -110,6 +110,19 @@ funkcja Horner(n, x, a)
     4. Zwróć wynik
 ```
 
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+	START(["Horner(n, x, a)"]) --> K1["wynik := a[n]\ni := n - 1"]
+	K1 --> K2{i >= 0}
+	K2 -- PRAWDA --> K3["wynik := wynik * x + a[i]"]
+	K3 --> K2i[i := i - 1]
+	K2i --> K2
+	K2 -- FAŁSZ --> K4[/Zwróć wynik/]
+	K4 --> STOP([STOP])
+```
+
 ### Złożoność
 
 $$O(n)$$ — liniowa

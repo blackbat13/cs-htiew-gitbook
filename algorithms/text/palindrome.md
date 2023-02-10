@@ -12,13 +12,13 @@ description: Sprawdzanie, czy wyraz jest palindromem
 
 #### Dane
 
-* $$n$$ — długość tekstu
+* $$n$$ — liczba naturalna, długość tekstu, $$n > 0$$
 * $$tekst[1..n]$$ — ciąg znaków o długości $$n$$, numerowanych od jedynki
 
 #### Wynik
 
-* $$True$$ — jeżeli $$tekst$$ jest palindromem
-* $$False$$ — w przeciwnym przypadku
+* $$PRAWDA$$ — jeżeli *tekst* jest palindromem
+* $$FAŁSZ$$ — w przeciwnym przypadku
 
 ### Przykład 1
 
@@ -29,7 +29,7 @@ n := 5
 tekst := "kajak"
 ```
 
-#### Wynik: $$True$$
+#### Wynik: ***PRAWDA***
 
 {% hint style="info" %}
 **Wyjaśnienie**
@@ -46,7 +46,7 @@ n := 4
 tekst := "tama"
 ```
 
-**Wynik**: $$False$$
+**Wynik**: ***FAŁSZ***
 
 {% hint style="info" %}
 **Wyjaśnienie**
@@ -61,12 +61,27 @@ Jednym ze sposobów na sprawdzenie, czy wyraz jest palindromem, jest przejście 
 ### Pseudokod
 
 ```
-funkcja czyPalindrom(n, tekst):
+funkcja CzyPalindrom(n, tekst):
     1. srodek := n div 2
     2. Od i := 1 do srodek, wykonuj:
-        3. Jeżeli tekst[i] != tekst[n-i+1], to:
-            4. Zwróć False, zakończ
-    5. Zwróć True, zakończ
+        3. Jeżeli tekst[i] != tekst[n - i + 1], to:
+            4. Zwróć FAŁSZ
+    5. Zwróć PRAWDA
+```
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+	START(["CzyPalindrom(n, tekst)"]) --> K1[srodek := n div 2\ni := 1]
+	K1 --> K2{i <= srodek}
+	K2 -- PRAWDA --> K3{"tekst[i] != tekst[n - 1 + 1]"}
+	K3 -- PRAWDA --> K4[/Zwróć FAŁSZ/]
+	K4 --> STOP([STOP])
+	K3 -- FAŁSZ --> K2i[i := i + 1]
+	K2i --> K2
+	K2 -- FAŁSZ --> K5[/Zwróć PRAWDA/]
+	K5 --> STOP
 ```
 
 ### Złożoność

@@ -28,15 +28,27 @@ Idea tej metody jest prosta: podzielmy pole pod wykresem funkcji na prostokąty 
 ```
 funkcja MetodaProstokatow(f, a, b, n):
     1. pole := 0
-    2. sz := (b - a) / n
-    3. c := a + sz
+    2. szer := (b - a) / n
+    3. x := a + szer
     
-    4. Dopóki c <= b, wykonuj:
-        5. wys := f(c)
-        6. pole := pole + sz * wys
-        7. c := c + sz
+    4. Dopóki x <= b, wykonuj:
+        5. wys := f(x)
+        6. pole := pole + szer * wys
+        7. x := x + szer
         
     8. Zwróć pole
+```
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+	START(["MetodaProstokatow(f, a, b, n)"]) --> K1["pole := 0\nszer := (b - a) / n\nx := a + szer"]
+	K1 --> K4{x <= b}
+	K4 -- PRAWDA --> K5["wys := f(x)\npole := pole + szer * wys\nx := x + szer"]
+	K5 --> K4
+	K4 -- FAŁSZ --> K8[/Zwróć pole/]
+	K8 --> STOP([STOP])
 ```
 
 ## Rozwiązanie — metoda trapezów
@@ -48,14 +60,26 @@ W celu uzyskania lepszej dokładności, możemy podzielić pole pod wykresem fun
 ```
 funkcja MetodaTrapezow(f, a, b, n):
     1. pole := 0
-    2. sz := (b - a) / n
-    3. c := a + sz
+    2. szer := (b - a) / n
+    3. x := a + szer
     
-    4. Dopóki c <= b, wykonuj:
-        5. pole := pole + (f(c - sz) + f(c) * sz) / 2
-        6. c := c + sz
+    4. Dopóki x <= b, wykonuj:
+        5. pole := pole + ((f(x - szer) + f(x)) * szer) / 2
+        6. x := x + szer
 
     7. Zwróć pole
+```
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+	START(["MetodaTrapezow(f, a, b, n)"]) --> K1["pole := 0\nszer := (b - a) / n\nx := a + szer"]
+	K1 --> K4{x <= b}
+	K4 -- PRAWDA --> K5["pole := pole + ((f(x - szer) + f(x)) * szer) / 2\nx := x + szer"]
+	K5 --> K4
+	K4 -- FAŁSZ --> K8[/Zwróć pole/]
+	K8 --> STOP([STOP])
 ```
 
 ## Implementacja

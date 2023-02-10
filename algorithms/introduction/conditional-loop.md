@@ -27,7 +27,15 @@ Zwróć uwagę na wcięcie w powyższym przykładzie algorytmu. Tak często okre
 
 #### Schemat blokowy
 
-![Algorytm słodzenia herbaty - schemat blokowy](<../../.gitbook/assets/Pętla prosta - słodzenie herbaty.png>)
+```mermaid
+flowchart TD
+    START([START]) --> K1[Wsyp łyżeczkę cukru do herbaty]
+    K1 --> K2{w szklance jest nierozpuszczony cukier}
+    K2 -- PRAWDA --> K3[Zamieszaj jeden raz]
+    K3 --> K2
+    K2 -- FAŁSZ --> K4[Sprawdź smak herbaty]
+    K4 --> STOP([STOP])
+```
 
 Przyjrzyj się uważnie powyższemu schematowi blokowemu. Zauważ, że nie mamy osobnego bloku do pętli warunkowej. W celu zrealizowania pętli wykorzystujemy instrukcję warunkową, a następnie prowadzimy odpowiednią strzałkę tuż przed tę instrukcję, tym samym _**zapętlając**_ nasz schemat.
 
@@ -55,4 +63,14 @@ Zwróć uwagę na podwójne wcięcie w powyższym zapisie. Instrukcja 4 Znajduje
 
 #### Schemat blokowy
 
-![](../../.gitbook/assets/while_herbata2.png)
+```mermaid
+flowchart TD
+    START([START]) --> K1{herbata nie jest dość słodka}
+    K1 --> K2[Wsyp łyżeczkę cukru do herbaty]
+    K2 --> K3{w szklance jest nierozpuszczony cukier}
+    K3 -- PRAWDA --> K4[Zamieszaj jeden raz]
+    K4 --> K3
+    K3 -- FAŁSZ --> K5[Sprawdź smak herbaty]
+    K5 --> K1
+    K1 -- FAŁSZ ----> STOP([STOP])
+```
