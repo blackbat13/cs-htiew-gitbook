@@ -22,6 +22,6 @@ Początkowe dane (bajty) każdego pakietu IPv4 to nagłówek:
 * **Flagi** – określa między innymi czy pakiet może być fragmentowany.
 * **Kontrola przesunięcia** – umożliwia złożenie pakietu w całość pakietu, określają miejsce danego fragmentu w całym pakiecie.
 * **Czas życia pakietu (TTL – Time To Live)** – ilość przeskoków przez które może pakiet przejść zanim zostanie odrzucony (urządzenia przez które przechodzi dany pakiet zmniejszają tą wartość o 1).
-* **Protokół** **warstwy wyższej **– to pole zawiera informacje jaki protokół warstwy transportowej został wykorzystany (TCP, UDP, ICMP lub inne).
+* **Protokół warstwy wyższej**– to pole zawiera informacje jaki protokół warstwy transportowej został wykorzystany (TCP, UDP, ICMP lub inne).
 * **Suma kontrolna nagłówka** – gdy odbiorca dostanie pakiet, sprawdza jego poprawność obliczając sumę kontrolną i porównując ją z sumą kontrolną zapisaną w nagłówku.
 * **Adres źródłowy i adres docelowy** – zawierają adresy IP urządzeń które przesyłają między sobą dane zapisane w formacie binarnym.
