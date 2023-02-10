@@ -45,12 +45,27 @@ Zaczynamy od drugiego elementu tablicy. Będziemy go przesuwać w lewo tak dług
 ### Pseudokod
 
 ```
-procedura SortWstaw(A, n):
+procedura SortowaniePrzezWstawianie(n, A):
     1. Od i := 2 do n, wykonuj:
         2. j := i
-        3. Dopóki j > 1 oraz A[j] < A[j-1], to:
+        3. Dopóki j > 1 oraz A[j] < A[j - 1], to:
             4. Zamień(A[j], A[j - 1])
             5. j := j - 1
+```
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+    START(["SortowaniePrzezWstawianie(n, A)"]) --> K0[i := 2]
+    K0 --> K1{i <= n}
+    K1 -- PRAWDA --> K2[j := i]
+    K2 --> K3{"j > 1\noraz\nA[j] < A[j - 1]"}
+    K3 -- PRAWDA --> K4["Zamień(A[j], A[j - 1])\nj := j - 1"]
+    K4 --> K3
+    K3 -- FAŁSZ --> K1i[i := i + 1]
+    K1i --> K1
+    K1 -- FAŁSZ ----> STOP([STOP])
 ```
 
 ### Złożoność
