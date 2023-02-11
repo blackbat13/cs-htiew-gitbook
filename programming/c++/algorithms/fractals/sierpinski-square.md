@@ -29,7 +29,7 @@ void sierpinskiSquare(int rank, int length) {
     }
 
     for(int i = 0; i < 4; i++) {
-        for(int i = 0; i < 2; i++) {
+        for(int j = 0; j < 2; j++) {
             turtle.forward(length / 3);
             sierpinskiSquare(rank - 1, length / 3);
         }
