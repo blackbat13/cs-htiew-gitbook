@@ -2,7 +2,7 @@
 
 ## Opis problemu
 
-Kwadrat Sierpińskiego, zwany także Dywanem Sierpińskiego to fraktal podobny do Trójkąta Sierpińskiego. Główna różnica jest taka, że podstawową figurą jest kwadrat.
+**Kwadrat Sierpińskiego** (inaczej **Dywan Sierpińskiego**), to fraktal podobny do Trójkąta Sierpińskiego. Główna różnica jest taka, że podstawową figurą jest kwadrat.
 
 ### Specyfikacja
 
