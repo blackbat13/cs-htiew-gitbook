@@ -10,6 +10,12 @@
 - **kąt** - kąt obrotu
 - **długość** - długość linii
 
+### Przykład
+
+Krzywa Peano o stopniu $$4$$ i kącie $$90\degree$$.
+
+![Krzywa Peano](../../.gitbook/assets/peano_curve_4_90.bmp)
+
 ## Rozwiązanie
 
 ### Pseudokod
