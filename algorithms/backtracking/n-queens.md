@@ -13,11 +13,19 @@
 - **PRAWDA** jeżeli istnieje poprawne rozwiązanie
 - **FAŁSZ** w przeciwnym przypadku
 
+## Rozwiązanie
+
+Idea naszego rozwiązania jest prosta. Będziemy przechodzić wiersz po wierszu i próbować wszystkie możliwe ustawienia królowych w wierszu. Po ustawieniu królowej w danym wierszu przechodzimy do kolejnego wiersza, gdzie ponownie sprawdzamy wszystkie możliwe ustawienia.
+
+Oczywiście w ten sposób sprawdzalibyśmy wiele błędnych ustawień. Dlatego przed ustawieniem nowej królowej będziemy sprawdzać, czy jest to poprawne ustawienie, tzn. czy to pole nie jest już atakowane przez żadną inną królową.
+
+W celu sprawdzenia, czy dane pole nie jest atakowane przez inną królową, musimy przejść przez wszystkie poprzednie wiersze i sprawdzić, czy królowa ustawiona w danym wierszu nie atakuje obecnego pola w pionie lub na ukos.
+
 ### Pseudokod
 
 ```
 funkcja SprawdźPozycję(wiersz, kolumna, pozycje):
-    1. Dla i := 1 do wiersz, wykonuj:
+    1. Dla i := 1 do wiersz - 1, wykonuj:
         2. Jeżeli pozycje[i] = kolumna lub kolumna - pozycje[i] = wiersz - i, to:
             3. Zwróć FAŁSZ
     4. Zwróć PRAWDA
@@ -40,7 +48,7 @@ funkcja ZnajdźRozwiązanie(n, wiersz, pozycje):
 ```mermaid
 flowchart TD
     START(["SprawdźPozycję(wiersz, kolumna, pozycje)"]) --> K0[i := 1]
-    K0 --> K1{i <= wiersz}
+    K0 --> K1{i < wiersz}
     K1 -- PRAWDA --> K2{"pozycje[i] = kolumna\nlub\nkolumna - pozycje[i] = wiersz - i"}
     K2 -- PRAWDA --> K3[/Zwróć FAŁSZ/]
     K2 -- FAŁSZ --> K1i[i := i + 1]
