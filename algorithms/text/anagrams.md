@@ -43,8 +43,8 @@ Skupimy się jednak na uproszczonej wersji tego problemu, by przedstawić ideę 
 
 #### Wynik
 
-* $$True$$ — jeżeli $$tekst1$$ i $$tekst2$$ są anagramami.
-* $$False$$ — w przeciwnym przypadku.
+* $$PRAWDA$$ — jeżeli $$tekst1$$ i $$tekst2$$ są anagramami.
+* $$FAŁSZ$$ — w przeciwnym przypadku.
 
 ### Przykład
 
@@ -56,7 +56,7 @@ tekst1 := "markotny"
 tekst2 := "romantyk"
 ```
 
-**Wynik**: $$True$$
+**Wynik**: **PRAWDA**
 
 ## Rozwiązanie 1
 
@@ -119,9 +119,9 @@ funkcja TestujAnagramy(n, tekst1, tekst2):
         6. indeks2 := numer znaku tekst2[i]
         7. liczniki2[indeks] := liczniki2[indeks] + 1
     8. Jeżeli liczniki1 = liczniki2, to:
-        9. Zwróć True
+        9. Zwróć PRAWDA
     10. w przeciwnym przypadku:
-        11. Zwróć False
+        11. Zwróć FAŁSZ
 ```
 
 ### Złożoność
@@ -142,16 +142,28 @@ funkcja TestujAnagramy(n, tekst1, tekst2):
     1. Sortuj(tekst1)
     2. Sortuj(tekst2)
     3. Jeżeli tekst1 = tekst2, to:
-        4. Zwróć True
+        4. Zwróć PRAWDA
     5. w przeciwnym przypadku:
-        6. Zwróć False 
+        6. Zwróć FAŁSZ 
+```
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+    START(["TestujAnagramy(n, tekst1, tekst2)"]) --> K1["Sortuj(tekst1)\nSortuj(tekst2)"]
+    K1 --> K3{tekst1 = tekst2}
+    K3 -- PRAWDA --> K4[/Zwróć PRAWDA/]
+    K3 -- FAŁSZ --> K6[/Zwróć FAŁSZ/]
+    K4 --> STOP([STOP])
+    K6 --> STOP
 ```
 
 ### Złożoność
 
 $$O(n)$$ — liniowa, jeżeli wykorzystamy optymalny algorytm sortowania (np. sortowanie przez zliczanie).
 
-$$O(n\log{n})$$ — liniowo logarytmiczna, jeżeli użyjemy standardowej metody sortowania (np. sortowanie szybkie).&#x20;
+$$O(n\log{n})$$ — liniowo logarytmiczna, jeżeli użyjemy standardowej metody sortowania (np. sortowanie szybkie).
 
 ## Implementacja
 

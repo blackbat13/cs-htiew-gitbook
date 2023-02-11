@@ -60,6 +60,7 @@ procedura SortowaniePrzezWybieranie(A, n):
     1. Od i := 1 do n - 1, wykonuj:
         2. minInd := SzukajIndeksMinimum(i, n, A)
         3. Zamień(A[i], A[minInd])
+        
 ```
 
 ### Schemat blokowy
