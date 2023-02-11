@@ -2,11 +2,41 @@
 
 ## Opis problemu
 
-TODO
+### Specyfikacja
+
+#### Dane
+
+- **stopień** - stopień fraktala
+- **kąt** - kąt obrotu
+- **długość** - długość linii
 
 ## Rozwiązanie
 
-TODO
+### Pseudokod
+
+```
+procedura KrzywaPeano(stopień, kąt, długość):
+    1. Jeżeli stopień = 0, to:
+        2. Zakończ
+    3. Prawo(kąt)
+    4. KrzywaPeano(stopień - 1, -kąt, długość)
+    5. Przód(długość)
+    6. KrzywaPeano(stopień - 1, kąt, długość)
+    7. Przód(długość)
+    8. KrzywaPeano(stopień - 1, -kąt, długość)
+    9. Lewo(kąt)
+```
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+    START(["KrzywaPeano(stopień, kąt, długość"]) --> K1{stopień = 0}
+    K1 -- PRAWDA --> K2["Przód(długość)"]
+    K2 --> STOP([STOP])
+    K1 -- FAŁSZ --> K4["Prawo(kąt)\nKrzywaPeano(stopień - 1, -kąt, długość)\nPrzód(długość)\nKrzywaPeano(stopień - 1, kąt, długość)\nPrzód(długość)\nKrzywaPeano(stopień - 1, -kąt, długość)\nLewo(kąt)"]
+    K4 --> STOP
+```
 
 ## Implementacja
 
