@@ -13,7 +13,7 @@
 
 * Posortowana niemalejąco tablica $$A$$
 
-### **Przykład**
+### Przykład
 
 #### Dane
 
@@ -33,7 +33,7 @@ Sortowanie odd-even
 ### Pseudokod
 
 ```
-Procedura SortOddEven(A, n):
+procedura OddEvenSort(n, A):
     1. Od i := 1 do n, wykonuj:
         2. Jeżeli i mod 2 = 1, to:
             3. Dla j := 2 do n, z krokiem 2, wykonuj:
@@ -43,6 +43,33 @@ Procedura SortOddEven(A, n):
             7. Dla j := 1 do n, z krokiem 2, wykonuj:
                 8. Jeżeli A[j] < A[j - 1]:
                     9. Zamień(A[j], A[j - 1])
+```
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+    START(["OddEvenSort(n, A)"]) --> K0[i := 1]
+    K0 --> K1{i <= n}
+    K1 -- PRAWDA --> K2{i mod 2 = 1}
+    K2 -- PRAWDA --> K3p[j := 2]
+    K3p --> K3{j <= n}
+    K3 -- PRAWDA --> K4{"A[j] < A[j - 1]"}
+    K4 -- PRAWDA --> K5["Zamień(A[j], A[j - 1])"]
+    K5 --> K3i[j := j + 2]
+    K4 -- FAŁSZ --> K3i
+    K3i --> K3
+    K3 -- FAŁSZ --> K1i[i := i + 1]
+    K2 -- FAŁSZ --> K7p[j := 1]
+    K7p --> K7{j <= n}
+    K7 -- PRAWDA --> K8{"A[j] < A[j - 1]"}
+    K8 -- PRAWDA --> K9["Zamień(A[j], A[j - 1])"]
+    K9 --> K7i[j := j + 2]
+    K8 -- FAŁSZ --> K7i
+    K7i --> K7
+    K7 -- FAŁSZ --> K1i
+    K1i --> K1
+    K1 -- FAŁSZ -------> STOP([STOP])
 ```
 
 ### Złożoność

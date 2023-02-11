@@ -47,10 +47,10 @@ Sam algorytm wyszukiwania minimum musimy zmodyfikować tak, by działał na okre
 ### Pseudokod
 
 ```
-funkcja SzukajIndeksMinimum(p, k, A):
-    1. min := A[p]
-    2. minInd := p
-    3. Od i := p + 1 do k, wykonuj:
+funkcja SzukajIndeksMinimum(pocz, kon, A):
+    1. min := A[pocz]
+    2. minInd := pocz
+    3. Od i := pocz + 1 do kon, wykonuj:
         4. Jeżeli A[i] < min, to:
             5. min := A[i]
             6. minInd := i
@@ -60,6 +60,31 @@ procedura SortowaniePrzezWybieranie(A, n):
     1. Od i := 1 do n - 1, wykonuj:
         2. minInd := SzukajIndeksMinimum(i, n, A)
         3. Zamień(A[i], A[minInd])
+```
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+    START(["SzukajIndeksMinimum(pocz, kon, A)"]) --> K1["min := A[pocz]\nminInd := pocz\ni := pocz + 1"]
+    K1 --> K3{i <= kon}
+    K3 -- PRAWDA --> K4{"A[i] < min"}
+    K4 -- PRAWDA --> K5["min := A[i]\nminInd := i"]
+    K4 -- FAŁSZ --> K3i[i := i + 1]
+    K5 --> K3i
+    K3i --> K3
+    K3 -- FAŁSZ ---> K7[/Zwróć minInd/]
+    K7 --> STOP([STOP])
+```
+
+```mermaid
+flowchart TD
+    START(["SortowaniePrzezWybieranie(A, n)"]) --> K0[i := 1]
+    K0 --> K1{i <= n - 1}
+    K1 -- PRAWDA --> K2["minInd := SzukajIndeksMinimum(i, n, A)\nZamień(A[i], A[minInd])"]
+    K2 --> K1i[i := i + 1]
+    K1i --> K1
+    K1 -- FAŁSZ ---> STOP([STOP])
 ```
 
 ### Złożoność

@@ -13,7 +13,7 @@
 
 * Posortowana niemalejąco tablica $$A$$
 
-### **Przykład**
+### Przykład
 
 #### Dane
 
@@ -44,6 +44,31 @@ procedura SortowanieKoktajlowe(n, A):
 {% hint style="info" %}
 **div** oznacza dzielenie całkowite
 {% endhint %}
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+    START(["SortowanieKoktajlowe(n, A)"]) --> K0[i := 1]
+    K0 --> K1{i <= n div 2}
+    K1 -- PRAWDA --> K2p[j := i]
+    K2p --> K2{j <= n - i}
+    K2 -- PRAWDA --> K3{"A[j] > A[j + 1]"}
+    K3 -- PRAWDA --> K4["Zamień(A[j], A[j + 1])"]
+    K3 -- FAŁSZ --> K2i[j := j + 1]
+    K4 --> K2i
+    K2i --> K2
+    K2 --> K5p[j := n - i]
+    K5p --> K5{j >= i + 1}
+    K5 -- PRAWDA --> K6{"A[j] < A[j - 1]"}
+    K6 -- PRAWDA --> K7["Zamień(A[j], A[j - 1])"]
+    K6 -- FAŁSZ --> K5i[j := j - 1]
+    K7 --> K5i
+    K5i --> K5
+    K5 -- FAŁSZ --> K1i[i := i + 1]
+    K1i --> K1
+    K1 -- FAŁSZ --------> STOP([STOP])
+```
 
 ### Złożoność
 

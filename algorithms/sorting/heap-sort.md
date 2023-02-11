@@ -43,14 +43,39 @@ procedura ZbudujKopiec(A, n):
         4. Dopóki j > 0 oraz A[j] > A[rodzic]:
             5. Zamień(A[j], A[rodzic])
             6. j := rodzic
-            7. rodzic = j div 2
+            7. rodzic := j div 2
 ```
             
 ```
-procedura SortowanieKopcowanie(n, A):
+procedura SortowaniePrzezKopcowanie(n, A):
     1. Dla i := n w dół do 1, wykonuj:
         2. ZbudujKopiec(A, i)
         3. Zamień(A[1], A[i])
+```
+
+### Schemat blokowy
+
+```mermaid
+flowchart TD
+    START(["ZbudujKopiec(A, n)"]) --> K0[i := 2]
+    K0 --> K1{i <= n}
+    K1 -- PRAWDA --> K2[rodzic := i div 2\nj := i]
+    K2 --> K4{"j > 0\noraz\nA[j] > A[rodzic]"}
+    K4 -- PRAWDA --> K5["Zamień(A[j], A[rodzic])\nj := rodzic\nrodzic := j div 2"]
+    K5 --> K4
+    K4 -- FAŁSZ --> K1i[i := i + 1]
+    K1i --> K1
+    K1 -- FAŁSZ ----> STOP([STOP])
+```
+
+```mermaid
+flowchart TD
+    START(["SortowaniePrzezKopcowanie(n, A)"]) --> K0[i := n]
+    K0 --> K1{i >= 1}
+    K1 -- PRAWDA --> K2["ZbudujKopiec(A, i)\nZamień(A[1], A[i])"]
+    K2 --> K1i[i := i - 1]
+    K1i --> K1
+    K1 -- FAŁSZ ---> STOP([STOP])
 ```
 
 ### Złożoność
