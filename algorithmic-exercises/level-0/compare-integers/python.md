@@ -1,7 +1,5 @@
 # Python
 
-## Rozwiązanie
-
 ```python
 a = int(input("Podaj a: "))
 b = int(input("Podaj b: "))
@@ -14,13 +12,7 @@ else:
     print(">")
 ```
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/xRH1Ti" %}
-Porównywanie liczb - Python
-{% endembed %}
-
-### Opis
+## Opis
 
 Na początku wczytujemy dwie wartości od użytkownika (**linie 1 i 2**). Ponieważ spodziewamy się liczb całkowitych, to poza funkcją `input` do wczytania wartości używamy także funkcji `int` do zamiany wczytanych wartości (które są przechowywane w postaci ciągów znaków typu `string`) na liczby całkowite.
 

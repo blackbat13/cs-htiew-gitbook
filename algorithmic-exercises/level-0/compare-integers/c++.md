@@ -1,7 +1,5 @@
 # C++
 
-## Implementacja
-
 ```cpp
 #include <iostream>
 
@@ -28,13 +26,7 @@ int main() {
 }
 ```
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/pIffe8" %}
-Porównywanie liczb - C++
-{% endembed %}
-
-### Opis implementacji
+## Opis implementacji
 
 Na początku deklarujemy dwie zmienne całkowite `a` i `b` do przechowywania danych wejściowych (**linia 5**). Następnie wczytujemy dwie wartości od użytkownika (**linie 7-11**), podając przy tym stosowane komunikaty.
 

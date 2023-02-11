@@ -2,18 +2,16 @@
 
 ## Opis problemu
 
-TODO
-
 ### Specyfikacja
 
 #### Dane
 
-* $$n$$ - stopień drzewa binarnego
-* $$w$$ - początkowa długość gałęzi (pnia)
+* $$stopień$$ - stopień drzewa binarnego
+* $$długość$$ - początkowa długość gałęzi (pnia)
 
 #### Wynik
 
-* Drzewo binarne stopnia $$n$$ i początkowej długości $$w$$.
+* Drzewo binarne stopnia $$stopień$$ i początkowej długości $$długość$$.
 
 ### Prezentacja
 
@@ -32,25 +30,25 @@ Drzewo binarne - algorytm
 ### Pseudokod
 
 ```
-funkcja DrzewoBinarne(n, w):
-    1. Przod(w)
-    2. Jeżeli n > 0, to:
+funkcja DrzewoBinarne(stopień, długość):
+    1. Przód(długość)
+    2. Jeżeli stopień > 0, to:
         3. Lewo(45)
-        4. DrzewoBinarne(n - 1, w / 2)
+        4. DrzewoBinarne(stopień - 1, długość / 2)
         5. Prawo(90)
-        6. DrzewoBinarne(n - 1, w / 2)
+        6. DrzewoBinarne(stopień - 1, długość / 2)
         7. Lewo(45)
-    8. Tyl(w)
+    8. Tył(długość)
 ```
 
 ### Schemat blokowy
 
 ```mermaid
 flowchart TD
-	START(["DrzewoBinarne(n, w)"]) --> K1["Przod(w)"]
-	K1 --> K2{n > 0}
-	K2 -- PRAWDA --> K3["Lewo(45)\nDrzewoBinarne(n - 1, w / 2)\nPrawo(90)\nDrzewoBinarne(n - 1, w / 2)\nLewo(45)"]
-	K3 --> K8["Tyl(w)"]
+	START(["DrzewoBinarne(stopień, długość)"]) --> K1["Przód(długość)"]
+	K1 --> K2{stopień > 0}
+	K2 -- PRAWDA --> K3["Lewo(45)\nDrzewoBinarne(stopień - 1, długość / 2)\nPrawo(90)\nDrzewoBinarne(stopień - 1, długość / 2)\nLewo(45)"]
+	K3 --> K8["Tył(długość)"]
 	K2 -- FAŁSZ --> K8
 	K8 --> STOP([STOP])
 ```
