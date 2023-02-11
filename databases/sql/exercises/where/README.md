@@ -22,7 +22,7 @@ Wypisz wszystkich klientów, których imię lub nazwisko kończy się na literę
 
 ## Zadanie 6
 
-Wypisz wszystkich klientów, których imię lub nazwisko kończy się na literę *a*.
+Wypisz wszystkich klientów, których imię lub nazwisko zaczyna się na literę *A*.
 
 ## Zadanie 6
 
