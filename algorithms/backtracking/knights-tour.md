@@ -19,6 +19,165 @@ Skoczek, zwany inaczej koniem, to figura szachowa która wykonuje ruchy w kszta�
 
 Idea rozwiązania jest stosunkowo prosta. Będziemy rekurencyjnie sprawdzać wszystkie możliwe ruchy skoczka. Gdy dojdziemy do miejsca, z którego nie będziemy mogli już wykonać kolejnego ruchu, to cofniemy się do poprzedniego pola.
 
+### Przykład
+
+**Ruch 1**
+
+|   | a | b | c | d |
+|---|---|---|---|---|
+| 4 |   |   |   |   |
+| 3 |   |   |   |   |
+| 2 |   |   |   |   |
+| 1 | K |   |   |   |
+
+**Ruch 2**
+
+|   | a | b | c | d |
+|---|---|---|---|---|
+| 4 |   |   |   |   |
+| 3 |   |   |   |   |
+| 2 |   |   | K |   |
+| 1 | X |   |   |   |
+
+**Ruch 3**
+
+|   | a | b | c | d |
+|---|---|---|---|---|
+| 4 |   |   |   | K |
+| 3 |   |   |   |   |
+| 2 |   |   | X |   |
+| 1 | X |   |   |   |
+
+**Ruch 4**
+
+|   | a | b | c | d |
+|---|---|---|---|---|
+| 4 |   |   |   | X |
+| 3 |   | K |   |   |
+| 2 |   |   | X |   |
+| 1 | X |   |   |   |
+
+**Ruch 5**
+
+|   | a | b | c | d |
+|---|---|---|---|---|
+| 4 |   |   |   | X |
+| 3 |   | X |   |   |
+| 2 |   |   | X |   |
+| 1 | X |   | K |   |
+
+**Ruch 6**
+
+|   | a | b | c | d |
+|---|---|---|---|---|
+| 4 |   |   |   | X |
+| 3 |   | X |   |   |
+| 2 | K |   | X |   |
+| 1 | X |   | X |   |
+
+**Ruch 7**
+
+|   | a | b | c | d |
+|---|---|---|---|---|
+| 4 |   | K |   | X |
+| 3 |   | X |   |   |
+| 2 | X |   | X |   |
+| 1 | X |   | X |   |
+
+**Ruch 8**
+
+|   | a | b | c | d |
+|---|---|---|---|---|
+| 4 |   | X |   | X |
+| 3 |   | X |   | K |
+| 2 | X |   | X |   |
+| 1 | X |   | X |   |
+
+**Ruch 9**
+
+|   | a | b | c | d |
+|---|---|---|---|---|
+| 4 |   | X |   | X |
+| 3 |   | X |   | X |
+| 2 | X | K | X |   |
+| 1 | X |   | X |   |
+
+**Ruch 10**
+
+|   | a | b | c | d |
+|---|---|---|---|---|
+| 4 |   | X |   | X |
+| 3 |   | X |   | X |
+| 2 | X | K | X |   |
+| 1 | X |   | X | X |
+
+**Ruch 11**
+
+|   | a | b | c | d |
+|---|---|---|---|---|
+| 4 |   | X | K | X |
+| 3 |   | X |   | X |
+| 2 | X | X | X |   |
+| 1 | X |   | X | X |
+
+**Ruch 12**
+
+|   | a | b | c | d |
+|---|---|---|---|---|
+| 4 |   | X | X | X |
+| 3 |   | X |   | X |
+| 2 | X | X | X | K |
+| 1 | X |   | X | X |
+
+**Ruch 13**
+
+|   | a | b | c | d |
+|---|---|---|---|---|
+| 4 |   | X | X | X |
+| 3 |   | X |   | X |
+| 2 | X | X | X | X |
+| 1 | X | K | X | X |
+
+**Ruch 14**
+
+|   | a | b | c | d |
+|---|---|---|---|---|
+| 4 |   | X | X | X |
+| 3 | K | X |   | X |
+| 2 | X | X | X | X |
+| 1 | X | X | X | X |
+
+W tym momencie nie możemy już wykonać kolejnego ruchu. Cofamy się więc do poprzedniej sytuacji z **ruchu 13**. 
+
+|   | a | b | c | d |
+|---|---|---|---|---|
+| 4 |   | X | X | X |
+| 3 |   | X |   | X |
+| 2 | X | X | X | X |
+| 1 | X | K | X | X |
+
+Tutaj mamy jeszcze jedną możliwość ruchu, której wcześniej nie sprawdziliśmy. Możemy poruszyć się na pole **c3**. Wykonujemy więc **nowy** ruch 14.
+
+**Ruch 14**
+
+|   | a | b | c | d |
+|---|---|---|---|---|
+| 4 |   | X | X | X |
+| 3 |   | X | K | X |
+| 2 | X | X | X | X |
+| 1 | X | X | X | X |
+
+**Ruch 15**
+
+|   | a | b | c | d |
+|---|---|---|---|---|
+| 4 | K | X | X | X |
+| 3 |   | X | X | X |
+| 2 | X | X | X | X |
+| 1 | X | X | X | X |
+
+Teraz także jesteśmy w sytuacji bez wyjścia. W tym momencie algorytm ponownie wycofałby się do ostatniej pozycji, w którym mieliśmy jeszcze niezbadany ruch. Tego jednak nie będziemy już prezentować, pozostawiamy jako samodzielne ćwiczenie.
+
 ### Pseudokod
 
 ```
