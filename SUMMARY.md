@@ -62,6 +62,7 @@
   * [Sumy prefiksowe](algorithms/searching/prefix-sum.md)
 * [Przeszukiwanie z powrotami](algorithms/backtracking/README.md)
   * [Problem n królowych](algorithms/backtracking/n-queens.md)
+  * [Problem skoczka](algorithms/backtracking/knights-tour.md)
   * [Permutacje](algorithms/backtracking/permutations.md)
 * [Sortowanie](algorithms/sorting/README.md)
   * [Sortowanie przez wybieranie](algorithms/sorting/selection-sort.md)
