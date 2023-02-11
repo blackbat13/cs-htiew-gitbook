@@ -22,7 +22,7 @@ Utwórz zestawienie zawierające nazwę utworu oraz jego długość trwania w mi
 
 ## Zadanie 6
 
-Dla każdego klienta wypisz jego imię i nazwisko oraz datę urodzenia.
+Dla każdego pracownika wypisz jego imię i nazwisko oraz datę urodzenia.
 
 ## Zadanie 7
 

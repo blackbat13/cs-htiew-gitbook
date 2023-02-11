@@ -34,32 +34,128 @@ W celu załadowania bazy *Chinook* w narzędziu *SQLite Online* wystarczy w okie
 
 Bazę *Chinook* można także pobrać z poniższego linku:
 
-{% embed url="https://www.sqlitetutorial.net/wp-content/uploads/2018/03/chinook.zip" %}
+{% embed url="https://github.com/lerocha/chinook-database/raw/master/ChinookDatabase/DataSources/Chinook_Sqlite.sqlite" %}
 Baza Chinook
 {% endembed %}
 
-Pobrany plik należy rozpakować. Jeżeli chcemy załadować bazę do naszego narzędzia online to wybieramy z menu **File->Open DB** i wybieramy wypakowany plik *chinook.db*.
+Pobrany plik należy rozpakować. Jeżeli chcemy załadować bazę do naszego narzędzia online to wybieramy z menu **File->Open DB** i wybieramy wypakowany plik *chinook.sqlite*.
 
 ### Struktura bazy danych
 
 Baza składa się z 11 tabel:
 
-- **employees** - tabela przechowująca informacje o pracownikach, takie jak:
+- **Employee** - tabela przechowująca informacje o pracownikach, takie jak:
   - id pracownika (*EmployeeId*), 
   - nazwisko (*LastName*), 
   - imię (*FirstName*),
   - itp.
-- **customers** - tabela przechowująca informacje o klientach.
-- **invoices** oraz **invoice_items**: dwie tabele przechowujące informacje o fakturach. Pierwsza przechowuje nagłówki faktur, a druga zakupione utwory.
-- **artists** - tabela przechowująca informacje o zaspołach. Zawiera jedynie nazwę zespołu oraz jego identyfikator.
-- **albums** - tabela przechowująca informacje o albumach, czyli listach utworów. Każdy album należy do jednego artysty, ale jeden artysta może mieć wiele albumów.
-- **media_types** - tabela przechowująca informacje o typach plików audio, takie jak MPEG czy AAC.
-- **genres** - tabele przechowująca informacje o gatunkach, np. rock, jazz, metal.
-- **tracks** - tabela przechowująca informacje o utworach. Każdy utwór należy do jednego albumu.
-- **playlists** oraz **playlist_track** - tabele przechowujące informacje o playlistach. Każda playlista zawiera listę utworów, a każdy utwór może należeć do kilku playlist. Relacja pomiędzy tabelami *playlists* oraz tracks to relacja typu **wiele-do-wielu**, która zrealizowana jest za pomocą tabeli *playlist_track*.
+- **Customer** - tabela przechowująca informacje o klientach.
+- **Invoice** oraz **InvoiceLine**: dwie tabele przechowujące informacje o fakturach. Pierwsza przechowuje nagłówki faktur, a druga zakupione utwory.
+- **Artist** - tabela przechowująca informacje o zaspołach. Zawiera jedynie nazwę zespołu oraz jego identyfikator.
+- **Album** - tabela przechowująca informacje o albumach, czyli listach utworów. Każdy album należy do jednego artysty, ale jeden artysta może mieć wiele albumów.
+- **MediaType** - tabela przechowująca informacje o typach plików audio, takie jak MPEG czy AAC.
+- **Genre** - tabele przechowująca informacje o gatunkach, np. rock, jazz, metal.
+- **Track** - tabela przechowująca informacje o utworach. Każdy utwór należy do jednego albumu.
+- **Playlist** oraz **PlaylistTrack** - tabele przechowujące informacje o playlistach. Każda playlista zawiera listę utworów, a każdy utwór może należeć do kilku playlist. Relacja pomiędzy tabelami *playlists* oraz tracks to relacja typu **wiele-do-wielu**, która zrealizowana jest za pomocą tabeli *playlist_track*.
 
 Struktura bazy przedstawiona jest na poniższej grafice:
 
-{% embed url="https://www.sqlitetutorial.net/wp-content/uploads/2018/03/sqlite-sample-database-diagram-color.pdf" %}
-Struktura bazy Chinook
-{% endembed %}
+```mermaid
+erDiagram
+  Album ||--o{ Artist : ""
+  Customer ||--o{ Employee : ""
+  Employee }o--o{ Employee : ""
+  Invoice ||--o{ Customer : ""
+  InvoiceLine ||--o{ Invoice : ""
+  Playlist }o--o{ PlaylistTrack : ""
+  PlaylistTrack }o--o{ Track : ""
+  Track ||--o{ Album : ""
+  Track ||--o{ Genre : ""
+  Track ||--o{ MediaType : ""
+  InvoiceLine ||--o{ Track : ""
+  Album {
+    INTEGER AlbumId
+    NVARCHAR Title
+    INTEGER ArtistId
+  }
+  Artist {
+    INTEGER ArtistId
+    NVARCHAR Name
+  }
+  Customer {
+    INTEGER CustomerId
+    NVARCHAR FirstName
+    NVARCHAR LastName
+    NVARCHAR Company
+    NVARCHAR Address
+    NVARCHAR City
+    NVARCHAR Country
+    NVARCHAR PostalCode
+    NVARCHAR Phone
+    NVARCHAR Fax
+    NVARCHAR Email
+    INTEGER SupportRepId
+  }
+  Employee {
+    INTEGER EmployeeId
+    NVARCHAR LastName
+    NVARCHAR FirstName
+    NVARCHAR Title
+    INTEGER ReportsTo
+    DATETIME BirthDate
+    DATETIME HireDate
+    NVARCHAR Address
+    NVARCHAR City
+    NVARCHAR State
+    NVARCHAR Country
+    NVARCHAR PostalCode
+    NVARCHAR Phone
+    NVARCHAR Fax
+    NVARCHAR Email
+  }
+  Genre {
+    INTEGER GenreId
+    NVARCHAR Name
+  }
+  Invoice {
+    INTEGER InvoiceId
+    NVARCHAR CustomerId
+    DATETIME InvoiceDate
+    NVARCHAR BillingAddress
+    NVARCHAR BillingCity
+    NVARCHAR BillingState
+    NVARCHAR BillingCountry
+    NVARCHAR BillingPostalCode
+    NUMERIC Total
+  }
+  InvoiceLine {
+    INTEGER InvoiceLineId
+    INTEGER InvoiceId
+    INTEGER TrackId
+    NUMERIC UnitPrice
+    INTEGER Quantity
+  }
+  MediaType {
+    INTEGER MediaTypeId
+    NVARCHAR Name
+  }
+  Playlist {
+    INTEGER PlaylistId
+    NVARCHAR Name
+  }
+  PlaylistTrack {
+    INTEGER PlaylistId
+    INTEGER TrackId
+  }
+  Track {
+    INTEGER TrackId
+    NVARCHAR Name
+    INTEGER AlbumId
+    INTEGER MediaTypeId
+    INTEGER GenreId
+    NVARCHAR Composer
+    INTEGER Milliseconds
+    INTEGER Bytes
+    NUMERIC UnitPrice
+  }
+```
