@@ -216,3 +216,11 @@ flowchart TD
     K6 -- FAŁSZ --> K12[/Zwróć FAŁSZ/]
     K12 --> STOP
 ```
+
+## Implementacja
+
+### Python
+
+{% content-ref url="../../programming/python/algorithms/backtracking/knights-tour.md" %}
+[knights-tour.md](../../programming/python/algorithms/backtracking/knights-tour.md)
+{% endcontent-ref %}
