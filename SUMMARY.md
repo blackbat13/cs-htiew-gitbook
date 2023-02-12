@@ -866,6 +866,8 @@
 ## Bazy danych
 
 * [Wstęp](databases/README.md)
+* [Wprowadzenie](databases/introduction/README.md)
+  * [Relacje](databases/introduction/relations.md)
 * [SQL](databases/sql/README.md)
   * [Ćwiczenia](databases/sql/exercises/README.md)
     * [SELECT](databases/sql/exercises/select/README.md)
