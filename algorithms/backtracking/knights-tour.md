@@ -219,6 +219,12 @@ flowchart TD
 
 ## Implementacja
 
+### C++
+
+{% content-ref url="../../programming/c++/algorithms/backtracking/knights-tour.md" %}
+[knights-tour.md](../../programming/c++/algorithms/backtracking/knights-tour.md)
+{% endcontent-ref %}
+
 ### Python
 
 {% content-ref url="../../programming/python/algorithms/backtracking/knights-tour.md" %}
