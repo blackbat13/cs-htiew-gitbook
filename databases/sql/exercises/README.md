@@ -51,7 +51,7 @@ Baza składa się z 11 tabel:
   - itp.
 - **Customer** - tabela przechowująca informacje o klientach.
 - **Invoice** oraz **InvoiceLine**: dwie tabele przechowujące informacje o fakturach. Pierwsza przechowuje nagłówki faktur, a druga zakupione utwory.
-- **Artist** - tabela przechowująca informacje o zaspołach. Zawiera jedynie nazwę zespołu oraz jego identyfikator.
+- **Artist** - tabela przechowująca informacje o zespołach. Zawiera jedynie nazwę zespołu oraz jego identyfikator.
 - **Album** - tabela przechowująca informacje o albumach, czyli listach utworów. Każdy album należy do jednego artysty, ale jeden artysta może mieć wiele albumów.
 - **MediaType** - tabela przechowująca informacje o typach plików audio, takie jak MPEG czy AAC.
 - **Genre** - tabele przechowująca informacje o gatunkach, np. rock, jazz, metal.
@@ -75,73 +75,73 @@ erDiagram
   InvoiceLine ||--o{ Track : ""
   Album {
     INTEGER AlbumId
-    NVARCHAR Title
+    TEXT Title
     INTEGER ArtistId
   }
   Artist {
     INTEGER ArtistId
-    NVARCHAR Name
+    TEXT Name
   }
   Customer {
     INTEGER CustomerId
-    NVARCHAR FirstName
-    NVARCHAR LastName
-    NVARCHAR Company
-    NVARCHAR Address
-    NVARCHAR City
-    NVARCHAR Country
-    NVARCHAR PostalCode
-    NVARCHAR Phone
-    NVARCHAR Fax
-    NVARCHAR Email
+    TEXT FirstName
+    TEXT LastName
+    TEXT Company
+    TEXT Address
+    TEXT City
+    TEXT Country
+    TEXT PostalCode
+    TEXT Phone
+    TEXT Fax
+    TEXT Email
     INTEGER SupportRepId
   }
   Employee {
     INTEGER EmployeeId
-    NVARCHAR LastName
-    NVARCHAR FirstName
-    NVARCHAR Title
+    TEXT LastName
+    TEXT FirstName
+    TEXT Title
     INTEGER ReportsTo
-    DATETIME BirthDate
-    DATETIME HireDate
-    NVARCHAR Address
-    NVARCHAR City
-    NVARCHAR State
-    NVARCHAR Country
-    NVARCHAR PostalCode
-    NVARCHAR Phone
-    NVARCHAR Fax
-    NVARCHAR Email
+    NUMERIC BirthDate
+    NUMERIC HireDate
+    TEXT Address
+    TEXT City
+    TEXT State
+    TEXT Country
+    TEXT PostalCode
+    TEXT Phone
+    TEXT Fax
+    TEXT Email
   }
   Genre {
     INTEGER GenreId
-    NVARCHAR Name
+    TEXT Name
   }
   Invoice {
     INTEGER InvoiceId
-    NVARCHAR CustomerId
-    DATETIME InvoiceDate
-    NVARCHAR BillingAddress
-    NVARCHAR BillingCity
-    NVARCHAR BillingState
-    NVARCHAR BillingCountry
-    NVARCHAR BillingPostalCode
-    NUMERIC Total
+    TEXT CustomerId
+    NUMERIC InvoiceDate
+    TEXT BillingAddress
+    TEXT BillingCity
+    TEXT BillingState
+    TEXT BillingCountry
+    TEXT BillingPostalCode
+    REAL Total
   }
   InvoiceLine {
     INTEGER InvoiceLineId
     INTEGER InvoiceId
     INTEGER TrackId
-    NUMERIC UnitPrice
+    REAL UnitPrice
     INTEGER Quantity
   }
   MediaType {
     INTEGER MediaTypeId
-    NVARCHAR Name
+    TEXT Name
   }
   Playlist {
     INTEGER PlaylistId
-    NVARCHAR Name
+    TEXT Name
   }
   PlaylistTrack {
     INTEGER PlaylistId
@@ -149,13 +149,13 @@ erDiagram
   }
   Track {
     INTEGER TrackId
-    NVARCHAR Name
+    TEXT Name
     INTEGER AlbumId
     INTEGER MediaTypeId
     INTEGER GenreId
-    NVARCHAR Composer
+    TEXT Composer
     INTEGER Milliseconds
     INTEGER Bytes
-    NUMERIC UnitPrice
+    REAL UnitPrice
   }
 ```

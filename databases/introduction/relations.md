@@ -13,12 +13,12 @@ erDiagram
     Pole ||--o{ Rolnik : ""
     Rolnik {
         INTEGER RolnikId
-        VARCHAR Imie
-        VARCHAR Nazwisko
+        TEXT Imie
+        TEXT Nazwisko
     }
     Pole {
         INTEGER PoleId
-        NUMERIC Hektary
+        REAL Hektary
         INTEGER RolnikId
     }
 ```

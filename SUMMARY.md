@@ -867,6 +867,7 @@
 
 * [Wstęp](databases/README.md)
 * [Wprowadzenie](databases/introduction/README.md)
+  * [Typy danych](databases/introduction/datatypes.md)
   * [Relacje](databases/introduction/relations.md)
 * [SQL](databases/sql/README.md)
   * [Ćwiczenia](databases/sql/exercises/README.md)
