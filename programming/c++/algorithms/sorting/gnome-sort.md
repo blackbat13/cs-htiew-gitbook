@@ -46,9 +46,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/3CxK1W" %}
-Sortowanie gnoma
-{% endembed %}

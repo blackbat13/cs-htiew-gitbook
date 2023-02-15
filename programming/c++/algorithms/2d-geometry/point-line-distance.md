@@ -40,9 +40,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/0G86jv" %}
-Odległość punktu od prostej
-{% endembed %}

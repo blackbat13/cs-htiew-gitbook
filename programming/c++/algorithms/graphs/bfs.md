@@ -66,12 +66,6 @@ int main() {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/fNxldF" %}
-Przeszukiwanie grafu wszerz - BFS
-{% endembed %}
-
 ### Opis implementacji
 
 Na początku przygotowujemy przykładowy graf (**linie 34-42**) w formie listy sąsiedztwa zapisanej w dynamicznej tablicy typu `vector`. Przykładowy graf (przedstawiony także na poniższym rysunku) ma 7 wierzchołków (numerowanych od zera) i jest nieskierowany.

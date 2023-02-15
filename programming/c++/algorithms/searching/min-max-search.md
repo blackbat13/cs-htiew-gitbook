@@ -44,12 +44,6 @@ int main() {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/EJvOcg" %}
-Jednoczesne znajdowanie min i max - podejście naiwne 
-{% endembed %}
-
 ### Opis implementacji
 
 Funkcja `findMinMaxNaive` (**linia 5**) przyjmuje tablicę o zadanej długości i wypisuje jej elementy minimalny i maksymalny, korzystając z naiwnego algorytmu jednoczesnego znajdowania minimum i maksimum.
@@ -114,12 +108,6 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/cLyaKc" %}
-Jednoczesne wyszukiwanie min i max - podejście optymalne
-{% endembed %}
 
 ### Opis implementacji
 

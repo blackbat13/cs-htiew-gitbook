@@ -44,12 +44,6 @@ int main() {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/2ZCRND" %}
-Wyszukiwanie liniowe - istnienie elementu
-{% endembed %}
-
 ### Opis implementacji
 
 Funkcja `linearSearch` (**linia 5**) zwraca jako wynik wartość prawda/fałsz i przyjmuje trzy argumenty: tablicę do przeszukania, rozmiar tablicy oraz wartość poszukiwanego elementu. Na początku funkcji przechodzimy pętlą przez wszystkie kolejne indeksy w tablicy od $$0$$ do $$n-1$$ włącznie (**linia 6**). Dla każdego indeksu sprawdzamy, czy pod tym indeksem w tablicy znajduje się poszukiwana wartość (**linia 7**). Jeżeli tak, to zwracamy informację o znalezieniu wartości w tablicy (**linia 8**). Po przejściu przez wszystkie indeksy i wyjściu z pętli (tzn. gdy nie znaleźliśmy poszukiwanego elementu) zwracamy wartość `false` informującą, że poszukiwany element nie znajduje się w tablicy (**linia 12**).
@@ -94,12 +88,6 @@ int main() {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/bIo8zN" %}
-Wyszukiwanie liniowe - pozycja elementu
-{% endembed %}
-
 ### Opis implementacji
 
 Funkcja `linearSearch` (**linia 5**) zwraca jako wynik liczbę całkowitą i przyjmuje trzy argumenty: tablicę do przeszukania, rozmiar tablicy oraz wartość poszukiwanego elementu. Na początku funkcji przechodzimy pętlą przez wszystkie kolejne indeksy w tablicy od $$0$$ do $$n-1$$ włącznie (**linia 6**). Dla każdego indeksu sprawdzamy, czy pod tym indeksem w tablicy znajduje się poszukiwana wartość (**linia 7**). Jeżeli tak, to zwracamy indeks tej wartości w tablicy (**linia 8**). Po przejściu przez wszystkie indeksy i wyjściu z pętli (tzn. gdy nie znaleźliśmy poszukiwanego elementu) zwracamy wartość $$-1$$ informującą, że poszukiwany element nie znajduje się w tablicy (**linia 12**).
@@ -136,12 +124,6 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/PXatsk" %}
-Wyszukiwanie liniowe - wszystkie pozycje elementu
-{% endembed %}
 
 ### Opis implementacji
 

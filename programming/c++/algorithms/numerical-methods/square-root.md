@@ -40,9 +40,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/I39nGk" %}
-Pierwiastek kwadratowy - metoda Herona
-{% endembed %}

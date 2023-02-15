@@ -112,9 +112,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/49zMho" %}
-Wydawanie reszty - podejście dynamiczne
-{% endembed %}

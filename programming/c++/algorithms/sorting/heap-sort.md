@@ -53,9 +53,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/D8K2zO" %}
-Sortowanie przez kopcowanie
-{% endembed %}

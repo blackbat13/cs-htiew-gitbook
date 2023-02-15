@@ -54,12 +54,6 @@ int main() {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/l5xQXm" %}
-Wyszukiwanie binarne - wersja iteracyjna
-{% endembed %}
-
 ## Wersja rekurencyjna
 
 ### Implementacja
@@ -103,9 +97,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/c250gS" %}
-Wyszukiwanie binarne - wersja rekurencyjna
-{% endembed %}

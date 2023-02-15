@@ -61,9 +61,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/ER5KsX" %}
-Najdłuższy wspólny podciąg
-{% endembed %}

@@ -45,12 +45,6 @@ int main() {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/GkELPX" %}
-Obliczanie NWD za pomocą algorytmu z odejmowaniem
-{% endembed %}
-
 ## Algorytm Euklidesa - wersja iteracyjna
 
 ### Implementacja
@@ -84,12 +78,6 @@ int main() {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/qHVLNg" %}
-Obliczanie NWD za pomocą iteracyjnego algorytmu Euklidesa
-{% endembed %}
-
 ## Algorytm Euklidesa - wersja rekurencyjna
 
 ### Implementacja
@@ -119,12 +107,6 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/TNVI7N" %}
-Obliczanie NWD za pomocą rekurencyjnego algorytmu Euklidesa
-{% endembed %}
 
 ## Operacje binarne - wersja iteracyjna
 
@@ -183,12 +165,6 @@ int main() {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/eL2zBM" %}
-Binarne NWD - wersja iteracyjna
-{% endembed %}
-
 ## Operacje binarne - wersja rekurencyjna
 
 ### Implementacja
@@ -242,9 +218,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/ujhy7u" %}
-Binarne NWD - wersja rekurencyjna
-{% endembed %}

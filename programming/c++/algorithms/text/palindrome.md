@@ -37,9 +37,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/UUUAe6" %}
-Test palindromu
-{% endembed %}

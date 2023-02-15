@@ -50,9 +50,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/JvEapG" %}
-Sortowanie koktajlowe
-{% endembed %}

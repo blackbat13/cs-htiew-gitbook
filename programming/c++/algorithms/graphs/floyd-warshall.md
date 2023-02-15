@@ -81,12 +81,6 @@ int main() {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/SOV10S" %}
-Algorytm Floyda-Warshalla
-{% endembed %}
-
 ### Opis implementacji
 
 ![Przykładowy graf wykorzystany w implementacji](../../../../.gitbook/assets/example_graph_weighted.png)

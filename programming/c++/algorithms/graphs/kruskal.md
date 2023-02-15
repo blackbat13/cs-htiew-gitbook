@@ -134,12 +134,6 @@ int main() {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/FJ0jbZ" %}
-Algorytm Kruskala
-{% endembed %}
-
 ### Opis implementacji
 
 Definiujemy strukturę `edge` do reprezentacji krawędzi grafu (**linia 59**). Ponieważ mamy do czynienia z grafem ważonym, w strukturze przechowujemy trzy wartości: 

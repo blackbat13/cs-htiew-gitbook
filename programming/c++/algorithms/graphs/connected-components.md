@@ -64,12 +64,6 @@ int main() {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/PW2Kkr" %}
-Zliczanie liczby spójnych składowych w grafie nieskierowanym
-{% endembed %}
-
 ### Opis implementacji
 
 ![Przykładowy graf wykorzystany w implementacji](../../../../.gitbook/assets/example_graph_disconnected.png)

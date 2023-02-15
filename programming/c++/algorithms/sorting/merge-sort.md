@@ -73,9 +73,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/1Pv3RF" %}
-Sortowanie przez scalanie
-{% endembed %}

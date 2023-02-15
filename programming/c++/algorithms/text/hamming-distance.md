@@ -38,9 +38,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/OVl4FY" %}
-Odległość Hamminga
-{% endembed %}

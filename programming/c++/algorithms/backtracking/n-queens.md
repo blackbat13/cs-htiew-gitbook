@@ -74,9 +74,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/JzMsxF" %}
-Problem n-królowych
-{% endembed %}

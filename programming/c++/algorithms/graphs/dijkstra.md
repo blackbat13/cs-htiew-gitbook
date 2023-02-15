@@ -87,12 +87,6 @@ int main() {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/rIw4N1" %}
-Algorytm Dijkstry
-{% endembed %}
-
 ### Opis implementacji
 
 ![Przykładowy graf wykorzystany w implementacji](../../../../.gitbook/assets/example_graph_weighted.png)

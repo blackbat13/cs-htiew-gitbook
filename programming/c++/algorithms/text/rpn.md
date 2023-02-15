@@ -66,12 +66,6 @@ int main() {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/BXv5Qf" %}
-Obliczanie wartości wyrażenia ONP
-{% endembed %}
-
 ### Opis implementacji
 
 Funkcja `calculateRPN` (**linia 19**) oblicza wartość wyrażenia ONP podanego w formie ciągu znaków. Zakładamy, że podane wyrażenie jest poprawne, a każdy znak reprezentuje jednocyfrową liczbę lub operację. 

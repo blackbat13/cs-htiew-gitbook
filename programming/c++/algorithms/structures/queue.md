@@ -115,9 +115,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/pbkGM5" %}
-Kolejka
-{% endembed %}

@@ -42,9 +42,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/1RcqQL" %}
-Test doskonałości
-{% endembed %}

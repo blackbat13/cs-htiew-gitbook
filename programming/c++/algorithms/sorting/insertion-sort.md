@@ -44,9 +44,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/EGDR98" %}
-Sortowanie przez wstawianie
-{% endembed %}

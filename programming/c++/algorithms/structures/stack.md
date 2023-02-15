@@ -102,9 +102,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/o44jZR" %}
-Stos
-{% endembed %}

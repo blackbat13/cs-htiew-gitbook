@@ -58,9 +58,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/1SRV1q" %}
-Sortowanie grzebieniowe
-{% endembed %}

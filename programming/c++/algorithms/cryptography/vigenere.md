@@ -51,12 +51,6 @@ int main() {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/Xh6TOk" %}
-Szyfrowanie szyfrem Vigenere'a
-{% endembed %}
-
 ## Deszyfrowanie
 
 ### Implementacja
@@ -101,9 +95,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/dHSYqX" %}
-Deszyfrowanie szyfrem Vigenere'a
-{% endembed %}

@@ -51,9 +51,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/6dHsYZ" %}
-Sortowanie przez zliczanie
-{% endembed %}

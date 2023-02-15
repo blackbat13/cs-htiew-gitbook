@@ -51,9 +51,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/S5zJSH" %}
-Naiwne wyszukiwanie wzorca w tekście
-{% endembed %}

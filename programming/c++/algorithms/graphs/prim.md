@@ -89,12 +89,6 @@ int main() {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/PR4Noz" %}
-Algorytm Prima
-{% endembed %}
-
 ### Opis implementacji
 
 Na początku definiujemy strukturę `edge` do reprezentacji krawędzi grafu (**linia 8**). Ponieważ mamy do czynienia z grafem ważonym, w strukturze przechowujemy trzy wartości: 

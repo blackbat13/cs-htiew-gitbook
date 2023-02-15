@@ -55,12 +55,6 @@ int main() {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/kIt9au" %}
-Znajdowanie wartości min i maks
-{% endembed %}
-
 ## Wyszukiwanie indeksów wartości minimum i maksimum
 
 ### Implementacja
@@ -109,9 +103,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/YHUIyv" %}
-Wyszukiwanie indeksów wartości min i maks
-{% endembed %}

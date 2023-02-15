@@ -44,9 +44,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/0vg44U" %}
-Test pierwszości
-{% endembed %}

@@ -61,9 +61,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/oeuyQq" %}
-Znajdowanie lidera w zbiorze
-{% endembed %}

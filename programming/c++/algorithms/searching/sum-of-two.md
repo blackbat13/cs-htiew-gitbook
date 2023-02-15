@@ -41,12 +41,6 @@ int main() {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/dHf2jV" %}
-Suma dwóch - rozwiązanie naiwne
-{% endembed %}
-
 ## Rozwiązanie optymalne
 
 ### Implementacja
@@ -87,9 +81,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/QuNr8P" %}
-Suma dwóch - rozwiązanie optymalne
-{% endembed %}

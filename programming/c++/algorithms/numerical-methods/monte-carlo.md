@@ -49,9 +49,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/dVtpCL" %}
-Metoda Monte Carlo obliczania przybliżonej wartości PI
-{% endembed %}

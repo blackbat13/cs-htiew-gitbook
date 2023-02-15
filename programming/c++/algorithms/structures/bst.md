@@ -134,12 +134,6 @@ int main() {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/bb4ZkF" %}
-Drzewa przeszukiwań binarnych
-{% endembed %}
-
 ### Opis implementacji
 
 ![Przykładowe drzewo wykorzystane w implementacji](<../../../../.gitbook/assets/image (10).png>)

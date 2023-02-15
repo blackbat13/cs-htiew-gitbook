@@ -44,9 +44,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/aU2dQW" %}
-Długość najdłuższego spójnego podciągu rosnącego
-{% endembed %}

@@ -47,12 +47,6 @@ int main() {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/nX9kLA" %}
-Szyfrowanie Cezara
-{% endembed %}
-
 ## Deszyfrowanie
 
 ### Implementacja
@@ -93,9 +87,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/641y0x" %}
-Deszyfrowanie Cezara
-{% endembed %}

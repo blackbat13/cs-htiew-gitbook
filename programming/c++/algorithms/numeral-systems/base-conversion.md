@@ -45,12 +45,6 @@ int main() {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/qJ3obL" %}
-Konwersja z dziesiętnego
-{% endembed %}
-
 ## Konwersja na dziesiętny
 
 {% code overflow="wrap" lineNumbers="true" %}
@@ -92,9 +86,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/xzzAaC" %}
-Konwersja na dziesiętny
-{% endembed %}

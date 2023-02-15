@@ -142,9 +142,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/4LSvUt" %}
-Lista jednokierunkowa
-{% endembed %}

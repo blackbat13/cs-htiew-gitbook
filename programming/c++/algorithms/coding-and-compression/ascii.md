@@ -29,12 +29,6 @@ int main() {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/fnVCCi" %}
-Podstawowa tablica ASCII
-{% endembed %}
-
 ## Rozszerzona tablica ASCII
 
 ### Implementacja

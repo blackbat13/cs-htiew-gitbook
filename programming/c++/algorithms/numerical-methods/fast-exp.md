@@ -42,12 +42,6 @@ int main() {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/pdUCOO" %}
-Szybkie potęgowanie - wersja iteracyjna
-{% endembed %}
-
 ## Rozwiązanie rekurencyjne
 
 {% code overflow="wrap" lineNumbers="true" %}
@@ -82,9 +76,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/zE3iXb" %}
-Szybkie potęgowanie - wersja rekurencyjna
-{% endembed %}

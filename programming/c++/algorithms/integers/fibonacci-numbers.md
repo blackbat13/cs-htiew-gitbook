@@ -36,12 +36,6 @@ int main() {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/mZ2lJX" %}
-Liczby Fibonacciego - podejście rekurencyjne
-{% endembed %}
-
 ### Opis implementacji
 
 Funkcja `fib` (**linia 5**) przyjmuje jeden parametr: liczbę całkowitą oznaczającą numer wartości ciągu Fibonacciego do policzenia. Na początku funkcji sprawdzamy warunek stopu rekurencji (**linia 6**). Jeżeli jest spełniony to jako wynik zwracamy wartość $$1$$ (**linia 7**). Jeżeli warunek stopu nie był spełniony to jako wynik zwracamy sumę wyników wywołań rekurencyjnych funkcji `fib` dla dwóch poprzednich elementów ciągu (**linia 10**).
@@ -85,9 +79,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/3PU7Fv" %}
-Liczby Fibonacciego - podejście iteracyjne
-{% endembed %}

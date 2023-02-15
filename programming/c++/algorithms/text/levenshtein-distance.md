@@ -45,9 +45,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/xVUojF" %}
-Odległość Levenshteina
-{% endembed %}

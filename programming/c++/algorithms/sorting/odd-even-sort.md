@@ -44,9 +44,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/8K0kEO" %}
-Sortowanie odd-even
-{% endembed %}

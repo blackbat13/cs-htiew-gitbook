@@ -77,12 +77,6 @@ int main() {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/tfIprk" %}
-Sortowanie topologiczne
-{% endembed %}
-
 ### Opis implementacji
 
 ![Przykładowy graf wykorzystany w implementacji](../../../../.gitbook/assets/example_graph_topological_sort.png)

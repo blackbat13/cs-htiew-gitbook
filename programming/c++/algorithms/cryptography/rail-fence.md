@@ -50,12 +50,6 @@ int main() {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/8yVNZs" %}
-Szyfrowanie szyfrem płotkowym
-{% endembed %}
-
 ## Deszyfrowanie
 
 ### Implementacja
@@ -101,9 +95,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/EA5DPk" %}
-Deszyfrowanie szyfrem płotkowym
-{% endembed %}

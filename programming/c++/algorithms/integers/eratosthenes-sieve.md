@@ -52,9 +52,3 @@ int main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/f5kW3G" %}
-Sito Eratostenesa
-{% endembed %}
