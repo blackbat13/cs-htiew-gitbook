@@ -2,17 +2,17 @@
 
 ## Opis problemu
 
-TODO
+Każdą liczbę naturalną większą od $$1$$ możemy rozłożyć na czynniki pierwsze, czyli przedstawić w postaci iloczynu liczb pierwszych. Tym problemem się właśnie zajmiemy.
 
 ### Specyfikacja
 
 #### Dane
 
-* $$n$$ - liczba naturalna, większa od zera
+* $$n$$ - liczba naturalna, $$n>1$$.
 
 #### Wynik
 
-* Rozkład liczby $$n$$ na czynniki pierwsze 
+* Rozkład liczby $$n$$ na czynniki pierwsze .
 
 ### Przykład
 
@@ -26,12 +26,12 @@ n := 124
 
 ## Rozwiązanie
 
-TODO
+Idea rozwiązania jest prosta. Zaczynamy od najmniejszej liczby pierwszej, czyli od liczby $$2$$. Dzielimy naszą liczbę $$n$$ przez naszą liczbę pierwszą, tak długo, jak się da, czyli jak długo jest podzielna. Następnie przechodzimy do kolejnej liczby pierwszej i powtarzamy operacje dzielenia. Całość powtarzamy, aż wynikiem dzielenia będzie wartość $$1$$.
 
 ### Pseudokod
 
 ```
-funkcja Rozklad(n):
+funkcja Rozkład(n):
     1. i := 2
     2. Dopóki n > 1, wykonuj:
         3. Jeżeli n mod i = 0, to:
@@ -51,7 +51,7 @@ funkcja Rozklad(n):
 
 ```mermaid
 flowchart TD
-	START(["Rozklad(n)"]) --> K1[i := 2]
+	START(["Rozkład(n)"]) --> K1[i := 2]
 	K1 --> K2{n > 1}
 	K2 -- PRAWDA --> K3{n mod i = 0}
 	K3 -- PRAWDA --> K4[/Wypisz i/]
