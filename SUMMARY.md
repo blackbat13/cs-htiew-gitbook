@@ -107,7 +107,6 @@
   * [Odległość Hamminga](algorithms/text/hamming-distance.md)
   * [Odległość Levenshteina (edycyjna)](algorithms/text/levenshtein-distance.md)
 * [Kodowanie i kompresja](algorithms/coding-and-compression/README.md)
-  * [Alfabet Morse'a](algorithms/coding-and-compression/morse-alphabet.md)
   * [Kod ASCII](algorithms/coding-and-compression/ascii.md)
   * [Kody Huffmana](algorithms/coding-and-compression/huffman-coding.md)
 * [Szyfrowanie](algorithms/cryptography/README.md)
