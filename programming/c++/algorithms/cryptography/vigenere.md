@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../algorithms/cryptography/vigenere.md" %}
-[vigenere.md](../../../../algorithms/cryptography/vigenere.md)
+{% content-ref url="../../../../algorithms/cryptography/symmetric/vigenere.md" %}
+[vigenere.md](../../../../algorithms/cryptography/symmetric/vigenere.md)
 {% endcontent-ref %}
 
 ## Szyfrowanie
