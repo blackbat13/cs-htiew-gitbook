@@ -2,17 +2,19 @@
 
 ## Opis problemu
 
-TODO
+Ciąg Fibonacciego to ciąg, w którym dwa pierwsze elementy mają wartość $$1$$, a każdy kolejny element stanowi sumę dwóch poprzednich.
+
+Pierwszych dziesięć kolejnych liczb Fibonacciego to: $$1, 1, 2, 3, 5, 8, 13, 21, 34, 55$$.
 
 ### Specyfikacja
 
 #### Dane
 
-* $$n$$ - liczba naturalna, większa od zera
+* $$n$$ - liczba naturalna, $$n>0$$.
 
 #### Wynik
 
-* $$n$$-ta liczba Fibonacciego
+* $$n$$-ta liczba Fibonacciego.
 
 ### Przykład
 
@@ -24,15 +26,14 @@ n := 10
 
 **Wynik**: $$55$$ 
 
-{% hint style="info" %}
-**Wyjaśnienie**
-
-Pierwszych kolejnych dziesięć liczb Fibonacciego to: $$1, 1, 2, 3, 5, 8, 13, 21, 34, 55$$ 
-{% endhint %}
-
 ## Rozwiązanie rekurencyjne
 
-TODO
+$$
+Fib(n) =  \begin{cases} 
+      1 & n \leq 2 \\
+      Fib(n - 1) + Fib(n - 2) & n > 2 \\
+   \end{cases}
+$$
 
 ### Pseudokod
 
@@ -55,8 +56,6 @@ flowchart TD
 ```
 
 ## Rozwiązanie iteracyjne
-
-TODO
 
 ### Pseudokod
 
