@@ -43,7 +43,7 @@ W szyfrach przestawieniowych szyfrogram jest tworzony poprzez przestawienie kole
 [playfair.md](playfair.md)
 {% endcontent-ref %}
 
-{% content-ref url="playfair.md" %}
+{% content-ref url="rail-fence.md" %}
 [rail-fence.md](rail-fence.md)
 {% endcontent-ref %}
 
