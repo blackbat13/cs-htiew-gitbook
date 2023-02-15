@@ -1,13 +1,5 @@
 # Przecinanie się odcinków
 
-## Opis problemu
-
-TODO
-
-## Rozwiązanie
-
-TODO
-
 ## Implementacja
 
 ### C++

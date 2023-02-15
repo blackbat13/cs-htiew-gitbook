@@ -1,13 +1,5 @@
 # Punkt na odcinku
 
-## Opis problemu
-
-TODO
-
-## Rozwiązanie
-
-TODO
-
 ## Implementacja
 
 ### C++
