@@ -1,29 +1,5 @@
 # Stos
 
-## Opis problemu
-
-TODO
-
-### Specyfikacja
-
-TODO
-
-### Przykład
-
-TODO
-
-## Rozwiązanie
-
-TODO
-
-### Pseudokod
-
-TODO
-
-### Złożoność
-
-TODO
-
 ## Implementacja
 
 ### C++

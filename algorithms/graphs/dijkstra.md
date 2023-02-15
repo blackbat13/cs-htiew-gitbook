@@ -4,30 +4,6 @@ description: Najkrótsze ścieżki z jednego wierzchołka
 
 # Dijkstra
 
-## Opis problemu
-
-TODO
-
-### Specyfikacja
-
-TODO
-
-### Przykład
-
-TODO
-
-## Rozwiązanie
-
-TODO
-
-### Pseudokod
-
-TODO
-
-### Złożoność
-
-TODO
-
 ## Implementacja
 
 ### C++

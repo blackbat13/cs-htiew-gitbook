@@ -1,31 +1,5 @@
 # DFS
 
-## Opis problemu
-
-TODO
-
-### Specyfikacja
-
-TODO
-
-### Przykład
-
-{% file src="../../.gitbook/assets/DFS – przebieg algorytmu.pdf" %}
-Prezentacja
-{% endfile %}
-
-## Rozwiązanie
-
-TODO
-
-### Pseudokod
-
-TODO
-
-### Złożoność
-
-TODO
-
 ## Implementacja
 
 ### C++

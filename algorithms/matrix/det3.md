@@ -1,13 +1,5 @@
 # Wyznacznik macierzy 3x3
 
-## Opis problemu
-
-TODO
-
-## Rozwiązanie
-
-TODO
-
 ## Implementacja
 
 ### C++

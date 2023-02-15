@@ -8,10 +8,6 @@ description: Wypełnianie obszarów
 
 Flood fill jest algorytmem pozwalającym na wypełnienie/odwiedzenie pewnego zamkniętego obszaru. Przykładem może być kolorowanie obszarów zamkniętych w programach graficznych.
 
-### Specyfikacja
-
-TODO
-
 ### Przykład 1 - rekurencyjne wypełnianie obszaru pól połączonych ze sobą w linii prostej, poziomo lub pionowo.
 
 ![By André Karwath aka Aka - Own work, CC BY-SA 2.5, https://commons.wikimedia.org/w/index.php?curid=481651](../../.gitbook/assets/Recursive\_Flood\_Fill\_4\_\(aka\).gif)
