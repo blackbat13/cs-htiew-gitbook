@@ -2,8 +2,6 @@
 
 ## Opis problemu
 
-TODO
-
 ### Specyfikacja
 
 #### Dane
@@ -26,20 +24,6 @@ b := "sitting"
 #### Wynik
 
 `"ittn"`
-
-{% hint style="info" %}
-**Wyjaśnienie**
-
-TODO
-{% endhint %}
-
-## Rozwiązanie
-
-TODO
-
-### Pseudokod
-
-TODO
 
 ## Implementacja
 
