@@ -4,6 +4,17 @@
 
 Szyfr płotkowy to jeden z prostych do przedstawienia na kartce papieru szyfrów symetrycznych. Idea polega na ułożeniu tekstu w kształt płotu o wysokości równej wartości klucza.
 
+### Specyfikacja
+
+#### Dane
+
+- **jawny/szyfrogram** - tekst do zaszyfrowania/odszyfrowania, składający się z małych liter alfabetu angielskiego
+- **klucz** - liczba naturalna, większa od zera
+
+### Funkcje pomocnicze
+
+- **Długość(tekst)** - zwraca długość tekstu
+
 ### Przykład 1
 
 Tekst jawny: **ALAMAKOTA**.

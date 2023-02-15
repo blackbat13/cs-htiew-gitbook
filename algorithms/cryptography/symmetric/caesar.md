@@ -13,6 +13,7 @@
 
 - **Pozycja(litera)** - zwraca liczbę od $$1$$ do $$26$$ - pozycję przekazanej jako argument litery w alfabecie angielskim
 - **Alfabet(pozycja)** - zwraca literę na zadanej pozycji w alfabecie angielskim
+- **Długość(tekst)** - zwraca długość tekstu
 
 ## Szyfrowanie
 
