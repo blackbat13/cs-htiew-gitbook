@@ -2,8 +2,6 @@
 
 ## Opis problemu
 
-TODO
-
 ### Specyfikacja
 
 #### Dane
@@ -31,18 +29,6 @@ Przedstawione wyrażenie ONP odpowiada następującemu wyrażeniu arytmetycznemu
 
 $$(((2 + 7) / 3) + (1 - 3) * 4) / 2$$
 {% endhint %}
-
-## Rozwiązanie
-
-TODO
-
-### Pseudokod
-
-TODO
-
-### Schemat blokowy
-
-TODO
 
 ## Implementacja
 
