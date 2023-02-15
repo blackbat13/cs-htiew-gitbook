@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../algorithms/cryptography/rail-fence.md" %}
-[rail-fence.md](../../../../algorithms/cryptography/rail-fence.md)
+{% content-ref url="../../../../algorithms/cryptography/symmetric/rail-fence.md" %}
+[rail-fence.md](../../../../algorithms/cryptography/symmetric/rail-fence.md)
 {% endcontent-ref %}
 
 ## Szyfrowanie

@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../algorithms/cryptography/caesar.md" %}
-[caesar.md](../../../../algorithms/cryptography/caesar.md)
+{% content-ref url="../../../../algorithms/cryptography/symmetric/caesar.md" %}
+[caesar.md](../../../../algorithms/cryptography/symmetric/caesar.md)
 {% endcontent-ref %}
 
 ## Szyfrowanie

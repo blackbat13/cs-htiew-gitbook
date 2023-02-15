@@ -16,12 +16,12 @@ TODO
 
 ### C++
 
-{% content-ref url="../../programming/c++/algorithms/cryptography/playfair.md" %}
-[playfair.md](../../programming/c++/algorithms/cryptography/playfair.md)
+{% content-ref url="../../../programming/c++/algorithms/cryptography/playfair.md" %}
+[playfair.md](../../../programming/c++/algorithms/cryptography/playfair.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../programming/python/algorithms/cryptography/playfair.md" %}
-[playfair.md](../../programming/python/algorithms/cryptography/playfair.md)
+{% content-ref url="../../../programming/python/algorithms/cryptography/playfair.md" %}
+[playfair.md](../../../programming/python/algorithms/cryptography/playfair.md)
 {% endcontent-ref %}

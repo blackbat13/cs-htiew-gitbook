@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../algorithms/cryptography/beaufort.md" %}
-[beaufort.md](../../../../algorithms/cryptography/beaufort.md)
+{% content-ref url="../../../../algorithms/cryptography/symmetric/beaufort.md" %}
+[beaufort.md](../../../../algorithms/cryptography/symmetric/beaufort.md)
 {% endcontent-ref %}
 
 ## Szyfrowanie i deszyfrowanie

@@ -79,12 +79,12 @@ funkcja DeszyfrujPłotkowy(szyfrogram, klucz):
 
 ### C++
 
-{% content-ref url="../../programming/c++/algorithms/cryptography/rail-fence.md" %}
-[rail-fence.md](../../programming/c++/algorithms/cryptography/rail-fence.md)
+{% content-ref url="../../../programming/c++/algorithms/cryptography/rail-fence.md" %}
+[rail-fence.md](../../../programming/c++/algorithms/cryptography/rail-fence.md)
 {% endcontent-ref %}
 
 ### Python
 
-{% content-ref url="../../programming/python/algorithms/cryptography/rail-fence.md" %}
-[rail-fence.md](../../programming/python/algorithms/cryptography/rail-fence.md)
+{% content-ref url="../../../programming/python/algorithms/cryptography/rail-fence.md" %}
+[rail-fence.md](../../../programming/python/algorithms/cryptography/rail-fence.md)
 {% endcontent-ref %}

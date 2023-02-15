@@ -2,8 +2,8 @@
 
 ## Opis problemu
 
-{% content-ref url="../../../../algorithms/cryptography/trithemius.md" %}
-[trithemius.md](../../../../algorithms/cryptography/trithemius.md)
+{% content-ref url="../../../../algorithms/cryptography/symmetric/trithemius.md" %}
+[trithemius.md](../../../../algorithms/cryptography/symmetric/trithemius.md)
 {% endcontent-ref %}
 
 ## Implementacja
