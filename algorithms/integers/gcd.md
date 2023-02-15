@@ -2,7 +2,7 @@
 
 ## Opis problemu
 
-TODO
+Największy wspólny dzielnik dwóch liczb naturalnych wykorzystywane jest w wielu obliczeniach i własnościach matematycznych. M. in. z tego względu warto wiedzieć, jak w sposób wydajny możemy go policzyć. Do tego posłuży nam algorytm Euklidesa.
 
 ### Specyfikacja
 
@@ -39,7 +39,7 @@ Największy z nich to właśnie $$4$$.
 
 ## Wersja z odejmowaniem
 
-TODO
+Zasada jest prosta: od większej liczby odejmujemy mniejszą i tak w kółko, aż uzyskamy dwie takie same wartości, które będą naszym wynikiem.
 
 ### Pseudokod
 
@@ -69,7 +69,7 @@ flowchart TD
 
 ## Wersja z modulo — iteracyjna
 
-TODO
+Odejmowanie możemy zastąpić operacją reszty z dzielenia, która jest dużo wydajniejsza w tym przypadku.
 
 ### Pseudokod
 
@@ -98,8 +98,6 @@ flowchart TD
 ```
 
 ## Wersja z modulo — rekurencyjna
-
-TODO
 
 ### Pseudokod
 
