@@ -30,12 +30,6 @@ main = do
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/5f1drl" %}
-Wyszukiwanie liniowe - istnienie elementu
-{% endembed %}
-
 ### Opis implementacji
 
 Funkcja `linearSearch` (**linie 1 i 2**) zwraca jako wynik wartość prawda/fałsz i przyjmuje dwa argumenty: tablicę do przeszukania oraz wartość poszukiwanego elementu. Jeżeli tablica jest pusta to funkcja zwraca wartość `False` informującą o tym, że poszukiwanego elementu nie znaleziono w tablicy (**linia 1**). Jest to tzw. warunek stopu rekurencji. Jeżeli w tablicy pozostały jeszcze jakieś elementy do sprawdzenia, to sprawdzamy, czy pierwszy element tablicy (pobrany za pomocą funkcji `head`) jest poszukiwaną wartością (**linia 3**). Jeżeli tak, to funkcja zwraca wynik `True` (**linia 3**). W przeciwnym przypadku wywołujemy rekurencyjnie funkcję `linearSearch`, jako argumenty przekazując listę bez pierwszego elementu (do tego używamy funkcji `tail`), oraz wartość poszukiwanego elementu.
@@ -67,12 +61,6 @@ main = do
         print index
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/NJ0iTQ" %}
-Wyszukiwanie liniowe - pozycja elementu
-{% endembed %}
 
 ### Opis implementacji
 

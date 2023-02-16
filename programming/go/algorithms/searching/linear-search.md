@@ -43,12 +43,6 @@ func main() {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/cnIoVq" %}
-Wyszukiwanie liniowe - istnienie elementu
-{% endembed %}
-
 ### Opis implementacji
 
 Funkcja `linearSearch` (**linia 7**) zwraca jako wynik wartość prawda/fałsz i jest metodą przypisaną do tablicy przyjmującą jeden argumenty: wartość poszukiwanego elementu. Na początku funkcji przechodzimy pętlą przez wszystkie kolejne indeksy w tablicy od $$0$$ do rozmiaru tablicy minus jeden (**linia 8**). Rozmiar tablicy pobieramy za pomocą funkcji `len`. Dla każdego indeksu sprawdzamy, czy pod tym indeksem w tablicy znajduje się poszukiwana wartość (**linia 9**). Jeżeli tak, to zwracamy informację o znalezieniu wartości w tablicy (**linia 10**). Po przejściu przez wszystkie elementy i wyjściu z pętli (tzn. gdy nie znaleźliśmy poszukiwanego elementu) zwracamy wartość `false` informującą, że poszukiwany element nie znajduje się w tablicy (**linia 14**).
@@ -92,12 +86,6 @@ func main() {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/3yVtSv" %}
-Wyszukiwanie liniowe - pozycja elementu
-{% endembed %}
-
 ### Opis implementacji
 
 Funkcja `linearSearch` (**linia 7**) zwraca jako wynik liczbę całkowitą i jest metodą przypisaną do tablicy przyjmującą jeden argumenty: wartość poszukiwanego elementu. Na początku funkcji przechodzimy pętlą przez wszystkie kolejne indeksy w tablicy od $$0$$ do rozmiaru tablicy minus jeden (**linia 8**). Rozmiar tablicy pobieramy za pomocą funkcji `len`. Dla każdego indeksu sprawdzamy, czy pod tym indeksem w tablicy znajduje się poszukiwana wartość (**linia 9**). Jeżeli tak, to zwracamy indeks tej wartości w tablicy (**linia 10**). Po przejściu przez wszystkie elementy i wyjściu z pętli (tzn. gdy nie znaleźliśmy poszukiwanego elementu) zwracamy wartość `-1` informującą, że poszukiwany element nie znajduje się w tablicy (**linia 14**).
@@ -133,12 +121,6 @@ func main() {
 }
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/FlM7ys" %}
-Wyszukiwanie liniowe - wszystkie pozycje elementu
-{% endembed %}
 
 ### Opis implementacji
 

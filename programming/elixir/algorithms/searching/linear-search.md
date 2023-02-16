@@ -40,12 +40,6 @@ end
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/76bkDc" %}
-Wyszukiwanie liniowe - istnienie elementu
-{% endembed %}
-
 ### Opis implementacji
 
 Funkcja `linear` w module `Search` (**linie 1 i 2**) zwraca jako wynik wartość prawda/fałsz i przyjmuje dwa argumenty: listę do przeszukania oraz wartość poszukiwanego elementu. Jeżeli lista jest pusta to funkcja zwraca wartość `false` informującą o tym, że poszukiwanego elementu nie znaleziono na liście (**linie 3 i 4**). Jest to tzw. warunek stopu rekurencji. Jeżeli w liście pozostały jeszcze jakieś elementy do sprawdzenia, to sprawdzamy, czy pierwszy element listy (pobrany za pomocą funkcji `hd`) jest poszukiwaną wartością (**linia 6**). Jeżeli tak, to funkcja zwraca wynik `true` (**linia 7**). W przeciwnym przypadku wywołujemy rekurencyjnie funkcję `linear`, jako argumenty przekazując listę bez pierwszego elementu (do tego używamy funkcji `tl`), oraz wartość poszukiwanego elementu.
@@ -85,12 +79,6 @@ else
 end
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/fNWvC9" %}
-Wyszukiwanie liniowe - pozycja elementu
-{% endembed %}
 
 ### Opis implementacji
 

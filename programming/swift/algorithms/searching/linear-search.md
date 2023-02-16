@@ -36,12 +36,6 @@ if result {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://replit.com/@damiankurpiewski/LinearSearch1Swift#main.swift" %}
-Wyszukiwanie liniowe - istnienie elementu
-{% endembed %}
-
 ### Opis implementacji
 
 Funkcja `linearSearch` (**linia 1**) zwraca jako wynik wartość prawda/fałsz i przyjmuje dwa argumenty: tablicę do przeszukania oraz wartość poszukiwanego elementu. Na początku funkcji przechodzimy pętlą przez wszystkie kolejne elementy w tablicy (**linia 2**). Dla każdego elementu sprawdzamy, czy jest to poszukiwana wartość (**linia 3**). Jeżeli tak, to zwracamy informację o znalezieniu wartości w tablicy (**linia 4**). Po przejściu przez wszystkie elementy i wyjściu z pętli (tzn. gdy nie znaleźliśmy poszukiwanego elementu) zwracamy wartość `false` informującą, że poszukiwany element nie znajduje się w tablicy (**linia 8**).
@@ -78,12 +72,6 @@ if index == -1 {
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://replit.com/@damiankurpiewski/LinearSearch2Swift#main.swift" %}
-Wyszukiwanie liniowe - pozycja elementu
-{% endembed %}
-
 ### Opis implementacji
 
 Funkcja `linearSearch` (**linia 1**) zwraca jako wynik liczbę całkowitą i przyjmuje dwa argumenty: tablicę do przeszukania oraz wartość poszukiwanego elementu. Na początku funkcji przechodzimy pętlą przez wszystkie kolejne indeksy w tablicy od $$0$$ do rozmiaru tablicy minus jeden (**linia 2**). Rozmiar tablicy pobieramy za pomocą metody `count`. Dla każdego indeksu sprawdzamy, czy pod tym indeksem w tablicy znajduje się poszukiwana wartość (**linia 3**). Jeżeli tak, to zwracamy indeks tej wartości w tablicy (**linia 4**). Po przejściu przez wszystkie indeksy i wyjściu z pętli (tzn. gdy nie znaleźliśmy poszukiwanego elementu) zwracamy wartość `-1` informującą, że poszukiwany element nie znajduje się w tablicy (**linia 8**).
@@ -112,12 +100,6 @@ print("Indeksy, pod którymi znajduje się poszukiwana liczba:")
 linearSearch(array: array, number: number)
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://replit.com/@damiankurpiewski/LinearSearch3Swift#main.swift" %}
-Wyszukiwanie liniowe - wszystkie pozycje elementu
-{% endembed %}
 
 ### Opis implementacji
 
