@@ -303,7 +303,7 @@
       * [Wyszukiwanie binarne](programming/c++/algorithms/searching/binary-search.md)
       * [Wyszukiwanie minimum i maksimum](programming/c++/algorithms/searching/min-or-max.md)
       * [Jednoczesne wyszukiwanie minimum i maksimum](programming/c++/algorithms/searching/min-max-search.md)
-      * [Znajdowanie lidera w zbiorze](programming/c++/algorithms/searching/majority.md
+      * [Znajdowanie lidera w zbiorze](programming/c++/algorithms/searching/majority.md)
       * [Najdłuższy spójny podciąg rosnący](programming/c++/algorithms/searching/longest-growing-substring.md)
       * [Suma dwóch liczb](programming/c++/algorithms/searching/sum-of-two.md)
     * [Przeszukiwanie z powrotami](programming/c++/algorithms/backtracking/README.md)
