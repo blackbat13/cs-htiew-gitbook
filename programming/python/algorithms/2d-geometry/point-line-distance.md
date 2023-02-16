@@ -17,13 +17,18 @@ def point_line_distance(line_x1: float, line_y1: float, line_x2: float, line_y2:
     a = line_y2 - line_y1
     b = line_x2 - line_x1
     
-    result = abs(a * (line_x1 - point_x) + b * (point_y - line_y1)) / sqrt(a * a + b * b)
-    
-    return result
+    return abs(a * (line_x1 - point_x) + b * (point_y - line_y1)) / sqrt(a * a + b * b)
 
 
-distance = point_line_distance(-3, -4, 7, 6, -5, -8)
+line_x1 = -3
+line_y1 = -4
+line_x2 = 7
+line_y2 = 6
+point_x = -5
+point_y = -8
+
+distance = point_line_distance(line_x1, line_y1, line_x2, line_y2, point_x, point_y)
     
-print("Distance of the point (-5, -8) from the line ((-3, -4), (7, 6)) is", distance)
+print(distance)
 ```
 {% endcode %}

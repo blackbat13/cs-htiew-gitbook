@@ -17,23 +17,15 @@ def det3(matrix: list) -> int:
            
 
 def point_on_segment(a_x: int, a_y: int, b_x: int, b_y: int, c_x: int, c_y: int) -> bool:
-    """
-    Check if point (c_x, c_y) lies on the segment [(a_x, a_y), (b_x, b_y)]
-    :return: True if point lies on the given segment, False otherwise
-    """
     matrix = [
          [a_x, a_y, 1],
          [b_x, b_y, 1],
          [c_x, c_y, 1]]
-    det = det3(matrix)
     
-    if det != 0:
+    if det3(matrix) != 0:
         return False
 
-    if min(a_x, b_x) <= c_x <= max(a_x, b_x) and min(a_y, b_y) <= c_y <= max(a_y, b_y):
-        return True
-    else:
-        return False
+    return min(a_x, b_x) <= c_x <= max(a_x, b_x) and min(a_y, b_y) <= c_y <= max(a_y, b_y):
 
 
 def sgn(a: int) -> int:
@@ -46,17 +38,12 @@ def sgn(a: int) -> int:
 
 
 def segment_crossing(a_x: int, a_y: int, b_x: int, b_y: int, c_x: int, c_y: int, d_x: int, d_y: int) -> bool:
-    if point_on_segment(a_x, a_y, b_x, b_y, c_x, c_y) or \
+    return point_on_segment(a_x, a_y, b_x, b_y, c_x, c_y) or \
             point_on_segment(a_x, a_y, b_x, b_y, d_x, d_y) or \
             point_on_segment(c_x, c_y, d_x, d_y, a_x, a_y) or \
-            point_on_segment(c_x, c_y, d_x, d_y, b_x, b_y):
-        return True
-
-    if sgn(det3([[a_x, a_y, 1], [b_x, b_y, 1], [c_x, c_y, 1]])) == sgn(
-            det3([[a_x, a_y, 1], [b_x, b_y, 1], [d_x, d_y, 1]])):
-        return False
-    else:
-        return True
+            point_on_segment(c_x, c_y, d_x, d_y, b_x, b_y) or \
+            sgn(det3([[a_x, a_y, 1], [b_x, b_y, 1], [c_x, c_y, 1]])) != sgn(
+            det3([[a_x, a_y, 1], [b_x, b_y, 1], [d_x, d_y, 1]]))
 
 
 a_x = 1
