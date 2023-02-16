@@ -12,30 +12,30 @@
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-def encode(message: str, key: str) -> str:
-    encoded = ""
+def encrypt_vigenere(message: str, key: str) -> str:
+    encrypted = ""
     key_index = 0
     
     for letter in message:            
         k = ord(key[key_index]) - ord("a")
-        encoded_letter = ord(letter) + k
+        encrypted_letter = ord(letter) + k
         
-        if encoded_letter > ord("z"):
-            encoded_letter = ord("a") + encoded_letter - ord("z")
+        if encrypted_letter > ord("z"):
+            encrypted_letter = ord("a") + encrypted_letter - ord("z")
 
-        encoded += chr(encoded_letter)
+        encrypted += chr(encrypted_letter)
         key_index += 1
         key_index %= len(key)
 
-    return encoded
+    return encrypted
 
 
 message = "computerscience"
 key = "cat"
 
-encoded = encode(message, key)
+encrypted = encrypt_vigenere(message, key)
 
-print(f"Encoded: {encoded}")
+print(encrypted)
 ```
 {% endcode %}
 
@@ -45,29 +45,29 @@ print(f"Encoded: {encoded}")
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-def decode(message: str, key: str) -> str:
-    decoded = ""
+def decrypt_vigenere(message: str, key: str) -> str:
+    decrypted = ""
     key_index = 0
     
     for letter in message:
         k = ord(key[key_index]) - ord("a")
-        decoded_letter = ord(letter) - k
+        decrypted_letter = ord(letter) - k
         
-        if decoded_letter < ord("a"):
-            decoded_letter = ord("z") - (ord("a") - decoded_letter)
+        if decrypted_letter < ord("a"):
+            decrypted_letter = ord("z") - (ord("a") - decrypted_letter)
 
-        decoded += chr(decoded_letter)
+        decrypted += chr(decrypted_letter)
         key_index += 1
         key_index %= len(key)
 
-    return decoded
+    return decrypted
 
 
 message = "eogrungrmeixpcx"
 key = "cat"
 
-decoded = decode(message, key)
+decrypted = decrypt_vigenere(message, key)
 
-print(f"Decoded: {decoded}")
+print(decrypted)
 ```
 {% endcode %}

@@ -12,8 +12,8 @@
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-def encode(message: str, key: int) -> str:
-    encoded = ""
+def encrypt_rail_fence(message: str, key: int) -> str:
+    encrypted = ""
 
     for k in range(key):
         if k == key - 1:
@@ -24,17 +24,18 @@ def encode(message: str, key: int) -> str:
         i = k
         
         while i < len(message):
-            encoded += message[i]
+            encrypted += message[i]
             i += jump
 
-    return encoded
+    return encrypted
 
 
 message = "computer science"
+key = 3
 
-encoded = encode(message, 3)
+encrypted = encrypt_rail_fence(message, key)
 
-print(f"Encoded: {encoded}")
+print(encrypted)
 ```
 {% endcode %}
 
@@ -44,8 +45,8 @@ print(f"Encoded: {encoded}")
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-def decode(message: str, key: int) -> str:
-    decoded = list(message)
+def decrypt_rail_fence(message: str, key: int) -> str:
+    decrypted = list(message)
     j = 0
 
     for k in range(key):
@@ -57,17 +58,18 @@ def decode(message: str, key: int) -> str:
         i = k
         
         while i < len(message):
-            decoded[i] = message[j]
+            decrypted[i] = message[j]
             j += 1
             i += jump
 
-    return "".join(decoded)
+    return "".join(decrypted)
 
 
 message = "cu eoptrsinemecc"
+key = 3
 
-decoded = decode(message, 3)
+decrypted = decrypt_rail_fence(message, key)
 
-print(f"Decoded: {decoded}")
+print(decrypted)
 ```
 {% endcode %}

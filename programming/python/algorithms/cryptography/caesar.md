@@ -12,22 +12,25 @@
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-def encode(message: str, key: int) -> str:
-    encoded = ""
-    letter = 0
-    for i in range(len(message)):
-        letter = ord(message[i]) + key
-        if letter > ord("z"):
-            letter = ord("a") + letter - ord("z")
+def encrypt_caesar(message: str, key: int) -> str:
+    encrypted = ""
 
-        encoded += chr(letter)
+    for letter in message:
+        encrypted_letter = ord(letter) + key
+        if encrypted_letter > ord("z"):
+            encrypted_letter = ord("a") + encrypted_letter - ord("z")
 
-    return encoded
+        encrypted += chr(encrypted_letter)
+
+    return encrypted
 
 
 message = "computerscience"
-encoded = encode(message, 3)
-print(f"Encoded: {encoded}")
+key = 3
+
+encrypted = encrypt_caesar(message, key)
+
+print(encrypted)
 ```
 {% endcode %}
 
@@ -37,21 +40,24 @@ print(f"Encoded: {encoded}")
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-def decode(message: str, key: int) -> str:
-    decoded = ""
-    letter = 0
-    for i in range(len(message)):
-        letter = ord(message[i]) - key
-        if letter < ord("a"):
-            letter = ord("z") - (ord("a") - letter)
+def decrypt_caesar(message: str, key: int) -> str:
+    decrypted = ""
 
-        decoded += chr(letter)
+    for letter in message:
+        decrypted_letter = ord(letter) - key
+        if decrypted_letter < ord("a"):
+            decrypted_letter = ord("z") - (ord("a") - decrypted_letter)
 
-    return decoded
+        decrypted += chr(decrypted_letter)
+
+    return decrypted
 
 
 message = "frpsxwhuvflhqfh"
-decoded = decode(message, 3)
-print(f"Decoded: {decoded}")
+key = 3
+
+decrypted = decrypt_caesar(message, key)
+
+print(decrypted)
 ```
 {% endcode %}

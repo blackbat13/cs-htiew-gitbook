@@ -12,29 +12,28 @@
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-def encode(message: str) -> bool:
-    encoded = ""
+def encrypt_trithemius(message: str) -> bool:
+    encrypted = ""
     k = 0
-    letter = 0
     
-    for i in range(len(message)):
-        letter = ord(message[i]) + k
+    for letter in message:
+        encrypted_letter = ord(letter) + k
         
-        if letter > ord("z"):
-            letter = ord("a") + letter - ord("z")
+        if encrypted_letter > ord("z"):
+            encrypted_letter = ord("a") + encrypted_letter - ord("z")
 
-        encoded += chr(letter)
+        encrypted += chr(encrypted_letter)
         k += 1
         k %= 26
 
-    return encoded
+    return encrypted
 
 
 message = "computerscience"
 
-encoded = encode(message)
+encrypted = encrypt_trithemius(message)
 
-print(f"Encoded: {encoded}")
+print(encrypted)
 ```
 {% endcode %}
 
@@ -44,28 +43,27 @@ print(f"Encoded: {encoded}")
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-def decode(message: str) -> str:
-    decoded = ""
+def decrypt_trithemius(message: str) -> str:
+    decrypted = ""
     k = 0
-    letter = 0
     
-    for i in range(len(message)):   
-        letter = ord(message[i]) - k
+    for letter in message:   
+        decrypted_letter = ord(letter) - k
         
-        if letter < ord("a"):
-            letter = ord("z") - (ord("a") - letter)
+        if decrypted_letter < ord("a"):
+            decrypted_letter = ord("z") - (ord("a") - decrypted_letter)
 
-        decoded += chr(letter)
+        decrypted += chr(decrypted_letter)
         k += 1
         k %= 26
 
-    return decoded
+    return decrypted
 
 
 message = "cposyykyblspzps"
 
-decoded = decode(message)
+decrypted = decrypt_trithemius(message)
 
-print(f"Decoded: {decoded}")
+print(decrypted)
 ```
 {% endcode %}
