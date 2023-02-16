@@ -27,9 +27,3 @@ distance = point_line_distance(-3, -4, 7, 6, -5, -8)
 print("Distance of the point (-5, -8) from the line ((-3, -4), (7, 6)) is", distance)
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/AeowcV" %}
-Odległość punktu od prostej
-{% endembed %}

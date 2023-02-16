@@ -43,9 +43,3 @@ result = calculate_rpn(rpn)
 print(result)
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/RuReCs" %}
-Obliczanie wartości wyrażenia ONP
-{% endembed %}

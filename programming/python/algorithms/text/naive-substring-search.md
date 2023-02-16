@@ -32,9 +32,3 @@ else:
     print(f'{b} is substring of {a} and starts at position {pos}')
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/mZaOZo" %}
-Znajdowanie miejsca pierwszego wystąpienia wzorca w tekście
-{% endembed %}

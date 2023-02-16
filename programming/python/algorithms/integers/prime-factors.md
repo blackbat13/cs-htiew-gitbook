@@ -29,9 +29,3 @@ n = 124
 print(f"Prime factors of {n}: {distribute(n)}")
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/Kpj2pe" %}
-Rozkład na czynniki pierwsze
-{% endembed %}

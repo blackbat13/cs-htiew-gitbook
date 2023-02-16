@@ -72,12 +72,6 @@ print(encoded)
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/axOimk" %}
-Szyfrowanie szyfrem Playfaira
-{% endembed %}
-
 ## Deszyfrowanie
 
 ### Implementacja
@@ -143,9 +137,3 @@ decoded = decode(key, message)
 print(decoded)
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/wzq3j7" %}
-Deszyfrowanie szyfrem Playfaira
-{% endembed %}

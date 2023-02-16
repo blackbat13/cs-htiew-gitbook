@@ -32,12 +32,6 @@ print(f"{a}^{n} = {result}")
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/pSGzrA" %}
-Szybkie potęgowanie - wersja iteracyjna
-{% endembed %}
-
 ## Rozwiązanie rekurencyjne
 
 {% code overflow="wrap" lineNumbers="true" %}
@@ -60,9 +54,3 @@ result = fast_exp(a, n)
 print(f"{a}^{n} = {result}")
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/3i2qdR" %}
-Szybkie potęgowanie - wersja rekurencyjna
-{% endembed %}

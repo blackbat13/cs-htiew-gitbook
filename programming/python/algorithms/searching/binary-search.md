@@ -41,12 +41,6 @@ print(index)
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/pFIHSC" %}
-Wyszukiwanie binarne - wersja iteracyjna
-{% endembed %}
-
 ## Wersja rekurencyjna
 
 ### Implementacja
@@ -77,9 +71,3 @@ index = binary_search_recursive(array, number, 0, len(array))
 print(index)
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/eYCLlP" %}
-Wyszukiwanie binarne - wersja rekurencyjna
-{% endembed %}

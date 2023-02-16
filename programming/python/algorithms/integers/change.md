@@ -34,12 +34,6 @@ print(f"Amount {amount} can be given out using {result} coins")
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/DQPy9c" %}
-Wydawanie reszty - podejście zachłanne
-{% endembed %}
-
 ## Podejście dynamiczne
 
 ### Implementacja
@@ -83,12 +77,6 @@ print("Dynamic algorithm")
 change_dynamic(amount, coins)
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/piFFpG" %}
-Wydawanie reszty - podejście dynamiczne
-{% endembed %}
 
 ### Opis implementacji
 

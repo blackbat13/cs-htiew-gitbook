@@ -47,9 +47,3 @@ majority = find_majority(array)
 print(majority)
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/9kFDlI" %}
-Znajdowanie lidera w zbiorze
-{% endembed %}

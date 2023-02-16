@@ -29,9 +29,3 @@ bubble_sort(array)
 print(array)
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/1WKZb9" %}
-Sortowanie bąbelkowe
-{% endembed %}

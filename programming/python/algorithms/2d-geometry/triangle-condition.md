@@ -24,9 +24,3 @@ else:
     print(f'Z odcników od długościach {a}, {b} oraz {c} nie można zbudować trójkąta')
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/2anTf3" %}
-Warunek trójkąta
-{% endembed %}

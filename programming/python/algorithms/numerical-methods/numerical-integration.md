@@ -79,12 +79,6 @@ print(area)
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/DnRDEH" %}
-Całkowanie numeryczne - metoda trapezów
-{% endembed %}
-
 ### Opis implementacji
 
 Funkcja `f` (**linia 1**) przyjmuje jeden parametr rzeczywisty i jako wynik zwraca liczbę rzeczywistą. Funkcja ta symuluje funkcję matematyczną, której pole pod wykresem chcemy policzyć. 

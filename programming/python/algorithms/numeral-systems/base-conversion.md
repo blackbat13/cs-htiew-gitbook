@@ -35,12 +35,6 @@ print(f'{number} (10) = {converted} ({base})')
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/Olpjrr" %}
-Konwersja z dziesiętnego
-{% endembed %}
-
 ## Konwersja na dziesiętny
 
 {% code overflow="wrap" lineNumbers="true" %}
@@ -71,9 +65,3 @@ converted = to_dec(number, base)
 print(f'{number} ({base}) = {converted} (10)')
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/KxEbY6" %}
-Konwersja na dziesiętny
-{% endembed %}

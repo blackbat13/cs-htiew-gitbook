@@ -39,12 +39,6 @@ print(f"Encoded: {encoded}")
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/fDIhWN" %}
-Szyfrowanie szyfrem Vigenere'a
-{% endembed %}
-
 ## Deszyfrowanie
 
 ### Implementacja
@@ -77,9 +71,3 @@ decoded = decode(message, key)
 print(f"Decoded: {decoded}")
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/95wFXH" %}
-Deszyfrowanie szyfrem Vigenere'a
-{% endembed %}

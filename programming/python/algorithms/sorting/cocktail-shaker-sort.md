@@ -28,9 +28,3 @@ cocktail_shaker_sort(array)
 print(array)
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/C38hze" %}
-Sortowanie koktajlowe
-{% endembed %}

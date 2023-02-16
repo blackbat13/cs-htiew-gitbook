@@ -26,9 +26,3 @@ insertion_sort(array)
 print(array)
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/ublO4B" %}
-Sortowanie przez wstawianie
-{% endembed %}

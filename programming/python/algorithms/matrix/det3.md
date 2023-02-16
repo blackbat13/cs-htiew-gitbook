@@ -27,12 +27,6 @@ print(result)
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/tc3XAb" %}
-Wyznacznik macierzy 3x3
-{% endembed %}
-
 ### Opis implementacji
 
 Funkcja `det3` (**linia 1**) wylicza wyznacznik macierzy $$3\times3$$ przekazanej jako parametr funkcji. Wewnątrz funkcji mamy tylko jedną operację zwracającą wyznacznik macierzy obliczony zgodnie ze wzorem.

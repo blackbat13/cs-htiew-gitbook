@@ -24,12 +24,6 @@ divisors(n)
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/bNjeR2" %}
-Wszystkie dzielniki - podejście zupełnie naiwne
-{% endembed %}
-
 ## Rozwiązanie naiwne
 
 ### Implementacja
@@ -50,12 +44,6 @@ n = 12
 divisors(n)
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/1ZKypb" %}
-Wszystkie dzielniki - podejście naiwne
-{% endembed %}
 
 ## Rozwiązanie optymalne
 
@@ -79,9 +67,3 @@ n = 12
 divisors(n)
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/jZpx7E" %}
-Wszystkie dzielniki - podejście optymalne
-{% endembed %}

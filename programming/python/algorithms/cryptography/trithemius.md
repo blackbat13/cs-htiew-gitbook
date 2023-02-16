@@ -46,12 +46,6 @@ print(f"Encoded: {encoded}")
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/9W6PrX" %}
-Szyfrowanie szyfrem Thithemius'a
-{% endembed %}
-
 ## Deszyfrowanie
 
 ### Implementacja
@@ -91,9 +85,3 @@ decoded = decode(message)
 print(f"Decoded: {decoded}")
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/PzZXD9" %}
-Deszyfrowanie szyfrem Trithemius'a
-{% endembed %}

@@ -28,9 +28,3 @@ else:
     print(f'{n} is not a perfect number')
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/4EALRV" %}
-Test doskonałości
-{% endembed %}

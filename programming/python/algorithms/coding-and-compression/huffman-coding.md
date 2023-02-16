@@ -8,8 +8,8 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
-
 class Node:
     def __init__(self, letter = "", value = 0, left = None, right = None):
         self.letter = letter
@@ -61,3 +61,4 @@ compressed = compress(text, codes)
 
 print(compressed)
 ```
+{% endcode %}

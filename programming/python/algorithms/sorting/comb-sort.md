@@ -37,9 +37,3 @@ comb_sort(array, n)
 print(array)
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/gzuvFP" %}
-Sortowanie koktajlowe
-{% endembed %}

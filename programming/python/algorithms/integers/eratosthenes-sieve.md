@@ -39,9 +39,3 @@ primes = sieve(n)
 print_prime_numbers(primes)
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/uQ3J6y" %}
-Sito Eratostenesa
-{% endembed %}

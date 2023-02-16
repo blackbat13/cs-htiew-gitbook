@@ -56,9 +56,3 @@ print(f"Encoded: {encoded}")
 print(f"Decoded: {decoded}")
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/bbGaVQ" %}
-Szyfr Beauforta
-{% endembed %}

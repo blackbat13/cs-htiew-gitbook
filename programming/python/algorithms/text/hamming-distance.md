@@ -29,9 +29,3 @@ distance = hamming_distance(a, b)
 print(f"Odległość Hamminga pomiędzy wyrazami {a} i {b} wynosi {distance}")
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/QpQzhH" %}
-Odległość Hamminga
-{% endembed %}

@@ -38,12 +38,6 @@ print(array)
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/NYyWxx" %}
-Sortowanie przez zliczanie
-{% endembed %}
-
 ### Opis implementacji
 
 Zaczynamy od stworzenia funkcji `count_occurences` (**linia 1**) służącej do zliczenia wystąpień każdej liczby od zera do maksymalnej wartości w liście. Na początku funkcji zaczynamy od znalezienia maksymalnej wartości w liście (**linia 2**). Następnie tworzymy listę `occurrences` służącą do zliczania liczby wystąpień poszczególnych wartości w liście `array` (**linia 3**). Na początku wypełniamy ją zerami od pozycji 0 do pozycji wyznaczonej przez maksymalny element (zmienna `max_number`). Po utworzeniu listy liczników przechodzimy do zliczania. Dla każdego elementu (zmienna `number`) w liście `array `(**linia 5**) zwiększamy przypisany do tego elementu licznik (**linia 6**). Na koniec funkcji zwracamy jej wynik w postaci listy liczników (**linia 8**).

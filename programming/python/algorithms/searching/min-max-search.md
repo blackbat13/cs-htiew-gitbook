@@ -33,12 +33,6 @@ print(f'Minimum: {min}, Maximum: {max}')
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/abPu9T" %}
-Jednoczesne wyszukiwanie minimum i maksimum - podejście naiwne
-{% endembed %}
-
 ## Podejście optymalne
 
 {% code overflow="wrap" lineNumbers="true" %}
@@ -78,9 +72,3 @@ min, max = find_min_max(array)
 print(f'Minimum: {min}, Maximum: {max}')
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/CtHqmV" %}
-Jednoczesne wyszukiwanie minimum i maksimum - podejście optymalne
-{% endembed %}

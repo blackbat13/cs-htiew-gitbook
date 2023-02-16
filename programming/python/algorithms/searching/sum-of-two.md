@@ -30,12 +30,6 @@ sum_of_two(n, tab, k)
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/7iwqRc" %}
-Suma dwóch - rozwiązanie naiwne
-{% endembed %}
-
 ## Rozwiązanie optymalne
 
 ### Implementacja
@@ -65,9 +59,3 @@ k = 18
 sum_of_two(n, tab, k)
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/qarXHf" %}
-Suma dwóch - rozwiązanie optymalne
-{% endembed %}

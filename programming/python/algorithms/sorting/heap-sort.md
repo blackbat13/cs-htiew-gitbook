@@ -34,9 +34,3 @@ heap_sort(array)
 print(array)
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/RvYqmU" %}
-Sortowanie przez kopcowanie
-{% endembed %}

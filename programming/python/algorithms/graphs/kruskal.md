@@ -9,11 +9,3 @@
 ## Implementacja
 
 TODO
-
-### Link do implementacji
-
-TODO
-
-### Opis implementacji
-
-TODO

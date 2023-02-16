@@ -41,12 +41,6 @@ print(f"PI ~= {estimated_pi}")
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/lGXTa2" %}
-Obliczanie wartości PI - metoda Monte Carlo
-{% endembed %}
-
 ## Obliczanie wartości PI wraz z rysowaniem wykresu
 
 {% code overflow="wrap" lineNumbers="true" %}

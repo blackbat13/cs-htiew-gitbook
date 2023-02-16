@@ -57,9 +57,3 @@ distances = dijkstra(graph, 0)
 print(distances)
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/BSdXrf" %}
-Dijkstra
-{% endembed %}

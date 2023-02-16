@@ -22,9 +22,3 @@ else:
     print(f'{a} nie jest palindromem')
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/nsapMq" %}
-Test palindromu
-{% endembed %}

@@ -23,9 +23,3 @@ else:
     print(f"{a} i {b} nie są anagramami")
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/EZQcCD" %}
-Test anagramów
-{% endembed %}

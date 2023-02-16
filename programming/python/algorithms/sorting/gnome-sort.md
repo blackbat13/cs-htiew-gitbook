@@ -28,12 +28,6 @@ print(array)
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/sbsKNf" %}
-Sortowanie gnoma
-{% endembed %}
-
 ### Opis implementacji
 
 Funkcja `gnome_sort` (**linia 1**) przyjmuje tylko jeden argument: listę elementów do posortowania. Wewnątrz funkcji zaczynamy od stworzenia licznika zapamiętującego obecną pozycję na liście (**linia 2**). Następnie przechodzimy pętlą warunkową dopóki nie dotrzemy do końca listy (**linia 3**). Wewnątrz pętli sprawdzamy, czy znajdujemy się na początkowej pozycji na liście lub czy obecny element jest większy bądź równy od poprzedniego (**linia 4**). Jeżeli tak jest, to przechodzimy do kolejnego elementu poprzez zwiększenie licznika (**linia 5**). W przeciwnym przypadku (**linia 6**) zamieniamy obecny element na liście z poprzednim (**linia 7**) i cofamy się do poprzedniego elementu na liście poprzez zmniejszenie licznika (**linia 8**).

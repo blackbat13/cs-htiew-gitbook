@@ -32,9 +32,3 @@ result = longest_growing_substring_length(n, tab)
 print(result)
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/66djuO" %}
-Długość najdłuższego spójnego podciągu rosnącego
-{% endembed %}

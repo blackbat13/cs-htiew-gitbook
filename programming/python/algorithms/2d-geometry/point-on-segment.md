@@ -50,9 +50,3 @@ else:
 	print(f"Punkt ({c_x}, {c_y}) nie leży na odcinku [({a_x}, {a_y}), ({b_x}, {b_y})]")
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/aohGSt" %}
-Punkt na odcinku
-{% endembed %}

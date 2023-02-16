@@ -34,12 +34,6 @@ print(array)
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/SYQNLq" %}
-Sortowanie przez wybieranie
-{% endembed %}
-
 ### Opis implementacji
 
 Powyższa implementacja składa się z dwóch funkcji: 

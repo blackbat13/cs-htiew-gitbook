@@ -77,9 +77,3 @@ else:
 	print(f"Odcinki [({a_x}, {a_y}), ({b_x}, {b_y})] oraz [({c_x}, {c_y}), ({d_x}, {d_y})] nie przecinają się")
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/xNF4Zk" %}
-Przecinanie się odcinków
-{% endembed %}

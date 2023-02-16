@@ -47,9 +47,3 @@ lcs = longest_common_subsequence(a, b)
 print(f"Longest common subsequence of words {a} and {b} is {lcs}")
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/gdvNTT" %}
-Najdłuższy wspólny podciąg
-{% endembed %}

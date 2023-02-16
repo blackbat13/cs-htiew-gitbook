@@ -43,12 +43,6 @@ print("Max:", max_val)
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/DxxLsK" %}
-Wyszukiwanie wartości minimum i maksimum
-{% endembed %}
-
 ## Wyszukiwanie indeksów wartości minimum i maksimum
 
 ### Implementacja
@@ -85,9 +79,3 @@ print("Min index:", min_ind)
 print("Max index:", max_ind)
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/Yy748p" %}
-Wyszukiwanie indeksów wartości min i maks
-{% endembed %}

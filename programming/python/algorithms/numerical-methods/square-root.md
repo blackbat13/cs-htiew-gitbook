@@ -29,12 +29,6 @@ print(f"sqrt({n}) ~= {result}")
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/YfdE5U" %}
-Pierwiastek kwadratowy - metoda Herona
-{% endembed %}
-
 ### Opis implementacji
 
 Na początku definiujemy funkcję `sqrt` (**linia 1**), która przyjmuje dwa parametry: liczbę, której pierwiastek chcemy policzyć ($$n$$) oraz dokładność obliczeń ($$p$$). Wewnątrz funkcji zaczynamy od obliczenia pierwszego przybliżenia wartości pierwiastka kwadratowego z $$n$$, które zapisujemy w zmiennej `x1` (**linia 2**). Następnie ze wzoru obliczamy kolejne przybliżenie i zapisujemy je w zmiennej `x2` (**linia 3**). Teraz przechodzimy do pętli warunkowej (**linia 4**), w której obliczenia przeprowadzamy tak długo, jak wartość bezwzględna różnicy pomiędzy kolejnymi przybliżeniami (`abs(x2 - x1)`) jest większa od podanej dokładności. Wewnątrz pętli obliczamy kolejne przybliżenie, które zapisujemy w zmiennej `x1` (**linia 5**). Następnie zamieniamy wartościami zmienne `x1` oraz `x2` (**linia 6**), tak aby w zmiennej `x1` było poprzednie przybliżenie, a w zmiennej `x2` było kolejne przybliżenie. Po zakończeniu obliczeń i wyjściu z pętli, zwracamy wynik zapisany w zmiennej `x2` (**linia 8**).

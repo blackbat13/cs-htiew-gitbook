@@ -35,12 +35,6 @@ print(f"GCD({a}, {b}) = {result}")
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/OfD6kn" %}
-NWD z odejmowaniem
-{% endembed %}
-
 ## Algorytm Euklidesa - wersja iteracyjna
 
 ### Implementacja
@@ -65,12 +59,6 @@ print(f"GCD({a},{b}) = {result}")
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/02yQ0m" %}
-Algorytm Euklidesa - wersja iteracyjna
-{% endembed %}
-
 ## Algorytm Euklidesa - wersja rekurencyjna
 
 ### Implementacja
@@ -92,9 +80,3 @@ result = gcd(a, b)
 print(f"GCD({a},{b}) = {result}")
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/b8Zfab" %}
-Algorytm Euklidesa - wersja rekurencyjna
-{% endembed %}

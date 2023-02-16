@@ -43,12 +43,6 @@ print(f"Encoded: {encoded}")
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/k1CQdI" %}
-Szyfrowanie szyfrem ROT13
-{% endembed %}
-
 ## Deszyfrowanie
 
 ### Implementacja
@@ -85,9 +79,3 @@ decoded = decode(message)
 print(f"Decoded: {decoded}")
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/iXANLs" %}
-Deszyfrowanie szyfrem ROT13
-{% endembed %}

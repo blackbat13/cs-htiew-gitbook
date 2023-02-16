@@ -53,12 +53,6 @@ print(f"f({x}) = {result}")
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/6PEgGA" %}
-Obliczanie wartości wielomianu za pomocą schematu Hornera
-{% endembed %}
-
 ### Opis implementacji
 
 Zacznijmy od funkcji pomocniczej `print_polynomial` (**linia 20**), której celem jest wyświetlenie wielomianu w czytelnej formie na ekranie. Nie jest ona niezbędną częścią algorytmu, ale może być pomocna przy weryfikacji poprawności wyniku. Funkcja przyjmuje dwa parametry: listę współczynników wielomianu `coef`, oraz stopień wielomianu `n`. W tablicy znajduje się dokładnie $$n+1$$ liczb. Współczynniki są zapisane w kolejności od najmniejszej potęgi ($$0$$) do największej ($$n$$).

@@ -62,9 +62,3 @@ else:
     print("No result exists")
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/C4JTOk" %}
-Problem n królowych
-{% endembed %}

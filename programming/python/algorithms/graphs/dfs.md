@@ -44,9 +44,3 @@ visited = [False for _ in range(len(graph))]
 dfs(graph, visited, 0)
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/nFGslg" %}
-DFS
-{% endembed %}

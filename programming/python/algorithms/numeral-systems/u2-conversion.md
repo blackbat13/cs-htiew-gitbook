@@ -34,9 +34,3 @@ number_decimal = u2_to_decimal(number_u2)
 print(f"{number_u2} (U2) = {number_decimal} (10)")
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/5KbrSA" %}
-Konwersja z systemu U2 do dziesiętnego
-{% endembed %}

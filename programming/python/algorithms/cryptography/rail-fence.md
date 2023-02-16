@@ -44,12 +44,6 @@ print(f"Encoded: {encoded}")
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/B5duIj" %}
-Szyfrowanie szyfrem płotkowym
-{% endembed %}
-
 ## Deszyfrowanie
 
 ### Implementacja
@@ -89,9 +83,3 @@ decoded = decode(message, 3)
 print(f"Decoded: {decoded}")
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/b1On0g" %}
-Deszyfrowanie szyfrem płotkowym
-{% endembed %}

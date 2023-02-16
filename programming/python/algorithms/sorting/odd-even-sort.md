@@ -24,9 +24,3 @@ odd_even_sort(array)
 print(array)
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/r1Bb5H" %}
-Sortowanie odd-even
-{% endembed %}

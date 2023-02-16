@@ -32,12 +32,6 @@ print(f"fib({n}) = {result}")
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/Y64Pew" %}
-Liczby Fibonacciego - wersja iteracyjna
-{% endembed %}
-
 ## Wersja rekurencyjna
 
 ### Implementacja
@@ -58,9 +52,3 @@ result = fib(n)
 print(f"fib({n}) = {result}")
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/tdrBFE" %}
-Liczby Fibonacciego - wersja rekurencyjna
-{% endembed %}

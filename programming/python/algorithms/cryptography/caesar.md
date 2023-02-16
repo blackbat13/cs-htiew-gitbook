@@ -49,12 +49,6 @@ print(f'Encoded: {encoded}')
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/WgTR6z" %}
-Szyfrowanie szyfrem Cezara
-{% endembed %}
-
 ## Deszyfrowanie
 
 ### Implementacja
@@ -97,9 +91,3 @@ decoded = decode(message, 3)
 print(f'Decoded: {decoded}')
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/BWheBr" %}
-Deszyfrowanie szyfrem Cezara
-{% endembed %}

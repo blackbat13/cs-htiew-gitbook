@@ -34,9 +34,3 @@ distance = levenshtein_distance(a, b)
 print(f"Odległość Levenshteina pomiędzy wyrazami {a} i {b} wynosi {distance}")
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/6oJ6Ra" %}
-Odległość Levenshteina
-{% endembed %}
