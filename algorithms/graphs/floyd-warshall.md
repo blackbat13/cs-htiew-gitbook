@@ -14,6 +14,6 @@ description: Najkrótsze ścieżki pomiędzy wszystkimi wierzchołkami
 
 ### Python
 
-{% content-ref url="../../programming/python/algorithms/grafy/floyd-warshall.md" %}
-[floyd-warshall.md](../../programming/python/algorithms/grafy/floyd-warshall.md)
+{% content-ref url="../../programming/python/algorithms/graphs/floyd-warshall.md" %}
+[floyd-warshall.md](../../programming/python/algorithms/graphs/floyd-warshall.md)
 {% endcontent-ref %}

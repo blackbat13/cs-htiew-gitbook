@@ -10,6 +10,6 @@
 
 ### Python
 
-{% content-ref url="../../programming/python/algorithms/grafy/kruskal.md" %}
-[kruskal.md](../../programming/python/algorithms/grafy/kruskal.md)
+{% content-ref url="../../programming/python/algorithms/graphs/kruskal.md" %}
+[kruskal.md](../../programming/python/algorithms/graphs/kruskal.md)
 {% endcontent-ref %}

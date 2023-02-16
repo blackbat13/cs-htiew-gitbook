@@ -14,6 +14,6 @@ description: Najkrótsze ścieżki z jednego wierzchołka
 
 ### Python
 
-{% content-ref url="../../programming/python/algorithms/grafy/dijkstra.md" %}
-[dijkstra.md](../../programming/python/algorithms/grafy/dijkstra.md)
+{% content-ref url="../../programming/python/algorithms/graphs/dijkstra.md" %}
+[dijkstra.md](../../programming/python/algorithms/graphs/dijkstra.md)
 {% endcontent-ref %}

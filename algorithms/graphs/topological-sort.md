@@ -10,6 +10,6 @@
 
 ### Python
 
-{% content-ref url="../../programming/python/algorithms/grafy/topological-sort.md" %}
-[topological-sort.md](../../programming/python/algorithms/grafy/topological-sort.md)
+{% content-ref url="../../programming/python/algorithms/graphs/topological-sort.md" %}
+[topological-sort.md](../../programming/python/algorithms/graphs/topological-sort.md)
 {% endcontent-ref %}

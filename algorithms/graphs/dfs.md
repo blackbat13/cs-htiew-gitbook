@@ -12,6 +12,6 @@ DFS (**D**epth-**F**irst **S**earch) to metoda przeszukiwania grafu **wgłąb**.
 
 ### Python
 
-{% content-ref url="../../programming/python/algorithms/grafy/dfs.md" %}
-[dfs.md](../../programming/python/algorithms/grafy/dfs.md)
+{% content-ref url="../../programming/python/algorithms/graphs/dfs.md" %}
+[dfs.md](../../programming/python/algorithms/graphs/dfs.md)
 {% endcontent-ref %}

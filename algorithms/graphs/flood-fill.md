@@ -43,6 +43,6 @@ funkcja FloodFill(x, y):
 
 ### Python
 
-{% content-ref url="../../programming/python/algorithms/grafy/flood-fill.md" %}
-[flood-fill.md](../../programming/python/algorithms/grafy/flood-fill.md)
+{% content-ref url="../../programming/python/algorithms/graphs/flood-fill.md" %}
+[flood-fill.md](../../programming/python/algorithms/graphs/flood-fill.md)
 {% endcontent-ref %}

@@ -12,6 +12,6 @@ BFS (**B**readth-**F**irst **S**earch) to metoda przeszukiwania grafu **wszerz**
 
 ### Python
 
-{% content-ref url="../../programming/python/algorithms/grafy/bfs.md" %}
-[bfs.md](../../programming/python/algorithms/grafy/bfs.md)
+{% content-ref url="../../programming/python/algorithms/graphs/bfs.md" %}
+[bfs.md](../../programming/python/algorithms/graphs/bfs.md)
 {% endcontent-ref %}

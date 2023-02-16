@@ -10,6 +10,6 @@
 
 ### Python
 
-{% content-ref url="../../programming/python/algorithms/grafy/prim.md" %}
-[prim.md](../../programming/python/algorithms/grafy/prim.md)
+{% content-ref url="../../programming/python/algorithms/graphs/prim.md" %}
+[prim.md](../../programming/python/algorithms/graphs/prim.md)
 {% endcontent-ref %}
