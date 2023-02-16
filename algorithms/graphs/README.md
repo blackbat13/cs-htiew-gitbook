@@ -1,3 +1,1 @@
-# Grafowe
-
-TODO - krótki opis
+# Grafy
