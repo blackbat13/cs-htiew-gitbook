@@ -18,8 +18,6 @@ Flood fill jest algorytmem pozwalającym na wypełnienie/odwiedzenie pewnego zam
 
 ### Rozwiązanie
 
-TODO
-
 ### Pseudokod
 
 ```
