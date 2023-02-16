@@ -11,7 +11,7 @@
 ### Implementacja
 
 {% code overflow="wrap" lineNumbers="true" %}
-```visual-basic
+```vb
 Module Search
     Public Function LinearSearch(array as Integer(), number as Integer) As Boolean
         For Each el As Integer In array
@@ -39,18 +39,12 @@ End Module
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/E4ItjS" %}
-Wyszukiwanie liniowe - istnienie elementu
-{% endembed %}
-
 ## Pozycja elementu
 
 ### Implementacja
 
 {% code overflow="wrap" lineNumbers="true" %}
-```visual-basic
+```vb
 Module Search
     Public Function LinearSearch(array as Integer(), number as Integer) As Integer
         For index As Integer = 0 To array.Length - 1
@@ -78,18 +72,12 @@ End Module
 ```
 {% endcode %}
 
-### Link do implementacji
-
-{% embed url="https://ideone.com/slBT8K" %}
-Wyszukiwanie liniowe - pozycja elementu
-{% endembed %}
-
 ## Wszystkie pozycje elementu
 
 ### Implementacja
 
 {% code overflow="wrap" lineNumbers="true" %}
-```visual-basic
+```vb
 Module Search
     Public Sub LinearSearch(array as Integer(), number as Integer)
         For index As Integer = 0 To array.Length - 1
@@ -110,9 +98,3 @@ Module Search
 End Module
 ```
 {% endcode %}
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/LkA3ln" %}
-Wyszukiwanie liniowe - wszystkie pozycje elementu
-{% endembed %}
