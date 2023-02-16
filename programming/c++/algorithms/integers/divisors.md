@@ -17,19 +17,19 @@
 using namespace std;
 
 void divisors(int n) {
-	for (int i = 1; i <= n; i++) {
-		if (n % i == 0) {
-			cout << i << endl;
-		}
-	}
+    for (int i = 1; i <= n; i++) {
+        if (n % i == 0) {
+            cout << i << endl;
+        }
+    }
 }
 
 int main() {
-	int n = 12;
-	
-	divisors(n);
-	
-	return 0;
+    int n = 12;
+    
+    divisors(n);
+    
+    return 0;
 }
 ```
 {% endcode %}
@@ -51,23 +51,23 @@ W części głównej programu najpierw definiujemy dane wejściowe (**linia 14**
 using namespace std;
 
 void divisors(int n) {
-	for (int i = 1; i <= n / 2; i++) {
-		if (n % i == 0) {
-			cout << i << endl;
-		}
-	}
-	
-	if (n > 1) {
-		cout << n << endl;
-	}
+    for (int i = 1; i <= n / 2; i++) {
+        if (n % i == 0) {
+            cout << i << endl;
+        }
+    }
+    
+    if (n > 1) {
+        cout << n << endl;
+    }
 }
 
 int main() {
-	int n = 12;
-	
-	divisors(n);
-	
-	return 0;
+    int n = 12;
+    
+    divisors(n);
+    
+    return 0;
 }
 ```
 {% endcode %}
@@ -90,22 +90,22 @@ W części głównej programu najpierw definiujemy dane wejściowe (**linia 18**
 using namespace std;
 
 void divisors(int n) {
-	for (int i = 1; i <= sqrt(n); i++) {
-		if (n % i == 0) {
-			cout << i << endl;
-			if (i != n / i) {
-				cout << n / i << endl;
-			}
-		}
-	}
+    for (int i = 1; i <= sqrt(n); i++) {
+        if (n % i == 0) {
+            cout << i << endl;
+            if (i != n / i) {
+                cout << n / i << endl;
+            }
+        }
+    }
 }
 
 int main() {
-	int n = 12;
-	
-	divisors(n);
-	
-	return 0;
+    int n = 12;
+    
+    divisors(n);
+    
+    return 0;
 }
 ```
 {% endcode %}
