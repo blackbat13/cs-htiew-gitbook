@@ -12,30 +12,22 @@
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-def is_letter(letter: str) -> bool:
-    return ord('a') <= ord(letter) <= ord('z')
-
-
 def encode(message: str) -> str:
     encoded = ""
     letter = 0
     
     for i in range(len(message)):
-        if not is_letter(message[i]):
-            encoded += message[i]
-            continue
-            
         letter = ord(message[i]) + 13
         
-        if letter > ord('z'):
-            letter = ord('a') + letter - ord('z')
+        if letter > ord("z"):
+            letter = ord("a") + letter - ord("z")
 
         encoded += chr(letter)
 
     return encoded
 
 
-message = "computer science"
+message = "computerscience"
 
 encoded = encode(message)
 
@@ -49,30 +41,22 @@ print(f"Encoded: {encoded}")
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-def is_letter(letter: str) -> bool:
-    return ord('a') <= ord(letter) <= ord('z')
-
-
 def decode(message: str) -> str:
     decoded = ""
     letter = 0
     
     for i in range(len(message)):
-        if not is_letter(message[i]):
-            decoded += message[i]
-            continue
-            
         letter = ord(message[i]) - 13
         
-        if letter < ord('a'):
-            letter = ord('z') - (ord('a') - letter)
+        if letter < ord("a"):
+            letter = ord("z") - (ord("a") - letter)
 
         decoded += chr(letter)
 
     return decoded
 
 
-message = "pczdihrf gpvrbpr"
+message = "pczdihrfgpvrbpr"
 
 decoded = decode(message)
 

@@ -1,4 +1,4 @@
-# Szyfr Vigenere'a
+# Szyfr Vigenere"a
 
 ## Opis problemu
 
@@ -17,11 +17,11 @@ def encode(message: str, key: str) -> str:
     key_index = 0
     
     for letter in message:            
-        k = ord(key[key_index]) - ord('a')
+        k = ord(key[key_index]) - ord("a")
         encoded_letter = ord(letter) + k
         
-        if encoded_letter > ord('z'):
-            encoded_letter = ord('a') + encoded_letter - ord('z')
+        if encoded_letter > ord("z"):
+            encoded_letter = ord("a") + encoded_letter - ord("z")
 
         encoded += chr(encoded_letter)
         key_index += 1
@@ -50,11 +50,11 @@ def decode(message: str, key: str) -> str:
     key_index = 0
     
     for letter in message:
-        k = ord(key[key_index]) - ord('a')
+        k = ord(key[key_index]) - ord("a")
         decoded_letter = ord(letter) - k
         
-        if decoded_letter < ord('a'):
-            decoded_letter = ord('z') - (ord('a') - decoded_letter)
+        if decoded_letter < ord("a"):
+            decoded_letter = ord("z") - (ord("a") - decoded_letter)
 
         decoded += chr(decoded_letter)
         key_index += 1

@@ -13,12 +13,6 @@
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
 def encode(message: str, key: int) -> str:
-    """
-        Encodes message using Rail Fence Cipher with given key
-        :param message: message to encode
-        :param key: key
-        :return: message encode using Rail Fence with given key
-        """
     encoded = ""
 
     for k in range(key):
@@ -51,12 +45,6 @@ print(f"Encoded: {encoded}")
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
 def decode(message: str, key: int) -> str:
-    """
-        Decodes message using Rail Fence Cipher with given key
-        :param message: message to encode
-        :param key: key
-        :return: message decoded using Rail Fence Cipher with given key
-    """
     decoded = list(message)
     j = 0
 

@@ -1,4 +1,4 @@
-# Szyfr Trithemius'a
+# Szyfr Trithemius"a
 
 ## Opis problemu
 
@@ -12,24 +12,16 @@
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-def is_letter(letter: str) -> bool:
-    return ord('a') <= ord(letter) <= ord('z')
-
-
 def encode(message: str) -> bool:
     encoded = ""
     k = 0
     letter = 0
     
     for i in range(len(message)):
-        if not is_letter(message[i]):
-            encoded += message[i]
-            continue
-            
         letter = ord(message[i]) + k
         
-        if letter > ord('z'):
-            letter = ord('a') + letter - ord('z')
+        if letter > ord("z"):
+            letter = ord("a") + letter - ord("z")
 
         encoded += chr(letter)
         k += 1
@@ -38,7 +30,7 @@ def encode(message: str) -> bool:
     return encoded
 
 
-message = "computer science"
+message = "computerscience"
 
 encoded = encode(message)
 
@@ -52,24 +44,16 @@ print(f"Encoded: {encoded}")
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-def is_letter(letter: str) -> bool:
-    return ord('a') <= ord(letter) <= ord('z')
-
-
 def decode(message: str) -> str:
     decoded = ""
     k = 0
     letter = 0
     
-    for i in range(len(message)):
-        if not is_letter(message[i]):
-            decoded += message[i]
-            continue
-            
+    for i in range(len(message)):   
         letter = ord(message[i]) - k
         
-        if letter < ord('a'):
-            letter = ord('z') - (ord('a') - letter)
+        if letter < ord("a"):
+            letter = ord("z") - (ord("a") - letter)
 
         decoded += chr(letter)
         k += 1
@@ -78,7 +62,7 @@ def decode(message: str) -> str:
     return decoded
 
 
-message = "cposyyky blspzps"
+message = "cposyykyblspzps"
 
 decoded = decode(message)
 
