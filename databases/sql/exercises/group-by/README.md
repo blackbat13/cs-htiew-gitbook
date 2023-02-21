@@ -2,7 +2,7 @@
 
 ## Zadanie 1
 
-Dla każdego utworu wypisz sumę długości wszystkich jego utworów w milisekundach.
+Dla każdego albumu wypisz sumę długości wszystkich jego utworów w milisekundach.
 
 ## Zadanie 2
 

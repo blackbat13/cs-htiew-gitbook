@@ -34,7 +34,7 @@ Dla każdego klienta wypisz imię i nazwisko przypisanego do niego pracownika.
 
 ## Zadanie 9
 
-Dla każdej faktury wypisz imię i nazwisko klienta do niej przypisanego. Posortuj malejąco po dacie wystawienia faktury.
+Dla każdej faktury wypisz jej datę oraz imię i nazwisko klienta do niej przypisanego. Posortuj malejąco po dacie wystawienia faktury.
 
 ## Zadanie 10
 
@@ -42,4 +42,4 @@ Dla każdego klienta wypisz daty wszystkich jego faktur.
 
 ## Zadanie 11
 
-Dla każdej faktury wypisz nazwy wszystkich utworów na tej fakturze.
+Dla każdej faktury wypisz jej datę oraz nazwy wszystkich utworów na tej fakturze.
