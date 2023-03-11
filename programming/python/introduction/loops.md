@@ -1,9 +1,10 @@
 # Pętle
 
+Jak i w innych językach programowania ciężko jest napisać bardziej zaawansowany kod nie korzystając z pętli. W Pythonie mamy standardowo dwa rodzaje pętli: pętlę iteracyjną oraz pętlę warunkową.
+
 ## Pętla iteracyjna
 
-Pętla iteracyjna w języku Python jest tak naprawdę pętlą przechodzącą przez pewien zbiór elementów, tzn. pętlą typu **for in** czy też **for each**. 
-Może to być lista, zbiór i inne. Wykorzystując funkcję `range` możemy utworzyć zakres kolejnych wartości i przez niego przejść. Należy zwrócić uwagę na to, że funkcja `range` symuluje w pewnym sensie przedział prawostronnie otwarty.
+Pętla iteracyjna w języku Python jest tak naprawdę pętlą przechodzącą przez pewien zbiór elementów, tzn. pętlą typu **for in** czy też **for each**.  Może to być lista, zbiór i inne. Wykorzystując funkcję `range` możemy utworzyć zakres kolejnych wartości i przez niego przejść. Należy zwrócić uwagę na to, że funkcja `range` symuluje w pewnym sensie przedział prawostronnie otwarty.
 
 Poniżej kilka przykładów konstrukcji klasycznej pętli iteracyjnej w języku Python.
 

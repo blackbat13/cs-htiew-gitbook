@@ -24,14 +24,20 @@ Zamiast tego używamy wielu komentarzy jednolinijkowych.
 Alternatywnie można skorzystać ze składni pozwalającej na tworzenie wielolinijkowych tekstów.
 Jeżeli nie przypiszemy ich do żadnej zmiennej, ich wartość zostanie zignorowana, to znaczy potraktowana jak komentarz.
 
+#### Przykład
+
+```python
+"""
+To jest tekst wielolinijkowy,
+który może zostać potraktowany również jako komentarz.
+"""
+```
+
 ## Komentarze dokumentacyjne
 
-W języku Python komentarze dokumentacyjne mogą być zarówno jednolinijkowe jak i wielolinijkowe.
-W obu przypadkach tworzymy je tak samo.
-To, co może odróżniać Python od innych języków to fakt, że dokumentując funkcję czy klasę, komentarze umieszczamy wewnątrz definicji, a nie przed nią.
+W języku Python komentarze dokumentacyjne mogą być zarówno jednolinijkowe jak i wielolinijkowe. W obu przypadkach tworzymy je tak samo. To, co może odróżniać Python od innych języków to fakt, że dokumentując funkcję czy klasę, komentarze umieszczamy wewnątrz definicji, a nie przed nią.
 
-Istnieje co najmniej kilka różnych formatów pisania dokumentacji.
-Jak to zwykle bywa, należy wybrać jeden i się go trzymać w całym projekcie.
+Istnieje co najmniej kilka różnych formatów pisania dokumentacji. Jak to zwykle bywa, należy wybrać jeden i się go trzymać w całym projekcie.
 
 #### Przykład (format Sphinx)
 
