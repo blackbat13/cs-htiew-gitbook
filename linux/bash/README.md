@@ -25,3 +25,9 @@ W końcu uruchamiamy nasz skrypt:
 ```
 
 W konsoli powinien wyświetlić się nam komunikat *Hello World!*.
+
+## Ściąga
+
+{% embed url="https://quickref.me/bash" %}
+Ściąga
+{% endembed %}

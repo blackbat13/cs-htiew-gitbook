@@ -160,3 +160,9 @@ Dla przykładu, jeżeli chcielibyśmy dopasować wszystkie znaki poza **a** i **
 
 Używając nawiasów kwadratowych możemy także określić przedział dopuszczalnych znaków.
 Dla przykładu, jeżeli chcielibyśmy dopasować tylko cyfry, napisalibyśmy **[0-9]**.
+
+## Ściąga
+
+{% embed url="https://quickref.me/grep" %}
+Ściąga
+{% endembed %}

@@ -11,3 +11,9 @@ Go
 {% embed url="https://www.tiobe.com/tiobe-index/go/" %}
 Wykres popularności języka Go
 {% endembed %}
+
+## Ściąga
+
+{% embed url="https://quickref.me/go" %}
+Ściąga
+{% endembed %}

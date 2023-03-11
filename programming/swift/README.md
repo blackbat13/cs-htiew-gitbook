@@ -11,3 +11,9 @@ Swift
 {% embed url="https://www.tiobe.com/tiobe-index/swift/" %}
 Wykres popularności języka Swift
 {% endembed %}
+
+## Ściąga
+
+{% embed url="https://quickref.me/swift" %}
+Ściąga
+{% endembed %}

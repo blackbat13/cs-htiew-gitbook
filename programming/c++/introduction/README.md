@@ -75,3 +75,9 @@ Rozbudowane narzędzie webowe, które wymaga jednak utworzenia darmowego konta. 
 {% file src="../../../.gitbook/assets/Wprowadzenie do Cpp.pdf" %}
 Wprowadzenie do C++
 {% endfile %}
+
+## Ściąga dla zaawansowanych
+
+{% embed url="https://hackingcpp.com/cpp/cheat_sheets.html#hfold0a" %}
+Ściąga
+{% endembed %}

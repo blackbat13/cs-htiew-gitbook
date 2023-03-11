@@ -11,3 +11,9 @@ Strona języka JavaScript
 {% embed url="https://www.tiobe.com/tiobe-index/javascript/" %}
 Wykres popularności języka JavaScript
 {% endembed %}
+
+## Ściąga
+
+{% embed url="https://quickref.me/javascript" %}
+Ściąga
+{% endembed %}

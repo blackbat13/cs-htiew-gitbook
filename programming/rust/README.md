@@ -11,3 +11,9 @@ Rust
 {% embed url="https://www.tiobe.com/tiobe-index/rust/" %}
 Wykres popularności języka Rust
 {% endembed %}
+
+## Ściąga
+
+{% embed url="https://quickref.me/rust" %}
+Ściąga
+{% endembed %}

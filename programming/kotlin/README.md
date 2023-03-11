@@ -11,3 +11,9 @@ Kotlin
 {% embed url="https://www.tiobe.com/tiobe-index/kotlin/" %}
 Wykres popularności języka Kotlin
 {% endembed %}
+
+## Ściąga
+
+{% embed url="https://quickref.me/kotlin" %}
+Ściąga
+{% endembed %}

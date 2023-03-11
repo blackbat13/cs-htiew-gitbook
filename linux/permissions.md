@@ -85,3 +85,9 @@ Za pomocą polecenia chmod możemy nie tylko nadawać uprawnienia, ale także mo
 **`chmod u+rx plik.txt`**
 
 Oznacza dodanie uprawnień do czytania i wykonywania właścicielowi pliku.
+
+## Ściąga
+
+{% embed url="https://quickref.me/chmod" %}
+Ściąga
+{% endembed %}

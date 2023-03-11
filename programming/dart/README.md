@@ -11,3 +11,9 @@ Oficjalna strona języka Dart
 {% embed url="https://www.tiobe.com/tiobe-index/dart/" %}
 Wykres popularności języka Dart
 {% endembed %}
+
+## Ściąga
+
+{% embed url="https://quickref.me/dart" %}
+Ściąga
+{% endembed %}
