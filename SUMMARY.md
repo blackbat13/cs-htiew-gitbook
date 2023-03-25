@@ -747,6 +747,8 @@
   * [Gazeta](algorithmic-exercises/level-1/newspaper.md)
   * [Kodowanie obrazka](algorithmic-exercises/level-1/image-coding.md)
   * [Nawiasy](algorithmic-exercises/level-1/parentheses.md)
+* [Poziom 2](algorithmic-exercises/level-2/README.md)
+  * [Gra planszowa](algorithmic-exercises/level-2/board-game.md)
 * [SZKOpuł](algorithmic-exercises/szkopul/README.md)
   * [10 Wspaniałych](algorithmic-exercises/szkopul/10-wspanialych/README.md)
     * [C++](algorithmic-exercises/szkopul/10-wspanialych/c++.md)
