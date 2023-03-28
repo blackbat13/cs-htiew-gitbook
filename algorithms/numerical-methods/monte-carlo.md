@@ -14,6 +14,12 @@
 
 * $$pi$$ — przybliżona wartość liczby $$\pi$$
 
+### Symulacja
+
+{% embed url="https://academo.org/demos/estimating-pi-monte-carlo/" %}
+Symulacja Monte Carlo
+{% endembed %}
+
 ### Rozwiązanie
 
 ### Pseudokod

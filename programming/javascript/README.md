@@ -17,3 +17,15 @@ Wykres popularności języka JavaScript
 {% embed url="https://quickref.me/javascript" %}
 Ściąga
 {% endembed %}
+
+## Gry
+
+Ciekawe gry do ćwiczenia zagadnień związanych z językiem JavaScript:
+
+{% embed url="https://alexnisnevich.github.io/untrusted/" %}
+Untrusted
+{% endembed %}
+
+{% embed url="https://play.elevatorsaga.com/" %}
+Elevator Saga
+{% endembed %}
