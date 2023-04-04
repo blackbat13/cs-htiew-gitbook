@@ -12,6 +12,6 @@ Dane
 
 ## Odpowiedzi
 
-{% file src="../../../.gitbook/assets/informatyka-2023-przykladowy-arkusz-cke-rozszerzona-odpowiedzi" %}
+{% file src="../../../.gitbook/assets/informatyka-2023-przykladowy-arkusz-cke-rozszerzona-odpowiedzi.pdf" %}
 Klucz
 {% endfile %}
