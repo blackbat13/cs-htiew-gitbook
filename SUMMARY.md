@@ -859,6 +859,7 @@
   * [Protokół IP](networking/protocols/ip.md)
   * [TCP i UDP](networking/protocols/tcp-udp.md)
 * [Wireshark](networking/wireshark/README.md)
+  * [Zapytania HTTP](networking/wireshark/http.md)
   * [Połączenia HTTPS](networking/wireshark/https.md)
 
 ## Bazy danych
