@@ -450,9 +450,6 @@
       * [Rozwiązanie 1](programming/python/exercises/functions/solution-1.md)
       * [Rozwiązanie 2](programming/python/exercises/functions/solution-2.md)
       * [Rozwiązanie 3](programming/python/exercises/functions/solution-3.md)
-    * [Maturalne](programming/python/exercises/maturalne/README.md)
-      * [Liczby binarne](programming/python/exercises/maturalne/exercise-13/README.md)
-        * [Rozwiązania](programming/python/exercises/maturalne/exercise-13/solutions.md)
   * [Symulacje](programming/python/simulations/README.md)
     * [A*](programming/python/simulations/a-star.md)
   * [Algorytmy](programming/python/algorithms/README.md)
@@ -918,6 +915,11 @@
 
 ## Matura z informatyki
 
+* [Przygotowanie](matura-z-informatyki/przygotowanie/README.md)
+  * [Programowanie](matura-z-informatyki/przygotowanie/programming/README.md)
+    * [Ćwiczenia](matura-z-informatyki/przygotowanie/programming/exercises/README.md)
+      * [Liczby binarne](matura-z-informatyki/przygotowanie/programming/exercises/binary-numbers/README.md)
+        * [Rozwiązanie - Python](matura-z-informatyki/przygotowanie/programming/exercises/binary-numbers/solution-python.md)
 * [Arkusze i rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/README.md)
   * [2010](matura-z-informatyki/arkusze-i-rozwiazania/2010/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2010/solutions.md)
