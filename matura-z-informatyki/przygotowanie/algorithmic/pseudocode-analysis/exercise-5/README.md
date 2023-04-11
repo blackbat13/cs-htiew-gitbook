@@ -1,21 +1,19 @@
 # Ćwiczenie 5
 
-## Opis
-
 Zapoznaj się z poniższą specyfikacją oraz pseudokodem, a następnie rozwiąż zadania.
 
-### Specyfikacja
+## Specyfikacja
 
-#### Dane
+### Dane
 
 * $$a$$ - liczba rzeczywista
 * $$n$$ - liczba naturalna, $$n \neq 0$$ 
 
-#### Wynik
+### Wynik
 
 * Liczba rzeczywista $$p=a^n$$ 
 
-### Pseudokod
+## Pseudokod
 
 ```
 1. p := 1
@@ -27,9 +25,7 @@ Zapoznaj się z poniższą specyfikacją oraz pseudokodem, a następnie rozwią�
     7. n := n div 2
 ```
 
-## Zadania
-
-### Zadanie 1
+## Zadanie 1
 
 Przeanalizuj powyższy algorytm i uzupełnij poniższą tabelę wartościami zmiennych $$p$$, $$b$$ oraz $$n$$ po kolejnych wykonaniach kroku **3** dla dowolnej początkowej wartości $$a$$ oraz początkowej wartości zmiennej $$n$$ równej $$12$$.
 
@@ -41,7 +37,7 @@ Przeanalizuj powyższy algorytm i uzupełnij poniższą tabelę wartościami zmi
 |     |          |     |
 |     |          |     |
 
-### Zadanie 2
+## Zadanie 2
 
 Uzupełnij poniższą tabelę wpisując liczby **wszystkich mnożeń** wykonywanych przez powyższy algorytm dla podanych wartości $$n$$, tzn. liczby wykonanych instrukcji `p:=p*b` i `b:=b*b`
 
@@ -54,6 +50,6 @@ Uzupełnij poniższą tabelę wpisując liczby **wszystkich mnożeń** wykonywan
 |  6  |               |
 |  7  |               |
 
-### Zadanie 3
+## Zadanie 3
 
 Jaka jest złożoność powyższego algorytmu?

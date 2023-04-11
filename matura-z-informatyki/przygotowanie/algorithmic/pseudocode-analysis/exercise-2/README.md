@@ -1,16 +1,14 @@
 # Ćwiczenie 2
 
-## Opis
-
 Zapoznaj się z poniższą specyfikacją oraz pseudokodem, a następnie rozwiąż zadania.
 
-### Specyfikacja
+## Specyfikacja
 
-#### Dane
+### Dane
 
-* $$x$$ - liczba całkowita
+* $$x$$ - liczba całkowita.
 
-### Pseudokod
+## Pseudokod
 
 ```
 1. k := 1
@@ -23,28 +21,26 @@ Zapoznaj się z poniższą specyfikacją oraz pseudokodem, a następnie rozwią�
 8. Wypisz w
 ```
 
-## Zadania
-
-### Zadanie 1
+## Zadanie 1
 
 Podaj wynik działania programu dla `x := 2`
 
-### Zadanie 2
+## Zadanie 2
 
 Podaj wynik działania programu dla `x := 5`
 
-### Zadanie 3
+## Zadanie 3
 
 Podaj wynik działania programu dla `x := 20`
 
-### Zadanie 4
+## Zadanie 4
 
 Jaki będzie wynik działania programu dla `x := -5`?
 
-### Zadanie 5
+## Zadanie 5
 
 Jaki będzie wynik działania programu dla `x := 0`?
 
-### Zadanie 6
+## Zadanie 6
 
 Podaj **specyfikację wyniku** dla powyższego programu.

@@ -1,11 +1,11 @@
-# Rozwiązanie 6
+# Zadanie 6 - rozwiązanie
 
-### Specyfikacja
+## Specyfikacja
 
-#### Dane
+### Dane
 
-* $$x$$ - liczba całkowita
+* $$x$$ - liczba całkowita.
 
-#### Wynik
+### Wynik
 
-* $$x^2$$ 
+* $$x^2$$

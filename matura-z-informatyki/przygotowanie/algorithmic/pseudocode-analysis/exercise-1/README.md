@@ -1,16 +1,14 @@
 # Ćwiczenie 1
 
-## Opis
-
 Zapoznaj się z poniższą specyfikacją oraz pseudokodem, a następnie rozwiąż zadania.
 
-### Specyfikacja
+## Specyfikacja
 
-#### Dane
+### Dane
 
-* $$x$$, $$y$$ - liczby naturalne, większe od $$0$$ 
+* $$x$$, $$y$$ - liczby naturalne, $$x > 0$$, $$y > 0$$. 
 
-### Pseudokod
+## Pseudokod
 
 ```
 1. q := 0
@@ -23,16 +21,14 @@ Zapoznaj się z poniższą specyfikacją oraz pseudokodem, a następnie rozwią�
 7. Wypisz r 
 ```
 
-## Zadania
-
-### Zadanie 1
+## Zadanie 1
 
 Podaj wynik działania programu dla danych: `x := 10, y := 3`
 
-### Zadanie 2
+## Zadanie 2
 
 Podaj wynik działania programu dla danych: `x := 50, y := 15`
 
-### Zadanie 3
+## Zadanie 3
 
 Podaj **specyfikację wyniku** dla powyższego programu.

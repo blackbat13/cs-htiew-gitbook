@@ -1,16 +1,14 @@
 # Ćwiczenie 4
 
-## Opis
-
 Zapoznaj się z poniższą specyfikacją oraz pseudokodem, a następnie rozwiąż zadania.
 
-### Specyfikacja
+## Specyfikacja
 
-#### Dane
+### Dane
 
-* $$n$$ - liczba naturalna, $$n>0$$ 
+* $$n$$ - liczba naturalna, $$n>0$$.
 
-### Pseudokod
+## Pseudokod
 
 ```
 funkcja fun(n):
@@ -23,24 +21,22 @@ funkcja fun(n):
 ```
 
 {% hint style="info" %}
-**mod** oznacza resztę z dzielenia
+**mod** oznacza resztę z dzielenia.
 {% endhint %}
 
-## Zadania
-
-### Zadanie 1
+## Zadanie 1
 
 Wykonanie funkcji rekurencyjnej można przedstawić w postaci *drzewa wywołań rekurencyjnych* ilustrującego wszystkie wywołania funkcji po jej uruchomieniu dla zadanego argumentu. Narysuj takie drzewo dla wywołania `fun(5)`.
 
-### Zadanie 2
+## Zadanie 2
 
 Narysuj *drzewo wywołań rekurencyjnych* dla wywołania `fun(7)`.
 
-### Zadanie 3
+## Zadanie 3
 
 Ile razy zostanie wykonane wywołanie `fun(1)` podczas obliczania `fun(7)`?.
 
-### Zadanie 4
+## Zadanie 4
 
 Uzupełnij poniższą tabelę, podając wartości funkcji `fun` dla wskazanych argumentów.
 
@@ -53,6 +49,6 @@ Uzupełnij poniższą tabelę, podając wartości funkcji `fun` dla wskazanych a
 |  5  |        |
 |  6  |        |
 
-### Zadanie 5
+## Zadanie 5
 
 Napisz **iteracyjną** wersję funkcji `fun` (bez użycia rekurencji).

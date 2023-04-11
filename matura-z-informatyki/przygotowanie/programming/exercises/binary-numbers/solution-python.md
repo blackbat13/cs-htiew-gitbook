@@ -34,7 +34,7 @@ Aby sprawdzić, czy liczba binarna jest podzielna przez $$4$$ wystarczy sprawdzi
 def count_divisible_by_4(binary_numbers_list):
     count = 0
     for binary in binary_numbers_list:
-        if binary == "0" or (binary[-1] == "0" and binary[-2] == "0"):
+        if binary[-1] == "0" and binary[-2] == "0":
             count += 1
 
     return count

@@ -1,4 +1,4 @@
-# Rozwiązanie 1
+# Zadanie 1 - rozwiązanie
 
 ## Symulacja
 

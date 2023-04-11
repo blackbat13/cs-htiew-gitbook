@@ -1,16 +1,14 @@
 # Ćwiczenie 5
 
-## Opis
-
 Zapoznaj się z poniższą specyfikacją oraz pseudokodem, a następnie rozwiąż zadania.
 
-### Specyfikacja
+## Specyfikacja
 
-#### Dane
+### Dane
 
-* n - liczba naturalna, $$n>0$$ 
+* n - liczba naturalna, $$n>0$$. 
 
-### Pseudokod
+## Pseudokod
 
 ```
 funkcja fun(n):
@@ -24,9 +22,7 @@ funkcja fun(n):
         8. Wywołaj fun(n div 2)
 ```
 
-## Zadania
-
-### Zadanie 1
+## Zadanie 1
 
 Przeanalizuj powyższą funkcję i uzupełnij poniższą tabelkę.
 
@@ -39,7 +35,7 @@ Przeanalizuj powyższą funkcję i uzupełnij poniższą tabelkę.
 |  10 |                    |
 |  20 |                    |
 
-### Zadanie 2
+## Zadanie 2
 
 Oblicz ilość wywołań funkcji `fun` dla różnych wartości $$n$$ .
 
@@ -53,6 +49,6 @@ Oblicz ilość wywołań funkcji `fun` dla różnych wartości $$n$$ .
 |  16 |                              |
 |  20 |                              |
 
-### Zadanie 3
+## Zadanie 3
 
 Jaka jest złożoność funkcji `fun`?

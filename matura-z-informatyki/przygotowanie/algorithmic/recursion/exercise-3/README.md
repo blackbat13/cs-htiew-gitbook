@@ -1,16 +1,14 @@
 # Ćwiczenie 3
 
-## Opis
-
 Zapoznaj się z poniższą specyfikacją oraz pseudokodem, a następnie rozwiąż zadania.
 
-### Specyfikacja
+## Specyfikacja
 
-#### Dane
+### Dane
 
 * $$n$$ - liczba naturalna
 
-### Pseudokod
+## Pseudokod
 
 ```
 funkcja fun(n):
@@ -20,21 +18,19 @@ funkcja fun(n):
     4. Zwróć wynik i zakończ
 ```
 
-## Zadania
-
-### Zadanie 1
+## Zadanie 1
 
 Podaj wyniki funkcji dla kolejnych wartości $$n$$ od $$1$$ do $$10$$.
 
-### Zadanie 2
+## Zadanie 2
 
 Uzupełnij poniższą definicję rekurencyjną zgodnie z działaniem algorytmu:
 $$fun(n) =  \begin{cases}        ? & n\leq 2 \\       ? & n > 2 \\    \end{cases}$$ 
 
-### Zadanie 3
+## Zadanie 3
 
 Ile razy zostanie wykonane wywołanie `fun(2)` podczas obliczania wyniku dla `n := 5`?
 
-### Zadanie 4
+## Zadanie 4
 
 Rozrysuj *drzewo wywołań rekurencyjnych* dla wywołania `fun(5)`.

@@ -1,16 +1,14 @@
 # Ćwiczenie 6
 
-## Opis
-
 Zapoznaj się z poniższą specyfikacją oraz pseudokodem, a następnie rozwiąż zadania.
 
-### Specyfikacja
+## Specyfikacja
 
-#### Dane
+### Dane
 
-* $$n$$ - liczba naturalna, $$n>0$$ 
+* $$n$$ - liczba naturalna, $$n>0$$.
 
-### Pseudokod
+## Pseudokod
 
 ```
 1. suma := 1
@@ -27,9 +25,7 @@ Zapoznaj się z poniższą specyfikacją oraz pseudokodem, a następnie rozwią�
 11. Wypisz suma
 ```
 
-## Zadania
-
-### Zadanie 1
+## Zadanie 1
 
 Przeanalizuj powyższy algorytm i uzupełnij poniższą tabelkę.
 
@@ -40,6 +36,6 @@ Przeanalizuj powyższy algorytm i uzupełnij poniższą tabelkę.
 |  3  |       |
 |  4  |       |
 
-### Zadanie 2
+## Zadanie 2
 
 Podaj **specyfikację wyniku** dla powyższego algorytmu.

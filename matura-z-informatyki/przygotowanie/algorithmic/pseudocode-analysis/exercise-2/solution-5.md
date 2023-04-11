@@ -1,4 +1,4 @@
-# Rozwiązanie 5
+# Zadanie 5 - rozwiązanie
 
 ## Symulacja
 
@@ -16,4 +16,4 @@
 
 ## Wynik
 
-$$0$$ 
+$$0$$

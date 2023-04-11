@@ -1,4 +1,4 @@
-# Rozwiązanie 3
+# Zadanie 3 - rozwiązanie
 
 ## Wynik
 

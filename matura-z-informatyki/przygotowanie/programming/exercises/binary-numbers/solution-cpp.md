@@ -56,7 +56,7 @@ int countDivisibleBy4(string binaryNumbersTab[]):
     int count = 0;
     for (int i = 0; i < 1000; i++) {
         string binary = binaryNumbersTab[i];
-        if (binary == "0" || (binary[binary.size() - 1] == '0' && binary[binary.size() - 2] == '0')) {
+        if (binary[binary.size() - 1] == '0' && binary[binary.size() - 2] == '0') {
             count++;
         }
     }
