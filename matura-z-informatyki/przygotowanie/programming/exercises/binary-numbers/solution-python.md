@@ -220,6 +220,24 @@ def count_4_rest(binary_numbers_list):
     return dict_counter["00"], dict_counter["01"], dict_counter["10"], dict_counter["11"]
 ```
 
+## Zadanie 11
+
+```python
+def count_1_on_odds(binary_numbers_list):
+    count = 0
+    for binary in binary_numbers_list:
+        correct = True
+        for pos in range(len(binary)):
+            if (pos + 1) % 2 == 0 and binary[pos] == "1":  # Sprawdzamy, czy jedynka pojawiła się na parzystej pozycji
+                correct = False
+                break
+
+        if correct:
+            count += 1
+
+    return count
+```
+
 ## Zadanie 12
 
 ```python

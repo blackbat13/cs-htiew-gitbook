@@ -52,7 +52,7 @@ Policz i podaj, ile liczb z pliku ma resztę z dzielenia przez $$4$$ równą $$0
 
 ### Zadanie 11
 
-Policz i podaj, ile jest liczb w pliku, które mają jedynki tylko na **nieparzystych** miejscach. Np. liczby $$101$$, $$100$$, $$10001$$ mają jedynki tylko na nieparzystych miejscach. Podaj pierwszą i ostatnią taką liczbę.
+Policz i podaj, ile jest liczb w pliku, które mają jedynki tylko na **nieparzystych** miejscach (licząc od lewej, czyli od cyfry najbardziej znaczącej). Np. liczby $$101$$, $$100$$, $$10001$$ mają jedynki tylko na nieparzystych miejscach. Podaj pierwszą i ostatnią taką liczbę.
 
 ### Zadanie 12
 
