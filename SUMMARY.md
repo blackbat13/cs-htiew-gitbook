@@ -919,6 +919,7 @@
   * [Programowanie](matura-z-informatyki/przygotowanie/programming/README.md)
     * [Ćwiczenia](matura-z-informatyki/przygotowanie/programming/exercises/README.md)
       * [Liczby binarne](matura-z-informatyki/przygotowanie/programming/exercises/binary-numbers/README.md)
+        * [Rozwiązanie - C++](matura-z-informatyki/przygotowanie/programming/exercises/binary-numbers/solution-cpp.md)
         * [Rozwiązanie - Python](matura-z-informatyki/przygotowanie/programming/exercises/binary-numbers/solution-python.md)
 * [Arkusze i rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/README.md)
   * [2010](matura-z-informatyki/arkusze-i-rozwiazania/2010/README.md)
