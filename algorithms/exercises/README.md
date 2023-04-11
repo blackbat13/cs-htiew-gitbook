@@ -1,3 +1,0 @@
-# Ćwiczenia
-
-TODO - krótki opis
