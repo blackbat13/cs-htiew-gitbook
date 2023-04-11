@@ -6,16 +6,18 @@
 
 ## Arkusz
 
-{% file src="../../.gitbook/assets/A_2023.pdf" %}
+{% file src="../../../.gitbook/assets/A_2023.pdf" %}
 Arkusz maturalny
 {% endfile %}
 
-{% file src="../../.gitbook/assets/dane_2023_pti.zip" %}
+[](../../../)
+
+{% file src="../../../.gitbook/assets/dane_2023_pti.zip" %}
 Dane
 {% endfile %}
 
 ## Odpowiedzi
 
-{% file src="../../.gitbook/assets/PTI_A_2023_klucz.pdf" %}
+{% file src="../../../.gitbook/assets/PTI_A_2023_klucz.pdf" %}
 Klucz
 {% endfile %}
