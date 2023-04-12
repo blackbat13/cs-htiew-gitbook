@@ -52,7 +52,7 @@ int countEven(string binaryNumbersTab[]) {
 Aby sprawdzić, czy liczba binarna jest podzielna przez $$4$$ wystarczy sprawdzić jej **dwie ostatnie** (najmniej znaczące) cyfry. Jeżeli są równe $$0$$, to liczba jest podzielna przez $$4$$.
 
 ```cpp
-int countDivisibleBy4(string binaryNumbersTab[]):
+int countDivisibleBy4(string binaryNumbersTab[]) {
     int count = 0;
     for (int i = 0; i < 1000; i++) {
         string binary = binaryNumbersTab[i];
@@ -62,6 +62,7 @@ int countDivisibleBy4(string binaryNumbersTab[]):
     }
 
     return count;
+}
 ```
 
 ## Zadanie 3

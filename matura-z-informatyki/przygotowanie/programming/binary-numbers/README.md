@@ -2,7 +2,7 @@
 
 W pliku *liczby.txt* znajduje się $$1000$$ liczb binarnych zapisanych w osobnych wierszach. Wszystkie liczby mają od $$2$$ do $$16$$ znaków.
 
-{% file src="../../../../../.gitbook/assets/liczby.txt" %}
+{% file src="../../../../.gitbook/assets/liczby.txt" %}
 liczby.txt
 {% endfile %}
 

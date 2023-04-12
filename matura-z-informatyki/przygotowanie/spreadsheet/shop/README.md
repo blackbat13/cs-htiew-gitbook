@@ -6,16 +6,14 @@ Pewien sklep miał w dniu 31.08.2018r. 2000zł utargu. Oblicz utarg dla każdego
 - Każdej niedzieli utarg jest dwa razy mniejszy niż dnia poprzedniego (bez względu na parzystość daty).
 - Każdego pierwszego dnia miesiąca (poza 01.09.2018) utarg stanowi średni utarg z poprzedniego miesiąca.
 
-## Zadania
-
-### Zadanie 1
+## Zadanie 1
 
 Jaki jest maksymalny utarg sklepu, i kiedy miał miejsce?
 
-### Zadanie 2
+## Zadanie 2
 
 Oblicz minimalny i maksymalny utarg dla każdego miesiąca od września do grudnia. Wykonaj czytelny wykres pokazujący te wartości.
 
-### Zadanie 3
+## Zadanie 3
 
 Wykonaj wykres pokazujący utarg w każdą niedzielę w podanym okresie.
