@@ -366,6 +366,7 @@
     * [Pętle](programming/python/introduction/loops.md)
     * [Listy](programming/python/introduction/lists.md)
     * [Funkcje](programming/python/introduction/functions.md)
+    * [Pliki](programming/python/introduction/files.md)
     * [Wydajność](programming/python//introduction/performance.md)
   * [Ćwiczenia](programming/python/exercises/README.md)
     * [Obsługa wejścia/wyjścia](programming/python/exercises/input-output/README.md)
