@@ -854,6 +854,12 @@
       * [Rozwiązanie 9](databases/sql/exercises/where/solution-9.md)
       * [Rozwiązanie 10](databases/sql/exercises/where/solution-10.md)
     * [ORDER BY](databases/sql/exercises/order-by/README.md)
+      * [Rozwiązanie 1](databases/sql/exercises/order-by/solution-1.md)
+      * [Rozwiązanie 2](databases/sql/exercises/order-by/solution-2.md)
+      * [Rozwiązanie 3](databases/sql/exercises/order-by/solution-3.md)
+      * [Rozwiązanie 4](databases/sql/exercises/order-by/solution-4.md)
+      * [Rozwiązanie 5](databases/sql/exercises/order-by/solution-5.md)
+      * [Rozwiązanie 6](databases/sql/exercises/order-by/solution-6.md)
     * [JOIN](databases/sql/exercises/join/README.md)
     * [GROUP BY](databases/sql/exercises/group-by/README.md)
 
