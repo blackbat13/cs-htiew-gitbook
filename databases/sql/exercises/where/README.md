@@ -10,7 +10,7 @@ Wypisz wszystkich klientów pochodzących z Pragi lub Niemiec.
 
 ## Zadanie 3
 
-Wypisz wszystkich pracowników zatrudnionych po 1 stycznia 2013 roku.
+Wypisz wszystkich pracowników zatrudnionych po 1 stycznia 2003 roku.
 
 ## Zadanie 4
 
@@ -18,24 +18,24 @@ Utwórz zestawienie zawierające nazwę i długość trwania utworów dłuższyc
 
 ## Zadnie 5
 
-Wypisz wszystkich klientów, których imię lub nazwisko kończy się na literę *a*.
+Wypisz imię i nazwisko wszystkich klientów, których imię lub nazwisko kończy się na literę *a*.
 
 ## Zadanie 6
 
-Wypisz wszystkich klientów, których imię lub nazwisko zaczyna się na literę *A*.
+Wypisz imię i nazwisko wszystkich klientów, których imię lub nazwisko zaczyna się na literę *A*.
 
 ## Zadanie 7
 
-Wypisz wszystkich klientów, którzy mają literę *e* w nazwisku.
+Wypisz imię i nazwisko wszystkich klientów, którzy mają literę *e* w nazwisku.
 
 ## Zadanie 8
 
-Wypisz tylko tych klientów, którzy nie mają wpisanej firmy.
+Wypisz imię i nazwisko tylko tych klientów, którzy nie mają wpisanej firmy.
 
 ## Zadanie 9
 
-Wypisz tylko tych klientów, którzy mają podaną firmę.
+Wypisz imię i nazwisko tylko tych klientów, którzy mają podaną firmę.
 
 ## Zadanie 10
 
-Wypisz wszystkich pracowników, którzy mieli co najmniej 50 lat 1 stycznia 2018 roku.
+Wypisz wszystkich pracowników, którzy mieli co najmniej 50 lat w 2018 roku.

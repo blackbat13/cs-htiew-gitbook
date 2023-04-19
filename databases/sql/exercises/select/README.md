@@ -26,11 +26,11 @@ Dla każdego pracownika wypisz jego imię i nazwisko oraz datę urodzenia.
 
 ## Zadanie 7
 
-Dla każdego pracownika wypisz ile miał lat, gdy został zatrudniony.
+Dla każdego pracownika wypisz jego imię, nazwisko oraz ile miał lat, gdy został zatrudniony. Przy obliczeniach zignoruj miesiące i dni.
 
 ## Zadanie 8
 
-Dla każdego pracownika wypisz długość jego zatrudnienia w latach.
+Dla każdego pracownika wypisz jego imię, nazwisko oraz długość zatrudnienia w latach. Przy obliczeniach zignoruj miesiące i dni.
 
 ## Zadanie 9
 
