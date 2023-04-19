@@ -97,6 +97,8 @@ Wypisz tytuł i długość trwania $$10$$ najdłuższych utworów.
 
 Wypisz tytuł i długość trwania najkrótszego utworu.
 
+### Wynik
+
 | Name                        | Milliseconds |
 |-----------------------------|--------------|
 | É Uma Partida De Futebol    | 1071         |
