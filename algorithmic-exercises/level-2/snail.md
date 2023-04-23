@@ -41,7 +41,7 @@ Twoim zadaniem jest rozwiązanie tego zadania w ogólnym przypadku. W zależnoś
 6 3 1 10
 ```
 
-**Wynik:** $$Ucieczka 3$$
+**Wynik:** *Ucieczka 3*
 
 ### Przykład 2
 
@@ -51,7 +51,7 @@ Twoim zadaniem jest rozwiązanie tego zadania w ogólnym przypadku. W zależnoś
 10 2 1 50
 ```
 
-**Wynik:** $$Dno 4$$
+**Wynik:** *Dno 4*
 
 ### Przykład 3
 
@@ -61,7 +61,7 @@ Twoim zadaniem jest rozwiązanie tego zadania w ogólnym przypadku. W zależnoś
 50 5 3 14
 ```
 
-**Wynik:** $$Dno 7$$
+**Wynik:** *Dno 7*
 
 ### Przykład 4
 
@@ -71,7 +71,7 @@ Twoim zadaniem jest rozwiązanie tego zadania w ogólnym przypadku. W zależnoś
 50 6 4 1
 ```
 
-**Wynik:** $$Dno 68$$
+**Wynik:** *Dno 68*
 
 ### Przykład 5
 
@@ -81,7 +81,7 @@ Twoim zadaniem jest rozwiązanie tego zadania w ogólnym przypadku. W zależnoś
 50 6 3 1
 ```
 
-**Wynik:** $$Ucieczka 20$$
+**Wynik:** *Ucieczka 20*
 
 ### Przykład 6
 
@@ -91,4 +91,4 @@ Twoim zadaniem jest rozwiązanie tego zadania w ogólnym przypadku. W zależnoś
 1 1 1 1
 ```
 
-**Wynik:** $$Dno 2$$
+**Wynik:** *Dno 2*
