@@ -2,7 +2,7 @@
 
 ## Opis
 
-Ślimak znajduje się na dole studni o wysokości 6cm. W trakcie dnia ślimak może się wspiąć o 3cm do góry, ale w nocy zsuwa się o 1cm w trakcie snu. Ślimak się niestety męczy, a jego stopień zmęczenia wynosi $$10%$$, co oznacza że każdego kolejnego dnia wspina się o $$10%*3=0.3$$ centymetry mniej niż dnia poprzedniego. Każdego dnia odejmujemy tyle samo, tzn. $$10%$$ wysokości wspinaczki z **pierwszego** dnia.
+Ślimak znajduje się na dole studni o wysokości 6cm. W trakcie dnia ślimak może się wspiąć o 3cm do góry, ale w nocy zsuwa się o 1cm w trakcie snu. Ślimak się niestety męczy, a jego stopień zmęczenia wynosi $$10\%$$, co oznacza że każdego kolejnego dnia wspina się o $$10\%*3=0.3$$ centymetry mniej niż dnia poprzedniego. Każdego dnia odejmujemy tyle samo, tzn. $$10\%$$ wysokości wspinaczki z **pierwszego** dnia.
 
 Której doby ślimak wydostanie się ze studni, tzn. wysokość, na której się znajdzie po wspinaczce będzie **większa** od wysokości studni? Obliczmy to na poniższej tabelce.
 
