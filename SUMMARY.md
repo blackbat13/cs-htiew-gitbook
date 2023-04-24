@@ -993,7 +993,8 @@
     * [Sklep](matura-z-informatyki/przygotowanie/spreadsheet/shop/README.md)
       * [Rozwiązanie](matura-z-informatyki/przygotowanie/spreadsheet/shop/solution.md)
     * [Owoce](matura-z-informatyki/przygotowanie/spreadsheet/fruits/README.md)
-      * [Rozwiązanie](matura-z-informatyki/przygotowanie/spreadsheet/fruits/solution.md)
+      <!-- * [Rozwiązanie](matura-z-informatyki/przygotowanie/spreadsheet/fruits/solution.md) -->
+    * [Kolory](matura-z-informatyki/przygotowanie/spreadsheet/colours/README.md)
 * [Arkusze i rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/README.md)
   * [2010](matura-z-informatyki/arkusze-i-rozwiazania/2010/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2010/solutions.md)
