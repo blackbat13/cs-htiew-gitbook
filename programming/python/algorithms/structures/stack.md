@@ -11,51 +11,51 @@
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
 class Stack:
-    def __init__(self):
-        self._value = None
-        self._next = None
-        
-    def push(self, value):
-        if self._value is None:
-            self._value = value
-            return
-        
-        new_el = Stack()
-        new_el._value = self._value
-        new_el._next = self._next
-        self._next = new_el
-        self._value = value
-        
-    def top(self):
-        return self._value
-    
-    def pop(self):
-        if self._next is None:
-            self._value = None
-            return
-        
-        self._value = self._next._value
-        self._next = self._next._next
-    
-    def empty(self) -> bool:
-        return self._value is None
-    
+  class Element:
+    def __init__(self, value):
+      self._value = value
+      self._next = None
+
     def clear(self):
-        self._value = None
-        
-        if self._next is not None:
-            self._next.clear()
-            self._next = None
-        
-        
+      if self._next is not None:
+        self._next.clear()
+        self._next = None
+      
+  def __init__(self):
+    self._top_element = None
+
+  def push(self, value):
+    if self._top_element is None:
+      self._top_element = Stack.Element(value)
+      return
+
+    new_element = Stack.Element(value)
+    new_element._next = self._top_element
+    self._top_element = new_element
+
+  def top(self):
+    return self._top_element._value
+
+  def pop(self):
+    if self._top_element is not None:
+      self._top_element = self._top_element._next
+
+  def empty(self) -> bool:
+    return self._top_element is None
+
+  def clear(self):
+    if self._top_element is not None:
+      self._top_element.clear()
+
+
 if __name__ == "__main__":
-    stack = Stack()
-    
-    for el in [5, 8, 3, 1, 9]:
-        stack.push(el)
-        
-    while not stack.empty():
-        print(stack.top())
-        stack.pop()
+  stack = Stack()
+
+  for el in [5, 8, 3, 1, 9]:
+    stack.push(el)
+
+  while not stack.empty():
+    print(stack.top())
+    stack.pop()
 ```
 {% endcode %}
