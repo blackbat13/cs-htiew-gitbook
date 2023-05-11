@@ -90,6 +90,7 @@ class List:
   def clear(self):
     self._first.clear()
     self._first = None
+    self._count = 0
 
 
 if __name__ == "__main__":

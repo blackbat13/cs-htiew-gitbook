@@ -115,6 +115,8 @@ public:
       delete current;
       current = tmp;
     }
+
+    count = 0;
   }
 
   ~DoublyLinkedList() { clear(); }
