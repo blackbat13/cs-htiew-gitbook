@@ -2,7 +2,7 @@
 
 ## Prezentacja rozwiązań
 
-{% file src="../../../.gitbook/assets/Blockly Żółw (1).pdf" %}
+{% file src="../../../.gitbook/assets/Blockly Żółw.pdf" %}
 Blockly Żółw - rozwiązania zadań
 {% endfile %}
 
