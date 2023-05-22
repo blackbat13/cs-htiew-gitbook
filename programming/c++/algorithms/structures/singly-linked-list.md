@@ -112,6 +112,8 @@ public:
             delete current;
             current = tmp;
         }
+
+        count = 0;
     }
 
     ~List() {

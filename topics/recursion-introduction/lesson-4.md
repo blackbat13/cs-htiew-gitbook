@@ -10,7 +10,7 @@ description: Lekcja ewaluacyjna
 Konspekt
 {% endfile %}
 
-{% file src="../../.gitbook/assets/Zadanie z labiryntem (1).pdf" %}
+{% file src="../../.gitbook/assets/Zadanie z labiryntem rekurencja.pdf" %}
 Prezentacja - zadanie
 {% endfile %}
 

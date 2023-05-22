@@ -2,7 +2,7 @@
 
 ## Prezentacja rozwiązań
 
-{% file src="../../../.gitbook/assets/Blockly Ptak (1).pdf" %}
+{% file src="../../../.gitbook/assets/Blockly Ptak.pdf" %}
 Blockly Ptak - rozwiązania zadań
 {% endfile %}
 
