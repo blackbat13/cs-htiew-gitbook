@@ -994,6 +994,7 @@
       <!-- * [Rozwiązanie](matura-z-informatyki/przygotowanie/spreadsheet/fruits/solution.md) -->
     * [Kolory](matura-z-informatyki/przygotowanie/spreadsheet/colours/README.md)
     * [Gry](matura-z-informatyki/przygotowanie/spreadsheet/games/README.md)
+    * [Pokemony](matura-z-informatyki/przygotowanie/spreadsheet/pokemons/README.md)
 * [Arkusze i rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/README.md)
   * [2010](matura-z-informatyki/arkusze-i-rozwiazania/2010/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2010/solutions.md)
