@@ -166,4 +166,3 @@ $$O(\log n)$$ - logarytmiczna
 - Obliczanie pierwiastka kwadratowego zadanej liczby.
 - Znajdowanie najmniejszego i największego indeksu danej liczby w posortowanej tablicy, w której elementy mogą się powtarzać.
 - Znajdowanie mediany dwóch posortowanych tablic (gdyby były ze sobą scalone w jedną posortowaną tablicę).
-- 
