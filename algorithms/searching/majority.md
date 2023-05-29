@@ -189,3 +189,9 @@ $$O(n)$$ — liniowa
 {% content-ref url="../../programming/kotlin/algorithms/searching/majority.md" %}
 [majority.md](../../programming/kotlin/algorithms/searching/majority.md)
 {% endcontent-ref %}
+
+## Powiązane zagadnienia
+
+- Znajdowanie lidera w posortowanej tablicy.
+- Znajdowanie lidera w dwuwymiarowej tablicy, gdzie każdy wiersz jest posortowany.
+- Znajdowanie wszystkich elementów, które występują w tablicy więcej niż $$n/k$$ razy, gdzie $$n$$ to rozmiar tablicy, a $$k$$ to zadana liczba naturalna, $$n\geq k>0$$.
