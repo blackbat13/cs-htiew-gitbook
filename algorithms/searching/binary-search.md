@@ -160,3 +160,10 @@ $$O(\log n)$$ - logarytmiczna
 {% content-ref url="../../programming/kotlin/algorithms/searching/binary-search.md" %}
 [binary-search.md](../../programming/kotlin/algorithms/searching/binary-search.md)
 {% endcontent-ref %}
+
+## Powiązane zagadnienia
+
+- Obliczanie pierwiastka kwadratowego zadanej liczby.
+- Znajdowanie najmniejszego i największego indeksu danej liczby w posortowanej tablicy, w której elementy mogą się powtarzać.
+- Znajdowanie mediany dwóch posortowanych tablic (gdyby były ze sobą scalone w jedną posortowaną tablicę).
+- 
