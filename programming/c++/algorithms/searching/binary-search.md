@@ -54,6 +54,18 @@ int main() {
 ```
 {% endcode %}
 
+### Opis implementacji
+
+Funkcja `binarySearchIterative` przyjmuje jako argumenty tablicę liczb, jej długość i liczbę do znalezienia. Początkowo ustawia wskaźniki na skrajne elementy tablicy - `left` na początek, `right` na koniec.
+
+Następnie, w pętli `while`, oblicza środek tablicy (`middle`). Jeżeli szukana liczba jest mniejsza lub równa elementowi środkowemu, `right` zostaje przesunięty na pozycję środka. W przeciwnym razie, `left` przesuwa się na pozycję po środkowym elemencie.
+
+Pętla `while` kontynuuje działanie, dopóki `left` jest mniejszy od `right`, dzieląc tablicę na pół z każdą iteracją. To jest kluczowy aspekt wyszukiwania binarnego - za każdym razem odrzucamy połowę tablicy, co sprawia, że algorytm jest bardzo efektywny (ma złożoność $$O(log n)$$).
+
+Gdy pętla `while` kończy działanie, sprawdzamy, czy element na pozycji `left` jest równy szukanej liczbie. Jeśli tak, zwracamy jego indeks. Jeśli nie, zwracamy $$-1$$, co oznacza, że szukana liczba nie znajduje się w tablicy.
+
+Funkcja `main` tworzy tablicę $$10$$ elementów od $$1$$ do $$10$$, następnie wywołuje funkcję `binarySearchIterative` szukając liczby $$8$$. Jeżeli wynikiem funkcji jest $$-1$$, wypisywana jest na ekran informacja, że liczba nie została znaleziona. W przeciwnym razie wypisywany jest indeks znalezionej liczby w tablicy.
+
 ## Wersja rekurencyjna
 
 ### Implementacja
