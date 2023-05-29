@@ -181,3 +181,9 @@ $$O(\sqrt{n})$$
 {% content-ref url="../../programming/python/algorithms/integers/perfect-test.md" %}
 [perfect-test.md](../../programming/python/algorithms/integers/perfect-test.md)
 {% endcontent-ref %}
+
+## Powiązane zagadnienia
+
+- Znajdowanie wszystkich liczb doskonałych mniejszych od zadanej wartości $$n$$.
+- Sprawdzanie, czy w podanym zakresie znajduje się liczba doskonała.
+- Sprawdzanie, czy suma cyfr liczby doskonałej też jest liczbą doskonałą.
