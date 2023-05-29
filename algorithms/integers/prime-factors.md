@@ -75,3 +75,9 @@ flowchart TD
 {% content-ref url="../../programming/python/algorithms/integers/prime-factors.md" %}
 [prime-factors.md](../../programming/python/algorithms/integers/prime-factors.md)
 {% endcontent-ref %}
+
+## Powiązane zagadnienia
+
+- Znajdowanie wszystkich unikalnych czynników pierwszych zadanej liczby naturalnej.
+- Obliczanie największego wspólnego dzielnika (NWD) dwóch liczb naturalnych.
+- Obliczanie najmniejszej wspólnej wielokrotności (NWW) dwóch liczb naturalnych.
