@@ -44,19 +44,50 @@ b) $$10, 8, 4, 6, 15, 12, 13$$
 
 ### 2.2
 
-TODO
+#### Python
 
-### 2.2
+```python
+with open("bin.txt") as dane:
+  binarne = dane.read().split()
 
-TODO
+wynik = 0
 
-### 2. 4
+for bn in binarne:
+  if bn.count("01") + bn.count("10") <= 1:
+    wynik += 1
+
+print(wynik)
+```
+
+### 2.3
+
+#### Python
+
+```python
+with open("bin.txt") as dane:
+  binarne = dane.read().split()
+
+binarne.sort(key=lambda el: int(el, 2))
+
+print(binarne[-1])
+```
+
+### 2.4
 
 $$(123_{10} \oplus 101101_2) \oplus 2D_{16} = 123_{10}$$
 
 ### 2.5
 
-TODO
+#### Python
+
+```python
+with open("bin.txt") as dane:
+  binarne = dane.read().split()
+
+for bn in binarne:
+  wynik = str(bin(int(bn, 2) ^ (int(bn, 2) // 2))).lstrip("0b")
+  print(wynik)
+```
 
 ## Zadanie 3
 
