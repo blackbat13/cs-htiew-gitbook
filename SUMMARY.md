@@ -1042,6 +1042,8 @@
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2021/solutions.md)
   * [2023 - przykładowa CKE](matura-z-informatyki/arkusze-i-rozwiazania/2023-probna-cke/README.md)
   * [2023 - próbna PTI](matura-z-informatyki/arkusze-i-rozwiazania/2023-probna-pti/README.md)
+  * [2023](matura-z-informatyki/arkusze-i-rozwiazania/2023/README.md)
+    * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2023/solutions.md)
   * [Pytania zamknięte](matura-z-informatyki/arkusze-i-rozwiazania/pytania-zamkniete.md)
 
 ## Przydatne linki
