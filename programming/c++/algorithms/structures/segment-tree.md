@@ -37,6 +37,19 @@ class SumSegmentTree {
       }
     }
 
+    void applyLazy() {
+      if (this->from == this->to) {
+        this->value += this->lazy;
+        this->lazy = 0;
+        return;
+      }
+
+      this->value += this->lazy * (this->to - this->from + 1);
+      this->left->lazy += this->lazy;
+      this->right->lazy += this->lazy;
+      this->lazy = 0;
+    }
+
     void change(int from, int to, int value) {
       if (this->from == from && this->to == to) {
         this->lazy += value;
@@ -45,10 +58,7 @@ class SumSegmentTree {
 
       int middle = (this->from + this->to) / 2;
 
-      this->value += this->lazy * (this->to - this->from + 1);
-      this->left->lazy += this->lazy;
-      this->right->lazy += this->lazy;
-      this->lazy = 0;
+      this->applyLazy();
 
       this->value += value * (to - from + 1);
 
@@ -71,10 +81,7 @@ class SumSegmentTree {
 
       int middle = (this->from + this->to) / 2;
 
-      this->value += this->lazy * (this->to - this->from + 1);
-      this->left->lazy += this->lazy;
-      this->right->lazy += this->lazy;
-      this->lazy = 0;
+      this->applyLazy();
 
       if (from <= middle) {
         if (to <= middle) {
@@ -144,7 +151,7 @@ int main() {
 
 Klasa **SumSegmentTree** definiuje drzewo przedziałowe do liczenia sum na przedziałach. Struktura **node** opisuje strukturę wewnętrznego węzła drzewa segmentowego.
 Węzeł przechowuje informacje o wartości, przedziale, leniwej aktualizacji (lazy update) oraz wskaźniki na lewe i prawe poddrzewo.
-Węzeł posiada metody do drukowania informacji o sobie, zmiany wartości na danym przedziale oraz pobrania sumy wartości na danym przedziale.
+Węzeł posiada metody do drukowania informacji o sobie, leniwej aktualizacji, zmiany wartości na danym przedziale oraz pobrania sumy wartości na danym przedziale.
 
 Klasa **SumSegmentTree** posiada pole root, które jest wskaźnikiem na korzeń drzewa segmentowego.
 Metoda **build** rekurencyjnie tworzy drzewo segmentowe na podstawie tablicy **tab**.
