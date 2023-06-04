@@ -139,3 +139,73 @@ int main() {
 }
 ```
 {% endcode %}
+
+### Opis implementacji
+
+Klasa **SumSegmentTree** definiuje drzewo przedziałowe do liczenia sum na przedziałach. Struktura **node** opisuje strukturę wewnętrznego węzła drzewa segmentowego.
+Węzeł przechowuje informacje o wartości, przedziale, leniwej aktualizacji (lazy update) oraz wskaźniki na lewe i prawe poddrzewo.
+Węzeł posiada metody do drukowania informacji o sobie, zmiany wartości na danym przedziale oraz pobrania sumy wartości na danym przedziale.
+
+Klasa **SumSegmentTree** posiada pole root, które jest wskaźnikiem na korzeń drzewa segmentowego.
+Metoda **build** rekurencyjnie tworzy drzewo segmentowe na podstawie tablicy **tab**.
+Konstruktor klasy **SumSegmentTree** tworzy drzewo segmentowe na podstawie podanej długości i tablicy.
+Metoda **print** wywołuje metodę **print** na korzeniu drzewa segmentowego, co powoduje wypisanie informacji o strukturze drzewa.
+Metoda **change** wykonuje operację zmiany wartości na danym przedziale, korzystając z leniwych aktualizacji, natomiast metoda **getValue** zwraca sumę wartości na danym przedziale.
+
+W funkcji **main** tworzona jest instancja klasy **SumSegmentTree** na podstawie przykładowej tablicy.
+Następnie wywoływana jest metoda **print** dla wyświetlenia struktury drzewa przed wykonaniem operacji.
+Wywoływana jest operacja **getValue** na przedziale $$[3, 5]$$ i wynik zostaje wyświetlony.
+Następnie wywoływana jest operacja **change** na przedziale $$[3, 5]$$ z wartością $$2$$ po czym wyświetlena jest zaktualizowana struktura drzewa.
+Na końcu obliczana jest aktualna suma na przedziale $$[3, 5]$$.
+
+Wynik działania programu:
+
+```
+[0, 9]: (val: 10, lazy: 0)
+    [0, 4]: (val: 5, lazy: 0)
+        [0, 2]: (val: 3, lazy: 0)
+            [0, 1]: (val: 2, lazy: 0)
+                [0, 0]: (val: 1, lazy: 0)
+                [1, 1]: (val: 1, lazy: 0)
+            [2, 2]: (val: 1, lazy: 0)
+        [3, 4]: (val: 2, lazy: 0)
+            [3, 3]: (val: 1, lazy: 0)
+            [4, 4]: (val: 1, lazy: 0)
+    [5, 9]: (val: 5, lazy: 0)
+        [5, 7]: (val: 3, lazy: 0)
+            [5, 6]: (val: 2, lazy: 0)
+                [5, 5]: (val: 1, lazy: 0)
+                [6, 6]: (val: 1, lazy: 0)
+            [7, 7]: (val: 1, lazy: 0)
+        [8, 9]: (val: 2, lazy: 0)
+            [8, 8]: (val: 1, lazy: 0)
+            [9, 9]: (val: 1, lazy: 0)
+
+
+[3, 5] = 3
+
+
+[3, 5] + 2
+[0, 9]: (val: 16, lazy: 0)
+    [0, 4]: (val: 9, lazy: 0)
+        [0, 2]: (val: 3, lazy: 0)
+            [0, 1]: (val: 2, lazy: 0)
+                [0, 0]: (val: 1, lazy: 0)
+                [1, 1]: (val: 1, lazy: 0)
+            [2, 2]: (val: 1, lazy: 0)
+        [3, 4]: (val: 2, lazy: 2)
+            [3, 3]: (val: 1, lazy: 0)
+            [4, 4]: (val: 1, lazy: 0)
+    [5, 9]: (val: 7, lazy: 0)
+        [5, 7]: (val: 5, lazy: 0)
+            [5, 6]: (val: 4, lazy: 0)
+                [5, 5]: (val: 1, lazy: 2)
+                [6, 6]: (val: 1, lazy: 0)
+            [7, 7]: (val: 1, lazy: 0)
+        [8, 9]: (val: 2, lazy: 0)
+            [8, 8]: (val: 1, lazy: 0)
+            [9, 9]: (val: 1, lazy: 0)
+
+
+[3, 5] = 9
+```
