@@ -20,12 +20,6 @@ Strona języka JavaScript
 
 JavaScript stał się nieodzowną częścią Internetu, a jego rola stale się zwiększa, zarówno w kontekście aplikacji internetowych, jak i w kontekście tworzenia aplikacji na serwery czy na urządzenia mobilne.
 
-## Popularność języka
-
-{% embed url="https://www.tiobe.com/tiobe-index/javascript/" %}
-Wykres popularności języka JavaScript
-{% endembed %}
-
 ## Ściąga
 
 {% embed url="https://quickref.me/javascript" %}
@@ -42,4 +36,10 @@ Untrusted
 
 {% embed url="https://play.elevatorsaga.com/" %}
 Elevator Saga
+{% endembed %}
+
+## Popularność języka
+
+{% embed url="https://www.tiobe.com/tiobe-index/javascript/" %}
+Wykres popularności języka JavaScript
 {% endembed %}
