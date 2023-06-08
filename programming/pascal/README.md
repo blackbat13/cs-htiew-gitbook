@@ -5,8 +5,11 @@ Pascal jest językiem programowania stworzonym przez Niklausa Wirtha w latach 60
 ## Kluczowe cechy
 
 1. **Czystość składni**: Pascal jest znanym z czytelnej i zrozumiałej składni, co pomaga w utrzymaniu kodu i czyni go dobrym językiem dla osób, które dopiero zaczynają swoją przygodę z programowaniem.
+
 2. **Silna typizacja**: Pascal jest językiem o silnej typizacji, co oznacza, że typy danych są ściśle określone i kontrolowane. Pomaga to w wykrywaniu błędów na etapie kompilacji i zwiększa bezpieczeństwo kodu.
+
 3. **Modularność**: Pascal wspiera podział programów na moduły, co ułatwia zarządzanie kodem, poprawia czytelność i wspiera zasady dobrego projektowania oprogramowania.
+
 4. **Wsparcie dla strukturalnego programowania**: Pascal jest zorientowany na programowanie strukturalne, co promuje jasną organizację kodu, co z kolei ułatwia zrozumienie i debugowanie kodu.
 
 Pascal był powszechnie używany w edukacji informatycznej i naukach ścisłych do lat 90. Współcześnie jest mniej popularny, ale nadal znajduje zastosowanie w niektórych dziedzinach, takich jak produkcja oprogramowania systemowego. Język ten jest również używany jako wprowadzenie do programowania strukturalnego dla początkujących programistów.
