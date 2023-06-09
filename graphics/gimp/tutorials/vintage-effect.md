@@ -12,7 +12,7 @@ Efekt vintage zdecydowanie najlepiej prezentuje się na zdjęciach z intensywnym
 
 Niezależnie od tego, czy efekt vintage jest stosowany do portretów, zdjęć krajobrazowych czy zdjęć z życia codziennego, dodaje on głębi i atmosfery, tworząc ciekawy kontrast między nowoczesnymi elementami a klasyką dawnych lat. Efekt ten jest nie tylko estetycznie przyjemny, ale także pozwala na eksperymentowanie i kreatywne wyrażanie się poprzez fotografię, przekształcając codzienne sceny w obrazy, które wydają się opowiadać własne, stare historie.
 
-W tutorialu skorzystamy z następującego zdjęcia: 
+W tutorialu skorzystamy z następującego zdjęcia:
 
 ![Źródło: https://cc0.photo/2021/09/22/two-sailboats-on-the-duisburg-six-lake-plateau/](https://cc0.photo/download/4974/)
 
