@@ -1,18 +1,30 @@
 # Gry 2D - Pygame Zero
 
-## Wstęp
-
 Poznaliśmy już niezbędne podstawy programowania w języku Python, pora więc przejść do tworzenia bardziej interaktywnych gier dwuwymiarowych. W tym kursie wykorzystamy jedną z bibliotek do tworzenia takich gier: **PyGame Zero**.
 
 Ci z Was, którzy interesują się tworzeniem gier mogli już wcześniej słyszeć o bibliotece **PyGame**, jednej z najpopularniejszych do tworzenia gier w języku Python. **PyGame Zero** jest "uproszczoną" wersją tej biblioteki, idealną do rozpoczęcia nauki tego pięknego języka. Nie jest ona częścią domyślnej instalacji języka Python, musimy więc ją samodzielnie zainstalować.
 
-### Biblioteka
+## Pygame Zero
+
+Pygame Zero to biblioteka dla Pythona, przeznaczona do tworzenia gier. Jest to "zerowy wysiłek" dla użytkowników, co oznacza, że jest prosta w użyciu i nie wymaga instalacji dodatkowych narzędzi. Pygame Zero jest nakładką na bibliotekę Pygame, ale jest prostsza i bardziej dostępna dla początkujących.
 
 {% embed url="https://pygame-zero.readthedocs.io/en/stable/index.html" %}
 Pygame Zero
 {% endembed %}
 
-### Czego się nauczysz
+### Kluczowe cechy
+
+1. **Łatwość użycia**: Pygame Zero zostało zaprojektowane z myślą o prostocie. Jest doskonałym narzędziem dla początkujących programistów i osób uczących się programowania gier.
+
+2. **Prosta instalacja**: Pygame Zero jest dostępne jako pakiet Pythona, co oznacza, że można go łatwo zainstalować za pomocą narzędzi do zarządzania pakietami Pythona, takich jak pip.
+
+3. **Wsparcie dla wielu rodzajów gier**: Pygame Zero obsługuje wiele rodzajów gier, w tym gry 2D i gry zręcznościowe. Oferuje podstawowe narzędzia do obsługi grafiki, dźwięku i interakcji z użytkownikiem.
+
+4. **Bezpośrednie mapowanie z Pygame**: Pygame Zero jest nakładką na Pygame, co oznacza, że jeśli użytkownik chce zrobić coś bardziej zaawansowanego, może łatwo przejść do korzystania z funkcji Pygame.
+
+Pygame Zero jest doskonałym narzędziem do nauki programowania gier dla początkujących, a także dla nauczycieli, którzy chcą wprowadzić swoich uczniów w świat tworzenia gier. Jest łatwy w użyciu, a jednocześnie oferuje wystarczająco dużo możliwości, aby umożliwić tworzenie interesujących i zabawnych gier.
+
+## Czego się nauczysz
 
 * Instalacji bibliotek.
 * Zasady działania podstawowego szablonu PygameZero.
