@@ -1,53 +1,53 @@
-# Słownik pojęć
+# Słownik pojęć związanych z sieciami komputerowymi
 
-#### Sieć komputerowa
+## Sieć komputerowa
 
-Połączenie ze sobą komputerów w celu wymiany danych.
+Sieć komputerowa to zespół połączonych ze sobą komputerów i urządzeń, które komunikują się ze sobą, wymieniając dane.
 
-#### Zasoby sieciowe
+## Zasoby sieciowe
 
-Dane i urządzenia, do których można uzyskać dostęp w obrębie sieci.
+Zasoby sieciowe to dane, aplikacje i urządzenia, do których można uzyskać dostęp w obrębie sieci komputerowej. Mogą to być pliki, drukarki, serwery plików, bazy danych, a także aplikacje i usługi.
 
-#### Serwer
+## Serwer
 
-Komputer/urządzenie, które udostępnia zasoby w sieci.
+Serwer to komputer lub urządzenie sieciowe, które udostępnia zasoby dla innych komputerów lub urządzeń w sieci, znanych jako "klienci".
 
-#### Klient
+## Klient
 
-Komputer/urządzenie, które korzysta z zasobów w sieci.
+Klient to komputer lub urządzenie sieciowe, które korzysta z zasobów udostępnianych przez serwer w sieci.
 
-#### Brama (ang. gateway)
+## Brama (ang. gateway)
 
-Urządzenie sieciowe umożliwiające przesyłanie pakietów danych pomiędzy sieciami komputerowymi różnego typu (opartymi o różne protokoły).
+Brama sieciowa to urządzenie sieciowe umożliwiające komunikację i przesyłanie pakietów danych pomiędzy sieciami komputerowymi różnego typu (opartymi o różne protokoły).
 
-#### Router
+## Router
 
-Urządzenie sieciowe umożliwiające przesyłanie pakietów danych pomiędzy różnymi sieciami komputerowymi tego samego typu.
+Router to specjalne urządzenie sieciowe, które przekierowuje pakiety danych pomiędzy różnymi sieciami komputerowymi lub sub-sieciami tego samego typu.
 
-#### Host
+## Host
 
-Komputer/urządzenia komputerowe pracujące w sieci TCP/IP.
+Host to dowolne urządzenie komputerowe pracujące w sieci TCP/IP, które może być adresowane i może komunikować się z innymi urządzeniami w sieci.
 
-#### Adres IP
+## Adres IP
 
-Unikatowy numer przyporządkowany urządzeniom sieci komputerowych funkcjonującym w oparciu o protokół IP.
+Adres IP to unikatowy identyfikator przyporządkowany każdemu urządzeniu sieci komputerowych funkcjonujących w oparciu o protokół IP.
 
-#### Protokół TCP/IP
+## Protokół TCP/IP
 
-Najczęściej stosowany protokół (zbiór protokołów) używany w sieciach komputerowych.
+Protokół TCP/IP to zbiór reguł komunikacyjnych najczęściej stosowanych w sieciach komputerowych. Protokół ten obejmuje zarówno protokoły niższego poziomu (IP), jak i wyższego poziomu (TCP).
 
-#### Karta sieciowa
+## Karta sieciowa
 
-Urządzenie umożliwiające połączenie z innymi urządzeniami w sieci.
+Karta sieciowa to urządzenie fizyczne lub wirtualne, które umożliwia komputerowi połączenie z innymi urządzeniami w sieci.
 
-#### Protokół sieciowy/komunikacyjny
+## Protokół sieciowy/komunikacyjny
 
-Zbiór reguł, którym podlega komunikacja pomiędzy urządzeniami w sieci.
+Protokół sieciowy to zbiór reguł i standardów, które definiują sposób komunikacji pomiędzy urządzeniami w sieci.
 
-#### Klient sieci
+## Klient sieci
 
-Oprogramowanie pozwalające korzystać z zasobów sieci pracującej pod kontrolą konkretnego systemu operacyjnego.
+Klient sieci to oprogramowanie, które umożliwia komputerowi korzystanie z zasobów sieciowych udostępnianych przez serwer.
 
-#### Usługa
+## Usługa
 
-Określenie funkcji realizowanej przez komputer pracujący w sieci.
+Usługa sieciowa to funkcja lub aplikacja dostarczana przez serwer, która jest dostępna dla klientów w sieci. Mogą to być takie usługi jak udostępnianie plików, dostęp do bazy danych, drukowanie zdalne, dostęp do stron internetowych i wiele innych.
