@@ -4,9 +4,13 @@ Opracowano na podstawie: [http://boitblog.blogspot.com/2013/12/reveal-color-of-s
 
 ## Wstęp
 
-W celu wyróżnienia danego elementu na zdjęciu, np. do reklamy produktu, możemy skorzystać z prostego efektu.
-Zmieniamy zdjęcie na czarno-białe, a tylko wyróżniony element zostawiamy kolorowy.
-Efekt ten najlepiej działa z obiektami w żywych i jaskrawych kolorach.
+W dzisiejszym świecie, gdzie jesteśmy zasypywani obrazami z każdej strony, wyjątkowo ważne jest, aby nasze zdjęcia mogły się wyróżnić. Dlatego stosowanie pewnych technik i efektów może okazać się niezwykle przydatne, szczególnie jeśli chodzi o tworzenie efektywnych reklam produktów. Jednym z takich efektów jest technika zwana "selective color" lub "color splash", polegająca na zamianie zdjęcia na czarno-białe, podczas gdy wybrany element zostaje w oryginalnym, kolorowym wydaniu.
+
+Ta technika polega na konwersji większości zdjęcia na czarno-białe, pozostawiając tylko jedną lub kilka części obrazu w kolorze. Może to być konkretny obiekt, osoba, czy choćby fragment tła. W ten sposób kolorowy element staje się centralnym punktem uwagi, przyciągając oko widza i podkreślając szczególną ważność tego elementu.
+
+Efekt ten działa szczególnie dobrze, gdy wybrany element na zdjęciu ma żywe i jaskrawe kolory. Dzięki kontrastowi z resztą obrazu, wyróżniony element zyskuje na intensywności i dynamice, czyniąc całe zdjęcie znacznie bardziej intrygującym.
+
+To, co sprawia, że efekt ten jest tak efektywny, to jego zdolność do skupienia uwagi widza na konkretnej części obrazu. W reklamie produktu możemy na przykład użyć tej techniki, aby skierować uwagę widza na produkt, który chcemy sprzedać, pozostawiając wszystko inne na zdjęciu w odcieniach szarości. Dzięki temu nasz produkt stanie się centralnym punktem całego obrazu, przyciągając uwagę i zapadając w pamięć widza. To pozwala nie tylko na efektywną prezentację produktu, ale także na stworzenie mocnego i pamiętnego obrazu marki.
 
 W tutorialu skorzystamy z następującego zdjęcia:
 
