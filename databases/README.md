@@ -1,12 +1,12 @@
 # Bazy danych
 
-We współczesnym świecie danych jest coraz więcej. Na stronach internetowych logujemy się na swoje konta podając adres e-mail i hasło. W sklepach internetowych pamiętany jest nasz adres, dane płatności i informacje na temat zamówień. Portale społecznościowe zapisują wysłane przez nas zdjęcia, filmy, wiadomości i wrzucone wpisy. Wszystkie te informacje muszą być w jakiś sposób przechowywane, magazynowane. Oczywiście sposób przechowywania danych zależy od ich przeznaczenia, jednak gdy chcemy mieć wygodny i szybki dostęp do informacji, z możliwością wyszukiwania, filtrowania, modyfikacji i podobnych operacji, to bazy danych przychodzą z pomocą.
+Żyjemy w świecie, gdzie ilość generowanych danych rośnie z każdym dniem. Przykładowo, na stronach internetowych logujemy się na swoje konta, używając adresu e-mail i hasła. Sklepy internetowe przechowują nasze dane, takie jak adres zamieszkania, dane płatności oraz informacje o zamówieniach. Portale społecznościowe zapisują udostępniane przez nas zdjęcia, filmy, wiadomości i posty. Wszystkie te informacje muszą być przechowywane i zarządzane w określony sposób. Choć metody przechowywania danych mogą zależeć od ich przeznaczenia, to właśnie bazy danych są niezastąpione, gdy zależy nam na wygodnym i szybkim dostępie do informacji z możliwością wyszukiwania, filtrowania, modyfikacji i innych operacji.
 
-Baza danych to zestaw tabel. Każda tabela składa się z kolumn określających rodzaje przechowywanych informacji, a także wierszy, nazywanych **rekordami**. 
+Baza danych to zbiór tabel. Każda tabela składa się z kolumn, które określają rodzaje przechowywanych informacji, a także z wierszy, nazywanych **rekordami**.
 
 ## Silniki bazodanowe
 
-Istnieje wiele różnych silników bazodanowych, a każdy różni się od pozostałych mniej lub bardziej. Część z nich to rozwiązania darmowe, zazwyczaj (chociaż nie zawsze) przeznaczone do stosunkowo niewielkich zbiorów danych. Inne to komercyjne narzędzia z zaawansowanymi algorytmami optymalizacyjnymi.
+Na rynku dostępne są różne silniki baz danych, a każdy z nich ma swoje unikalne cechy i właściwości. Niektóre z nich są dostępne za darmo i są zazwyczaj (chociaż nie zawsze) przeznaczone do zarządzania stosunkowo niewielkimi zbiorami danych. Z kolei inne są narzędziami komercyjnymi wyposażonymi w zaawansowane algorytmy optymalizacyjne, przeznaczone do obsługi dużych, złożonych zbiorów danych.
 
 Poniżej znajduje się link do rankingu popularności silników bazodanowych.
 
