@@ -1,7 +1,5 @@
 # Nawiasy
 
-## Opis
-
 Dany jest ciąg złożony z nawiasów okrągłych () oraz kwadratowych []. Twoim celem jest sprawdzenie, czy ciąg zawiera **poprawne nawiasowanie**, czy też nie. Ciąg uznajemy za **poprawny**, gdy:
 
 * jest pustym ciągiem,
@@ -10,53 +8,53 @@ Dany jest ciąg złożony z nawiasów okrągłych () oraz kwadratowych []. Twoim
 
 Źródło: [https://onlinejudge.org/external/6/673.pdf](https://onlinejudge.org/external/6/673.pdf)
 
-### Specyfikacja
+## Specyfikacja
 
-#### Wejście
+### Wejście
 
 * $$par$$ - ciąg nawiasów
 
-#### Wyjście
+### Wyjście
 
 * Informacja, czy ciąg jest poprawny, czy też nie.
 
-### Przykład 1
+## Przykład 1
 
-#### Wejście
+### Wejście
 
 ```
 ([])
 ```
 
-#### Wyjście
+### Wyjście
 
 ```
 Correct
 ```
 
-### Przykład 2
+## Przykład 2
 
-#### Wejście
+### Wejście
 
 ```
 (([()])))
 ```
 
-#### Wyjście
+### Wyjście
 
 ```
 Incorrect
 ```
 
-### Przykład 3
+## Przykład 3
 
-#### Wejście
+### Wejście
 
 ```
 ([()[]()])()
 ```
 
-#### Wyjście
+### Wyjście
 
 ```
 Correct
