@@ -1,7 +1,5 @@
 # Gazeta
 
-## Opis
-
 Gazeta "Bitek" z Bajtkowa jest niezwykle popularna, nawet w swoim tradycyjnym, papierowym formacie. W związku z tym wiele osób przesyła do redakcji swoje ogłoszenia, które mają zostać umieszczone w następnym wydaniu. Do tej pory stawka była prosta: stała opłata za każde ogłoszenie, zależna od liczby znaków. Wydawca "Bitek" zauważył jednak, że różne znaki zużywają różne ilości tuszu, co oznacza, że koszty druku dla każdego z nich również są różne! Dlatego postanowił zaktualizować cennik i ustalić koszt druku każdego znaku. Teraz opłata za ogłoszenie jest równa sumie kosztów wszystkich znaków zawartych w danym ogłoszeniu.
 
 Twoje zadanie polega na obliczeniu, ile wyniesie opłata za określone ogłoszenie według nowego cennika.
@@ -9,21 +7,21 @@ Twoje zadanie polega na obliczeniu, ile wyniesie opłata za określone ogłoszen
 
 Źródło: [https://onlinejudge.org/external/113/11340.pdf](https://onlinejudge.org/external/113/11340.pdf)
 
-### Specyfikacja
+## Specyfikacja
 
-#### Dane
+### Dane
 
 * $$n$$ - liczba znaków
 * $$(z_1, c_1), (z_2, c_2), ..., (z_n, c_n)$$ - cennik: pary znak oraz cena znaku, podana w groszach
 * $$wyraz$$ - ciąg znaków, małych i/lub wielkich liter alfabetu angielskiego, bez spacji i innych białych znaków
 
-#### Wynik
+### Wynik
 
 * Opłata za $$wyraz$$, podana w złotówkach, wedle nowego cennika. Zakładamy, że każdy znak z wyrazu pojawi się w cenniku.
 
-### Przykład
+## Przykład
 
-#### Dane
+### Dane
 
 ```
 6
@@ -36,14 +34,14 @@ t 1
 alamakota
 ```
 
-#### Wynik
+### Wynik
 
 ```
 1.36
 ```
 
 {% hint style="info" %}
-#### Wyjaśnienie
+### Wyjaśnienie
 
 W wyrazie **alamakota** możemy wyróżnić:
 
