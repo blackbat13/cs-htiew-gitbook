@@ -1,7 +1,5 @@
 # Różne cyfry
 
-## Opis
-
 Twoim zadaniem jest określenie ilości liczb w zadanym przedziale, które składają się wyłącznie z unikalnych cyfr, to znaczy, w ich zapisie cyfry nie powtarzają się. Na przykład, liczba $$123$$ składa się z różnych cyfr, podczas gdy liczba $$100$$ już nie, ze względu na powtarzający się znak $$0$$.
 
 Źródło: [https://onlinejudge.org/external/125/12527.pdf](https://onlinejudge.org/external/125/12527.pdf)
