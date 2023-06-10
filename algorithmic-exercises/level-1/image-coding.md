@@ -1,7 +1,5 @@
 # Kodowanie obrazka
 
-## Opis
-
 Grafika komputerowa jest niezwykle istotnym obszarem informatyki. Ponieważ przechowujemy na komputerach mnóstwo zdjęć, istotne jest efektywne reprezentowanie ich w pamięci komputera. W tym zadaniu skupimy się na szczególnym przypadku kodowania grafiki. Grafikę przedstawiamy jako prostokątną tablicę liter alfabetu angielskiego, gdzie każda litera koduje jeden region. Identyczne regiony są reprezentowane przez takie same litery.
 
 Twoje zadanie polega na obliczeniu, ile bajtów pamięci jest potrzebnych do reprezentacji tak zaprezentowanej grafiki. Zasady są proste: obszar o najwyższym priorytecie reprezentowany jest za pomocą 2 bajtów, natomiast wszystkie pozostałe obszary za pomocą jednego bajta.
