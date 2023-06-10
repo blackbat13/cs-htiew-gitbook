@@ -1,7 +1,5 @@
 # Kłódka
 
-## Opis
-
 Masz robota, który może poruszać się wyłącznie w lewo i prawo na osi *x*. Początkowo robot znajduje się na pozycji $$0$$ i może wykonać następujące instrukcje:
 
 * LEWO - porusz się o jedną jednostkę w lewo,
@@ -12,20 +10,20 @@ Zastanawiasz się, czy Twój robot działa poprawnie. Napisz program, który dla
 
 Źródło: [https://onlinejudge.org/external/125/12503.pdf](https://onlinejudge.org/external/125/12503.pdf)
 
-### Specyfikacja
+## Specyfikacja
 
-#### Dane
+### Dane
 
 * $$n$$ - liczba naturalna, liczba instrukcji do wykonania, $$1\leq p\leq 100$$.
 * $$n$$ linii zawierających jedną z instrukcji tak jak opisano wcześniej.
 
-#### Wynik
+### Wynik
 
 * Liczba całkowita oznaczająca pozycję robota po wykonaniu wszystkich instrukcji.
 
-### Przykład 1
+## Przykład 1
 
-#### Dane
+### Dane
 
 ```
 3
@@ -36,9 +34,9 @@ JAK W 2
 
 **Wynik:** $$1$$
 
-### Przykład 2
+## Przykład 2
 
-#### Dane
+### Dane
 
 ```
 5
