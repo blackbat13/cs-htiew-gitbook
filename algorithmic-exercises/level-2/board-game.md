@@ -1,20 +1,20 @@
 # Gra planszowa
 
-Bajtek zaprojektował nową grę planszową. Gra składa się z jednej planszy o $$n$$ polach i jednej $$n$$-ściennej kości z wartościami od $$1$$ do $$n$$ oraz pionka do gry. Na planszy znajduje się $$n$$ pól ułożonych jedno obok drugiego, w efekcie tworząc jedną długą linię. Na każdym polu znajduje się jedna liczba całkowita: liczba punktów przypisanych do tego pola. Pierwsze pole ma zawsze przypisaną wartość $$0$$.
+Bajtek stworzył nową grę planszową. Gra ta składa się z jednej planszy o $$n$$ polach, kości o $$n$$ ściankach z wartościami od $$1$$ do $$n$$, oraz jednego pionka. Plansza to $$n$$ pól ułożonych obok siebie, co tworzy jedną długą linię. Na każdym z pól umieszczona jest liczba całkowita, reprezentująca liczbę punktów przypisaną do danego pola. Pierwsze pole zawsze ma przypisaną wartość $$0$$.
 
-Zasady gry są proste. Gracz stawia swój pionek na pierwszym polu na planszy i wykonuje rzut kością. Następnie przemieszcza pionka o tyle pól, ile wypadło oczek na kości. Ruch pionka wykonywany jest wielokrotnie, zawsze o tyle samo pól, aż pionek wyjdzie poza planszę. Wartości z odwiedzonych przez pionka pól są sumowane i stanowią wynik danego gracza.
+Reguły gry są proste. Gracz umieszcza swój pionek na pierwszym polu planszy i rzuca kością. Potem przesuwa pionek o liczbę pól odpowiadającą liczbie oczek na kości. Ten ruch powtarza się wielokrotnie, za każdym razem przesuwając pionek o tyle samo pól, aż pionek przekroczy krawędź planszy. Punkty z pól, przez które przechodził pionek, są sumowane i stanowią wynik gracza.
 
-Dla przykładu załóżmy, że mamy planszę o długości $$5$$ z wartościami $$[0, 6, -1, 2, 4]$$. Rzut kością wskazał liczbę $$2$$, więc pionek odwiedzi trzy pola: pierwsze, trzecie oraz piąte (po kolejnym ruchu wyjdzie już poza planszę). Wartości tych pól to odpowiednio: $$0$$, $$-1$$ oraz $$4$$, więc wynik gracza wynosi $$0+(-1)+4=3$$ punkty.
+Na przykład, jeśli mamy planszę o długości $$5$$ z wartościami $$[0, 6, -1, 2, 4]$$, a rzut kością wskazał liczbę $$2$$, pionek odwiedzi trzy pola: pierwsze, trzecie oraz piąte (następny ruch wyjdzie już poza planszę). Wartości tych pól to odpowiednio: $$0$$, $$-1$$ oraz $$4$$, co daje łącznie $$0+(-1)+4=3$$ punkty.
 
-Bajtek ma duże doświadczenie w rzucaniu różnymi kostkami i dokładnie wie jak sprawić, by wypadło tyle oczek ile sobie zażyczy. Nie wie jednak, ile powinien wyrzucić aby dla danej planszy zdobyć maksymalny wynik, dlatego zwrócił się o pomoc do Ciebie!
+Bajtek jest doświadczonym graczem i potrafi rzucić kością tak, aby wypadła dowolna, wybrana przez niego liczba. Jednak nie wie, jaką liczbę powinien wylosować, aby osiągnąć maksymalny wynik dla danej planszy, dlatego zwraca się o pomoc do Ciebie!
 
 ## Dane
 
-Na wejściu znajduje się liczba $$n$$ ($$1\lq n\lq 10^6$$) oznaczająca długość planszy. Następnie podanych jest $$n$$ liczb całkowitych z przedziału $$<-1000, 1000>$$, każda w osobnej linii.
+Wejście zawiera liczbę $$n$$ ($$1\lq n\lq 10^6$$), która oznacz długość planszy. Następnie podanych jest $$n$$ liczb całkowitych z przedziału $$<-1000, 1000>$$, każda w oddzielnej linii.
 
 ## Wynik
 
-Dwie liczby całkowite: maksymalny możliwy do uzyskania wynik oraz liczba oczek na kości (z zakresu $$<1, n>$$) potrzebna do uzyskania tego wyniku. Jeżeli maksymalny wynik można uzyskać na kilka sposobów, wypisz dowolny z nich.
+Na wyjściu powinny pojawić się dwie liczby całkowite: maksymalna możliwa do uzyskania liczba punktów oraz liczba oczek na kości (z zakresu od $$1$$ do $$n$$), która jest potrzebna do osiągnięcia tego wyniku. Jeżeli można uzyskać maksymalny wynik na kilka sposobów, wypisz dowolny z nich.
 
 ## Przykład
 
