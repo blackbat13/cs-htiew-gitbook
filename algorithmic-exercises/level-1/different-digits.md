@@ -6,32 +6,32 @@ Twoim zadaniem jest określenie ilości liczb w zadanym przedziale, które skła
 
 Źródło: [https://onlinejudge.org/external/125/12527.pdf](https://onlinejudge.org/external/125/12527.pdf)
 
-### Specyfikacja
+## Specyfikacja
 
-#### Dane
+### Dane
 
 * $$a, b$$ - liczby całkowite z przedziału $$[1,5000]$$
 
-#### Wynik
+### Wynik
 
 * Ilość wszystkich liczb z przedziału $$[a,b]$$, które składają się wyłącznie z różnych cyfr. 
 
-### Przykład
+## Przykład
 
-#### Dane
+### Dane
 
 ```
 87 104
 ```
 
-#### Wynik
+### Wynik
 
 ```
 14
 ```
 
 {% hint style="info" %}
-#### Wyjaśnienie
+### Wyjaśnienie
 
 Z przedziału $$[87,104]$$ następujące liczby składają się wyłącznie z różnych cyfr:
 
