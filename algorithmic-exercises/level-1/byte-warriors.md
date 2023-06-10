@@ -1,7 +1,5 @@
 # Bajtowi wojownicy
 
-## Opis
-
 Struktura oddziału Bajtowych Wojowników jest zorganizowana w taki sposób, że pierwszy rząd składa się z jednego wojownika, drugi z dwóch, trzeci z trzech i tak dalej. Oznacza to, że każdy $$i$$-ty rząd składa się z $$i$$ wojowników.
 
 Twoim zadaniem jest obliczenie liczby rzędów, znając całkowitą liczbę wojowników w oddziale. Zwróć uwagę, że nie zawsze wystarczy wojowników na wypełnienie ostatniego rzędu - na przykład, $$6$$ wojowników mogłoby być rozmieszczonych w trzech rzędach, ale podobnie mogłoby być rozmieszczonych $$7$$, $$8$$, a nawet $$9$$ wojowników.
