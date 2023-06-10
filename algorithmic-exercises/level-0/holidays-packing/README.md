@@ -1,24 +1,22 @@
 # Pakowanie na wakacje
 
-## Opis
-
-Nareszcie wakacje! Czas gdzieś wyjechać. Najpierw jednak czas się spakować. Masz do dyspozycji jedną walizkę w kształcie prostopadłościanu o wymiarach $$20cm\times20cm\times20cm$$. Udało Ci się zebrać wszystkie potrzebne rzeczy w jeden mały pakunek, także o kształcie prostopadłościanu. Pytanie brzmi, czy zmieści się on do walizki? Nie chcesz nic uszkodzić, więc pakunek nie może wystawać i musi być ułożony bokami równolegle do boków walizki.
+Nadeszły wyczekiwane wakacje i planujesz wyjazd. Przed Tobą jednak wyzwanie spakowania się. Masz do dyspozycji jedną walizkę w kształcie prostopadłościanu o wymiarach $$20cm\times20cm\times20cm$$. Zdołałeś skompilować wszystkie niezbędne rzeczy w jeden mały pakunek, również o kształcie prostopadłościanu. Wobec tego, pytanie brzmi: czy zmieści się on w Twojej walizce? Zależy Ci na bezpieczeństwie rzeczy, więc pakunek nie może wystawać poza walizkę i musi być ułożony tak, aby jego boki były równoległe do boków walizki.
 
 Źródło: [https://onlinejudge.org/external/123/12372.pdf](https://onlinejudge.org/external/123/12372.pdf)
 
-### Specyfikacja
+## Specyfikacja
 
-#### Dane
+### Dane
 
 * $$a, b, c$$ - liczby naturalne, wymiary pakunku, wszystkie z zakresu $$[1, 50]$$ 
 
-#### Wynik
+### Wynik
 
 * Komunikat "TAK", jeżeli pakunek zmieści się walizce, lub komunikat "NIE" w przeciwnym przypadku
 
-### Przykład 1
+## Przykład 1
 
-#### Dane
+### Dane
 
 ```
 a := 20
@@ -28,9 +26,9 @@ c := 20
 
 **Wynik**: "TAK"
 
-### Przykład 2
+## Przykład 2
 
-#### Dane
+### Dane
 
 ```
 a := 1
@@ -39,4 +37,3 @@ c := 21
 ```
 
 **Wynik**: "NIE"
-
