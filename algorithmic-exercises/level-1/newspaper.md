@@ -2,13 +2,9 @@
 
 ## Opis
 
-Gazeta Bitek w Bajtkowie cieszy się dużą popularnością, nawet w swojej oryginalnej, papierowej wersji.
-Co za tym idzie wiele osób wysyła do redakcji swoje ogłoszenia do umieszczenia w kolejnym wydaniu.
-Do tej pory stawka była jasna: stała kwota za każde ogłoszenie, w zależności od liczby znaków.
-Wydawca gazety Bitek zauważył jednak, że różne znaki zużywają inne ilości tuszu, co oznacza, że koszt ich druku także się różni!
-Postanowił więc zaktualizować cennik i określić koszt każdego znaku. Teraz opłata za wiadomość jest równa sumie kosztów każdego znaku z tej wiadomości.
+Gazeta "Bitek" z Bajtkowa jest niezwykle popularna, nawet w swoim tradycyjnym, papierowym formacie. W związku z tym wiele osób przesyła do redakcji swoje ogłoszenia, które mają zostać umieszczone w następnym wydaniu. Do tej pory stawka była prosta: stała opłata za każde ogłoszenie, zależna od liczby znaków. Wydawca "Bitek" zauważył jednak, że różne znaki zużywają różne ilości tuszu, co oznacza, że koszty druku dla każdego z nich również są różne! Dlatego postanowił zaktualizować cennik i ustalić koszt druku każdego znaku. Teraz opłata za ogłoszenie jest równa sumie kosztów wszystkich znaków zawartych w danym ogłoszeniu.
 
-Twoim zadaniem jest policzyć, ile będzie wynosić opłata za dany wyraz wedle nowego cennika.
+Twoje zadanie polega na obliczeniu, ile wyniesie opłata za określone ogłoszenie według nowego cennika.
 
 
 Źródło: [https://onlinejudge.org/external/113/11340.pdf](https://onlinejudge.org/external/113/11340.pdf)
