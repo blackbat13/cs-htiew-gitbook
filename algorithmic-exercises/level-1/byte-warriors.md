@@ -2,9 +2,9 @@
 
 ## Opis
 
-Oddział Bajtowych wojowników zorganizowany jest w następujący sposób: w pierwszym wierszu znajduje się tylko jeden wojownik, w drugim wierszu jest już dwóch wojowników, w trzecim trzech itd. W ogólności każdy *i*-ty wiersz składa się z *i* wojowników.
+Struktura oddziału Bajtowych Wojowników jest zorganizowana w taki sposób, że pierwszy rząd składa się z jednego wojownika, drugi z dwóch, trzeci z trzech i tak dalej. Oznacza to, że każdy $$i$$-ty rząd składa się z $$i$$ wojowników.
 
-Twoim zadaniem jest policzyć, znając rozmiar oddziału, w ilu wierszach zostaną zorganizowani wojownicy. Pamiętaj, że ostatni wiersz nie zawsze musi zawierać pełną liczbę wojowników, np. w 3 wierszach zmieści się 6 wojowników, ale także 7, 8, a nawet 9.
+Twoim zadaniem jest obliczenie liczby rzędów, znając całkowitą liczbę wojowników w oddziale. Zwróć uwagę, że nie zawsze wystarczy wojowników na wypełnienie ostatniego rzędu - na przykład, $$6$$ wojowników mogłoby być rozmieszczonych w trzech rzędach, ale podobnie mogłoby być rozmieszczonych $$7$$, $$8$$, a nawet $$9$$ wojowników.
 
 Źródło: [https://onlinejudge.org/external/116/11614.pdf](https://onlinejudge.org/external/116/11614.pdf)
 
