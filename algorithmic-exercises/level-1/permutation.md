@@ -2,11 +2,9 @@
 
 ## Opis
 
-Tablice w programowaniu to podstawa. Posortowane tablice to także podstawa. A czymże jest posortowana tablica, jak nie pewną **permutacją** tablicy początkowej?
+Tablice stanowią fundament programowania, a posortowane tablice są jednym z jego kluczowych elementów. A czymże jest posortowana tablica, jeśli nie pewną **permutacją** tablicy pierwotnej?
 
-Permutację tablicy można opisać podając docelową kolejność poszczególnych elementów tablicy, a także ich początkowy układ.
-Twoje zadanie polega na wypisaniu permutowanej tablicy na podstawie takiego właśnie opisu.
-
+Permutację tablicy można scharakteryzować wskazując docelową kolejność poszczególnych elementów tablicy, a także ich pierwotne rozmieszczenie. Twoim zadaniem jest wygenerowanie permutowanej tablicy na podstawie tak zdefiniowanego opisu.
 
 Źródło: [https://onlinejudge.org/external/4/482.pdf](https://onlinejudge.org/external/4/482.pdf)
 
