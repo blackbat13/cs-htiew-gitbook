@@ -1,12 +1,12 @@
 # Robot
 
-Masz robota, który może poruszać się wyłącznie w lewo i prawo na osi *x*. Początkowo robot znajduje się na pozycji $$0$$ i może wykonać następujące instrukcje:
+Posiadasz robota, zdolnego do poruszania się wyłącznie wzdłuż osi *x*, z możliwością ruchu w lewo lub prawo. Robot rozpoczyna swoją trasę z pozycji oznaczonej jako $$0$$. Może wykonać następujące instrukcje::
 
 * LEWO - porusz się o jedną jednostkę w lewo,
 * PRAWO - porusz się o jedną jednostkę w prawo,
-* JAK W $$i$$ - porusz się tak samo jak w $$i$$-tej instrukcji. $$i$$ zawsze będzie liczbą naturalną nie większą niż numer instrukcji, w której występuje. Instrukcje liczymy od jedynki. 
+* JAK W $$i$$ - wykonaj taki sam ruch, jak w $$i$$-tej instrukcji. $$i$$ jest zawsze liczbą naturalną i nie przekracza numeru instrukcji, w której się pojawia. Liczymy instrukcje od jedynki.
 
-Zastanawiasz się, czy Twój robot działa poprawnie. Napisz program, który dla podanego zestawu instrukcji wypisze pozycję, na której znajdzie się robot.
+Zastanawiasz się, czy robot działa poprawnie. Twoim zadaniem jest napisanie programu, który dla podanego zestawu instrukcji określi pozycję, na której ostatecznie znajdzie się robot.
 
 Źródło: [https://onlinejudge.org/external/125/12503.pdf](https://onlinejudge.org/external/125/12503.pdf)
 
