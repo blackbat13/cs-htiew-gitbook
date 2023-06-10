@@ -1,7 +1,5 @@
 # Różnice w sekwencji
 
-## Opis
-
 Masz daną sekwencję $$n$$ liczb całkowitych. Twoim zadaniem jest sprawdzić, czy przy obliczaniu wartości bezwzględnych różnic pomiędzy każdą parą kolejnych elementów sekwencji, uzyskamy wszystkie liczby od $$1$$ do $$n-1$$ włącznie.
 
 Źródło: [https://onlinejudge.org/external/100/10038.pdf](https://onlinejudge.org/external/100/10038.pdf)
