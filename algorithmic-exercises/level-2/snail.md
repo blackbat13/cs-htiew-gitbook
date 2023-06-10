@@ -1,10 +1,8 @@
 # Ślimak
 
-## Opis
+Ślimak znajduje się na dnie studni o wysokości 6 cm. W ciągu dnia ślimak jest w stanie wspiąć się o 3cm, jednak nocą, podczas snu, zsuwa się o 1cm w dół. Niestety, ślimak się męczy - jego poziom zmęczenia wynosi $$10\%$$ dziennie, co oznacza, że każdego dnia jest w stanie wspiąć się o $$10\%*3=0.3$$ cm mniej niż poprzedniego dnia. Co ważne, każdego dnia odejmujemy stałą wartość, czyli $$10\%$$ wysokości wspinaczki z **pierwszego** dnia.
 
-Ślimak znajduje się na dole studni o wysokości 6cm. W trakcie dnia ślimak może się wspiąć o 3cm do góry, ale w nocy zsuwa się o 1cm w trakcie snu. Ślimak się niestety męczy, a jego stopień zmęczenia wynosi $$10\%$$, co oznacza że każdego kolejnego dnia wspina się o $$10\%*3=0.3$$ centymetry mniej niż dnia poprzedniego. Każdego dnia odejmujemy tyle samo, tzn. $$10\%$$ wysokości wspinaczki z **pierwszego** dnia.
-
-Której doby ślimak wydostanie się ze studni, tzn. wysokość, na której się znajdzie po wspinaczce będzie **większa** od wysokości studni? Obliczmy to na poniższej tabelce.
+Twoim zadaniem jest określenie, która doba będzie tą, podczas której ślimak wydostanie się ze studni, to znaczy kiedy wysokość, na której się znajduje po wspinaczce, będzie **większa** niż wysokość studni. Przykładowy przebieg sytuacji prezentuje poniższa tabela:
 
 | Doba | Początkowa wysokość | Długość wspinaczki | Wysokość po wspinaczce | Wysokość po zsunięciu |
 |:----:|:-------------------:|:------------------:|:----------------------:|:---------------------:|
@@ -12,15 +10,15 @@ Której doby ślimak wydostanie się ze studni, tzn. wysokość, na której się
 |   2  |          2          |         2.7        |           4.7          |          3.7          |
 |   3  |         3.7         |         2.4        |         **6.1**        |          ---          |
 
-Jak widać, ślimak wydostanie się w trakcie $$3$$ doby.
+Jak widać, w naszym przypadku ślimak wydostaje się na powierzchnię w trakcie trzeciej doby.
 
-Twoim zadaniem jest rozwiązanie tego zadania w ogólnym przypadku. W zależności od parametrów zadania ślimak może wydostać się ze studni albo opaść na jej dno. Musisz określić, która z tych dwóch sytuacji będzie miała miejsce i w trakcie której doby.
+W zależności od parametrów, ślimak może albo wydostać się ze studni, albo opaść na jej dno. Twoim zadaniem jest określenie, która z tych sytuacji ma miejsce, oraz podanie doby, podczas której to następuje.
 
 Źródło: [https://onlinejudge.org/external/5/573.pdf](https://onlinejudge.org/external/5/573.pdf)
 
-### Specyfikacja
+## Specyfikacja
 
-#### Dane
+### Dane
 
 * $$H$$ - liczba naturalna, wysokość studni, $$1\leq H\leq 100$$.
 * $$U$$ - liczba naturalna, wysokość, na którą początkowo wspina się ślimak w trakcie dnia, $$1\leq U\leq 100$$.
@@ -29,13 +27,13 @@ Twoim zadaniem jest rozwiązanie tego zadania w ogólnym przypadku. W zależnoś
 
 **Uwaga:** ślimak nigdy nie wspina się o wartość ujemną w trakcie dnia. Może co najwyżej zmęczyć się tak bardzo, że nie będzie się już w ogóle wspinał, tylko zsuwał w nocy.
 
-#### Wynik
+### Wynik
 
 * Komunikat "Ucieczka" jeżeli ślimak wyszedł ze studni, lub "Dno", jeżeli ślimak opadł na dno, oraz numer doby, w której nastąpiła dana sytuacja.
 
-### Przykład 1
+## Przykład 1
 
-#### Dane
+### Dane
 
 ```
 6 3 1 10
@@ -43,9 +41,9 @@ Twoim zadaniem jest rozwiązanie tego zadania w ogólnym przypadku. W zależnoś
 
 **Wynik:** *Ucieczka 3*
 
-### Przykład 2
+## Przykład 2
 
-#### Dane
+### Dane
 
 ```
 10 2 1 50
@@ -53,9 +51,9 @@ Twoim zadaniem jest rozwiązanie tego zadania w ogólnym przypadku. W zależnoś
 
 **Wynik:** *Dno 4*
 
-### Przykład 3
+## Przykład 3
 
-#### Dane
+### Dane
 
 ```
 50 5 3 14
@@ -63,9 +61,9 @@ Twoim zadaniem jest rozwiązanie tego zadania w ogólnym przypadku. W zależnoś
 
 **Wynik:** *Dno 7*
 
-### Przykład 4
+## Przykład 4
 
-#### Dane
+### Dane
 
 ```
 50 6 4 1
@@ -73,9 +71,9 @@ Twoim zadaniem jest rozwiązanie tego zadania w ogólnym przypadku. W zależnoś
 
 **Wynik:** *Dno 68*
 
-### Przykład 5
+## Przykład 5
 
-#### Dane
+### Dane
 
 ```
 50 6 3 1
@@ -83,9 +81,9 @@ Twoim zadaniem jest rozwiązanie tego zadania w ogólnym przypadku. W zależnoś
 
 **Wynik:** *Ucieczka 20*
 
-### Przykład 6
+## Przykład 6
 
-#### Dane
+### Dane
 
 ```
 1 1 1 1
