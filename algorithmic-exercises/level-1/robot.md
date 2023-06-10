@@ -1,4 +1,4 @@
-# Kłódka
+# Robot
 
 Masz robota, który może poruszać się wyłącznie w lewo i prawo na osi *x*. Początkowo robot znajduje się na pozycji $$0$$ i może wykonać następujące instrukcje:
 
