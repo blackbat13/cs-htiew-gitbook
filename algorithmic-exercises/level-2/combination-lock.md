@@ -1,7 +1,5 @@
 # Kłódka
 
-## Opis
-
 Pora zająć się tymi kłódkami, Escape Room sam się nie zaprojektuje. W swoim magazynie masz kłódki szyfrowe z okrągłą tarczą, takie jak na zdjęciu poniżej. Tarcza składa się z $$40$$ przedziałek numerowanych od $$0$$ do $$39$$. Kombinacja do kłódki składa się z trzech liczb z tego zakresu.
 
 ![Thegreenj, CC BY-SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>, via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/a/a1/Masterpadlock.jpg)
@@ -19,22 +17,22 @@ Twoje zadanie polega na obliczeniu, o ile stopni łącznie należy obrócić tar
 
 Źródło: [https://onlinejudge.org/external/105/10550.pdf](https://onlinejudge.org/external/105/10550.pdf)
 
-### Specyfikacja
+## Specyfikacja
 
-#### Dane
+### Dane
 
 * $$p$$ - liczba naturalna, początkowe ustawienie tarczy, $$0\leq p\leq 39$$.
 * $$c1$$ - liczba naturalna, pierwsza liczba kombinacji, $$0\leq c1\leq 39$$.
 * $$c2$$ - liczba naturalna, druga liczba kombinacji, $$0\leq c2\leq 39$$.
 * $$c3$$ - liczba naturalna, trzecia liczba kombinacji, $$0\leq c3\leq 39$$.
 
-#### Wynik
+### Wynik
 
 * Liczba naturalna oznaczająca łączną liczbę stopni, o które należy obrócić tarczę, by otworzyć kłódkę.
 
-### Przykład 1
+## Przykład 1
 
-#### Dane
+### Dane
 
 ```
 0 30 0 30
@@ -42,9 +40,9 @@ Twoje zadanie polega na obliczeniu, o ile stopni łącznie należy obrócić tar
 
 **Wynik:** $$1350$$
 
-### Przykład 2
+## Przykład 2
 
-#### Dane
+### Dane
 
 ```
 5 35 5 35
@@ -52,9 +50,9 @@ Twoje zadanie polega na obliczeniu, o ile stopni łącznie należy obrócić tar
 
 **Wynik:** $$1350$$
 
-### Przykład 3
+## Przykład 3
 
-#### Dane
+### Dane
 
 ```
 0 20 0 20
@@ -62,9 +60,9 @@ Twoje zadanie polega na obliczeniu, o ile stopni łącznie należy obrócić tar
 
 **Wynik:** $$1620$$
 
-### Przykład 4
+## Przykład 4
 
-#### Dane
+### Dane
 
 ```
 7 27 7 27
@@ -72,9 +70,9 @@ Twoje zadanie polega na obliczeniu, o ile stopni łącznie należy obrócić tar
 
 **Wynik:** $$1620$$
 
-### Przykład 5
+## Przykład 5
 
-#### Dane
+### Dane
 
 ```
 0 10 0 10
@@ -82,9 +80,9 @@ Twoje zadanie polega na obliczeniu, o ile stopni łącznie należy obrócić tar
 
 **Wynik:** $$1890$$
 
-### Przykład 6
+## Przykład 6
 
-#### Dane
+### Dane
 
 ```
 9 19 9 19
