@@ -21,8 +21,7 @@ Dla zadanego przedziału podaj sumę wszystkich nieparzystych liczb z tego przed
 #### Dane
 
 ```
-a := 3
-b := 9
+3 9
 ```
 
 #### Wynik
