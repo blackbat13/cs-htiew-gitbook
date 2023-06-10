@@ -2,9 +2,9 @@
 
 ## Opis
 
-W Topolandii żyje sobie farmer imieniem Włodzimir. Włodzimir zajmuje się sprzedażą mleka, pozyskanego ze swoich dorodnych krów pasących się na bujnych łąkach Topolandii. Ostatnio postanowił zastosować specjalną promocję: za $$3$$ puste butelki po mleku możesz dostać $$1$$ pełną butelkę mleka gratis! Ile butelek mleka możesz wypić korzystając z tej promocji, jeżeli masz już zakupionych $$n$$ butelek mleka?
+W Topolandii mieszka farmer o imieniu Włodzimir, który zajmuje się sprzedażą mleka, pozyskiwanego od swoich zdrowych krów pasących się na bujnych łąkach tej krainy. Niedawno wprowadził specjalną promocję: za oddanie $$3$$ pustych butelek po mleku, otrzymujesz $$1$$ pełną butelkę mleka gratis! Ile butelek mleka jesteś w stanie skonsumować korzystając z tej promocji, jeżeli już zakupiłeś $$n$$ butelek mleka?
 
-PS. Pan Włodzimir z chęcią pożyczy Ci puste butelki, jeżeli je potem oddasz.
+PS. Włodzimir z chęcią pożyczy Ci puste butelki, pod warunkiem, że potem je zwrócisz.
 
 Źródło: [https://onlinejudge.org/external/111/11150.pdf](https://onlinejudge.org/external/111/11150.pdf)
 
@@ -23,7 +23,7 @@ PS. Pan Włodzimir z chęcią pożyczy Ci puste butelki, jeżeli je potem oddasz
 #### Dane
 
 ```
-n := 8
+8
 ```
 
 #### Wynik
