@@ -1,39 +1,37 @@
 # Różnice w sekwencji
 
-## Opis
-
-Dana jest pewna sekwencja $$n$$ liczb całkowitych. Twoim celem jest sprawdzenie, czy jak weźmiemy wartości bezwzględne różnic pomiędzy każdymi kolejnymi dwoma elementami sekwencji, to otrzymamy wszystkie liczby od $$1$$ do $$n-1$$ włącznie.
+Masz daną sekwencję $$n$$ liczb całkowitych. Twoim zadaniem jest sprawdzić, czy przy obliczaniu wartości bezwzględnych różnic pomiędzy każdą parą kolejnych elementów sekwencji, uzyskamy wszystkie liczby od $$1$$ do $$n-1$$ włącznie.
 
 Źródło: [https://onlinejudge.org/external/100/10038.pdf](https://onlinejudge.org/external/100/10038.pdf)
 
-### Specyfikacja
+## Specyfikacja
 
-#### Dane
+### Dane
 
 * $$n$$ - liczba naturalna z przedziału $$[1,3000]$$
-* $$tab[n]$$ - sekwencja$$n$$ liczb całkowitych
+* $$tab[n]$$ - sekwencja $$n$$ liczb całkowitych
 
-#### Wynik
+### Wynik
 
 * "TAK" jeżeli sekwencja spełnia opisane wyżej wymaganie, lub "NIE" w przeciwnym przypadku
 
-### Przykład 1
+## Przykład 1
 
-#### Dane
+### Dane
 
 ```
-n := 4
-tab := [1, 4, 2, 3]
+4
+1 4 2 3
 ```
 
-#### Wynik
+### Wynik
 
 ```
 TAK
 ```
 
 {% hint style="info" %}
-#### Wyjaśnienie
+### Wyjaśnienie
 
 Przyjrzyjmy się wartościom bezwzględnym różnic pomiędzy sąsiednimi elementami sekwencji:
 
@@ -44,23 +42,23 @@ Przyjrzyjmy się wartościom bezwzględnym różnic pomiędzy sąsiednimi elemen
 Jak widać otrzymaliśmy wszystkie wartości z przedziału $$[1,n-1]$$, czyli z przedziału $$[1,3]$$.
 {% endhint %}
 
-### Przykład 2
+## Przykład 2
 
-#### Dane
+### Dane
 
 ```
-n := 5
-tab := [1, 4, 2, -1, 6]
+5
+1 4 2 -1 6
 ```
 
-#### Wynik
+### Wynik
 
 ```
 NIE
 ```
 
 {% hint style="info" %}
-#### Wyjaśnienie
+### Wyjaśnienie
 
 Przyjrzyjmy się wartościom bezwzględnym różnic pomiędzy sąsiednimi elementami sekwencji:
 

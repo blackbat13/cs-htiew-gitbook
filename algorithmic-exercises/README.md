@@ -1,6 +1,7 @@
 # Wstęp
 
-W tym dziale znajdują się najróżniejsze zadania algorytmiczno-programistyczne. Część z zadań jest autorska, jednak większość zainspirowana jest zadaniami z różnych serwisów typu UVA czy SPOJ (wówczas przy takim zadaniu znajduje się link do oryginału). Każde zadanie składa się z opisu i rozwiązania - implementacji. Przy niektórych zadaniach mogą także pojawić się dodatkowe wskazówki. Zachęcamy do samodzielnej próby rozwiązania zadania przed zajrzeniem do rozwiązania.
+W tym dziale zgromadziliśmy szeroki wybór zadań algorytmiczno-programistycznych o różnym stopniu trudności. Niektóre z nich są twórczością naszych autorów, jednak znaczna część to zadania inspirowane zagadnieniami dostępnymi w renomowanych serwisach, takich jak UVA czy SPOJ. W trosce o transparentność, w przypadku zadań adaptowanych, zawsze umieszczamy link do źródła.
 
-Zadanie jest w gruncie rzeczy zawsze takie samo: zaproponuj algorytm i/lub napisz program zgodny z podanym opisem i specyfikacją.
+Każde zadanie zawiera dokładny opis problemu do rozwiązania, a większość zawiera także przykładową implementację. Dodatkowo, przy niektórych zagadnieniach, dostępne są dodatkowe wskazówki czy uwagi, które mogą pomóc w zrozumieniu problemu lub wskazać kierunek poszukiwań rozwiązania. Zachęcamy do podjęcia wyzwania i samodzielnego rozwiązania zadania zanim zajrzysz do proponowanej odpowiedzi.
 
+Zadanie w każdym przypadku jest takie samo: zaproponuj algorytm i/lub napisz program, który będzie zgodny z podanym opisem i spełni określoną specyfikację. Rozwiązując zadania rozwiniesz umiejętności logicznego myślenia, nauczysz się nowych algorytmów i poznasz techniki programistyczne.

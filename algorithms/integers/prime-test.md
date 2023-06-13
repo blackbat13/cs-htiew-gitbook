@@ -103,9 +103,11 @@ flowchart TD
 
 $$O(n)$$ - liniowa
 
-## Rozwiązanie  naiwne
+## Rozwiązanie naiwne
 
-TODO
+Mamy już pierwsze rozwiązanie naszego problemu. Zastanówmy się teraz, jak możemy je **zoptymalizować**, czyli usprawnić. Szczególnym fragmentem naszego rozwiązania, który aż prosi się o optymalizację, jest przeglądanie liczb od $$2$$ do $$n-1$$. Pomyślmy, jak możemy zawęzić ten zakres?
+
+Zauważmy, że od pewnej wartości możemy mieć już **gwarancję**, że nie znajdziemy kolejnych dzielników. Gdy sprawdzana liczba jest **większa** od połowy $$n$$, to nie może być już dzielnikiem $$n$$. W związku z tym wystarczy, że będziemy sprawdzać potencjalne dzielniki do $$n/2$$, a dokładniej do części całkowitej z tegoż dzielenia.
 
 ### Pseudokod
 
@@ -139,18 +141,24 @@ $$O(\frac{n}{2})$$
 
 ## Rozwiązanie optymalne
 
-TODO
+Możemy jeszcze bardziej skrócić zakres przeszukiwanych wartości. Można matematycznie udowodnić, że jeżeli liczba naturalna jest liczbą złożoną, to posiada przynajmniej jeden dzielnik (poza jedynką) mniejszy bądź równy pierwiastkowi z siebie samej.
+
+Dlatego możemy naszą pętlę ograniczyć do pierwiastka z $$n$$ włącznie.
 
 ### Pseudokod
 
 ```
 funkcja CzyPierwsza(n):
-    1. Od i := 2 do pierwiastka z n, wykonuj:
+    1. Od i := 2 do sqrt(n), wykonuj:
         2. Jeżeli (n mod i) = 0, to:
             3. Zwróć FAŁSZ
         
     4. Zwróć PRAWDA
 ```
+
+{% hint style="info" %}
+**sqrt** oznacza pierwiastek
+{% endhint %}
 
 ### Schemat blokowy
 

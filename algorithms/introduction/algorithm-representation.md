@@ -2,13 +2,13 @@
 
 ## Wstęp
 
-Wiemy już, czym mniej więcej jest algorytm. Zanim przejdziemy dalej, porozmawiajmy chwilę o sposobie zapisu algorytmów. Jest ich kilka i w naszych materiałach skupimy się na trzech ostatnich, czyli **pseudokodzie**, **schemacie blokowym** i **implementacji**, ale warto poznać także pozostałe. 
+Znamy już ogólną definicję algorytmu. Zanim jednak przejdziemy dalej, omówmy różne sposoby zapisu algorytmów. Istnieje wiele metod, ale skoncentrujemy się na trzech z nich: **pseudokodzie**, **schemacie blokowym** i **implementacji**. Niemniej jednak, warto również poznać pozostałe.
 
 {% hint style="info" %}
-Omawiany na tej stronie algorytm ma charakter czysto poglądowy i jego celem jest pokazanie różnic pomiędzy różnymi sposobami zapisu algorytmu. Nie przejmuj się więc, jeżeli teraz coś jest jeszcze niejasne, wszystko zostanie wytłumaczone w kolejnych tematach :)
+Algorytm omówiony na tej stronie ma charakter czysto ilustracyjny i ma na celu ukazanie różnic pomiędzy różnymi sposobami zapisu algorytmu. Jeśli coś wydaje się niejasne, nie przejmuj się - wszystko zostanie wyjaśnione w kolejnych tematach.
 {% endhint %}
 
-Ważną częścią każdego algorytmu, jak już wcześniej określiliśmy, jest specyfikacja. Skorzystamy z przykładowej specyfikacji, dla której pokażemy jak ten sam algorytm przedstawia się w różnych formach zapisu.
+Kluczowym elementem każdego algorytmu, jak wcześniej zaznaczyliśmy, jest specyfikacja. Skorzystamy z przykładowej specyfikacji, dla której pokażemy, jak ten sam algorytm wygląda w różnych formach zapisu.
 
 ### Specyfikacja
 
@@ -22,29 +22,29 @@ Ważną częścią każdego algorytmu, jak już wcześniej określiliśmy, jest 
 
 ## Opis słowny
 
-Najmniej formalny ze wszystkich przedstawionych tutaj sposobów opisu algorytmów. Jak nazwa wskazuje, opisujemy algorytm za pomocą własnych słów, nie trzymając się żadnego konkretnego formalizmu. Ze względu na to ten typ opisu może być pomocny przy burzy mózgów i wspólnym rozwiązywaniu problemu, ale zazwyczaj nie będzie wystarczający, jeżeli chcemy przejść do implementacji. Jego wadą może być także brak jednoznaczności.
+Najmniej formalny ze wszystkich przedstawionych tutaj sposobów opisu algorytmów. Jak nazwa wskazuje, opisujemy algorytm za pomocą naszych własnych słów, nie trzymając się żadnego konkretnego formalizmu. Ze względu na to, ten typ opisu może być pomocny przy burzy mózgów i wspólnego rozwiązywania problemu, ale nie będzie wystarczający, jeżeli chcemy przejść do implementacji. Wadą tego podejścia może być również brak jednoznaczności.
 
 ### Przykład
 
-Po kolei przejdź przez kolejne liczby od $$1$$ do $$n$$ ($$1,2,3,4,...$$). W trakcie przechodzenia przez kolejne liczby zlicz, przez ile z nich $$n$$ jest podzielne, będzie to wynik algorytmu.
+Przejdź po kolejnych liczbach od $$1$$ do $$n$$ ($$1,2,3,4,...$$). W trakcie przechodzenia przez kolejne liczby, zliczaj, przez ile z nich $$n$$ jest podzielne. To będzie wynik algorytmu.
 
 ## Lista kroków
 
-Bardziej ustrukturyzowany sposób zapisu w porównaniu do opisu słownego, ale wciąż pozbawiony potrzebnej zazwyczaj formalności. W pewnym sensie jest to podzielenie opisu słownego na poszczególne kroki. W zależności od podejścia, lista kroków może być bardzo podobna do pseudokodu.
+To bardziej uporządkowany sposób zapisu w porównaniu do opisu słownego, ale wciąż brak mu formalności, która zazwyczaj jest potrzebna. Możemy to postrzegać jako podzielenie opisu słownego na poszczególne kroki. W zależności od podejścia, lista kroków może być bardzo podobna do pseudokodu.
 
 ### Przykład
 
 ```
-1. Zapamiętaj wynik równy 0
+1. Zapamiętaj wynik równy 0.
 2. Dla kolejnych liczb od 1 do n, wykonuj:
     3. Jeżeli n jest podzielne przez sprawdzaną liczbę, to:
-        4. Zwiększ wynik o 1
-5. Wypisz wynik
+        4. Zwiększ wynik o 1.
+5. Wypisz wynik.
 ```
 
 ## Pseudokod
 
-Pseudokod jest czymś pomiędzy listą kroków, a kodem w wybranym języku programowania. Jak nazwa wskazuje, jest to **pseudo** kod. Mamy więc tutaj do czynienia z zapisem bardziej formalnym, niż lista kroków, ale wciąż podlegającym pewnym umownym zapisom i regułom. Brakuje jednak jednego uzgodnionego formalizmu, można spotkać się więc z wieloma różnymi podejściami do zapisu pseudokodu.
+Pseudokod jest czymś pomiędzy listą kroków a kodem w wybranym języku programowania. Jak nazwa wskazuje, jest to **pseudo** kod. Mamy więc tutaj do czynienia z zapisem bardziej formalnym, niż lista kroków, ale nadal podlegającym pewnym umownym zapisom i regułom. Brakuje jednak jednego uzgodnionego formalizmu, można więc spotkać się z wieloma różnymi podejściami do zapisu pseudokodu.
 
 ### Przykład
 
@@ -58,7 +58,7 @@ Pseudokod jest czymś pomiędzy listą kroków, a kodem w wybranym języku progr
 
 ## Schemat blokowy
 
-Schemat blokowy jest jednym z najbardziej formalnych i jednoznacznych sposobów zapisu algorytmów. Jak nazwa wskazuje, mamy tutaj do czynienia z blokami, które łączymy ze sobą za pomocą strzałek, oznaczających kolejność wykonywania operacji. Każdy blok ma swój własny typ i przeznaczenie, które definiowane są przez jego kształt. W podstawowym zapisie wyróżniamy następujące bloki:
+Schemat blokowy to jeden z najbardziej formalnych i jednoznacznych sposobów zapisu algorytmów. Jak nazwa wskazuje, mamy tutaj do czynienia z blokami, które łączymy ze sobą za pomocą strzałek, oznaczających kolejność wykonywania operacji. Każdy blok ma swój własny typ i przeznaczenie, które są zdefiniowane przez jego kształt. W podstawowym zapisie wyróżniamy następujące bloki:
 
 ### Blok startowy
 

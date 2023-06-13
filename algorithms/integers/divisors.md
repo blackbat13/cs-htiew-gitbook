@@ -32,7 +32,7 @@ Przejdźmy do próby rozwiązania problemu. Naszym zadaniem jest wypisać **wszy
 
 Podsumowując wystarczy sprawdzić wszystkie liczby od $$1$$ do $$n$$, aby znaleźć dzielniki. W ten sposób otrzymaliśmy pierwsze, zgrubne ograniczenie naszego przeszukiwanego przedziału wartości. Dla każdej liczby z tego zakresu będziemy sprawdzać, czy jest ona dzielnikiem $$n$$.
 
-Pozostaje jeszcze bardzo ważna kwestia: jak sprawdzić, czy jedna liczba jest dzielnikiem drugiej? Cóż, wystarczy sprawdzić, czy **dzielą się bez reszty**. Czy też, bardziej formalnie, **reszta z dzielenia wynosi **$$0$$.
+Pozostaje jeszcze bardzo ważna kwestia: jak sprawdzić, czy jedna liczba jest dzielnikiem drugiej? Cóż, wystarczy sprawdzić, czy **dzielą się bez reszty**. Czy też, bardziej formalnie, **reszta z dzielenia wynosi** $$0$$.
 
 Spróbujmy teraz to wszystko zapisać w formie algorytmu.
 
@@ -73,7 +73,7 @@ $$O(n)$$ — liniowa
 
 Mamy już pierwsze rozwiązanie naszego problemu. Zastanówmy się teraz, jak możemy je **zoptymalizować**, czyli usprawnić. Szczególnym fragmentem naszego rozwiązania, który aż prosi się o optymalizację, jest przeglądanie liczb od $$1$$ do $$n$$. Pomyślmy, jak możemy zawęzić ten zakres?
 
-TODO
+Zauważmy, że od pewnej wartości możemy mieć już **gwarancję**, że nie znajdziemy kolejnych dzielników, poza samym $$n$$. Gdy sprawdzana liczba jest **większa** od połowy $$n$$, to nie może być już dzielnikiem $$n$$. W związku z tym wystarczy, że będziemy sprawdzać potencjalne dzielniki do $$n/2$$, a dokładniej do części całkowitej z tegoż dzielenia. Musimy tylko pamiętać o tym, by wypisać także wartość $$n$$, jeżeli jest większe od jedynki.
 
 ### Pseudokod
 
@@ -115,7 +115,7 @@ $$O(\frac{n}{2})$$
 
 ## Rozwiązanie optymalne
 
-TODO
+Możemy jeszcze bardziej skrócić zakres przeszukiwania potencjalnych dzielników. Podobnie jak przy teście pierwszości, wystarczy że sprawdzimy dzielniki do pierwiastka z zadanej liczby. W ten sposób jednak nie znajdziemy wszystkich dzielników, a co najwyżej ich połowę. Dlatego dla każdego znalezionego w ten sposób dzielnika musimy wypisać jeszcze ten drugi z pary.
 
 ### Pseudokod
 

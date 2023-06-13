@@ -67,7 +67,7 @@ Napisz program zgodny z poniższą specyfikacją.
 #### Dane
 
 * $$n, k$$ - liczby naturalne, większe od zera
-* $$n$$liczb naturalnych
+* $$n$$ liczb naturalnych
 
 #### Wynik
 
@@ -134,4 +134,3 @@ n := 4
 ```
 
 **Wynik**: $$(0, 0, 4), (0, 1, 3), (0, 2, 2), (1, 1, 2)$$
-

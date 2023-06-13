@@ -1,31 +1,28 @@
 # Suma nieparzystych
 
-## Opis
-
 Dla zadanego przedziału podaj sumę wszystkich nieparzystych liczb z tego przedziału.
 
 Źródło: [https://onlinejudge.org/external/107/10783.pdf](https://onlinejudge.org/external/107/10783.pdf)
 
-### Specyfikacja
+## Specyfikacja
 
-#### Dane
+### Dane
 
 * $$a, b$$ - liczby całkowite z przedziału $$[0,100]$$
 
-#### Wynik
+### Wynik
 
 * Suma wszystkich liczb nieparzystych z przedziału $$[a,b]$$ 
 
-### Przykład
+## Przykład
 
-#### Dane
+### Dane
 
 ```
-a := 3
-b := 9
+3 9
 ```
 
-#### Wynik
+### Wynik
 
 ```
 24
@@ -34,5 +31,5 @@ b := 9
 {% hint style="info" %}
 #### Wyjaśnienie
 
-$$3+5+7+9=24$$ 
+$$3+5+7+9=24$$
 {% endhint %}

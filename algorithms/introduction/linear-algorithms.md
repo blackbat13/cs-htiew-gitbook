@@ -2,15 +2,15 @@
 
 ## Wstęp
 
-Czym jest algorytm? Instrukcja, przepis, schemat postępowania... Algorytm opisuje rozwiązanie pewnego problemu. Wyróżniamy różnego rodzaju algorytmy, a zaczniemy od ich najprostszego rodzaju - algorytmów liniowych.
+Czym jest algorytm? Instrukcja, przepis, schemat postępowania... Algorytm opisuje rozwiązanie pewnego problemu. Istnieje wiele rodzajów algorytmów, a my zaczniemy od najprostszego z nich - algorytmów liniowych.
 
 ## Algorytm liniowy
 
-Algorytm liniowy to szeregowa instrukcja, w której podążamy krok po kroku, linijka po linijce, operacja po operacji.
+Algorytm liniowy to sekwencyjna instrukcja, której kroki wykonujemy jeden po drugim, linijka po linijce, operacja po operacji.
 
-Przy konstrukcji  algorytmu pojawia się szereg pytań. Jak bardzo szczegółowy powinien być algorytm? Jakie operacje musimy w nim zawrzeć, a jakie możemy pominąć? Jakie operacje są dostępne? Jakiego sposobu opisu powinniśmy używać? To tylko część z ważnych kwestii, które należy rozważyć. 
+W trakcie konstruowania algorytmu pojawia się szereg pytań. Jak bardzo szczegółowy powinien być algorytm? Jakie operacje musimy w nim zawrzeć, a które możemy pominąć? Jakie operacje są dostępne? W jakiej formie powinniśmy przedstawić nasz algorytm? To tylko część z ważnych kwestii, które należy rozważyć.
 
-Przyjrzyjmy się poniższemu przykładowi.
+Rozważmy poniższy przykład.
 
 ### Przykład 1
 
@@ -25,11 +25,13 @@ Wyobraźmy sobie, że mamy przygotować kanapkę z dżemem. To jest nasz problem
 6. Posmaruj chleb dżemem
 ```
 
-Jak widać, powyższy przykład jest algorytmem przygotowania kanapki z dżemem. Zastanówmy się jednak nad jego poprawnością i dokładnością. Czy wszystkie wymagane operacje są zawarte? Czy może któreś z już obecnych można pominąć? Może powinniśmy także dodać instrukcję odkręcenia słoika? A może także otwarcia lodówki, żeby wyciągnąć dżem i zamknięcia jej potem. A może powinniśmy także rozważyć sytuację, gdy nie ma dżemu i trzeba pójść do sklepu. A może jest niedziela i sklepy są zamknięte. A może,  a może... Takie rozważania możemy snuć w nieskończoność i trzeba gdzieś się zatrzymać.
+Jak widać, powyższy przykład jest algorytmem przygotowania kanapki z dżemem. Zastanówmy się jednak nad jego poprawnością i dokładnością. Czy wszystkie niezbędne operacje zostały uwzględnione? Czy może któreś z nich można pominąć? Czy powinniśmy dodać instrukcję odkręcenia słoika? A może otwarcie lodówki, żeby wyciągnąć dżem, a potem zamknięcie jej? Co jeśli nie ma dżemu i trzeba iść do sklepu? A jeśli jest niedziela i sklepy są zamknięte? A jeśli...
+
+Takie rozważania możemy kontynuować w nieskończoność, ale musimy ustalić pewne granice.
 
 ## Specyfikacja problemu
 
-Przede wszystkim zaczynamy od **specyfikacji**. Specyfikacja określa, jakie dane wejściowe przyjmuje algorytm i co powinno być jego wynikiem. Innymi słowy, jest to formalne określenie problemu. Wróćmy do naszego przykładu.
+Przede wszystkim zaczynamy od **specyfikacji**. Specyfikacja określa, jakie dane wejściowe przyjmuje algorytm i co powinno być jego wynikiem. Innymi słowy, jest to formalne zdefiniowanie problemu. Wróćmy do naszego przykładu.
 
 ### Przykład 2
 
@@ -47,7 +49,7 @@ Zacznijmy od sformalizowania naszego problemu przygotowania kanapki z dżemem za
 
 * Kanapka z dżemem
 
-Teraz możemy przejść do algorytmu. Jak widać, mamy trzy dane wejściowe: kromkę chleba, masło oraz dżem. W takim razie o przygotowanie tych rzeczy nie musimy się martwić. Zazwyczaj w zapisie algorytmu będziemy pomijać wczytywanie danych, co oznacza, że w tym przypadku pomijamy instrukcje opisujące wzięcie chleba, masła i dżemu. Po prostu zakładamy, zgodnie ze specyfikacją, że są one nam z góry dane i dostępne dla naszego algorytmu.
+Teraz możemy przejść do algorytmu. Jak widać, mamy trzy dane wejściowe: kromkę chleba, masło oraz dżem. Nie musimy więc martwić się o przygotowanie tych składników. Zazwyczaj w zapisie algorytmu pomijamy etap wczytywania danych, co oznacza, że w tym przypadku opuszczamy instrukcje opisujące wzięcie chleba, masła i dżemu. Po prostu zakładamy, zgodnie ze specyfikacją, że te elementy są nam już dane i dostępne dla naszego algorytmu.
 
 #### Algorytm
 
@@ -57,4 +59,4 @@ Teraz możemy przejść do algorytmu. Jak widać, mamy trzy dane wejściowe: kro
 3. Posmaruj chleb dżemem
 ```
 
-I w tym przypadku ograniczyliśmy się do pewnego zbioru operacji i do pewnego poziomu szczegółowości. Gdy przejdziemy do bardziej informatycznych algorytmów stanie się bardziej jasne, jakie operacje możemy wykonywać, a jakie nie. 
+W tym przypadku ograniczyliśmy się do pewnego zbioru operacji i do pewnego poziomu szczegółowości. Gdy przejdziemy do bardziej technicznych algorytmów, stanie się jasne, które operacje możemy wykonywać, a które nie.
