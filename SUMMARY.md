@@ -918,6 +918,7 @@
 
 * [Prawa autorskie](other/copyright.md)
 * [Fake news i postprawda](other/fake-news-and-post-truth.md)
+* [Budowa komputera](other/computer-components.md)
 * [Typowe problemy z komputerem](other/common-computer-problems.md)
 * [Zasady tworzenia prezentacji](other/presentation-rules.md)
 * [Programowanie funkcyjne - wprowadzenie](other/functional-programming-introduction.md)
