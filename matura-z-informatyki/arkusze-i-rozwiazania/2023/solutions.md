@@ -47,16 +47,16 @@ b) $$10, 8, 4, 6, 15, 12, 13$$
 #### Python
 
 ```python
-with open("bin.txt") as dane:
-  binarne = dane.read().split()
+with open("bin.txt") as input_file:
+  binary_list = input_file.read().split()
 
-wynik = 0
+result = 0
 
-for bn in binarne:
+for bn in binary_list:
   if bn.count("01") + bn.count("10") <= 1:
-    wynik += 1
+    result += 1
 
-print(wynik)
+print(result)
 ```
 
 ### 2.3
@@ -64,12 +64,12 @@ print(wynik)
 #### Python
 
 ```python
-with open("bin.txt") as dane:
-  binarne = dane.read().split()
+with open("bin.txt") as input_file:
+  binary_list = input_file.read().split()
 
-binarne.sort(key=lambda el: int(el, 2))
+binary_list.sort(key=lambda el: int(el, 2))
 
-print(binarne[-1])
+print(binary_list[-1])
 ```
 
 ### 2.4
@@ -81,12 +81,12 @@ $$(123_{10} \oplus 101101_2) \oplus 2D_{16} = 123_{10}$$
 #### Python
 
 ```python
-with open("bin.txt") as dane:
-  binarne = dane.read().split()
+with open("bin.txt") as input_file:
+  binary_list = input_file.read().split()
 
-for bn in binarne:
-  wynik = str(bin(int(bn, 2) ^ (int(bn, 2) // 2))).lstrip("0b")
-  print(wynik)
+for bn in binary_list:
+  result = str(bin(int(bn, 2) ^ (int(bn, 2) // 2))).lstrip("0b")
+  print(result)
 ```
 
 ## Zadanie 3
