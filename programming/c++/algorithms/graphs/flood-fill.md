@@ -8,12 +8,52 @@
 
 ## Implementacja
 
-TODO
+{% code overflow="wrap" lineNumbers="true" %}
+```cpp
+#include <iostream>
 
-### Link do implementacji
+using namespace std;
 
-TODO
+void floodFill(string image[], int row, int column, char symbol='*') {
+    if (image[row][column] != ' ') {
+        return;
+    }
 
-### Opis implementacji
+    image[row][column] = symbol;
+    int directionsRow[] = {1, -1, 0, 0};
+    int directionsColumn[] = {0, 0, 1, -1};
 
-TODO
+    for (int i = 0; i < 4; i++) {
+        floodFill(image, row + directionsRow[i], column + directionsColumn[i]);
+    }
+}
+
+void printImage(string image[], int height) {
+    for (int i = 0; i < height; i++) {
+        cout << image[i] << endl;
+    }
+}
+
+int main() {
+    string image[] = {
+        "########",
+        "#  #   #",
+        "#  #   #",
+        "#  #   #",
+        "### ####",
+        "#  #   #",
+        "#  #   #",
+        "########"
+    };
+
+    printImage(image, 8);
+    cout << endl;
+
+    floodFill(image, 1, 1);
+
+    printImage(image, 8);
+
+    return 0;
+}
+```
+{% endcode %}
