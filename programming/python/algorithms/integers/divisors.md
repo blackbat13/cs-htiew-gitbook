@@ -55,7 +55,7 @@ from math import sqrt, ceil
 
 
 def divisors(n: int):
-	for i in range(1, ceil(sqrt(n))):
+	for i in range(1, ceil(sqrt(n) + 1)):
 		if n % i == 0:
 			print(i)
 			if i != (n // i):
