@@ -22,7 +22,7 @@ def dfs(graph: List[List[int]], visited: List[bool], node: int):
         return
 
     visited[node] = True
-    print(f'Visited node: {node}')
+    print(node)
 
     for new_node in graph[node]:
         if not visited[new_node]:
@@ -39,7 +39,7 @@ graph = [
 	[0, 1, 3, 5],
 ]
 
-visited = [False for _ in range(len(graph))]
+visited = [False] * len(graph)
 
 dfs(graph, visited, 0)
 ```
