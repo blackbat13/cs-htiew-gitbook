@@ -28,7 +28,7 @@ def bfs(graph: List[List[int]], visited: List[bool], node: int):
             continue
 
         visited[node] = True
-        print(f'Odwiedzony wierzchołek: {node}')
+        print(node)
 
         for new_node in graph[node]:
             if not visited[new_node]:
@@ -45,7 +45,7 @@ graph = [
 	[0, 1, 3, 5],
 ]
 
-visited = [False for _ in range(len(graph))]
+visited = [False] * len(graph)
 
 bfs(graph, visited, 0)
 ```
