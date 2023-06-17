@@ -16,7 +16,7 @@ from pprint import pprint
 moves_list = [(-1, -2), (1, -2), (2, -1), (2, 1), (-2, -1), (-1, 2), (1, 2)]
 
 
-def kinght_tour(n, chessboard, visited_count, row, column):
+def kinght_tour(n: int, chessboard: list, visited_count: int, row: int, column: int) -> tuple:
     chessboard[row][column] = visited_count - 1
     
     if visited_count == n * n:
@@ -36,7 +36,7 @@ def kinght_tour(n, chessboard, visited_count, row, column):
 
 
 n = 5
-chessboard = [[-1 for _ in range(n)] for _ in range(n)]
+chessboard = [[-1] * n for _ in range(n)]
 
 result_value, result_chessboard = kinght_tour(n, chessboard, 1, 0, 0)
 
@@ -45,6 +45,5 @@ if result_value:
     pprint(result_chessboard)
 else:
     print("No result")
-
 ```
 {% endcode %}
