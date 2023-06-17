@@ -41,7 +41,7 @@ def check_new_position(x: int, y: int, positions: list) -> bool:
 
 
 def print_checkboard(n: int, positions: list):
-    board = [[0 for _ in range(n)] for _ in range(n)]
+    board = [[0] * n for _ in range(n)]
     
     for i in range(n):
         board[positions[i]][i] = 1
@@ -50,7 +50,7 @@ def print_checkboard(n: int, positions: list):
     
 
 n = 5
-positions = [0 for _ in range(n)]
+positions = [0] * n
 
 result = find_solution(n, 0, positions)
 
