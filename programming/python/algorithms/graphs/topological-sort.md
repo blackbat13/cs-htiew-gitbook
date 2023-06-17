@@ -53,9 +53,6 @@ result = topological_sort(graph)
 if len(result) < len(graph):
   print("Graph has a cycle")
 else:
-  for el in result:
-    print(el, end=" ")
-
-  print()
+  print(" ".join(map(str, result)))
 ```
 {% endcode %}
