@@ -10,7 +10,7 @@
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-def topological_sort(graph):
+def topological_sort(graph: list) -> list:
   in_ranks = [0] * len(graph)
   removed = [False] * len(graph)
   result = []
