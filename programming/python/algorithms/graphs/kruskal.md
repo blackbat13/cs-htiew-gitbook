@@ -53,13 +53,13 @@ class Edge:
     self.node_to = node_to
     self.distance = distance
 
-  def __lt__(self, other):
+  def __lt__(self, other) -> bool:
     return self.distance < other.distance
 
-  def __str__(self):
+  def __str__(self) -> str:
     return f"{self.node_from} <-({self.distance})-> {self.node_to}"
 
-  def __repr__(self):
+  def __repr__(self) -> str:
     return self.__str__()
 
 
