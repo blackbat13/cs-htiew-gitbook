@@ -26,14 +26,14 @@ def dfs(graph: List[List[int]], visited: List[bool], node: int):
 
 def count_connected_components(graph: List[List[int]]) -> int:
     result = 0
-    visited = [False for _ in range(len(graph))]
+    visited = [False] * len(graph)
     
     for i in range(len(graph)):
         if not visited[i]:
             result += 1
             dfs(graph, visited, i)
 
-    return result;
+    return result
     
 
 graph = [
@@ -43,7 +43,7 @@ graph = [
 	[2, 1, 6, 4, 5],
 	[3, 5],
 	[4, 3, 6],
-	[0, 1, 3, 5],
+	[0, 1, 3, 5]
 ]
 
 result = count_connected_components(graph)
