@@ -19,7 +19,7 @@ from typing import List
 from pprint import pprint
 
 
-def floyd_warshall(graph: List[List[int]]) -> None:
+def floyd_warshall(graph: List[List[int]]):
     for k in range(len(graph)):
         for i in range(len(graph)):
             for j in range(len(graph)):
