@@ -16,7 +16,7 @@ from math import ceil, sqrt
 def sieve(n: int) -> list:
     primes = [False, False] + [True] * (n - 1)
 
-    for i in range(2, ceil(sqrt(n)) + 1):
+    for i in range(2, ceil(sqrt(n))):
         if not primes[i]:
             continue
 
