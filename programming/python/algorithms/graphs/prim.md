@@ -15,22 +15,22 @@ import heapq
 
 class Edge:
 
-  def __init__(self, node_from, node_to, distance):
+  def __init__(self, node_from: int, node_to: int, distance: int):
     self.node_from = node_from
     self.node_to = node_to
     self.distance = distance
 
-  def __lt__(self, other):
+  def __lt__(self, other) -> bool:
     return self.distance < other.distance
 
-  def __str__(self):
+  def __str__(self) -> str:
     return f"{self.node_from} <-({self.distance})-> {self.node_to}"
 
-  def __repr__(self):
+  def __repr__(self) -> str:
     return self.__str__()
 
 
-def prim(graph, node):
+def prim(graph: list, node: int) -> list:
   visited = [False] * len(graph)
   visited[node] = True
 
@@ -77,6 +77,7 @@ if __name__ == "__main__":
             Edge(6, 5, 5)]]
 
   min_spanning_tree = prim(graph, 0)
+
   print(min_spanning_tree)
 ```
 {% endcode %}
