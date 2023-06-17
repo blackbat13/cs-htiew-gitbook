@@ -10,13 +10,13 @@
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-def sieve(n: int) -> list:
-    primes = [False, False]
-    
-    for i in range(2, n + 1):
-        primes.append(True)
+from math import ceil, sqrt
 
-    for i in range(2, n):
+
+def sieve(n: int) -> list:
+    primes = [False, False] + [True] * (n - 1)
+
+    for i in range(2, ceil(sqrt(n)) + 1):
         if not primes[i]:
             continue
 
@@ -26,8 +26,8 @@ def sieve(n: int) -> list:
     return primes
 
 
-def print_prime_numbers(primes: list) -> None:
-    for i in range(0, len(primes)):
+def print_prime_numbers(primes: list):
+    for i in range(len(primes)):
         if primes[i]:
             print(i)
 
