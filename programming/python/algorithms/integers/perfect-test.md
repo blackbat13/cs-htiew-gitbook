@@ -10,14 +10,20 @@
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-def is_perfect(n: int) -> bool:
-    sum = 0
-    
-    for i in range(1, n):
-        if n % i == 0:
-            sum += i
+from math import ceil, sqrt
 
-    return sum == n
+
+def is_perfect(n: int) -> bool:
+    digits_sum = 1
+    
+    for i in range(2, ceil(sqrt(n))):
+        if n % i == 0:
+            digits_sum += i
+            
+            if n // i != i:
+                digits_sum += n // i
+
+    return digits_sum == n
 
 
 n = 6
