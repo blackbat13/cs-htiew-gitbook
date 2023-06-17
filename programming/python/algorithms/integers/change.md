@@ -40,14 +40,12 @@ print(f"Amount {amount} can be given out using {result} coins")
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-def change_dynamic(amount: int, coins: []) -> None:
-    partial_results = []
-    used_coins = []
-    infinity = 10000000
+import math
 
-    for i in range(0, amount + 1):
-        partial_results.append(infinity)
-        used_coins.append(infinity)
+
+def change_dynamic(amount: int, coins: list):
+    partial_results = [math.inf] * (amount + 1)
+    used_coins = [math.inf] * (amount + 1)
 
     partial_results[0] = 0
 
@@ -57,7 +55,7 @@ def change_dynamic(amount: int, coins: []) -> None:
                 partial_results[i + coin_value] = partial_results[i] + 1
                 used_coins[i + coin_value] = coin_value
 
-    if partial_results[amount] == infinity:
+    if partial_results[amount] == math.inf:
         print("Cannot give out specified value using given coins")
         return
 
