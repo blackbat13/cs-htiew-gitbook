@@ -20,7 +20,7 @@ from typing import List, Tuple
 
 def dijkstra(graph: List[List[Tuple[int, int]]], node: int) -> List[int]:
     queue: List[(int, int, int)] = []
-    distances = [math.inf for _ in range(len(graph))]
+    distances = [math.inf] * len(graph)
         
     distances[node] = 0
 
@@ -28,9 +28,8 @@ def dijkstra(graph: List[List[Tuple[int, int]]], node: int) -> List[int]:
         queue.append((node, next_node, distance))
 
     while len(queue) > 0:
-        node = queue[0][1]
-        from_node = queue[0][0]
-        new_distance = distances[from_node] + queue[0][2]
+        from_node, node, new_distance = queue[0]
+        new_distance += distances[from_node]
         queue.pop(0)
         
         if new_distance < distances[node]:
