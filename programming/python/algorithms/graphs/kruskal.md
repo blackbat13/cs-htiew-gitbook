@@ -24,7 +24,7 @@ class DisjointUnion:
         for i in range(0, number_of_nodes):
             self._subsets.append(self.Node(i, 0))
 
-    def union(self, el1: int, el2: int) -> None:
+    def union(self, el1: int, el2: int):
         x_root = self.find(el1)
         y_root = self.find(el2)
 
@@ -39,15 +39,16 @@ class DisjointUnion:
     def is_in_union(self, el1: int, el2: int) -> bool:
         return self.find(el1) == self.find(el2)
 
-    def find(self, node_number: int):
+    def find(self, node_number: int) -> int:
         if self._subsets[node_number].parent != node_number:
             self._subsets[node_number].parent = self.find(self._subsets[node_number].parent)
 
         return self._subsets[node_number].parent
 
+
 class Edge:
 
-  def __init__(self, node_from, node_to, distance):
+  def __init__(self, node_from: int, node_to: int, distance: int):
     self.node_from = node_from
     self.node_to = node_to
     self.distance = distance
@@ -61,7 +62,8 @@ class Edge:
   def __repr__(self):
     return self.__str__()
 
-def kruskal(graph):
+
+def kruskal(graph: list) -> list:
   edges = []
   connected_nodes = DisjointUnion(len(graph))
 
