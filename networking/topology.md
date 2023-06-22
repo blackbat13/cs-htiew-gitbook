@@ -20,6 +20,8 @@ W topologii pierścienia, każdy komputer jest połączony z dwoma innymi komput
 
 ## Topologia gwiazdy (Star)
 
+![Topologia gwiazdy](../.gitbook/assets/star_topology.png)
+
 W tej topologii wszystkie komputery są połączone z centralnym węzłem, którym może być komputer, switch lub hub. Gwiazda jest najpopularniejszą topologią, ponieważ awaria jednego węzła nie wpływa na całą sieć, a dodanie nowego węzła jest stosunkowo proste. Jednak koszty są wyższe, a cała sieć zależy od działania centralnego węzła.
 
 ## Topologia siatki (Mesh)
