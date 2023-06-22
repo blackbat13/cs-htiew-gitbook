@@ -11,4 +11,3 @@ Oprócz bezpiecznej powłoki zdalnej, SSH oferuje również inne funkcje, takie 
 {% hint style="info" %}
 Podczas korzystania z SSH ważne jest pamiętanie o bezpiecznym zarządzaniu kluczami SSH. Klucze te są używane do uwierzytelniania na serwerze SSH i powinny być odpowiednio chronione przed dostępem osób niepowołanych.
 {% endhint %}
-
