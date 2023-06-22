@@ -32,6 +32,8 @@ W topologii siatki, każdy komputer jest połączony z każdym innym komputerem.
 
 ## Topologia drzewa (Tree)
 
+![Topologia drzewa](../.gitbook/assets/tree_topology.png)
+
 Jest to hybrydowy typ topologii, który łączy kilka topologii gwiazdy w hierarchicznym układzie. Korzeń drzewa to główny węzeł, a pozostałe węzły są połączone jak w topologii gwiazdy.
 
 ## Topologia hybrydowa (Hybrid)
