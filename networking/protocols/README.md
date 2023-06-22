@@ -33,3 +33,7 @@ IMAP i POP3 to dwa protokoły używane do odbierania wiadomości e-mail na kompu
 ## DHCP (Dynamic Host Configuration Protocol)
 
 DHCP jest protokołem, który **automatycznie** przydziela adresy **IP** urządzeniom w sieci. Dzięki DHCP, administratorzy sieci nie muszą ręcznie konfigurować adresów IP dla każdego urządzenia w sieci.
+
+## SSH (Secure Shell)
+
+SSH to protokół sieciowy wykorzystywany do zdalnej obsługi systemów operacyjnych przez sieć. Umożliwia bezpieczne logowanie do zdalnych systemów, wykonywanie poleceń, przesyłanie plików oraz przekierowywanie portów.
