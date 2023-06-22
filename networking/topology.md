@@ -14,6 +14,8 @@ W tej topologii wszystkie komputery są połączone za pomocą jednego długiego
 
 ## Topologia pierścienia (Ring)
 
+![Topologia pierścienia](../.gitbook/assets/ring_topology.png)
+
 W topologii pierścienia, każdy komputer jest połączony z dwoma innymi komputerami, tworząc krąg. Informacje przesyłane są w jednym kierunku od jednego komputera do kolejnego aż do miejsca przeznaczenia. Topologia pierścienia jest łatwa w zarządzaniu, ale awaria jednego węzła może przerwać całą sieć.
 
 ## Topologia gwiazdy (Star)
