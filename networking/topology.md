@@ -26,6 +26,8 @@ W tej topologii wszystkie komputery są połączone z centralnym węzłem, któr
 
 ## Topologia siatki (Mesh)
 
+![Topologia siatki](../.gitbook/assets/mesh_topology.png)
+
 W topologii siatki, każdy komputer jest połączony z każdym innym komputerem. Oferuje ona doskonałą odporność na awarie i optymalizację przepływu danych, ale jest kosztowna i trudna do zarządzania z powodu dużej liczby połączeń.
 
 ## Topologia drzewa (Tree)
