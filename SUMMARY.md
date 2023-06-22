@@ -826,6 +826,7 @@
 * [Model OSI](networking/osi.md)
 * [Protokoły](networking/protocols/README.md)
   * [Protokół IP](networking/protocols/ip.md)
+  * [DHCP](networking/protocols/dhcp.md)
   * [TCP i UDP](networking/protocols/tcp-udp.md)
   * [HTTP i HTTPS](networking/protocols/http-https.md)
   * [Protokoły komunikacji e-mail](networking/protocols/smtp-pop3-imap.md)
