@@ -930,6 +930,7 @@
   * [Binwalk](ethical-hacking/tools/binwalk.md)
   * [SQLmap](ethical-hacking/tools/sqlmap.md)
   * [Steghide](ethical-hacking/tools/steghide.md)
+  * [Stegosuite](rthical-hacking/tools/stegosuite.md)
 * [CTF](ethical-hacking/ctf/README.md)
 
 ## Inne tematy
