@@ -929,6 +929,7 @@
   * [John the Ripper](ethical-hacking/tools/john-the-ripper.md)
   * [Binwalk](ethical-hacking/tools/binwalk.md)
   * [SQLmap](ethical-hacking/tools/sqlmap.md)
+  * [Steghide](ethical-hacking/tools/steghide.md)
 * [CTF](ethical-hacking/ctf/README.md)
 
 ## Inne tematy
