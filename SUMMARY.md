@@ -926,7 +926,8 @@
   * [Nmap](ethical-hacking/tools/nmap.md)
   * [Metasploit](ethical-hacking/tools/metasploit.md)
   * [Aircrack-ng](ethical-hacking/tools/aircrack-ng.md)
-  * [John the Ripper](ethical-hackinh/tools/john-the-ripper.md)
+  * [John the Ripper](ethical-hacking/tools/john-the-ripper.md)
+  * [Binwalk](ethical-hacking/tools/binwalk.md)
 * [CTF](ethical-hacking/ctf/README.md)
 
 ## Inne tematy
