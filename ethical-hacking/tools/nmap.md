@@ -51,3 +51,9 @@ Standardowe skanowanie Nmapa może być łatwo wykryte przez systemy IDS/IPS. Sk
 ```bash
 nmap -sS 192.168.1.1
 ```
+
+## Ściąga
+
+{% embed url="https://cdn.comparitech.com/wp-content/uploads/2019/06/Nmap-Cheat-Sheet.pdf" %}
+Ściąga
+{% endembed %}
