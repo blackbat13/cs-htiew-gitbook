@@ -924,6 +924,7 @@
 * [Wstęp](ethical-hacking/README.md)
 * [Narzędzia](ethical-hacking/tools/README.md)
   * [Nmap](ethical-hacking/tools/nmap.md)
+  * [Netcat](ethical-hacking/tools/netcat.md)
   * [Metasploit](ethical-hacking/tools/metasploit.md)
   * [Aircrack-ng](ethical-hacking/tools/aircrack-ng.md)
   * [John the Ripper](ethical-hacking/tools/john-the-ripper.md)
