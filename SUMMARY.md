@@ -927,6 +927,7 @@
   * [Metasploit](ethical-hacking/tools/metasploit.md)
   * [Aircrack-ng](ethical-hacking/tools/aircrack-ng.md)
   * [John the Ripper](ethical-hacking/tools/john-the-ripper.md)
+  * [Hashcat](ethical-hacking/tools/hashcat.md)
   * [Binwalk](ethical-hacking/tools/binwalk.md)
   * [SQLmap](ethical-hacking/tools/sqlmap.md)
   * [Steghide](ethical-hacking/tools/steghide.md)
