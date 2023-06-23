@@ -25,3 +25,9 @@ Jeśli SQLmap znajduje podatność, może automatycznie ją wykorzystać. Poniż
 ```bash
 sqlmap -u "http://example.com/index.php?id=1" --dump
 ```
+
+## Ściąga
+
+{% embed url="https://cdn.comparitech.com/wp-content/uploads/2021/07/sqlmap-Cheat-Sheet.pdf" %}
+Ściąga
+{% endembed %}
