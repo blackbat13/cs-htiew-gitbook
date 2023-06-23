@@ -937,6 +937,7 @@
   * [Stegosuite](ethical-hacking/tools/stegosuite.md)
   * [Volatility](ethical-hacking/tools/volatility.md)
   * [Snort](ethical-hacking/tools/snort.md)
+  * [Nikto](ethical-hacking/tools/nikto.md)
 * [CTF](ethical-hacking/ctf/README.md)
 
 ## Inne tematy
