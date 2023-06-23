@@ -4,6 +4,10 @@ Volatility to otwartoźródłowe narzędzie do analizy pamięci w systemach oper
 
 Volatility analizuje obrazy pamięci RAM, umożliwiając badaczom odtworzenie działania systemu w czasie bliskim incydentowi. Narzędzie to jest w stanie wydobyć wiele typów informacji, w tym listę procesów, otwartych gniazd sieciowych, załadowanych modułów jądra, plików cache, zawartości bufora i wiele innych.
 
+{% embed url="https://www.volatilityfoundation.org" %}
+Volatility
+{% endembed %}
+
 ## Przykłady użycia
 
 ### Wyświetlenie listy procesów

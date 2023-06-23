@@ -2,6 +2,10 @@
 
 Nmap to wolne oprogramowanie używane do analizy bezpieczeństwa sieci i zarządzania sieciami. Narzędzie to jest zdolne do odkrywania hostów i usług w sieci, tworzenia map sieci, skanowania portów oraz sprawdzania dostępnych usług i ich wersji. Nmap jest przydatny zarówno dla administratorów sieci jak i osób testujących bezpieczeństwo sieci.
 
+{% embed url="https://nmap.org" %}
+Nmap
+{% endembed %}
+
 ## Podstawowe funkcje i zastosowania
 
 Poniżej przedstawimy kilka różnych funkcji i zastosowań narzędzia Nmap.

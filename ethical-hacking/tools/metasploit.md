@@ -6,6 +6,10 @@ Metasploit to jeden z najpopularniejszych frameworków do testowania penetracyjn
 Korzystanie z Metasploit bez odpowiednich uprawnień jest nielegalne i nieetyczne. Pamiętaj, że narzędzia te są stworzone w celu poprawy bezpieczeństwa, a nie jego łamania.
 {% endhint %}
 
+{% embed url="https://www.metasploit.com" %}
+Metasploit
+{% endembed %}
+
 ## Podstawowe funkcje i zastosowania
 
 Poniżej przedstawimy kilka różnych funkcji i zastosowań narzędzia Metasploit.

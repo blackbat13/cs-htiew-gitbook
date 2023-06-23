@@ -2,6 +2,10 @@
 
 John the Ripper, zwany również **JtR**, to jedno z najpopularniejszych narzędzi do łamania haseł. Używa różnych technik do łamania haseł, w tym ataków słownikowych (sprawdzanie haseł z listy), ataków brute force (sprawdzanie wszystkich możliwych kombinacji znaków) oraz ataków hybrydowych (mieszanina ataków słownikowych i brute force). Obsługuje wiele formatów haseł i jest dostępny dla wielu systemów operacyjnych, w tym Linux, Windows i MacOS. Narzędzie to jest często używane do odzyskiwania utraconych haseł i testowania ich siły.
 
+{% embed url="https://www.openwall.com/john/" %}
+John the Ripper
+{% endembed %}
+
 ## Przykłady użycia
 
 ### Atak słownikowy

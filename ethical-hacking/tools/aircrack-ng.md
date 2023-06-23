@@ -6,6 +6,10 @@ Aircrack-ng to kompletne narzędzie do oceny bezpieczeństwa sieci Wi-Fi. Zawier
 Używanie Aircrack-ng, podobnie jak każdego innego narzędzia do testowania penetracji, wymaga uprzedniego uzyskania zgody od właściciela sieci. Bez odpowiednich uprawnień, korzystanie z Aircrack-ng jest nielegalne.
 {% endhint %}
 
+{% embed url="https://www.aircrack-ng.org" %}
+Aircrack-ng
+{% endembed %}
+
 ## Podstawowe funkcje i zastosowania
 
 Poniżej przedstawimy kilka różnych funkcji i zastosowań Aircrack-ng.
