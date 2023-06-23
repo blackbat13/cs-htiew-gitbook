@@ -10,10 +10,6 @@ Korzystanie z Metasploit bez odpowiednich uprawnień jest nielegalne i nieetyczn
 Metasploit
 {% endembed %}
 
-{% embed url="https://cdn.comparitech.com/wp-content/uploads/2019/06/Metasploit-Cheat-Sheet.pdf" %}
-Ściąga
-{% endembed %}
-
 ## Podstawowe funkcje i zastosowania
 
 Poniżej przedstawimy kilka różnych funkcji i zastosowań narzędzia Metasploit.
@@ -55,3 +51,9 @@ msf > use auxiliary/scanner/smb/smb_login
 msf auxiliary(scanner/smb/smb_login) > set RHOSTS 192.168.1.0/24
 msf auxiliary(scanner/smb/smb_login) > run
 ```
+
+## Ściąga
+
+{% embed url="https://cdn.comparitech.com/wp-content/uploads/2019/06/Metasploit-Cheat-Sheet.pdf" %}
+Ściąga
+{% endembed %}
