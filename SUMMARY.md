@@ -931,6 +931,7 @@
   * [SQLmap](ethical-hacking/tools/sqlmap.md)
   * [Steghide](ethical-hacking/tools/steghide.md)
   * [Stegosuite](ethical-hacking/tools/stegosuite.md)
+  * [Volatility](ethical-hacking/tools/volatility.md)
 * [CTF](ethical-hacking/ctf/README.md)
 
 ## Inne tematy
