@@ -10,6 +10,10 @@ Korzystanie z Metasploit bez odpowiednich uprawnień jest nielegalne i nieetyczn
 Metasploit
 {% endembed %}
 
+{% embed url="https://cdn.comparitech.com/wp-content/uploads/2019/06/Metasploit-Cheat-Sheet.pdf" %}
+Ściąga
+{% endembed %}
+
 ## Podstawowe funkcje i zastosowania
 
 Poniżej przedstawimy kilka różnych funkcji i zastosowań narzędzia Metasploit.
