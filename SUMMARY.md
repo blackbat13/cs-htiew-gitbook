@@ -818,25 +818,6 @@
 * [Wprowadzenie](web-design/README.md)
 * [CSS](web-design/css/README.md)
 
-## Sieci komputerowe
-
-* [Wstęp](networking/README.md)
-* [Słownik pojęć](networking/terms.md)
-* [Topologia sieci](networking/topology.md)
-* [Model OSI](networking/osi.md)
-* [Protokoły](networking/protocols/README.md)
-  * [Protokół IP](networking/protocols/ip.md)
-  * [DHCP](networking/protocols/dhcp.md)
-  * [TCP i UDP](networking/protocols/tcp-udp.md)
-  * [HTTP i HTTPS](networking/protocols/http-https.md)
-  * [DNS](networking/protocols/dns.md)
-  * [Protokoły komunikacji e-mail](networking/protocols/smtp-pop3-imap.md)
-  * [FTP](networking/protocols/ftp.md)
-  * [SSH](networking/protocols/ssh.md)
-* [Wireshark](networking/wireshark/README.md)
-  * [Zapytania HTTP](networking/wireshark/http.md)
-  * [Połączenia HTTPS](networking/wireshark/https.md)
-
 ## Bazy danych
 
 * [Wstęp](databases/README.md)
@@ -892,7 +873,6 @@
       * [Rozwiązanie 5](databases/sql/exercises/group-by/solution-5.md)
       * [Rozwiązanie 6](databases/sql/exercises/group-by/solution-6.md)
 
-
 ## Linux
 
 * [Wprowadzenie do systemu Linux](linux/introduction.md)
@@ -920,9 +900,29 @@
   * [Pliki](linux/perl/files.md)
   * [Fork](linux/perl/fork.md)
 
+## Sieci komputerowe
+
+* [Wstęp](networking/README.md)
+* [Słownik pojęć](networking/terms.md)
+* [Topologia sieci](networking/topology.md)
+* [Model OSI](networking/osi.md)
+* [Protokoły](networking/protocols/README.md)
+  * [Protokół IP](networking/protocols/ip.md)
+  * [DHCP](networking/protocols/dhcp.md)
+  * [TCP i UDP](networking/protocols/tcp-udp.md)
+  * [HTTP i HTTPS](networking/protocols/http-https.md)
+  * [DNS](networking/protocols/dns.md)
+  * [Protokoły komunikacji e-mail](networking/protocols/smtp-pop3-imap.md)
+  * [FTP](networking/protocols/ftp.md)
+  * [SSH](networking/protocols/ssh.md)
+* [Wireshark](networking/wireshark/README.md)
+  * [Zapytania HTTP](networking/wireshark/http.md)
+  * [Połączenia HTTPS](networking/wireshark/https.md)
+
 ## Etyczne hakowanie
 
 * [Wstęp](ethical-hacking/README.md)
+* [Narzędzia](ethical-hacking/tools/README.md)
 
 ## Inne tematy
 
