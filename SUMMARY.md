@@ -925,6 +925,7 @@
 * [Narzędzia](ethical-hacking/tools/README.md)
   * [Nmap](ethical-hacking/tools/nmap.md)
   * [Metasploit](ethical-hacking/tools/metasploit.md)
+  * [Aircrack-ng](ethical-hacking/tools/aircrack-ng.md)
 
 ## Inne tematy
 
