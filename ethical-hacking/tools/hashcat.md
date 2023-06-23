@@ -9,6 +9,10 @@ Hashcat dokonuje tzw. ataku siłowego lub ataku słownikowego na hasła, próbuj
 - **Atak maskowy**: próbuje haseł na podstawie określonego wzorca.
 - **Atak hybrydowy**: kombinacja powyższych technik.
 
+{% embed url="https://hashcat.net/hashcat/" %}
+Hashcat
+{% endembed %}
+
 ## Przykłady użycia
 
 ### Atak słownikowy
