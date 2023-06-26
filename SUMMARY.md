@@ -51,6 +51,7 @@
   * [Zmienne](algorithms/introduction/variables.md)
   * [Funkcje](algorithms/introduction/functions.md)
   * [Złożoność](algorithms/introduction/complexity.md)
+  * [Ćwiczenia](algorithms/introduction/exercises.md)
 * [Wyszukiwanie](algorithms/searching/README.md)
   * [Wyszukiwanie liniowe](algorithms/searching/linear-search.md)
   * [Wyszukiwanie binarne](algorithms/searching/binary-search.md)
