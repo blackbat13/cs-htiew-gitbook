@@ -778,6 +778,7 @@
   * [Typy danych](databases/introduction/datatypes.md)
   * [Relacje](databases/introduction/relations.md)
 * [SQL](databases/sql/README.md)
+  * [JOIN](databases/sql/join.md)
   * [Ćwiczenia](databases/sql/exercises/README.md)
     * [SELECT](databases/sql/exercises/select/README.md)
       * [Rozwiązanie 1](databases/sql/exercises/select/solution-1.md)
