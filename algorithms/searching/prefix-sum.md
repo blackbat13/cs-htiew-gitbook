@@ -1,25 +1,23 @@
 # Sumy prefiksowe
 
-## Opis problemu
+Czasami bywa tak, że musimy policzyć **sumę pewnego spójnego fragmentu tablicy**, a nawet kilku. Jak to zrobić w sposób efektywny? Jeżeli **zawartość tablicy nie będzie ulegała zmianom**, to z pomocą przyjdą nam **sumy prefiksowe**.
 
-Czasami bywa tak, że musimy policzyć **sumę pewnego spójnego fragmentu tablicy**, a nawet kilku. Jak to zrobić w sposób efektywny? Jeżeli z**awartość tablicy nie będzie ulegała zmianom**, to z pomocą przyjdą nam **sumy prefiksowe**.
+## Specyfikacja
 
-### Specyfikacja
-
-#### Dane
+### Dane
 
 * $$n$$ — liczba naturalna, liczba elementów tablicy.
 * $$A[1..n]$$ — $$n-elementowa$$ tablica liczb całkowitych, indeksowana od jedynki.
 * $$m$$ — liczba naturalna, liczba zapytań.
 * $$P[1..m][1..2]$$ - dwuwymiarowa tablica liczb naturalnych z zakresu $$[1..n]$$, zapytań o sumy przedziałów, gdzie $$P[i][1]$$ to początek $$i$$-tego przedziału, a $$P[i][2]$$ to jego koniec.
 
-#### Wynik
+### Wynik
 
 * $$m$$ liczb naturalnych, dla każdego zapytania $$i$$ suma wartości pod indeksami od $$P[i][1]$$ do $$P[i][2]$$, tzn. $$A[P[i][1]] + A[P[i][1] + 1] + A[P[i][1] + 2] + ... + A[P[i][2]]$$.
 
-### Przykład
+## Przykład
 
-#### Dane
+### Dane
 
 ```
 n := 10
@@ -28,7 +26,7 @@ m := 3
 P[1..3][1..2] := [[3, 5], [6, 7], [1, 1]]
 ```
 
-#### Wynik
+### Wynik
 
 ```
 9
@@ -78,6 +76,10 @@ flowchart TD
 
 ## Rozwiązanie optymalne
 
+Innym sposobem jest przygotowanie sobie tablicy pomocniczej, która posłuży nam do szybkiego obliczania sumy zadanego przedziału. Pytanie brzmi, jak taka tablica powinna wyglądać? Najpierw przyjmijmy prostszą wersję problemu: będziemy podawać sumy jedynie dla przedziałów, które zaczynają się od początku tablicy. Przy takim założeniu, możemy łatwo przygotować tablicę pomocniczą. Wystarczy, że będziemy sumować kolejne elementy od lewej do prawej. W ten sposób, na i-tej pozycji naszej pomocniczej tablicy będzie znajdowała się suma elementów od pierwszego do i-tego.
+
+Czy możemy jednak skorzystać z takiej tablicy, by obliczyć sumę dowolnego przedziału? Okazuje się, że tak. To jednak pozostawmy jako ćwiczenie.
+
 ### Pseudokod
 
 ```
@@ -108,3 +110,17 @@ flowchart TD
     K5i --> K5
     K5 -- FAŁSZ ----> STOP([STOP])
 ```
+
+## Implementacja
+
+### C++
+
+{% content-ref url="../../programming/c++/algorithms/searching/prefix-sum.md" %}
+[prefix-sum.md](../../programming/c++/algorithms/searching/prefix-sum.md)
+{% endcontent-ref %}
+
+### Python
+
+{% content-ref url="../../programming/python/algorithms/searching/prefix-sum.md" %}
+[prefix-sum.md](../../programming/python/algorithms/searching/prefix-sum.md)
+{% endcontent-ref %}
