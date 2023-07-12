@@ -1,28 +1,26 @@
 # Suma dwóch liczb
 
-## Opis problemu
-
 Mamy pewien posortowany zbiór różnych liczb. W tym zbiorze mamy odnaleźć dwie liczby, które po dodaniu do siebie dadzą pożądaną sumę. Oczywiście, takie liczby wcale nie muszą w tym zbiorze się znajdować.
 
 Problem może wydawać się dość abstrakcyjny i słabo związany z rzeczywistością. Niemniej jest to świetny problem do zaprezentowania, jak pomocne czasem jest pracowanie z danymi posortowanymi i jak duży wpływ może mieć na złożoność obliczeniową rozwiązania.
 
 Zacznijmy od formalnej specyfikacji problemu.
 
-### Specyfikacja
+## Specyfikacja
 
-#### Dane
+### Dane
 
 * $$n$$ - liczba naturalna, liczebność zbioru
 * $$A[1..n]$$ - $$n-elementowa$$ tablica różnych liczb całkowitych, posortowana rosnąco, indeksowana od jedynki
 * $$k$$ - liczba naturalna, szukana suma
 
-#### Wynik
+### Wynik
 
 * $$a, b$$ - dwie różne wartości ze zbioru $$A$$ takie, że ich suma wynosi $$k$$ ($$a+b=k$$), lub $$-1$$, jeżeli takich liczb nie ma w zbiorze (jeżeli takich par jest wiele, to dowolna z nich)
 
-### Przykład
+## Przykład
 
-#### Dane
+### Dane
 
 ```
 n := 10
@@ -34,14 +32,9 @@ k := 18
 
 ## Rozwiązanie naiwne
 
-Zacznijmy od pierwszego rozwiązania, jakie nam przychodzi do głowy.
-Naszym celem jest znalezienie **pary** liczb, które dają pożądaną sumę.
-W takim razie **sprawdźmy wszystkie pary** i zobaczmy, czy znajdziemy to czego szukamy.
+Zacznijmy od pierwszego rozwiązania, jakie nam przychodzi do głowy. Naszym celem jest znalezienie **pary** liczb, które dają pożądaną sumę. W takim razie **sprawdźmy wszystkie pary** i zobaczmy, czy znajdziemy to czego szukamy.
 
-Przechodzimy dwiema zagnieżdżonymi pętlami przez tablicę.
-Zewnętrzna pętla będzie wskazywać nam indeks pierwszego elementu z pary, a wewnętrzna pętla będzie wskazywać drugiego elementu z pary.
-W celu uniknięcia powtórzeń warto zadbać o odpowiednią konstrukcję wewnętrznej pętli.
-Zasada jest bardzo prosta: wewnętrzna pętla zaczyna poszukiwania zawsze od **kolejnego** elementu względem zewnętrznej pętli.
+Przechodzimy dwiema zagnieżdżonymi pętlami przez tablicę. Zewnętrzna pętla będzie wskazywać nam indeks pierwszego elementu z pary, a wewnętrzna pętla będzie wskazywać drugiego elementu z pary. W celu uniknięcia powtórzeń warto zadbać o odpowiednią konstrukcję wewnętrznej pętli. Zasada jest bardzo prosta: wewnętrzna pętla zaczyna poszukiwania zawsze od **kolejnego** elementu względem zewnętrznej pętli.
 
 Spróbujmy przelać nasze rozumowania na pseudokod.
 
@@ -81,17 +74,12 @@ $$O(n^2)$$ - kwadratowa
 
 ## Rozwiązanie optymalne
 
-W poprzednim rozwiązaniu całkowicie pominęliśmy fakt, że nasza tablica jest posortowana.
-Zastanówmy się więc, jak możemy skorzystać z tego, że liczby są ułożone od najmniejszej do największej.
+W poprzednim rozwiązaniu całkowicie pominęliśmy fakt, że nasza tablica jest posortowana. Zastanówmy się więc, jak możemy skorzystać z tego, że liczby są ułożone od najmniejszej do największej.
 
-Spróbujmy do tego podejść w następujący sposób.
-Weźmy pierwszy i ostatni element z tablicy.
-Wiemy, że są to odpowiednio najmniejszy i największy element w tablicy.
-Obliczmy ich sumę. Co możemy stwierdzić na jej podstawie?
-Porównajmy ją z poszukiwaną wartością. Mamy trzy opcje:
+Spróbujmy do tego podejść w następujący sposób. Weźmy pierwszy i ostatni element z tablicy. Wiemy, że są to odpowiednio najmniejszy i największy element w tablicy. Obliczmy ich sumę. Co możemy stwierdzić na jej podstawie? Porównajmy ją z poszukiwaną wartością. Mamy trzy opcje:
 
-- suma jest równa poszukiwanej wartości: klepiemy się po plecach i zwracamy wynik, praca zakończona
-- suma jest mniejsza od poszukiwanej wartości: musimy szukać większej sumy, w tym celu bierzemy kolejny element z lewej strony tablicy (czyli większy)
+- suma jest równa poszukiwanej wartości: klepiemy się po plecach i zwracamy wynik, praca zakończona,
+- suma jest mniejsza od poszukiwanej wartości: musimy szukać większej sumy, w tym celu bierzemy kolejny element z lewej strony tablicy (czyli większy),
 - suma jest większa od poszukiwanej wartości: musimy szukać mniejszej sumy, w tym celu bierzemy kolejny element z prawej strony tablicy (czyli mniejszy).
 
 I tak postępujemy w pętli, aż znajdziemy (albo i nie) poszukiwaną sumę.
