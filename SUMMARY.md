@@ -272,6 +272,7 @@
       * [Znajdowanie lidera w zbiorze](programming/c++/algorithms/searching/majority.md)
       * [Najdłuższy spójny podciąg rosnący](programming/c++/algorithms/searching/longest-growing-substring.md)
       * [Suma dwóch liczb](programming/c++/algorithms/searching/sum-of-two.md)
+      * [Sumy prefiksowe](programming/c++/algorithms/searching/prefix-sum.md)
     * [Przeszukiwanie z powrotami](programming/c++/algorithms/backtracking/README.md)
       * [Problem n królowych](programming/c++/algorithms/backtracking/n-queens.md)
       * [Problem skoczka](programming/c++/algorithms/backtracking/knights-tour.md)
