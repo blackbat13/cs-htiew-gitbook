@@ -429,6 +429,7 @@
       * [Znajdowanie lidera w zbiorze](programming/python/algorithms/searching/majority.md)
       * [Najdłuższy spójny podciąg rosnący](programming/python/algorithms/searching/longest-growing-substring.md)
       * [Suma dwóch liczb](programming/python/algorithms/searching/sum-of-two.md)
+      * [Sumy prefiksowe](programming/python/algorithms/searching/prefix-sum.md)
     * [Przeszukiwanie z powrotami](programming/python/algorithms/backtracking/README.md)
       * [Problem n królowych](programming/python/algorithms/backtracking/n-queens.md)
       * [Problem skoczka](programming/python/algorithms/backtracking/knights-tour.md)
