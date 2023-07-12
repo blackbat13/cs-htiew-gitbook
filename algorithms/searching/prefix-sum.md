@@ -111,7 +111,7 @@ flowchart TD
     K5 -- FAŁSZ ----> STOP([STOP])
 ```
 
-<!-- ## Implementacja
+## Implementacja
 
 ### C++
 
@@ -123,4 +123,4 @@ flowchart TD
 
 {% content-ref url="../../programming/python/algorithms/searching/prefix-sum.md" %}
 [prefix-sum.md](../../programming/python/algorithms/searching/prefix-sum.md)
-{% endcontent-ref %} -->
+{% endcontent-ref %}
