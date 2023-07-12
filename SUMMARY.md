@@ -896,6 +896,10 @@
   * [Nikto](ethical-hacking/tools/nikto.md)
 * [CTF](ethical-hacking/ctf/README.md)
 
+## Sztuczna inteligencja
+
+* [Wstęp](ai/README.md)
+
 ## Inne tematy
 
 * [Prawa autorskie](other/copyright.md)
