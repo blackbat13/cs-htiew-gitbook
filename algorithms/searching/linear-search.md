@@ -1,7 +1,5 @@
 # Wyszukiwanie liniowe
 
-## Opis problemu
-
 Wyobraźmy sobie półkę z książkami. Książki na półce ułożone są w losowej kolejności, **nie zachowując żadnego sensownego porządku**. Innymi słowy: są nieuporządkowane. Naszym zadaniem jest znaleźć jedną konkretną książkę. Znamy jej tytuł, znamy autora. Jak się do tego zabrać?
 
 Jeżeli nie chcemy poświęcać na to zadanie więcej czasu niż to konieczne i porządkować książek przed przystąpieniem do przeszukiwania, to rozwiązanie jest proste. Musimy sprawdzić każdą kolejną książkę. Możemy to robić w sposób losowy i liczyć na to, że nam się poszczęści, albo lepiej, w sposób uporządkowany. Sprawdzamy więc książki jedna po drugiej, od lewej do prawej (lub od prawej do lewej, jak kto woli) aż natrafimy na tą poszukiwaną. I to jest właśnie **wyszukiwanie liniowe**.
