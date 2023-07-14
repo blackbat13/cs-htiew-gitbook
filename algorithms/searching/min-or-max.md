@@ -1,11 +1,6 @@
 # Wyszukiwanie minimum i maksimum
 
-## Opis problemu
-
-Wyobraźmy sobie, że odwiedzamy pewien sklep internetowy, np. w poszukiwaniu nowego laptopa.
-Na początek chcemy sprawdzić, jaki jest najdroższy z dostępnych sprzętów.
-Co możemy w tym celu zrobić? Możemy oczywiście posortować produkty po cenie.
-Nie potrzebna nam jednak lista wszystkich produktów, a tylko jeden - ten najdroższy.
+Wyobraźmy sobie, że odwiedzamy pewien sklep internetowy, np. w poszukiwaniu nowego laptopa. Na początek chcemy sprawdzić, jaki jest najdroższy z dostępnych sprzętów. Co możemy w tym celu zrobić? Możemy oczywiście posortować produkty po cenie. Nie potrzebna nam jednak lista wszystkich produktów, a tylko jeden - ten najdroższy.
 
 W tym temacie zajmiemy się właśnie takim problemem - **znajdowaniem elementu maksymalnego (albo minimalnego) w zadanym zbiorze**.
 
@@ -22,12 +17,12 @@ Jak zwykle, zaczynamy od bardziej formalnej specyfikacji naszego problemu.
 
 ### Specyfikacja
 
-#### Dane:
+#### Dane
 
 * $$n$$ - liczba naturalna, liczba elementów w tablicy
 * $$A[1..n]$$ - tablica $$n$$ wartości całkowitych
 
-#### Wynik:
+#### Wynik
 
 * Największa wartość z tablicy $$A$$
 
@@ -40,7 +35,7 @@ n := 8
 A := [6, 5, 3, 1, 8, 7, 2, 4]
 ```
 
-**Wynik**: $$8$$ 
+**Wynik**: $$8$$
 
 ### Animacja
 
@@ -108,12 +103,12 @@ Zmodyfikujmy więc odpowiednio specyfikację naszego problemu.
 
 ### Specyfikacja
 
-#### Dane:
+#### Dane
 
 * $$n$$ - liczba naturalna, ilość elementów w tablicy
 * $$A[1..n]$$ - tablica $$n$$ wartości całkowitych
 
-#### Wynik:
+#### Wynik
 
 * Indeks największej wartości z tablicy $$A$$ 
 
@@ -159,7 +154,7 @@ funkcja SzukajIndeksMaks(n, A):
             5. max := A[i]
             6. ind := i
     
-    7. Zwróć ind    
+    7. Zwróć ind
 ```
 
 ### Schemat blokowy
@@ -179,16 +174,13 @@ flowchart TD
 
 ### Złożoność
 
-Dodanie nowej zmiennej, w której pamiętamy indeks wyszukiwanego elementu, nie wpływa na złożoność naszego rozwiązania.
-Struktura algorytmu pozostaje niezmieniona, więc złożoność cały czas jest liniowa.
+Dodanie nowej zmiennej, w której pamiętamy indeks wyszukiwanego elementu, nie wpływa na złożoność naszego rozwiązania. Struktura algorytmu pozostaje niezmieniona, więc złożoność cały czas jest liniowa.
 
 $$O(n)$$ - liniowa
 
 ## Wyszukiwanie elementu minimalnego w tablicy
 
-W przypadku poszukiwania elementu minimalnego, postępujemy praktycznie identycznie jak przy poszukiwaniu elementu maksymalnego.
-Tak naprawdę wystarczy zmienić **znak porównania**: z $$<$$ na $$>$$.
-Zaprojektowanie rozwiązania zostawiamy jako samodzielne ćwiczenie dla zainteresowanych.
+W przypadku poszukiwania elementu minimalnego, postępujemy praktycznie identycznie jak przy poszukiwaniu elementu maksymalnego. W zasadzie wystarczy zmienić **znak porównania**: z $$<$$ na $$>$$. Zaprojektowanie rozwiązania zostawiamy jako samodzielne ćwiczenie dla zainteresowanych.
 
 ## Implementacja
 

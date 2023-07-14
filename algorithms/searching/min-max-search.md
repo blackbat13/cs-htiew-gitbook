@@ -1,30 +1,28 @@
 # Jednoczesne wyszukiwanie minimum i maksimum
 
-## Opis problemu
-
 Zdarza się i tak, że potrzebujemy znaleźć wartość minimalną i maksymalną jednocześnie, najlepiej za jednym razem. Możemy oczywiście osobno wyszukać minimum i maksimum korzystając ze standardowego algorytmu. Być może jednak da się to zrobić lepiej, wydajniej? Na to pytanie postaramy się odpowiedzieć. Zacznijmy od formalnej specyfikacji.
 
-### Specyfikacja
+## Specyfikacja
 
-#### Dane:
+### Dane
 
 * $$n$$ — liczba naturalna, liczba elementów w tablicy
 * $$A[1..n]$$ — tablica $$n$$ wartości całkowitych
 
-#### Wynik:
+### Wynik
 
 * Największa oraz najmniejsza wartość z tablicy $$A$$
 
-### Przykład
+## Przykład
 
-#### Dane
+### Dane
 
 ```
 n := 5
 A := [6, 3, 1, 9, 2]
 ```
 
-#### Wynik
+### Wynik
 
 ```
 minimum := 1
@@ -69,7 +67,7 @@ flowchart TD
 
 ### Złożoność
 
-$$O(2n)$$ 
+$$O(2n)$$
 
 Mamy jedną pętlę, ale dwa porównania wewnątrz niej. W takim razie dla każdego przebiegu pętli wykonujemy dwa porównania, łącznie wykonujemy ich więc w przybliżeniu $$2n$$, co w praktyce daje nam złożoność liniową.
 

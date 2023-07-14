@@ -1,34 +1,32 @@
 # Najdłuższy spójny podciąg rosnący
 
-## Opis problemu
-
 Spójny podciąg danego ciągu to taki, który składa się z elementów występujących **jeden obok drugiego**. To tak, jakbyśmy wzięli świąteczny łańcuch i wycieli jego kawałek. Ten wycięty, spójny kawałek łańcucha będzie właśnie **spójnym podciągiem**, czy też, w tym przypadku, **spójnym podłańcuchem**.
 
 Spójny podciąg rosnący to taki spójny podciąg, w którym każdy kolejny element jest **większy od poprzedniego**.
 
 Problem spójnego podciągu rosnącego rozważymy na przykładzie ciągu, czy też tablicy liczb całkowitych. Zacznijmy od formalnej specyfikacji problemu i prostego przykładu.
 
-### Specyfikacja
+## Specyfikacja
 
-#### Dane
+### Dane
 
 * $$n$$ - liczba naturalna, liczba elementów tablicy
 * $$tab[1..n]$$ - tablica zawierająca $$n$$ liczb całkowitych
 
-#### Wynik
+### Wynik
 
 * Długość najdłuższego spójnego podciągu rosnącego w tablicy $$tab$$ 
 
-### Przykład
+## Przykład
 
-#### Dane
+### Dane
 
 ```
 n := 10
 tab := [4, 9, 7, 2, 4, 7, 9, 3, 8, 6]
 ```
 
-#### Wynik
+### Wynik
 
 $$4$$ 
 

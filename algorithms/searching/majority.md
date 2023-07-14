@@ -1,31 +1,29 @@
 # Znajdowanie lidera w zbiorze
 
-## Opis problemu
-
 Lider to element, który stanowi **większość** danego zbioru, a dokładniej stanowi **ponad połowę** zbioru. 
 
-### Specyfikacja
+## Specyfikacja
 
-#### Dane:
+### Dane:
 
 * $$n$$ — liczba naturalna, liczebność zbioru
 * $$A[1..n]$$ — $$n-elementowy$$ zbiór liczb całkowitych, indeksowany od jedynki
 
-#### Wynik:
+### Wynik:
 
 * Lider podanego zbioru, lub -1, jeżeli lider nie istnieje.
 
 {% hint style="info" %}
-#### Lider zbioru
+**Lider zbioru**
 
 **Liderem** zbioru $$n-elementowego$$ nazywamy element, którego ilość wystąpień w zbiorze jest większa niż $$\frac{n}{2}$$.
 
 Jeżeli taki element nie istnieje, to zbiór nie ma lidera.
 {% endhint %}
 
-### Przykład 1
+## Przykład 1
 
-#### Dane:
+### Dane:
 
 ```
 n := 10
@@ -35,14 +33,14 @@ A := [4, 1, 4, 4, 2, 3, 4, 3, 4, 4]
 **Wynik**: 4
 
 {% hint style="info" %}
-#### Wyjaśnienie
+**Wyjaśnienie**
 
 Najczęściej występującym elementem w powyższym zbiorze jest wartość $$4$$, która występuje dokładnie $$6$$ razy, co **jest wartością większą** od $$n/2=10/2=5$$.
 {% endhint %}
 
-### Przykład 2
+## Przykład 2
 
-#### Dane:
+### Dane:
 
 ```
 n := 10
@@ -52,7 +50,7 @@ A := [4, 1, 4, 4, 2, 3, 4, 3, 4, 1]
 **Wynik**: $$-1$$ (brak lidera)
 
 {% hint style="info" %}
-#### Wyjaśnienie
+**Wyjaśnienie**
 
 Najczęściej występującym elementem w powyższym zbiorze jest wartość $$4$$, która występuje dokładnie $$5$$ razy, co **nie jest** **wartością większą** od $$n/2=10/2=5$$.
 {% endhint %}
