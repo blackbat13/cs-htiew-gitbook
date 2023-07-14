@@ -979,6 +979,8 @@
       * [Rozwiązanie](matura-z-informatyki/przygotowanie/spreadsheet/games/solution.md)
     * [Pokemony](matura-z-informatyki/przygotowanie/spreadsheet/pokemons/README.md)
       * [Rozwiązanie](matura-z-informatyki/przygotowanie/spreadsheet/pokemons/solution.md)
+    * [Rzeka](matura-z-informatyki/przygotowanie/spreadsheet/river/README.md)
+      * [Rozwiązanie](matura-z-informatyki/przygotowanie/spreadsheet/river/solution.md)
 * [Arkusze i rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/README.md)
   * [2010](matura-z-informatyki/arkusze-i-rozwiazania/2010/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2010/solutions.md)

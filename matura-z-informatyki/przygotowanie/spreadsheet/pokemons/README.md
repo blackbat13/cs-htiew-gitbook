@@ -22,7 +22,7 @@ Pokemony.txt
 
 ## Zadanie 1
 
-Dla każdego generacji policz:
+Dla każdej generacji policz:
 
 - liczbę pokemonów,
 - największy atak,
