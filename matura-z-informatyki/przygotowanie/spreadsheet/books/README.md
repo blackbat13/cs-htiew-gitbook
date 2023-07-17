@@ -23,7 +23,7 @@ Wypisz wszystkie nazwiska autorów występujących w zestawieniu. Następnie obl
 
 ## Zadanie 2
 
-Dla każdego autora policz, ile imion on posiada. Imiona są zawsze wymienione przed nazwiskiem (w pełnej lub skróconej formie), a nazwisko jest zawsze ostatnim wyrazem.
+Dla każdego autora policz, ile imion on posiada. Imiona są zawsze wymienione przed nazwiskiem i zaczynają się od wielkiej litery (w pełnej lub skróconej formie), a nazwisko jest zawsze ostatnim wyrazem.
 
 ## Zadanie 3
 
@@ -35,3 +35,19 @@ Oblicz, ile jest książek, które:
 - nie mają zdefiniowanego gatunku,
 - mają dokładnie jeden gatunek,
 - mają dwa lub więcej gatunków.
+
+## Zadanie 5
+
+Oblicz, ile sztuk książek (w milionach) zostało sprzedanych w poszczególnych stuleciach, poczynając od roku 1700.
+
+## Zadanie 6
+
+Oblicz, ile jest książek, które w gatunku mają zapis "novel" lub "Novel".
+
+## Zadnie 7
+
+Dla każdego autora oblicz, ile jest lat, w których opublikował przynajmniej jedną książkę.
+
+## Zadanie 8
+
+Utwórz zestawienie pokazujące procentowy udział każdego języka w liczbie sprzedanych sztuk książek.
