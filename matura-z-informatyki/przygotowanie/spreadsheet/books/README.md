@@ -38,7 +38,7 @@ Oblicz, ile jest książek, które:
 
 ## Zadanie 5
 
-Oblicz, ile sztuk książek (w milionach) zostało sprzedanych w poszczególnych stuleciach, poczynając od roku 1700.
+Oblicz, ile książek zostało opublikowanych w poszczególnych stuleciach, poczynając od roku 1700.
 
 ## Zadanie 6
 
