@@ -5,11 +5,11 @@ W pliku *ksiazki.txt* znajduje się zestawienie najpopularniejszych książek, p
 - tytuł książki,
 - autor książki,
 - język oryginału,
-- data pierwszej publikacji,
+- rok pierwszej publikacji,
 - szacunkowa liczba sprzedanych sztuk w milionach,
 - gatunek literacki.
 
-Dane oddzielone są przecinkami. Pierwszy wiersz zawiera nagłówki kolumn.
+Dane oddzielone są tabulacjami. Pierwszy wiersz zawiera nagłówki kolumn.
 
 {% file src="../../../../.gitbook/assets/ksiazki.txt" %}
 ksiazki.txt
@@ -29,4 +29,9 @@ Dla każdego autora policz, ile imion on posiada. Imiona są zawsze wymienione p
 
 Dla każdej litery alfabetu oblicz, ile jest książek, których tytuł zaczyna się od tej litery. Uwaga: w tytułach książek zignoruj "The". Np. jeżeli tytuł książki to "The Help" przyjmujemy, że pierwsza litera tytułu to "H".
 
+## Zadanie 4
 
+Oblicz, ile jest książek, które:
+- nie mają zdefiniowanego gatunku,
+- mają dokładnie jeden gatunek,
+- mają dwa lub więcej gatunków.
