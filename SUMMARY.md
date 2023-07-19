@@ -989,6 +989,7 @@
       * [Rozwiązanie](matura-z-informatyki/przygotowanie/spreadsheet/river/solution.md)
     * [Książki](matura-z-informatyki/przygotowanie/spreadsheet/books/README.md)
       * [Rozwiązanie](matura-z-informatyki/przygotowanie/spreadsheet/books/solution.md)
+    * [Piekarnia](matura-z-informatyki/przygotowanie/spreadsheet/bakery/README.md)
 * [Arkusze i rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/README.md)
   * [2010](matura-z-informatyki/arkusze-i-rozwiazania/2010/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2010/solutions.md)
