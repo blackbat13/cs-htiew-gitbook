@@ -4,11 +4,11 @@ Pan Józef prowadzi piekarnię w małym miasteczku na uboczu. Piekarnia jest nie
 
 Pan Józef każdego dnia, gdy piekarnia jest otwarta, wypieka **$$200$$ bochenków chleba**. Zazwyczaj nie udaje mu się niczego sprzedać, ale zaobserował, że:
 
-- w poniedziałki sprzedaje $$90%$$ dostępnych w piekarni bochenków,
-- we wtorki i czwartki klienci kupują $$75%$$ dostępnych w piekarni bochenków,
-- w środy schodzi $$60%$$ dostępnych w piekarni bochenków,
-- w piątki sprzedaje $$80%$$ dostępnych w piekarni bochenków,
-- w soboty i niedziele sprzedaje tylko $$50%$$ dostępnych w piekarni bochenków.
+- w poniedziałki sprzedaje $$90\%$$ dostępnych w piekarni bochenków,
+- we wtorki i czwartki klienci kupują $$75\%$$ dostępnych w piekarni bochenków,
+- w środy schodzi $$60\%$$ dostępnych w piekarni bochenków,
+- w piątki sprzedaje $$80\%$$ dostępnych w piekarni bochenków,
+- w soboty i niedziele sprzedaje tylko $$50\%$$ dostępnych w piekarni bochenków.
 
 Ponieważ Pan Józef chce sprzedawać jedynie świeży chleb, to całym chlebem, który nie został sprzedany danego dnia, karmi okoliczne zwierzęta. Pomóż Panu Józefowi przeprowadzić prognozę zysków na najbliższy rok!
 
@@ -48,7 +48,7 @@ Pan Józef jest zadowolony ze swojego pomysłu. Niedźwiedzie przestały się po
 
 - w niedziele bez handlu piekarnia jest zamknięta i nie sprzedaje, ani też nie wypieka chleba,
 - w każdą pierwszą niedzielę miesiąca handel jest prowadzony tak jak wcześniej (jak w zadaniu $$2$$),
-- w każdą sobotę, po której następuje **niedziela bez handlu**, piekarnia sprzedaje teraz **100%** bochenków chleba na składzie.
+- w każdą sobotę, po której następuje **niedziela bez handlu**, piekarnia sprzedaje teraz **100\%** bochenków chleba na składzie.
 
 Oblicz:
 
@@ -61,7 +61,7 @@ Oblicz:
 
 ## Zadanie 4
 
-Pan Józef postanowił w $$2020$$ roku wprowadzić do swojej oferty bułki (gdyby tylko wiedział, co się w tym roku wydarzy...). Koszt wypieku bułki wynosi $$10$$ groszy, a każdą bułkę Pan Józef sprzedaje po $$50$$ groszy. Ze względu na duży nakład pracy, bułki są wypiekane jedynie w poniedziałki i piątki. W poniedziałki wypiekanych jest $$150$$ bułek, natomiast w piątki $$90$$ bułek. Pan Józef z zadowoleniem zaobserwował, że zawsze sprzedaje **wszystkie** bułki wyprodukowane danego dnia. Niestety, sprzedaż bułek wpłynęła negatywnie na sprzedaż chleba w poniedziałki i piątki. W te dni Pan Józef sprzedaje teraz o $$10$$ punktów procentowych mniej bochenków (tzn. gdy wcześniej sprzedawał ich $$90%$$, teraz sprzedaje $$80%$$).
+Pan Józef postanowił w $$2020$$ roku wprowadzić do swojej oferty bułki (gdyby tylko wiedział, co się w tym roku wydarzy...). Koszt wypieku bułki wynosi $$10$$ groszy, a każdą bułkę Pan Józef sprzedaje po $$50$$ groszy. Ze względu na duży nakład pracy, bułki są wypiekane jedynie w poniedziałki i piątki. W poniedziałki wypiekanych jest $$150$$ bułek, natomiast w piątki $$90$$ bułek. Pan Józef z zadowoleniem zaobserwował, że zawsze sprzedaje **wszystkie** bułki wyprodukowane danego dnia. Niestety, sprzedaż bułek wpłynęła negatywnie na sprzedaż chleba w poniedziałki i piątki. W te dni Pan Józef sprzedaje teraz o $$10$$ punktów procentowych mniej bochenków (tzn. gdy wcześniej sprzedawał ich $$90\%$$, teraz sprzedaje $$80\%$$).
 
 Uzupełniając założenia z poprzednich zadań o sprzedaż bułek, dla $$2020$$ roku oblicz:
 
