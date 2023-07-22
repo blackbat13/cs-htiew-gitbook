@@ -55,30 +55,30 @@ Rozwiązanie
 
 ### Zadanie 6
 
-| **Ofiary.Imie** | **Wampiry.Imie** |    **Nazwa**    |
-|:---------------:|:----------------:|:---------------:|
-| Maria           | Dracula          | Czerwony Cien   |
-| Johann          | Dracula          | Czerwony Cien   |
-| Franz           | Dracula          | Czerwony Cien   |
-| Louise          | Dracula          | Czerwony Cien   |
-| Elizabeth       | Vlad             | Ksiezycowy Rod  |
-| Thomas          | Orlok            | Czerwony Cien   |
-| Anastasia       | Orlok            | Czerwony Cien   |
-| Giovanni        | Orlok            | Czerwony Cien   |
-| Nefertari       | Akasha           | Krwiopijcy Nocy |
-| Seamus          | Akasha           | Krwiopijcy Nocy |
-| Hutter          | Carmilla         | Wladcy Mroku    |
-| Maria           | Vlad             | Ksiezycowy Rod  |
-| Maria           | Vlad             | Ksiezycowy Rod  |
-| Louise          | Murnau           | Wieczni Stroze  |
-| Louise          | Carmilla         | Wladcy Mroku    |
-| Louise          | Carmilla         | Wladcy Mroku    |
-| Giovanni        | Ambrogio         | Wieczni Stroze  |
-| Seamus          | Dracula          | Czerwony Cien   |
-| Seamus          | Vlad             | Ksiezycowy Rod  |
-| Nefertari       | Akasha           | Krwiopijcy Nocy |
-| Seamus          | Drusilla         | Bezsenne Dusze  |
-| Hutter          | Murnau           | Wieczni Stroze  |
+| **Ofiary.Imie** | **Wampiry.Imie** |    **Nazwa**    | **DataAtaku** |
+|:---------------:|:----------------:|:---------------:|:-------------:|
+| Maria           | Dracula          | Czerwony Cien   | 02.06.1345    |
+| Johann          | Dracula          | Czerwony Cien   | 18.08.1275    |
+| Franz           | Dracula          | Czerwony Cien   | 04.04.1595    |
+| Louise          | Dracula          | Czerwony Cien   | 01.08.1612    |
+| Elizabeth       | Vlad             | Ksiezycowy Rod  | 02.11.1366    |
+| Thomas          | Orlok            | Czerwony Cien   | 11.06.1899    |
+| Anastasia       | Orlok            | Czerwony Cien   | 12.02.1999    |
+| Giovanni        | Orlok            | Czerwony Cien   | 19.01.2036    |
+| Nefertari       | Akasha           | Krwiopijcy Nocy | 13.07.2172    |
+| Seamus          | Akasha           | Krwiopijcy Nocy | 02.12.2255    |
+| Hutter          | Carmilla         | Wladcy Mroku    | 03.02.1538    |
+| Maria           | Vlad             | Ksiezycowy Rod  | 03.12.1344    |
+| Maria           | Vlad             | Ksiezycowy Rod  | 12.03.1342    |
+| Louise          | Murnau           | Wieczni Stroze  | 11.09.1611    |
+| Louise          | Carmilla         | Wladcy Mroku    | 10.09.1611    |
+| Louise          | Carmilla         | Wladcy Mroku    | 09.09.1611    |
+| Giovanni        | Ambrogio         | Wieczni Stroze  | 19.02.2035    |
+| Seamus          | Dracula          | Czerwony Cien   | 12.11.2254    |
+| Seamus          | Vlad             | Ksiezycowy Rod  | 07.11.2253    |
+| Nefertari       | Akasha           | Krwiopijcy Nocy | 02.08.2173    |
+| Seamus          | Drusilla         | Bezsenne Dusze  | 06.06.2250    |
+| Hutter          | Murnau           | Wieczni Stroze  | 13.05.1538    |
 
 ### Zadanie 7
 
