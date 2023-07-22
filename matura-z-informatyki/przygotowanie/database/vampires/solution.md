@@ -134,3 +134,19 @@ Rozwiązanie
 | Gwiazdy Zmierzchu       |
 | Srebrne Kly             |
 | Zakon Czarnego Sztyletu |
+
+### Zadanie 13
+
+|  **Imie** | **OdPierwszegoDoOstatniego** |
+|:---------:|:----------------------------:|
+| Anastasia | 0                            |
+| Elizabeth | 0                            |
+| Franz     | 0                            |
+| Giovanni  | 334                          |
+| Hutter    | 99                           |
+| Johann    | 0                            |
+| Louise    | 327                          |
+| Maria     | 1178                         |
+| Nefertari | 385                          |
+| Seamus    | 2005                         |
+| Thomas    | 0                            |
