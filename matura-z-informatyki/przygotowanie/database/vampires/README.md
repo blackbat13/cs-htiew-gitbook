@@ -88,3 +88,15 @@ Utwórz zestawienie zawierające nazwę kraju, liczbę wampirów pochodzących z
 ## Zadanie 10
 
 Wypisz nazwy wszystkich klanów, które nie posiadają członków. Posortuj alfabetycznie po nazwach.
+
+## Zadanie 11
+
+Utwórz zestawienie zawierające imię wampira oraz zaokrąglone w górę: liczbę dni, liczbę miesięcy i liczbę lat, które upłynęły od urodzin do przemiany. Wyniki posortuj alfabetycznie po imionach.
+
+## Zadanie 12
+
+Utwórz zestawienie zawierające imię wampira, jego datę urodzenia, datę przemiany oraz wiek wampira w momencie przemiany. Wyniki posortuj alfabetycznie po imionach.
+
+## Zadanie 13
+
+Utwórz zestawienie zawierające imię ofiary oraz liczbę dni, które upłynęły od pierwszego do ostatniego ataku.
