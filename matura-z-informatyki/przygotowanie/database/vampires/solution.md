@@ -135,6 +135,22 @@ Rozwiązanie
 | Srebrne Kly             |
 | Zakon Czarnego Sztyletu |
 
+### Zadanie 11
+
+| **Imie** | **LiczbaDni** | **LiczbaMiesiecy** | **LiczbaLat** |
+|:--------:|:-------------:|:------------------:|:-------------:|
+| Vlad     | 267           | 9                  | 0             |
+| Murnau   | 731           | 24                 | 2             |
+| Carmilla | 16467         | 541                | 45            |
+| Varney   | 42024         | 1380               | 115           |
+| Orlok    | 29189         | 959                | 80            |
+| Selene   | 10139         | 333                | 27            |
+| Ambrogio | 19867         | 653                | 55            |
+| Akasha   | 3895          | 128                | 11            |
+| Drusilla | 11379         | 374                | 31            |
+| Dracula  | 6263          | 205                | 17            |
+| Lestat   | 33297         | 1094               | 91            |
+
 ### Zadanie 13
 
 |  **Imie** | **OdPierwszegoDoOstatniego** |
