@@ -1,38 +1,28 @@
 # Sortowanie gnoma
 
-## Opis problemu
-
 Wyobraźmy sobie gnoma, który zarządza swoim ogródkiem, a konkretnie ustawia doniczki we właściwej kolejności. Doniczki ułożone są w rządku od lewej do prawej. Gnom przechodzi od lewej do prawej wzdłuż rzędu doniczek, uważnie je obserwując. Gdy tylko zauważy, że dwie sąsiednie doniczki są niewłaściwie ułożone, zamienia je miejscami i cofa się do poprzedniej doniczki. Gdy natomiast z doniczkami jest wszystko tak, jak należy, to przechodzi do kolejnej doniczki. Gdy gnom dotrze do końca doniczek może spokojnie stwierdzić, że wszystkie są ułożone we właściwym porządku.
 
-### Specyfikacja
+Poniżej znajdziesz animację przedstawiającą ideę omawianego algorytmu.
 
-#### Dane
-
-* $$n$$ — liczba naturalna, liczba elementów w tablicy
-* $$A[1..n]$$ — tablica $$n$$ wartości całkowitych
-
-#### Wynik
-
-* Posortowana niemalejąco tablica $$A$$
-
-### Przykład
-
-Na początek przyjrzyjmy się poniższym animacjom. Spróbuj prześledzić jak kolejne wartości zamieniają się miejscami. Czy potrafisz, własnymi słowami, opisać przebieg algorytmu?
-
-#### Dane
-
-```
-n := 8
-A := [6, 5, 3, 1, 8, 7, 2, 4]
-```
-
-#### Animacja
+## Animacja
 
 {% embed url="https://blackbat13.github.io/visul2/sorting/gnome_sort/#array=%5B6%2C5%2C3%2C1%2C8%2C7%2C2%2C4%5D" %}
+
+## Specyfikacja
+
+### Dane
+
+* $$n$$ — liczba naturalna, liczba elementów w tablicy.
+* $$A[1..n]$$ — tablica $$n$$ wartości całkowitych.
+
+### Wynik
+
+* Posortowana niemalejąco tablica $$A$$.
 
 ## Rozwiązanie
 
 Zauważmy, że gnom ma do dyspozycji następujące operacje: 
+
 - porównaj dwie sąsiednie doniczki: obecną z poprzednią,
 - zamień dwie sąsiednie doniczki: obecną z poprzednią,
 - idź o jedną doniczkę w prawo,
