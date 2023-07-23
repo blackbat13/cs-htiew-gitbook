@@ -1,30 +1,26 @@
 # Sortowanie przez zliczanie
 
-## Opis problemu
-
 Masz nietypowe hobby: zbierasz kamyki z liczbami. Dokładnie, niektóre kamyki mają wzory, które przypominają liczby. Udało Ci się zebrać dość dużą kolekcję z wartościami rozciągającymi się od $$1$$ do $$100$$. Niestety, półka na której trzymałeś swoje kamyki, skrupulatnie ułożone względem swoich wartości, nie wytrzymała i załamała się pod ciężarem Twojej kolekcji. W efekcie wszystkie kamyki spadły na podłogę i trzeba je ponownie uporządkować. Zabierasz się więc do pracy. W twojej kolekcji jest wiele kamyków z takimi samymi liczbami, postanawiasz więc podzielić je na osobne kupki. Przeglądasz kamyki jeden po drugim i odkładasz je na właściwą kupkę, razem z innymi kamykami z taką samą liczbą. Po godzinie pracy masz już kilkadziesiąt kupek z kamykami o tych samych wartościach, pozostało je przełożyć na nową, bardziej wytrzymałą półkę. Najpierw układasz wszystkie kamyki z liczbą jeden. Następnie układasz te z liczbą dwa. Teraz przyszła pora na trzecią kupkę: kamyki z liczbą pięć (niestety, liczb trzy i cztery nie ma w Twojej kolekcji). Tak układasz swoje kamyki, kupka po kupce przekładając je na półkę. W ten sposób zastosowałeś algorytm **sortowania przez zliczanie**
 
 W tym algorytmie bardzo ważne jest, by znać zakres wartości, które będziemy sortować. Założymy, że będziemy sortować wartości od $$0$$ do $$m$$, a samo $$m$$ będzie wartością podaną w danych wejściowych do naszego algorytmu.
 
-### Specyfikacja
+Poniżej znajdziesz animację przedstawiającą ideę omawianego algorytmu.
 
-#### Dane:
+## Animacja
+
+{% embed url="https://www.cs.usfca.edu/~galles/visualization/CountingSort.html" %}
+
+## Specyfikacja
+
+### Dane
 
 * $$n$$ — liczba naturalna, liczba elementów w tablicy.
 * $$m$$ — największa liczba w tablicy wyznaczająca zakres elementów.
 * $$A[1..n]$$ — tablica $$n$$ wartości naturalnych z przedziału $$[0,m]$$.
 
-#### Wynik:
+### Wynik
 
 * Posortowana niemalejąco tablica $$A$$
-
-### Przykład
-
-Na początek przyjrzyjmy się poniższej animacji. Spróbuj prześledzić kolejne etapy algorytmu. Czy potrafisz, własnymi słowami, opisać jego przebieg?
-
-#### Animacja
-
-{% embed url="https://www.cs.usfca.edu/~galles/visualization/CountingSort.html" %}
 
 ## Rozwiązanie
 
