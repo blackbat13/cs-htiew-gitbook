@@ -1,5 +1,15 @@
 # Sortowanie koktajlowe
 
+Sortowanie koktajlowe, znane również jako sortowanie bąbelkowe z wstrząsami (ang. *Cocktail Shaker Sort*) lub sortowanie bidirectionalne, to odmiana algorytmu sortowania bąbelkowego. Podobnie jak sortowanie bąbelkowe, sortowanie koktajlowe jest prostym algorytmem, ale niezbyt wydajnym dla dużych zbiorów danych.
+
+Algorytm sortowania koktajlowego różni się od sortowania bąbelkowego tym, że przegląda listę w obu kierunkach. Oznacza to, że podczas jednego przejścia lista jest przeglądana od początku do końca, a następnie od końca do początku. Proces ten powtarza się, aż do momentu, gdy cała zostanie jest posortowana.
+
+Algorytm sortowania koktajlowego opiera się na następujących krokach:
+
+- Przeglądanie listy: przeglądamy listę od początku do końca, porównując sąsiednie elementy. Jeżeli są w niewłaściwej kolejności, zamieniamy je miejscami.
+- Przeglądanie listy w drugą stronę: teraz przeglądamy listę od końca do początku, ponownie porównując sąsiednie elementy i zamieniając je miejscami, jeśli są w niewłaściwej kolejności.
+- Powtarzanie: powtarzamy powyższe kroki, aż cała lista będzie posortowana.
+
 Poniżej znajdziesz animację przedstawiającą ideę omawianego algorytmu.
 
 ## Animacja
@@ -63,7 +73,7 @@ flowchart TD
 
 ### Złożoność
 
-$$O(n^2)$$ — kwadratowa
+Podobnie jak sortowanie bąbelkowe, sortowanie koktajlowe ma złożoność obliczeniową $$O(n^2)$$ zarówno w przypadku średnim, jak i najgorszym. Wynika to z przeglądania całej listy dla każdego elementu.
 
 ## Implementacja
 
