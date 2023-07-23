@@ -1,36 +1,39 @@
 ---
-description: Heapsort
+description: Heap Sort
 ---
 
 # Sortowanie przez kopcowanie
 
-## Opis problemu
+Sortowanie przez kopcowanie (ang. *Heap Sort*), to skuteczny algorytm sortujący, który używa struktury danych zwanej kopcem binarnym. Algorytm ten wykorzystuje własność kopca binarnego, która mówi, że wartość w każdym węźle jest większa (lub mniejsza, w zależności od typu kopca) od wartości w jego węzłach-dzieciach.
 
-### Specyfikacja
+Algorytm sortowania przez kopcowanie składa się z dwóch głównych etapów:
 
-#### Dane:
+- Budowanie kopca: najpierw przekształcamy listę nieposortowanych elementów w kopiec binarny. Może to być kopiec maksymalny, gdzie klucz każdego rodzica jest większy lub równy kluczom jego dzieci, lub kopiec minimalny, gdzie klucz każdego rodzica jest mniejszy lub równy kluczom jego dzieci.
+- Usuwanie elementów z kopca: następnie usuwamy jeden po drugim elementy z kopca, a po usunięciu każdego elementu przywracamy własność kopca. Proces ten jest powtarzany, aż kopiec będzie pusty. Usunięte elementy tworzą posortowaną listę.
+
+Poniżej znajdziesz animację przedstawiającą ideę omawianego algorytmu
+
+## Animacja
+
+![By Swfung8 — Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=14957305](../../.gitbook/assets/Heapsort-example.gif)
+
+## Specyfikacja
+
+### Dane
 
 * $$n$$ — liczba naturalna, ilość elementów w tablicy
 * $$A[1..n]$$ — tablica $$n$$ wartości całkowitych
 
-#### Wynik:
+### Wynik
 
 * Posortowana niemalejąco tablica $$A$$
 
-### Przykład
-
-#### Dane
-
-```
-n := 8
-A := [6, 5, 3, 1, 8, 7, 2, 4]
-```
-
-#### Animacja
-
-![By Swfung8 — Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=14957305](../../.gitbook/assets/Heapsort-example.gif)
-
 ## Rozwiązanie
+
+Nasza implementacja algorytmu sortowania przez scalanie składa się z dwóch części:
+
+- procedura ZbudujKopiec: buduje kopiec binarny bazując na podanej liczbie początkowych elementów $$A$$;
+- procedura SortowaniePrzezKopcowanie: rekurencyjnie wywołuje budowanie kopca i odkłada posortowane elementy.
 
 ### Pseudokod
 
@@ -80,7 +83,7 @@ flowchart TD
 
 ### Złożoność
 
-$$O(n\log{n})$$ — liniowo logarytmiczna
+Sortowanie przez kopcowanie ma złożoność obliczeniową $$O(n\log{n})$$ w przypadku najgorszym, średnim i najlepszym, co czyni go bardzo efektywnym algorytmem sortowania, zwłaszcza dla dużych zestawów danych.
 
 ## Implementacja
 
