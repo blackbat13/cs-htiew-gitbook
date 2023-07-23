@@ -73,3 +73,13 @@ Zestaw ćwiczeń i materiałów pomagających w przygotowaniu się do matury z i
 - Oraz
 - Lub
 - Fragment.Tekstu
+
+### Zagadnienia związane z bazami danych (Access)
+
+- Ustalanie formatu daty podczas importowania danych.
+- Zmiana własności sprzężenia.
+- Funkcja DateDiff.
+- Funkcja IIf.
+- Kwerendy sumujące.
+- Sortowanie po kilku kolumnach.
+- Tworzenie własnych kolumn w kwerendach.
