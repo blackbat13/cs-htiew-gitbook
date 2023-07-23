@@ -36,18 +36,9 @@ Sortowanie przez scalanie - prezentacja
 
 * Posortowana niemalejąco tablica $$A$$.
 
-## Przykład
-
-### Dane
-
-```
-n := 8
-A := [6, 5, 3, 1, 8, 7, 2, 4]
-```
-
 ## Rozwiązanie
 
-Nasza implementacja algorytmu sortowania przez scalanie będzie składała się z dwóch części:
+Nasza implementacja algorytmu sortowania przez scalanie składa się z dwóch części:
 
 - procedura Scal: scala ze sobą dwie podtablice zdefiniowane poprzez zakres elementów z tablicy $$A$$;
 - procedura SortowaniePrzezScalanie: rekurencyjnie dzieli tablicę na dwie mniejsze podtablice, które są na końcu scalane.
