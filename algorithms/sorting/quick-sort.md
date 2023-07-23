@@ -4,33 +4,34 @@ description: Quicksort
 
 # Sortowanie szybkie
 
-## Opis problemu
+Sortowanie szybkie (ang. *Quicksort*) to jeden z najważniejszych algorytmów sortujących w informatyce, dzięki swojej wydajności i prostocie implementacji. Algorytm ten opiera się na strategii *dziel i zwyciężaj*, gdzie problem dzielony jest na mniejsze podproblemy, które są rozwiązywane niezależnie, a potem ich wyniki są łączone w celu uzyskania rozwiązania problemu pierwotnego.
 
-Sortowanie szybkie to jeden ze szczególnych algorytmów. W ogólności jest bardzo wydajną metodą sortowania, ale w szczególnych przypadkach jego złożoność jest nie lepsza niż sortowania bąbelkowego.
+Quicksort opiera się na następujących krokach:
 
-Sortowanie szybkie opiera się bardzo mocno na rekurencji i podziale tablicy na dwie części. Ogólna idea przedstawia się następująco:
-1. Znajdujemy element środkowy, tzw. pivot.
-2. Elementy mniejsze przemieszczamy od pivota przemieszczamy na jego lewą stroną, elementy większe natomiast przemieszczamy na prawo.
-3. Rekurencyjnie sortujemy lewą część i prawą część tablicy.
+- Wybór elementu dzielącego (pivot): wybieramy jeden z elementów listy, który będzie służył jako "pivot". Wybór odpowiedniego pivotu może znacznie wpływać na wydajność algorytmu, ale w praktyce często wybiera się pierwszy, ostatni lub środkowy element listy.
+- Podział listy: następnie lista dzielona jest na dwa podzbiory: jeden zawierający elementy mniejsze od pivotu, a drugi zawierający elementy większe lub równe pivotowi.
+- Rekurencja: powyższe kroki są powtarzane rekurencyjnie na obu podzbiorach, aż do momentu, gdy podzbiór będzie zawierał tylko jeden element (jest już posortowany).
 
-### Specyfikacja
+Poniżej znajdziesz prezentację, na której poszczególne kroki algorytmu są wyjaśnione w jak najprostszy sposób.
 
-#### Dane:
+## Prezentacja
+
+{% file src="../../.gitbook/assets/Sortowanie Szybkie.pdf" %}
+Sortowanie szybkie - prezentacja
+{% endfile %}
+
+## Specyfikacja
+
+### Dane
 
 * $$n$$ — liczba naturalna, ilość elementów w tablicy
 * $$A[1..n]$$ — tablica $$n$$ wartości całkowitych
 
-#### Wynik:
+### Wynik
 
 * Posortowana niemalejąco tablica $$A$$
 
 ## Rozwiązanie
-
-By lepiej zrozumieć ten zaawansowany algorytm, prześledźmy jego przebieg na poniższej prezentacji.
-
-{% file src="../../.gitbook/assets/Sortowanie Szybkie.pdf" %}
-Sortowanie szybkie
-{% endfile %}
 
 ### Pseudokod
 
@@ -86,13 +87,7 @@ flowchart TD
 
 ### Złożoność
 
-#### Pesymistyczna
-
-$$O(n^2)$$ — kwadratowa
-
-#### Średnia
-
-$$O(n\log{n})$$ — liniowo logarytmiczna
+Algorytm Quicksort ma złożoność obliczeniową $$O(n\log{n})$$ w przypadku średnim, co czyni go jednym z najbardziej efektywnych algorytmów sortujących. Jednakże, w najgorszym przypadku, gdy podział listy jest zawsze najbardziej nierównomierny (na przykład, gdy lista jest już posortowana), złożoność obliczeniowa może wzrosnąć do $$O(n^2)$$.
 
 ## Implementacja
 
