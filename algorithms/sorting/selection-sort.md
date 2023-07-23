@@ -4,39 +4,28 @@ description: Selection sort
 
 # Sortowanie przez wybieranie
 
-## Opis problemu
-
 Wyobraź sobie, że przed tobą leżą książki, ułożone tak, że widzisz tytuł i autora każdej z nich. Twoje zadanie polega na uporządkowaniu tych książek na półce w kolejności alfabetycznej po nazwiskach autorów. Najpierw przeglądasz dostępne książki szukając autora z nazwiskiem pierwszym w kolejności alfabetycznej. Znajdujesz, bierzesz książkę do ręki i umieszczasz na półce. Teraz patrzysz na pozostałe książki i ponownie szukasz pierwszego (w kolejności alfabetycznej) nazwiska z tych, które pozostały. Znajdujesz i odkładasz na półkę, jako drugą książkę. Postępujesz podobnie, powtarzając te czynności tak długo, aż ułożysz wszystkie książki na półce, posortowane po nazwiskach autorów. Brawo, właśnie zastosowałeś algorytm sortowania przez wybieranie!
 
-### Specyfikacja
+Poniżej znajdziesz animacje przedstawiające ideę omawianego algorytmu.
 
-#### Dane
-
-* $$n$$ — liczba naturalna, ilość elementów w tablicy
-* $$A[1..n]$$ — tablica $$n$$ wartości całkowitych
-
-#### Wynik
-
-* Posortowana niemalejąco tablica $$A$$
-
-### Przykład
-
-Na początek przyjrzyjmy się poniższym animacjom. Spróbuj prześledzić jak kolejne wartości zamieniają się miejscami. Czy potrafisz, własnymi słowami, opisać przebieg algorytmu?
-
-#### Dane
-
-```
-n := 10
-A := [8, 5, 2, 6, 9, 3, 1, 4, 0, 7]
-```
-
-#### Animacja 1
+## Animacja 1
 
 ![By Joestape89, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=3330231](../../.gitbook/assets/Selection-Sort-Animation.gif)
 
-#### Animacja 2
+## Animacja 2
 
 {% embed url="https://blackbat13.github.io/visul2/sorting/selection_sort/#array=%5B8%2C5%2C2%2C6%2C9%2C3%2C1%2C4%2C0%2C7%5D" %}
+
+## Specyfikacja
+
+### Dane
+
+* $$n$$ — liczba naturalna, ilość elementów w tablicy.
+* $$A[1..n]$$ — tablica $$n$$ wartości całkowitych.
+
+### Wynik
+
+* Posortowana niemalejąco tablica $$A$$.
 
 ## Rozwiązanie
 
@@ -60,7 +49,6 @@ procedura SortowaniePrzezWybieranie(A, n):
     1. Od i := 1 do n - 1, wykonuj:
         2. minInd := SzukajIndeksMinimum(i, n, A)
         3. Zamień(A[i], A[minInd])
-        
 ```
 
 ### Schemat blokowy
