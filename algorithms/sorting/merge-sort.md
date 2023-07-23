@@ -1,42 +1,62 @@
 ---
-description: Mergesort
+description: Merge Sort
 ---
 
 # Sortowanie przez scalanie
 
-## Opis problemu
+Sortowanie przez scalanie (ang. *Merge Sort*) jest jednym z klasycznych, ale wydajnych algorytmów sortowania danych. Jest oparty na metodzie **dziel i zwyciężaj**, co oznacza, że problem jest dzielony na mniejsze podproblemy, które są łatwiejsze do rozwiązania, a następnie te rozwiązania mniejszych problemów są łączone, aby uzyskać ostateczne rozwiązanie pełnego problemu.
 
-### Specyfikacja
+Algorytm sortowania przez scalanie działa poprzez **podział** nieposortowanego zestawu danych na $$n$$ mniejszych podzbiorów, aż do momentu, kiedy każdy podzbiór będzie zawierał tylko **jeden** element (jeden element jest z definicji posortowany). Następnie, te pojedyncze elementy są łączone ze sobą (**scalane**) w sposób, który zapewnia, że są one ułożone w odpowiedniej kolejności (posortowane).
 
-#### Dane:
+Główne etapy tego algorytmu to:
 
-* $$n$$ — liczba naturalna, ilość elementów w tablicy
-* $$A[1..n]$$ — tablica $$n$$ wartości całkowitych
+- **Podział**: lista do posortowania jest dzielona na pół, tworząc dwa mniejsze podzbiory. Proces ten jest powtarzany rekurencyjnie, aż do momentu, kiedy każdy podzbiór będzie zawierał tylko jeden element.
+- **Scalanie**: pojedyncze podzbiory są łączone ze sobą w pary w taki sposób, aby były posortowane. Następnie pary są łączone w grupy po cztery, następnie grupy po cztery są łączone w grupy po osiem, itd., aż do momentu, kiedy wszystkie elementy zostaną połączone w jedną posortowaną listę.
 
-#### Wynik:
+Poniżej znajdziesz animację przedstawiającą ideę omawianego algorytmu, a także prezentację, na której poszczególne kroki algorytmu są wyjaśnione w jak najprostszy sposób.
 
-* Posortowana niemalejąco tablica $$A$$&#x20;
+## Animacja
 
-### Przykład
+![By Swfung8 - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=14961648](../../.gitbook/assets/Merge-sort-example-300px.gif)
 
-#### Dane
+## Prezentacja
+
+{% file src="../../.gitbook/assets/Sortowanie przez scalanie.pdf" %}
+Sortowanie przez scalanie - prezentacja
+{% endfile %}
+
+## Specyfikacja
+
+### Dane
+
+* $$n$$ — liczba naturalna, ilość elementów w tablicy.
+* $$A[1..n]$$ — tablica $$n$$ wartości całkowitych.
+
+### Wynik
+
+* Posortowana niemalejąco tablica $$A$$.
+
+## Przykład
+
+### Dane
 
 ```
 n := 8
 A := [6, 5, 3, 1, 8, 7, 2, 4]
 ```
 
-#### Animacja
-
-![By Swfung8 - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=14961648](../../.gitbook/assets/Merge-sort-example-300px.gif)
-
-### Prezentacja
-
-{% file src="../../.gitbook/assets/Sortowanie przez scalanie.pdf" %}
-Sortowanie przez scalanie
-{% endfile %}
-
 ## Rozwiązanie
+
+Nasza implementacja algorytmu sortowania przez scalanie będzie składała się z dwóch części:
+
+- procedura Scal: scala ze sobą dwie podtablice zdefiniowane poprzez zakres elementów z tablicy $$A$$;
+- procedura SortowaniePrzezScalanie: rekurencyjnie dzieli tablicę na dwie mniejsze podtablice, które są na końcu scalane.
+
+Idea działania procedury Scal jest prosta. Tworzymy pomocniczą tablicę, do której będziemy wrzucać posortowane wartości. Następnie przechodzimy przez kolejne elementy zdefiniowanych podtablic, porównujemy je ze sobą i mniejszy element umieszczamy na kolejnym miejscu w pomocniczej tablicy. Podczas tej operacji trzeba uważać, żeby nie wyjść poza zakres podtablic. Jeżeli elementy jednej z podtablic nam się "skończą" (a tak zawsze nastąpi), to bierzemy już elementy tylko z drugiej podtablicy.
+
+Po wypełnieniu tablicy pomocniczej posortowanymi wartościami, przepisujemy ją do naszej głównej, sortowanej tablicy $$A$$.
+
+Procedura SortowaniePrzezScalanie jest procedurą rekurencyjną, która poza tablicą do posortowania przyjmuje także początek i koniec sortowanego zakresu (w formie indeksów tablicy). Na początku zaczynamy od warunku stopu, tzn. sprawdzamy, czy podany przedział zawiera co najmniej jeden element. Jeżeli tak nie jest, to kończymy obecne wywołanie. Gdy w przedziale mamy co sortować, to wyznaczamy środek przedziału, który posłuży nam do podziału tablicy na dwie podtablice. Następnie wywołujemy rekurencyjnie naszą sortującą procedurę, odpowiednio zmieniając sortowane zakresy (od początku do środka, od środka do końca). Na koniec, gdy nasze dwie podtablice są już posortowane (co wynika m.in. z rekurencyjnej struktury funkcji), scalamy je ze sobą za pomocą procedury Scal.
 
 ### Pseudokod
 
@@ -60,7 +80,7 @@ procedura Scal(A, pocz, kon, sr):
 ```
 
 ```
-procedura SortowaniePrezScalanie(A, pocz, kon):
+procedura SortowaniePrzezScalanie(A, pocz, kon):
     1. Jeżeli kon - pocz <= 1, to:
         2. Zakończ
 
@@ -104,7 +124,7 @@ flowchart TD
 
 ### Złożoność
 
-$$O(n\log{n})$$ — liniowo logarytmiczna
+Sortowanie przez scalanie ma złożoność obliczeniową $$O(n\log{n})$$ zarówno w przypadku najgorszym, jak i średnim, co czyni go efektywnym algorytmem sortowania dla dużych zestawów danych.
 
 ## Implementacja
 
