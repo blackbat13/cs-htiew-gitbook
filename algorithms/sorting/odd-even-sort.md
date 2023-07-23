@@ -1,5 +1,17 @@
 # Sortowanie odd-even
 
+Sortowanie nieparzysto-parzyste (ang. *Odd-even*), znane również jako sortowanie bąbelkowe dwufazowe lub sortowanie Brick Sort, to algorytm sortujący, który działa na zasadzie porównywania wszystkich par elementów nieparzysto-parzystych (indeksy są parzyste lub nieparzyste) listy, które następnie, jeśli są w złej kolejności, są zamieniane miejscami. Ta operacja jest powtarzana, aż lista zostanie posortowana.
+
+Algorytm sortowania nieparzysto-parzystego składa się z następujących kroków:
+
+- **Faza nieparzysta**: przeglądaj całą listę i dla każdej pary elementów na nieparzystych pozycjach $$i$$, jeżeli element na pozycji $$i$$ jest większy od elementu na pozycji $$i+1$$, zamień je miejscami.
+
+- **Faza parzysta**: przeglądaj całą listę i dla każdej pary elementów na parzystych pozycjach $$i$$, jeżeli element na pozycji $$i$$ jest większy od elementu na pozycji $$i+1$$, zamień je miejscami.
+
+- **Powtarzaj fazy**: powtarzaj powyższe fazy, aż lista zostanie całkowicie posortowana.
+
+Algorytm ten kontynuuje te dwie fazy, dopóki nie posortuje całej listy. Głównym założeniem jest to, że po każdej iteracji najmniejszy element porusza się co najmniej o jedną pozycję do przodu.
+
 Poniżej znajdziesz animację przedstawiającą ideę omawianego algorytmu.
 
 ## Animacja
@@ -65,7 +77,7 @@ flowchart TD
 
 ### Złożoność
 
-$$O(n^2)$$ — kwadratowa
+Algorytm sortowania nieparzysto-parzystego ma złożoność obliczeniową $$O(n^2)$$, zarówno w przypadku średnim, jak i najgorszym. Jest to więc algorytm nieefektywny dla dużych zestawów danych.
 
 ## Implementacja
 
