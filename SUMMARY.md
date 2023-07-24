@@ -560,6 +560,7 @@
       * [Jednoczesne wyszukiwanie minimum i maksimum](programming/c/algorithms/searching/min-max-search.md)
       * [Znajdowanie lidera w zbiorze](programming/c/algorithms/searching/majority.md)
       * [Najdłuższy spójny podciąg rosnący](programming/c/algorithms/searching/longest-growing-substring.md)
+      * [Suma dwóch liczb](programming/c/algorithms/searching/sum-of-two.md)
       * [Sumy prefiksowe](programming/c/algorithms/searching/prefix-sum.md)
 * [Dart](programming/dart/README.md)
   * [Algorytmy](programming/dart/algorithms/README.md)
