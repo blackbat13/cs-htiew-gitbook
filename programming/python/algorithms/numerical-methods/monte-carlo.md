@@ -10,7 +10,7 @@
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-import random
+from random import random
 
 
 def monte_carlo_pi(points_count: int) -> float:
@@ -23,8 +23,8 @@ def monte_carlo_pi(points_count: int) -> float:
     distance = 0
     
     for _ in range(points_count):
-        x = random.random() * 2.0
-        y = random.random() * 2.0
+        x = random() * 2.0
+        y = random() * 2.0
         distance = ((x - center_x) ** 2) + ((y - center_y) ** 2)
         
         if distance <= radius ** 2:
@@ -45,7 +45,7 @@ print(f"PI ~= {estimated_pi}")
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-import random
+from random import random
 
 import matplotlib.pyplot as plt
 
@@ -61,8 +61,8 @@ def monte_carlo_pi(points_count: int) -> float:
     plot_values = []
 
     for i in range(1, points_count + 1):
-        x = random.random() * 2.0
-        y = random.random() * 2.0
+        x = random() * 2.0
+        y = random() * 2.0
         distance = ((x - center_x) ** 2) + ((y - center_y) ** 2)
 
         if distance <= radius ** 2:
