@@ -562,6 +562,8 @@
       * [Najdłuższy spójny podciąg rosnący](programming/c/algorithms/searching/longest-growing-substring.md)
       * [Suma dwóch liczb](programming/c/algorithms/searching/sum-of-two.md)
       * [Sumy prefiksowe](programming/c/algorithms/searching/prefix-sum.md)
+    * [Struktury](programming/c/algorithms/structures/README.md)
+      * [Stos](programming/c/algorithms/structures/stack.md)
 * [Dart](programming/dart/README.md)
   * [Algorytmy](programming/dart/algorithms/README.md)
     * [Wyszukiwanie](programming/dart/algorithms/searching/README.md)
