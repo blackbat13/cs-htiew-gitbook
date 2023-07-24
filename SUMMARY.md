@@ -559,6 +559,7 @@
       * [Wyszukiwanie minimum i maksimum](programming/c/algorithms/searching/min-or-max.md)
       * [Jednoczesne wyszukiwanie minimum i maksimum](programming/c/algorithms/searching/min-max-search.md)
       * [Znajdowanie lidera w zbiorze](programming/c/algorithms/searching/majority.md)
+      * [Najdłuższy spójny podciąg rosnący](programming/c/algorithms/searching/longest-growing-substring.md)
 * [Dart](programming/dart/README.md)
   * [Algorytmy](programming/dart/algorithms/README.md)
     * [Wyszukiwanie](programming/dart/algorithms/searching/README.md)
