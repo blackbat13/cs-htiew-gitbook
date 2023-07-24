@@ -9,10 +9,8 @@
 ## Implementacja
 
 {% code overflow="wrap" lineNumbers="true" %}
-```cpp
-#include <iostream>
-
-using namespace std;
+```c
+#include <stdio.h>
 
 void computePrefixSum(int numbersCount, int numbersArray[],
                       int prefixSumArray[]) {
@@ -29,8 +27,7 @@ void answerQueries(int numbersCount, int numbersArray[], int queriesCount,
   for (int i = 0; i < queriesCount; i++) {
     int result = prefixSumArray[queriesArray[i][1] + 1] -
                  prefixSumArray[queriesArray[i][0]];
-    cout << "sum(" << queriesArray[i][0] << ":" << queriesArray[i][1]
-         << ") = " << result << endl;
+    printf("sum(%d:%d) = %d\n", queriesArray[i][0], queriesArray[i][1], result);
   }
 }
 
