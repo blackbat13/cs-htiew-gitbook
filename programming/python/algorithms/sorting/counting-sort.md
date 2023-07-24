@@ -10,9 +10,9 @@
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-def count_occurrences(array: []) -> []:
+def count_occurrences(array: list) -> list:
     max_number = max(array)
-    occurrences = [0 for _ in range(max_number + 1)]
+    occurrences = [0] * (max_number + 1)
 
     for number in array:
         occurrences[number] += 1

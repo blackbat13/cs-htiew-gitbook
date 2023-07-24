@@ -14,12 +14,12 @@
 ```python
 def sum_of_two(tab: list, k: int):
     for i in range(len(tab)):
-        for j in range(i+1, len(tab)):
+        for j in range(i + 1, len(tab)):
             if tab[i] + tab[j] == k:
                 print(tab[i], tab[j])
                 return
                 
-    print(-1)
+    print("Not found")
     
 
 tab = [1, 2, 4, 6, 8, 9, 10, 12, 13, 15]
@@ -62,7 +62,7 @@ def sum_of_two(tab: list, k: int):
     if left < right:
         print(tab[left], tab[right])
     else:
-        print(-1)
+        print("Not found")
      
            
 tab = [1, 2, 4, 6, 8, 9, 10, 12, 13, 15]
