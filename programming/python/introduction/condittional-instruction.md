@@ -1,7 +1,5 @@
 # Instrukcje warunkowe
 
-## Wstęp
-
 Instrukcja warunkowa w języku Python wygląda bardzo podobnie jak i w innych językach.
 Standardowo, możemy ją przedstawić w trzech typowych konfiguracjach: prostej, rozwiniętej i pełnej.
 

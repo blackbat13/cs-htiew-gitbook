@@ -1,10 +1,8 @@
 # Funkcje
 
-## Wstęp
-
 W języku Python funkcje definiujemy zaczynając od słowa kluczowego `def`, po którym następuje nazwa funkcji, lista parametrów oddzielonych przecinkiem podanych w okrągłych nawiasach, a następnie dwukropek oznaczający początek bloku ciała funkcji.
 
-### Przykład
+## Przykład
 
 ```python
 def suma(a, b):
