@@ -161,3 +161,11 @@ Najpierw dokonujemy podziału na dwie tablice pomocnicze wykonując $$\frac{n}{2
 {% content-ref url="../../programming/kotlin/algorithms/searching/min-max-search.md" %}
 [min-max-search.md](../../programming/kotlin/algorithms/searching/min-max-search.md)
 {% endcontent-ref %}
+
+## Implementacje — pozostałe
+
+### C
+
+{% content-ref url="../../programming/c/algorithms/searching/min-max-search.md" %}
+[min-max-search.md](../../programming/c/algorithms/searching/min-max-search.md)
+{% endcontent-ref %}

@@ -120,3 +120,11 @@ Mamy jedną pętlę, która przechodzi przez kolejne elementy tablicy, której d
 {% content-ref url="../../programming/kotlin/algorithms/searching/longest-growing-substring.md" %}
 [longest-growing-substring.md](../../programming/kotlin/algorithms/searching/longest-growing-substring.md)
 {% endcontent-ref %}
+
+## Implementacje — pozostałe
+
+### C
+
+{% content-ref url="../../programming/c/algorithms/searching/longest-growing-substring.md" %}
+[longest-growing-substring.md](../../programming/c/algorithms/searching/longest-growing-substring.md)
+{% endcontent-ref %}

@@ -188,6 +188,14 @@ $$O(n)$$ — liniowa
 [majority.md](../../programming/kotlin/algorithms/searching/majority.md)
 {% endcontent-ref %}
 
+## Implementacje — pozostałe
+
+### C
+
+{% content-ref url="../../programming/c/algorithms/searching/majority.md" %}
+[majority.md](../../programming/c/algorithms/searching/majority.md)
+{% endcontent-ref %}
+
 ## Powiązane zagadnienia
 
 - Znajdowanie lidera w posortowanej tablicy.

@@ -161,6 +161,14 @@ $$O(\log n)$$ - logarytmiczna
 [binary-search.md](../../programming/kotlin/algorithms/searching/binary-search.md)
 {% endcontent-ref %}
 
+## Implementacje — pozostałe
+
+### C
+
+{% content-ref url="../../programming/c/algorithms/searching/linear-search.md" %}
+[linear-search.md](../../programming/c/algorithms/searching/linear-search.md)
+{% endcontent-ref %}
+
 ## Powiązane zagadnienia
 
 - Obliczanie pierwiastka kwadratowego zadanej liczby.

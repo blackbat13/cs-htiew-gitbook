@@ -124,3 +124,11 @@ flowchart TD
 {% content-ref url="../../programming/python/algorithms/searching/prefix-sum.md" %}
 [prefix-sum.md](../../programming/python/algorithms/searching/prefix-sum.md)
 {% endcontent-ref %}
+
+## Implementacje — pozostałe
+
+### C
+
+{% content-ref url="../../programming/c/algorithms/searching/prefix-sum.md" %}
+[prefix-sum.md](../../programming/c/algorithms/searching/prefix-sum.md)
+{% endcontent-ref %}

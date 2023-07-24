@@ -144,3 +144,11 @@ $$O(n)$$ - liniowa
 {% content-ref url="../../programming/kotlin/algorithms/searching/sum-of-two.md" %}
 [sum-of-two.md](../../programming/kotlin/algorithms/searching/sum-of-two.md)
 {% endcontent-ref %}
+
+## Implementacje — pozostałe
+
+### C
+
+{% content-ref url="../../programming/c/algorithms/searching/sum-of-two.md" %}
+[sum-of-two.md](../../programming/c/algorithms/searching/sum-of-two.md)
+{% endcontent-ref %}
