@@ -10,16 +10,6 @@
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-def count_occurrences(element: int, array: list) -> int:
-    count = 0
-    
-    for el in array:
-        if el == element:
-            count += 1
-
-    return count
-
-
 def find_majority(array: list) -> int:
     counter = 0
     current_candidate = 0
@@ -28,13 +18,12 @@ def find_majority(array: list) -> int:
         if counter == 0:
             current_candidate = el
             counter = 1
+        elif el == current_candidate:
+            counter += 1
         else:
-            if el == current_candidate:
-                counter += 1
-            else:
-                counter -= 1
+            counter -= 1
 
-    if count_occurrences(current_candidate, array) >= len(array) / 2:
+    if array.count(current_candidate) >= len(array) / 2:
         return current_candidate
     else:
         return -1
@@ -49,8 +38,6 @@ print(majority)
 {% endcode %}
 
 ### Opis implementacji
-
-Funkcja `count_occurrences` przyjmuje jako argumenty `element` (liczbę, której wystąpienia chcemy policzyć) oraz listę `array` (lista liczb) i zwraca liczbę wystąpień tego elementu w liście.
 
 Początkowo ustawiamy zmienną `count` na $$0$$.
 W pętli `for` iterujemy po każdym elemencie `el` z listy `array`.
