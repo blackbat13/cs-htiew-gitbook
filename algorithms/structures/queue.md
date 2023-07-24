@@ -6,7 +6,7 @@ Podstawowe operacje wykonywane na kolejce to:
 
 - **Enqueue** (dodaj do kolejki): dodaje element na koniec kolejki.
 - **Dequeue** (usuń z kolejki): usuwa element z początku kolejki.
-- 
+
 Dodatkowe operacje, które mogą być dostępne w niektórych implementacjach kolejki, to:
 
 - **Front/Peek**: zwraca pierwszy element kolejki bez usuwania go.
