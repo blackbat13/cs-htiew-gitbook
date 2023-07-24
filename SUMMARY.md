@@ -556,6 +556,7 @@
     * [Wyszukiwanie](programming/c/algorithms/searching/README.md)
       * [Wyszukiwanie liniowe](programming/c/algorithms/searching/linear-search.md)
       * [Wyszukiwanie binarne](programming/c/algorithms/searching/binary-search.md)
+      * [Wyszukiwanie minimum i maksimum](programming/c/algorithms/searching/min-or-max.md)
       * [Znajdowanie lidera w zbiorze](programming/c/algorithms/searching/majority.md)
 * [Dart](programming/dart/README.md)
   * [Algorytmy](programming/dart/algorithms/README.md)
