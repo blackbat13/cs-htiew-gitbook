@@ -9,7 +9,7 @@ Przyjrzyjmy się trzem poniższym sposobom na utworzenie listy liczb całkowityc
 ```python
 tab = []
 for i in range(n):
-    tab.append(n)
+    tab.append(i)
 ```
 
 **Sposób 2**
