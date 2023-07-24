@@ -109,3 +109,19 @@ int main() {
 }
 ```
 {% endcode %}
+
+### Opis implementacji
+
+Funkcja `binarySearchRecursive` przyjmuje cztery argumenty: tablicę `array[]`, liczbę `number`, którą chcemy znaleźć, oraz lewy `left` i prawy `right` indeks określający zakres wyszukiwania. Oto, jak działa ta funkcja:
+
+1. Jeżeli lewy indeks jest mniejszy od prawego, wyznacza indeks środkowy `middle` jako średnią indeksów lewego i prawego.
+2. Jeżeli szukana liczba `number` jest mniejsza lub równa liczbie w środku tablicy, to wywołuje funkcję `binarySearchRecursive` z zakresem od lewego indeksu do środkowego. W przeciwnym przypadku wywołuje funkcję `binarySearchRecursive` z zakresem od środkowego indeksu plus jeden do prawego indeksu.
+3. Jeżeli lewy indeks jest równy prawemu i liczba w tym indeksie jest równa szukanej liczbie, zwraca ten indeks.
+4. Jeżeli liczba nie została znaleziona, zwraca $$-1$$.
+
+W głównej funkcji `main`:
+
+1. Definiuje tablicę `array[]` oraz szukaną liczbę `number`.
+2. Wywołuje funkcję `binarySearchRecursive` z tablicą, szukaną liczbą oraz indeksami początkowym i końcowym.
+
+Jeżeli zwrócony indeks jest równy $$-1$$, wyświetla informację, że liczba nie została znaleziona. W przeciwnym przypadku wyświetla indeks, pod którym znajduje się szukana liczba.
