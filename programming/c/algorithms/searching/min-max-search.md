@@ -55,7 +55,7 @@ W części głównej tworzymy przykładową tablicę (**linia 24**), a następni
 ### Implementacja
 
 {% code overflow="wrap" lineNumbers="true" %}
-```cpp
+```c
 #include <stdio.h>
 
 void findMinMaxOptimal(int array[], int length) {
