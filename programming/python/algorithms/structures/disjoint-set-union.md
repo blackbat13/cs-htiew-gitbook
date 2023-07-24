@@ -13,8 +13,8 @@
 class DisjointUnion:
     """
     Class representing Disjoint-Set-Union structure.
-    :param number_of_nodes: how many elements should be store in the structure.
-    :ivar _subsets: information about subsets
+    :param number_of_nodes: number of elements stored in the structure.
+    :ivar _subsets: information about subsets.
     """
 
     class Node:
@@ -23,9 +23,7 @@ class DisjointUnion:
             self.rank = rank
 
     def __init__(self, number_of_nodes: int):
-        self._subsets = []
-        for i in range(0, number_of_nodes):
-            self._subsets.append(self.Node(i, 0))
+        self._subsets = [self.Node(i, 0) for i in range(number_of_nodes)]
 
     def union(self, el1: int, el2: int) -> None:
         """
