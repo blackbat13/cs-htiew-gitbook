@@ -144,7 +144,7 @@
   * [Lista jednokierunkowa](algorithms/structures/singly-linked-list.md)
   * [Lista dwukierunkowa](algorithms/structures/doubly-linked-list.md)
   * [Struktura zbiorów rozłącznych](algorithms/structures/disjoint-set-union.md)
-  * [Drzewa przeszukiwań binarnych](algorithms/structures/drzewa-przeszukiwan-binarnych.md)
+  * [Drzewa przeszukiwań binarnych](algorithms/structures/bst.md)
   * [Drzewa przedziałowe](algorithms/structures/segment-trees.md)
 * [Grafowe](algorithms/graphs/README.md)
   * [DFS](algorithms/graphs/dfs.md)
