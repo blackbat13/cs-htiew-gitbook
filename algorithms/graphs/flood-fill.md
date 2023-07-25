@@ -15,11 +15,11 @@ Najpopularniejszymi wariantami algorytmu Flood Fill są:
 - **Algorytm czterosąsiadowy** (*Four-Connected*): Przechodzi do sąsiadów na górze, na dole, na lewo i na prawo od danego punktu.
 - **Algorytm ośmiosąsiadowy** (*Eight-Connected*): Przechodzi do sąsiadów na górze, na dole, na lewo, na prawo, a także do czterech sąsiadów po przekątnych.
 
-## Przykład 1 - rekurencyjne wypełnianie obszaru pól połączonych ze sobą w linii prostej, poziomo lub pionowo.
+## Przykład 1 - wariant czterosąsiadowy
 
 ![By André Karwath aka Aka - Own work, CC BY-SA 2.5, https://commons.wikimedia.org/w/index.php?curid=481651](../../.gitbook/assets/Recursive\_Flood\_Fill\_4\_\(aka\).gif)
 
-## Przykład 2 - rekurencyjne wypełnianie obszaru pól połączonych ze sobą w dowolnym kierunku, także na ukos.
+## Przykład 2 - wariant ośmiosąsiadowy
 
 ![By André Karwath aka Aka - Own work, CC BY-SA 2.5, https://commons.wikimedia.org/w/index.php?curid=481652](../../.gitbook/assets/Recursive\_Flood\_Fill\_8\_\(aka\).gif)
 
