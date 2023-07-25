@@ -8,6 +8,21 @@ DFS jest często wykorzystywany do rozwiązywania różnego rodzaju problemów, 
 
 DFS zaczyna od wybranego wierzchołka (zwanego wierzchołkiem źródłowym/początkowym) i wykonuje przeszukiwanie możliwie najdalej wzdłuż każdej gałęzi grafu, zanim wróci do poprzedniego wierzchołka i spróbuje przeszukać kolejną ścieżkę. Głównym celem algorytmu jest odwiedzenie każdego wierzchołka grafu dokładnie raz.
 
+## Pseudokod
+
+```
+funkcja DFS(G, s):   (G - graf, v - wierzchołek startowy)
+    1. Utwórz stos S
+    2. Umieść v na stosie S
+    3. Oznacz v jako odwiedzone
+    4. Dopóki stos S nie jest pusty, wykonuj:
+        1. Usuń pierwszy element ze stosu S i zapisz w zmiennej k
+        2. Dla każdego wierzchołka u sąsiadującego z k, wykonuj:
+            1. Jeżeli u nie jest odwiedzony, to:
+                1. Oznacz u jako odwiedzony
+                2. Umieść u na stosie S
+```
+
 ## Zastosowania
 
 DFS ma wiele zastosowań w praktyce, między innymi:
