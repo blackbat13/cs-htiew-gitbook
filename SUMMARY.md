@@ -149,6 +149,7 @@
 * [Grafowe](algorithms/graphs/README.md)
   * [DFS](algorithms/graphs/dfs.md)
   * [Spójne składowe](algorithms/graphs/connected-components.md)
+  * [Silnie spójne składowe](algorithms/graphs/strongly-connected-components.md)
   * [BFS](algorithms/graphs/bfs.md)
   * [Dijkstra](algorithms/graphs/dijkstra.md)
   * [Floyd-Warshall](algorithms/graphs/floyd-warshall.md)
