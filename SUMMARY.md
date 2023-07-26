@@ -985,6 +985,7 @@
       * [Rozwiązanie - C++](matura-z-informatyki/przygotowanie/programming/binary-numbers/solution-cpp.md)
       * [Rozwiązanie - Python](matura-z-informatyki/przygotowanie/programming/binary-numbers/solution-python.md)
     * [Ułamki](matura-z-informatyki/przygotowanie/programming/fractions/README.md)
+    * [Motylek](matura-z-informatyki/przygotowanie/programming/butterfly/README.md)
   * [Arkusz kalkulacyjny](matura-z-informatyki/przygotowanie/spreadsheet/README.md)
     * [Sklep](matura-z-informatyki/przygotowanie/spreadsheet/shop/README.md)
       * [Rozwiązanie](matura-z-informatyki/przygotowanie/spreadsheet/shop/solution.md)

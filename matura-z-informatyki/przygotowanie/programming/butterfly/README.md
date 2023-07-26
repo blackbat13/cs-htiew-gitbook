@@ -29,4 +29,4 @@ Załóżmy, że gdy motylek miałby wykonać polecenie przenoszące go poza sze�
 
 ## Zadanie 5
 
-Ignorując sześcian i zakładając, że motylek wykonuje **każde** polecenie, podaj współrzędne dwóch pozycji motylka, które są od siebie najbardziej oddalone w linii prostej. Podaj odległość między tymi punktami. Jeżeli jest kilka takich par, wypisz wszystkie.
+Ignorując sześcian i zakładając, że motylek wykonuje **każde** polecenie, podaj współrzędne dwóch pozycji motylka, które są od siebie najbardziej oddalone w linii prostej. Podaj odległość między tymi punktami z zaokrągleniem do dwóch miejsc po przecinku. Jeżeli jest kilka takich par, wypisz wszystkie.
