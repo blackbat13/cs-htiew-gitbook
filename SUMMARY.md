@@ -108,7 +108,7 @@
   * [Palindrom](algorithms/text/palindrome.md)
   * [Anagramy](algorithms/text/anagrams.md)
   * [Naiwne wyszukiwanie wzorca w tekście](algorithms/text/naive-substring-search.md)
-  * [Odwrotna Notacja Polska](algorithms/text/odwrotna-notacja-polska.md)
+  * [Odwrotna Notacja Polska](algorithms/text/rpn.md)
   * [Najdłuższy wspólny podciąg](algorithms/text/longest-common-subsequence.md)
   * [Odległość Hamminga](algorithms/text/hamming-distance.md)
   * [Odległość Levenshteina (edycyjna)](algorithms/text/levenshtein-distance.md)
