@@ -11,6 +11,10 @@ W pliku **motylek.txt** znajduje się $$1000$$ poleceń dla motylka. Każde pole
 - **F** - pofruń naprzód,
 - **B** - pofruń do tyłu.
 
+{% file src="../../../../.gitbook/assets/motylek.txt" %}
+motylek.txt
+{% endfile %}
+
 ## Zadanie 1
 
 Podaj numer polecenia, którego wykonanie spowoduje, że motylek wyleci poza sześcian (dopuszczamy wlecenie w bok sześcianu). Podaj pozycję, na której znajdował się motylek przed wykonaniem tego polecenia.
