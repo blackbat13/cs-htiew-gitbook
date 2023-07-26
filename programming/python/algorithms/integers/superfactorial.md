@@ -17,7 +17,7 @@ def superfactorial(n: int) -> int:
         factorial *= i
         result *= factorial
 
-    return factorial
+    return result
 
 
 n = 4
