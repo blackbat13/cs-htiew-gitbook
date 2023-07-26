@@ -4,6 +4,10 @@ W pliku **kik.txt** znajduje się $$10000$$ par liczb rzeczywistych z zakresu od
 
 W środku układu współrzędnych narysowano koło o promieniu $$1$$. Środek koła znajduje się w punkcie $$(0,0)$$.
 
+{% file src="../../../../.gitbook/assets/kik.txt" %}
+kik.txt
+{% endfile %}
+
 ## Zadanie 1
 
 Oblicz, ile punktów z pliku znajduje się wewnątrz koła (wliczamy w to także punkty leżące na okręgu), a ile poza nim.
@@ -18,7 +22,7 @@ Podaj dowolną wartość $$k$$ taką, że dokładnie $$5000$$ punktów ma wspó�
 
 ## Zadanie 4
 
-Wypisz pierwsze $$100$$ punktów z pliku. Każdą współrzędną pomnóż przez $$1000$$ i zaokrąglij $$w dół$$ do najbliższej liczby całkowitej. Zapisz tak otrzymane punkty w pliku **kik_posortowane.txt**, każdy w osobnej linii, uporządkowane zgodnie z poniższymi regułami:
+Weź pierwsze $$100$$ punktów z pliku. Każdą współrzędną pomnóż przez $$1000$$ i zaokrąglij $$w dół$$ do najbliższej liczby całkowitej. Zapisz tak otrzymane punkty w pliku **kik_posortowane.txt**, każdy w osobnej linii, uporządkowane zgodnie z poniższymi regułami:
 
 - załóżmy, że ustalamy porządek dwóch punktów o współrzędnych $$(x_1,y_1)$$ i $$(x_2,y_2)$$,
 - punkt $$(x_1,y_1)$$ znajduje się w porządku **przed** punktem $$(x_2,y_2)$$ wtedy i tylko wtedy gdy:
