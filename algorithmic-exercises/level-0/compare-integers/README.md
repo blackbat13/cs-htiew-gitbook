@@ -30,7 +30,7 @@ b := 15
 ```
 
 {% hint style="info" %}
-#### Wyjaśnienie:
+### Wyjaśnienie:
 
 $$10$$ jest **mniejsze** od $$15$$, więc $$a$$ jest **mniejsze** od $$b$$, dlatego wypisujemy znak **mniejszości** ($$<$$).
 {% endhint %}

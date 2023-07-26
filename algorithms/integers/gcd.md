@@ -12,7 +12,7 @@ Największy wspólny dzielnik dwóch liczb naturalnych wykorzystywane jest w wie
 
 #### Wynik
 
-* $$NWD(a, b)$$ — największy wspólny dzielnik liczb $$a$$ i $$b$$
+* $$NWD(a, b)$$ — największy wspólny dzielnik liczb $$a$$ i $$b$$ 
 
 ### Przykład
 
@@ -23,7 +23,7 @@ a := 32
 b := 12
 ```
 
-**Wynik**: $$4$$
+**Wynik**: $$4$$ 
 
 {% hint style="info" %}
 **Wyjaśnienie**
@@ -32,7 +32,7 @@ Dzielnikami liczby $$32$$ są: $$1, 2, 4, 8, 16, 32$$
 
 Dzielnikami liczby $$12$$ są: 1, 2, 3, 4, 6, 12
 
-Wspólnymi dzielnikami są więc: $$1, 2, 4$$
+Wspólnymi dzielnikami są więc: $$1, 2, 4$$ 
 
 Największy z nich to właśnie $$4$$.
 {% endhint %}
@@ -129,8 +129,8 @@ flowchart TD
 
 ### Python
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="../../programming/python/algorithms/integers/gcd.md" %}
+[gcd.md](../../programming/python/algorithms/integers/gcd.md)
 {% endcontent-ref %}
 
 ### Blockly
@@ -138,3 +138,4 @@ flowchart TD
 {% content-ref url="../../programming/blockly/algorithms/integers/gcd.md" %}
 [gcd.md](../../programming/blockly/algorithms/integers/gcd.md)
 {% endcontent-ref %}
+

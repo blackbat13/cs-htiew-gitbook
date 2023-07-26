@@ -4,6 +4,7 @@ Gazeta "Bitek" z Bajtkowa jest niezwykle popularna, nawet w swoim tradycyjnym, p
 
 Twoje zadanie polega na obliczeniu, ile wyniesie opłata za określone ogłoszenie według nowego cennika.
 
+
 Źródło: [https://onlinejudge.org/external/113/11340.pdf](https://onlinejudge.org/external/113/11340.pdf)
 
 ## Specyfikacja
@@ -40,7 +41,7 @@ alamakota
 ```
 
 {% hint style="info" %}
-#### Wyjaśnienie
+### Wyjaśnienie
 
 W wyrazie **alamakota** możemy wyróżnić:
 
@@ -51,5 +52,6 @@ W wyrazie **alamakota** możemy wyróżnić:
 * $$1$$ literę **o**
 * $$1$$ literę **t**
 
-Daje nam to: $$4*5+1*25+1*30+1*50+1*10+1*1=136$$ groszy, czyli $$1.36$$ złoty.
+Daje nam to:
+$$4*5+1*25+1*30+1*50+1*10+1*1=136$$ groszy, czyli $$1.36$$ złoty.
 {% endhint %}

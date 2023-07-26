@@ -1,2 +1,0 @@
-# Odwrotna Notacja Polska
-

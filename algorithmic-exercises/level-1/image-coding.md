@@ -40,7 +40,10 @@ AZIP
 ```
 
 {% hint style="info" %}
-#### Wyjaśnienie
+### Wyjaśnienie
 
-Najczęściej występującym regionem jest region **A**. Występuje on dokładnie $$6$$ razy. Oznacza to, że region **A** kodujemy za pomocą $$2$$ bajtów, a wszystkie pozostałe (których jest $$14$$), za pomocą $$1$$ bajta. Stąd otrzymujemy wynik: $$6*2 + 14*1 = 12 + 14 = 26$$
+Najczęściej występującym regionem jest region **A**.
+Występuje on dokładnie $$6$$ razy.
+Oznacza to, że region **A** kodujemy za pomocą $$2$$ bajtów, a wszystkie pozostałe (których jest $$14$$), za pomocą $$1$$ bajta.
+Stąd otrzymujemy wynik: $$6*2 + 14*1 = 12 + 14 = 26$$
 {% endhint %}

@@ -12,7 +12,7 @@ Twoim zadaniem jest określenie ilości liczb w zadanym przedziale, które skła
 
 ### Wynik
 
-* Ilość wszystkich liczb z przedziału $$[a,b]$$, które składają się wyłącznie z różnych cyfr.
+* Ilość wszystkich liczb z przedziału $$[a,b]$$, które składają się wyłącznie z różnych cyfr. 
 
 ## Przykład
 
@@ -29,9 +29,9 @@ Twoim zadaniem jest określenie ilości liczb w zadanym przedziale, które skła
 ```
 
 {% hint style="info" %}
-#### Wyjaśnienie
+### Wyjaśnienie
 
 Z przedziału $$[87,104]$$ następujące liczby składają się wyłącznie z różnych cyfr:
 
-$$87,89,90,91,92,93,94,95,96,97,98,102,103,104$$
+$$87,89,90,91,92,93,94,95,96,97,98,102,103,104$$ 
 {% endhint %}
