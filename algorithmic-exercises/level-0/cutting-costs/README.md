@@ -27,7 +27,7 @@ c := 1800
 **Wynik:** $$1500$$
 
 {% hint style="info" %}
-### Wyjaśnienie
+#### Wyjaśnienie
 
 Najmniejsza z wartości to $$1200$$, a największa do $$1800$$, pozostaje więc $$1500$$.
 {% endhint %}

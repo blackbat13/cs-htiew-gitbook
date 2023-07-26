@@ -15,7 +15,7 @@ Na początku pisałem, że tworzenie aplikacji konsolowym jest nudne. Od czegoś
 
 ## Gra
 
-Jak wskazuje tytuł, nasza gra będzie prosta, a nawet można powiedzieć, że naiwna! Będzie to gra dla dwóch graczy: człowiek kontra komputer.  Przebieg gry jest prosty: najpierw pierwszy gracz podaje swoją liczbę, a następnie drugi podaje swoją. Celem jest podanie liczby większej od przeciwnika. Wygrywa ten, kto poda większą wartość!
+Jak wskazuje tytuł, nasza gra będzie prosta, a nawet można powiedzieć, że naiwna! Będzie to gra dla dwóch graczy: człowiek kontra komputer. Przebieg gry jest prosty: najpierw pierwszy gracz podaje swoją liczbę, a następnie drugi podaje swoją. Celem jest podanie liczby większej od przeciwnika. Wygrywa ten, kto poda większą wartość!
 
 #### Przykład
 
@@ -36,8 +36,7 @@ W naszym projekcie będziemy mogli stworzyć wiele różnych aplikacji i gier. C
 
 ### Tworzymy nowy plik
 
-Klikamy prawym przyciskiem myszy na główny katalog naszej gry, następnie wybieramy **New->Python file**. Nazwijmy nasz plik *naiwna_gra*.
-Utworzony przez Ciebie plik powinien mieć **rozszerzenie .py**. Oznacza to, że cała nazwa pliku będzie wyglądała następująco: *naiwna_gra.py*. 
+Klikamy prawym przyciskiem myszy na główny katalog naszej gry, następnie wybieramy **New->Python file**. Nazwijmy nasz plik _naiwna\_gra_. Utworzony przez Ciebie plik powinien mieć **rozszerzenie .py**. Oznacza to, że cała nazwa pliku będzie wyglądała następująco: _naiwna\_gra.py_.
 
 {% hint style="info" %}
 Rozszerzenie **.py** to format skryptów zapisanych w języku Python.
@@ -45,7 +44,7 @@ Rozszerzenie **.py** to format skryptów zapisanych w języku Python.
 
 ### Wczytujemy liczbę od gracza
 
-Zaczynamy od wczytania liczby od użytkownika. W tym celu skorzystamy z polecenia `input`. Jako **parametr** tego polecenia, który zapisujemy w nawiasach okrągłych, podajemy komunikat, który ma zostać wyświetlony na ekranie.  W Pythonie komunikaty i teksty podajemy w cudzysłowie:
+Zaczynamy od wczytania liczby od użytkownika. W tym celu skorzystamy z polecenia `input`. Jako **parametr** tego polecenia, który zapisujemy w nawiasach okrągłych, podajemy komunikat, który ma zostać wyświetlony na ekranie. W Pythonie komunikaty i teksty podajemy w cudzysłowie:
 
 ```python
 input("Podaj liczbę: ")
@@ -92,7 +91,7 @@ liczba = int(liczba_tekst)
 
 Już teraz warto uruchomić program i sprawdzić, czy wszystko działa.
 
-W celu uruchomienia naszej gry klikamy **prawym przyciskiem myszy** gdzieś w edytorze i wybieramy zieloną strzałkę z napisem **Run 'naiwna_gra'**.
+W celu uruchomienia naszej gry klikamy **prawym przyciskiem myszy** gdzieś w edytorze i wybieramy zieloną strzałkę z napisem **Run 'naiwna\_gra'**.
 
 {% hint style="warning" %}
 Pamiętaj, żeby testować swoje gry i programy jak najczęściej! Pozwoli to na bieżąco rozwiązywać wszelkie błędy i uniknąć późniejszej frustracji.
@@ -118,7 +117,7 @@ Teraz pozostało nam wypisać nowo utworzoną liczbę, a następnie komunikat o 
 print(nowa_liczba)
 ```
 
-Nie oczekujemy, że polecenie `print` zwróci nam jakąś wartość, jego zadaniem jest tylko wypisanie komunikatu na ekranie. 
+Nie oczekujemy, że polecenie `print` zwróci nam jakąś wartość, jego zadaniem jest tylko wypisanie komunikatu na ekranie.
 
 ### Wypisujemy komunikat o wygranej
 
@@ -150,26 +149,23 @@ print("Wygrałem!")
 ```
 
 {% hint style="info" %}
-### Komentarze
+#### Komentarze
 
-Komentarze to fragmenty naszego kodu, które **nie wpływają** na działanie programu. Można je traktować jak notatki na marginesie. W tym kursie będziemy używać komentarzy, aby wytłumaczyć działanie wybranych fragmentów kodu. Często używa się komentarzy także do tego, aby zakomentować wybrane instrukcje, których nie chcemy usuwać, ale nie chcemy też, by były aktywne. 
+Komentarze to fragmenty naszego kodu, które **nie wpływają** na działanie programu. Można je traktować jak notatki na marginesie. W tym kursie będziemy używać komentarzy, aby wytłumaczyć działanie wybranych fragmentów kodu. Często używa się komentarzy także do tego, aby zakomentować wybrane instrukcje, których nie chcemy usuwać, ale nie chcemy też, by były aktywne.
 
 W języku Python komentarze zaczynamy od znaku hash (`#`). Wszystko po tym znaku w danej linijce traktowane jest jako komentarz.
 {% endhint %}
 
 ### Uruchamiamy grę
 
-Teraz czas, aby uruchomić swoją pierwszą grę!
-Spróbuj uruchomić ją kilka razy i podać różne wartości.
-Czy komputer zawsze wygra?
+Teraz czas, aby uruchomić swoją pierwszą grę! Spróbuj uruchomić ją kilka razy i podać różne wartości. Czy komputer zawsze wygra?
 
-Możesz także przetestować naszą grę w poniższym okienku.
-Kliknij zielony przycisk z napisem **Run**, aby ją uruchomić.
+Możesz także przetestować naszą grę w poniższym okienku. Kliknij zielony przycisk z napisem **Run**, aby ją uruchomić.
 
 {% embed url="https://replit.com/@damiankurpiewski/NaiwnaGra" %}
 
 {% hint style="info" %}
-### Błędy
+#### Błędy
 
-Podczas tworzenia kolejnych gier i programów popełnianie błędów stanie się chlebem powszednim. Nie należy się nimi przejmować, wręcz przeciwnie! Niektóre błędy mogą wręcz przynieść nieoczekiwane i zaskakujące rezultaty. Oczywiście czasami zdarzy nam się także popełnić błąd, który uniemożliwi uruchomienie naszego programu. W takim przypadku, przy próbie uruchomienia, w konsoli pojawią się stosowne komunikaty zaznaczone czerwonym kolorem. Warto się przyjrzeć tym komunikatom! Często będą wskazywać linijkę, w której wystąpił błąd, a także opiszą przyczynę samego błędu. Na początku w większości błędy będą ograniczać się do braku jakiegoś znaku, np. nawiasu końcowego, albo literówki w nazwie zmiennej czy polecenia.
+Podczas tworzenia kolejnych gier i programów popełnianie błędów stanie się chlebem powszednim. Nie należy się nimi przejmować, wręcz przeciwnie! Niektóre błędy mogą wręcz przynieść nieoczekiwane i zaskakujące rezultaty. Oczywiście czasami zdarzy nam się także popełnić błąd, który uniemożliwi uruchomienie naszego programu. W takim przypadku, przy próbie uruchomienia, w konsoli pojawią się stosowne komunikaty zaznaczone czerwonym kolorem. Warto się przyjrzeć tym komunikatom! Często będą wskazywać linijkę, w której wystąpił błąd, a także opiszą przyczynę samego błędu. Na początku w większości błędy będą ograniczać się do braku jakiegoś znaku, np. nawiasu końcowego, albo literówki w nazwie zmiennej czy polecenia.
 {% endhint %}
