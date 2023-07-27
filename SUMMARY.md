@@ -996,6 +996,7 @@
     * [Motylek](matura-z-informatyki/przygotowanie/programming/butterfly/README.md)
       * [Rozwiązanie](matura-z-informatyki/przygotowanie/programming/butterfly/solutions.md)
     * [Kółko i kwadrat](matura-z-informatyki/przygotowanie/programming/circle-and-square/README.md)
+      * [Rozwiązanie](matura-z-informatyki/przygotowanie/programming/circle-and-square/solutions.md)
   * [Arkusz kalkulacyjny](matura-z-informatyki/przygotowanie/spreadsheet/README.md)
     * [Sklep](matura-z-informatyki/przygotowanie/spreadsheet/shop/README.md)
       * [Rozwiązanie](matura-z-informatyki/przygotowanie/spreadsheet/shop/solution.md)
