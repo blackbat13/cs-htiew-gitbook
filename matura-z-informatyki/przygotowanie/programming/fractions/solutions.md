@@ -24,6 +24,7 @@ def zadanie1():
 
 ### Wynik
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```
 1 3
 15 8
@@ -126,6 +127,7 @@ def zadanie1():
 9 7
 4 3
 ```
+{% endcode %}
 
 ## Zadanie 2
 
