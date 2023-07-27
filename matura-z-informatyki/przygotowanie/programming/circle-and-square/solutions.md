@@ -120,6 +120,7 @@ def zadanie4():
 
 ### Wynik
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```
 -900 -803
 -864 -724
@@ -222,3 +223,4 @@ def zadanie4():
 925 -465
 927 -510
 ```
+{% endcode %}
