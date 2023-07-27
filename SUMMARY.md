@@ -993,6 +993,7 @@
       * [Rozwiązanie - C++](matura-z-informatyki/przygotowanie/programming/binary-numbers/solution-cpp.md)
       * [Rozwiązanie - Python](matura-z-informatyki/przygotowanie/programming/binary-numbers/solution-python.md)
     * [Ułamki](matura-z-informatyki/przygotowanie/programming/fractions/README.md)
+      * [Rozwiązanie](matura-z-informatyki/przygotowanie/programming/fractions/solutions.md)
     * [Motylek](matura-z-informatyki/przygotowanie/programming/butterfly/README.md)
       * [Rozwiązanie](matura-z-informatyki/przygotowanie/programming/butterfly/solutions.md)
     * [Kółko i kwadrat](matura-z-informatyki/przygotowanie/programming/circle-and-square/README.md)
