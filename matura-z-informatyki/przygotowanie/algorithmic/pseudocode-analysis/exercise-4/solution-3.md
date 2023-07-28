@@ -2,4 +2,4 @@
 
 Wynik dla pierwszego zadania: $$5$$
 
-Wynik dla drugiego zadania: $$50$$
+Wynik dla drugiego zadania: $$10$$
