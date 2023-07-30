@@ -31,13 +31,13 @@ TAK
 ```
 
 {% hint style="info" %}
-### Wyjaśnienie
+#### Wyjaśnienie
 
 Przyjrzyjmy się wartościom bezwzględnym różnic pomiędzy sąsiednimi elementami sekwencji:
 
-* $$|1-4|=3$$ 
-* $$|4-2|=2$$ 
-* $$|2-3|=1$$ 
+* $$|1-4|=3$$
+* $$|4-2|=2$$
+* $$|2-3|=1$$
 
 Jak widać otrzymaliśmy wszystkie wartości z przedziału $$[1,n-1]$$, czyli z przedziału $$[1,3]$$.
 {% endhint %}
@@ -58,14 +58,14 @@ NIE
 ```
 
 {% hint style="info" %}
-### Wyjaśnienie
+#### Wyjaśnienie
 
 Przyjrzyjmy się wartościom bezwzględnym różnic pomiędzy sąsiednimi elementami sekwencji:
 
-* $$|1-4|=3$$ 
-* $$|4-2|=2$$ 
-* $$|2-(-1)|=3$$ 
-* $$|-1-6|=7$$ 
+* $$|1-4|=3$$
+* $$|4-2|=2$$
+* $$|2-(-1)|=3$$
+* $$|-1-6|=7$$
 
 Jak widać nie otrzymaliśmy wszystkich wartości z przedziału $$[1,n-1]$$, czyli z przedziału $$[1,4]$$
 {% endhint %}

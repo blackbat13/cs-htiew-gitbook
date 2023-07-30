@@ -14,7 +14,7 @@ PS. Włodzimir z chęcią pożyczy Ci puste butelki, pod warunkiem, że potem je
 
 ### Wynik
 
-* Maksymalna liczba butelek mleka, które można wypić, korzystając z promocji. 
+* Maksymalna liczba butelek mleka, które można wypić, korzystając z promocji.
 
 ## Przykład
 
@@ -31,7 +31,7 @@ PS. Włodzimir z chęcią pożyczy Ci puste butelki, pod warunkiem, że potem je
 ```
 
 {% hint style="info" %}
-### Wyjaśnienie
+#### Wyjaśnienie
 
 Na początku mamy $$8$$ pełnych butelek mleka. Jeżeli pożyczymy jedną pustą butelkę, to możemy nasze $$9$$ pustych butelek wymienić na $$3$$ nowe. Wypijamy $$3$$ butelki mleka i wymieniamy je na jedną butelkę mleka. Wypijamy i ją, a na końcu oddajemy pustą butelkę. Wypiliśmy więc najpierw $$8$$, potem $$3$$ i na końcu $$1$$ butelkę mleka:
 

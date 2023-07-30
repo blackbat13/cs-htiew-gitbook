@@ -35,7 +35,7 @@ Permutację tablicy można scharakteryzować wskazując docelową kolejność po
 ```
 
 {% hint style="info" %}
-### Wyjaśnienie
+#### Wyjaśnienie
 
 Opis permutacji określa nam docelową pozycję elementów:
 

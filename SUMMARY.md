@@ -376,7 +376,7 @@
     * [Listy](programming/python/introduction/lists.md)
     * [Funkcje](programming/python/introduction/functions.md)
     * [Pliki](programming/python/introduction/files.md)
-    * [Wydajność](programming/python//introduction/performance.md)
+    * [Wydajność](programming/python/introduction/performance.md)
   * [Ćwiczenia](programming/python/exercises/README.md)
     * [Obsługa wejścia/wyjścia](programming/python/exercises/input-output/README.md)
       * [Rozwiązanie 1](programming/python/exercises/input-output/solution-1.md)
@@ -425,7 +425,7 @@
       * [Rozwiązanie 2](programming/python/exercises/functions/solution-2.md)
       * [Rozwiązanie 3](programming/python/exercises/functions/solution-3.md)
   * [Symulacje](programming/python/simulations/README.md)
-    * [A*](programming/python/simulations/a-star.md)
+    * [A\*](programming/python/simulations/a-star.md)
   * [Algorytmy](programming/python/algorithms/README.md)
     * [Wyszukiwanie](programming/python/algorithms/searching/README.md)
       * [Wyszukiwanie liniowe](programming/python/algorithms/searching/linear-search.md)
@@ -467,7 +467,7 @@
     * [Systemy liczbowe](programming/python/algorithms/numeral-systems/README.md)
       * [Konwersja pomiędzy systemami liczbowymi](programming/python/algorithms/numeral-systems/base-conversion.md)
       * [Konwersja w systemie U2](programming/python/algorithms/numeral-systems/u2-conversion.md)
-    * [Metody numeryczne](programming/python/algorithms/numerical-methods/README.md)
+    * [Metody numeryczne](programowanie/python/algorithms/metody-numeryczne/README.md)
       * [Schemat Hornera](programming/python/algorithms/numerical-methods/horner.md)
       * [Pierwiastek kwadratowy](programming/python/algorithms/numerical-methods/square-root.md)
       * [Całkowanie numeryczne](programming/python/algorithms/numerical-methods/numerical-integration.md)
@@ -747,7 +747,8 @@
   * [A+B](algorithmic-exercises/potyczki-algorytmiczne/apb/README.md)
     * [C++](algorithmic-exercises/potyczki-algorytmiczne/apb/c++.md)
 
-## Nauka programowania poprzez tworzenie gier <a href="learning-by-games" id="learning-by-games"></a>
+## Nauka programowania poprzez tworzenie gier <a href="#learning-by-games" id="learning-by-games"></a>
+
 * [Wstęp](learning-by-games/intro.md)
 * [Python 3](learning-by-games/python/README.md)
   * [Wprowadzenie](learning-by-games/python/introduction/README.md)
@@ -766,7 +767,7 @@
     * [Czołgi 2](learning-by-games/python/pygame-zero/tanks-2.md)
     * [Gra w kolory](learning-by-games/python/pygame-zero/colors-game.md)
     * [Kolorowa piłka](learning-by-games/python/pygame-zero/colorful-ball.md)
-    * [Snake](learning-by-games/python/pygame-zero/snake.md) -->
+    * [Snake](learning-by-games/python/pygame-zero/snake.md)
   * [Gry sieciowe](learning-by-games/python/online/README.md)
     * [Echo](learning-by-games/python/online/echo.md)
   * [Sztuczna inteligencja](learning-by-games/python/ai/README.md)
