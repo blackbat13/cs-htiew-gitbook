@@ -10,6 +10,8 @@
 
 Dany jest następujący tekst w języku angielskim, zapisany poniżej. Zgodnie z algorytmem kodowania Huffmana stwórz i rozrysuj drzewo kodów, a następnie zakoduj podany tekst za jego pomocą. Oblicz uzyskany stopień kompresji z dokładnością do dwóch miejsc po przecinku, zakładając, że oryginalny tekst był zakodowany za pomocą standardowego kodu ASCII, gdzie każdy znak to jeden bajt.
 
+**Pamiętaj**: możliwe jest uzyskanie kilku różnych, **prawidłowych** drzew kodów.
+
 > **knowledge_is_power**
 
 ## Zadanie 2
