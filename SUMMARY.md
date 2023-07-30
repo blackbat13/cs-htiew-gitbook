@@ -467,7 +467,7 @@
     * [Systemy liczbowe](programming/python/algorithms/numeral-systems/README.md)
       * [Konwersja pomiędzy systemami liczbowymi](programming/python/algorithms/numeral-systems/base-conversion.md)
       * [Konwersja w systemie U2](programming/python/algorithms/numeral-systems/u2-conversion.md)
-    * [Metody numeryczne](programowanie/python/algorithms/metody-numeryczne/README.md)
+    * [Metody numeryczne](programming/python/algorithms/numerical-methods/README.md)
       * [Schemat Hornera](programming/python/algorithms/numerical-methods/horner.md)
       * [Pierwiastek kwadratowy](programming/python/algorithms/numerical-methods/square-root.md)
       * [Całkowanie numeryczne](programming/python/algorithms/numerical-methods/numerical-integration.md)
