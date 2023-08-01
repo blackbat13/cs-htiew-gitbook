@@ -1,7 +1,7 @@
 # Babelfish
 
-{% embed url="http://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1223" %}
-[Babelfish](https://onlinejudge.org/external/102/10282.pdf)
+{% embed url="https://onlinejudge.org/external/102/10282.pdf" %}
+[Babelfish](http://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1223)
 {% endembed %}
 
 ## Pliki z danymi
