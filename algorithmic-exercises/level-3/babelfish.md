@@ -1,17 +1,25 @@
 # Babelfish
 
-[https://onlinejudge.org/external/102/10282.pdf](https://onlinejudge.org/external/102/10282.pdf)
+![https://onlinejudge.org/external/102/10282.pdf](https://onlinejudge.org/external/102/10282.pdf)
 
 ## Pliki z danymi
 
 ### Zestaw 1
 
-[Dane](../../.gitbook/assets/babelfish-input1.txt)
+{% file src="../../.gitbook/assets/babelfish-input1.txt" %}
+dane1.txt
+{% endfile %}
 
-[Wynik](../../.gitbook/assets/babelfish-output1.txt)
+{% file src="../../.gitbook/assets/babelfish-output1.txt" %}
+wynik1.txt
+{% endfile %}
 
 ### Zestaw 2
 
-[Dane](../../.gitbook/assets/babelfish-input2.txt)
+{% file src="../../.gitbook/assets/babelfish-input2.txt" %}
+dane2.txt
+{% endfile %}
 
-[Wynik](../../.gitbook/assets/babelfish-output2.txt)
+{% file src="../../.gitbook/assets/babelfish-output2.txt" %}
+wynik2.txt
+{% endfile %}
