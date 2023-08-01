@@ -1,6 +1,8 @@
 # Babelfish
 
-![https://onlinejudge.org/external/102/10282.pdf](https://onlinejudge.org/external/102/10282.pdf)
+{% embed url="http://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=1223" %}
+[Babelfish](https://onlinejudge.org/external/102/10282.pdf)
+{% endembed %}
 
 ## Pliki z danymi
 
