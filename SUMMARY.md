@@ -695,6 +695,7 @@
   * [Ślimak](algorithmic-exercises/level-2/snail.md)
   * [Gra w liczby](algorithmic-exercises/level-2/number-game.md)
 * [Poziom 3](algorithmic-exercises/level-3/README.md)
+  * [Andy's First Dictionary](algorithmic-exercises/level-3/andy-first-dictionary.md)
   * [Babelfish](algorithmic-exercises/level-3/babelfish.md)
   * [Genes](algorithmic-exercises/level-3/genes.md)
   * [Hay Points](algorithmic-exercises/level-3/hay-points.md)
