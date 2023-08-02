@@ -699,6 +699,7 @@
   * [Hay Points](algorithmic-exercises/level-3/hay-points.md)
   * [Password Search](algorithmic-exercises/level-3/password-search.md)
   * [Slogan Learning of Princess](algorithmic-exercises/level-3/slogan-learning-of-princess.md)
+  * [Unique Snowflakes](algorithmic-exercises/level-3/unique-snowflakes.md)
   * [Word Index](algorithmic-exercises/level-3/word-index.md)
 * [SZKOpuł](algorithmic-exercises/szkopul/README.md)
   * [10 Wspaniałych](algorithmic-exercises/szkopul/10-wspanialych/README.md)
