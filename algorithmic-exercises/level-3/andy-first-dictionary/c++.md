@@ -1,5 +1,6 @@
 # C++ - rozwiązanie
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 #include <set>
@@ -31,6 +32,7 @@ void toWords(string &text, set<string> &words)
         words.insert(b);
     }
 }
+
 int main()
 {
     string text;
@@ -48,3 +50,4 @@ int main()
     return 0;
 }
 ```
+{% endcode %}
