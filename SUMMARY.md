@@ -703,6 +703,7 @@
   * [Genes](algorithmic-exercises/level-3/genes.md)
   * [Hay Points](algorithmic-exercises/level-3/hay-points/README.md)
     * [Rozwiązanie C++](algorithmic-exercises/level-3/hay-points/c++.md)
+    * [Rozwiązanie Python](algorithmic-exercises/level-3/hay-points/python.md)
   * [List of Conquests](algorithmic-exercises/level-3/list-of-conquests/README.md)
     * [Rozwiązanie C++](algorithmic-exercises/level-3/list-of-conquests/c++.md)
   * [Password Search](algorithmic-exercises/level-3/password-search/README.md)
