@@ -20,7 +20,6 @@ int main()
         cin >> encodedMsg;
 
         counters.clear();
-        maxCounter = 0;
         currentStr = encodedMsg.substr(0, passwordSize);
         hash = 0;
         powerOf26 = 1;
@@ -34,11 +33,8 @@ int main()
         powerOf26 /= 26;
         
         currentCounter = ++counters[hash];
-        if (currentCounter > maxCounter)
-        {
-            maxCounter = currentCounter;
-            password = currentStr;
-        }
+        maxCounter = currentCounter;
+        password = currentStr;
 
         for (int i = 1; i < encodedMsg.length() - passwordSize; ++i)
         {

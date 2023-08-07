@@ -709,6 +709,7 @@
     * [Rozwiązanie Python](algorithmic-exercises/level-3/list-of-conquests/python.md)
   * [Password Search](algorithmic-exercises/level-3/password-search/README.md)
     * [Rozwiązanie C++](algorithmic-exercises/level-3/password-search/c++.md)
+    * [Rozwiązanie Python](algorithmic-exercises/level-3/password-search/python.md)
   * [Slogan Learning of Princess](algorithmic-exercises/level-3/slogan-learning-of-princess/README.md)
     * [Rozwiązanie C++](algorithmic-exercises/level-3/slogan-learning-of-princess/c++.md)
     * [Rozwiązanie Python](algorithmic-exercises/level-3/slogan-learning-of-princess/python.md)
