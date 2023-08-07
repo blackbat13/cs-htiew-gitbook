@@ -699,6 +699,7 @@
     * [Rozwiązanie C++](algorithmic-exercises/level-3/andy-first-dictionary/c++.md)
   * [Babelfish](algorithmic-exercises/level-3/babelfish/README.md)
     * [Rozwiązanie C++](algorithmic-exercises/level-3/babelfish/c++.md)
+    * [Rozwiązanie Python](algorithmic-exercises/level-3/babelfish/python.md)
   * [Genes](algorithmic-exercises/level-3/genes.md)
   * [Hay Points](algorithmic-exercises/level-3/hay-points/README.md)
     * [Rozwiązanie C++](algorithmic-exercises/level-3/hay-points/c++.md)
