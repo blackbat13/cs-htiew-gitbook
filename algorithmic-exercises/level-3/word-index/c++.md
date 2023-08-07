@@ -8,9 +8,9 @@
 
 using namespace std;
 
-void computeWordsIndexes(string txt, int counter, char c, int &currentWordIndex, map<string, int> &wordToIndex)
+void computeWordsIndexes(string txt, int counter, char letter, int &currentWordIndex, map<string, int> &wordToIndex)
 {
-    if (c > 'z')
+    if (letter > 'z')
     {
         return;
     }
@@ -19,7 +19,7 @@ void computeWordsIndexes(string txt, int counter, char c, int &currentWordIndex,
 
     if (counter == 1)
     {
-        for (char c = c; c <= 'z'; ++c)
+        for (char c = letter; c <= 'z'; ++c)
         {
             word = txt + c;
             wordToIndex[word] = currentWordIndex;
@@ -29,7 +29,7 @@ void computeWordsIndexes(string txt, int counter, char c, int &currentWordIndex,
         return;
     }
 
-    for (char c = c; c <= 'z'; ++c)
+    for (char c = letter; c <= 'z'; ++c)
     {
         word = txt + c;
         computeWordsIndexes(word, counter - 1, c + 1, currentWordIndex, wordToIndex);
@@ -50,7 +50,6 @@ int main()
     while (cin >> str && !cin.eof())
     {
         printf("%d\n", wordToIndex[str]);
-        cin >> str;
     }
 
     return 0;
