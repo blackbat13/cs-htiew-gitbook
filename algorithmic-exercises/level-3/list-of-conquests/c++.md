@@ -12,23 +12,21 @@ using namespace std;
 int main()
 {
     int n;
-    string str;
+    string country;
     map<string, int> counters;
-    set<string> countries;
 
     scanf("%d", &n);
 
     for (int i = 0; i < n; ++i)
     {
-        cin >> str;
-        counters[str]++;
-        countries.insert(str);
-        getline(cin, str);
+        cin >> country;
+        counters[country]++;
+        getline(cin, country);
     }
 
-    for (auto &el : countries)
+    for (auto &el : counters)
     {
-        printf("%s %d\n", el.c_str(), counters[el]);
+        printf("%s %d\n", el.first.c_str(), el.second);
     }
 
     return 0;

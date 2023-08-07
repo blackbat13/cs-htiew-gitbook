@@ -706,6 +706,7 @@
     * [Rozwiązanie Python](algorithmic-exercises/level-3/hay-points/python.md)
   * [List of Conquests](algorithmic-exercises/level-3/list-of-conquests/README.md)
     * [Rozwiązanie C++](algorithmic-exercises/level-3/list-of-conquests/c++.md)
+    * [Rozwiązanie Python](algorithmic-exercises/level-3/list-of-conquests/python.md)
   * [Password Search](algorithmic-exercises/level-3/password-search/README.md)
     * [Rozwiązanie C++](algorithmic-exercises/level-3/password-search/c++.md)
   * [Slogan Learning of Princess](algorithmic-exercises/level-3/slogan-learning-of-princess/README.md)
