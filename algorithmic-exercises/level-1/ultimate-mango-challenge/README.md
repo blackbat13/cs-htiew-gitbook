@@ -6,10 +6,10 @@
 
 ## Pliki do testów
 
-{% file src="../../.gitbook/assets/ultimate-mango-challenge-input1.txt" %}
+{% file src="../../../.gitbook/assets/ultimate-mango-challenge-input1.txt" %}
 dane1.txt
 {% endfile %}
 
-{% file src="../../.gitbook/assets/ultimate-mango-challenge-output1.txt" %}
+{% file src="../../../.gitbook/assets/ultimate-mango-challenge-output1.txt" %}
 wynik1.txt
 {% endfile %}

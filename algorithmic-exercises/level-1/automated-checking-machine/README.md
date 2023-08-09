@@ -6,10 +6,10 @@
 
 ## Pliki do testów
 
-{% file src="../../.gitbook/assets/automated-checking-machine-input1.txt" %}
+{% file src="../../../.gitbook/assets/automated-checking-machine-input1.txt" %}
 dane1.txt
 {% endfile %}
 
-{% file src="../../.gitbook/assets/automated-checking-machine-output1.txt" %}
+{% file src="../../../.gitbook/assets/automated-checking-machine-output1.txt" %}
 wynik1.txt
 {% endfile %}

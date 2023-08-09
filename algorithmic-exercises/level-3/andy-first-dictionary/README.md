@@ -8,20 +8,20 @@
 
 ### Zestaw 1
 
-{% file src="../../.gitbook/assets/andy-first-dictionary-input1.txt" %}
+{% file src="../../../.gitbook/assets/andy-first-dictionary-input1.txt" %}
 dane1.txt
 {% endfile %}
 
-{% file src="../../.gitbook/assets/andy-first-dictionary-output1.txt" %}
+{% file src="../../../.gitbook/assets/andy-first-dictionary-output1.txt" %}
 wynik1.txt
 {% endfile %}
 
 ### Zestaw 2
 
-{% file src="../../.gitbook/assets/andy-first-dictionary-input2.txt" %}
+{% file src="../../../.gitbook/assets/andy-first-dictionary-input2.txt" %}
 dane2.txt
 {% endfile %}
 
-{% file src="../../.gitbook/assets/andy-first-dictionary-output2.txt" %}
+{% file src="../../../.gitbook/assets/andy-first-dictionary-output2.txt" %}
 wynik2.txt
 {% endfile %}
