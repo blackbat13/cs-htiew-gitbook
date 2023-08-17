@@ -1042,6 +1042,7 @@
         * [Rozwiązanie 1](matura-z-informatyki/przygotowanie/algorithmic/simulations/rpn/solution-1.md)
         * [Rozwiązanie 2](matura-z-informatyki/przygotowanie/algorithmic/simulations/rpn/solution-2.md)
       * [Metoda Monte Carlo](matura-z-informatyki/przygotowanie/algorithmic/simulations/monte-carlo/README.md)
+      * [Całkowanie numeryczne](matura-z-informatyki/przygotowanie/algorithmic/simulations/numerical-integration/README.md)
   * [Programowanie](matura-z-informatyki/przygotowanie/programming/README.md)
     * [Liczby binarne](matura-z-informatyki/przygotowanie/programming/binary-numbers/README.md)
       * [Rozwiązanie - C++](matura-z-informatyki/przygotowanie/programming/binary-numbers/solution-cpp.md)
