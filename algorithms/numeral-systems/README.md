@@ -13,6 +13,7 @@ Systemy liczbowe - prezentacja
 ### System Dziesiętny (Decymalny)
 
 **Podstawa**: $$10$$
+
 **Zestaw Cyfr**: $$0, 1, 2, 3, 4, 5, 6, 7, 8, 9$$
 
 Jest to system, z którym stykamy się na codzień i którego używamy najczęściej.
@@ -20,6 +21,7 @@ Jest to system, z którym stykamy się na codzień i którego używamy najczęś
 ### System Binarny
 
 **Podstawa**: $$2$$
+
 **Zestaw Cyfr**: $$0, 1$$
 
 System binarny jest fundamentalny dla informatyki i technologii komputerowej.
@@ -27,6 +29,7 @@ System binarny jest fundamentalny dla informatyki i technologii komputerowej.
 ### System Oktalny
 
 **Podstawa**: $$8$$
+
 **Zestaw Cyfr**: $$0, 1, 2, 3, 4, 5, 6, 7$$
 
 Stosowany mniej powszechnie, ale może służyć jako skrótowy zapis liczb binarnych.
@@ -34,6 +37,7 @@ Stosowany mniej powszechnie, ale może służyć jako skrótowy zapis liczb bina
 ### System Heksadecymalny
 
 **Podstawa**: $$16$$
+
 **Zestaw Cyfr**: $$0-9$$ oraz $$A-F$$ (gdzie $$A=10, B=11, ..., F=15$$)
 
 Często używany w programowaniu do reprezentowania wartości binarnych w sposób bardziej zwięzły, np. przy reprezentacji adresów pamięci czy kolorów.
