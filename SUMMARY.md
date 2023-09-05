@@ -99,6 +99,7 @@
   * [Konwersja pomiędzy systemami](algorithms/numeral-systems/conversion.md)
   * [System U2](algorithms/numeral-systems/u2.md)
   * [Zapis stałoprzecinkowy](algorithms/numeral-systems/integer-notation.md)
+  * [Zapis zmiennoprzecinkowy](algorithms/numeral-systems/floating-point.md)
 * [Metody numeryczne](algorithms/numerical-methods/README.md)
   * [Schemat Hornera](algorithms/numerical-methods/horner.md)
   * [Pierwiastek kwadratowy](algorithms/numerical-methods/square-root.md)
