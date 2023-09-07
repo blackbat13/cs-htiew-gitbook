@@ -1055,6 +1055,7 @@
       * [Rozwiązanie](matura-z-informatyki/przygotowanie/programming/butterfly/solutions.md)
     * [Kółko i kwadrat](matura-z-informatyki/przygotowanie/programming/circle-and-square/README.md)
       * [Rozwiązanie](matura-z-informatyki/przygotowanie/programming/circle-and-square/solutions.md)
+    * [Nawiasy](matura-z-informatyki/przygotowanie/programming/parentheses/README.md)
   * [Arkusz kalkulacyjny](matura-z-informatyki/przygotowanie/spreadsheet/README.md)
     * [Sklep](matura-z-informatyki/przygotowanie/spreadsheet/shop/README.md)
       * [Rozwiązanie](matura-z-informatyki/przygotowanie/spreadsheet/shop/solution.md)
