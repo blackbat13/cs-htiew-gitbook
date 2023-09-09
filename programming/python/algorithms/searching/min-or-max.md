@@ -58,7 +58,7 @@ Ten program jest efektywny, ponieważ zamiast przechodzić przez listę dwa razy
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-def find_min__max_ind(n: int, tab: list) -> tuple:
+def find_min_max_ind(n: int, tab: list) -> tuple:
     min_ind = 0
     max_ind = 0
     
