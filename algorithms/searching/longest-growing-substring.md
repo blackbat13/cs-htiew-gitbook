@@ -128,3 +128,9 @@ Mamy jedną pętlę, która przechodzi przez kolejne elementy tablicy, której d
 {% content-ref url="../../programming/c/algorithms/searching/longest-growing-substring.md" %}
 [longest-growing-substring.md](../../programming/c/algorithms/searching/longest-growing-substring.md)
 {% endcontent-ref %}
+
+### Julia
+
+{% content-ref url="../../programming/julia/algorithms/searching/longest-growing-substring.md" %}
+[longest-growing-substring.md](../../programming/julia/algorithms/searching/longest-growing-substring.md)
+{% endcontent-ref %}

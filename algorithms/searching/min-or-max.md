@@ -215,3 +215,9 @@ W przypadku poszukiwania elementu minimalnego, postępujemy praktycznie identycz
 {% content-ref url="../../programming/c/algorithms/searching/min-or-max.md" %}
 [min-or-max.md](../../programming/c/algorithms/searching/min-or-max.md)
 {% endcontent-ref %}
+
+### Julia
+
+{% content-ref url="../../programming/julia/algorithms/searching/min-or-max.md" %}
+[min-or-max.md](../../programming/julia/algorithms/searching/min-or-max.md)
+{% endcontent-ref %}

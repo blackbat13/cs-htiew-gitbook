@@ -93,3 +93,9 @@ flowchart TD
 {% content-ref url="../../programming/python/algorithms/numerical-methods/monte-carlo.md" %}
 [monte-carlo.md](../../programming/python/algorithms/numerical-methods/monte-carlo.md)
 {% endcontent-ref %}
+
+#### Julia
+
+{% content-ref url="../../programming/julia/algorithms/numerical-methods/monte-carlo.md" %}
+[monte-carlo.md](../../programming/julia/algorithms/numerical-methods/monte-carlo.md)
+{% endcontent-ref %}

@@ -131,3 +131,11 @@ flowchart TD
 {% content-ref url="../../programming/kotlin/algorithms/backtracking/n-queens.md" %}
 [n-queens.md](../../programming/kotlin/algorithms/backtracking/n-queens.md)
 {% endcontent-ref %}
+
+## Implementacja - pozostałe
+
+### Julia
+
+{% content-ref url="../../programming/julia/algorithms/backtracking/n-queens.md" %}
+[n-queens.md](../../programming/julia/algorithms/backtracking/n-queens.md)
+{% endcontent-ref %}

@@ -108,3 +108,11 @@ Algorytm Quicksort ma złożoność obliczeniową $$O(n\log{n})$$ w przypadku ś
 {% content-ref url="../../programming/kotlin/algorithms/sorting/quick-sort.md" %}
 [quick-sort.md](../../programming/kotlin/algorithms/sorting/quick-sort.md)
 {% endcontent-ref %}
+
+## Implementacja - pozostałe
+
+### Julia
+
+{% content-ref url="../../programming/julia/algorithms/sorting/quick-sort.md" %}
+[quick-sort.md](../../programming/julia/algorithms/sorting/quick-sort.md)
+{% endcontent-ref %}

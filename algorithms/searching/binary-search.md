@@ -169,6 +169,12 @@ $$O(\log n)$$ - logarytmiczna
 [linear-search.md](../../programming/c/algorithms/searching/linear-search.md)
 {% endcontent-ref %}
 
+### Julia
+
+{% content-ref url="../../programming/julia/algorithms/searching/linear-search.md" %}
+[linear-search.md](../../programming/julia/algorithms/searching/linear-search.md)
+{% endcontent-ref %}
+
 ## Powiązane zagadnienia
 
 - Obliczanie pierwiastka kwadratowego zadanej liczby.
