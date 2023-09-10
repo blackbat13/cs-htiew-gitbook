@@ -18,9 +18,6 @@ def monte_carlo_pi(points_count: int) -> float:
     center_x = 1
     center_y = 1
     radius = 1
-    x = 0
-    y = 0
-    distance = 0
     
     for _ in range(points_count):
         x = random() * 2.0
@@ -55,9 +52,6 @@ def monte_carlo_pi(points_count: int) -> float:
     center_x = 1
     center_y = 1
     radius = 1
-    x = 0
-    y = 0
-    distance = 0
     plot_values = []
 
     for i in range(1, points_count + 1):
