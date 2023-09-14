@@ -2,8 +2,6 @@
 
 ## Zadanie 1
 
-### Implementacja
-
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
 def zadanie1():
@@ -30,16 +28,7 @@ def zadanie1():
 ```
 {% endcode %}
 
-### Wynik
-
-```
-Polecenie: 212
-Pozycja: (-1, -8, -6)
-```
-
 ## Zadanie 2
-
-### Implementacja
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
@@ -74,16 +63,7 @@ def zadanie2():
 ```
 {% endcode %}
 
-### Wynik
-
-```
-Odległość: 956
-Pozycja: (8, 6, -8)
-```
-
 ## Zadanie 3
-
-### Implementacja
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
@@ -127,17 +107,7 @@ def zadanie3():
 ```
 {% endcode %}
 
-### Wynik
-
-```
-Długość sekwencji: 212
-Początek sekwencji: 1 
-Koniec sekwencji: 212
-```
-
 ## Zadanie 4
-
-### Implementacja
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
@@ -170,15 +140,7 @@ def zadanie4():
 ```
 {% endcode %}
 
-### Wynik
-
-```
-Teleportacje: 9
-```
-
 ## Zadanie 5
-
-### Implementacja
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
@@ -220,10 +182,3 @@ def zadanie5():
     print(f"{(max_dist**0.5):.2f}")
 ```
 {% endcode %}
-
-### Wynik
-
-```
-Współrzędne: (0, 0, 0) (-17, 17, -6)
-Odległość: 24.78
-```
