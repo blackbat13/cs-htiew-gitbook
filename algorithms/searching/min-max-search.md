@@ -169,3 +169,9 @@ Najpierw dokonujemy podziału na dwie tablice pomocnicze wykonując $$\frac{n}{2
 {% content-ref url="../../programming/c/algorithms/searching/min-max-search.md" %}
 [min-max-search.md](../../programming/c/algorithms/searching/min-max-search.md)
 {% endcontent-ref %}
+
+### Julia
+
+{% content-ref url="../../programming/julia/algorithms/searching/min-max-search.md" %}
+[min-max-search.md](../../programming/julia/algorithms/searching/min-max-search.md)
+{% endcontent-ref %}

@@ -147,3 +147,9 @@ $$O(\log{n})$$ — logarytmiczna
 {% content-ref url="../../programming/python/algorithms/numerical-methods/fast-exp.md" %}
 [fast-exp.md](../../programming/python/algorithms/numerical-methods/fast-exp.md)
 {% endcontent-ref %}
+
+### Julia
+
+{% content-ref url="../../programming/julia/algorithms/numerical-methods/fast-exp.md" %}
+[fast-exp.md](../../programming/julia/algorithms/numerical-methods/fast-exp.md)
+{% endcontent-ref %}

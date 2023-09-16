@@ -65,29 +65,29 @@ def find_min_max(array: list) -> (int, int):
         min_candidates.append(array[len(array) - 1])
         max_candidates.append(array[len(array) - 1])
 
-    min = min_candidates[0]
-    max = max_candidates[0]
+    min_val = min_candidates[0]
+    max_val = max_candidates[0]
     
     for i in range(1, len(min_candidates)):
-        if min > min_candidates[i]:
-            min = min_candidates[i]
-        if max < max_candidates[i]:
-            max = max_candidates[i]
+        if min_val > min_candidates[i]:
+            min_val = min_candidates[i]
+        if max_val < max_candidates[i]:
+            max_val = max_candidates[i]
 
-    return min, max
+    return min_val, max_val
     
     
 array = [3, 6, 1, 9, 10, 4, -4, 6, 12, 5, 11]
 
-min, max = find_min_max(array)
+min_val, max_val = find_min_max(array)
 
-print(f'Minimum: {min}, Maximum: {max}')
+print(f'Minimum: {min_val}, Maximum: {max_val}')
 ```
 {% endcode %}
 
 ### Opis implementacji
 
-Funkcja `find_min_max` przyjmuje jako argument listę `array` (lista liczb) i zwraca parę wartości (`min`, `max`).
+Funkcja `find_min_max` przyjmuje jako argument listę `array` (lista liczb) i zwraca parę wartości (`min_val`, `max_val`).
 
 Na początku tworzone są dwie puste listy: `min_candidates` (kandydaci na najmniejszą wartość) i `max_candidates` (kandydaci na największą wartość).
 W pętli `for` iterujemy po indeksach od $$1$$ do `len(array)-1` z krokiem $$2$$, aby iterować po parzystych indeksach.
@@ -95,12 +95,12 @@ W każdej iteracji porównujemy elementy na indeksach `i-1` i `i`. Jeśli warto�
 
 Jeśli lista `array` ma nieparzystą liczbę elementów, dodajemy ostatni element do list `min_candidates` i `max_candidates`.
 
-Następnie inicjalizujemy zmienne `min` i `max` wartościami pierwszych kandydatów z list `min_candidates` i `max_candidates`.
+Następnie inicjalizujemy zmienne `min_val` i `max_val` wartościami pierwszych kandydatów z list `min_candidates` i `max_candidates`.
 
-W kolejnej pętli `for` iterujemy od $$1$$ do długości listy kandydatów minus $$1$$. Nie ma znaczenia, której listy długość weźmiemy, jako że obie mają tyle samo elementów. Wewnątrz pętli porównujemy każdy element z listy `min_candidates` z dotychczasowym minimum (`min`) i każdy element z listy `max_candidates` z dotychczasowym maksimum (`max`). Jeśli dany kandydat jest mniejszy od `min`, aktualizujemy `min` na tę wartość. Jeśli dany kandydat jest większy od `max`, aktualizujemy `max` na tę wartość.
+W kolejnej pętli `for` iterujemy od $$1$$ do długości listy kandydatów minus $$1$$. Nie ma znaczenia, której listy długość weźmiemy, jako że obie mają tyle samo elementów. Wewnątrz pętli porównujemy każdy element z listy `min_candidates` z dotychczasowym minimum (`min_val`) i każdy element z listy `max_candidates` z dotychczasowym maksimum (`max_val`). Jeśli dany kandydat jest mniejszy od `min_val`, aktualizujemy `min_val` na tę wartość. Jeśli dany kandydat jest większy od `max_val`, aktualizujemy `max_val` na tę wartość.
 
-Na koniec zwracamy parę wartości (`min`, `max`).
+Na koniec zwracamy parę wartości (`min_val`, `max_val`).
 
-W przykładzie podana jest konkretna lista `array`. Funkcja `find_min_max` jest wywoływana z tą listą, a wynikowe wartości dla `min` i `max` są wyświetlane przy użyciu funkcji `print`.
+W przykładzie podana jest konkretna lista `array`. Funkcja `find_min_max` jest wywoływana z tą listą, a wynikowe wartości dla `min_val` i `max_val` są wyświetlane przy użyciu funkcji `print`.
 
 W wyniku wykonania tego kodu zostanie wyświetlone: `Minimum: -4, Maximum: 12`.

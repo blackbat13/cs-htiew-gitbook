@@ -2,24 +2,24 @@
 
 Pan Józef von Stąd jest znanym badaczem wampirów. Od wielu lat prowadzi zapiski dotyczące tych niezwykłych stworzeń, które zebrał i zapisał w kilku plikach tekstowych. Zebrane informacje dotyczą:
 
-- Klanów (Klany.txt)
+- Klanów (*Klany.txt*)
   - numer identyfikacyjny klanu;
   - nazwa klanu;
   - data założenia klanu;
   - kraj, w którym klan został założony.
-- Wampirów (Wampiry.txt)
+- Wampirów (*Wampiry.txt*)
   - numer identyfikacyjny wampira;
   - imię wampira;
   - data urodzenia wampira;
   - data przemiany w wampira;
   - kraj pochodzenia wampira;
   - numer identyfikacyjny klanu, do którego wampir przynależy.
-- Ofiar (Ofiary.txt)
+- Ofiar (*Ofiary.txt*)
   - numer identyfikacyjny ofiary;
   - imię ofiary;
   - data urodzenia;
   - data zgonu.
-- Ataków (Ataki.txt)
+- Ataków (*Ataki.txt*)
   - numer identyfikacyjny ataku;
   - numer identyfikacyjny wampira, który dokonał ataku;
   - numer identyfikacyjny ofiary ataku;

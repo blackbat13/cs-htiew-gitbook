@@ -136,3 +136,11 @@ Sortowanie przez scalanie ma złożoność obliczeniową $$O(n\log{n})$$ zarówn
 {% content-ref url="../../programming/kotlin/algorithms/sorting/merge-sort.md" %}
 [merge-sort.md](../../programming/kotlin/algorithms/sorting/merge-sort.md)
 {% endcontent-ref %}
+
+## Implementacja - pozostałe
+
+### Julia
+
+{% content-ref url="../../programming/julia/algorithms/sorting/merge-sort.md" %}
+[merge-sort.md](../../programming/julia/algorithms/sorting/merge-sort.md)
+{% endcontent-ref %}

@@ -47,7 +47,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: list
 {% code overflow="wrap" lineNumbers="true" %}
 ```julia
 function linearSearch(array, number)
-    for i in 1:length(array)
+    for i in eachindex(array)
         if number == array[i]
             return i
         end
@@ -83,7 +83,7 @@ W części głównej programu na początku przygotowujemy dane do problemu: list
 {% code overflow="wrap" lineNumbers="true" %}
 ```julia
 function linearSearch(array, number)
-    for i in 1:length(array)
+    for i in eachindex(array))
         if number == array[i]
             println(i)
         end

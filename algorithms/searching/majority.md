@@ -196,6 +196,12 @@ $$O(n)$$ — liniowa
 [majority.md](../../programming/c/algorithms/searching/majority.md)
 {% endcontent-ref %}
 
+### Julia
+
+{% content-ref url="../../programming/julia/algorithms/searching/majority.md" %}
+[majority.md](../../programming/julia/algorithms/searching/majority.md)
+{% endcontent-ref %}
+
 ## Powiązane zagadnienia
 
 - Znajdowanie lidera w posortowanej tablicy.

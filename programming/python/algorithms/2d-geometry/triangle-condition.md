@@ -19,8 +19,8 @@ b = 8
 c = 9
 
 if can_create_triangle(a, b, c):
-    print(f'Z odcników od długościach {a}, {b} oraz {c} można zbudować trójkąt')
+    print(f"Triangle can be created from {a}, {b} and {c}")
 else:
-    print(f'Z odcników od długościach {a}, {b} oraz {c} nie można zbudować trójkąta')
+    print(f"Triangle cannot be created from {a}, {b} and {c}")
 ```
 {% endcode %}
