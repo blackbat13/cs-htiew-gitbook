@@ -1,5 +1,5 @@
 # Rozwiązanie
 
-{% file src="../../../../.gitbook/assets/wampiry.accdb" %}
+{% file src="../../../../.gitbook/assets/vampires/wampiry.accdb" %}
 Rozwiązanie
 {% endfile %}

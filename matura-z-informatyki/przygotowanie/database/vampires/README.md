@@ -6,64 +6,64 @@ Pan Józef von Stąd jest znanym badaczem wampirów. Od wielu lat prowadzi zapis
 
 ### Klany
 
-{% file src="../../../../.gitbook/assets/Klany.txt" %}
+{% file src="../../../../.gitbook/assets/vampires/Klany.txt" %}
 Klany.txt
 {% endfile %}
 
 Plik **Klany.txt** zawiera dane klanów – oddzielone średnikiem pozycje: 
 
-- numer identyfikacyjny klanu,
-- nazwa klanu,
-- data założenia klanu,
-- kraj, w którym klan został założony.
+- *KlanID* - numer identyfikacyjny klanu,
+- *Nazwa* - nazwa klanu,
+- *DataZalozenia* - data założenia klanu,
+- *KrajPochodzenia* - kraj, w którym klan został założony.
 
 Pierwszy wiersz zawiera nagłówki kolumn. Daty podane są w formacie "DD.MM.RRRR".
 
 ### Wampiry
 
-{% file src="../../../../.gitbook/assets/Wampiry.txt" %}
+{% file src="../../../../.gitbook/assets/vampires/Wampiry.txt" %}
 Wampiry.txt
 {% endfile %}
 
 Plik **Wampiry.txt** zawiera dane klanów – oddzielone średnikiem pozycje: 
 
-- numer identyfikacyjny wampira,
-- imię wampira,
-- data urodzenia wampira,
-- data przemiany w wampira,
-- kraj pochodzenia wampira,
-- numer identyfikacyjny klanu, do którego wampir przynależy.
+- *WampirID* - numer identyfikacyjny wampira,
+- *Imie* - imię wampira,
+- *DataUrodzenia* - data urodzenia wampira,
+- *DataPrzemiany* - data przemiany w wampira,
+- *KrajPochodzenia* - kraj pochodzenia wampira,
+- *KlanID* - numer identyfikacyjny klanu, do którego wampir przynależy.
 
 Pierwszy wiersz zawiera nagłówki kolumn. Daty podane są w formacie "DD.MM.RRRR".
 
 ### Ofiary
 
-{% file src="../../../../.gitbook/assets/Ofiary.txt" %}
+{% file src="../../../../.gitbook/assets/vampires/Ofiary.txt" %}
 Ofiary.txt
 {% endfile %}
 
 Plik **Ofiary.txt** zawiera dane klanów – oddzielone średnikiem pozycje: 
 
-- numer identyfikacyjny ofiary,
-- imię ofiary,
-- data urodzenia,
-- data zgonu.
+- *OfiaraID* - numer identyfikacyjny ofiary,
+- *Imie* - imię ofiary,
+- *DataUrodzenia* - data urodzenia,
+- *DataZgonu* - data zgonu.
 
 Pierwszy wiersz zawiera nagłówki kolumn. Daty podane są w formacie "DD.MM.RRRR".
 
 ### Ataki
 
-{% file src="../../../../.gitbook/assets/Ataki.txt" %}
+{% file src="../../../../.gitbook/assets/vampires/Ataki.txt" %}
 Ataki.txt
 {% endfile %}
 
 Plik **Ataki.txt** zawiera dane klanów – oddzielone średnikiem pozycje: 
 
-- numer identyfikacyjny ataku,
-- numer identyfikacyjny wampira, który dokonał ataku,
-- numer identyfikacyjny ofiary ataku,
-- data ataku,
-- lokalizacja ataku, jedna z trzech wartości:
+- *AtakID* - numer identyfikacyjny ataku,
+- *WampirID* - numer identyfikacyjny wampira, który dokonał ataku,
+- *OfiaraID* - numer identyfikacyjny ofiary ataku,
+- *DataAtaku* - data ataku,
+- *Lokalizacja* - lokalizacja ataku, jedna z trzech wartości:
   - "Wampir" - atak miał miejsce w kraju pochodzenia wampira,
   - "Klan" - atak miał miejsce w kraju założenia klanu,
   - "Zagranica" - atak miał miejsce w innym kraju, niezwiązanym z wampirem ani klanem (takie miejsca nie interesują Pana Józefa).
@@ -76,7 +76,7 @@ Zacznij od stworzenia tabel *Klany*, *Wampiry*, *Ofiary* oraz *Ataki* importują
 
 ### Zadanie 1
 
-Wypisz, w kolejności alfabetycznej, **imiona** wszystkich wampirów pochodzących z Rumunii.
+Wypisz, w kolejności alfabetycznej, imiona wszystkich wampirów pochodzących z Rumunii.
 
 ### Zadanie 2
 
