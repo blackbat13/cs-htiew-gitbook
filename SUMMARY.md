@@ -529,6 +529,7 @@
       * [Kruskal](programming/python/algorithms/graphs/kruskal.md)
       * [Sortowanie topologiczne](programming/python/algorithms/graphs/topological-sort.md)
       * [Flood fill](programming/python/algorithms/graphs/flood-fill.md)
+  * [Przetwarzanie danych](programming/python/data-science/README.md)
 * [Blockly](programming/blockly/README.md)
   * [Gry Blockly](programming/blockly/blockly-games/README.md)
     * [Labirynt](programming/blockly/blockly-games/maze.md)
