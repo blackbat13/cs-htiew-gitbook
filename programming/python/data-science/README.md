@@ -37,3 +37,7 @@ Kaggle to platforma internetowa należąca do Google, która służy jako społe
 5. **Dyskusje**: Kaggle ma aktywne forum dyskusyjne, na którym naukowcy pracujący z danymi, inżynierowie uczenia maszynowego i entuzjaści mogą zadawać pytania, dzielić się pomysłami i uczestniczyć w interesujących dyskusjach na różne tematy.
 
 Kaggle jest niezwykle użyteczny dla osób uczących się lub pracujących w dziedzinie nauki o danych i uczenia maszynowego, umożliwiając im dostęp do ogromnej ilości danych, narzędzi analizy, a także do społeczności ekspertów i entuzjastów.
+
+{% embed url="https://www.kaggle.com/damiankurpiewski/niecodzienny-python-i-obserwacja-danych" %}
+Projekt wprowadzający
+{% endembed %}
