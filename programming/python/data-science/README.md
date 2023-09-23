@@ -38,6 +38,10 @@ Kaggle to platforma internetowa należąca do Google, która służy jako społe
 
 Kaggle jest niezwykle użyteczny dla osób uczących się lub pracujących w dziedzinie nauki o danych i uczenia maszynowego, umożliwiając im dostęp do ogromnej ilości danych, narzędzi analizy, a także do społeczności ekspertów i entuzjastów.
 
+{% embed url="https://www.beautiful.ai/player/-Nf17ohfuIsTOA68-5kZ" %}
+Prezentacja
+{% endembed %}
+
 {% embed url="https://www.kaggle.com/damiankurpiewski/niecodzienny-python-i-obserwacja-danych" %}
 Projekt wprowadzający
 {% endembed %}
