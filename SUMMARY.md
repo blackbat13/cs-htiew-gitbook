@@ -1102,6 +1102,7 @@
     * [Wypożyczalnia samochodów](matura-z-informatyki/przygotowanie/database/wypsa/README.md)
       * [Odpowiedzi](matura-z-informatyki/przygotowanie/database/wypsa/answers.md)
       * [Rozwiązanie](matura-z-informatyki/przygotowanie/database/wypsa/solution.md)
+    * [Kino](matura-z-informatyki/przygotowanie/database/cinema/README.md)
 * [Arkusze i rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/README.md)
   * [2010](matura-z-informatyki/arkusze-i-rozwiazania/2010/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2010/solutions.md)
