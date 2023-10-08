@@ -16,7 +16,7 @@ Jak przedstawić liczbę rzeczywistą w systemie binarnym w zapisie zmiennoprzec
 
 1. **Określenie znaku**: ustalamy znak liczby.
 2. **Znalezienie reprezentacji binarnych**: zamieniamy liczbę na równoważną liczbę binarną (przed i po kropce dziesiętnej).
-3. **Normalizacja**: przesuwamy przecinek binarny tak, aby przed nim była tylko jedna cyfra $1$. Zapisujemy wykładnik przedstawiający liczbę miejsc, o które przesunięto przecinek.
+3. **Normalizacja**: przesuwamy przecinek binarny tak, aby przed nim była tylko jedna cyfra $$1$$. Zapisujemy wykładnik przedstawiający liczbę miejsc, o które przesunięto przecinek.
 4. **Określenie cechy i mantysy**: wyodrębniamy wartość cechy i mantysę ze znormalizowanej formy.
 
 ### Przykład Konwersji
@@ -32,7 +32,7 @@ Załóżmy, że chcemy przedstawić liczbę $$-110.75$$ w formie zmiennoprzecink
 
 Stąd, $$-110.75$$ przedstawiamy jako:
 
-$1\ 10000001\ 10110000000000000000000$
+$$1\ 10000001\ 10110000000000000000000$$
 
 ## Zastosowania i Ważne Kwestie
 
