@@ -60,6 +60,77 @@
 
 **FPPF**
 
+### Zadanie 3
+
+#### Zadanie 3.1
+
+| | **P/F** |
+|:---:|:---:|
+| 58 | P |
+| 122 | F |
+| 958 | P |
+
+#### Zadanie 3.2
+
+```
+Funkcja suma_cyfr(n):
+    1. s = 0;
+    2. dopóki n > 0 wykonuj
+        s = s + n mod 10;
+        n = n div 10;
+    3. zwróć s
+```
+
+#### Zadanie 3.3
+
+##### a)
+
+```
+Procedura rozkład(n):
+    1. dzielnik <- 2
+    2. dopóki n > 0 wykonuj
+            dopóki (n mod dzielnik = 0) wykonuj
+                wypisz dzielnik
+                n <- n div dzielnik
+            dzielnik <- dzielnik + 1
+```
+
+##### b)
+
+```
+Funkcja rozkład(n):
+    1. dzielnik <- 2
+    2. suma <- 0
+    3. dopóki n > 0 wykonuj
+            dopóki (n mod dzielnik = 0) wykonuj
+                suma <- suma + suma_cyfr(dzielnik)
+                n <- n div dzielnik
+            dzielnik <- dzielnik + 1
+    4. zwróć suma
+```
+
+#### Zadanie 3.4
+
+```
+Funkcja pierwsza(n):
+    1. i <- 2
+    2. dopóki i*i <= n wykonuj
+        jeśli (n mod i = 0) zwróć fałsz
+        i <- i + 1
+    3. zwróć prawda
+```
+
+#### Zadanie 3.5
+
+```
+1. Jeżeli pierwsza(n), to:
+    2. Wypisz fałsz i zakończ
+3. Jeżeli suma_cyfr(n) = rozkład(n), to:
+    4. Wypisz prawda
+5. w przeciwnym przypadku:
+    6. Wypisz fałsz
+```
+
 ## Część II
 
 ### Zadanie 4
@@ -79,4 +150,3 @@ Excel
 {% file src="../../../.gitbook/assets/2019_p_m_zad6.accdb" %}
 Access
 {% endfile %}
-
