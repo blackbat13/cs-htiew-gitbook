@@ -92,19 +92,19 @@ Zacznij od stworzenia tabel *Filmy*, *Klienci*, *Miejsca*, *Rezerwacje*, *Rzedy*
 
 ### Zadanie 1
 
-Wypisz identyfikatory i nazwiska wszystkich klientów, których nazwiska kończą się na literę **a**.
+Wypisz identyfikatory i nazwiska wszystkich klientów, których nazwiska kończą się na literę **a**. Wynik posortuj rosnąco po numerze identyfikatorze. Podaj pierwszy i ostatni wiersz wyniku.
 
 ### Zadanie 2
 
-Wyświetl tytuły wszystkich filmów, które w swoim zapisie posiadają literę **o** lub **O**.
+Wyświetl tytuły wszystkich filmów, które w swoim zapisie posiadają literę **o** lub **O**. Wynik posortuj rosnąco po tytule filmu.
 
 ### Zadanie 3
 
-Wyświetl wszystkie rezerwacje klienta o nazwisku **Kaczmarek**.
+Wyświetl identyfikatory wszystkich rezerwacji klienta o nazwisku **Augustyniak**.
 
 ### Zadanie 4
 
-Wypisz wszystkie seanse, które zostały wyświetlone 9 stycznia 2016 roku.
+Wypisz identyfikatory wszystkich seansów, które zostały wyświetlone 9 stycznia 2016 roku.
 
 ### Zadanie 5
 
@@ -112,15 +112,15 @@ Wyświetl tytuły wszystkich filmów, które były wyświetlane po godz. 21:00.
 
 ### Zadanie 6
 
-Dla każdego klienta wypisz jego identyfikator, nazwisko oraz liczbę dokonanych rezerwacji. Wyniki posortuj alfabetycznie po nazwisku. Podaj pierwszy i ostatni wiersz wyniku.
+Dla każdego klienta wypisz jego identyfikator, nazwisko oraz liczbę dokonanych rezerwacji. Wynik posortuj alfabetycznie po nazwisku. Podaj pierwszy i ostatni wiersz wyniku.
 
 ### Zadanie 7
 
-Dla każdego seansu wypisz tytuł wyświetlanego filmu oraz liczbę osób, które zarezerwowały miejsce na ten seans.
+Dla każdego seansu wypisz tytuł wyświetlanego filmu oraz liczbę dokonanych na ten seans rezerwacji. Wynik posortuj malejąco po liczbie rezerwacji i rosnąco po tytule. Podaj pierwszy i ostatni wiersz wyniku.
 
 ### Zadanie 8
 
-Dla każdego filmu wypisz jego tytuł oraz liczbę wyświetleń.
+Dla każdego filmu wypisz jego tytuł oraz liczbę wyświetleń. Wynik posortuj alfabetycznie po tytule. Podaj pierwszy i ostatni wiersz wyniku.
 
 ### Zadanie 9
 
@@ -132,8 +132,8 @@ Podaj nazwiska 5 klientów rezerwujących największą liczbę miejsc.
 
 ### Zadanie 11
 
-Dla każdej rezerwacji wypisz *id rezerwacji*, *nazwę filmu*, *numer rzędu*, *numer miejsca*, *nazwisko klienta* oraz *termin rozpoczęcia seansu*.
+Dla każdej rezerwacji wypisz *id rezerwacji*, *nazwę filmu*, *numer rzędu*, *numer miejsca*, *nazwisko klienta* oraz *termin rozpoczęcia seansu*. Wynik posortuj rosnąco po identyfikatorze rezerwacji. Podaj pierwszy i ostatni wiersz wyniku.
 
 ### Zadanie 12
 
-Dla każdego seansu wypisz *id seansu*, *id filmu*, *rok wyświetlenia seansu*, *miesiąc wyświetlenia seansu* oraz *dzień wyświetlenia seansu*.
+Dla każdego seansu wypisz *id seansu*, *id filmu*, *rok wyświetlenia seansu*, *miesiąc wyświetlenia seansu* oraz *dzień wyświetlenia seansu*. Wynik posortuj rosnąco po identyfikatorze seansu. Podaj pierwszy i ostatni wiersz wyniku.
