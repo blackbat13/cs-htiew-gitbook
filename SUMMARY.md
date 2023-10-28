@@ -1105,6 +1105,8 @@
     * [Kino](matura-z-informatyki/przygotowanie/database/cinema/README.md)
       * [Odpowiedzi](matura-z-informatyki/przygotowanie/database/cinema/answers.md)
       * [Rozwiązanie](matura-z-informatyki/przygotowanie/database/cinema/solution.md)
+  * [SQL](matura-z-informatyki/przygotowanie/sql/README.md)
+    * [Sklep](matura-z-informatyki/przygotowanie/sql/shop/README.md)
 * [Arkusze i rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/README.md)
   * [2010](matura-z-informatyki/arkusze-i-rozwiazania/2010/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2010/solutions.md)
