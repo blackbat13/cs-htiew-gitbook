@@ -23,7 +23,7 @@ erDiagram
         INTEGER id_zam PK
         INTEGER id_art FK
         INTEGER id_kl FK
-        INTEGER ilosc_egz
+        INTEGER liczba_sztuk
         DATE data_zam
     }
 ```
@@ -34,48 +34,40 @@ Podaj instrukcje SQL realizujące poniższe zadania.
 
 ## Zadanie 1
 
-Wyświetlenie imienia i nazwiska każdego klienta, który 18 marca 2016 roku dokonał co najmniej jednego zakupu.
+Podaj dane wszystkich zamówień, które zostały dokonane w maju 2015 roku.
 
 ## Zadanie 2
 
-Wyświetlenie danych wszystkich zamówień, które zostały dokonane w maju 2015 roku.
+Podaj wszystkie imiona klientów kończące się na literę ‘a’.
 
 ## Zadanie 3
 
-Wyświetlenie dla każdego klienta całkowitego kosztu jego zamówień.
+Podaj identyfikator, imię i nazwisko każdego klienta, który 18 marca 2016 roku dokonał co najmniej jednego zakupu.
 
 ## Zadanie 4
 
-Wyświetlenie imienia i nazwiska każdego klienta, który dokonał zamówienia przed 2010 rokiem.
+Dla każdego klienta podaj jego identyfikator, imię, nazwisko i sumaryczny koszt wszystkich jego zamówień. Dane posortuj alfabetycznie po nazwisku.
 
 ## Zadanie 5
 
-Wyświetlenie danych każdego klienta, którego imię kończy się na literę ‘a’.
+Podaj identyfikator, imię i nazwisko każdego klienta, który dokonał przynajmniej jednego zamówienia przed 2010 rokiem.
 
 ## Zadanie 6
 
-Wyświetlenie danych wszystkich klientów, posortowanych rosnąco po nazwisku.
+Dla każdego artykułu podaj jego identyfikator, nazwę oraz liczbę zamówień, które dotyczyły tego artykułu.
 
 ## Zadanie 7
 
-Wyświetlenie dla każdego artykułu jego nazwy i ilości osób, które kupiły dany artykuł.
+Utwórz zestawienie zawierające nazwę miasta, id artykułu, nazwę artykułu oraz liczbę sztuk tego artykułu sprzedanych klientom z danego miasta, gdzie przekroczyła ona $$100$$ sztuk.
 
 ## Zadanie 8
 
-Wyświetlenie nazwy miasta, id i nazwy każdego artykułu, którego ilość sprzedanych sztuk klientom z tego miasta przekroczyła $$100$$.
+Dla każdego artykułu podaj jego identyfikator, nazwę oraz liczbę sprzedanych egzemplarzy.
 
 ## Zadanie 9
 
-Wyświetlenia dla każdego artykułu ilość jego sprzedanych egzemplarzy.
+Podaj identyfikatory i nazwy artykułów, których nikt nie zamówił.
 
 ## Zadanie 10
 
-Wypisanie wszystkich artykułów zaczynających się od słowa „komputer” wraz z ceną zwiększoną o $$10\%$$.
-
-## Zadanie 11
-
-Wyliczenie ilości artykułów, których nikt nie zamówił.
-
-## Zadanie 12
-
-Wylistowanie nazwiska każdego klienta, który zamówił co najmniej jeden artykuł o *id_art* równym $$10$$ oraz dokładnie $$2$$ artykuły o *id_art* równym $$20$$.
+Podaj identyfikator, imię oraz nazwisko każdego klienta, który złożył dokładnie $$2$$ zamówienia na artykuły o *id_art* równym $$10$$ lub $$20$$.
