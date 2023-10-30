@@ -1078,6 +1078,8 @@
       * [Odpowiedzi](matura-z-informatyki/przygotowanie/programming/parentheses/answers.md)
       * [Rozwiązanie - C++](matura-z-informatyki/przygotowanie/programming/parentheses/solution-cpp.md)
       * [Rozwiązanie - Python](matura-z-informatyki/przygotowanie/programming/parentheses/solution-python.md)
+    * [Duplikaty](matura-z-informatyki/przygotowanie/programming/duplicates/README.md)
+      * [Odpowiedzi](matura-z-informatyki/przygotowanie/programming/duplicates/answers.md)
   * [Arkusz kalkulacyjny](matura-z-informatyki/przygotowanie/spreadsheet/README.md)
     * [Sklep](matura-z-informatyki/przygotowanie/spreadsheet/shop/README.md)
       * [Rozwiązanie](matura-z-informatyki/przygotowanie/spreadsheet/shop/solution.md)
