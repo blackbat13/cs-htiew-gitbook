@@ -130,8 +130,8 @@ Rozwiązanie - Excel
 Rozwiązanie - Access
 {% endfile %}
 
-### 7.2
+### 7.5
 
 ```SQL
-SELECT SUM(cena) FROM Sklep LEFT JOIN Gry USING(id_gry) WHERE kategoria="logiczna" AND promocja=true GROUP BY Sklep.id_gry;
+SELECT SUM(cena) FROM Sklep LEFT JOIN Gry USING(id_gry) WHERE kategoria="logiczna" AND promocja=true;
 ```
