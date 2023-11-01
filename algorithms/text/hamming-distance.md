@@ -4,7 +4,9 @@ Odległość Hamminga jest miarą różnicy między dwoma ciągami o tej samej d
 
 ## Definicja
 
+{% hint style="info" %}
 Dla dwóch ciągów $$s_1$$ i $$s_2$$ o tej samej długości $$n$$, odległość Hamminga $$H(s_1, s_2)$$ jest określona jako liczba pozycji $$i$$ dla $$1 \leq i \leq n$$ takich, że $$s_1[i] \neq s_2[i]$$.
+{% endhint %}
 
 ## Przykład
 
