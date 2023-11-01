@@ -840,10 +840,11 @@
 ## Grafika komputerowa
 
 * [Wstęp](graphics/README.md)
+* [Przestrzenie kolorów](graphics/color-space.md)
 * [Gimp](graphics/gimp/README.md)
-* [Tutoriale](graphics/gimp/tutorials/README.md)
-  * [Efekt vintage](graphics/gimp/tutorials/vintage-effect.md)
-  * [Wyróżnienie elementu](graphics/gimp/tutorials/color-reveal.md)
+  * [Tutoriale](graphics/gimp/tutorials/README.md)
+    * [Efekt vintage](graphics/gimp/tutorials/vintage-effect.md)
+    * [Wyróżnienie elementu](graphics/gimp/tutorials/color-reveal.md)
 
 ## Tworzenie stron internetowych
 
