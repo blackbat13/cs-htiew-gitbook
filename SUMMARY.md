@@ -127,6 +127,7 @@
     * [Szyfr Beauforta](algorithms/cryptography/symmetric/beaufort.md)
     * [Szyfr Trithemius'a](algorithms/cryptography/symmetric/trithemius.md)
   * [Szyfrowanie asymetryczne](algorithms/cryptography/assymetric/README.md)
+    * [RSA](algorithms/cryptography/assymetric/rsa.md)
 * [Macierze](algorithms/matrix/README.md)
   * [Wyznacznik macierzy 3x3](algorithms/matrix/det3.md)
 * [Geometria 2D](algorithms/2d-geometry/README.md)
