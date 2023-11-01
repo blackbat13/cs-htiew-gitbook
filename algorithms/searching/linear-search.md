@@ -10,8 +10,6 @@ Istnieje oczywiście kilka wersji tego problemu. Zacznijmy od pierwszej z nich, 
 
 ## Istnienie elementu
 
-### Opis problemu
-
 Jedną z najprostszych wersji problemu wyszukiwania jest sprawdzenie, czy dany element istnieje w zbiorze. Wyobraźmy sobie, że jesteśmy w sklepie i pytamy ekspedienta, czy jest mleko. Ekspedient przegląda dostępne produkty i odpowiada: **tak** lub **nie**. W takim przypadku interesuje nas tylko to, czy mleko w ogóle jest aktualnie w sprzedaży, nie to ile sztuk mleka jest dostępnych, czy też gdzie się ten produkt znajduje.
 
 Naszym celem będzie więc sprawdzenie, czy w tablicy znajduje się poszukiwana wartość. Zacznijmy od formalnej specyfikacji i kilku przykładów.
@@ -92,7 +90,7 @@ funkcja SzukajLiniowo(n, A, k)
 ### Schemat blokowy
 
 ```mermaid
-%%{init: {"flowchart": {"curve": "linear"}, "theme": "dark"} }%%
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["SzukajLiniowo(n, A, k)"]) --> B[i := 1]
 	B --> C{i <= n}
@@ -112,8 +110,6 @@ Głównym elementem algorytmu jest pętla przechodząca po kolei przez wszystkie
 $$O(n)$$ — liniowa
 
 ## Pozycja elementu
-
-### Opis problemu
 
 Czasami nie wystarczy nam informacja, że element _gdzieś_ się znajduje. Czasem musimy dokładnie wiedzieć, w którym miejscu jest. Innymi słowy, chcemy poznać położenie, czy też indeks w tablicy, pod którym znajduje się poszukiwana wartość (jeżeli oczywiście w ogóle znajduje się w tablicy). Zacznijmy od formalnej specyfikacji i kilku przykładów.
 
@@ -191,6 +187,7 @@ funkcja SzukajLiniowo(n, A, k)
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["SzukajLiniowo(n, A, k)"]) --> B[i := 1]
 	B --> C{i <= n}
@@ -208,8 +205,6 @@ flowchart TD
 $$O(n)$$ — liniowa
 
 ## Wszystkie pozycje elementu
-
-### Opis problemu
 
 Wiemy już jak sprawdzić, czy wartość występuje w tablicy, a także jak ją w tej tablicy namierzyć. Co jednak w przypadku, gdy chcemy poznać **wszystkie** wystąpienia poszukiwanego elementu w tablicy? Teraz zajmiemy się takim właśnie problemem.
 
@@ -283,6 +278,7 @@ procedura SzukajLiniowo(n, A, k):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["SzukajLiniowo(n, A, k)"]) --> B[i := 1]
 	B --> C{i <= n}
