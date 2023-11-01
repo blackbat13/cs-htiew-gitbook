@@ -70,7 +70,7 @@ funkcja NajdluzszySpojnyPodciagRosnacy(n, tab):
     10. Zwróć maks
 ```
 
-### Opis
+#### Opis
 
 Funkcja przyjmuje dwa parametry, zgodnie ze specyfikacją. Na początku zaczynamy od utworzenia dwóch zmiennych pomocniczych: maksymalnej długości dotąd znalezionych podciągów (**krok 1**) oraz długości obecnie sprawdzanego podciągu (**krok 2**). Następnie przechodzimy pętlą przez kolejne indeksy tablicy poczynając od drugiego elementu (**krok 3**). W pętli porównujemy element pod obecnie sprawdzanym indeksem z poprzednim elementem z tablicy (**krok 4**). Jeżeli obecny element jest większy od poprzedniego, to zwiększamy długość obecnie sprawdzanego podciągu o jeden (**krok 5**) oraz porównujemy ją z maksymalną długością dotąd znalezionych podciągów (**krok 6**). Jeżeli obecna długość jest większa od tej maksymalnej, to zapamiętujemy obecną długość jako maksymalną (**krok 7**).
 
@@ -79,6 +79,7 @@ Jeżeli obecny element nie jest większy od poprzedniego (**krok 8**), to resetu
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["NajdluzszySpojnyPodciagRosnacy(n, A)"]) --> K1[maks := 1\ndlugosc := 1\ni := 2]
 	K1 --> K3{i <= n}
