@@ -1,7 +1,5 @@
 # Wyszukiwanie binarne
 
-## Opis problemu
-
 W wielu przypadkach, gdy musimy coś znaleźć, np. książkę na półce w bibliotece, to będziemy mieć do czynienia z konkretnym porządkiem.
 Książki mogą być ułożone według tematyki, **posortowane** po nazwisku autora i tytule.
 Znacząco ułatwia to znalezienie pożądanej pozycji, ponieważ **wiemy, gdzie szukać**.
@@ -10,21 +8,21 @@ Tak samo jest też w świecie algorytmiki. Gdy pracujemy na danych **posortowany
 
 Jak zwykle, zacznijmy od formalnej specyfikacji, by lepiej zrozumieć problem, z którym będziemy się mierzyć.
 
-### Specyfikacja
+## Specyfikacja
 
-#### Dane:
+### Dane:
 
 * $$n$$ - liczba naturalna, ilość elementów w tablicy
 * $$A[1..n]$$ - $$n-elementowa$$ tablica liczb całkowitych, posortowana niemalejąco, indeksowana od jedynki
 * $$k$$ - liczba całkowita, szukana wartość
 
-#### Wynik:
+### Wynik:
 
 * Indeks wartości $$k$$ w tablicy $$A$$, lub $$-1$$ jeżeli tej wartości nie ma w tablicy
 
-### Przykład
+## Przykład
 
-#### Dane
+### Dane
 
 ```
 n := 5
@@ -70,6 +68,7 @@ funkcja SzukajBinarnie(n, A, k)
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["SzukajBinarnie(n, A, k)"]) --> O1[pocz := 1\nkon := n]
 	O1 --> C1{pocz < kon}
@@ -116,6 +115,7 @@ funkcja SzukajBinarnie(A, k, pocz, kon)
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["SzukajBinarnie(A, k, pocz, kon)"]) --> K1{pocz >= kon}
 	K1 -- PRAWDA --> K2{"A[pocz] = k"}
