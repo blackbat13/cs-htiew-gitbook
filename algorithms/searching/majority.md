@@ -1,6 +1,10 @@
 # Znajdowanie lidera w zbiorze
 
-Lider to element, który stanowi **większość** danego zbioru, a dokładniej stanowi **ponad połowę** zbioru. 
+Wyobraźmy sobie spotkanie w lokalnym klubie miłośników książek, gdzie każdy uczestnik ma przedstawić swoją ulubioną powieść. Po prezentacji każdej książki, uczestnicy wrzucają do urny kartkę z tytułem wybranej przez siebie powieści. Po zakończonym spotkaniu chcemy dowiedzieć się, czy jest taka książka, która zdobyła serca większości uczestników.
+
+Lider zbioru to element (w tym przypadku tytuł książki), który pojawia się w zbiorze więcej niż połowę razy. Innymi słowy, jeśli w klubie było $$100$$ uczestników, lider to taka książka, która została wybrana przez **co najmniej** $$51$$ osób.
+
+Dlaczego jest to ważne? Znalezienie lidera w zbiorze może pomóc nam zrozumieć dominujące tendencje lub preferencje w danym środowisku. W kontekście klubu książki, dowiedzenie się, która książka jest najbardziej popularna, może sugerować, jakie tematy lub style literackie są obecnie na czasie. W innych kontekstach, takich jak analiza danych czy badania rynku, identyfikacja lidera może dostarczyć cennych informacji o zachowaniach konsumentów, trendach czy dominujących opiniach.
 
 ## Specyfikacja
 
@@ -73,6 +77,17 @@ funkcja SzukajLidera(n, A):
     8. Zwróc -1
 ```
 
+**Funkcja SzukajLidera** - ta funkcja próbuje znaleźć lidera w liście (`A`).
+- Dla każdego elementu listy (`A`):
+  - Zerujemy licznik `ile`.
+  - Następnie dla każdego innego elementu w tej samej liście:
+    - Jeśli dany element jest taki sam jak nasz wybrany element, dodajemy 1 do licznika.
+  - Po przejrzeniu wszystkich innych elementów sprawdzamy licznik:
+    - Jeśli nasz wybrany element pojawia się więcej niż połowę razy w liście (czyli licznik `ile` jest większy niż `n/2`), to znaczy, że znaleźliśmy lidera i zwracamy go.
+- Jeśli przeszliśmy przez całą listę i nie znaleźliśmy lidera, zwracamy -1, co oznacza, że nie ma lidera w liście.
+
+W skrócie, ten pseudokod sprawdza każdy element listy, czy jest liderem, licząc ile razy pojawia się w całej liście. Jeśli którykolwiek element pojawia się więcej niż połowę razy, jest liderem. Jeśli żaden element nie spełnia tego kryterium, nie ma lidera.
+
 ### Schemat blokowy
 
 ```mermaid
@@ -104,11 +119,19 @@ $$O(n^2)$$ — kwadratowa
 
 W rozwiązaniu optymalnym należy zacząć od pewnego spostrzeżenia. Jeżeli weźmiemy jakiś zbiór i usuniemy z niego dwa **różne** elementy, to powstały w ten sposób zbiór będzie miał takiego samego lidera. Dzięki tej obserwacji możemy "skreślać" parami różne elementy, aż nie zostanie nam nic do skreślenia. Oczywiście nie będziemy fizycznie wykreślać elementów z tablicy. To "skreślanie" zrealizujemy za pomocą odpowiedniego zliczania i zapamiętywania tzw. *kandydata na lidera*. Zaczniemy od przyjęcia pierwszego elementu z tablicy jako kandydata na lidera. Zliczymy także jego liczbę dotychczasowych "nieskreślonych" powtórzeń. Następnie przejdziemy przez kolejne wartości z tablicy. Jeżeli w którymś momencie nasz licznik się wyzeruje, to przyjmiemy obecny element jako nowego kandydata i licznik ustawimy na jeden. Jeżeli natomiast licznik będzie większy od zera, należy porównać kandydata z obecnym elementem z tablicy. Jeżeli napotkamy wartość równą kandydatowi, to zwiększamy licznik wystąpień kandydata. Jeżeli natomiast napotkamy wartość różną od kandydata, to będziemy symulować "skreślanie" poprzez zmniejszenie licznika wystąpień obecnego kandydata o jeden.
 
-Gdy już przejdziemy przez wszystkie elementy tablicy to na koniec zostaniemy z jakimś kandydatem na lidera. Jeżeli zbiór ma lidera, to będzie nim ten kandydat. Może być jednak tak, że zbiór nie ma lidera. Dlatego pozostaje nam zliczyć liczbę wystąpień naszego kandydata w zbiorze, co realizujemy przechodząc element po elemencie. Na koniec sprawdzamy, czyli liczba wystąpień kandydata jest większa od połowy liczebności zbioru.
+Gdy już przejdziemy przez wszystkie elementy tablicy to na koniec zostaniemy z jakimś kandydatem na lidera. Jeżeli zbiór ma lidera, to będzie nim ten kandydat. Może być jednak tak, że zbiór nie ma lidera. Dlatego pozostaje nam zliczyć liczbę wystąpień naszego kandydata w zbiorze, co realizujemy przechodząc element po elemencie. Na koniec sprawdzamy, czy liczba wystąpień kandydata jest większa od połowy liczebności zbioru.
 
 ### Pseudokod
 
-```
+```text
+funkcja Zlicz(n, A, el):
+	1. ile := 0
+	2. Od i := 1 do n, wykonuj:
+		3. Jeżeli A[i] = el, to:
+			4. ile := ile + 1
+	5. Zwróć ile
+
+
 funkcja SzukajLidera(n, A)
     1. lider := A[1]
     2. ile := 1
@@ -123,19 +146,45 @@ funkcja SzukajLidera(n, A)
         9. w przeciwnym przypadku:
             10. ile := ile - 1
         
-    11. ile := 0
-    12. Od i := 1 do n, wykonuj:
-        13. Jeżeli A[i] = lider, to:
-            14. ile := ile + 1
-        
-    15. Jeżeli ile > n/2, to:
-        16. Zwróć lider, zakończ
+    11. Jeżeli Zlicz(n, A, lider) > n/2, to:
+        12. Zwróć lider, zakończ
     
-    17. w przeciwnym przypadku:
-        18. Zwróć -1, zakończ
+    13. w przeciwnym przypadku:
+        14. Zwróć -1, zakończ
 ```
 
+1. **Funkcja Zlicz** - ta funkcja liczy, ile razy dany element (`el`) pojawia się w liście (`A`).
+   * Zaczynamy z licznikiem `ile` na $$0$$.
+   * Przechodzimy przez każdy element listy (`A`).
+   * Jeśli element listy jest taki sam jak szukany element (`el`), dodajemy $$1$$ do licznika.
+   * Na końcu zwracamy wartość licznika.
+
+2. **Funkcja SzukajLidera** - ta funkcja szuka lidera w liście (`A`).
+   * Zakładamy na początek, że pierwszy element listy to lider.
+   * Ustawiamy licznik `ile` na $$1$$.
+   * Przechodzimy przez resztę listy:
+     * Jeśli licznik `ile` wynosi $$0$$, aktualny element staje się nowym liderem, a licznik jest resetowany do 1.
+     * Jeśli aktualny element jest taki sam jak nasz obecny lider, dodajemy $$1$$ do licznika.
+     * W przeciwnym razie odejmujemy $$1$$ od licznika.
+   * Po przejściu przez całą listę sprawdzamy, czy nasz lider występuje więcej niż połowę razy w liście. Używamy do tego funkcji **Zlicz**.
+   * Jeśli tak, zwracamy go jako lidera.
+   * W przeciwnym razie zwracamy $$-1$$, co oznacza, że nie ma lidera.
+
 ### Schemat blokowy
+
+```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
+flowchart TD
+	START(["Zlicz(n, A, el)"]) --> K1["ile := 0\ni := 1"]
+	K1 --> K2{i <= n}
+	K2 --PRAWDA --> K3{"el = A[i]"}
+	K3 --PRAWDA --> K4["ile := ile + 1"]
+	K3 --FAŁSZ --> K5["i := i + 1"]
+	K4 --> K5
+	K5 --> K2
+	K2 --FAŁSZ --> K6[/"Zwróć ile"/]
+	K6 ---> STOP([STOP])
+```
 
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
@@ -152,14 +201,7 @@ flowchart TD
 	K8 --> K3i
 	K6 --> K3i
 	K3i --> K3
-	K3 -- FAŁSZ --> K11[ile := 0\ni := 1]
-	K11 --> K12{i <= n}
-	K12 -- PRAWDA --> K13{"A[i] = lider"}
-	K13 -- PRAWDA --> K14[ile := ile + 1]
-	K13 -- FAŁSZ --> K12i[i := i + 1]
-	K14 --> K12i
-	K12i --> K12
-	K12 -- FAŁSZ --> K15{ile > n / 2}
+	K3 -- FAŁSZ ---> K15{"Zlicz(n, A, lider) > n / 2"}
 	K15 -- PRAWDA --> K16[/Zwróć lider/]
 	K16 --> STOP([STOP])
 	K15 -- FAŁSZ --> K18[/Zwróć - 1/]
