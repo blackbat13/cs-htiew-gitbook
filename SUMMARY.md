@@ -940,6 +940,7 @@
 * [Słownik pojęć](networking/terms.md)
 * [Topologia sieci](networking/topology.md)
 * [Model OSI](networking/osi.md)
+* [Adresowanie sieciowe](networking/network-addressing.md)
 * [Protokoły](networking/protocols/README.md)
   * [Protokół IP](networking/protocols/ip.md)
   * [DHCP](networking/protocols/dhcp.md)
