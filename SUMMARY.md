@@ -971,6 +971,7 @@
   * [Snort](ethical-hacking/tools/snort.md)
   * [Nikto](ethical-hacking/tools/nikto.md)
 * [CTF](ethical-hacking/ctf/README.md)
+* [Hasła](ethical-hacking/passwords.md)
 
 ## Sztuczna inteligencja
 
