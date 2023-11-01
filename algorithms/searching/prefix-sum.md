@@ -60,6 +60,7 @@ funkcja SumyPrzedzialow(n, A, m, P):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["SumyPrzedzialow(n, A, m, P)"]) --> K0[i := 1]
 	K0 --> K1{i <= m}
@@ -96,6 +97,7 @@ funkcja SumyPrzedzialow(n, A, m, P):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["SumyPrzedzialow(n, A, m, P)"]) --> K1["pref := [0..n]\npref[0] := 0"]
 	K1 --> K3{i <= n}
