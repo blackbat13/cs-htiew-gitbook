@@ -839,6 +839,7 @@
 
 ## Grafika komputerowa
 
+* [Wstęp](graphics/README.md)
 * [Gimp](graphics/gimp/README.md)
 * [Tutoriale](graphics/gimp/tutorials/README.md)
   * [Efekt vintage](graphics/gimp/tutorials/vintage-effect.md)
