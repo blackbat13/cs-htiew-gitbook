@@ -4,16 +4,17 @@ Szyfr Trithemius'a został wymyślony przez niemieckiego mnicha i uczonego, Jana
 
 ## Opis działania
 
-1. **Podstawowa zasada**: zasada działania szyfru Trithemius'a polega na tym, że każda kolejna litera tekstu jawnego jest przesuwana o kolejne miejsce. Pierwsza litera tekstu jawnego jest przesuwana o jedno miejsce, druga litera o dwa miejsca, trzecia litera o trzy miejsca, i tak dalej.
+Zasada działania szyfru Trithemius'a polega na tym, że każda kolejna litera tekstu jawnego jest przesuwana o kolejne miejsce. Pierwsza litera tekstu jawnego jest przesuwana o jedno miejsce, druga litera o dwa miejsca, trzecia litera o trzy miejsca, i tak dalej.
 
-2. **Przykład**:
-   - Dla tekstu jawnego "ABC":
-     - A jest przesuwane o 1 miejsce i staje się B
-     - B jest przesuwane o 2 miejsca i staje się D
-     - C jest przesuwane o 3 miejsca i staje się F
-   - Wynikowe zaszyfrowane słowo to: "BDF".
+## Przykład
 
-3. **Alfabet**: w większości przypadków używany jest alfabet łaciński, ale można go zastosować do dowolnego alfabetu.
+Dla tekstu jawnego "ABC":
+
+- A jest przesuwane o 1 miejsce i staje się B
+- B jest przesuwane o 2 miejsca i staje się D
+- C jest przesuwane o 3 miejsca i staje się F
+
+Wynikowe zaszyfrowane słowo to: "BDF".
 
 ## Bezpieczeństwo
 
