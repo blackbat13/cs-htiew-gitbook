@@ -6,8 +6,6 @@ W tym temacie zajmiemy się właśnie takim problemem - **znajdowaniem elementu 
 
 ## Wyszukiwanie wartości maksymalnej w tablicy
 
-### Opis problemu
-
 Zacznijmy od standardowej wersji problemu.
 Jak to zwykle w informatyce, będziemy rozważać pewien uporządkowany zbiór elementów, a dokładnie tablicę liczb całkowitych.
 Oczywiście w ogólności nie ma znaczenia, jakie to będą wartości, pod warunkiem, że możemy je ze sobą porównywać i można wśród nich znaleźć wartość największą.
@@ -75,6 +73,7 @@ funkcja SzukajMaks(n, A):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["FindMax(n, A)"]) --> K1["max := A[1]\ni := 1"]
 	K1 --> K2{i <= n}
@@ -95,8 +94,6 @@ Dlatego i w tym przypadku mamy złożoność liniową.
 $$O(n)$$ - liniowa
 
 ## Wyszukiwanie indeksu wartości maksymalnej w tablicy
-
-### Opis problemu
 
 W niektórych sytuacjach nie wystarczy nam znać wartość maksymalnego elementu, musimy także poznać jego **pozycję** w tablicy.
 Zmodyfikujmy więc odpowiednio specyfikację naszego problemu.
@@ -160,6 +157,7 @@ funkcja SzukajIndeksMaks(n, A):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["SzukajIndeksMaks(n, A)"]) --> K1["max := A[1]\nind := 1\ni := 1"]
 	K1 --> K2{i <= n}
