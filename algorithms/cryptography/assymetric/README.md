@@ -34,6 +34,6 @@ Kryptografia asymetryczna przyniosła rewolucję w dziedzinie bezpieczeństwa cy
 
 Poniżej znajduje się krótka prezentacja pokazująca istotę kryptografii asymetrycznej.
 
-{% file src="../../.gitbook/assets/Szyfrowanie asymetryczne.pdf" %}
+{% file src="../../../.gitbook/assets/Szyfrowanie asymetryczne.pdf" %}
 Prezentacja
 {% endfile %}
