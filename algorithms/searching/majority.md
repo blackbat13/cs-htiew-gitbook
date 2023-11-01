@@ -81,10 +81,10 @@ funkcja SzukajLidera(n, A):
 - Dla każdego elementu listy (`A`):
   - Zerujemy licznik `ile`.
   - Następnie dla każdego innego elementu w tej samej liście:
-    - Jeśli dany element jest taki sam jak nasz wybrany element, dodajemy 1 do licznika.
+    - Jeśli dany element jest taki sam jak nasz wybrany element, dodajemy $$1$$ do licznika.
   - Po przejrzeniu wszystkich innych elementów sprawdzamy licznik:
     - Jeśli nasz wybrany element pojawia się więcej niż połowę razy w liście (czyli licznik `ile` jest większy niż `n/2`), to znaczy, że znaleźliśmy lidera i zwracamy go.
-- Jeśli przeszliśmy przez całą listę i nie znaleźliśmy lidera, zwracamy -1, co oznacza, że nie ma lidera w liście.
+- Jeśli przeszliśmy przez całą listę i nie znaleźliśmy lidera, zwracamy $$-1$$, co oznacza, że nie ma lidera w liście.
 
 W skrócie, ten pseudokod sprawdza każdy element listy, czy jest liderem, licząc ile razy pojawia się w całej liście. Jeśli którykolwiek element pojawia się więcej niż połowę razy, jest liderem. Jeśli żaden element nie spełnia tego kryterium, nie ma lidera.
 
@@ -163,7 +163,7 @@ funkcja SzukajLidera(n, A)
    * Zakładamy na początek, że pierwszy element listy to lider.
    * Ustawiamy licznik `ile` na $$1$$.
    * Przechodzimy przez resztę listy:
-     * Jeśli licznik `ile` wynosi $$0$$, aktualny element staje się nowym liderem, a licznik jest resetowany do 1.
+     * Jeśli licznik `ile` wynosi $$0$$, aktualny element staje się nowym liderem, a licznik jest resetowany do $$1$$.
      * Jeśli aktualny element jest taki sam jak nasz obecny lider, dodajemy $$1$$ do licznika.
      * W przeciwnym razie odejmujemy $$1$$ od licznika.
    * Po przejściu przez całą listę sprawdzamy, czy nasz lider występuje więcej niż połowę razy w liście. Używamy do tego funkcji **Zlicz**.
