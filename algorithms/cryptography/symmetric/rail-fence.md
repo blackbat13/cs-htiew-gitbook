@@ -1,21 +1,31 @@
 # Szyfr płotkowy
 
-## Opis problemu
+Szyfr płotkowy, często nazywany również szyfrem żaglowym, jest techniką transpozycji, gdzie litery tekstu jawnego są pisane na skos w dół i wzdłuż, a potem odczytywane linia po linii. Daje to efekt, jakby litery były zawieszone na pewnego rodzaju "płotku".
 
-Szyfr płotkowy to jeden z prostych do przedstawienia na kartce papieru szyfrów symetrycznych. Idea polega na ułożeniu tekstu w kształt płotu o wysokości równej wartości klucza.
+## Opis działania
 
-### Specyfikacja
+1. **Ustal głębokość płotka**: wybierz liczbę, która będzie głębokością płotka (np. 3).
 
-#### Dane
+2. **Zapisanie tekstu**: pisz tekst jawny na skos w dół do osiągnięcia wybranej głębokości, a następnie zmień kierunek i pisz w górę, aż dojdziesz do górnej krawędzi. Kontynuuj tę metodę przez cały tekst.
+
+3. **Odczytanie zaszyfrowanej wiadomości**: aby otrzymać tekst zaszyfrowany, odczytaj każdy rząd liter od góry do dołu.
+
+## Bezpieczeństwo
+
+Szyfr płotkowy jest stosunkowo prosty do deszyfrowania, zwłaszcza jeśli przeciwnik zna lub może odgadnąć głębokość płotka. Podobnie jak inne metody transpozycji, nie zmienia on częstotliwości liter, co sprawia, że jest podatny na analizę statystyczną.
+
+## Specyfikacja
+
+### Dane
 
 - **jawny/szyfrogram** - tekst do zaszyfrowania/odszyfrowania, składający się z małych liter alfabetu angielskiego
 - **klucz** - liczba naturalna, większa od zera
 
-### Funkcje pomocnicze
+### Wynik
 
-- **Długość(tekst)** - zwraca długość tekstu
+- Zaszyfrowany/odszyfrowany tekst.
 
-### Przykład 1
+## Przykład 1
 
 Tekst jawny: **ALAMAKOTA**.
 
@@ -29,7 +39,7 @@ A   A   A
 
 Szyfrogram: **AOLMKTAAA**
 
-### Przykład 2
+## Przykład 2
 
 Tekst jawny: **ALAMAKOTA**.
 
@@ -45,6 +55,10 @@ A     O
 Szyfrogram: **MAAALKTAO**
 
 ## Szyfrowanie
+
+### Funkcje pomocnicze
+
+- **Długość(tekst)** - zwraca długość tekstu
 
 ### Pseudokod
 
@@ -65,6 +79,10 @@ funckja SzyfrujPłotkowy(jawny, klucz):
 ```
 
 ## Deszyfrowanie
+
+### Funkcje pomocnicze
+
+- **Długość(tekst)** - zwraca długość tekstu
 
 ### Pseudokod
 
