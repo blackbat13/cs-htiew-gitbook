@@ -50,6 +50,7 @@ funckja SzukajMinMax(n, A):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["SzukajMinMax(n, A)"]) --> K1["min := A[1]\nmax := A[1]\ni := 1"]
 	K1 --> K3{i <= n}
@@ -111,6 +112,7 @@ funkcja SzukajMinMax(n, A):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["SzukajMinMax(n, A)"]) --> K1["kandMin := [1 .. n div 2]\nkandMax := [1 .. n div 2]\ni := 1\nk := 1"]
 	K1 --> K5{i + 1 <= n}
