@@ -76,6 +76,7 @@ funkcja SzukajLidera(n, A):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["SzukajLidera(n, A)"]) --> K0[i := 1]
 	K0 --> K1{i <= n}
@@ -137,6 +138,7 @@ funkcja SzukajLidera(n, A)
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["SzukajLidera(n, A)"]) --> K1["lider := A[1]\nile := 1\ni := 1"]
 	K1 --> K3{i <= n}
