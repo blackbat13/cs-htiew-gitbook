@@ -71,6 +71,7 @@ funkcja Potega(x, n)
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["Potega(x, n)"]) --> K1[wynik := 1]
 	K1 --> K2{n > 0}
@@ -118,6 +119,7 @@ funkcja Potega(x, n)
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["Potega(x, n)"]) --> K1{n = 0}
 	K1 -- PRAWDA --> K2[/Zwróć 1/]

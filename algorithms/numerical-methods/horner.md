@@ -113,6 +113,7 @@ funkcja Horner(n, x, a)
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["Horner(n, x, a)"]) --> K1["wynik := a[n]\ni := n - 1"]
 	K1 --> K2{i >= 0}

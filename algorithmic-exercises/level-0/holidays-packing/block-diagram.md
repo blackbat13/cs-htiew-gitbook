@@ -1,6 +1,7 @@
 # Block diagram
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START([START]) --> K1[/Wczytaj a, b, c/]
     K1 --> K2{a <= 20\noraz\nb <= 20\noraz\nc <= 20}

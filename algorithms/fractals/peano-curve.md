@@ -42,6 +42,7 @@ procedura KrzywaPeano(stopień, kąt, długość):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["KrzywaPeano(stopień, kąt, długość"]) --> K1{stopień = 0}
     K1 -- PRAWDA --> K2["Przód(długość)"]

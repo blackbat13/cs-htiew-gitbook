@@ -3,6 +3,7 @@
 ## Drzewo kodów
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	n25((18)) --0--> n23((8))
 	n25((18)) --1--> n24((10))

@@ -66,6 +66,7 @@ procedura SortowanieSzybkie(A, pocz, kon):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["SortowanieSzybkie(A, pocz, kon)"]) --> K1{kon <= pocz}
     K1 -- PRAWDA --> STOP([STOP])

@@ -56,6 +56,7 @@ funkcja NWD(a, b):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["NWD(a, b)"]) --> K1{a != b}
 	K1 -- PRAWDA --> K2{a > b}
@@ -89,6 +90,7 @@ funkcja NWD(a, b):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["NWD(a, b)"]) --> K1{b != 0}
 	K1 -- PRAWDA --> K2[b2 := b\nb := a mod b\na := b2]
@@ -111,6 +113,7 @@ funkcja NWD(a, b):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["NWD(a, b)"]) --> K1{b = 0}
 	K1 -- PRAWDA --> K2[/Zwróć a/]

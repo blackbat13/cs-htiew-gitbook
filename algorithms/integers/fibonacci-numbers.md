@@ -47,6 +47,7 @@ funkcja Fib(n):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["Fib(n)"]) --> K1{n <= 2}
 	K1 -- PRAWDA --> K2[/Zwróć 1/]
@@ -73,6 +74,7 @@ funkcja Fib(n):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["Fib(n)"]) --> K1[f1 := 1\nf2 := 1\ni := 3]
 	K1 --> K3{i <= n + 1}

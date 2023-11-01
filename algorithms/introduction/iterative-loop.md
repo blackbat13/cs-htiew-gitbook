@@ -61,6 +61,7 @@ Używając pętli z licznikiem powinniśmy podać **zakres**, z którego licznik
 #### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START([START]) --> K0[i := 1]
     K0 --> K1{i <= 5}

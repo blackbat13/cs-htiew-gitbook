@@ -3,6 +3,7 @@
 ## Drzewo
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     op1["+"] --> n1["4"]
     op1 --> op2["*"]

@@ -63,6 +63,7 @@ Schemat blokowy to jeden z najbardziej formalnych i jednoznacznych sposobów zap
 ### Blok startowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     K1([START])
 ```
@@ -72,6 +73,7 @@ Od niego wszystko się zaczyna. Jego rolą jest określenie początku programu.
 ### Blok końcowy - terminator
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     K1([STOP])
 ```
@@ -81,6 +83,7 @@ Określa zakończenie obliczeń.
 ### Blok wejścia
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     K1[/Cztaj n/]
 ```
@@ -90,6 +93,7 @@ Tutaj wczytujemy dane wejściowe. Ponieważ blok wejścia i wyjścia mają taki 
 ### Blok wyjścia
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     K1[/Wypisz wynik/]
 ```
@@ -99,6 +103,7 @@ Tutaj wypisujemy komunikaty i wartości, albo też zwracamy wynik obliczeń. Pod
 ### Blok obliczeń
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     K1[i := i + 1]
 ```
@@ -108,6 +113,7 @@ W tym bloku dokonujemy wszelkich obliczeń, a także inicjalizacji i przypisania
 ### Blok instrukcji warunkowej
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     K1{i < n}
 ```
@@ -117,6 +123,7 @@ Jedyny blok, z którego wychodzą dwie strzałki, zazwyczaj na lewo i prawo. Do 
 ### Przykład
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["START"]) --> K0[wynik := 0\ni := 1]
 	K0 --> K1{i <= n}

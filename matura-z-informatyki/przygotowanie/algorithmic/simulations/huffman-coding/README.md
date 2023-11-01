@@ -21,6 +21,7 @@ Poniżej podane jest drzewo kodów Huffmana, a następnie zakodowana wiadomość
 ### Drzewo kodów
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	n19((20)) --0--> n17((8))
 	n19((20)) --1--> n18((12))

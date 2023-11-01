@@ -150,6 +150,7 @@ funkcja TestujAnagramy(n, tekst1, tekst2):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["TestujAnagramy(n, tekst1, tekst2)"]) --> K1["Sortuj(tekst1)\nSortuj(tekst2)"]
     K1 --> K3{tekst1 = tekst2}

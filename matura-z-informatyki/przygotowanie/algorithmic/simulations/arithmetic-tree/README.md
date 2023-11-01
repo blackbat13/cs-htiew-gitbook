@@ -14,6 +14,7 @@ funkcja Oblicz(wierzchołek):
 Zapoznaj się z pseudokodem opisującym sposób obliczania wartości wyrażenia arytmetycznego zapisanego za pomocą drzewa binarnego, a następnie oblicz wartość wyrażenia reprezentowanego przez poniższe drzewo. Zapisz poszczególne kroki obliczeń poprzez przedstawienie zmieniającego się drzewa binarnego, gdzie, w odpowiedniej kolejności, poddrzewa są zastępowane poprzez jeden wierzchołek zawierający wartość wyrażenia arytmetycznego, które zostało obliczone na tym poddrzewie.
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     op1["-"] --> op2["*"]
     op1 --> op3["/"]
@@ -30,6 +31,7 @@ flowchart TD
 Wykonaj polecenie z zadania pierwszego opierając się na poniższym drzewie.
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     op1["-"] --> op2["*"]
     op2 --> n1["10"]

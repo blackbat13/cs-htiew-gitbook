@@ -70,6 +70,7 @@ funkcja SzukajWzorca(n, tekst, m, wzorzec)
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["TestujWzorzec(i, n, tekst, m, wzorzec)"]) --> K0[j := 1]
     K0 --> K1{j <= m}
@@ -83,6 +84,7 @@ flowchart TD
 ```
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["SzukajWzorca(n, tekst, m, wzorzec)"]) --> K0[i := 1]
     K0 --> K1{i <= n - m}

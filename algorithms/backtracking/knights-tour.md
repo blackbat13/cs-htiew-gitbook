@@ -199,6 +199,7 @@ funkcja ProblemSkoczka(n, szachownica, odwiedzone, wiersz, kolumna):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["ProblemSkoczka(n, szachownica, odwiedzone, wiersz, kolumna)"]) --> K1{odwiedzone = n * n}
     K1 -- PRAWDA --> K2[/Zwróć PRAWDA/]

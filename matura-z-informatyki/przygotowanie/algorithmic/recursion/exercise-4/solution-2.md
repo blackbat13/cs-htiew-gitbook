@@ -1,6 +1,7 @@
 # Zadanie 2 - rozwiązanie
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	R["fun(7)"] --- R1["fun(3)"]
     R --- R2["fun(4)"]

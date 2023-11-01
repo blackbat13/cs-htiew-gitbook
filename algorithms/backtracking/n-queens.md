@@ -81,6 +81,7 @@ funkcja ZnajdźRozwiązanie(n, wiersz, pozycje):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["SprawdźPozycję(wiersz, kolumna, pozycje)"]) --> K0[i := 1]
     K0 --> K1{i < wiersz}
@@ -94,6 +95,7 @@ flowchart TD
 ```
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["ZnajdźRozwiązanie(n, wiersz, pozycje)"]) --> K1{wiersz > n}
     K1 -- PRAWDA --> K2[/Zwróć PRAWDA/]

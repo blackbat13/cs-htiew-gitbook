@@ -54,6 +54,7 @@ procedura SortowaniePrzezWybieranie(A, n):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["SzukajIndeksMinimum(pocz, kon, A)"]) --> K1["min := A[pocz]\nminInd := pocz\ni := pocz + 1"]
     K1 --> K3{i <= kon}
@@ -67,6 +68,7 @@ flowchart TD
 ```
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["SortowaniePrzezWybieranie(A, n)"]) --> K0[i := 1]
     K0 --> K1{i <= n - 1}

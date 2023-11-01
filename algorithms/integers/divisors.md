@@ -52,6 +52,7 @@ funkcja Dzielniki(n):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["Dzielniki(n)"]) --> K0[i := 1]
 	K0 --> K1{i <= n}
@@ -93,6 +94,7 @@ funkcja Dzielniki(n):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["Dzielniki(n)"]) --> K0[i := 1]
 	K0 --> K1{i <= n div 2}
@@ -135,6 +137,7 @@ funkcja Dzielniki(n):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["Dzielniki(n)"]) --> K0[i := 1]
 	K0 --> K1{"i <= sqrt(n)"}

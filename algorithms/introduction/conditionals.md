@@ -31,6 +31,7 @@ Zwróć uwagę na wcięcia w powyższym zapisie. Zazwyczaj, aby zasygnalizować,
 #### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START([START]) --> K1{światło zielone}
     K1 -- PRAWDA --> K2[Idź]
@@ -57,6 +58,7 @@ Ten sam algorytm możemy także skonstruować w nieco odmienny sposób. Zauważm
 #### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START([START]) --> K1{światło zielone}
     K1 -- PRAWDA --> K2[Idź]
@@ -85,6 +87,7 @@ Rozważmy teraz kolejny przykład: światła drogowe dla kierowców. W przeciwie
 #### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START([START]) --> K1{światło zielone}
     K1 -- PRAWDA --> K2[Jedź]
@@ -115,6 +118,7 @@ Podobnie jak poprzednio, nie musimy dokładnie określać wszystkich przypadków
 #### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START([START]) --> K1{światło zielone}
     K1 -- PRAWDA --> K2[Jedź]
@@ -146,6 +150,7 @@ W poprzednich przykładach nie miało znaczenia, w jakiej kolejności rozważamy
 #### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START([START]) --> K1{cena > 100}
     K1 -- PRAWDA --> K2[/Wypisz 'Drogie'/]
@@ -181,6 +186,7 @@ Oczywiście powyższy algorytm można łatwo poprawić zamieniając kolejność 
 #### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START([START]) --> K1{cena > 200}
     K1 -- PRAWDA --> K2[/Wypisz 'Bardzo drogie'/]

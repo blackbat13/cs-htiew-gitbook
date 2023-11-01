@@ -11,6 +11,7 @@ Pokażemy proces tworzenia drzewa kodów dla wyrazu **papuga**.
 Zaczynamy od zliczenia liczby wystąpień każdej litery. Następnie dla każdej litery tworzymy węzeł zawierający literę oraz liczbę jej wystąpień. Węzły sortujemy malejąco po liczbie wystąpień.
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     A((A: 2))
     P((P: 2))
@@ -21,6 +22,7 @@ flowchart TD
 Bierzemy dwa węzły o najmniejszych wartościach i łączymy je tworząc nowy węzeł rodzica, który zawiera wartość równą sumie liczebności swoich dzieci. Nowy węzeł wrzucamy do listy, a dzieci z niej usuwamy. Pamiętamy o zachowaniu malejącego porzędku w liście węzłów.
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     A((A: 2))
     P((P: 2))
@@ -33,6 +35,7 @@ flowchart TD
 Ponownie bierzemy dwa węzły o najmniejszych wartościach i łączymy je.
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     P((P: 2))
     PUG((4)) -- 0 --> P
@@ -47,6 +50,7 @@ flowchart TD
 Pozostaje nam połączyć ze sobą dwa pozostałe węzły.
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     PUGA((6)) -- 0 --> PUG
     PUGA -- 1 --> A

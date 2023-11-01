@@ -36,6 +36,7 @@ procedura KrzywaKocha(stopień, długość):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["KrzywaKocha(stopień, długość"]) --> K1{stopień = 0}
     K1 -- PRAWDA --> K2["Przód(długość)"]

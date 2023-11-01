@@ -28,6 +28,7 @@ Zwróć uwagę na wcięcie w powyższym przykładzie algorytmu. Tak często okre
 #### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START([START]) --> K1[Wsyp łyżeczkę cukru do herbaty]
     K1 --> K2{w szklance jest nierozpuszczony cukier}
@@ -64,6 +65,7 @@ Zwróć uwagę na podwójne wcięcie w powyższym zapisie. Instrukcja 4 Znajduje
 #### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START([START]) --> K1{herbata nie jest dość słodka}
     K1 --> K2[Wsyp łyżeczkę cukru do herbaty]

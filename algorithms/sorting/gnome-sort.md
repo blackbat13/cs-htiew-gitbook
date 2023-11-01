@@ -46,6 +46,7 @@ procedura SortowanieGnoma(n, A):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["SortowanieGnoma(n, A)"]) --> K1[i := 1]
     K1 --> K2{i <= n}

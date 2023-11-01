@@ -1,6 +1,7 @@
 # Zadanie 2 - rozwiązanie
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["sum(tab, p, k)"]) --> K1{p = k}
 	K1 -- PRAWDA --> K2[/"Zwróć tab[p]"/]

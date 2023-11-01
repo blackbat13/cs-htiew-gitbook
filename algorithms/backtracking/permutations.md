@@ -38,6 +38,7 @@ procedura Permutacje(A, pocz, kon):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["Permutacje(A, pocz, kon)"]) --> K1{pocz > kon}
     K1 -- PRAWDA --> K2[/Wypisz A/]

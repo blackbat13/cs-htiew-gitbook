@@ -32,6 +32,7 @@ funkcja MetodaHerona(n, p)
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["MetodaHerona(n, p)"]) --> K1["x1 := n / 2\nx2 := (x1 + (n / x1)) / 2"]
 	K1 --> K3{"|x2 - x1| > p"}

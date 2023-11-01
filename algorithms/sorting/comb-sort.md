@@ -52,6 +52,7 @@ procedura SortowanieGrzebieniowe(n, A):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["SortowanieGrzebieniowe(n, A)"]) --> K1[przerwa := n\nzm := 1.3\nposortowana := FAŁSZ]
     K1 --> K4{posortowana = FAŁSZ}

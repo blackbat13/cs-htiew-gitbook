@@ -1,6 +1,7 @@
 # Zadanie 4 - rozwiązanie
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["silnia_rek(n)"]) --> K1{n = 1}
 	K1 -- PRAWDA --> K2[/Zwróć 1/]

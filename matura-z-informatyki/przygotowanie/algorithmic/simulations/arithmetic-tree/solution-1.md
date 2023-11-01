@@ -3,6 +3,7 @@
 ## Drzewo 1
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     op1["-"] --> op2["*"]
     op1 --> op3["/"]
@@ -17,6 +18,7 @@ flowchart TD
 ## Drzewo 2
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     op1 --> op3["5"]
     op1["-"] --> op2["*"]
@@ -29,6 +31,7 @@ flowchart TD
 ## Drzewo 3
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     op1 --> op3["5"]
     op1["-"] --> op2["*"]
@@ -39,6 +42,7 @@ flowchart TD
 ## Drzewo 4
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     op1 --> op3["5"]
     op1["-"] --> op2["20"]
@@ -47,6 +51,7 @@ flowchart TD
 ## Drzewo 4
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     op1["-4"]
 ```

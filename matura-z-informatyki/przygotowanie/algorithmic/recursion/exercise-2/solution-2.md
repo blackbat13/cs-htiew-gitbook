@@ -1,6 +1,7 @@
 # Zadanie 2 - rozwiązanie
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["silnia_iter(n)"]) --> K1[wynik := 1 \n i := 2]
 	K1 --> K2{i <= n}

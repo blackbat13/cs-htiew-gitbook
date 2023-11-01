@@ -51,6 +51,7 @@ procedura OddEvenSort(n, A):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["OddEvenSort(n, A)"]) --> K0[i := 1]
     K0 --> K1{i <= n}

@@ -28,6 +28,7 @@ funkcja ZbiórCantora(stopień, długość):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["ZbiórCantora(stopień, długość)"]) --> K1{stopień > 0}
     K1 -- PRAWDA --> K2["ZbiórCantora(stopień - 1, długość / 3)\nPodnieśPisak()\nPrzód(długość / 3)\nOpóśćPisak()\nZbiórCantora(stopień - 1, długość / 3)"]

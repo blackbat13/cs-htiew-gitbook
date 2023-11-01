@@ -42,6 +42,7 @@ procedura SortowanieBąbelkowe(n, A):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["SortowanieBąbelkowe(n, A)"]) --> K0[i := 1]
     K0 --> K1{i <= n}
@@ -76,6 +77,7 @@ procedura SortowanieBąbelkowe(n, A):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["SortowanieBąbelkowe(n, A)"]) --> K0[i := 1]
     K0 --> K1{i <= n}
@@ -115,6 +117,7 @@ procedura SortowanieBabelkowe(n, A):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["SortowanieBąbelkowe(n, A)"]) --> K1[posortowane := FAŁSZ\ni := 0]
     K1 --> K3{posortowane = FAŁSZ}

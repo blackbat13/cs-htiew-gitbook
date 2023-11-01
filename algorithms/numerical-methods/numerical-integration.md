@@ -42,6 +42,7 @@ funkcja MetodaProstokatow(f, a, b, n):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["MetodaProstokatow(f, a, b, n)"]) --> K1["pole := 0\nszer := (b - a) / n\nx := a + szer"]
 	K1 --> K4{x <= b}
@@ -73,6 +74,7 @@ funkcja MetodaTrapezow(f, a, b, n):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["MetodaTrapezow(f, a, b, n)"]) --> K1["pole := 0\nszer := (b - a) / n\nx := a + szer"]
 	K1 --> K4{x <= b}

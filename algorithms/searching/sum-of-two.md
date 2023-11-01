@@ -52,6 +52,7 @@ funkcja SumaDwoch(n, A, k):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["SumaDwoch(n, A, k)"]) --> K0[i := 1]
 	K0 --> K1{i < n}
@@ -106,6 +107,7 @@ funkcja SumaDwoch(n, A, k):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["SumaDwoch(n, A, k)"]) --> K1[lewy := 1\nprawy := n]
 	K1 --> K3{"lewy < prawy\noraz\nA[lewy] + A[prawy] != k"}

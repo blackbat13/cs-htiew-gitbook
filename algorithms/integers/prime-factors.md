@@ -50,6 +50,7 @@ funkcja Rozkład(n):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
 	START(["Rozkład(n)"]) --> K1[i := 2]
 	K1 --> K2{n > 1}

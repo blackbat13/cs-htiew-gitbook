@@ -86,6 +86,7 @@ procedura SortowaniePrzezScalanie(A, pocz, kon):
 ### Schemat blokowy
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["Scal(A, pocz, kon, sr)"]) --> K1["dl := kon - pocz\nscalona := [1..dl]\ni1 := pocz\ni2 := sr\ni := 1"]
     K1 --> K5{i <= dl}
@@ -106,6 +107,7 @@ flowchart TD
 ```
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
     START(["SortowaniePrzezScalanie(A, pocz, kon)"]) --> K1{kon - pocz <= 1}
     K1 -- PRAWDA --> STOP([STOP])
