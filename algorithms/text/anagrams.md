@@ -1,36 +1,31 @@
 # Anagramy
 
-## Opis problemu
-
 Istnieje wiele metod na sprawdzanie i tworzenie relacji pomiędzy wyrazami.
 W tym temacie zajmiemy się pojęciem **anagramu**, które może być znane szczególnie osobom przejawiającym zamiłowanie do różnego rodzaju krzyżówek i zagadek słownych.
 Zacznijmy od krótkiej definicji.
 
-### Anagramy — definicja
+## Definicja
 
 {% hint style="info" %}
 Dwa wyrazy nazywamy **anagramami**, jeżeli składają się dokładnie z takich samych znaków, ale ułożonych w innej kolejności.
 {% endhint %}
 
-#### Link do Wikipedii
+### Link do Wikipedii
 
 {% embed url="https://pl.wikipedia.org/wiki/Anagram" %}
 Anagram — Wikipedia
 {% endembed %}
 
-### Przykład
+## Przykład
 
 Wyrazy **rży** i **ryż** są anagramami.
 Podobnie wyrazy **algorytm** i **logarytm**.
 
 Nie tylko wyrazy mogą być anagramami, ale także wyrażenia czy całe zdania.
 
-Skoro już wiemy, czym są anagramy, zastanówmy się, w jaki sposób możemy sprawdzić, czy dwa wyrazy są anagramami.
-Zacznijmy od formalnej specyfikacji naszego problemu.
+## Specyfikacja
 
-### Specyfikacja
-
-#### Dane
+### Dane
 
 * $$n$$ — liczba naturalna, długość tekstu.
 * $$tekst1[1..n]$$ — ciąg $$n$$ znaków, numerowanych od jedynki, składający się wyłącznie z małych liter alfabetu angielskiego.
@@ -41,14 +36,14 @@ W ogólnym problemie moglibyśmy sprawdzać własność anagramu dla dowolnych c
 Skupimy się jednak na uproszczonej wersji tego problemu, by przedstawić ideę rozwiązania, a technikalia zostawiamy osobom zainteresowanym.
 {% endhint %}
 
-#### Wynik
+### Wynik
 
 * $$PRAWDA$$ — jeżeli $$tekst1$$ i $$tekst2$$ są anagramami.
 * $$FAŁSZ$$ — w przeciwnym przypadku.
 
-### Przykład
+## Przykład
 
-#### Dane
+### Dane
 
 ```
 n := 8
@@ -179,4 +174,3 @@ $$O(n\log{n})$$ — liniowo logarytmiczna, jeżeli użyjemy standardowej metody 
 {% content-ref url="../../programming/python/algorithms/text/anagrams.md" %}
 [anagrams.md](../../programming/python/algorithms/text/anagrams.md)
 {% endcontent-ref %}
-
