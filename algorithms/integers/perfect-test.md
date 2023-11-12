@@ -22,11 +22,11 @@ Zaczynamy od formalnej specyfikacji i przykładu.
 
 ### Specyfikacja
 
-#### Dane:
+#### Dane
 
 * $$n$$ - liczba naturalna
 
-#### Wynik:
+#### Wynik
 
 * **PRAWDA **- jeżeli $$n$$ jest liczbą doskonałą
 * **FAŁSZ **- jeżeli $$n$$ nie jest liczbą doskonałą
@@ -42,7 +42,7 @@ n := 6
 **Wynik**: PRAWDA
 
 {% hint style="info" %}
-#### Wyjaśnienie
+**Wyjaśnienie**
 
 Dzielnikami właściwymi liczby $$6$$ są: $$1, 2, 3$$ 
 
@@ -62,7 +62,7 @@ n := 8
 **Wynik**: FAŁSZ
 
 {% hint style="info" %}
-#### Wyjaśnienie
+**Wyjaśnienie**
 
 Dzielnikami właściwymi liczby 8 są: $$1, 2,4$$ 
 
