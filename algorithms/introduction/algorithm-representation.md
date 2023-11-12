@@ -1,7 +1,5 @@
 # Sposoby opisu algorytmów
 
-## Wstęp
-
 Znamy już ogólną definicję algorytmu. Zanim jednak przejdziemy dalej, omówmy różne sposoby zapisu algorytmów. Istnieje wiele metod, ale skoncentrujemy się na trzech z nich: **pseudokodzie**, **schemacie blokowym** i **implementacji**. Niemniej jednak, warto również poznać pozostałe.
 
 {% hint style="info" %}

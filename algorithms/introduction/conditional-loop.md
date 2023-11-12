@@ -1,7 +1,5 @@
 # Pętla warunkowa
 
-## Wstęp
-
 Bardzo często zdarza się, że pewne operacje musimy wielokrotnie powtórzyć. Spójrzmy na przykład ze światłami z wprowadzenia do instrukcji warunkowej. W algorytmie określiliśmy, że gdy światło jest czerwone, to mamy stać i czekać. Wszystko ładnie i pięknie, ale co gdy światło zmieni się na zielone? Czy wtedy powinniśmy ponownie uruchomić algorytm? Możemy tak właśnie postąpić. Jest jednak też inne rozwiązanie. Wiemy, że na światłach należy czekać, aż światło nie zmieni się na zielone. Moglibyśmy więc powiedzieć: stój, **dopóki światło jest czerwone**. Albo też: **dopóki światło jest czerwone to stój**. To jest właśnie pętla warunkowa. Kluczowe jest tutaj słowo **dopóki**, z angielskiego **while**.
 
 ## Pętla prosta

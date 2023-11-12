@@ -1,7 +1,5 @@
 # Funkcje
 
-## Wstęp
-
 Wyobraźmy sobie czarne magiczne pudełko. Takie pudełko, do którego coś wrzucamy i coś innego z niego wypada. Wkładamy do niego **wejście**, a wychodzi **wyjście**:
 
 ![](<../../.gitbook/assets/image (32).png>)

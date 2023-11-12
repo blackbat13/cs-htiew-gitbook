@@ -1,7 +1,5 @@
 # Złożoność
 
-## Wstęp
-
 **Złożoność** jest bardzo ważnym elementem dyskusji na temat algorytmów. Często jest to kluczowy czynnik według którego porównujemy **efektywność** dwóch rozwiązań/algorytmów. Wyróżniamy przede wszystkim:
 
 * **złożoność czasową/obliczeniową** - tzn. ile operacji w zależności od rozmiaru danych wejściowych program musi wykonać,

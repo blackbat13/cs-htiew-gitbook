@@ -1,7 +1,5 @@
 # Algorytmy liniowe
 
-## Wstęp
-
 Czym jest algorytm? Instrukcja, przepis, schemat postępowania... Algorytm opisuje rozwiązanie pewnego problemu. Istnieje wiele rodzajów algorytmów, a my zaczniemy od najprostszego z nich - algorytmów liniowych.
 
 ## Algorytm liniowy

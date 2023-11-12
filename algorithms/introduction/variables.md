@@ -1,7 +1,5 @@
 # Zmienne
 
-## Wstęp
-
 Czym jest zmienna? Można powiedzieć, że to pewnego rodzaju pudełko na dane. Na zmiennych możemy wykonywać różnego rodzaju operacje: możemy "wkładać" (**przypisywać**) do nich różne wartości, wykonywać na nich operacje, wykorzystywać w obliczeniach, a także odczytywać ich wartości. 
 
 Zmienne stanowią niezbędny element praktycznie każdego algorytmu. W związku z tym ich poprawne i dogłębne zrozumienie jest wymagane, by móc konstruować i implementować zaawansowane algorytmy.

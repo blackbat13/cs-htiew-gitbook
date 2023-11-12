@@ -1,7 +1,5 @@
 # Instrukcja warunkowa
 
-## Wstęp
-
 Korzystając jedynie z algorytmów liniowych nie bylibyśmy w stanie rozwiązać wielu problemów. Dlaczego? Konstrukcja algorytmów liniowych jest zbyt... liniowa. Czasem musimy podejmować różne decyzje w zależności od zastanej sytuacji. Wyobraźmy sobie problem przechodzenia przez ulicę. Czy potrafisz skonstruować algorytm liniowy bezpiecznego przechodzenia przez przejście dla pieszych? Nie możemy napisać po prostu "przejdź przez pasy", ponieważ może jechać jakiś samochód! Należy najpierw rozejrzeć się na boki i dopiero potem, **jeżeli** nic nie jedzie, przejść na drugą stronę ulicy.
 
 Kluczowe jest tutaj słowo: **jeżeli**. W zależności od tego, czy samochody jadą, czy też nie, będziemy wykonywać różne akcje. Jeżeli samochody jadą, to będziemy czekać. A jak nic nie będzie jechało, to możemy przejść. Taką konstrukcję nazwiemy **instrukcją warunkową**.
