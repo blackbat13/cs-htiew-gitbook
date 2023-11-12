@@ -1,16 +1,14 @@
 # Problem skoczka
 
-## Opis
-
 Skoczek, zwany inaczej koniem, to figura szachowa która wykonuje ruchy w kształcie litery L, tzn. może przemieścić się o dwa pola w pionie i jedno w poziomie, lub o dwa pola w poziomie i jedno w pionie. Problem związany z tą figurą jest następujący: czy zaczynając z lewego dolnego pola szachownicy skoczek jest w stanie odwiedzić wszystkie pola dokładnie raz?
 
-### Specyfikacja
+## Specyfikacja
 
-#### Dane
+### Dane
 
 - $$n$$ - liczba naturalna, wymiary szachownicy, liczba wierszy i kolumn, $$n>0$$.
 
-#### Wynik
+### Wynik
 
 - **PRAWDA** jeżeli skoczek może odwiedzić wszystkie pola szachownicy $$n\times n$$ dokładnie raz,
 - **FAŁSZ** w przeciwnym przypadku.
