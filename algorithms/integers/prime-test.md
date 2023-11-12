@@ -1,11 +1,9 @@
 # Test pierwszości
 
-## Opis problemu
-
 Liczby pierwsze odgrywają w matematyce i informatyce znaczącą rolę, szczególnie w kryptografii. Zacznijmy od zdefiniowania czym jest liczba pierwsza:
 
 {% hint style="info" %}
-#### Liczba pierwsza
+**Liczba pierwsza**
 
 Liczbę naturalną, która jest podzielna wyłącznie przez $$1$$ i przez siebie samą, nazywamy **liczbą pierwszą**.
 {% endhint %}
@@ -14,13 +12,13 @@ Naszym zadaniem jest sprawdzić, czy dana liczba naturalna jest liczbą pierwsz�
 
 Jak zwykle zaczynamy od formalnej specyfikacji problemu i kilku prostych przykładów.
 
-### Specyfikacja
+## Specyfikacja
 
-#### Dane:
+### Dane
 
 * $$n$$ - liczba naturalna większa od $$1$$ 
 
-#### Wynik:
+### Wynik
 
 * **PRAWDA**- jeżeli $$n$$ jest liczbą pierwszą
 * **FAŁSZ**- jeżeli $$n$$ nie jest liczbą pierwszą
@@ -29,9 +27,9 @@ Jak zwykle zaczynamy od formalnej specyfikacji problemu i kilku prostych przykł
 Dlaczego w specyfikacji wymagamy, żeby liczba $$n$$ była większa od $$1$$? Dla ułatwienia i zwiększenia czytelności rozwiązania. Wiadomo, że liczby $$0$$ i $$1$$ nie są liczbami pierwszymi. W związku z tym możemy je łatwo potraktować jako osobny przypadek, używając instrukcji warunkowej. To jednak zostawimy jako ćwiczenie do samodzielnego wykonania.
 {% endhint %}
 
-### Przykład 1
+## Przykład 1
 
-#### Dane
+### Dane
 
 ```
 n := 7
@@ -45,9 +43,9 @@ n := 7
 Dzielnikami liczby $$7$$ są $$1$$ i $$7$$, więc jest to liczba pierwsza.
 {% endhint %}
 
-### Przykład 2
+## Przykład 2
 
-#### Dane
+### Dane
 
 ```
 n := 8
@@ -99,6 +97,10 @@ flowchart TD
 	K1 -- FAŁSZ ----> K4[/Zwróć PRAWDA/]
 	K4 --> STOP
 ```
+
+### Wizualizacja dla n = 10
+
+{% embed url="https://jmp.sh/4EHXt66i" %}
 
 ### Złożoność
 
