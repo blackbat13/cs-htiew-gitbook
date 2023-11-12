@@ -856,6 +856,7 @@
 * [Wstęp](spreadsheet/README.md)
 * [Auto-wypełnianie](spreadsheet/auto-fill.md)
 * [Adresowanie](spreadsheet/addressing.md)
+* [Tabele przestawne](spreadsheet/pivot-table.md)
 
 ## Bazy danych
 
