@@ -1,18 +1,16 @@
 # Permutacje
 
-## Opis problemu
-
 Permutacja tablicy określa jeden ze sposobów ułożenia elementów tej tablicy. Czasami w algorytmice potrzebujemy wszystkich permutacji tablicy, a więc wszystkich możliwych sposobów na ułożenie jej elementów.
 
-### Specyfikacja
+## Specyfikacja
 
-#### Dane
+### Dane
 
 * $$n$$ — liczba naturalna, liczba elementów tablicy, $$n>0$$
 * $$A[1..n]$$ - $$n$$-elementowa tablica 
 * $$pocz$$, $$kon$$ - liczby naturalne określające początek i koniec permutowanego zakresu elementów tablicy, $$1<=pocz<=kon<=n$$
 
-#### Wynik
+### Wynik
 
 * Wszystkie permutacje tablicy $$tab$$
 
