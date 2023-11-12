@@ -120,7 +120,7 @@ $$O(\frac{n}{2})$$
 
 ## Rozwiązanie optymalne
 
-TODO
+Podobnie jak w przypadku testu pierwszości, również i tutaj możemy sprawdzić dzielniki przechodząc wyłącznie do pierwiastka z zadanej liczby włącznie. Nie wystarczy jednak, że zsumujemy dzielniki do pierwiastka, musimy także uwzględnić te *z pary*. Dla przykładu, jeżeli wiemy że 6 dzieli się przez 2, to oznacza także, że dzieli się przez 3, ponieważ $$6/2=3$$. Musimy jeszcze uważać, by dwukrotnie nie dodać tego samego dzielnika (np. $$4/2=2$$).
 
 ### Pseudokod
 
@@ -141,7 +141,7 @@ funkcja CzyDoskonala(n)
 ```
 
 {% hint style="info" %}
-**sqrt** oznacza pierwiastek
+**sqrt** oznacza pierwiastek drugiego stopnia
 {% endhint %}
 
 ### Schemat blokowy
@@ -186,6 +186,6 @@ $$O(\sqrt{n})$$
 
 ## Powiązane zagadnienia
 
-- Znajdowanie wszystkich liczb doskonałych mniejszych od zadanej wartości $$n$$.
-- Sprawdzanie, czy w podanym zakresie znajduje się liczba doskonała.
-- Sprawdzanie, czy suma cyfr liczby doskonałej też jest liczbą doskonałą.
+* Znajdowanie wszystkich liczb doskonałych mniejszych od zadanej wartości $$n$$.
+* Sprawdzanie, czy w podanym zakresie znajduje się liczba doskonała.
+* Sprawdzanie, czy suma cyfr liczby doskonałej też jest liczbą doskonałą.
