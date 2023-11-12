@@ -1,41 +1,39 @@
 # Problem n królowych
 
-## Opis problemu
-
 Problem $$n$$ królowych to jeden z klasycznych problemów algorytmicznych związanych z szachami. Problem brzmi następująco: mając szachownicę $$n\times n$$ oraz $$n$$ królowych, czy można ustawić **wszystkie** królowe na szchownicy, tak by **żadne** dwie się wzajemnie nie atakowały?
 
-### Specyfikacja
+## Specyfikacja
 
-#### Dane
+### Dane
 
 - $$n$$ - liczba naturalna, liczba królowych do rozstawienia
 
-#### Wynik
+### Wynik
 
 - **PRAWDA** jeżeli istnieje poprawne rozwiązanie
 - **FAŁSZ** w przeciwnym przypadku
 
-### Przykład 1
+## Przykład 1
 
-#### Dane
+### Dane
 
 ```
 n := 3
 ```
 
-#### Wynik
+### Wynik
 
 **FAŁSZ**
 
-### Przykład 2
+## Przykład 2
 
-#### Dane
+### Dane
 
 ```
 n := 4
 ```
 
-#### Wynik
+### Wynik
 
 **PRAWDA**
 
