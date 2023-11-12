@@ -1,10 +1,8 @@
 # Kody Huffmana
 
-## Opis problemu
-
 Kody Huffmana to jeden z algorytmów kompresji, który polega na wygenerowaniu kodów dla poszczególnych znaków bazując na częstotliwości występowania tych znaków w kompresowanych danych. W ramach algorytmu tworzymy **drzewo binarne jednoznacznych kodów**. Co to znaczy, że powstałe kody są jednoznaczne? Oznacza to, że skompresowane dane możemy odkodować tylko na jeden sposób.
 
-### Przykład
+## Przykład
 
 Pokażemy proces tworzenia drzewa kodów dla wyrazu **papuga**.
 
