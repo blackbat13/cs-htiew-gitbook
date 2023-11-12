@@ -851,6 +851,11 @@
 * [Wstęp](web-design/README.md)
 * [CSS](web-design/css/README.md)
 
+## Arkusz kalkulacyjny
+
+* [Wstęp](spreadsheet/README.md)
+* [Auto-wypełnianie](spreadsheet/auto-fill.md)
+
 ## Bazy danych
 
 * [Wstęp](databases/README.md)
