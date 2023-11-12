@@ -1,8 +1,9 @@
 # Kod ASCII
 
-ASCII jest jednym z podstawowych systemów kodowania wykorzystywanych w komputerach. Podstawowa jego wersja pozwala na reprezentację $$128$$ różnych znaków. Każdy ze znaków jest reprezentowany przez unikalną wartość naturalną z zakresu od $$0$$ do $$127$$.
+ASCII, czyli American Standard Code for Information Interchange, to standard kodowania znaków używany w komputerach i urządzeniach komunikacyjnych do reprezentowania tekstu. Tablica ASCII przypisuje numery (kody) do różnych znaków, takich jak litery, cyfry, znaki interpunkcyjne oraz inne symbole. Istnieją dwie wersje tablicy ASCII: podstawowa i rozszerzona.
 
-Istnieje także rozszerzona wersja tego kodowania, gdzie możemy reprezentować dwa razy więcej znaków, czyli $$256$$.
+1. Podstawowa tablica ASCII: zawiera **128** znaków, które obejmują angielskie litery (zarówno małe, jak i duże), cyfry, znaki interpunkcyjne oraz kontrolne. Znaki te są reprezentowane przez 7-bitowe kody binarne, co pozwala na ich zakodowanie w zakresie od 0 do 127.
+2. Rozszerzona tablica ASCII: rozszerza podstawową tablicę do **256** znaków, dodając dodatkowe symbole, znaki specjalne i akcentowane litery używane w różnych językach. Te dodatkowe znaki są reprezentowane przez 8-bitowe kody binarne, co umożliwia ich zakodowanie w zakresie od 128 do 255.
 
 ## Podstawowa tablica ASCII
 
