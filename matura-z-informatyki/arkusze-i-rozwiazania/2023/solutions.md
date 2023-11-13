@@ -124,6 +124,18 @@ $$2222_3 < 1111_6$$
 Rozwiązanie - Excel
 {% endfile %}
 
+### 6.1
+
+{% embed url="https://jmp.sh/whDEfpik" %}
+
+### 6.2
+
+{% embed url="https://jmp.sh/A9EuPPp3" %}
+
+### 6.3 i 6.4
+
+{% embed url="https://jmp.sh/JfzN7REr" %}
+
 ## Zadanie 7
 
 {% file src="../../../.gitbook/assets/zad7_2023.accdb" %}
