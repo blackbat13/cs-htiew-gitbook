@@ -150,6 +150,10 @@ Rozwiązanie - Access
 
 {% embed url="https://jmp.sh/YLtAaFsp" %}
 
+### 7.3
+
+{% embed url="https://jmp.sh/1VcfOKEW" %}
+
 ### 7.5
 
 ```SQL
