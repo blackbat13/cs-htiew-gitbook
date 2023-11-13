@@ -1093,6 +1093,7 @@
     * [Duplikaty](matura-z-informatyki/przygotowanie/programming/duplicates/README.md)
       * [Odpowiedzi](matura-z-informatyki/przygotowanie/programming/duplicates/answers.md)
     * [Imiona](matura-z-informatyki/przygotowanie/programming/names/README.md)
+    * [Sekwencje](matura-z-informatyki/przygotowanie/programming/sequences/README.md)
   * [Arkusz kalkulacyjny](matura-z-informatyki/przygotowanie/spreadsheet/README.md)
     * [Sklep](matura-z-informatyki/przygotowanie/spreadsheet/shop/README.md)
       * [Rozwiązanie](matura-z-informatyki/przygotowanie/spreadsheet/shop/solution.md)

@@ -6,7 +6,7 @@ W pliku *names.txt* znajduje się $$100$$ imion złożonych wyłącznie z liter 
 names.txt
 {% endfile %}
 
-W pliku *parentheses_test.txt* znajduje się $$10$$ ciągów nawiasów, jak opisano powyżej, każdy zapisany w osobnym wierszu.
+W pliku *names_test.txt* znajduje się $$10$$ wierszy, jak opisano powyżej.
 
 {% file src="../../../../.gitbook/assets/names/names_test.txt" %}
 names_test.txt
