@@ -142,6 +142,14 @@ Rozwiązanie - Excel
 Rozwiązanie - Access
 {% endfile %}
 
+### 7.1
+
+{% embed url="https://jmp.sh/AcK5dXDf" %}
+
+### 7.2
+
+{% embed url="https://jmp.sh/YLtAaFsp" %}
+
 ### 7.5
 
 ```SQL
