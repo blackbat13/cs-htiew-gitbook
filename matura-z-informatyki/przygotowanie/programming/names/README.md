@@ -24,8 +24,18 @@ Podaj, ile imion w pliku *names.txt* zawiera w **środku** (pomijamy pierwszą i
 
 ## Zadanie 3
 
-Podaj długość najkrótszego i najdłuższego imienia w pliku *names.txt*. Podaj wszystkie imiona o tych długościach.
+Podaj długość najkrótszego i najdłuższego imienia w pliku *names.txt*. Podaj wszystkie imiona o tych długościach. Dla danych z pliku *names_test.txt* wynik to:
 
+```
+Najkrótsze imiona
+Długość: 4
+Imiona: John, Dave, Lisa
+
+Najdłuższe imiona
+Długość: 7
+Imiona: Crystal, Jessica, Jeffrey
+```
+ 
 ## Zadanie 4
 
 Wypisz wszystkie imiona z pliku *names.txt*, które zawierają najwięcej samogłosek. Wynik podaj w kolejności alfabetycznej.
