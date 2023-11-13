@@ -27,4 +27,4 @@ Weź pierwsze $$100$$ punktów z pliku. Każdą współrzędną pomnóż przez $
 - załóżmy, że ustalamy porządek dwóch punktów o współrzędnych $$(x_1,y_1)$$ i $$(x_2,y_2)$$,
 - punkt $$(x_1,y_1)$$ znajduje się w porządku **przed** punktem $$(x_2,y_2)$$ wtedy i tylko wtedy gdy:
   - $$x_1<x_2$$ lub
-  - $$x_1=x_2$$ oraz $$y_1<y_2$$.
+  - $$x_1=x_2$$ oraz $$y_1<=y_2$$.
