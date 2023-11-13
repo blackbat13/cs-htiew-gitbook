@@ -16,11 +16,11 @@ Napisz program/programy rozwiązujące poniższe zadania.
 
 ## Zadanie 1
 
-Podaj, ile imion w pliku *names.txt* kończy się na literę **a**.
+Podaj, ile imion w pliku *names.txt* kończy się na literę **a**. Dla danych z pliku *names_test.txt* wynik to $$3$$.
 
 ## Zadanie 2
 
-Podaj, ile imion w pliku *names.txt* zawiera w **środku** (pomijamy pierwszą i ostatnią literę) literę **e**.
+Podaj, ile imion w pliku *names.txt* zawiera w **środku** (pomijamy pierwszą i ostatnią literę) literę **e**. Dla danych z pliku *names_test.txt* wynik to $$3$$.
 
 ## Zadanie 3
 

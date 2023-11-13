@@ -1,6 +1,6 @@
 def exercise1():
     names_list = []
-    with open("names.txt") as file:
+    with open("names_test.txt") as file:
         names_list = file.read().split()
 
     count = 0
@@ -12,7 +12,7 @@ def exercise1():
 
 def exercise2():
     names_list = []
-    with open("names.txt") as file:
+    with open("names_test.txt") as file:
         names_list = file.read().split()
 
     count = 0
@@ -73,5 +73,5 @@ def exercise4():
 
 print("Exercise 1:", exercise1())
 print("Exercise 2:", exercise2())
-print("Exercise 3:", exercise3())
-print("Exercise 4:", exercise4())
+# print("Exercise 3:", exercise3())
+# print("Exercise 4:", exercise4())
