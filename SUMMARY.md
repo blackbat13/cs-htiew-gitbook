@@ -1124,6 +1124,8 @@
   * [SQL](matura-z-informatyki/przygotowanie/sql/README.md)
     * [Sklep](matura-z-informatyki/przygotowanie/sql/shop/README.md)
       * [Rozwiązanie](matura-z-informatyki/przygotowanie/sql/shop/solution.md)
+    * [Komandosi](matura-z-informatyki/przygotowanie/sql/commandos/README.md)
+      * [Rozwiązanie](matura-z-informatyki/przygotowanie/sql/commandos/solution.md)
 * [Arkusze i rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/README.md)
   * [2010](matura-z-informatyki/arkusze-i-rozwiazania/2010/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2010/solutions.md)
