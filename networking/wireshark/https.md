@@ -8,7 +8,7 @@ Podczas nasłuchiwania połączeń szyfrowanych HTTPS w programie Wireshark nie 
 2. Klikamy przycisk "Zmienne środowiskowe".
 3. Dodajemy nową zmienną środowiskową dla zalogowanego użytkownika klikając pierwszy od góry przycisk "Nowa...".
 4. W pole "Nazwa zmiennej" wpisujemy SSLKEYLOGFILE
-5. W pole "Wartość zmiennej" wpisujemy ścieżkę do pliku, w którym będziemy przechowywać logi dotyczące połączeń SSL, np. "C:\Users\\\[NazwaUżytkownika]\Documents\Wireshark\ssl-keys.log".
+5. W pole "Wartość zmiennej" wpisujemy ścieżkę do pliku, w którym będziemy przechowywać logi dotyczące połączeń SSL, np. `C:\Users\[NazwaUżytkownika]\Documents\Wireshark\ssl-keys.log`.
 6. Zatwierdzamy dodanie zmiennej przyciskiem "OK".
 
 ## 2. Weryfikujemy pojawienie się pliku z logami
