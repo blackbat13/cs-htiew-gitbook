@@ -1111,6 +1111,8 @@
       * [Rozwiązanie](matura-z-informatyki/przygotowanie/spreadsheet/books/solution.md)
     * [Piekarnia](matura-z-informatyki/przygotowanie/spreadsheet/bakery/README.md)
       * [Rozwiązanie](matura-z-informatyki/przygotowanie/spreadsheet/bakery/solution.md)
+    * [Trawniki](matura-z-informatyki/przygotowanie/spreadsheet/lawns/README.md)
+      * [Odpowiedzi](matura-z-informatyki/przygotowanie/spreadsheet/lawns/answers.md)
   * [Baza danych](matura-z-informatyki/przygotowanie/database/README.md)
     * [Wampiry](matura-z-informatyki/przygotowanie/database/vampires/README.md)
       * [Odpowiedzi](matura-z-informatyki/przygotowanie/database/vampires/answers.md)
