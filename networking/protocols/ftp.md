@@ -1,8 +1,8 @@
 # FTP (File Transfer Protocol)
 
-FTP, czyli Protokół Przesyłania Plików, to standardowy protokół komunikacyjny wykorzystywany do przesyłania plików pomiędzy komputerami w sieci internetowej. Jest często wykorzystywany do przesyłania plików na serwery internetowe oraz do udostępniania plików do pobrania przez użytkowników Internetu.
+FTP, czyli **Protokół Przesyłania Plików**, to standardowy protokół komunikacyjny wykorzystywany do przesyłania plików pomiędzy komputerami w sieci internetowej. Jest często wykorzystywany do przesyłania plików na serwery internetowe oraz do udostępniania plików do pobrania przez użytkowników Internetu.
 
-FTP działa na podstawie modelu klient-serwer. Klient łączy się z serwerem, a następnie wysyła żądania o przesłanie plików lub pobranie plików z serwera. Serwer odbiera te żądania i wykonuje odpowiednie akcje.
+FTP działa na podstawie modelu **klient-serwer**. Klient łączy się z serwerem, a następnie wysyła żądania o przesłanie plików lub pobranie plików z serwera. Serwer odbiera te żądania i wykonuje odpowiednie akcje.
 
 Podstawowe operacje, które można wykonać za pomocą protokołu FTP, to:
 
