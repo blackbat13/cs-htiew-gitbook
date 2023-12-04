@@ -48,6 +48,19 @@ def ex4():
 
     print("Minimum parzyste:", min(even))
     print("Maksimum parzyste:", max(even))
+
+
+def ex5():
+    with open(file_name) as file:
+        numbers = list(map(int, file.read().split()))
+
+    counter = 0
+
+    for num in numbers:
+        if num % 3 == 0 and num % 5 == 0:
+            counter += 1
+
+    print(counter)
     
 
 print("Zadanie 1")
@@ -61,3 +74,6 @@ ex3()
 
 print("\nZadanie 4:")
 ex4()
+
+print("\nZadanie 5:")
+ex5()

@@ -21,7 +21,7 @@ Podaj najmniejszą i największą wartość z pliku, oraz ich pozycję (numer wi
 Wynik dla pliku *integers_test.txt*:
 
 ```
-Minimum: 12 Pozycja: 4
+Minimum: 15 Pozycja: 4
 Maksimum: 548 Pozycja: 9
 ```
 
@@ -32,8 +32,8 @@ Podaj sumę i średnią (z zaokrągleniem do dwóch miejsc po przecinku) wszystk
 Wynik dla pliku *integers_test.txt*:
 
 ```
-Suma: 4307
-Średnia: 430.70
+Suma: 4310
+Średnia: 431.00
 ```
 
 ## Zadanie 3
@@ -43,7 +43,7 @@ Podaj ile jest w pliku wartości parzystych.
 Wynik dla pliku *integers_test.txt*:
 
 ```
-Parzyste: 5
+Parzyste: 4
 ```
 
 ## Zadanie 4
@@ -53,13 +53,15 @@ Podaj najmniejszą i największą wartość **parzystą** z pliku.
 Wynik dla pliku *integers_test.txt*:
 
 ```
-Minimum parzyste: 12
+Minimum parzyste: 50
 Maksimum parzyste: 548
 ```
 
 ## Zadanie 5
 
 Podaj ile jest liczb z pliku, które są wielokrotnością jednocześnie liczb 3 i 5.
+
+Wynik dla pliku *integers_test.txt* to **1**.
 
 ## Zadanie 6
 
