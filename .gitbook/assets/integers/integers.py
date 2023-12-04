@@ -78,6 +78,18 @@ def ex6():
     print("Maksimum NWD:", max(gcd_list))
     print("Minimum NWD:", min(gcd_list))
 
+def ex7():
+    with open(file_name) as file:
+        numbers = list(map(int, file.read().split()))
+
+    current_lcm = 1
+
+    for i in range(1, len(numbers)):
+        if numbers[i] < 100:
+            current_lcm = (current_lcm * numbers[i]) // math.gcd(current_lcm, numbers[i])
+
+    print("NWW:", current_lcm)
+
 
 print("Zadanie 1")
 ex1()
@@ -96,3 +108,6 @@ ex5()
 
 print("\nZadanie 6:")
 ex6()
+
+print("\nZadanie 7:")
+ex7()

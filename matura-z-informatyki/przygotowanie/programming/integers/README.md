@@ -76,7 +76,13 @@ Minimum NWD: 1
 
 ## Zadanie 7
 
-Policz najmniejszą wspólną wielokrotność dla wszystkich liczb w pliku.
+Policz najmniejszą wspólną wielokrotność dla wszystkich liczb w pliku mniejszych od 100.
+
+Wynik dla pliku *integers_test.txt*:
+
+```
+NWW: 150
+```
 
 ## Zadanie 8
 
