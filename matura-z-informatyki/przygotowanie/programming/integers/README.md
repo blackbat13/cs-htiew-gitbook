@@ -67,6 +67,13 @@ Wynik dla pliku *integers_test.txt* to **1**.
 
 Dla każdej pary sąsiednich wartości policz ich największy wspólny dzielnik. Podaj największą i najmniejszą wartość takiego dzielnika.
 
+Wynik dla pliku *integers_test.txt*:
+
+```
+Maksimum NWD: 5
+Minimum NWD: 1
+```
+
 ## Zadanie 7
 
 Policz najmniejszą wspólną wielokrotność dla wszystkich liczb w pliku.

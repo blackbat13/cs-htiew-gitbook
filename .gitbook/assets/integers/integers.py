@@ -1,3 +1,6 @@
+import math
+
+
 file_name = "integers_test.txt"
 
 
@@ -61,7 +64,20 @@ def ex5():
             counter += 1
 
     print(counter)
-    
+
+
+def ex6():
+    with open(file_name) as file:
+        numbers = list(map(int, file.read().split()))
+
+    gcd_list = []
+
+    for i in range(1, len(numbers)):
+        gcd_list.append(math.gcd(numbers[i - 1], numbers[i]))
+
+    print("Maksimum NWD:", max(gcd_list))
+    print("Minimum NWD:", min(gcd_list))
+
 
 print("Zadanie 1")
 ex1()
@@ -77,3 +93,6 @@ ex4()
 
 print("\nZadanie 5:")
 ex5()
+
+print("\nZadanie 6:")
+ex6()
