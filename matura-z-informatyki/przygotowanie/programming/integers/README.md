@@ -88,13 +88,53 @@ NWW: 150
 
 Sprawdź, ile liczb w pliku jest liczbami pierwszymi.
 
+Wynik dla pliku *integers_test.txt* to **1**.
+
 ## Zadanie 9
 
-Dla każdej liczby z pliku wyznacz sumę jej cyfr.
+Dla każdej liczby z pliku wyznacz sumę jej cyfr. Znajdź liczbę o największej sumie cyfr oraz liczbę o najmniejszej sumie cyfr. Podaj te liczby oraz ich sumę cyfr.
+
+Wynik dla pliku *integers_test.txt*:
+
+```
+Minimalna suma cyfr: 5 Liczba: 50
+Maksymalna suma cyfr: 17 Liczba: 548
+```
 
 ## Zadanie 10
 
 Znajdź **wszystkie** pary liczb w pliku, które są względem siebie liczbami wzajemnie pierwszymi (tzn. ich największy wspólny dzielnik to 1).
+
+Wynik dla pliku *integers_test.txt*:
+
+```
+513 515
+513 520
+513 533
+513 535
+513 547
+513 548
+513 50
+515 533
+515 534
+515 547
+515 548
+520 547
+15 533
+15 547
+15 548
+533 534
+533 535
+533 547
+533 548
+533 50
+534 535
+534 547
+535 547
+535 548
+547 548
+547 50
+```
 
 ## Zadanie 11
 

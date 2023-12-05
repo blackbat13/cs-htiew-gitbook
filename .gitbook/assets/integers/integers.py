@@ -91,6 +91,57 @@ def ex7():
     print("NWW:", current_lcm)
 
 
+def ex8():
+    with open(file_name) as file:
+        numbers = list(map(int, file.read().split()))
+
+    counter = 0
+
+    for num in numbers:
+        is_prime = num > 1
+        i = 2
+        while i * i <= num:
+            if num % i == 0:
+                is_prime = False
+            i += 1
+        if is_prime:
+            counter += 1
+
+    print(counter)
+
+
+def ex9():
+    with open(file_name) as file:
+        numbers = list(map(int, file.read().split()))
+
+    numbers_sum = []
+
+    for num in numbers:
+        digit_sum = 0
+        while num > 0:
+            digit_sum += num % 10
+            num //= 10
+        
+        numbers_sum.append(digit_sum)
+
+    min_sum = min(numbers_sum)
+    max_sum = max(numbers_sum)
+
+    print("Minimalna suma cyfr:", min_sum, "Liczba:", numbers[numbers_sum.index(min_sum)])
+    print("Maksymalna suma cyfr:", max_sum, "Liczba:", numbers[numbers_sum.index(max_sum)])
+
+
+def ex10():
+    with open(file_name) as file:
+        numbers = list(map(int, file.read().split()))
+
+
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if math.gcd(numbers[i], numbers[j]) == 1:
+                print(numbers[i], numbers[j])
+
+
 print("Zadanie 1")
 ex1()
 
@@ -111,3 +162,12 @@ ex6()
 
 print("\nZadanie 7:")
 ex7()
+
+print("\nZadanie 8:")
+ex8()
+
+print("\nZadanie 9:")
+ex9()
+
+print("\nZadanie 10:")
+ex10()
