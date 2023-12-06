@@ -3,7 +3,7 @@ from random import randint
 rand_num_set = set()
 
 while len(rand_num_set) < 100:
-    rand_num_set.add(randint(0, 1000))
+    rand_num_set.add(randint(2, 200))
 
 with open("integers.txt", "w") as file:
     for num in rand_num_set:

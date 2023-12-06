@@ -1095,6 +1095,7 @@
     * [Imiona](matura-z-informatyki/przygotowanie/programming/names/README.md)
     * [Sekwencje](matura-z-informatyki/przygotowanie/programming/sequences/README.md)
     * [Liczby całkowite](matura-z-informatyki/przygotowanie/programming/integers/README.md)
+      * [Odpowiedzi](matura-z-informatyki/przygotowanie/programming/integers/answers.md)
   * [Arkusz kalkulacyjny](matura-z-informatyki/przygotowanie/spreadsheet/README.md)
     * [Sklep](matura-z-informatyki/przygotowanie/spreadsheet/shop/README.md)
       * [Rozwiązanie](matura-z-informatyki/przygotowanie/spreadsheet/shop/solution.md)
