@@ -191,7 +191,6 @@ def ex12():
     with open(file_name) as file:
         numbers = list(map(int, file.read().split()))
 
-
     print(statistics.median(numbers))
 
 

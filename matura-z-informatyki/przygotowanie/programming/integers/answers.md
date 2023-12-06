@@ -21,7 +21,7 @@ Suma: 10036
 50
 ```
 
-### Zadanie 4
+## Zadanie 4
 
 ```
 Minimum parzyste: 6
