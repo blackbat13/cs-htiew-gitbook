@@ -45,11 +45,7 @@ def ex4():
     with open(file_name) as file:
         numbers = list(map(int, file.read().split()))
 
-    even = []
-
-    for num in numbers:
-        if num % 2 == 0:
-            even.append(num)
+    even = [num for num in numbers if num % 2 == 0]
 
     print("Minimum parzyste:", min(even))
     print("Maksimum parzyste:", max(even))
@@ -72,10 +68,7 @@ def ex6():
     with open(file_name) as file:
         numbers = list(map(int, file.read().split()))
 
-    gcd_list = []
-
-    for i in range(1, len(numbers)):
-        gcd_list.append(math.gcd(numbers[i - 1], numbers[i]))
+    gcd_list = [math.gcd(numbers[i - 1], numbers[i]) for i in range(1, len(numbers))]
 
     print("Maksimum NWD:", max(gcd_list))
     print("Minimum NWD:", min(gcd_list))

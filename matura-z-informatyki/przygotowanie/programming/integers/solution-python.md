@@ -48,11 +48,7 @@ print(counter)
 with open("integers.txt") as file:
     numbers = list(map(int, file.read().split()))
 
-even = []
-
-for num in numbers:
-    if num % 2 == 0:
-        even.append(num)
+even = [num for num in numbers if num % 2 == 0]
 
 print("Minimum parzyste:", min(even))
 print("Maksimum parzyste:", max(even))
@@ -82,10 +78,7 @@ from math import gcd
 with open("integers.txt") as file:
     numbers = list(map(int, file.read().split()))
 
-gcd_list = []
-
-for i in range(1, len(numbers)):
-    gcd_list.append(gcd(numbers[i - 1], numbers[i]))
+gcd_list = [gcd(numbers[i - 1], numbers[i]) for i in range(1, len(numbers))]
 
 print("Maksimum NWD:", max(gcd_list))
 print("Minimum NWD:", min(gcd_list))
@@ -245,6 +238,32 @@ print("Liczba wystąpień:", most_common[1])
 
 ## Zadanie 14
 
+### Wersja 1
+
+Sprawdzenie, czy liczba jest potęgą dwójki, możemy wykonać za pomocą wielokrotnego dzielenia liczby przez dwa. Jeżeli w trakcie dzielenia natrafimy na liczbę nieparzystą, to liczba nie jest potęgą dwójki. Jeżeli natomiast dotrzemy do wartości 1, to liczba jest potęgą dwójki.
+
+```python
+def is_power_of_two(num):
+    while num > 1:
+        if num % 2 != 0:
+            return False
+
+        num //= 2
+    
+    return True
+```
+
+### Wersja 2
+
+Sprawdzenie, czy liczba jest potęgą dwójki, możemy także oprzeć na zapisie binarnym liczby. Jeżeli liczba jest potęgą dwójki, to w jej zapisie binarnym znajduje się dokładnie jedna jedynka. W takim razie, jeżeli wykonamy operację bitową **AND** na sprawdzanej liczbie i jej wartości pomniejszonej o jeden (zakładając, że liczba jest większa od zera), to dostaniemy jako wynik zero wtedy i tylko wtedy, gdy sprawdzana liczba jest potęgą dwójki..
+
+```python
+def is_power_of_two(num):
+    return num > 0 and num & (num - 1) == 0
+```
+
+### Rozwiązanie
+
 ```python
 with open("integers.txt") as file:
     numbers = list(map(int, file.read().split()))
@@ -252,15 +271,7 @@ with open("integers.txt") as file:
 counter = 0
 
 for num in numbers:
-    is_power_of_two = True
-    while num > 1:
-        if num % 2 != 0:
-            is_power_of_two = False
-            break
-
-        num //= 2
-
-    if is_power_of_two:
+    if is_power_of_two(num):
         counter += 1
 
 print(counter)
@@ -308,7 +319,7 @@ def is_prime(num):
 
     return True
 
-    
+
 with open("integers.txt") as file:
     numbers = list(map(int, file.read().split()))
 
