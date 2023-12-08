@@ -169,6 +169,12 @@ $$O(\log n)$$ - logarytmiczna
 [binary-search.md](../../programming/c/algorithms/searching/binary-search.md)
 {% endcontent-ref %}
 
+### Haskell
+
+{% content-ref url="../../programming/haskell/algorithms/searching/binary-search.md" %}
+[binary-search.md](../../programming/haskell/algorithms/searching/binary-search.md)
+{% endcontent-ref %}
+
 ### Julia
 
 {% content-ref url="../../programming/julia/algorithms/searching/binary-search.md" %}
