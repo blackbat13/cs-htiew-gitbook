@@ -214,6 +214,12 @@ W przypadku poszukiwania elementu minimalnego, postępujemy praktycznie identycz
 [min-or-max.md](../../programming/c/algorithms/searching/min-or-max.md)
 {% endcontent-ref %}
 
+### Haskell
+
+{% content-ref url="../../programming/haskell/algorithms/searching/min-or-max.md" %}
+[min-or-max.md](../../programming/haskell/algorithms/searching/min-or-max.md)
+{% endcontent-ref %}
+
 ### Julia
 
 {% content-ref url="../../programming/julia/algorithms/searching/min-or-max.md" %}

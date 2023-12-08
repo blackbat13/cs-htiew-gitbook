@@ -596,6 +596,7 @@
   * [Algorytmy](programming/haskell/algorithms/README.md)
     * [Wyszukiwanie](programming/haskell/algorithms/searching/README.md)
       * [Wyszukiwanie liniowe](programming/haskell/algorithms/searching/linear-search.md)
+      * [Wyszukiwanie minimum i maksimum](programming/haskell/algorithms/searching/min-or-max.md)
 * [JavaScript](programming/javascript/README.md)
   * [Algorytmy](programming/javascript/algorithms/README.md)
     * [Wyszukiwanie](programming/javascript/algorithms/searching/README.md)
