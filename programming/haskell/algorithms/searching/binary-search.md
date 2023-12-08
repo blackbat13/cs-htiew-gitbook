@@ -73,10 +73,10 @@ main = do
 
 Funkcja `binarySearch` przyjmuje cztery argumenty: listę `lst`, szukaną liczbę `num`, oraz indeksy `left` i `right`, które określają zakres przeszukiwania w liście.
 
-1. **Warunek Końca:** Jeśli `left` jest większe niż `right`, oznacza to, że przeszukiwany zakres został wyczerpany, a liczba nie została znaleziona. W takim przypadku, funkcja zwraca `-1`.
-2. **Znalezienie Liczby:** Obliczamy środkowy indeks (`mid`) listy. Jeśli element w środku jest równy szukanej liczbie (`num`), funkcja zwraca ten indeks.
-3. **Przeszukiwanie Prawej Części:** Jeżeli element środkowy jest mniejszy niż `num`, funkcja kontynuuje wyszukiwanie w prawej części listy, aktualizując indeks `left` na `mid + 1`.
-4. **Przeszukiwanie Lewej Części:** W przeciwnym razie, jeśli element środkowy jest większy niż `num`, wyszukiwanie jest kontynuowane w lewej części, aktualizując indeks `right` na `mid - 1`.
+1. **Warunek końca:** jeśli `left` jest większe niż `right`, oznacza to, że przeszukiwany zakres został wyczerpany, a liczba nie została znaleziona. W takim przypadku, funkcja zwraca `-1`.
+2. **Znalezienie liczby:** obliczamy środkowy indeks (`mid`) listy. Jeśli element w środku jest równy szukanej liczbie (`num`), funkcja zwraca ten indeks.
+3. **Przeszukiwanie prawej części:** jeżeli element środkowy jest mniejszy niż `num`, funkcja kontynuuje wyszukiwanie w prawej części listy, aktualizując indeks `left` na `mid + 1`.
+4. **Przeszukiwanie lewej części:** w przeciwnym razie, jeśli element środkowy jest większy niż `num`, wyszukiwanie jest kontynuowane w lewej części, aktualizując indeks `right` na `mid - 1`.
 
 W części `main` programu, definiujemy posortowaną listę `lst` i liczbę `num`, której indeks chcemy znaleźć. Następnie wywołujemy funkcję `binarySearch` z odpowiednimi parametrami. Wynik, jaki otrzymujemy, to indeks szukanej liczby w liście.
 
