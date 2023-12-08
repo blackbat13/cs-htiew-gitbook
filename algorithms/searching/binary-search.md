@@ -165,14 +165,14 @@ $$O(\log n)$$ - logarytmiczna
 
 ### C
 
-{% content-ref url="../../programming/c/algorithms/searching/linear-search.md" %}
-[linear-search.md](../../programming/c/algorithms/searching/linear-search.md)
+{% content-ref url="../../programming/c/algorithms/searching/binary-search.md" %}
+[binary-search.md](../../programming/c/algorithms/searching/binary-search.md)
 {% endcontent-ref %}
 
 ### Julia
 
-{% content-ref url="../../programming/julia/algorithms/searching/linear-search.md" %}
-[linear-search.md](../../programming/julia/algorithms/searching/linear-search.md)
+{% content-ref url="../../programming/julia/algorithms/searching/binary-search.md" %}
+[binary-search.md](../../programming/julia/algorithms/searching/binary-search.md)
 {% endcontent-ref %}
 
 ## Powiązane zagadnienia
