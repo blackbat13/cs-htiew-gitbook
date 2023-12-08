@@ -197,3 +197,11 @@ $$O(\sqrt{n})$$
 {% content-ref url="../../programming/python/algorithms/integers/prime-test.md" %}
 [prime-test.md](../../programming/python/algorithms/integers/prime-test.md)
 {% endcontent-ref %}
+
+## Implementacje — pozostałe
+
+### Haskell
+
+{% content-ref url="../../programming/haskell/algorithms/integers/prime-test.md" %}
+[prime-test.md](../../programming/haskell/algorithms/integers/prime-test.md)
+{% endcontent-ref %}

@@ -598,6 +598,8 @@
       * [Wyszukiwanie liniowe](programming/haskell/algorithms/searching/linear-search.md)
       * [Wyszukiwanie binarne](programming/haskell/algorithms/searching/binary-search.md)
       * [Wyszukiwanie minimum i maksimum](programming/haskell/algorithms/searching/min-or-max.md)
+    * [Algorytmy na liczbach całkowitych](programming/haskell/algorithms/integers/README.md)
+      * [Test pierwszości](programming/haskell/algorithms/integers/prime-test.md)
 * [JavaScript](programming/javascript/README.md)
   * [Algorytmy](programming/javascript/algorithms/README.md)
     * [Wyszukiwanie](programming/javascript/algorithms/searching/README.md)
