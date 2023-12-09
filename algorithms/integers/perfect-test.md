@@ -182,6 +182,14 @@ $$O(\sqrt{n})$$
 [perfect-test.md](../../programming/python/algorithms/integers/perfect-test.md)
 {% endcontent-ref %}
 
+## Implementacja - pozostałe
+
+### Haskell
+
+{% content-ref url="../../programming/haskell/algorithms/integers/perfect-test.md" %}
+[perfect-test.md](../../programming/haskell/algorithms/integers/perfect-test.md)
+{% endcontent-ref %}
+
 ## Powiązane zagadnienia
 
 * Znajdowanie wszystkich liczb doskonałych mniejszych od zadanej wartości $$n$$.

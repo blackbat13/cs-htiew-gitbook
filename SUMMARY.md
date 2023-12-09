@@ -601,6 +601,7 @@
     * [Algorytmy na liczbach całkowitych](programming/haskell/algorithms/integers/README.md)
       * [Wszystkie dzielniki](programming/haskell/algorithms/integers/divisors.md)
       * [Test pierwszości](programming/haskell/algorithms/integers/prime-test.md)
+      * [Test doskonałości](programming/haskell/algorithms/integers/perfect-test.md)
 * [JavaScript](programming/javascript/README.md)
   * [Algorytmy](programming/javascript/algorithms/README.md)
     * [Wyszukiwanie](programming/javascript/algorithms/searching/README.md)
