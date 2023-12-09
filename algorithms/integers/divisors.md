@@ -171,3 +171,11 @@ $$O(\sqrt{n})$$
 {% content-ref url="../../programming/python/algorithms/integers/divisors.md" %}
 [divisors.md](../../programming/python/algorithms/integers/divisors.md)
 {% endcontent-ref %}
+
+## Implementacja - pozostałe
+
+### Haskell
+
+{% content-ref url="../../programming/haskell/algorithms/integers/divisors.md" %}
+[divisors.md](../../programming/haskell/algorithms/integers/divisors.md)
+{% endcontent-ref %}
