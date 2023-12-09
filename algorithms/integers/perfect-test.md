@@ -1,11 +1,9 @@
 # Test doskonałości
 
-## Opis problemu
-
 Czym jest liczba doskonała? Zacznijmy od dwóch definicji.
 
 {% hint style="info" %}
-#### Liczba doskonała
+**Liczba doskonała**
 
 Liczba doskonała to taka, która jest równa sumie wszystkich swoich **dzielników właściwych**.
 {% endhint %}
@@ -20,20 +18,20 @@ Podobnie jak w przypadku testu pierwszości, problem doskonałości liczby jest 
 
 Zaczynamy od formalnej specyfikacji i przykładu.
 
-### Specyfikacja
+## Specyfikacja
 
-#### Dane
+### Dane
 
 * $$n$$ - liczba naturalna
 
-#### Wynik
+### Wynik
 
-* **PRAWDA **- jeżeli $$n$$ jest liczbą doskonałą
-* **FAŁSZ **- jeżeli $$n$$ nie jest liczbą doskonałą
+* **PRAWDA** - jeżeli $$n$$ jest liczbą doskonałą
+* **FAŁSZ** - jeżeli $$n$$ nie jest liczbą doskonałą
 
-### Przykład 1
+## Przykład 1
 
-#### Dane
+### Dane
 
 ```
 n := 6
@@ -51,9 +49,9 @@ Po ich zsumowaniu otrzymamy z powrotem liczbę $$6$$:
 $$6=1+2+3$$ 
 {% endhint %}
 
-### Przykład 2
+## Przykład 2
 
-#### Dane
+### Dane
 
 ```
 n := 8
