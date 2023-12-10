@@ -142,3 +142,10 @@ flowchart TD
 [gcd.md](../../programming/blockly/algorithms/integers/gcd.md)
 {% endcontent-ref %}
 
+## Implementacja - pozostałe
+
+### Haskell
+
+{% content-ref url="../../programming/haskell/algorithms/integers/gcd.md" %}
+[gcd.md](../../programming/haskell/algorithms/integers/gcd.md)
+{% endcontent-ref %}
