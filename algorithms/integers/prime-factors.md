@@ -77,6 +77,14 @@ flowchart TD
 [prime-factors.md](../../programming/python/algorithms/integers/prime-factors.md)
 {% endcontent-ref %}
 
+## Implementacja - pozostałe
+
+### Haskell
+
+{% content-ref url="../../programming/haskell/algorithms/integers/prime-factors.md" %}
+[prime-factors.md](../../programming/haskell/algorithms/integers/prime-factors.md)
+{% endcontent-ref %}
+
 ## Powiązane zagadnienia
 
 - Znajdowanie wszystkich unikalnych czynników pierwszych zadanej liczby naturalnej.
