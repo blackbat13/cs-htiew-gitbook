@@ -97,3 +97,11 @@ flowchart TD
 {% content-ref url="../../programming/python/algorithms/integers/fibonacci-numbers.md" %}
 [fibonacci-numbers.md](../../programming/python/algorithms/integers/fibonacci-numbers.md)
 {% endcontent-ref %}
+
+## Implementacja - pozostałe
+
+### Haskell
+
+{% content-ref url="../../programming/haskell/algorithms/integers/fibonacci-numbers.md" %}
+[fibonacci-numbers.md](../../programming/haskell/algorithms/integers/fibonacci-numbers.md)
+{% endcontent-ref %}

@@ -605,6 +605,7 @@
       * [Test doskonałości](programming/haskell/algorithms/integers/perfect-test.md)
       * [Rozkład na czynniki pierwsze](programming/haskell/algorithms/integers/prime-factors.md)
       * [Algorytm Euklidesa](programming/haskell/algorithms/integers/gcd.md)
+      * [Liczby Fibonacciego](programming/haskell/algorithms/integers/fibonacci-numbers.md)
 * [JavaScript](programming/javascript/README.md)
   * [Algorytmy](programming/javascript/algorithms/README.md)
     * [Wyszukiwanie](programming/javascript/algorithms/searching/README.md)
