@@ -460,6 +460,7 @@
       * [Rozkład na czynniki pierwsze](programming/python/algorithms/integers/prime-factors.md)
       * [Test doskonałości](programming/python/algorithms/integers/perfect-test.md)
       * [Sito Eratostenesa](programming/python/algorithms/integers/eratosthenes-sieve.md)
+      * [Algorytm Euklidesa](programming/python/algorithms/integers/gcd.md)
       * [Rozszerzony algorytm Euklidesa](programming/python/algorithms/integers/extended-euclidean.md)
       * [Liczby Fibonacciego](programming/python/algorithms/integers/fibonacci-numbers.md)
       * [Wydawanie reszty](programming/python/algorithms/integers/change.md)
