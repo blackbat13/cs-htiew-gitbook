@@ -368,3 +368,21 @@ for num in numbers:
     if sq**2 == num:
         print(num)
 ```
+
+## Zadanie 19
+
+```python
+with open(file_name) as file:
+    numbers = list(map(int, file.read().split()))
+
+counter = 0
+
+for i in range(len(numbers)):
+    for j in range(i + 1, len(numbers)):
+        for k in range(j + 1, len(numbers)):
+            a, b, c = numbers[i], numbers[j], numbers[k]
+            if a + b + c - max(a, b, c) > max(a, b, c):
+                counter += 1
+    
+print(counter)
+```

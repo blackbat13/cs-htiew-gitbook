@@ -207,3 +207,13 @@ Wynik dla pliku *integers_test.txt*:
 ```
 9
 ```
+
+## Zadanie 19
+
+Podaj ile jest **różnych** trójek liczb z pliku, które spełniają warunek trójkąta, tzn. z boków o takiej długości można zbudować trójkąt. 
+
+Wynik dla pliku *integers_test.txt*:
+
+```
+80
+```

@@ -282,12 +282,25 @@ def ex18():
     with open(file_name) as file:
         numbers = list(map(int, file.read().split()))
 
-
     for num in numbers:
         sq = int(math.sqrt(num))
         if sq**2 == num:
             print(num)
+
+def ex19():
+    with open(file_name) as file:
+        numbers = list(map(int, file.read().split()))
+
+    counter = 0
+
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            for k in range(j + 1, len(numbers)):
+                a, b, c = numbers[i], numbers[j], numbers[k]
+                if a + b + c - max(a, b, c) > max(a, b, c):
+                    counter += 1
         
+    print(counter)
 
 print("Zadanie 1")
 ex1()
@@ -342,3 +355,6 @@ ex17()
 
 print("\nZadanie 18:")
 ex18()
+
+print("\nZadanie 19:")
+ex19()
