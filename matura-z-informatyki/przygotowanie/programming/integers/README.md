@@ -239,3 +239,15 @@ Wynik dla pliku *integers_test.txt*:
 ```
 9
 ```
+
+## Zadanie 22
+
+Podaj wszystkie liczby z pliku, które są liczbami **wieżowymi**, tzn. w ich zapisie binarnym najpierw występuję ciąg składający się z jednej lub więcej cyfr $$1$$, a następnie ciąg składający się z jednej lub więcej cyfr $$0$$. Podaj także zapis binarny tych liczb.
+
+Wynik dla pliku *integers_test.txt*:
+```
+6 110
+8 1000
+24 11000
+28 11100
+```

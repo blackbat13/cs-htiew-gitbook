@@ -330,10 +330,18 @@ def ex21():
                 print(num)
                 break
 
+def ex22():
+    with open(file_name) as file:
+        numbers = list(map(int, file.read().split()))
+
+    for num in numbers:
+        binary = str(bin(num))[2:]
+        if binary.count("10") == 1 and binary.count("01") == 0:
+            print(num, binary)
 
 file_name = "integers.txt"
 
-for i in range(1, 22):
+for i in range(1, 23):
     print(f"Zadanie {i}:")
     exec(f"ex{i}()")
     print()

@@ -413,3 +413,15 @@ for num in numbers:
             print(num)
             break
 ```
+
+## Zadanie 22
+
+```python
+with open(file_name) as file:
+    numbers = list(map(int, file.read().split()))
+
+for num in numbers:
+    binary = str(bin(num))[2:]
+    if binary.count("10") == 1 and binary.count("01") == 0:
+        print(num, binary)
+```
