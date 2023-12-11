@@ -245,9 +245,22 @@ Wynik dla pliku *integers_test.txt*:
 Podaj wszystkie liczby z pliku, które są liczbami **wieżowymi**, tzn. w ich zapisie binarnym najpierw występuję ciąg składający się z jednej lub więcej cyfr $$1$$, a następnie ciąg składający się z jednej lub więcej cyfr $$0$$. Podaj także zapis binarny tych liczb.
 
 Wynik dla pliku *integers_test.txt*:
+
 ```
 6 110
 8 1000
 24 11000
 28 11100
+```
+
+## Zadanie 23
+
+Podaj wszystkie liczby z pliku, które są liczbami **Fryderyka**, tzn. są równe sumie kolejnych potęg swoich cyfr. Przykładowo, $$89$$ jest liczbą Fryderyka, ponieważ $$8^1 + 9^2 = 89$$.
+
+Wynik dla pliku *integers_test.txt*:
+
+```
+6
+8
+9
 ```

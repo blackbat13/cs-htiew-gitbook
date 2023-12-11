@@ -425,3 +425,18 @@ for num in numbers:
     if binary.count("10") == 1 and binary.count("01") == 0:
         print(num, binary)
 ```
+
+## Zadanie 23
+
+```python
+with open(file_name) as file:
+    numbers = list(map(int, file.read().split()))
+
+for num in numbers:
+    sm = 0
+    for i, digit in enumerate(str(num)):
+        sm += int(digit) ** (i + 1)
+    
+    if sm == num:
+        print(num)
+```
