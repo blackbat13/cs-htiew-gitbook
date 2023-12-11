@@ -187,3 +187,13 @@ Wynik dla pliku *integers_test.txt*:
 ```
 4
 ```
+
+## Zadanie 17
+
+Podaj ile liczb z pliku jest **silnią** jakiejś liczby naturalnej.
+
+Wynik dla pliku *integers_test.txt*:
+
+```
+2
+```

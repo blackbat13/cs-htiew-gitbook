@@ -257,6 +257,25 @@ def ex16():
             counter += 1
 
     print(counter)
+
+
+def ex17():
+    with open(file_name) as file:
+        numbers = list(map(int, file.read().split()))
+
+    factorials = [1]
+    i = 2
+    while factorials[-1] <= 200:
+        factorials.append(factorials[-1] * i)
+        i += 1
+
+    counter = 0
+
+    for num in numbers:
+        if num in factorials:
+            counter += 1
+
+    print(counter)
         
 
 print("Zadanie 1")
@@ -306,3 +325,6 @@ ex15()
 
 print("\nZadanie 16:")
 ex16()
+
+print("\nZadanie 17:")
+ex17()
