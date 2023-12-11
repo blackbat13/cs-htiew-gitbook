@@ -229,3 +229,13 @@ Wynik dla pliku *integers_test.txt*:
 15
 21
 ```
+
+## Zadanie 21
+
+Podaj wszystkie liczby z pliku, które są liczbami **Kaprekara**. Liczba Kaprekara to taka liczba, której kwadrat można podzielić na dwie części (tak by obie były różne od zera), które po zsumowaniu dają wynik równy oryginalnej liczbie. Przykładowo, $$55$$ jest liczbą Kaprekara, ponieważ $$(55)^2 = 3025$$, a $$30 + 25 = 55$$.
+
+Wynik dla pliku *integers_test.txt*:
+
+```
+9
+```

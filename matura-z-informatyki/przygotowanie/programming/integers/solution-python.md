@@ -397,3 +397,19 @@ for num in numbers:
     if num % 10 == (num**2) % 10:
         print(num)
 ```
+
+## Zadanie 21
+
+```python
+with open(file_name) as file:
+    numbers = list(map(int, file.read().split()))
+
+for num in numbers:
+    sq = str(num ** 2)
+    for i in range(1, len(sq)):
+        left = int(sq[:i])
+        right = int(sq[i:])
+        if left + right == num and right != 0:
+            print(num)
+            break
+```

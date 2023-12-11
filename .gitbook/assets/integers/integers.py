@@ -3,7 +3,7 @@ import statistics
 import collections
 
 
-file_name = "integers.txt"
+
 
 
 def ex1():
@@ -313,13 +313,27 @@ def ex20():
     with open(file_name) as file:
         numbers = list(map(int, file.read().split()))
 
-
     for num in numbers:
         if num % 10 == (num**2) % 10:
             print(num)
         
+def ex21():
+    with open(file_name) as file:
+        numbers = list(map(int, file.read().split()))
 
-for i in range(1, 21):
+    for num in numbers:
+        sq = str(num ** 2)
+        for i in range(1, len(sq)):
+            left = int(sq[:i])
+            right = int(sq[i:])
+            if left + right == num and right != 0:
+                print(num)
+                break
+
+
+file_name = "integers.txt"
+
+for i in range(1, 22):
     print(f"Zadanie {i}:")
     exec(f"ex{i}()")
     print()
