@@ -356,3 +356,15 @@ for num in numbers:
 
 print(counter)
 ```
+
+## Zadanie 18
+
+```python
+with open(file_name) as file:
+    numbers = list(map(int, file.read().split()))
+
+for num in numbers:
+    sq = int(math.sqrt(num))
+    if sq**2 == num:
+        print(num)
+```

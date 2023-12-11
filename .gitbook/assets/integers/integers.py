@@ -276,6 +276,17 @@ def ex17():
             counter += 1
 
     print(counter)
+
+
+def ex18():
+    with open(file_name) as file:
+        numbers = list(map(int, file.read().split()))
+
+
+    for num in numbers:
+        sq = int(math.sqrt(num))
+        if sq**2 == num:
+            print(num)
         
 
 print("Zadanie 1")
@@ -328,3 +339,6 @@ ex16()
 
 print("\nZadanie 17:")
 ex17()
+
+print("\nZadanie 18:")
+ex18()

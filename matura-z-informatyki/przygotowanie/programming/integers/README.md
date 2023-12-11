@@ -197,3 +197,13 @@ Wynik dla pliku *integers_test.txt*:
 ```
 2
 ```
+
+## Zadanie 18
+
+Podaj ile liczb z pliku jest **kwadratem** jakiejś liczby naturalnej.
+
+Wynik dla pliku *integers_test.txt*:
+
+```
+9
+```
