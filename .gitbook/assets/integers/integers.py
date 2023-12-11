@@ -73,6 +73,7 @@ def ex6():
     print("Maksimum NWD:", max(gcd_list))
     print("Minimum NWD:", min(gcd_list))
 
+
 def ex7():
     with open(file_name) as file:
         numbers = list(map(int, file.read().split()))
@@ -81,7 +82,9 @@ def ex7():
 
     for i in range(1, len(numbers)):
         if numbers[i] < 20:
-            current_lcm = (current_lcm * numbers[i]) // math.gcd(current_lcm, numbers[i])
+            current_lcm = (current_lcm * numbers[i]) // math.gcd(
+                current_lcm, numbers[i]
+            )
 
     print("NWW:", current_lcm)
 
@@ -97,7 +100,7 @@ def is_prime(num):
     while i * i <= num:
         if num % i == 0:
             return False
-        
+
         i += 1
 
     return True
@@ -127,22 +130,26 @@ def ex9():
         while num > 0:
             digit_sum += num % 10
             num //= 10
-        
+
         numbers_sum.append(digit_sum)
 
     min_sum = min(numbers_sum)
     max_sum = max(numbers_sum)
 
-    print("Minimalna suma cyfr:", min_sum, "Liczba:", numbers[numbers_sum.index(min_sum)])
-    print("Maksymalna suma cyfr:", max_sum, "Liczba:", numbers[numbers_sum.index(max_sum)])
+    print(
+        "Minimalna suma cyfr:", min_sum, "Liczba:", numbers[numbers_sum.index(min_sum)]
+    )
+    print(
+        "Maksymalna suma cyfr:", max_sum, "Liczba:", numbers[numbers_sum.index(max_sum)]
+    )
 
 
 def ex10():
     with open(file_name) as file:
         numbers = list(map(int, file.read().split()))
 
-    min_pair = (0,0)
-    max_pair = (0,0)
+    min_pair = (0, 0)
+    max_pair = (0, 0)
     min_sum = 500
     max_sum = 0
 
@@ -156,7 +163,7 @@ def ex10():
                 elif sum_pair > max_sum:
                     max_pair = (numbers[i], numbers[j])
                     max_sum = sum_pair
-    
+
     print("Para o największej sumie:", max_pair)
     print("Para o najmniejszej sumie:", min_pair)
 
@@ -164,7 +171,6 @@ def ex10():
 def ex11():
     with open(file_name) as file:
         numbers = list(map(int, file.read().split()))
-
 
     for num in numbers:
         factors_sum = 1
@@ -287,6 +293,7 @@ def ex18():
         if sq**2 == num:
             print(num)
 
+
 def ex19():
     with open(file_name) as file:
         numbers = list(map(int, file.read().split()))
@@ -299,62 +306,20 @@ def ex19():
                 a, b, c = numbers[i], numbers[j], numbers[k]
                 if a + b + c - max(a, b, c) > max(a, b, c):
                     counter += 1
-        
+
     print(counter)
 
-print("Zadanie 1")
-ex1()
+def ex20():
+    with open(file_name) as file:
+        numbers = list(map(int, file.read().split()))
 
-print("\nZadanie 2:")
-ex2()
 
-print("\nZadanie 3:")
-ex3()
+    for num in numbers:
+        if num % 10 == (num**2) % 10:
+            print(num)
+        
 
-print("\nZadanie 4:")
-ex4()
-
-print("\nZadanie 5:")
-ex5()
-
-print("\nZadanie 6:")
-ex6()
-
-print("\nZadanie 7:")
-ex7()
-
-print("\nZadanie 8:")
-ex8()
-
-print("\nZadanie 9:")
-ex9()
-
-print("\nZadanie 10:")
-ex10()
-
-print("\nZadanie 11:")
-ex11()
-
-print("\nZadanie 12:")
-ex12()
-
-print("\nZadanie 13:")
-ex13()
-
-print("\nZadanie 14:")
-ex14()
-
-print("\nZadanie 15:")
-ex15()
-
-print("\nZadanie 16:")
-ex16()
-
-print("\nZadanie 17:")
-ex17()
-
-print("\nZadanie 18:")
-ex18()
-
-print("\nZadanie 19:")
-ex19()
+for i in range(1, 21):
+    print(f"Zadanie {i}:")
+    exec(f"ex{i}()")
+    print()

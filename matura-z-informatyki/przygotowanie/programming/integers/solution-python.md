@@ -386,3 +386,14 @@ for i in range(len(numbers)):
     
 print(counter)
 ```
+
+## Zadanie 20
+
+```python
+with open(file_name) as file:
+    numbers = list(map(int, file.read().split()))
+
+for num in numbers:
+    if num % 10 == (num**2) % 10:
+        print(num)
+```
