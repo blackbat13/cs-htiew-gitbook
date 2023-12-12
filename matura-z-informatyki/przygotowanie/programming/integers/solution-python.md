@@ -440,3 +440,19 @@ for num in numbers:
     if sm == num:
         print(num)
 ```
+
+## Zadanie 24
+
+```python
+with open(file_name) as file:
+    numbers = list(map(int, file.read().split()))
+
+for num in numbers:
+    seq = list(map(int,str(num)))
+    n = len(seq)
+    while seq[-1] < num:
+        seq.append(sum(seq[-n:]))
+
+    if seq[-1] == num:
+        print(num)
+```

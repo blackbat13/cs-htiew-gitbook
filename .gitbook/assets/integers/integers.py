@@ -351,9 +351,23 @@ def ex23():
         if sm == num:
             print(num)
 
-file_name = "integers.txt"
+def ex24():
+    with open(file_name) as file:
+        numbers = list(map(int, file.read().split()))
 
-for i in range(1, 24):
+    for num in numbers:
+        seq = list(map(int,str(num)))
+        n = len(seq)
+        while seq[-1] < num:
+            seq.append(sum(seq[-n:]))
+
+        if seq[-1] == num:
+            print(num)
+
+
+file_name = "integers_test.txt"
+
+for i in range(1, 25):
     print(f"Zadanie {i}:")
     exec(f"ex{i}()")
     print()

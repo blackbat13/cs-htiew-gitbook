@@ -264,3 +264,20 @@ Wynik dla pliku *integers_test.txt*:
 8
 9
 ```
+
+## Zadanie 24
+
+Liczbą **Keitha** nazywamy $$n$$-cyfrową liczbę całkowitą $$k$$, która stanowi element ciągu liczbowego, w któym pierwsze $$n$$ wyrazów to cyfry liczby $$k$$, a każdy kolejny wyraz to suma poprzedzających go $$n$$ wyrazów.
+
+Dla przykładu, liczba $$197$$ jest liczbą Keitha, ponieważ tworzy ciąg $$1, 9, 7, 17, 33, 57, 107, 197$$.
+
+Podaj wszystkie liczby z pliku, które są liczbami Keitha.
+
+Wynik dla pliku *integers_test.txt*:
+
+```
+6
+8
+9
+28
+```
