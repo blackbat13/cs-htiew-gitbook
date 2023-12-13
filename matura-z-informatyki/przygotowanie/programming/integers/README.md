@@ -200,7 +200,7 @@ Wynik dla pliku *integers_test.txt*:
 
 ## Zadanie 18
 
-Podaj ile liczb z pliku jest **kwadratem** jakiejś liczby naturalnej.
+Podaj liczby z pliku, które są **kwadratem** jakiejś liczby naturalnej.
 
 Wynik dla pliku *integers_test.txt*:
 
