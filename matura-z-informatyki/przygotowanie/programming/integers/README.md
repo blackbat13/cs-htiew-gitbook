@@ -220,7 +220,7 @@ Wynik dla pliku *integers_test.txt*:
 
 ## Zadanie 20
 
-Podaj wszystkie liczby z pliku, które są liczbami **automorficznymi**, tzn. ich kwadrat kończy się taką samą cyfrą co sama liczba.
+Podaj wszystkie liczby z pliku, których kwadrat kończy się taką samą cyfrą co sama liczba.
 
 Wynik dla pliku *integers_test.txt*:
 
