@@ -867,6 +867,17 @@
 * [Auto-wypełnianie](spreadsheet/auto-fill.md)
 * [Adresowanie](spreadsheet/addressing.md)
 * [Tabele przestawne](spreadsheet/pivot-table.md)
+* [VBA](spreadsheet/vba/README.md)
+  * [Ćwiczenia](spreadsheet/vba/exercises/README.md)
+    * [Podstawy](spreadsheet/vba/exercises/basic/README.md)
+      * [Rozwiązanie 1](spreadsheet/vba/exercises/basic/solution-1.md)
+      * [Rozwiązanie 2](spreadsheet/vba/exercises/basic/solution-2.md)
+      * [Rozwiązanie 3](spreadsheet/vba/exercises/basic/solution-3.md)
+      * [Rozwiązanie 4](spreadsheet/vba/exercises/basic/solution-4.md)
+      * [Rozwiązanie 5](spreadsheet/vba/exercises/basic/solution-5.md)
+      * [Rozwiązanie 6](spreadsheet/vba/exercises/basic/solution-6.md)
+      * [Rozwiązanie 7](spreadsheet/vba/exercises/basic/solution-7.md)
+      * [Rozwiązanie 8](spreadsheet/vba/exercises/basic/solution-8.md)
 
 ## Bazy danych
 
