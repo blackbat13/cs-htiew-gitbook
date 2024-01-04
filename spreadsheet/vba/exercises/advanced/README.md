@@ -19,3 +19,11 @@ Stwórz przycisk, który po kliknięciu pokoloruje wszystkie komórki w zakresie
 ### Przykład
 
 ![Przykład](../../../../.gitbook/assets/vba/advanced-ex-2.gif)
+
+## Zadanie 3
+
+Stwórz przycisk, który po kliknięciu wpisze w kolumnie C wszystkie wartości z zakresu `A1:A10`, które występują jednocześnie w zakresie `B1:B10`. Możesz założyć, że w obu zakresach wartości są unikalne w ramach danego zakresu.
+
+### Przykład
+
+![Przykład](../../../../.gitbook/assets/vba/advanced-ex-3.gif)

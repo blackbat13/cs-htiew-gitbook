@@ -1,4 +1,4 @@
-# Rozwiązanie 1
+# Rozwiązanie 2
 
 ## Treść zadania
 
@@ -7,7 +7,7 @@ Stwórz przycisk, który po kliknięciu pokoloruje wszystkie komórki w zakresie
 ## Rozwiązanie
 
 ```vb
-Sub Przycisk1_Click()
+Sub PonizejSredniej_Click()
     Dim zakres As Range
     Dim srednia As Double
     
