@@ -11,3 +11,11 @@ Napisz funkcję `SzukajMax`, która dla podanego zakresu komórek, znajdzie i zw
 ```
 SzukajMax(A1:A10) = $A$3
 ```
+
+## Zadanie 2
+
+Stwórz przycisk, który po kliknięciu pokoloruje wszystkie komórki w zakresie `A1:A10`, które zawierają wartość poniżej średniej z tego zakresu.
+
+### Przykład
+
+![Przykład](../../../../.gitbook/assets/vba/advanced-ex-2.gif)

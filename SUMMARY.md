@@ -880,6 +880,7 @@
       * [Rozwiązanie 8](spreadsheet/vba/exercises/basic/solution-8.md)
     * [Zaawansowane](spreadsheet/vba/exercises/advanced/README.md)
       * [Rozwiązanie 1](spreadsheet/vba/exercises/advanced/solution-1.md)
+      * [Rozwiązanie 1](spreadsheet/vba/exercises/advanced/solution-2.md)
 
 ## Bazy danych
 
