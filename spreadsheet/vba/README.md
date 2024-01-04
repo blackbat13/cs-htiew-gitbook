@@ -22,3 +22,9 @@ VBA rozszerza możliwości Excela, umożliwiając użytkownikom tworzenie zaawan
 1. **Komentowanie kodu:** zawsze dokumentuj, co robi twój kod, aby był zrozumiały dla Ciebie i innych osób, które mogą go używać lub modyfikować w przyszłości.
 2. **Testowanie i debugowanie:** regularnie testuj kod, aby upewnić się, że działa prawidłowo, i stosuj narzędzia debugowania dostępne w edytorze VBA, aby identyfikować i naprawiać błędy.
 3. **Nauka dobrych praktyk:** zdobądź wiedzę na temat najlepszych praktyk programowania VBA, aby tworzyć kod, który jest nie tylko funkcjonalny, ale także wydajny i bezpieczny.
+
+## Ściąga
+
+{% file src="../../.gitbook/assets/VBAcard2.pdf" %}
+VBA Reference Card
+{% endfile %}
