@@ -883,6 +883,7 @@
       * [Rozwiązanie 2](spreadsheet/vba/exercises/advanced/solution-2.md)
       * [Rozwiązanie 3](spreadsheet/vba/exercises/advanced/solution-3.md)
       * [Rozwiązanie 4](spreadsheet/vba/exercises/advanced/solution-4.md)
+      * [Rozwiązanie 5](spreadsheet/vba/exercises/advanced/solution-5.md)
 
 ## Bazy danych
 

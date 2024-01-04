@@ -35,3 +35,14 @@ Komórki `A1:A10` zawierają imiona i nazwiska oddzielone pojedynczą spacją. S
 ### Przykład
 
 ![Przykład](../../../../.gitbook/assets/vba/advanced-ex-4.gif)
+
+## Zadanie 5
+
+Napisz funkcję `ZliczWyrazy`, która dla podanego tekstu zwróci liczbę wyrazów w nim zawartych. Za wyraz uznajemy ciąg znaków nie zawierający spacji, a wyrazy są oddzielone pojedynczą spacją.
+
+### Przykład
+
+```
+ZliczWyrazy("Ala ma kota") = 3
+ZliczWyrazy("Ala ma kota, a kot ma Alę") = 7
+```
