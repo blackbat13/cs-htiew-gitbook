@@ -56,3 +56,100 @@ Function KonwTemp(temp As Double, jednZ As String, jednDo As String) As Double
     End If
 End Function
 ```
+
+## Opis rozwiązania
+
+### 1. Definicja funkcji
+
+```vb
+Function KonwTemp(temp As Double, jednZ As String, jednDo As String) As Double
+```
+
+- Funkcja `KonwTemp` przyjmuje trzy argumenty: `temp` (temperatura do konwersji), `jednZ` (jednostka wyjściowa) i `jednDo` (jednostka docelowa). Zwraca liczbę zmiennoprzecinkową (`Double`).
+
+### 2. Pierwszy warunek - konwersja z Celsjusza
+
+```vb
+If jednZ = "C" Then
+```
+
+- Sprawdza, czy jednostka wyjściowa to Celsjusz.
+
+    - **Konwersja na Fahrenheita:**
+    
+    ```vb
+    If jednDo = "F" Then
+        KonwTemp = ((temp * 9) / 5) + 32
+    ```
+
+    - Jeśli jednostka docelowa to Fahrenheit, przelicza temperaturę z Celsjusza na Fahrenheita.
+
+    - **Konwersja na Kelvina:**
+    
+    ```vb
+    ElseIf jednDo = "K" Then
+        KonwTemp = temp + 273.15
+    ```
+
+    - Jeśli jednostka docelowa to Kelvin, przelicza temperaturę z Celsjusza na Kelvina.
+
+### 3. Drugi warunek - konwersja z Fahrenheita
+
+```vb
+ElseIf jednZ = "F" Then
+```
+
+- Sprawdza, czy jednostka wyjściowa to Fahrenheit.
+
+    - **Konwersja na Celsjusza:**
+    
+    ```vb
+    If jednDo = "C" Then
+        KonwTemp = ((temp - 32) * 5) / 9
+    ```
+
+    - Jeśli jednostka docelowa to Celsjusz, przelicza temperaturę z Fahrenheita na Celsjusza.
+
+    - **Konwersja na Kelvina:**
+    
+    ```vb
+    ElseIf jednDo = "K" Then
+        KonwTemp = ((temp + 459.67) * 5) / 9
+    ```
+
+    - Jeśli jednostka docelowa to Kelvin, przelicza temperaturę z Fahrenheita na Kelvina.
+
+### 4. Trzeci warunek - konwersja z Kelvina
+
+```vb
+ElseIf jednZ = "K" Then
+```
+
+- Sprawdza, czy jednostka wyjściowa to Kelvin.
+
+    - **Konwersja na Celsjusza:**
+
+    ```vb
+    If jednDo = "C" Then
+        KonwTemp = temp - 273.15
+    ```
+
+    - Jeśli jednostka docelowa to Celsjusz, przelicza temperaturę z Kelvina na Celsjusza.
+
+    - **Konwersja na Fahrenheita:**
+
+    ```vb
+    ElseIf jednDo = "F" Then
+        KonwTemp = ((temp * 9) / 5) - 459.67
+    ```
+
+    - Jeśli jednostka docelowa to Fahrenheit, przelicza temperaturę z Kelvina na Fahrenheita.
+
+### 5. Koniec funkcji
+
+```vb
+End If
+End Function
+```
+
+- `End If` i `End Function` oznaczają koniec struktury warunkowej i samej funkcji.
