@@ -27,3 +27,11 @@ Stwórz przycisk, który po kliknięciu wpisze w kolumnie C wszystkie wartości 
 ### Przykład
 
 ![Przykład](../../../../.gitbook/assets/vba/advanced-ex-3.gif)
+
+## Zadanie 4
+
+Komórki `A1:A10` zawierają imiona i nazwiska oddzielone pojedynczą spacją. Stwórz przycisk, który po kliknięciu umieści w kolumnie B imiona, a w kolumnie C nazwiska z odpowiadających komórek z kolumny A.
+
+### Przykład
+
+![Przykład](../../../../.gitbook/assets/vba/advanced-ex-4.gif)
