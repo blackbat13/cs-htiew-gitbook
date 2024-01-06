@@ -38,4 +38,10 @@ Imiona: Crystal, Jessica, Jeffrey
  
 ## Zadanie 4
 
-Wypisz wszystkie imiona z pliku *names.txt*, które zawierają najwięcej samogłosek. Wynik podaj w kolejności alfabetycznej.
+Wypisz wszystkie imiona z pliku *names.txt*, które zawierają najwięcej samogłosek. Wynik podaj w kolejności alfabetycznej. Dla danych z pliku *names_test.txt* wynik to:
+
+```
+Jeffrey
+Jessica
+Laura
+```

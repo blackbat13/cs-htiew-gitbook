@@ -1,6 +1,6 @@
 def exercise1():
     names_list = []
-    with open("names_test.txt") as file:
+    with open(file_name) as file:
         names_list = file.read().split()
 
     count = 0
@@ -8,11 +8,12 @@ def exercise1():
         if name[-1] == "a":
             count += 1
 
-    return count
+    print(count)
+
 
 def exercise2():
     names_list = []
-    with open("names_test.txt") as file:
+    with open(file_name) as file:
         names_list = file.read().split()
 
     count = 0
@@ -21,59 +22,60 @@ def exercise2():
             if name[i] == "e":
                 count += 1
                 break
-            
-    return count
+
+    print(count)
+
 
 def exercise3():
     names_list = []
-    with open("names_test.txt") as file:
+    with open(file_name) as file:
         names_list = file.read().split()
 
-    min_length = len(names_list[0])
-    max_length = len(names_list[0])
-    for name in names_list:
-        if len(name) < min_length:
-            min_length = len(name)
-        if len(name) > max_length:
-            max_length = len(name)
+    names_lengths = [len(name) for name in names_list]
+    min_length = min(names_lengths)
+    max_length = max(names_lengths)
 
-    min_names = []
-    max_names = []
-    for name in names_list:
-        if len(name) == min_length:
-            min_names.append(name)
-        if len(name) == max_length:
-            max_names.append(name)
-            
-    return {"min_length": min_length, "max_length": max_length, "min_names": min_names, "max_names": max_names}
+    min_names = [name for name in names_list if len(name) == min_length]
+    max_names = [name for name in names_list if len(name) == max_length]
 
-def is_prime(n: int) -> bool:
-    if n < 2:
-        return False
-    
-    i = 2
-    while i * i <= n:
-        if n % i == 0:
-            return False
+    print("Najkrótsze imiona:")
+    print("Długość:", min_length)
+    print("Imiona:", ", ".join(min_names))
+    print()
+    print("Najdłuższe imiona:")
+    print("Długość:", max_length)
+    print("Imiona:", ", ".join(max_names))
 
-        i += 1
-        
-    return True
 
-def exercise4():
-    numbers_list = []
-    with open("duplicates.txt") as file:
-        numbers_list = list(map(int, file.read().splitlines()))
-
+def count_vowels(text):
+    vowels = "aeiouy"
     count = 0
-    for num in numbers_list:
-        if is_prime(num):
+    for character in text:
+        if character in vowels:
             count += 1
 
     return count
-    
 
-print("Exercise 1:", exercise1())
-print("Exercise 2:", exercise2())
-print("Exercise 3:", exercise3())
-# print("Exercise 4:", exercise4())
+
+def exercise4():
+    names_list = []
+    with open(file_name) as file:
+        names_list = file.read().split()
+
+    vowels_counters = [count_vowels(name) for name in names_list]
+    max_vowels = max(vowels_counters)
+    max_vowels_names = [
+        names_list[i]
+        for i in range(len(names_list))
+        if vowels_counters[i] == max_vowels
+    ]
+
+    print("\n".join(sorted(max_vowels_names)))
+
+
+file_name = "names.txt"
+
+for i in range(1, 5):
+    print(f"Zadanie {i}:")
+    exec(f"exercise{i}()")
+    print()
