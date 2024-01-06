@@ -43,7 +43,7 @@ flowchart TD
     op1 --> n5["3"] 
 ```
 
-## Zadanie 4
+## Zadanie 3
 
 Przedstaw poniższe wyrażenie arytmetyczne w postaci drzewa wyrażeń arytmetycznych.
 
