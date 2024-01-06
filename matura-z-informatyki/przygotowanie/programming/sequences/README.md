@@ -25,7 +25,3 @@ Wypisz numery linii z pliku *sequences.txt*, w których występuje przynajmniej 
 ## Zadanie 3
 
 Wypisz, ile sekwencji z pliku *sequences.txt* jest uporządkowanych nierosnąco lub niemalejąco.
-
-## Zadanie 4
-
-Wypisz wszystkie imiona z pliku *names.txt*, które zawierają najwięcej samogłosek. Wynik podaj w kolejności alfabetycznej.
