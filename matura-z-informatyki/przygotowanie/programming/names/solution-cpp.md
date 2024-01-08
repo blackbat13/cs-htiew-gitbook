@@ -26,7 +26,7 @@ int main() {
     int count = 0;
     for (auto name : names_list)
     {
-        if (name.back() == 'a')
+        if (name[0] == 'B')
         {
             count++;
         }
@@ -38,6 +38,43 @@ int main() {
 ```
 
 ## Zadanie 2
+
+```cpp
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    vector<string> names_list;
+    ifstream file("names.txt");
+    string name;
+
+    while (file >> name && !file.eof())
+    {
+        names_list.push_back(name);
+    }
+
+    file.close();
+
+    int count = 0;
+    for (auto name : names_list)
+    {
+        if (name.back() == 'a')
+        {
+            count++;
+        }
+    }
+
+    cout << count << endl;
+    return 0;
+}
+```
+
+## Zadanie 5
 
 ```cpp
 #include <iostream>
@@ -78,7 +115,71 @@ int main() {
 }
 ```
 
-## Zadanie 3
+## Zadanie 9
+
+```cpp
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+int count_vowels(string text)
+{
+    string vowels = "aeiouy";
+    int count = 0;
+    for (auto character : text)
+    {
+        if (vowels.find(character) != string::npos)
+        {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+int main() {
+    vector<string> names_list;
+    ifstream file("names.txt");
+    string name;
+
+    while (file >> name && !file.eof())
+    {
+        names_list.push_back(name);
+    }
+    
+    file.close();
+
+    vector<int> vowels_counters;
+    for (auto name : names_list)
+    {
+        vowels_counters.push_back(count_vowels(name));
+    }
+
+    int max_vowels = *max_element(vowels_counters.begin(), vowels_counters.end());
+    vector<string> max_vowels_names;
+    for (int i = 0; i < vowels_counters.size(); i++)
+    {
+        if (vowels_counters[i] == max_vowels)
+        {
+            max_vowels_names.push_back(names_list[i]);
+        }
+    }
+
+    sort(max_vowels_names.begin(), max_vowels_names.end());
+    for (auto name : max_vowels_names)
+    {
+        cout << name << endl;
+    }
+    
+    return 0;
+}
+```
+
+## Zadanie 10
 
 ```cpp
 #include <iostream>
@@ -147,70 +248,6 @@ int main() {
     }
 
     cout << endl;
-    return 0;
-}
-```
-
-## Zadanie 4
-
-```cpp
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <vector>
-#include <algorithm>
-
-using namespace std;
-
-int count_vowels(string text)
-{
-    string vowels = "aeiouy";
-    int count = 0;
-    for (auto character : text)
-    {
-        if (vowels.find(character) != string::npos)
-        {
-            count++;
-        }
-    }
-
-    return count;
-}
-
-int main() {
-    vector<string> names_list;
-    ifstream file("names.txt");
-    string name;
-
-    while (file >> name && !file.eof())
-    {
-        names_list.push_back(name);
-    }
-    
-    file.close();
-
-    vector<int> vowels_counters;
-    for (auto name : names_list)
-    {
-        vowels_counters.push_back(count_vowels(name));
-    }
-
-    int max_vowels = *max_element(vowels_counters.begin(), vowels_counters.end());
-    vector<string> max_vowels_names;
-    for (int i = 0; i < vowels_counters.size(); i++)
-    {
-        if (vowels_counters[i] == max_vowels)
-        {
-            max_vowels_names.push_back(names_list[i]);
-        }
-    }
-
-    sort(max_vowels_names.begin(), max_vowels_names.end());
-    for (auto name : max_vowels_names)
-    {
-        cout << name << endl;
-    }
-    
     return 0;
 }
 ```
