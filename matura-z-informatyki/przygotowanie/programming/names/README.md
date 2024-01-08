@@ -28,7 +28,7 @@ Podaj, ile imion w pliku *names.txt* **zaczyna** się samogłoską. Dla danych z
 
 ## Zadanie 4
 
-Podaj, ile imion w pliku *names.txt* **zaczyna** się spółgłoską i **jednocześnie** **kończy** się samogłoską. Dla danych z pliku *names_test.txt* wynik to $$1$$.
+Podaj, ile imion w pliku *names.txt* **zaczyna** się spółgłoską i **jednocześnie** **kończy** się samogłoską. Dla danych z pliku *names_test.txt* wynik to $$4$$.
 
 ## Zadanie 5
 

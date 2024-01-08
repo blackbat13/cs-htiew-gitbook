@@ -44,7 +44,7 @@ def exercise4():
 
     count = 0
     for name in names_list:
-        if name[0] in "AEYUIO" and name[-1] not in "AEYUIO":
+        if name[0] not in "AEYUIO" and name[-1] in "aeyuio":
             count += 1
 
     print(count)

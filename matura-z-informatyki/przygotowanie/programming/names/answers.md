@@ -21,7 +21,7 @@
 ## Zadanie 4
 
 ```
-9
+46
 ```
 
 ## Zadanie 5
