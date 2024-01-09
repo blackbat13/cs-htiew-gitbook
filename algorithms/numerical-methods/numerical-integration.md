@@ -23,6 +23,22 @@ Wyróżniamy dwie podstawowe metody: metodę prostokątów i metodę trapezów.
 
 Idea tej metody jest prosta: podzielmy pole pod wykresem funkcji na prostokąty i policzmy ich pole.
 
+### Wizualizacja
+
+Zobaczmy, jak ta metoda działa na przykładzie. Spróbujmy oszacować pole pod wykresem funkcji sinus na przedziale od $$0$$ do $$\pi$$.
+
+#### 20 prostokątów
+
+![20 prostokątów](../../.gitbook/assets/numerical_integration_rectangles_sin_20.png)
+
+#### 50 prostokątów
+
+![50 prostokątów](../../.gitbook/assets/numerical_integration_rectangles_sin_50.png)
+
+#### 100 prostokątów
+
+![100 prostokątów](../../.gitbook/assets/numerical_integration_rectangles_sin_100.png)
+
 ### Pseudokod
 
 ```
