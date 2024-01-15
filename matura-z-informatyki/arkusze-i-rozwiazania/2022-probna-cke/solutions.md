@@ -213,6 +213,10 @@ print(min_number, min_value)
 
 ### 3.4
 
+{% tabs %}
+
+{% tab title="C++" %} 
+
 {% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
