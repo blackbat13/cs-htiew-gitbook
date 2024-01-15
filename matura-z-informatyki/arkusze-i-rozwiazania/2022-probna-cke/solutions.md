@@ -4,8 +4,11 @@
 
 ### 3.2
 
-#### C++
+{% tabs %}
 
+{% tab title="C++" %} 
+
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 #include <fstream>
@@ -48,9 +51,13 @@ int main() {
   return 0;
 }
 ```
+{% endcode %}
 
-#### Python
+{% endtab %}
 
+{% tab title="Python" %} 
+
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def is_prime(n):
     if n < 2:
@@ -77,6 +84,11 @@ for number in data:
 print("Zadanie 3.2")
 print(result)
 ```
+{% endcode %}
+
+{% endtab %}
+
+{% endtabs %}
 
 ### 3.3
 
