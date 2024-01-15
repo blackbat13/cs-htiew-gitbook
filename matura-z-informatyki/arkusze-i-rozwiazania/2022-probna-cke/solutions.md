@@ -92,8 +92,11 @@ print(result)
 
 ### 3.3
 
-#### C++
+{% tabs %}
 
+{% tab title="C++" %} 
+
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 #include <fstream>
@@ -153,9 +156,13 @@ int main() {
   return 0;
 }
 ```
+{% endcode %}
 
-#### Python
+{% endtab %}
 
+{% tab title="Python" %} 
+
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def is_prime(n):
     if n < 2:
@@ -198,11 +205,15 @@ print("Zadanie 3.3")
 print(max_number, max_value)
 print(min_number, min_value)
 ```
+{% endcode %}
+
+{% endtab %}
+
+{% endtabs %}
 
 ### 3.4
 
-#### C++
-
+{% code overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 #include <fstream>
@@ -244,9 +255,13 @@ int main() {
   return 0;
 }
 ```
+{% endcode %}
 
-#### Python
+{% endtab %}
 
+{% tab title="Python" %} 
+
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 with open("liczby.txt") as file:
     data = [int(line) for line in file]
@@ -262,3 +277,8 @@ print("Zadanie 3.4")
 for el in hex_dict:
     print(f"{el}: {hex_dict[el]}")
 ```
+{% endcode %}
+
+{% endtab %}
+
+{% endtabs %}
