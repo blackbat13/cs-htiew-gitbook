@@ -56,41 +56,41 @@ zucchini: 1110
 ## Zadanie 5
 
 ```
-apples: 4.33
-avocado: 6.30
-bananas: 5.64
-bread: 5.18
-butter: 3.45
-carrots: 5.02
-cheese: 3.83
-chicken: 5.49
-cucumber: 3.82
-dates: 5.89
-eggs: 4.62
-flour: 5.03
-garlic: 3.67
-grapes: 4.57
-honey: 5.27
-iceberg: 5.77
-jam: 5.38
-kale: 4.35
-lemons: 4.38
-milk: 4.40
-nuts: 4.74
-olives: 4.60
-onions: 4.93
-oranges: 5.23
-pasta: 5.80
-peppers: 5.35
-potatoes: 3.72
+apples: 4.64
+avocado: 6.38
+bananas: 6.08
+bread: 5.46
+butter: 4.29
+carrots: 5.03
+cheese: 3.89
+chicken: 5.50
+cucumber: 4.58
+dates: 5.96
+eggs: 4.73
+flour: 5.23
+garlic: 3.80
+grapes: 4.62
+honey: 5.60
+iceberg: 5.78
+jam: 5.48
+kale: 4.42
+lemons: 4.39
+milk: 4.43
+nuts: 5.08
+olives: 4.93
+onions: 5.58
+oranges: 5.39
+pasta: 5.94
+peppers: 5.45
+potatoes: 4.06
 quinoa: 5.01
-rice: 4.66
-salmon: 4.76
-spinach: 5.22
+rice: 4.67
+salmon: 4.87
+spinach: 5.28
 tomatoes: 4.78
-yams: 5.14
-yogurt: 5.08
-zucchini: 4.33
+yams: 5.18
+yogurt: 5.13
+zucchini: 4.60
 ```
 
 ## Zadanie 6

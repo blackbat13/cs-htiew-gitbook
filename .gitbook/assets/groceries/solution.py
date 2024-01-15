@@ -86,7 +86,7 @@ def exercise5():
             groceries_dict[name][0] += quantity
             groceries_dict[name][1] += price * quantity
         else:
-            groceries_dict[name] = [quantity, price]
+            groceries_dict[name] = [quantity, price * quantity]
 
     for name in sorted(groceries_dict):
         print(f"{name}: {groceries_dict[name][1] / groceries_dict[name][0]:.2f}")

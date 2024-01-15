@@ -83,39 +83,39 @@ Dla każdego produktu podaj jego średnią cenę za sztukę z dokładnością do
 Wynik dla pliku *groceries_test.txt*:
 
 ```
-apples: 0.02
-avocado: 2.26
-bananas: 1.23
-bread: 2.55
-butter: 4.07
-carrots: 2.25
-cheese: 5.09
-chicken: 1.64
-cucumber: 4.03
-dates: 0.16
-eggs: 3.76
-flour: 6.56
-garlic: 1.40
-honey: 0.09
-iceberg: 2.43
-jam: 2.08
-kale: 1.21
-lemons: 5.44
-milk: 7.40
-nuts: 6.46
-olives: 3.54
-onions: 2.23
-oranges: 5.41
-pasta: 0.31
-peppers: 3.95
-potatoes: 0.09
-quinoa: 3.49
-salmon: 3.64
-spinach: 5.47
-tomatoes: 7.72
-yams: 2.44
-yogurt: 5.38
-zucchini: 1.68
+apples: 2.25
+avocado: 4.18
+bananas: 6.67
+bread: 2.97
+butter: 5.19
+carrots: 4.19
+cheese: 7.31
+chicken: 8.09
+cucumber: 5.28
+dates: 3.16
+eggs: 7.27
+flour: 7.54
+garlic: 7.90
+honey: 2.85
+iceberg: 3.67
+jam: 6.42
+kale: 3.08
+lemons: 5.80
+milk: 7.46
+nuts: 7.66
+olives: 3.95
+onions: 8.53
+oranges: 7.72
+pasta: 8.42
+peppers: 8.82
+potatoes: 8.08
+quinoa: 3.69
+salmon: 6.47
+spinach: 7.05
+tomatoes: 8.24
+yams: 4.94
+yogurt: 6.89
+zucchini: 5.56
 ```
 
 ## Zadanie 6
