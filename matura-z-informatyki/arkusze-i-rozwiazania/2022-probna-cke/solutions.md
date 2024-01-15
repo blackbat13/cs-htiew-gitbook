@@ -1,0 +1,252 @@
+# Rozwiązania
+
+## Zadanie 3
+
+### 3.2
+
+#### C++
+
+```cpp
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+bool is_prime(int n) {
+    if (n < 2) {
+        return false;
+    }
+
+    for(int i = 2; i * i <= n; i++) {
+        if (n % i == 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+int main() {
+  ifstream file("liczby.txt");
+  int data[100];
+  for(int i = 0; i < 100; i++) {
+      file >> data[i];
+  }
+
+  file.close();
+
+  int result = 0;
+
+  for(auto number : data) {
+      if(is_prime(number - 1)) {
+          result++;
+      } 
+  }
+
+  cout << "Zadanie 3.2" << endl;
+  cout << result << endl;
+  return 0;
+}
+```
+
+#### Python
+
+```python
+def is_prime(n):
+    if n < 2:
+        return False
+    
+    i = 2
+    while i * i <= n:
+        if n % i == 0:
+            return False
+        
+        i += 1
+
+    return True
+
+
+with open("liczby.txt") as file:
+    data = [int(line) for line in file]
+
+result = 0
+for number in data:
+    if is_prime(number - 1):
+        result += 1
+
+print("Zadanie 3.2")
+print(result)
+```
+
+### 3.3
+
+#### C++
+
+```cpp
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+bool is_prime(int n) {
+    if (n < 2) {
+        return false;
+    }
+
+    for(int i = 2; i * i <= n; i++) {
+        if (n % i == 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+int main() {
+  ifstream file("liczby.txt");
+  int data[100];
+  for(int i = 0; i < 100; i++) {
+      file >> data[i];
+  }
+
+  file.close();
+
+  int min_number = 0, min_value = 1000000, max_number = 0, max_value = 0;
+
+  bool primes[1000001] = {};
+  for(int i = 2; i < 1000001; i++) {
+      primes[i] = is_prime(i);
+  }
+
+  for(auto number : data) {
+      int counter = 0;
+      for(int i = 2; i <= number / 2; i++) {
+          if(primes[i] && primes[number - i]) {
+              counter++;
+          }
+      }
+
+      if(counter > max_value) {
+          max_value = counter;
+          max_number = number;
+      } else if(counter < min_value) {
+          min_value = counter;
+          min_number = number;
+      }
+  }
+
+  cout << "Zadanie 3.3" << endl;
+  cout << max_number << " " << max_value << endl;
+  cout << min_number << " " << min_value << endl;
+  return 0;
+}
+```
+
+#### Python
+
+```python
+def is_prime(n):
+    if n < 2:
+        return False
+    
+    i = 2
+    while i * i <= n:
+        if n % i == 0:
+            return False
+        
+        i += 1
+
+    return True
+
+
+with open("liczby.txt") as file:
+    data = [int(line) for line in file]
+
+min_number = 0
+min_value = 1000000
+max_number = 0
+max_value = 0
+
+primes = [is_prime(i) for i in range(1000001)]
+
+for number in data:
+    counter = 0
+    for i in range(2, number // 2 + 1):
+        if primes[i] and primes[number - i]:
+            counter += 1
+
+    if counter < min_value:
+        min_value = counter
+        min_number = number
+    elif counter > max_value:
+        max_value = counter
+        max_number = number
+
+print("Zadanie 3.3")
+print(max_number, max_value)
+print(min_number, min_value)
+```
+
+### 3.4
+
+#### C++
+
+```cpp
+#include <iostream>
+#include <fstream>
+#include <map>
+#include <iomanip>
+#include <sstream>
+
+using namespace std;
+
+int main() {
+  ifstream file("liczby.txt");
+  int data[100];
+  for(int i = 0; i < 100; i++) {
+      file >> data[i];
+  }
+
+  file.close();
+
+  map<char, int> hex_map;
+
+  for(auto number : data) {
+      stringstream stream;
+      stream << hex << number;
+      string hex_str(stream.str());
+      for(auto el : hex_str) {
+          hex_map[el]++;
+      }
+  }
+
+  cout << "Zadanie 3.4" << endl;
+  for(char c = '0'; c <= '9'; c++) {
+      cout << c << ": " << hex_map[c] << endl;
+  }
+
+  for(char c = 'a'; c <= 'f'; c++) {
+      cout << c << ": " << hex_map[c] << endl;
+  }
+
+  return 0;
+}
+```
+
+#### Python
+
+```python
+with open("liczby.txt") as file:
+    data = [int(line) for line in file]
+
+hex_dict = {hex(i)[2:]:0 for i in range(16)}
+
+for number in data:
+    hex_str = hex(number)[2:]
+    for el in hex_str:
+        hex_dict[el] += 1
+
+print("Zadanie 3.4")
+for el in hex_dict:
+    print(f"{el}: {hex_dict[el]}")
+```

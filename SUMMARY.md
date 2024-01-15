@@ -1209,6 +1209,8 @@
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2021-probna-cke/solutions.md)
   * [2021](matura-z-informatyki/arkusze-i-rozwiazania/2021/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2021/solutions.md)
+  * [2022 - próbna CKE](matura-z-informatyki/arkusze-i-rozwiazania/2022-probna-cke/README.md)
+    * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2022-probna-cke/solutions.md)
   * [2022](matura-z-informatyki/arkusze-i-rozwiazania/2022/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2022/solutions.md)
   * [2023 - przykładowa CKE](matura-z-informatyki/arkusze-i-rozwiazania/2023-probna-cke/README.md)
