@@ -59,3 +59,12 @@ Wartość 2: 16
 Wartość 3: 6
 Wartość 4: 4
 ```
+
+## Zadanie 7
+
+Policz sumę wartości:
+
+- na głównej przekątnej (lewo góra -> prawo dół)
+- na drugiej przekątnej (lewo dół -> prawo góra)
+- pod główną przekątną (nie licząc elementów na przekątnej)
+- nad główną przekątną (nie licząc elementów na przekątnej)
