@@ -1,3 +1,6 @@
+from pprint import pprint
+
+
 def exercise1():
     tab = [[0] * width for _ in range(height)]
     with open(file_name) as file:
@@ -116,11 +119,60 @@ def exercise6():
         print(f"Wartość {i}: {counters[i]}")
 
 
-file_name = "points_test.txt"
-width = 10
-height = 10
+def exercise7():
+    tab = [[0] * width for _ in range(height)]
+    with open(file_name) as file:
+        for line in file:
+            row, col = map(int, line.split())
+            tab[row - 1][col - 1] += 1
 
-for i in range(1, 7):
+    sum1 = 0
+    sum2 = 0
+    sum3 = 0
+    sum4 = 0
+    for row in range(height):
+        for col in range(width):
+            if row == col:
+                sum1 += tab[row][col]
+            elif col == width - row - 1:
+                sum2 += tab[row][col]
+            elif row > col:
+                sum3 += tab[row][col]
+            elif row < col:
+                sum4 += tab[row][col]
+
+    print("Główna przekątna:", sum1)
+    print("Druga przekątna:", sum2)
+    print("Pod główną przekątną:", sum3)
+    print("Nad główną przekątną:", sum4)
+
+
+def exercise8():
+    tab = [[0] * width for _ in range(height)]
+    with open(file_name) as file:
+        for line in file:
+            row, col = map(int, line.split())
+            tab[row - 1][col - 1] += 1
+
+    result = 0
+
+    for row in range(height - 1):
+        for col in range(width - 1):
+            current_set = set()
+            for i in range(2):
+                for j in range(2):
+                    current_set.add(tab[row + i][col + j])
+
+            if len(current_set) == 4:
+                result += 1
+
+    print(result)
+
+file_name = "points.txt"
+width = 100
+height = 100
+
+for i in range(1, 9):
     print(f"Zadanie {i}:")
     exec(f"exercise{i}()")
     print()

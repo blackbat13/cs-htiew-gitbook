@@ -1131,6 +1131,7 @@
     * [Zakupy](matura-z-informatyki/przygotowanie/programming/groceries/README.md)
       * [Odpowiedzi](matura-z-informatyki/przygotowanie/programming/groceries/answers.md)
     * [Punkty](matura-z-informatyki/przygotowanie/programming/points/README.md)
+      * [Odpowiedzi](matura-z-informatyki/przygotowanie/programming/points/answers.md)
   * [Arkusz kalkulacyjny](matura-z-informatyki/przygotowanie/spreadsheet/README.md)
     * [Sklep](matura-z-informatyki/przygotowanie/spreadsheet/shop/README.md)
       * [Rozwiązanie](matura-z-informatyki/przygotowanie/spreadsheet/shop/solution.md)

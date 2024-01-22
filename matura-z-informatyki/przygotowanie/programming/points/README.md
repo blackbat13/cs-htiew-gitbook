@@ -16,11 +16,15 @@ Do każdego pola w tablicy przypisana jest wartość liczbowa. Zakładamy, że p
 
 ## Zadanie 1
 
-Ile jest w tablicy pól, które mają wartość większą od zera? Dla pliku *points_test.txt* wynik to 60.
+Ile jest w tablicy pól, które mają wartość większą od zera? 
+
+Dla pliku *points_test.txt* wynik to 60.
 
 ## Zadanie 2
 
-Ile jest w tablicy wierszy, które mają sumę wartości swoich pól większą od zera? Ile jest takich kolumn? Dla pliku *points_test.txt* wynik to:
+Ile jest w tablicy wierszy, które mają sumę wartości swoich pól większą od zera? Ile jest takich kolumn? 
+
+Dla pliku *points_test.txt* wynik to:
 
 ```
 Wiersze: 10
@@ -29,11 +33,15 @@ Kolumny: 10
 
 ## Zadanie 3
 
-Ile jest w tablicy pól, które mają wartość większą od jeden? Dla pliku *points_test.txt* wynik to 26.
+Ile jest w tablicy pól, które mają wartość większą od jeden? 
+
+Dla pliku *points_test.txt* wynik to 26.
 
 ## Zadanie 4
 
-Jaka jest największa wartość pola w tablicy? Podaj wartość i współrzędne tego pola. Jeżeli jest kilka takich pól, podaj współrzędne ich wszystkich. Dla pliku *points_test.txt* wynik to:
+Jaka jest największa wartość pola w tablicy? Podaj wartość i współrzędne tego pola. Jeżeli jest kilka takich pól, podaj współrzędne ich wszystkich. 
+
+Dla pliku *points_test.txt* wynik to:
 
 ```
 Wartość: 4
@@ -46,11 +54,15 @@ Współrzędne:
 
 ## Zadanie 5
 
-Ile jest takich pól w tablicy, które przylegają w pionie i poziomie wyłącznie do pól o wartości zero? Dla pliku *points_test.txt* wynik to 32.
+Ile jest takich pól w tablicy, które przylegają w pionie i poziomie wyłącznie do pól o wartości zero? 
+
+Dla pliku *points_test.txt* wynik to 32.
 
 ## Zadanie 6
 
-Policz, ile jest pól o wartości zero, ile o wartości jeden itd. aż do maksymalnej wartości w tablicy. Dla pliku *points_test.txt* wynik to:
+Policz, ile jest pól o wartości zero, ile o wartości jeden itd. aż do maksymalnej wartości w tablicy. 
+
+Dla pliku *points_test.txt* wynik to:
 
 ```
 Wartość 0: 40
@@ -68,3 +80,18 @@ Policz sumę wartości:
 - na drugiej przekątnej (lewo dół -> prawo góra)
 - pod główną przekątną (nie licząc elementów na przekątnej)
 - nad główną przekątną (nie licząc elementów na przekątnej)
+
+Dla pliku *points_test.txt* wynik to:
+
+```
+Główna przekątna: 10
+Druga przekątna: 11
+Pod główną przekątną: 33
+Nad główną przekątną: 46
+```
+
+## Zadanie 8
+
+Policz, ile jest w tablicy takich poddtablic o wymiarach $$2\times2$$, w których wartości pól się nie powtarzają.
+
+Dla pliku *points_test.txt* wynik to 6.
