@@ -56,7 +56,7 @@ Współrzędne:
 
 Ile jest takich pól w tablicy, które przylegają w pionie i poziomie wyłącznie do pól o wartości zero? 
 
-Dla pliku *points_test.txt* wynik to 32.
+Dla pliku *points_test.txt* wynik to 2.
 
 ## Zadanie 6
 

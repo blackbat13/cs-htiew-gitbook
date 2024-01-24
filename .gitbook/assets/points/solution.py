@@ -93,7 +93,7 @@ def exercise5():
             current_count  = 0
             for change in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
                 new_row, new_col = row + change[0], col + change[1]
-                if 0<=new_row<height and 0<=new_col<width and tab[new_row][new_col] > 1:
+                if 0<=new_row<height and 0<=new_col<width and tab[new_row][new_col] > 0:
                     current_count += 1
                     break
 
@@ -168,9 +168,9 @@ def exercise8():
 
     print(result)
 
-file_name = "points.txt"
-width = 100
-height = 100
+file_name = "points_test.txt"
+width = 10
+height = 10
 
 for i in range(1, 9):
     print(f"Zadanie {i}:")
