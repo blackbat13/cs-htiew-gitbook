@@ -1220,6 +1220,8 @@
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2023-probna-pti/solutions.md)
   * [2023](matura-z-informatyki/arkusze-i-rozwiazania/2023/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2023/solutions.md)
+  * [2024 - próbna PTI](matura-z-informatyki/arkusze-i-rozwiazania/2024-probna-pti/README.md)
+    * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2024-probna-pti/solutions.md)
   * [Pytania zamknięte](matura-z-informatyki/arkusze-i-rozwiazania/pytania-zamkniete.md)
 
 ## Przydatne linki

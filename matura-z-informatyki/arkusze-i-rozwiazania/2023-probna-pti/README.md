@@ -10,8 +10,6 @@
 Arkusz maturalny
 {% endfile %}
 
-[](../../../)
-
 {% file src="../../../.gitbook/assets/dane_2023_pti.zip" %}
 Dane
 {% endfile %}
