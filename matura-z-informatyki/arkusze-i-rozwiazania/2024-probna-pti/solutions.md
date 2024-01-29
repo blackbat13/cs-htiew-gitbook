@@ -101,6 +101,249 @@ for i in range(1, n):
 
 ## Zadanie 3
 
+### 3.1
+
+Mamy następującą tablicę $$A[1..3][1..5]$$:
+
+$$
+\begin{bmatrix}
+4  & 2 & 1  & 10 & 5 \\
+0  & 4 & 22 & 2  & 8 \\
+40 & 1 & 1  & 1  & 1
+\end{bmatrix}
+$$
+
+Zacznijmy od wywołania funkcji `Kop(A, 3, 5, 2, 2)`.
+
+```
+Kop(A, 3, 5, 2, 2)
+    1. 2 > 3 lub 2 > 5 - NIE
+    3. k1 := Kop(A, 3, 5, 2 + 1, 2)
+```
+
+Obliczamy więc `Kop(A, 3, 5, 3, 2)`.
+
+```
+Kop(A, 3, 5, 3, 2)
+    1. 3 > 3 lub 2 > 5 - NIE
+    3. k1 := Kop(A, 3, 5, 3 + 1, 2)
+```
+
+Obliczamy więc `Kop(A, 3, 5, 4, 2)`
+
+```
+Kop(A, 3, 5, 4, 2)
+    1. 4 > 3 lub 2 > 5 - TAK
+        2. Zwróć 0
+```
+
+Mamy wynik, wracamy do `Kop(A, 3, 5, 3, 2)`.
+
+```
+Kop(A, 3, 5, 3, 2)
+    1. 3 > 3 lub 2 > 5 - NIE
+    3. k1 := Kop(A, 3, 5, 3 + 1, 2) = 0
+    4. k2 := Kop(A, 3, 5, 3, 2 + 1)
+```
+
+Obliczamy więc `Kop(A, 3, 5, 3, 3)`.
+
+```
+Kop(A, 3, 5, 3, 3)
+    1. 3 > 3 lub 3 > 5 - NIE
+    3. k1 := Kop(A, 3, 5, 3 + 1, 3)
+```
+
+Obliczamy więc `Kop(A, 3, 5, 4, 3)`.
+
+```
+Kop(A, 3, 5, 4, 3)
+    1. 4 > 3 lub 3 > 5 - TAK
+        2. Zwróc 0
+```
+
+Mamy wynik, wracamy do `Kop(A, 3, 5, 3, 3)`.
+
+```
+Kop(A, 3, 5, 3, 3)
+    1. 3 > 3 lub 3 > 5 - NIE
+    3. k1 := Kop(A, 3, 5, 3 + 1, 3) = 0
+    4. k2 := Kop(A, 3, 5, 3, 3 + 1)
+```
+
+Obliczamy więc `Kop(A, 3, 5, 3, 4)`.
+
+```
+Kop(A, 3, 5, 3, 4)
+    1. 3 > 3 lub 4 > 5 - NIE
+    3. k1 := Kop(A, 3, 5, 3 + 1, 4)
+```
+
+Obliczamy więc `Kop(A, 3, 5, 4, 4)`.
+
+```
+Kop(A, 3, 5, 4, 4)
+    1. 4 > 3 lub 4 > 5 - TAK
+        2. Zwróc 0
+```
+
+Mamy wynik, wracamy do `Kop(A, 3, 5, 3, 4)`.
+
+```
+Kop(A, 3, 5, 3, 4)
+    1. 3 > 3 lub 4 > 5 - NIE
+    3. k1 := Kop(A, 3, 5, 3 + 1, 4) = 0
+    4. k2 := Kop(A, 3, 5, 3, 4 + 1)
+```
+
+Obliczamy więc `Kop(A, 3, 5, 3, 5)`.
+
+```
+Kop(A, 3, 5, 3, 5)
+    1. 3 > 3 lub 5 > 5 - NIE
+    3. k1 := Kop(A, 3, 5, 3 + 1, 5)
+```
+
+Obliczamy więc `Kop(A, 3, 5, 4, 5)`.
+
+```
+Kop(A, 3, 5, 4, 5)
+    1. 4 > 3 lub 5 > 5 - TAK
+        2. Zwróc 0
+```
+
+Mamy wynik, wracamy do `Kop(A, 3, 5, 3, 5)`.
+
+```
+Kop(A, 3, 5, 3, 5)
+    1. 3 > 3 lub 5 > 5 - NIE
+    3. k1 := Kop(A, 3, 5, 3 + 1, 5) = 0
+    4. k2 := Kop(A, 3, 5, 3, 5 + 1)
+```
+
+Obliczamy więc `Kop(A, 3, 5, 3, 6)`.
+
+```
+Kop(A, 3, 5, 3, 6)
+    1. 3 > 3 lub 6 > 5 - TAK
+        2. Zwróc 0
+```
+
+Mamy wynik, wracamy do `Kop(A, 3, 5, 3, 5)`.
+
+```
+Kop(A, 3, 5, 3, 5)
+    1. 3 > 3 lub 5 > 5 - NIE
+    3. k1 := Kop(A, 3, 5, 3 + 1, 5) = 0
+    4. k2 := Kop(A, 3, 5, 3, 5 + 1) = 0
+    5. k1 > k2 - NIE
+        8. Zwróc 1 + 0
+```
+
+Mamy wynik, wracamy do `Kop(A, 3, 5, 3, 4)`.
+
+```
+Kop(A, 3, 5, 3, 4)
+    1. 3 > 3 lub 4 > 5 - NIE
+    3. k1 := Kop(A, 3, 5, 3 + 1, 4) = 0
+    4. k2 := Kop(A, 3, 5, 3, 4 + 1) = 1
+    5. k1 > k2 - NIE
+        8. Zwróć 1 + 1
+```
+
+Mamy wynik, wracamy do `Kop(A, 3, 5, 3, 3)`.
+
+```
+Kop(A, 3, 5, 3, 3)
+    1. 3 > 3 lub 3 > 5 - NIE
+    3. k1 := Kop(A, 3, 5, 3 + 1, 3) = 0
+    4. k2 := Kop(A, 3, 5, 3, 3 + 1) = 2
+    5. k1 > k2 - NIE
+        8. Zwróć 1 + 2
+```
+
+Mamy wynik, wracamy do `Kop(A, 3, 5, 3, 2)`.
+
+```
+Kop(A, 3, 5, 3, 2)
+    1. 3 > 3 lub 2 > 5 - NIE
+    3. k1 := Kop(A, 3, 5, 3 + 1, 2) = 0
+    4. k2 := Kop(A, 3, 5, 3, 2 + 1) = 3
+    5. k1 > k2 - NIE
+        8. Zwróć 1 + 3
+```
+
+Mamy wynik, wracamy do `Kop(A, 3, 5, 2, 2)`
+
+```
+Kop(A, 3, 5, 2, 2)
+    1. 2 > 3 lub 2 > 5 - NIE
+    3. k1 := Kop(A, 3, 5, 2 + 1, 2) = 4
+    4. k2 := Kop(A, 3, 5, 2, 2 + 1)
+```
+
+Obliczamy więc `Kop(A, 3, 5, 2, 3)`
+
+```
+Kop(A, 3, 5, 2, 3)
+    1. 2 > 3 lub 3 > 5 - NIE
+    3. k1 := Kop(A, 3, 5, 2 + 1, 3) = 3 // Policzyliśmy już wcześniej
+    4. k2 := Kop(A, 3, 5, 2, 3 + 1) = 11 // Wiemy z zadania
+    5. k1 > k2 - NIE
+        8. Zwróć 22 + 11
+```
+
+Mamy wynik, wracamy do `Kop(A, 3, 5, 2, 2)`
+
+```
+Kop(A, 3, 5, 2, 2)
+    1. 2 > 3 lub 2 > 5 - NIE
+    3. k1 := Kop(A, 3, 5, 2 + 1, 2) = 4
+    4. k2 := Kop(A, 3, 5, 2, 2 + 1) = 33
+    5. k1 > k2 - NIE
+        8. Zwróć 4 + 33
+```
+
+Wynik to $$37$$.
+
+Jak widać, taka forma prześledzenia rozwiązania jest czasochłonna i łatwo się pomylić. Dużo łatwiej jest rozrysować sobie schemat wywołań rekurencyjnych. Zauważmy, że w kolejnych wywołaniach zmieniają się jedynie parametry $$i$$ oraz $$j$$.
+
+```mermaid
+flowchart TD
+    1([2, 2]) --> 2([3, 2])
+    1 --> 3([2, 3])
+    2 --> 4([4, 2])
+    2 --> 5([3, 3])
+    3 --> 6([3, 3])
+    3 --> 7([2, 4])
+    5 --> 8([4, 3])
+    5 --> 9([3, 4])
+    9 --> 10([4, 4])
+    9 --> 11([3, 5])
+    11 --> 12([4, 5])
+    11 --> 13([3, 6])
+```
+
+Pomijamy tutaj ponowne rozrysowywanie fragmentów, które zostaną już wcześniej policzone (chociaż program oczywiście musiałby to zrobić, my możemy wykorzystać wyniki wcześniejsze). Pomijamy także wywołanie `2, 4`, jako że jego wynik jest podany w zadaniu.
+
+Dopisując wyniki poszczególnych wywołań **od dołu** możemy łatwo policzyć wynik pierwszego wywołania.
+
+```mermaid
+flowchart TD
+    1(["2, 2\nWynik: 4 + 33"]) --> 2(["3, 2\nWynik: 1 + 3"])
+    1 --> 3(["2, 3\nWynik: 22 + 11"])
+    2 --> 4(["4, 2\nWynik: 0"])
+    2 --> 5(["3, 3\nWynik: 1 + 2"])
+    3 --> 6(["3, 3\nWynik: 3"])
+    3 --> 7(["2, 4\nWynik: 11"])
+    5 --> 8(["4, 3\nWynik: 0"])
+    5 --> 9(["3, 4\nWynik: 1 + 1"])
+    9 --> 10(["4, 4\nWynik: 0"])
+    9 --> 11(["3, 5\nWynik: 1 + 0"])
+    11 --> 12(["4, 5\nWynik: 0"])
+    11 --> 13(["3, 6\nWynik: 0"])
+```
+
 ### 3.3
 
 ```
