@@ -6,7 +6,7 @@
 
 ## Arkusz
 
-{% file src="../../../.gitbook/assets/PTI_A_2023.pdf" %}
+{% file src="../../../.gitbook/assets/PTI_A_2024.pdf" %}
 Arkusz maturalny
 {% endfile %}
 
