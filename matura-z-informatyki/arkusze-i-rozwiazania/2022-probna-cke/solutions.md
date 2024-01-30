@@ -1,5 +1,139 @@
 # Rozwiązania
 
+## Zadanie 1
+
+### 1.1
+
+{% tabs %}
+
+{% tab title="C++" %} 
+
+{% code overflow="wrap" lineNumbers="true" %}
+```cpp
+
+```
+{% endcode %}
+
+{% endtab %}
+
+{% tab title="Python" %} 
+
+{% code overflow="wrap" lineNumbers="true" %}
+```python
+with open("mecz.txt") as file:
+    data = file.read().strip()
+
+result = 0
+for i in range(1, len(data)):
+    if data[i] != data[i - 1]:
+        result += 1
+
+print("Zadanie 1.1")
+print("Wynik:", result)
+```
+{% endcode %}
+
+{% endtab %}
+
+{% endtabs %}
+
+### 1.2
+
+{% tabs %}
+
+{% tab title="C++" %} 
+
+{% code overflow="wrap" lineNumbers="true" %}
+```cpp
+
+```
+{% endcode %}
+
+{% endtab %}
+
+{% tab title="Python" %} 
+
+{% code overflow="wrap" lineNumbers="true" %}
+```python
+with open("mecz.txt") as file:
+    data = file.read().strip()
+
+win_a = 0
+win_b = 0
+i = 0
+while win_a < 1000 or win_b < 1000 or abs(win_a - win_b) < 3:
+    if data[i] == "A":
+        win_a += 1
+    else:
+        win_b += 1
+
+    i += 1
+
+print("Zadanie 1.2")
+if win_a > win_b:
+    print("Wygrała drużyna A")
+else:
+    print("Wygrała drużyna B")
+print("Wynik A:", win_a)
+print("Wynik B:", win_b)
+```
+{% endcode %}
+
+{% endtab %}
+
+{% endtabs %}
+
+### 1.3
+
+{% tabs %}
+
+{% tab title="C++" %} 
+
+{% code overflow="wrap" lineNumbers="true" %}
+```cpp
+
+```
+{% endcode %}
+
+{% endtab %}
+
+{% tab title="Python" %} 
+
+{% code overflow="wrap" lineNumbers="true" %}
+```python
+with open("mecz.txt") as file:
+    data = file.read().strip()    
+
+result = 0
+current_symbol = ""
+current_length = 0
+max_length = 0
+max_symbol = ""
+
+for el in data:
+    if current_symbol == el:
+        current_length += 1
+    else:
+        current_length = 1
+        current_symbol = el
+
+    if current_length > max_length:
+        max_length = current_length
+        max_symbol = el
+    
+    if current_length == 10:
+        result += 1
+
+print("Zadanie 1.3")
+print("Łączna liczba dobrych pass:", result)
+print("Najdłuższa dobra passa:", max_length, "Drużyna:", max_symbol)
+```
+{% endcode %}
+
+{% endtab %}
+
+{% endtabs %}
+
 ## Zadanie 3
 
 ### 3.2
