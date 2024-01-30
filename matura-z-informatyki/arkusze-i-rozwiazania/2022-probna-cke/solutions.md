@@ -38,6 +38,8 @@ int main() {
 ```
 {% endcode %}
 
+Zaczynamy od wczytania zawartości pliku do zmiennej typu string. Następnie przechodzimy przez kolejne elementy ciągu, poczynając od drugiego znaku. W pętli porównujemy obecny znak z poprzednim i zwiększamy wynik o 1, jeśli znaki są różne.
+
 {% endtab %}
 
 {% tab title="Python" %} 
@@ -56,6 +58,10 @@ print("Zadanie 1.1")
 print("Wynik:", result)
 ```
 {% endcode %}
+
+Zaczynamy od wczytania zawartości pliku do zmiennej. Dane będą wczytane w postaci tekstu (typ `str`). Na wszelki wypadek usuwamy białe znaki z początku i końca poleceniem `strip`.
+
+Następnie przechodzimy przez kolejne elementy ciągu, poczynając od drugiego znaku. W pętli porównujemy obecny znak z poprzednim i zwiększamy wynik o 1, jeśli znaki są różne.
 
 {% endtab %}
 
