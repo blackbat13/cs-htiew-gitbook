@@ -10,7 +10,31 @@
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```cpp
+#include <iostream>
+#include <fstream>
 
+using namespace std;
+
+int main() {
+    string data;
+    ifstream file("mecz.txt");
+    file >> data;
+    file.close();
+
+    int result = 0;
+    for (int i = 1; i < data.length(); i++)
+    {
+        if (data[i] != data[i - 1])
+        {
+            result++;
+        }
+    }
+
+    cout << "Zadanie 1.1" << endl;
+    cout << "Wynik: " << result << endl;
+
+    return 0;
+}
 ```
 {% endcode %}
 
@@ -45,7 +69,47 @@ print("Wynik:", result)
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```cpp
+#include <iostream>
+#include <fstream>
 
+using namespace std;
+
+int main() {
+    string data;
+    ifstream file("mecz.txt");
+    file >> data;
+    file.close();
+
+    int win_a = 0, win_b = 0, i = 0;
+    while (win_a < 1000 || win_b < 1000 || abs(win_a - win_b) < 3)
+    {
+        if (data[i] == 'A')
+        {
+            win_a++;
+        }
+        else
+        {
+            win_b++;
+        }
+
+        i++;
+    }
+
+    cout << "Zadanie 1.2" << endl;
+    if (win_a > win_b)
+    {
+        cout << "Wygrala druzyna A" << endl;
+    }
+    else
+    {
+        cout << "Wygrala druzyna B" << endl;
+    }
+
+    cout << "Wynik A: " << win_a << endl;
+    cout << "Wynik B: " << win_b << endl;
+
+    return 0;
+}
 ```
 {% endcode %}
 
@@ -91,7 +155,51 @@ print("Wynik B:", win_b)
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```cpp
+#include <iostream>
+#include <fstream>
 
+using namespace std;
+
+int main() {
+    string data;
+    ifstream file("mecz.txt");
+    file >> data;
+    file.close();
+
+    int result = 0, current_length = 0, max_length = 0;
+    char current_symbol = ' ', max_symbol = ' ';
+
+    for (auto el : data)
+    {
+        if (el == current_symbol)
+        {
+            current_length++;
+        }
+        else
+        {
+            current_symbol = el;
+            current_length = 1;
+        }
+
+        if (current_length > max_length)
+        {
+            max_length = current_length;
+            max_symbol = current_symbol;
+        }
+
+        if (current_length == 10)
+        {
+            result++;
+        }
+    }
+
+    cout << "Zadanie 1.3" << endl;
+    cout << "Laczna liczba dobrych pass: " << result << endl;
+    cout << "Najdluzsza dobra passa: " << max_length;
+    cout << ", Druzyna: " << max_symbol << endl;
+
+    return 0;
+}
 ```
 {% endcode %}
 
