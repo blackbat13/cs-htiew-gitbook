@@ -658,13 +658,63 @@ print("Zadanie 4:", max_acc)
 #include <iostream>
 #include <fstream>
 #include <set>
-#include <algorithm>
 #include <map>
 
 using namespace std;
 
 int main() {
+    string left[300], right[300];
+    ifstream file("konta.txt");
+
+    for (int i = 0; i < 300; i++)
+    {
+        file >> left[i] >> right[i];
+    }
+
+    file.close();
+
+    map<string, bool> false_accounts;
+
+    for (auto el1 : left)
+    {
+        bool ok = true;
+        for (auto el2 : right)
+        {
+            if (el1 == el2)
+            {
+                ok = false;
+                break;
+            }
+        }
+
+        if (ok)
+        {
+            false_accounts[el1] = true;
+        }
+    }
+
+    map<string, int> observ_counts;
+    int max_obs = 0;
+    string max_acc;
     
+    for(int i = 0; i < 300; i++) 
+    {
+        if(false_accounts[left[i]]) 
+        {
+            continue;
+        }
+
+        observ_counts[right[i]]++;
+        if(observ_counts[right[i]] > max_obs) 
+        {
+            max_obs = observ_counts[right[i]];
+            max_acc = right[i];
+        }
+    }
+
+    cout << "Zadanie 5" << endl;
+    cout << max_acc << endl;
+
     return 0;
 }
 ```
