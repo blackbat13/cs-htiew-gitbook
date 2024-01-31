@@ -379,6 +379,29 @@ Jest to jeden z klasycznych algorytmów **dynamicznych**, który pozwala odpowie
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```cpp
+#include <iostream>
+#include <fstream>
+#include <set>
+
+using namespace std;
+
+int main() {
+    set<string> accounts;
+    string name;
+    ifstream file("konta.txt");
+
+    while (file >> name)
+    {
+        accounts.insert(name);
+    }
+
+    file.close();
+
+    cout << "Zadanie 1" << endl;
+    cout << accounts.size() << endl;
+
+    return 0;
+}
 ```
 {% endcode %}
 
@@ -407,6 +430,45 @@ print("Zadanie 1:", len(accounts))
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```cpp
+#include <iostream>
+#include <fstream>
+#include <set>
+
+using namespace std;
+
+int main() {
+    set<string> left, right;
+    string name1, name2;
+    ifstream file("konta.txt");
+
+    while (file >> name1 >> name2)
+    {
+        left.insert(name1);
+        right.insert(name2);
+    }
+
+    file.close();
+    cout << "Zadanie 2" << endl;
+    for (auto el1 : left)
+    {
+        bool ok = true;
+        for (auto el2 : right)
+        {
+            if (el1 == el2)
+            {
+                ok = false;
+                break;
+            }
+        }
+
+        if (ok)
+        {
+            cout << el1 << endl;
+        }
+    }
+
+    return 0;
+}
 ```
 {% endcode %}
 
@@ -438,6 +500,41 @@ print("Zadanie 2:", ", ".join(result))
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```cpp
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main() {
+    string left[300], right[300];
+    ifstream file("konta.txt");
+
+    for (int i = 0; i < 300; i++)
+    {
+        file >> left[i] >> right[i];
+    }
+
+    file.close();
+
+    int result = 0;
+
+    for (int i = 0; i < 300; i++)
+    {
+        for (int j = i + 1; j < 300; j++)
+        {
+            if (left[i] == right[j] && left[j] == right[i])
+            {
+                result++;
+                break;
+            }
+        }
+    }
+
+    cout << "Zadanie 3" << endl;
+    cout << result << endl;
+
+    return 0;
+}
 ```
 {% endcode %}
 
@@ -479,6 +576,42 @@ print("Zadanie 3:", result // 2)
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```cpp
+#include <iostream>
+#include <fstream>
+#include <map>
+
+using namespace std;
+
+int main() {
+    string el1, el2;
+    map<string, int> relations;
+    ifstream file("konta.txt");
+
+    for (int i = 0; i < 300; i++)
+    {
+        file >> el1 >> el2;
+        relations[el1]++;
+    }
+
+    file.close();
+
+    int max_obs = 0;
+    string max_acc;
+
+    for (auto rel : relations)
+    {
+        if (rel.second > max_obs)
+        {
+            max_obs = rel.second;
+            max_acc = rel.first;
+        }
+    }
+
+    cout << "Zadanie 4" << endl;
+    cout << max_acc << endl;
+
+    return 0;
+}
 ```
 {% endcode %}
 
@@ -522,6 +655,18 @@ print("Zadanie 4:", max_acc)
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```cpp
+#include <iostream>
+#include <fstream>
+#include <set>
+#include <algorithm>
+#include <map>
+
+using namespace std;
+
+int main() {
+    
+    return 0;
+}
 ```
 {% endcode %}
 
