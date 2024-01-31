@@ -627,17 +627,17 @@ with open("konta.txt") as file:
 relations = dict()
 for el in data:
     if el[0] in relations:
-        relations[el[0]].add(el[1])
+        relations[el[0]] += 1
     else:
-        relations[el[0]] = {el[1]}
+        relations[el[0]] = 1
 
-max_obs = 0
+max_obs = max(relations.values())
 max_acc = ""
 
 for el in relations:
-    if len(relations[el]) > max_obs:
-        max_obs = len(relations[el])
+    if relations[el] == max_obs:
         max_acc = el
+        break
 
 print("Zadanie 4:", max_acc)
 ```
