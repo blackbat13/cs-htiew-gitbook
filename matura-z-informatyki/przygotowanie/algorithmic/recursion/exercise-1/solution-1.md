@@ -1,8 +1,14 @@
 # Zadanie 1 - rozwiązanie
 
-```
-funkcja sum(tab, p, k):
-    1. Jeżeli p = k:
-        2. Zwróć tab[p]
-    3. Zwróć tab[p] + sum(tab, p + 1, k)
-```
+|  n   | wynik |
+| :-:  | :---: |
+|  1   |  1    |
+|  2   |  1    |
+|  3   |  3    |
+|  4   |  5    |
+|  5   |  11   |
+|  6   |  21   |
+|  7   |  43   |
+|  8   |  84   |
+|  9   |  170  |
+|  10  |  338  |

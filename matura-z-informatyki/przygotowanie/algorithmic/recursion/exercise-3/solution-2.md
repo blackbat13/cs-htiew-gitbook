@@ -1,3 +1,11 @@
 # Zadanie 2 - rozwiązanie
 
-$$fun(n) =  \begin{cases}        1 & n\leq 2 \\       fun(n - 1) + 2 * fun(n - 2) & n > 2 \\    \end{cases}$$ 
+|  n  | liczba wywołań funkcji fun |
+| :-: | :------------------------: |
+|  0  |              1             |
+|  1  |              2             |
+|  4  |              4             |
+|  8  |              5             |
+|  10 |              5             |
+|  16 |              6             |
+|  20 |              6             |

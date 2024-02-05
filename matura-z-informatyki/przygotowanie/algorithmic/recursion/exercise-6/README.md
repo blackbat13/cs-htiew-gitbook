@@ -1,54 +1,51 @@
-# Ćwiczenie 6
+# Sklejanie
 
-Zapoznaj się z poniższą specyfikacją oraz pseudokodem, a następnie rozwiąż zadania.
-
-## Specyfikacja
-
-### Dane
-
-* n - liczba naturalna, $$n>0$$. 
+Przeanalizuj poniższy algorytm i wykonaj zadania.
 
 ## Pseudokod
 
 ```
-funkcja fun(n):
-    1. Jeżeli n = 0, to
-        2. Zakończ
-    3. Jeżeli n mod 2 = 0, to 
-        4. Wywołaj fun(n div 2)
-        5. Wypisz "0"
-    6. Jeżeli n mod 2 = 1, to
-        7. Wywołaj fun(n div 2)
-        8. Wypisz "1"
+Funkcja sort(A, pocz, kon):
+    1. Jeżeli A[pocz] > A[kon], to:
+        2. Zamień(A[pocz], A[kon])
+    3. Jeżeli kon - pocz + 1 > 2:
+        4. t := (kon - pocz + 1) div 3
+        5. sort(A, pocz, kon - t)
+        6. sort(A, pocz + t, kon)
+        7. sort(A, pocz, kon - t)
 ```
+
+{% hint style="info" %}
+**Zamień** zamienia dwie zmienne wartościami.
+{% endhint %}
+
+{% hint style="info" %}
+**div** oznacza dzielenie całkowite.
+{% endhint %}
 
 ## Zadanie 1
 
-Przeanalizuj powyższą funkcję i uzupełnij poniższą tabelkę.
+Narysuj drzewo wywołań rekurencyjnych oraz przedstaw postać tablicy $$A$$ po każdym wywołaniu funkcji *Zamień* dla danych:
 
-|  n  | Wypisany komunikat |
-| :-: | :----------------: |
-|  1  |         "1"        |
-|  2  |        "10"        |
-|  4  |                    |
-|  5  |                    |
-|  10 |                    |
-|  20 |                    |
+- $$A[1..3] = [5, 1, 3]$$
+- $$pocz = 1$$
+- $$kon = 3$$
 
 ## Zadanie 2
 
-Oblicz ilość wywołań funkcji `fun` dla różnych wartości $$n$$.
+Narysuj drzewo wywołań rekurencyjnych oraz przedstaw postać tablicy $$A$$ po każdym wywołaniu funkcji *Zamień* dla danych:
 
-| n   | liczba wywołań funkcji fun |
-| :-: | :------------------------: |
-| 0   | 1                          |
-| 1   | 2                          |
-| 4   |                            |
-| 8   |                            |
-| 10  |                            |
-| 16  |                            |
-| 20  |                            |
+- $$A[1..4] = [5, 1, 3, 4]$$
+- $$pocz = 1$$
+- $$kon = 4$$
 
 ## Zadanie 3
 
-Jaka jest złożoność funkcji `fun`?
+Uzupełnij poniższą tabelkę podając liczbę wywołań funkcji *sort* (łącznie z początkowym wywołaniem) dla dowolnej zawartości tablicy $$A$$ oraz podanych wartości $$pocz$$ i $$kon$$.
+
+|  A     | pocz | kon | Liczba wyników |
+| :-:    | :--: | :-: | :----:         |
+| [1..1] | 1    |  1  | 1              |
+| [1..2] | 1    |  2  | 1              |
+| [1..3] | 1    |  3  |                |
+| [1..4] | 1    |  4  |                |

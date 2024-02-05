@@ -1,32 +1,36 @@
-# Ćwiczenie 1
+# Ćwiczenie 3
 
-Zapoznaj się z poniższą specyfikacją oraz definicją funkcji rekurencyjnej, a następnie rozwiąż zadania.
+Zapoznaj się z poniższą specyfikacją oraz pseudokodem, a następnie rozwiąż zadania.
 
 ## Specyfikacja
 
 ### Dane
 
-* $$n$$ - liczba naturalna, liczba elementów w tablicy.
-* $$tab[1..n]$$ - tablica $$n$$ liczb całkowitych, numerowana od jedynki.
-* $$p, k$$ - liczby naturalne, początek i koniec zakresu, $$p \leq k$$.
+* $$n$$ - liczba naturalna
 
-### Wynik
+## Pseudokod
 
-* $$suma$$ - suma elementów tablicy $$tab[p..k]$$, tzn. $$tab[p]+tab[p+1]+...+tab[k]$$. 
-
-## Funkcja rekurencyjna
-
-$$
-sum(tab, p, k) =  \begin{cases} 
-      tab[p] & p == k \\
-      tab[p] + sum(tab,p+1,k) & p < k \\
-   \end{cases}
-$$
+```
+funkcja fun(n):
+    1. Jeżeli n <= 2, to
+        2. Zwróc 1 i zakończ
+    3. wynik := fun(n - 1) + 2 * fun(n - 2)
+    4. Zwróć wynik i zakończ
+```
 
 ## Zadanie 1
 
-Napisz pseudokod **rekurencyjnej** funkcji `sum(tab, p, k)` obliczający sumę elementów tablicy `tab` z zakresu `tab[p..k]` zgodnie z powyższą definicją funkcji rekurencyjnej.
+Podaj wyniki funkcji dla kolejnych wartości $$n$$ od $$1$$ do $$10$$.
 
 ## Zadanie 2
 
-Narysuj schemat blokowy **rekurencyjnej** funkcji `sum(tab, p, k)` obliczający sumę elementów tablicy `tab` z zakresu `tab[p..k]` zgodnie z powyższą definicją funkcji rekurencyjnej.
+Uzupełnij poniższą definicję rekurencyjną zgodnie z działaniem algorytmu:
+$$fun(n) =  \begin{cases}        ? & n\leq 2 \\       ? & n > 2 \\    \end{cases}$$ 
+
+## Zadanie 3
+
+Ile razy zostanie wykonane wywołanie `fun(2)` podczas obliczania wyniku dla `n := 5`?
+
+## Zadanie 4
+
+Rozrysuj *drzewo wywołań rekurencyjnych* dla wywołania `fun(5)`.

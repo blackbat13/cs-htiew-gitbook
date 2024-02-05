@@ -3,10 +3,11 @@
 ```mermaid
 %%{init: {"flowchart": {"curve": "linear"}, "theme": "neutral"} }%%
 flowchart TD
-	START(["silnia_iter(n)"]) --> K1[wynik := 1 \n i := 2]
-	K1 --> K2{i <= n}
-	K2 -- PRAWDA --> K3[wynik := wynik * i \n i := i + 1]
-    K3 --> K2
-	K2 -- FAŁSZ --> K4[/Zwróć wynik/]
-    K4 --> STOP([STOP])
+	R["sklej(7)"] --- R1["sklej(3)"]
+    R --- R2["sklej(4)"]
+    R1 --- R11["sklej(1)"]
+    R1 --- R12["sklej(2)"]
+    R12 --- R121["sklej(1)"]
+    R2 --- R21["sklej(2)"]
+    R21 --- R211["sklej(1)"]
 ```

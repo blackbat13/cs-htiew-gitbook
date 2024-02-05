@@ -1,4 +1,4 @@
-# Ćwiczenie 3
+# Ćwiczenie 5
 
 Zapoznaj się z poniższą specyfikacją oraz pseudokodem, a następnie rozwiąż zadania.
 
@@ -6,31 +6,49 @@ Zapoznaj się z poniższą specyfikacją oraz pseudokodem, a następnie rozwią�
 
 ### Dane
 
-* $$n$$ - liczba naturalna
+* n - liczba naturalna, $$n>0$$. 
 
 ## Pseudokod
 
 ```
 funkcja fun(n):
-    1. Jeżeli n <= 2, to
-        2. Zwróc 1 i zakończ
-    3. wynik := fun(n - 1) + 2 * fun(n - 2)
-    4. Zwróć wynik i zakończ
+    1. Jeżeli n = 0, to
+        2. Zakończ
+    3. Jeżeli n mod 2 = 0, to
+        4. Wypisz "0"
+        5. Wywołaj fun(n div 2)
+    6. Jeżeli n mod 2 = 1, to
+        7. Wypisz "1"
+        8. Wywołaj fun(n div 2)
 ```
 
 ## Zadanie 1
 
-Podaj wyniki funkcji dla kolejnych wartości $$n$$ od $$1$$ do $$10$$.
+Przeanalizuj powyższą funkcję i uzupełnij poniższą tabelkę.
+
+|  n  | Wypisany komunikat |
+| :-: | :----------------: |
+|  1  |         "1"        |
+|  2  |        "01"        |
+|  4  |                    |
+|  5  |                    |
+|  10 |                    |
+|  20 |                    |
 
 ## Zadanie 2
 
-Uzupełnij poniższą definicję rekurencyjną zgodnie z działaniem algorytmu:
-$$fun(n) =  \begin{cases}        ? & n\leq 2 \\       ? & n > 2 \\    \end{cases}$$ 
+Oblicz ilość wywołań funkcji `fun` dla różnych wartości $$n$$ .
+
+|  n  | liczba wywołań funkcji `fun` |
+| :-: | :--------------------------: |
+|  0  |               1              |
+|  1  |               2              |
+|  4  |                              |
+|  8  |                              |
+|  10 |                              |
+|  16 |                              |
+|  20 |                              |
 
 ## Zadanie 3
 
-Ile razy zostanie wykonane wywołanie `fun(2)` podczas obliczania wyniku dla `n := 5`?
-
-## Zadanie 4
-
-Rozrysuj *drzewo wywołań rekurencyjnych* dla wywołania `fun(5)`.
+Jaka jest złożoność funkcji `fun`?

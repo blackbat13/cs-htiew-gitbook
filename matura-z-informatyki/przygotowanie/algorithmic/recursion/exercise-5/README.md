@@ -1,54 +1,41 @@
-# Ćwiczenie 5
+# Sklejanie
 
-Zapoznaj się z poniższą specyfikacją oraz pseudokodem, a następnie rozwiąż zadania.
-
-## Specyfikacja
-
-### Dane
-
-* n - liczba naturalna, $$n>0$$. 
+Przeanalizuj poniższy algorytm i wykonaj zadania.
 
 ## Pseudokod
 
 ```
-funkcja fun(n):
-    1. Jeżeli n = 0, to
-        2. Zakończ
-    3. Jeżeli n mod 2 = 0, to
-        4. Wypisz "0"
-        5. Wywołaj fun(n div 2)
-    6. Jeżeli n mod 2 = 1, to
-        7. Wypisz "1"
-        8. Wywołaj fun(n div 2)
+Funkcja per(A, pocz, kon):
+    1. Jeżeli pocz > kon, to:
+        2. Wypisz A
+        3. Zakończ
+    4. Dla i := pocz do kon, wykonuj:
+        5. Zamień(A[pocz], A[i])
+        6. per(A, pocz + 1, kon)
+        7. Zamień(A[pocz], A[i])
 ```
+
+{% hint style="info" %}
+**Zamień** zamienia dwie zmienne wartościami.
+{% endhint %}
 
 ## Zadanie 1
 
-Przeanalizuj powyższą funkcję i uzupełnij poniższą tabelkę.
+Podaj wynik działania algorytmu dla danych:
 
-|  n  | Wypisany komunikat |
-| :-: | :----------------: |
-|  1  |         "1"        |
-|  2  |        "01"        |
-|  4  |                    |
-|  5  |                    |
-|  10 |                    |
-|  20 |                    |
+- $$A[1..3] = [1, 2, 3]$$
+- $$pocz = 1$$
+- $$kon = 3$$
 
 ## Zadanie 2
 
-Oblicz ilość wywołań funkcji `fun` dla różnych wartości $$n$$ .
+Uzupełnij poniższą tabelę podając liczbę wypisanych wartości dla wskazanych argumentów.
 
-|  n  | liczba wywołań funkcji `fun` |
-| :-: | :--------------------------: |
-|  0  |               1              |
-|  1  |               2              |
-|  4  |                              |
-|  8  |                              |
-|  10 |                              |
-|  16 |                              |
-|  20 |                              |
-
-## Zadanie 3
-
-Jaka jest złożoność funkcji `fun`?
+|  A     | pocz | kon | Liczba wyników |
+| :-:    | :--: | :-: | :----:         |
+| [1..1] | 1    |  1  | 1              |
+| [1..2] | 1    |  2  | 2              |
+| [1..3] | 1    |  3  |                |
+| [1..4] | 1    |  4  |                |
+| [1..5] | 1    |  5  |                |
+| [1..n] | 1    |  n  |                |
