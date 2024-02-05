@@ -2,51 +2,40 @@
 
 Przeanalizuj poniższy algorytm i wykonaj zadania.
 
-## Dane
-
-- $$n$$ - liczba naturalna, $$n>0$$
-
 ## Pseudokod
 
 ```
-Funkcja sklej(n):
-    1. Jeżeli n = 1, to:
-        2. Zwróc 0
-    3. Jeżeli n mod 2 = 0, to:
-        4. Zwróc n - 1 + 2 * sklej(n / 2)
-    5. W przeciwnym wypadku:
-        6. Zwróc n - 1 + sklej((n - 1) / 2) + sklej((n + 1) / 2)
+Funkcja per(A, pocz, kon):
+    1. Jeżeli pocz > kon, to:
+        2. Wypisz A
+        3. Zakończ
+    4. Dla i := pocz do kon, wykonuj:
+        5. Zamień(A[pocz], A[i])
+        6. per(A, pocz + 1, kon)
+        7. Zamień(A[pocz], A[i])
 ```
+
+{% hint style="info" %}
+**Zamień** zamienia dwie zmienne wartościami.
+{% endhint %}
 
 ## Zadanie 1
 
-Wykonanie funkcji `sklej` można przedstawić w postaci drzewa wywołań rekurencyjnych ilustrującego wszystkie wywołania funkcji po jej uruchomieniu dla zadanego argumentu. Narysuj takie drzewo dla wywołania `sklej(7)`.
+Podaj wynik działania algorytmu dla danych:
+
+- $$A[1..3] = [1, 2, 3]$$
+- $$pocz = 1$$
+- $$kon = 3$$
 
 ## Zadanie 2
 
-Uzupełnij poniższą tabelę, podając wyniki działania funkcji `sklej` dla wskazanych argumentów.
+Uzupełnij poniższą tabelę podając liczbę wypisanych wartości dla wskazanych argumentów.
 
-| n | sklej(n) |
-| :---: | :---: |
-| 1 | 0 |
-| 2 | 1 |
-| 3 |   |
-| 4 |   |
-| 5 |   |
-| 6 |   |
-
-## Zadanie 3
-
-Chcemy wypełnić tablicę $$s[1..n]$$ w taki sposób, że $$s[i]=sklej(i)$$ dla każdego $$1\leq i\leq n$$. Podaj algorytm wypełniający tablicę $$s$$ odpowiednimi wartościami **bez wywoływania** funkcji *sklej*, tnz. **bez użycia rekurencji**.
-
-Rozwiązanie zapisz w postaci pseudokodu. W swoim zapisie możesz korzystać jedynie z podstawowych operacji arytmetycznych (dodawanie, odejmowanie, mnożenie, dzielenie, reszta z dzielenia, dzielenie całkowite), instrukcji kontroli przepływu (instrukcja warunkowa, pętla warunkowa, pętla licząca), instrukcji dotyczących podstawowych operacji na zmiennych (utworzenie zmiennej, przypisanie wartości, odczytanie wartości), instrukcji dotyczących podstawowych operacji na tablicach (utworzenie tablicy o zadanym rozmiarze wypełnionej jedną wartością, odwołanie do elementu tablicy pod zadanym indeksem) oraz samodzielnie zdefiniowanych funkcji.
-
-### Specyfikacja
-
-#### Dane
-
-- $$n$$ - liczba naturalna, $$n>0$$
-
-#### Wynik
-
-- $$s[1..n]$$ - tablica liczb całkowitych, taka, że $$s[i]=sklej(i)$$ dla każdego $$1\leq i\leq n$$
+|  A     | pocz | kon | Liczba wyników |
+| :-:    | :--: | :-: | :----:         |
+| [1..1] | 1    |  1  | 1              |
+| [1..2] | 1    |  2  | 2              |
+| [1..3] | 1    |  3  |                |
+| [1..4] | 1    |  4  |                |
+| [1..5] | 1    |  5  |                |
+| [1..n] | 1    |  n  |                |
