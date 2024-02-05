@@ -11,13 +11,13 @@ Zapoznaj się z poniższą specyfikacją oraz pseudokodem, a następnie rozwią�
 ## Pseudokod
 
 ```
-funkcja fun(n):
-    1. Jeżeli n = 1, to
-        2. Zwróć 0 i zakończ
-    3. Jeżeli n mod 2 = 0, to
-        4. Zwróć n - 1 + 2 * fun(n / 2) i zakończ
-    5. Jeżeli n mod 2 = 1, to
-        6. Zwróć n - 1 + fun((n - 1) / 2) + fun((n + 1) / 2)
+Funkcja sklej(n):
+    1. Jeżeli n = 1, to:
+        2. Zwróc 0
+    3. Jeżeli n mod 2 = 0, to:
+        4. Zwróc n - 1 + 2 * sklej(n / 2)
+    5. W przeciwnym wypadku:
+        6. Zwróc n - 1 + sklej((n - 1) / 2) + sklej((n + 1) / 2)
 ```
 
 {% hint style="info" %}
@@ -26,21 +26,21 @@ funkcja fun(n):
 
 ## Zadanie 1
 
-Wykonanie funkcji rekurencyjnej można przedstawić w postaci *drzewa wywołań rekurencyjnych* ilustrującego wszystkie wywołania funkcji po jej uruchomieniu dla zadanego argumentu. Narysuj takie drzewo dla wywołania `fun(5)`.
+Wykonanie funkcji `sklej` można przedstawić w postaci drzewa wywołań rekurencyjnych ilustrującego wszystkie wywołania funkcji po jej uruchomieniu dla zadanego argumentu. Narysuj takie drzewo dla wywołania `sklej(5)`.
 
 ## Zadanie 2
 
-Narysuj *drzewo wywołań rekurencyjnych* dla wywołania `fun(7)`.
+Narysuj *drzewo wywołań rekurencyjnych* dla wywołania `sklej(7)`.
 
 ## Zadanie 3
 
-Ile razy zostanie wykonane wywołanie `fun(1)` podczas obliczania `fun(7)`?.
+Ile razy zostanie wykonane wywołanie `sklej(1)` podczas obliczania `sklej(7)`?.
 
 ## Zadanie 4
 
-Uzupełnij poniższą tabelę, podając wartości funkcji `fun` dla wskazanych argumentów.
+Uzupełnij poniższą tabelę, podając wyniki działania funkcji `sklej` dla wskazanych argumentów.
 
-|  n  | fun(n) |
+|  n  | sklej(n) |
 | :-: | :----: |
 |  1  |    0   |
 |  2  |    1   |
@@ -51,4 +51,16 @@ Uzupełnij poniższą tabelę, podając wartości funkcji `fun` dla wskazanych a
 
 ## Zadanie 5
 
-Napisz **iteracyjną** wersję funkcji `fun` (bez użycia rekurencji).
+Chcemy wypełnić tablicę $$s[1..n]$$ w taki sposób, że $$s[i]=sklej(i)$$ dla każdego $$1\leq i\leq n$$. Podaj algorytm wypełniający tablicę $$s$$ odpowiednimi wartościami **bez wywoływania** funkcji *sklej*, tnz. **bez użycia rekurencji**.
+
+Rozwiązanie zapisz w postaci pseudokodu. W swoim zapisie możesz korzystać jedynie z podstawowych operacji arytmetycznych (dodawanie, odejmowanie, mnożenie, dzielenie, reszta z dzielenia, dzielenie całkowite), instrukcji kontroli przepływu (instrukcja warunkowa, pętla warunkowa, pętla licząca), instrukcji dotyczących podstawowych operacji na zmiennych (utworzenie zmiennej, przypisanie wartości, odczytanie wartości), instrukcji dotyczących podstawowych operacji na tablicach (utworzenie tablicy o zadanym rozmiarze wypełnionej jedną wartością, odwołanie do elementu tablicy pod zadanym indeksem) oraz samodzielnie zdefiniowanych funkcji.
+
+### Specyfikacja
+
+#### Dane
+
+- $$n$$ - liczba naturalna, $$n>0$$
+
+#### Wynik
+
+- $$s[1..n]$$ - tablica liczb całkowitych, taka, że $$s[i]=sklej(i)$$ dla każdego $$1\leq i\leq n$$

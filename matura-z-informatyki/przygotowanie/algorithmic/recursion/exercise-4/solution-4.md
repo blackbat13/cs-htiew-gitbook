@@ -1,6 +1,6 @@
 # Zadanie 4 - rozwiązanie
 
-|  n  | fun(n) |
+|  n  | sklej(n) |
 | :-: | :----: |
 |  1  |    0   |
 |  2  |    1   |

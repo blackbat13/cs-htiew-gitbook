@@ -1,7 +1,7 @@
 # Zadanie 5 - rozwiązanie
 
 ```
-funkcja fun_iter(n):
+funkcja sklej_iter(n):
     1. Tworzymy tablicę S[1..n]
     2. S[1] := 0
     3. Dla i := 2 do n, wykonuj:
