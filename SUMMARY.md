@@ -1087,6 +1087,7 @@
         * [Rozwiązanie 1](matura-z-informatyki/przygotowanie/algorithmic/recursion/exercise-6/solution-1.md)
         * [Rozwiązanie 2](matura-z-informatyki/przygotowanie/algorithmic/recursion/exercise-6/solution-2.md)
         * [Rozwiązanie 3](matura-z-informatyki/przygotowanie/algorithmic/recursion/exercise-6/solution-3.md)
+      * [Ćwiczenie 7](matura-z-informatyki/przygotowanie/algorithmic/recursion/exercise-7/README.md)
     * [Symulacje](matura-z-informatyki/przygotowanie/algorithmic/simulations/README.md)
       * [Kody Huffmana](matura-z-informatyki/przygotowanie/algorithmic/simulations/huffman-coding/README.md)
         * [Rozwiązanie 1](matura-z-informatyki/przygotowanie/algorithmic/simulations/huffman-coding/solution-1.md)
