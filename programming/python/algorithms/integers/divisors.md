@@ -31,14 +31,14 @@ divisors(n)
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
 def divisors(n: int):
-	for i in range(1, (n // 2) + 1):
-		if n % i == 0:
-			print(i)
+    for i in range(1, (n // 2) + 1):
+        if n % i == 0:
+            print(i)
  
-	if n > 1:
-		print(n)
-		
-		
+    if n > 1:
+        print(n)
+
+
 n = 12
  
 divisors(n)
@@ -55,11 +55,11 @@ from math import sqrt, ceil
 
 
 def divisors(n: int):
-	for i in range(1, ceil(sqrt(n))):
-		if n % i == 0:
-			print(i)
-			if i != (n // i):
-				print(n // i)
+    for i in range(1, ceil(sqrt(n))):
+        if n % i == 0:
+            print(i)
+            if i != (n // i):
+                print(n // i)
  
  
 n = 12
