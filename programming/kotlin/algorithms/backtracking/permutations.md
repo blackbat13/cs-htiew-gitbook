@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```kotlin
 fun permutation(elements: Array<Int>, start: Int, stop: Int) {
     if (start == stop) {
@@ -36,13 +37,4 @@ fun main() {
   permutation(elements, 0, 2)
 }
 ```
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/xwEYqP" %}
-Generowanie permutacji
-{% endembed %}
-
-### Opis implementacji
-
-TODO
+{% endcode %}

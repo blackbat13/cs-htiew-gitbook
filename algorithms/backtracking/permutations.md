@@ -51,6 +51,12 @@ flowchart TD
 
 ## Implementacja
 
+### Python
+
+{% content-ref url="../../programming/python/algorithms/backtracking/permutations.md" %}
+[permutations.md](../../programming/python/algorithms/backtracking/permutations.md)
+{% endcontent-ref %}
+
 ### Kotlin
 
 {% content-ref url="../../programming/kotlin/algorithms/backtracking/permutations.md" %}

@@ -8,6 +8,7 @@
 
 ## Implementacja
 
+{% code overflow="wrap" lineNumbers="true" %}
 ```kotlin
 fun findSolution(n: Int, queenId: Int, positions: Array<Int>): Boolean {
     if (queenId == n) {
@@ -71,9 +72,4 @@ fun main() {
   }
 }
 ```
-
-### Link do implementacji
-
-{% embed url="https://ideone.com/DDsmN4" %}
-Problem n królowych
-{% endembed %}
+{% endcode %}

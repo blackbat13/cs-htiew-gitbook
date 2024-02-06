@@ -442,6 +442,7 @@
     * [Przeszukiwanie z powrotami](programming/python/algorithms/backtracking/README.md)
       * [Problem n królowych](programming/python/algorithms/backtracking/n-queens.md)
       * [Problem skoczka](programming/python/algorithms/backtracking/knights-tour.md)
+      * [Permutacje](programming/python/algorithms/backtracking/permutations.md)
     * [Sortowanie](programming/python/algorithms/sorting/README.md)
       * [Sortowanie przez wybieranie](programming/python/algorithms/sorting/selection-sort.md)
       * [Sortowanie przez wstawianie](programming/python/algorithms/sorting/insertion-sort.md)
