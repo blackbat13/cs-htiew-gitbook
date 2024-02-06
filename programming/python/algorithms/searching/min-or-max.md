@@ -50,8 +50,6 @@ W głównej części programu:
 2. Używa funkcji `find_min_max` do znalezienia minimalnej i maksymalnej wartości w liście.
 3. Wyświetla te wartości na ekranie.
 
-Ten program jest efektywny, ponieważ zamiast przechodzić przez listę dwa razy (raz do znalezienia minimum, raz do znalezienia maksimum), robi to tylko raz, dzięki czemu jest szybszy dla dużych list.
-
 ## Wyszukiwanie indeksów wartości minimum i maksimum
 
 ### Implementacja
