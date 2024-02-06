@@ -13,23 +13,23 @@
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
 def find_min_max(array: list) -> (int, int):
-    min = array[0]
-    max = array[0]
+    min_val = array[0]
+    max_val = array[0]
     
     for i in range(1, len(array)):
-        if array[i] < min:
-            min = array[i]
-        elif array[i] > max:
-            max = array[i]
+        if array[i] < min_val:
+            min_val = array[i]
+        elif array[i] > max_val:
+            max_val = array[i]
 
-    return min, max
+    return min_val, max_val
     
 
 array = [3, 6, 1, 9, 10, 4, -4, 6, 12, 5, 11]
 
-min, max = find_min_max(array)
+min_val, max_val = find_min_max(array)
 
-print(f'Minimum: {min}, Maximum: {max}')
+print(f'Min: {min_val}, Max: {max_val}')
 ```
 {% endcode %}
 
@@ -81,7 +81,7 @@ array = [3, 6, 1, 9, 10, 4, -4, 6, 12, 5, 11]
 
 min_val, max_val = find_min_max(array)
 
-print(f'Minimum: {min_val}, Maximum: {max_val}')
+print(f'Min: {min_val}, Max: {max_val}')
 ```
 {% endcode %}
 
