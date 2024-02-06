@@ -13,9 +13,9 @@
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
 def divisors(n: int):
-	for i in range(1, n + 1):
-		if n % i == 0:
-			print(i)
+    for i in range(1, n + 1):
+        if n % i == 0:
+            print(i)
  
  
 n = 12
