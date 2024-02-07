@@ -8,15 +8,13 @@
 
 ## Rozwiązanie naiwne
 
-### Implementacja
-
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
 def sum_of_two(tab: list, k: int):
-    for i in range(len(tab)):
-        for j in range(i + 1, len(tab)):
-            if tab[i] + tab[j] == k:
-                print(tab[i], tab[j])
+    for i, num1 in enumerate(tab):
+        for _, num2 in enumerate(tab, i + 1):
+            if num1 + num2 == k:
+                print(num1, num2)
                 return
                 
     print("Not found")
@@ -25,17 +23,15 @@ def sum_of_two(tab: list, k: int):
 tab = [1, 2, 4, 6, 8, 9, 10, 12, 13, 15]
 k = 18
 
-sum_of_two(n, tab, k)
+sum_of_two(tab, k)
 ```
 {% endcode %}
 
-### Opis implementacji
-
 Funkcja `sum_of_two` przyjmuje jako argumenty listę `tab` (lista liczb) oraz liczbę całkowitą `k` (szukana suma).
 
-Początkowo mamy dwie zagnieżdżone pętle `for`. Pierwsza pętla iteruje przez indeksy od $$0$$ do długości listy minus 1. Wewnątrz pierwszej pętli mamy drugą pętlę `for`, która iteruje przez indeksy od `i+1` do długości listy minus 1. Dzięki temu unikamy porównywania tej samej liczby ze samą sobą oraz dublowania porównań.
+Początkowo mamy dwie zagnieżdżone pętle `for`. Pierwsza pętla iteruje przez wszystkie indeksy i elementy listy `tab`. Wewnątrz pierwszej pętli mamy drugą pętlę `for`, która iteruje przez kolejne elementy od indeksu `i+1`. Dzięki temu unikamy porównywania tej samej liczby ze samą sobą oraz dublowania porównań.
 
-W każdej iteracji wewnętrznej pętli sprawdzamy, czy suma `tab[i]` i `tab[j]` jest równa `k`. Jeśli tak, wypisujemy te dwie liczby i kończymy działanie funkcji za pomocą operacji `return`.
+W każdej iteracji wewnętrznej pętli sprawdzamy, czy suma dwóch elementów tablicy (`num1` i `num2`) jest równa szukanej sumie `k`. Jeśli tak, wypisujemy te dwie liczby i kończymy działanie funkcji za pomocą operacji `return`.
 
 Jeśli nie znaleziono pary liczb o sumie `k` w całej liście, wypisujemy $$-1$$.
 
@@ -44,8 +40,6 @@ W przykładzie podane są konkretne wartości dla `tab` i `k`. Funkcja `sum_of_t
 W wyniku wykonania tego kodu, zostaną wypisane liczby $6$ i $12$, ponieważ ich suma wynosi $18$.
 
 ## Rozwiązanie optymalne
-
-### Implementacja
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
@@ -71,8 +65,6 @@ k = 18
 sum_of_two(tab, k)
 ```
 {% endcode %}
-
-### Opis implementacji
 
 Funkcja `sum_of_two` przyjmuje jako argumenty listę `tab` (lista liczb) oraz liczbę całkowitą `k` (szukana suma).
 
