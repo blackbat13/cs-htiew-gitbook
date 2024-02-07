@@ -1,7 +1,5 @@
 # Wyjątki
 
-## Wstęp
-
 Błędy są rzeczą ludzką - nie unikniemy ich.
 Błędów nie unikniemy także w programowaniu, ale część z nich możemy przewidzieć i **obsłużyć**.
 Zastanówmy się na przykład nad dzieleniem dwóch liczb przez siebie.
