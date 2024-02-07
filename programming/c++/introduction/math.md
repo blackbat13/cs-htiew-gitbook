@@ -1,7 +1,5 @@
 # Funkcje matematyczne
 
-## Wstęp
-
 Pokażemy kilka przykładowych i przydatnych funkcji, jakie można znaleźć w bibliotece **cmath**.
 
 ###  Biblioteka
