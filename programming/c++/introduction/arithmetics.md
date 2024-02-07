@@ -1,5 +1,7 @@
 # Operacje arytmetyczne
 
+W języku C++, tak jak i w wielu innych językach programowania, mamy pewien zestaw operatorów arytmetycznych. Przyjrzyjmy się im.
+
 ## Podstawowe
 
 ```cpp
