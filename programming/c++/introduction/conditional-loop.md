@@ -1,5 +1,7 @@
 # Pętla warunkowa
 
+W języku C++ mamy dwa rodzaje pętli warunkowych: **while** oraz **do while**.
+
 ## While
 
 Pętla warunkowa w C++ ma standardową konstrukcję:
