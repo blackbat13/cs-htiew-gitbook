@@ -1,7 +1,5 @@
 # Kompilacja z linii poleceń
 
-## Wstęp
-
 Kto potrzebuje zaawansowanego środowiska programistycznego, z kolorowaniem składni, automatycznymi podpowiedziami, rozbudowanym debuggerem, gdy można pisać w notatniku i kompilować ręcznie z linii poleceń? Mam nadzieję, że to pytanie retoryczne. Niemniej pokażę, jak kompilować programy napisane w języku C++ z poziomu terminala.
 
 ## Zaprzyjaźnij się z terminalem
@@ -33,7 +31,7 @@ Proste, prawda? Teraz, aby uruchomić program, należy wykonać polecenie:
 
 {% tab title="Windows" %}
 ```
-a.exe
+.\a.exe
 ```
 {% endtab %}
 {% endtabs %}
@@ -61,7 +59,7 @@ g++ -o main.out main.cpp
 {% tab title="Windows" %}
 ```
 g++ -o main.exe main.cpp
-main.exe
+.\main.exe
 ```
 {% endtab %}
 {% endtabs %}
@@ -137,7 +135,7 @@ Aby przekierować wejście z pliku tekstowego należy skorzystać z operatora `<
 
 {% tab title="Windows" %}
 ```
-main.exe < dane_wyj.txt
+.\main.exe < dane_wyj.txt
 ```
 {% endtab %}
 {% endtabs %}
@@ -155,7 +153,7 @@ W celu utworzenia pliku i przekierowania do niego wyjścia z naszego programu u�
 
 {% tab title="Windows" %}
 ```
-main.exe > dane_wyj.txt
+.\main.exe > dane_wyj.txt
 ```
 {% endtab %}
 {% endtabs %}
@@ -171,7 +169,7 @@ Jeżeli nie chcemy nadpisywać pliku, a jedynie dopisać do niego nowe dane, uż
 
 {% tab title="Windows" %}
 ```
-main.exe > dane_wyj.txt
+.\main.exe > dane_wyj.txt
 ```
 {% endtab %}
 {% endtabs %}
@@ -189,7 +187,7 @@ Powyższe metody możemy ze sobą łączyć, w dowolnej kolejności.
 
 {% tab title="Windows" %}
 ```
-main.exe < dane_wej.txt > dane_wyj.txt
+.\main.exe < dane_wej.txt > dane_wyj.txt
 ```
 {% endtab %}
 {% endtabs %}
