@@ -2,8 +2,8 @@
 
 ## Opis zagadnienia
 
-{% content-ref url="../../../../algorithms/numeral-systems/bitwise-operations.md" %}
-[operaje-bitowe.md](../../../../algorithms/numeral-systems/bitwise-operations.md)
+{% content-ref url="../../../algorithms/numeral-systems/bitwise-operations.md" %}
+[bitwise-operations.md](../../../algorithms/numeral-systems/bitwise-operations.md)
 {% endcontent-ref %}
 
 ### Przesunięcie bitowe
