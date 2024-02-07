@@ -86,11 +86,37 @@ W C++, dynamiczna alokacja pamięci pozwala na dynamiczne zarządzanie pamięci�
 ```cpp
 int *ptr = new int; // Alokacja nowego bloku pamięci o rozmiarze int
 *ptr = 10; // Przypisanie wartości do zmiennej, która jest adresem pierwszego elementu bloku pamięci
+
 delete ptr; // Zwolnienie bloku pamięci
 ptr = nullptr; // Przypisanie wskaźnikowi null, aby upewnić się, że nie będzie wykorzystywany
 ```
 
 W tym przykładzie, za pomocą operatora `new` alokujemy nowy blok pamięci o rozmiarze `int`, a następnie przypisujemy wartość 10 do zmiennej, która jest adresem pierwszego elementu bloku pamięci. Na koniec, za pomocą operatora `delete` zwalniamy blok pamięci i przypisujemy do wskaźnika wartość pustą, co jest dobrą praktyką w kontekście bardziej rozbudowanych programów, ponieważ później możemy łatwo sprawdzić za pomocą prostego warunku, czy wskaźnik jest zainicjowany.
+
+## Wyciek pamięci
+
+Gdy sami alokujemy nowy blok pamięci, należy pamiętać, że powinniśmy ten blok także sami zwolnić. Jeżeli tego nie zrobimy, a przypiszemy wskaźnik do nowego bloku pamięci, to zostawiamy w pamięci stary blok, do którego nie mamy już odwołania i nie mamy możliwości go zwolnić. W ten sposób nasz program może zużywać znacznie więcej pamięci, niż powinien. Dlatego bardzo ważne jest zwalnianie dynamicznie alokowanej pamięci.
+
+Poniższy przykład pokazuje, co może się wydarzyć, gdy będziemy alokować nowe bloki w pamięci bez zwalniania poprzednich. 
+
+{% hint style="warning" %}
+**Uwaga**
+
+Przed uruchomieniem programu na swoim komputerze upewnij się, że nie utracisz danych, jeżeli będzie potrzeba zrestartować system.
+{% endhint %}
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int *ptr;
+    while(true) {
+        ptr = new int;
+    }
+}
+```
 
 ## Tablice dynamiczne
 
@@ -98,6 +124,7 @@ W C++, tablice dynamiczne są tablicami, które mogą rozszerzać się w czasie 
 
 ```cpp
 int *ptr = new int[5]; // Alokacja nowej tablicy o rozmiarze 5
+
 delete[] ptr; // Zwolnienie tablicy
 ptr = nullptr; // Przypisanie wskaźnikowi null, aby upewnić się, że nie będzie wykorzystywany
 ```
@@ -115,8 +142,11 @@ using namespace std;
 int main() {
     int *ptr = new int[5]; // Alokacja tablicy o rozmiarze 5
     int *tmp = new int[10]; // Alokacja tablicy o rozmiarze 10
+
     copy(ptr, ptr + 5, tmp); // Skopiowanie zawartości tablicy do nowej tablicy
+
     delete[] ptr; // Zwolnienie poprzedniej tablicy
+
     ptr = tmp; // Zapamiętanie wskaźnika do nowej tablicy
 
     return 0;
@@ -132,11 +162,15 @@ W C++, wskaźniki do wskaźników pozwalają na tworzenie hierarchii wskaźnikó
 ```cpp
 int **ptr_to_ptr = new int*; // Alokacja nowego bloku pamięci o rozmiarze int*
 int *ptr = new int; // Alokacja nowego bloku pamięci o rozmiarze int
+
 *ptr = 10; // Przypisanie wartości do zmiennej, która jest adresem pierwsego elementu bloku pamięci
 *ptr_to_ptr = ptr; // Przypisanie adresu do wskaźnika do wskaźnika
 
 delete ptr; // Zwolnienie bloku pamięci
+ptr = nullptr; // Ustawienie wskaźnika na nullptr
+
 delete ptr_to_ptr; // Zwolnienie bloku pamięci
+ptr_to_ptr = nullptr; // Ustawienie wskaźnika do wskaźnika na nullptr
 ```
 
 W tym przykładzie, za pomocą operatora `new` alokujemy nowy blok pamięci o rozmiarze int*, a następnie alokujemy nowy blok pamięci o rozmiarze int. Następnie przypisujemy wartość 10 do zmiennej, która jest adresem pierwszego elementu bloku pamięci. Na koniec, przypisujemy adres tej zmiennej do wskaźnika do wskaźnika.
