@@ -1,7 +1,5 @@
 # Operacje bitowe
 
-## Wstęp
-
 Na bitach możemy wykonywać różne operacje, podobnie jak na liczbach czy też cyfrach.
 Jest jednak pewna grupa operacji, tzw. __operacje bitowe__, które są specjalnymi operacjami wykonywanymi na bitach, czyli na wartościach $$0$$ i $$1$$.
 Są to w większości operacje logiczne, w których wartość $$0$$ interpretujemy jako **Fałsz**, a wartość $$1$$ interpretujemy jako **Prawda**.
