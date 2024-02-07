@@ -189,6 +189,7 @@
     * [Funkcje](programming/c++/introduction/functions.md)
     * [Funkcje printf i scanf](programming/c++/introduction/printf-scanf.md)
     * [Operacje bitowe](programming/c++/introduction/bitwise-operations.md)
+    * [Wskaźniki](programming/c++/introduction/pointers.md)
     * [Wyjątki](programming/c++/introduction/exceptions.md)
     * [OOP](programming/c++/introduction/oop/README.md)
       * [Struktury](programming/c++/introduction/oop/structures.md)
