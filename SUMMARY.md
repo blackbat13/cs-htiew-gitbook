@@ -783,6 +783,8 @@
     * [C++](algorithmic-exercises/szkopul/kamyki/c++.md)
   * [Pikieta](algorithmic-exercises/szkopul/pikieta/README.md)
     * [C++](algorithmic-exercises/szkopul/pikieta/c++.md)
+  * [Tarasy](algorithmic-exercises/szkopul/tarasy/README.md)
+    * [C++](algorithmic-exercises/szkopul/tarasy/c++.md)
 * [Olimpiada Informatyczna Juniorów](algorithmic-exercises/oig/README.md)
   * [... albo psikus!](algorithmic-exercises/oig/albo-psikus/README.md)
     * [C++](algorithmic-exercises/oig/albo-psikus/c++.md)
