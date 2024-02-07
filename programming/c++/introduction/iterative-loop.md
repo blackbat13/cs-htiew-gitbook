@@ -1,7 +1,5 @@
 # Pętla iteracyjna
 
-## Wstęp
-
 W języku C++ pętla iteracyjna składa się z trzech części:
 
 1. Inicjalizacji licznika pętli (np. `int i = 0`).
