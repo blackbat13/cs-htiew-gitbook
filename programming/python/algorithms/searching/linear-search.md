@@ -43,8 +43,8 @@ W części głównej programu na początku przygotowujemy dane do problemu: list
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
 def linear_search(array: list, number: int) -> int:
-    for i in range(len(array)):
-        if number == array[i]:
+    for i, el in enumerate(array):
+        if number == el:
             return i
 
     return -1
@@ -75,8 +75,8 @@ W części głównej programu na początku przygotowujemy dane do problemu: list
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
 def linear_search(array: list, number: int):
-    for i in range(len(array)):
-        if number == array[i]:
+    for i, el in enumerate(array):
+        if number == el:
             print(i)
 
 
