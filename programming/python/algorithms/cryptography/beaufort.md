@@ -8,18 +8,14 @@
 
 ## Szyfrowanie i deszyfrowanie
 
-### Implementacja
-
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
 def encode(message: str, key: str) -> str:
     encoded = ""
-    letter = 0
-    key_index = 0
-    k = 0
+    letter = key_index = k = 0
     
-    for i in range(len(message)):
-        k = 26 - (ord(message[i]) - ord("a")) + (ord(key[key_index]) - ord("a"))
+    for character in message:
+        k = 26 - (ord(character) - ord("a")) + (ord(key[key_index]) - ord("a"))
         k %= 26
         letter = ord("a") + k
         

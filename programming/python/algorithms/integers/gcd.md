@@ -12,8 +12,6 @@ description: Największy Wspólny Dzielnik
 
 ## Algorytm NWD z odejmowaniem
 
-### Implementacja
-
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
 def gcd(a: int, b: int) -> int:
@@ -37,15 +35,11 @@ print(f"GCD({a}, {b}) = {result}")
 
 ## Algorytm Euklidesa - wersja iteracyjna
 
-### Implementacja
-
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
 def gcd(a: int, b: int) -> int:
     while b != 0:
-        b2 = b
-        b = a % b
-        a = b2
+        a, b = b, a % b
 
     return a
 

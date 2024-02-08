@@ -13,8 +13,8 @@
 def hamming_distance(a: str, b: str) -> int:
     distance = 0
     
-    for i in range(len(a)):
-        if a[i] != b[i]:
+    for el1, el2 in zip(a, b):
+        if el1 != el2:
             distance += 1
             
     return distance

@@ -10,20 +10,20 @@
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-from math import ceil, sqrt
-
-
 def is_perfect(n: int) -> bool:
-    digits_sum = 1
+    divisors_sum = 1
+    i = 2
     
-    for i in range(2, ceil(sqrt(n))):
+    while i * i <= n:
         if n % i == 0:
-            digits_sum += i
+            divisors_sum += i
             
             if n // i != i:
-                digits_sum += n // i
+                divisors_sum += n // i
+        
+        i += 1
 
-    return digits_sum == n
+    return divisors_sum == n
 
 
 n = 6

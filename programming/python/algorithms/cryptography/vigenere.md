@@ -8,8 +8,6 @@
 
 ## Szyfrowanie
 
-### Implementacja
-
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
 def encrypt_vigenere(message: str, key: str) -> str:
@@ -40,8 +38,6 @@ print(encrypted)
 {% endcode %}
 
 ## Deszyfrowanie
-
-### Implementacja
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python

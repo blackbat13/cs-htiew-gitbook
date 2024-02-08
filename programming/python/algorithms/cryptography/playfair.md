@@ -8,47 +8,42 @@
 
 ## Szyfrowanie
 
-### Implementacja
-
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-def find(letter, tab):
+def find(letter: str, tab: list) -> (int, int):
     for i in range(6):
         for j in range(6):
             if letter == tab[i][j]:
                 return i, j
 
 
-def encode(key: str, message: str):
+def create_order(key: str) -> list:
     alphabet = ["a", "ą", "b", "c", "ć", "d", "e", "ę", "f", "g", "h", "i", "j", "k", "l", "ł", "m", "n", "ń", "o", "ó",
                 "p", "q", "r", "s", "ś", "t", "u", "v", "w", "x", "y", "z", "ź", "ż", " "]
-    tab = [["" for _ in range(6)] for _ in range(6)]
     order = []
     for letter in key:
         if letter in alphabet:
             alphabet.remove(letter)
             order.append(letter)
 
-    for letter in alphabet:
-        order.append(letter)
+    order.extend(alphabet)
 
-    k = 0
-    for i in range(6):
-        for j in range(6):
-            tab[i][j] = order[k]
-            k += 1
+    return order
+
+
+def encode(key: str, message: str):
+    order = create_order(key)
+
+    tab = [[order[i * 6 + j] for j in range(6)] for i in range(6)]
 
     if len(message) % 2 == 1:
         message += " "
 
     result = ""
     for i in range(0, len(message), 2):
-        letter1 = message[i]
-        letter2 = message[i + 1]
+        letter1, letter2 = message[i], message[i + 1]
         x1, y1 = find(letter1, tab)
         x2, y2 = find(letter2, tab)
-        crypto1 = ""
-        crypto2 = ""
 
         if y1 == y2:
             crypto1 = tab[x1][(y1 + 1) % 6]
@@ -67,54 +62,51 @@ def encode(key: str, message: str):
 
 key = "computer"
 message = "science"
+
 encoded = encode(key, message)
+
 print(encoded)
 ```
 {% endcode %}
 
 ## Deszyfrowanie
 
-### Implementacja
-
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-def find(letter, tab):
+def find(letter: str, tab: list) -> (int, int):
     for i in range(6):
         for j in range(6):
             if letter == tab[i][j]:
                 return i, j
 
 
-def decode(key: str, message: str):
+def create_order(key: str) -> list:
     alphabet = ["a", "ą", "b", "c", "ć", "d", "e", "ę", "f", "g", "h", "i", "j", "k", "l", "ł", "m", "n", "ń", "o", "ó",
                 "p", "q", "r", "s", "ś", "t", "u", "v", "w", "x", "y", "z", "ź", "ż", " "]
-    tab = [["" for _ in range(6)] for _ in range(6)]
     order = []
     for letter in key:
         if letter in alphabet:
             alphabet.remove(letter)
             order.append(letter)
 
-    for letter in alphabet:
-        order.append(letter)
+    order.extend(alphabet)
 
-    k = 0
-    for i in range(6):
-        for j in range(6):
-            tab[i][j] = order[k]
-            k += 1
+    return order
+
+
+def decode(key: str, message: str):
+    order = create_order(key)
+
+    tab = [[order[i * 6 + j] for j in range(6)] for i in range(6)]
 
     if len(message) % 2 == 1:
         message += " "
 
     result = ""
     for i in range(0, len(message), 2):
-        letter1 = message[i]
-        letter2 = message[i + 1]
+        letter1, letter2 = message[i], message[i + 1]
         x1, y1 = find(letter1, tab)
         x2, y2 = find(letter2, tab)
-        crypto1 = ""
-        crypto2 = ""
 
         if y1 == y2:
             crypto1 = tab[x1][y1 - 1]
@@ -133,7 +125,9 @@ def decode(key: str, message: str):
 
 key = "computer"
 message = "ómdćjućx"
+
 decoded = decode(key, message)
+
 print(decoded)
 ```
 {% endcode %}

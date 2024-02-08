@@ -10,36 +10,27 @@
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-def compute(a: float, b: float, op: str) -> float:
-	if op == "+":
-		return a + b
-	elif op == "-":
-		return a - b
-	elif op == "*":
-		return a * b
-	elif op == "/":
-		return a / b
+from queue import LifoQueue
 
 
 def calculate_rpn(rpn: str) -> float:
-	rpn_stack = []
+	rpn_stack = LifoQueue()
 	
 	for symbol in rpn:
 		if symbol.isdigit():
-			rpn_stack.append(int(symbol))
+			rpn_stack.put(int(symbol))
 		else:
-			b = rpn_stack[-1]
-			a = rpn_stack[-2]
-			rpn_stack.pop()
-			rpn_stack.pop()
-			result = compute(a, b, symbol)
-			rpn_stack.append(result)
+			b, a = rpn_stack.get(), rpn_stack.get()
+			result = eval(f"{a} {symbol} {b}")
+			rpn_stack.put(result)
 				
-	return rpn_stack[0]
+	return rpn_stack.get()
 	
 
 rpn = "27+3/13-4*+2/"
+
 result = calculate_rpn(rpn)
+
 print(result)
 ```
 {% endcode %}

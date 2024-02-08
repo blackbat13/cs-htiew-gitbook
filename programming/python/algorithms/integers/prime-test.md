@@ -10,18 +10,17 @@
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-import math
-
-
 def is_prime(n: int) -> bool:
     if n < 2:
         return False
-
-    sqrt_n = int(math.sqrt(n))
     
-    for i in range(2, sqrt_n + 1):
+    i = 2
+    
+    while i * i <= n:
         if n % i == 0:
             return False
+
+        i += 1
 
     return True
 

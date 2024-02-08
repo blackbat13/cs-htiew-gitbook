@@ -8,20 +8,16 @@
 
 ## Wyszukiwanie wartości minimum i maksimum
 
-### Implementacja
-
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-def find_min_max(n: int, tab: list) -> tuple:
-    min_val = tab[0]
-    max_val = tab[0]
+def find_min_max(array: list) -> (int, int):
+    min_val = array[0]
+    max_val = array[0]
     
-    for i in range(1, n):
-        if tab[i] < min_val:
-            min_val = tab[i]
-        elif tab[i] > max_val:
-            max_val = tab[i]
-    
+    for _, el in enumerate(array, 1):
+        min_val = min(min_val, el)
+        max_val = max(max_val, el)
+
     return min_val, max_val
 
 
@@ -33,8 +29,6 @@ min_val, max_val = find_min_max(n, tab)
 print(f"Min: {min_val}, Max: {max_val}")
 ```
 {% endcode %}
-
-### Opis implementacji
 
 Funkcja `find_min_max` działa w następujący sposób:
 
@@ -52,20 +46,21 @@ W głównej części programu:
 
 ## Wyszukiwanie indeksów wartości minimum i maksimum
 
-### Implementacja
-
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-def find_min_max_ind(n: int, tab: list) -> tuple:
-    min_ind = 0
-    max_ind = 0
+def find_min_max_ind(array: list) -> (int, int):
+    min_val = array[0]
+    max_val = array[0]
+    min_ind = max_ind = 0
     
-    for i in range(1, n):
-        if tab[i] < tab[min_ind]:
+    for i, el in enumerate(array, 1):
+        if el < min_val:
+            min_val = el
             min_ind = i
-        elif tab[i] > tab[max_ind]:
+        elif el > max_val:
+            max_val = el
             max_ind = i
-    
+
     return min_ind, max_ind
 
 
@@ -77,8 +72,6 @@ min_ind, max_ind = find_min_max_ind(n, tab)
 print(f"Min value index: {min_ind}, Max value index: {max_ind}")
 ```
 {% endcode %}
-
-### Opis implementacji
 
 Funkcja `find_min_max_ind` działa następująco:
 

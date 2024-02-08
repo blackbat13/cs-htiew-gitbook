@@ -8,8 +8,6 @@
 
 ## Szyfrowanie
 
-### Implementacja
-
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
 def encrypt_rail_fence(message: str, key: int) -> str:
@@ -20,12 +18,9 @@ def encrypt_rail_fence(message: str, key: int) -> str:
             jump = (key - 1) * 2
         else:
             jump = (key - (k + 1)) * 2
-            
-        i = k
-        
-        while i < len(message):
+
+        for i in range(k, len(message), jump):
             encrypted += message[i]
-            i += jump
 
     return encrypted
 
@@ -41,8 +36,6 @@ print(encrypted)
 
 ## Deszyfrowanie
 
-### Implementacja
-
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
 def decrypt_rail_fence(message: str, key: int) -> str:
@@ -54,14 +47,11 @@ def decrypt_rail_fence(message: str, key: int) -> str:
             jump = (key - 1) * 2
         else:
             jump = (key - (k + 1)) * 2
-            
-        i = k
-        
-        while i < len(message):
+
+        for i in range(k, len(message), jump):
             decrypted[i] = message[j]
             j += 1
-            i += jump
-
+            
     return "".join(decrypted)
 
 

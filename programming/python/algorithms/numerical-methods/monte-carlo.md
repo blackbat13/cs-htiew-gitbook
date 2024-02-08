@@ -15,9 +15,7 @@ from random import random
 
 def monte_carlo_pi(points_count: int) -> float:
     num_points_in_circle = 0
-    center_x = 1
-    center_y = 1
-    radius = 1
+    center_x = center_y = radius = 1
     
     for _ in range(points_count):
         x = random() * 2.0
@@ -49,9 +47,7 @@ import matplotlib.pyplot as plt
 
 def monte_carlo_pi(points_count: int) -> float:
     num_points_in_circle = 0
-    center_x = 1
-    center_y = 1
-    radius = 1
+    center_x = center_y = radius = 1
     plot_values = []
 
     for i in range(1, points_count + 1):

@@ -11,12 +11,10 @@
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
 def extended_gcd(a: int, b: int) -> tuple:
-  old_x = 1
-  x = 0
-  old_y = 0
-  y = 1
-  rest = b
-  old_rest = a
+  old_x, x = 1, 0
+  old_y, y = 0, 1
+  rest, old_rest = b, a
+  
   while rest != 0:
     quotient = old_rest // rest
 

@@ -8,8 +8,6 @@
 
 ## Istnienie elementu
 
-### Implementacja
-
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
 def linear_search(array: list, number: int) -> bool:
@@ -31,8 +29,6 @@ else:
     print("Poszukiwanej wartości nie ma w liście")
 ```
 {% endcode %}
-
-### Opis implementacji
 
 Funkcja `linear_search` (**linia 1**) zwraca jako wynik wartość prawda/fałsz i przyjmuje dwa argumenty: listę do przeszukania oraz wartość poszukiwanego elementu. Na początku funkcji przechodzimy pętlą przez wszystkie kolejne elementy listy (**linia 2**). Dla każdego elementu sprawdzamy, czy jego wartość jest tą, której szukamy (**linia 3**). Jeżeli tak, to zwracamy informację o znalezieniu wartości w liście (**linia 4**). Po przejściu przez wszystkie elementy listy i wyjściu z pętli (tzn. gdy nie znaleźliśmy poszukiwanego elementu) zwracamy wartość `False` informującą, że poszukiwany element nie znajduje się w liście (**linia 6**).
 
@@ -62,15 +58,11 @@ else:
 ```
 {% endcode %}
 
-### Opis implementacji
-
 Funkcja `linear_search` (**linia 1**) zwraca jako wynik liczbę całkowitą i przyjmuje dwa argumenty: listę do przeszukania oraz wartość poszukiwanego elementu. Na początku funkcji przechodzimy pętlą przez wszystkie kolejne indeksy w liście od $$0$$ do długości listy minus 1 włącznie (**linia 2**). Rozmiar listy pobieramy za pomocą funkcji `len()`. Dla każdego indeksu sprawdzamy, czy pod tym indeksem w liście znajduje się poszukiwana wartość (**linia 3**). Jeżeli tak, to zwracamy indeks wartości w liście (**linia 4**). Po przejściu przez wszystkie indeksy i wyjściu z pętli (tzn. gdy nie znaleźliśmy poszukiwanego elementu) zwracamy wartość $$-1$$ informującą, że poszukiwany element nie znajduje się w liście (**linia 6**).
 
 W części głównej programu na początku przygotowujemy dane do problemu: listę (**linia 9**) oraz wartość poszukiwanego elementu (**linia 10**). Następnie wywołujemy funkcję `linear_search` z wcześniej przygotowanymi parametrami i jej wynik zapisujemy w nowej zmiennej `index` (**linia 12**). W zależności od wyniku (**linia 14**) wypisujemy odpowiedni komunikat (**linie 15 i 17**).
 
 ## Wszystkie pozycje elementu
-
-### Implementacja
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
@@ -87,8 +79,6 @@ print("Poszukiwana wartość znajduje się pod następującymi indeksami:")
 linear_search(array, number)
 ```
 {% endcode %}
-
-### Opis implementacji
 
 Funkcja `linear_search` (**linia 1**) nie zwraca wyniku i przyjmuje dwa argumenty: listę do przeszukania oraz wartość poszukiwanego elementu. Na początku funkcji przechodzimy pętlą przez wszystkie kolejne indeksy w liście od $$0$$ do długości listy minus 1 włącznie (**linia 2**). Rozmiar listy pobieramy za pomocą funkcji `len()`. Dla każdego indeksu sprawdzamy, czy pod tym indeksem w liście znajduje się poszukiwana wartość (**linia 3**). Jeżeli tak, to wypisujemy ten indeks (**linia 4**).
 

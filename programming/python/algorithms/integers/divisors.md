@@ -8,8 +8,6 @@
 
 ## Rozwiązanie zupełnie naiwne
 
-### Implementacja
-
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
 def divisors(n: int):
@@ -25,8 +23,6 @@ divisors(n)
 {% endcode %}
 
 ## Rozwiązanie naiwne
-
-### Implementacja
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
@@ -47,19 +43,16 @@ divisors(n)
 
 ## Rozwiązanie optymalne
 
-### Implementacja
-
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-from math import sqrt, ceil
-
-
 def divisors(n: int):
-    for i in range(1, ceil(sqrt(n))):
+    i = 1
+    while i * i <= n:
         if n % i == 0:
             print(i)
             if i != (n // i):
                 print(n // i)
+        i += 1
  
  
 n = 12

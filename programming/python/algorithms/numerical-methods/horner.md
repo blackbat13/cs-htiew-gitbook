@@ -22,9 +22,9 @@ def horner_polynomial(coef: [], x: float, n: float) -> float:
     :return: value of the polynomial
     """
     result = 0
-    for i in range(n, -1, -1):
+    for a in reversed(coef):
         result *= x
-        result += coef[i]
+        result += a
         
     return result
 

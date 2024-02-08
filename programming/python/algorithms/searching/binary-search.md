@@ -8,8 +8,6 @@
 
 ## Wersja iteracyjna
 
-### Implementacja
-
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
 def binary_search_iterative(array: list, number: int) -> int:
@@ -41,8 +39,6 @@ print(index)
 ```
 {% endcode %}
 
-### Opis implementacji
-
 Funkcja `binary_search_iterative` przyjmuje dwa argumenty: listę `array` oraz liczbę `number`, którą chcemy znaleźć. Oto, jak działa ta funkcja:
 
 1. Ustawia lewy `left` indeks na $$0$$, a prawy `right` indeks na długość listy minus jeden.
@@ -61,8 +57,6 @@ W głównym ciele programu:
 3. Wyświetla indeks, pod którym znajduje się szukana liczba. Jeżeli liczba nie została znaleziona, wyświetli $$-1$$.
 
 ## Wersja rekurencyjna
-
-### Implementacja
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
@@ -90,8 +84,6 @@ index = binary_search_recursive(array, number, 0, len(array))
 print(index)
 ```
 {% endcode %}
-
-### Opis implementacji
 
 Funkcja `binary_search_recursive` przyjmuje cztery argumenty: listę `array`, liczbę `number` do znalezienia, oraz indeksy `left` i `right` określające zakres, w którym szukamy liczby. Oto jak działa ta funkcja:
 

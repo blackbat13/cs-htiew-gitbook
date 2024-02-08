@@ -8,8 +8,6 @@
 
 ## Szyfrowanie
 
-### Implementacja
-
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
 def encrypt_trithemius(message: str) -> bool:
@@ -38,8 +36,6 @@ print(encrypted)
 {% endcode %}
 
 ## Deszyfrowanie
-
-### Implementacja
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python

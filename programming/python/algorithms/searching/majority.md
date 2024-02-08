@@ -11,8 +11,7 @@
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
 def find_majority(array: list) -> int:
-    counter = 0
-    current_candidate = 0
+    counter = current_candidate = 0
     
     for el in array:
         if counter == 0:
@@ -36,8 +35,6 @@ majority = find_majority(array)
 print(majority)
 ```
 {% endcode %}
-
-### Opis implementacji
 
 Początkowo ustawiamy zmienną `count` na $$0$$.
 W pętli `for` iterujemy po każdym elemencie `el` z listy `array`.

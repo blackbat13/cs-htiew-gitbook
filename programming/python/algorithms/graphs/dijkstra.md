@@ -14,29 +14,29 @@ description: Najkrótsze ścieżki z zadanego wierzchołka
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-import math
+from math import inf
 from typing import List, Tuple
+from queue import Queue
 
 
 def dijkstra(graph: List[List[Tuple[int, int]]], node: int) -> List[int]:
-    queue: List[(int, int, int)] = []
-    distances = [math.inf] * len(graph)
+    q = Queue()
+    distances = [inf] * len(graph)
         
     distances[node] = 0
 
     for (next_node, distance) in graph[node]:
-        queue.append((node, next_node, distance))
+        q.put((node, next_node, distance))
 
-    while len(queue) > 0:
-        from_node, node, new_distance = queue[0]
+    while not q.empty():
+        from_node, node, new_distance = q.get()
         new_distance += distances[from_node]
-        queue.pop(0)
         
         if new_distance < distances[node]:
             distances[node] = new_distance
             
             for (next_node, distance) in graph[node]:
-                queue.append((node, next_node, distance))
+                q.put((node, next_node, distance))
 
     return distances
 

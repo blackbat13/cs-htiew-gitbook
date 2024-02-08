@@ -11,7 +11,7 @@
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
 def longest_common_subsequence(a: str, b: str) -> str:
-    matrix = [[0 for _ in range(len(b) + 1)] for _ in range(len(a) + 1)]
+    matrix = [[0] * (len(b) + 1) for _ in range(len(a) + 1)]
     result = ""
 
     for i in range(1, len(a) + 1):
@@ -22,8 +22,7 @@ def longest_common_subsequence(a: str, b: str) -> str:
                 matrix[i][j] = max(matrix[i - 1][j], matrix[i][j - 1])
 
     value = matrix[len(a)][len(b)]
-    i = len(a)
-    j = len(b)
+    i, j = len(a), len(b)
     
     while value > 0:
         if matrix[i - 1][j] == value:

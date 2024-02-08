@@ -23,6 +23,7 @@ def primorial(n: int) -> int:
   while len(primes) < n:
     if is_prime(num):
       primes.append(num)
+      
     num += 1
 
   result = 1

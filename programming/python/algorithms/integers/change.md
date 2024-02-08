@@ -8,16 +8,13 @@
 
 ## Podejście zachłanne
 
-### Implementacja
-
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-def change_greedy(amount: int, coins: []) -> int:
-    result = 0
-    i = 0
+def change_greedy(amount: int, coins: list) -> int:
+    result = i = 0
     
     while amount > 0:
-        result += int(amount / coins[i])
+        result += amount // coins[i]
         amount %= coins[i]
         i += 1
 
@@ -36,16 +33,14 @@ print(f"Amount {amount} can be given out using {result} coins")
 
 ## Podejście dynamiczne
 
-### Implementacja
-
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-import math
+from math import inf
 
 
 def change_dynamic(amount: int, coins: list):
-    partial_results = [math.inf] * (amount + 1)
-    used_coins = [math.inf] * (amount + 1)
+    partial_results = [inf] * (amount + 1)
+    used_coins = [inf] * (amount + 1)
 
     partial_results[0] = 0
 
@@ -55,7 +50,7 @@ def change_dynamic(amount: int, coins: list):
                 partial_results[i + coin_value] = partial_results[i] + 1
                 used_coins[i + coin_value] = coin_value
 
-    if partial_results[amount] == math.inf:
+    if partial_results[amount] == inf:
         print("Cannot give out specified value using given coins")
         return
 
@@ -78,12 +73,12 @@ change_dynamic(amount, coins)
 
 ### Opis implementacji
 
-Funkcja `change_dynamic` (**linia 1**) przyjmuje dwa parametry: kwotę do wydania (`amount`) i listę dostępnych nominałów (`coins`).
+Funkcja `change_dynamic` przyjmuje dwa parametry: kwotę do wydania (`amount`) i listę dostępnych nominałów (`coins`).
 
-Na początku funkcji przygotowujemy stosowne listy do przechowywania wartości częściowych wyników (**linia 2**) i wykorzystanych nominałów (**linia 3**). Tworzymy także pomocniczą zmienną `infinity`, do której przypisujemy odpowiednio dużą wartość liczbową, którą będziemy traktować jako nieskończoność (**linia 4**).
+Na początku funkcji przygotowujemy stosowne listy do przechowywania wartości częściowych wyników i wykorzystanych nominałów. 
 
-W linii **14** przechodzimy pętlą przez wszystkie nominały, które są wczytywane od użytkownika w linii **15**. 
+Następnie przechodzimy pętlą przez wszystkie nominały. 
 
-Dla każdego nominału przechodzimy przez odpowiednie pola tablicy (linia **16**). W zależności od wartości pola, dokonujemy zmiany (linie **17-19**).
+Dla każdego nominału przechodzimy przez odpowiednie pola tablicy. W zależności od wartości pola, dokonujemy zmiany.
 
-Jeżeli po przetworzeniu wszystkich nominałów ostatnie pole tablicy wciąż ma wartość równą zmiennej `infinity` (linia **21**), to wypisujemy odpowiedni komunikat o braku możliwości wydania podanej kwoty i kończymy działanie funkcji.
+Jeżeli po przetworzeniu wszystkich nominałów ostatnie pole tablicy wciąż ma wartość równą nieskończoności, to wypisujemy odpowiedni komunikat o braku możliwości wydania podanej kwoty i kończymy działanie funkcji.

@@ -22,8 +22,7 @@ def kinght_tour(n: int, chessboard: list, visited_count: int, row: int, column: 
     if visited_count == n * n:
         return True, chessboard
 
-    for move in moves_list:
-        move_row, move_column = move
+    for move_row, move_column in moves_list:
         new_row = row + move_row
         new_column = column + move_column
         if 0 <= new_row < n and 0 <= new_column < n and chessboard[new_row][new_column] == -1:

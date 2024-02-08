@@ -8,18 +8,14 @@
 
 ## Wersja iteracyjna
 
-### Implementacja
-
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
 def fib(n: int) -> int:
     f1 = 1
     f2 = 1
     
-    for i in range(3, n + 1):
-        f3 = f1 + f2
-        f1 = f2
-        f2 = f3
+    for _ in range(3, n + 1):
+        f1, f2 = f2, f1 + f2
 
     return f2
 
@@ -33,8 +29,6 @@ print(f"fib({n}) = {result}")
 {% endcode %}
 
 ## Wersja rekurencyjna
-
-### Implementacja
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python

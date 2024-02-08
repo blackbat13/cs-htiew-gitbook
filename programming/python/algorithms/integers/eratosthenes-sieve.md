@@ -10,25 +10,25 @@
 
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
-from math import ceil, sqrt
-
-
 def sieve(n: int) -> list:
     primes = [False, False] + [True] * (n - 1)
-
-    for i in range(2, ceil(sqrt(n))):
+    i = 2
+    while i * i <= n:
         if not primes[i]:
+            i += 1
             continue
 
         for j in range(2 * i, n + 1, i):
             primes[j] = False
 
+        i += 1
+
     return primes
 
 
 def print_prime_numbers(primes: list):
-    for i in range(len(primes)):
-        if primes[i]:
+    for i, is_prime in enumerate(primes):
+        if is_prime:
             print(i)
 
 

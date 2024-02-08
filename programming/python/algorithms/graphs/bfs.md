@@ -15,14 +15,15 @@ description: Przeszukiwanie grafu wszerz
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
 from typing import List
+from queue import Queue
 
 
 def bfs(graph: List[List[int]], visited: List[bool], node: int):
-    queue = [node]
+    q = Queue()
+    q.put(node)
 
-    while len(queue) > 0:
-        node = queue[0]
-        queue.pop(0)
+    while not q.empty():
+        node = q.get()
         
         if visited[node]:
             continue
@@ -32,7 +33,7 @@ def bfs(graph: List[List[int]], visited: List[bool], node: int):
 
         for new_node in graph[node]:
             if not visited[new_node]:
-                queue.append(new_node)
+                q.put(new_node)
 
 
 graph = [

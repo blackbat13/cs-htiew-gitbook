@@ -11,14 +11,12 @@
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
 def longest_growing_substring_length(tab: list) -> int:
-    mx = 1
-    length = 1
+    mx = length = 1
     
     for i in range(1, len(tab)):
         if tab[i] > tab[i - 1]:
             length += 1
-            if length > mx:
-                mx = length
+            mx = max(length, mx)
         else:
             length = 1
     
@@ -32,8 +30,6 @@ result = longest_growing_substring_length(tab)
 print(result)
 ```
 {% endcode %}
-
-### Opis implementacji
 
 Funkcja `longest_growing_substring_length` przyjmuje jako argument listę `tab` (lista liczb) i zwraca długość najdłuższego rosnącego podciągu.
 

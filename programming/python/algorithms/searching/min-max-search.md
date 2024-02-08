@@ -8,19 +8,15 @@
 
 ## Podejście naiwne
 
-### Implementacja
-
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
 def find_min_max(array: list) -> (int, int):
     min_val = array[0]
     max_val = array[0]
     
-    for i in range(1, len(array)):
-        if array[i] < min_val:
-            min_val = array[i]
-        elif array[i] > max_val:
-            max_val = array[i]
+    for _, el in enumerate(array, 1):
+        min_val = min(min_val, el)
+        max_val = max(max_val, el)
 
     return min_val, max_val
     
@@ -32,8 +28,6 @@ min_val, max_val = find_min_max(array)
 print(f'Min: {min_val}, Max: {max_val}')
 ```
 {% endcode %}
-
-### Opis implementacji
 
 Funkcja `find_min_max` przyjmuje jako argument listę `array` (lista liczb) i zwraca parę wartości (`min`, `max`).
 
@@ -65,14 +59,8 @@ def find_min_max(array: list) -> (int, int):
         min_candidates.append(array[len(array) - 1])
         max_candidates.append(array[len(array) - 1])
 
-    min_val = min_candidates[0]
-    max_val = max_candidates[0]
-    
-    for i in range(1, len(min_candidates)):
-        if min_val > min_candidates[i]:
-            min_val = min_candidates[i]
-        if max_val < max_candidates[i]:
-            max_val = max_candidates[i]
+    min_val = min(min_candidates)
+    max_val = max(max_candidates)
 
     return min_val, max_val
     
@@ -84,8 +72,6 @@ min_val, max_val = find_min_max(array)
 print(f'Min: {min_val}, Max: {max_val}')
 ```
 {% endcode %}
-
-### Opis implementacji
 
 Funkcja `find_min_max` przyjmuje jako argument listę `array` (lista liczb) i zwraca parę wartości (`min_val`, `max_val`).
 

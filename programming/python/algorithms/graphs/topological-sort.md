@@ -15,16 +15,16 @@ def topological_sort(graph: list) -> list:
   removed = [False] * len(graph)
   result = []
     
-  for i in range(len(graph)):
-    for j in range(len(graph[i])):
-        in_ranks[graph[i][j]] += 1
+  for neighbours_list in graph:
+    for node in neighbours_list:
+        in_ranks[node] += 1
 
   change = True
 
   while change and len(result) < len(graph):
     change = False
         
-    for i in range(len(graph)):
+    for i, neighbours_list in enumerate(graph):
       if removed[i] or in_ranks[i] > 0:
         continue
       
@@ -33,8 +33,8 @@ def topological_sort(graph: list) -> list:
       result.append(i)
       removed[i] = True
             
-      for j in range(len(graph[i])):
-          in_ranks[graph[i][j]] -= 1
+      for node in neighbours_list:
+          in_ranks[node] -= 1
 
   return result
 

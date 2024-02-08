@@ -28,10 +28,10 @@ def count_connected_components(graph: List[List[int]]) -> int:
     result = 0
     visited = [False] * len(graph)
     
-    for i in range(len(graph)):
-        if not visited[i]:
+    for node, vis in enumerate(visited):
+        if not vis:
             result += 1
-            dfs(graph, visited, i)
+            dfs(graph, visited, node)
 
     return result
     
