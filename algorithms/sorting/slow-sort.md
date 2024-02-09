@@ -25,7 +25,7 @@ procedura SortowanieWolne(A, pocz, kon):
 
 ## Implementacja
 
-### C++
+<!-- ### C++
 
 {% content-ref url="../../programming/c++/algorithms/sorting/slow-sort.md" %}
 [slow-sort.md](../../programming/c++/algorithms/sorting/slow-sort.md)
@@ -35,4 +35,4 @@ procedura SortowanieWolne(A, pocz, kon):
 
 {% content-ref url="../../programming/python/algorithms/sorting/slow-sort.md" %}
 [slow-sort.md](../../programming/python/algorithms/sorting/slow-sort.md)
-{% endcontent-ref %}
+{% endcontent-ref %} -->
