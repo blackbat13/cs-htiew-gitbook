@@ -55,8 +55,6 @@ print(f"GCD({a},{b}) = {result}")
 
 ## Algorytm Euklidesa - wersja rekurencyjna
 
-### Implementacja
-
 {% code overflow="wrap" lineNumbers="true" %}
 ```python
 def gcd(a: int, b: int) -> int:
