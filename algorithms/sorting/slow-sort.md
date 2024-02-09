@@ -6,6 +6,12 @@ description: Slowsort
 
 Sortowanie wolne (ang. *Slowsort*) to jeden z humorystycznych i niepraktycznych algorytmów sortowania.
 
+## Animacja
+
+{% embed url="https://www.youtube.com/watch?v=QbRoyhGdjnA" %}
+[Animacja sortowania wolnego](https://www.youtube.com/watch?v=QbRoyhGdjnA)
+{% endembed %}
+
 ## Pseudokod
 
 ```
