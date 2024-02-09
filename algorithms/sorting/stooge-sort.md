@@ -30,7 +30,7 @@ Złożoność czasowa algorytmu jest rzędu $$O(n^{\log{3}/\log{1.5}})=O(n^{2.70
 
 ## Implementacja
 
-<!-- ### C++
+### C++
 
 {% content-ref url="../../programming/c++/algorithms/sorting/stooge-sort.md" %}
 [stooge-sort.md](../../programming/c++/algorithms/sorting/stooge-sort.md)
@@ -40,4 +40,4 @@ Złożoność czasowa algorytmu jest rzędu $$O(n^{\log{3}/\log{1.5}})=O(n^{2.70
 
 {% content-ref url="../../programming/python/algorithms/sorting/stooge-sort.md" %}
 [stooge-sort.md](../../programming/python/algorithms/sorting/stooge-sort.md)
-{% endcontent-ref %} -->
+{% endcontent-ref %}
