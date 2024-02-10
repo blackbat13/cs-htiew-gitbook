@@ -12,7 +12,13 @@ Istnieje oczywiście kilka wersji tego problemu. Zacznijmy od pierwszej z nich, 
 
 Jedną z najprostszych wersji problemu wyszukiwania jest sprawdzenie, czy dany element istnieje w zbiorze. Wyobraźmy sobie, że jesteśmy w sklepie i pytamy ekspedienta, czy jest mleko. Ekspedient przegląda dostępne produkty i odpowiada: **tak** lub **nie**. W takim przypadku interesuje nas tylko to, czy mleko w ogóle jest aktualnie w sprzedaży, nie to ile sztuk mleka jest dostępnych, czy też gdzie się ten produkt znajduje.
 
-Naszym celem będzie więc sprawdzenie, czy w tablicy znajduje się poszukiwana wartość. Zacznijmy od formalnej specyfikacji i kilku przykładów.
+Naszym celem będzie więc sprawdzenie, czy w tablicy znajduje się poszukiwana wartość. Zacznijmy od tanecznego wyszukiwania, formalnej specyfikacji i kilku przykładów.
+
+## Taneczne sortowanie
+
+{% embed url="https://www.youtube.com/watch?v=-PuqKbu9K3U" %}
+[Taneczne wyszukiwanie liniowe](https://www.youtube.com/watch?v=-PuqKbu9K3U)
+{% endembed %}
 
 ### Specyfikacja
 
