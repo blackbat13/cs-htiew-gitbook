@@ -14,7 +14,7 @@ Jedną z najprostszych wersji problemu wyszukiwania jest sprawdzenie, czy dany e
 
 Naszym celem będzie więc sprawdzenie, czy w tablicy znajduje się poszukiwana wartość. Zacznijmy od tanecznego wyszukiwania, formalnej specyfikacji i kilku przykładów.
 
-## Taneczne sortowanie
+### Taneczne wyszukiwanie
 
 {% embed url="https://www.youtube.com/watch?v=-PuqKbu9K3U" %}
 [Taneczne wyszukiwanie liniowe](https://www.youtube.com/watch?v=-PuqKbu9K3U)
