@@ -6,7 +6,13 @@ Znacząco ułatwia to znalezienie pożądanej pozycji, ponieważ **wiemy, gdzie 
 
 Tak samo jest też w świecie algorytmiki. Gdy pracujemy na danych **posortowanych**, to zazwyczaj możemy skonstruować efektywne algorytmy do rozwiązania problemu. 
 
-Jak zwykle, zacznijmy od formalnej specyfikacji, by lepiej zrozumieć problem, z którym będziemy się mierzyć.
+Zacznijmy od tanecznego wyszukiwania i formalnej specyfikacji, by lepiej zrozumieć problem, z którym będziemy się mierzyć.
+
+## Taneczne wyszukiwanie
+
+{% embed url="https://www.youtube.com/watch?v=iP897Z5Nerk" %}
+[Taneczne wyszukiwanie binarne](https://www.youtube.com/watch?v=iP897Z5Nerk)
+{% endembed %}
 
 ## Specyfikacja
 
