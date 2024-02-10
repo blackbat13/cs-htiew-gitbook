@@ -22,17 +22,6 @@ Poniżej znajdziesz animacje przedstawiające ideę omawianego algorytmu.
 [Taneczne sortowanie](https://www.youtube.com/watch?v=Ns4TPTC8whw)
 {% endembed %}
 
-## Specyfikacja
-
-### Dane
-
-* $$n$$ — liczba naturalna, ilość elementów w tablicy.
-* $$A[1..n]$$ — tablica $$n$$ wartości całkowitych.
-
-### Wynik
-
-* Posortowana niemalejąco tablica $$A$$.
-
 ## Rozwiązanie
 
 Sortowanie przez wybieranie składa się tak właściwie z dwóch części: znajdowania minimum i samego sortowania. Opis algorytmu znajdowania minimum można znaleźć tutaj: [Wyszukiwanie minimum i maksimum](../searching/min-or-max.md).

@@ -16,17 +16,6 @@ Poniżej znajdziesz animację przedstawiającą ideę omawianego algorytmu.
 
 {% embed url="https://blackbat13.github.io/visul2/sorting/cocktail_shaker_sort/#array=%5B6%2C5%2C3%2C1%2C8%2C7%2C2%2C4%5D" %}
 
-## Specyfikacja
-
-### Dane
-
-* $$n$$ — liczba naturalna, ilość elementów w tablicy
-* $$A[1..n]$$ — tablica $$n$$ wartości całkowitych
-
-### Wynik
-
-* Posortowana niemalejąco tablica $$A$$
-
 ## Rozwiązanie
 
 ### Pseudokod

@@ -22,17 +22,6 @@ Poniżej znajdziesz animacje przedstawiające ideę omawianego algorytmu.
 [Taneczne sortowanie](https://www.youtube.com/watch?v=ROalU379l3U)
 {% endembed %}
 
-## Specyfikacja
-
-### Dane
-
-* $$n$$ — liczba naturalna, ilość elementów w tablicy
-* $$A[1..n]$$ — tablica $$n$$ wartości całkowitych
-
-### Wynik
-
-* Posortowana niemalejąco tablica $$A$$
-
 ## Rozwiązanie
 
 Zaczynamy od drugiego elementu tablicy. Będziemy go przesuwać w lewo tak długo, aż nie trafi na swoje miejsce. Innymi słowy będziemy przesuwać go w lewo, dopóki nie trafi na początek tablicy i dopóki element po jego lewej stronie będzie większy. I tak postępujemy z każdym kolejnym elementem tablicy.

@@ -9,3 +9,16 @@ Istnieje wiele algorytmów sortowania. Jedne prostsze, inne trudniejsze. Jedne w
 {% embed url="https://www.toptal.com/developers/sorting-algorithms" %}
 Porównanie algorytmów sortowania
 {% endembed %}
+
+## Specyfikacja
+
+W naszych algorytmach sortowania będziemy trzymać się poniższej specyfikacji danych wejściowych i wyniku. Niektóre algorytmy, np. ze względu na swoją rekurencyjną naturę, będą potrzebowały jeszcze dodatkowych parametrów, ale ogólny schemat pozostaje ten sam, nie będziemy więc go powielać przy omawianiu każdego algorytmu.
+
+### Dane
+
+* $$n$$ — liczba naturalna, ilość elementów w tablicy
+* $$A[1..n]$$ — tablica $$n$$ wartości całkowitych
+
+### Wynik
+
+* Posortowana niemalejąco tablica $$A$$

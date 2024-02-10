@@ -18,17 +18,6 @@ Poniżej znajdziesz animacje przedstawiające ideę omawianego algorytmu.
 [Taneczne sortowanie](https://www.youtube.com/watch?v=lyZQPjUT5B4)
 {% endembed %}
 
-## Specyfikacja
-
-### Dane
-
-* $$n$$ — liczba naturalna, ilość elementów w tablicy.
-* $$A[1..n]$$ — tablica $$n$$ wartości całkowitych.
-
-### Wynik
-
-* Posortowana niemalejąco tablica $$A$$.
-
 ## Rozwiązanie 1: naiwne
 
 Istnieje kilka sposobów na implementację algorytmu sortowania bąbelkowego: mniej i bardziej wydajne. Zaczniemy od najprostszej, ale także najmniej efektywnej wersji algorytmu. Na początek zauważmy, co jest główną operacją w tej metodzie: porównywanie sąsiednich elementów i ewentualna zamiana ich miejscami. Tak, w tym sortowaniu wykorzystujemy tak naprawdę tylko jedną operację, powtarzaną wielokrotnie. Będziemy porównywać dwa sąsiednie elementy, by sprawdzić, czy są ułożone we właściwej kolejności. Gdy napotkamy wartości, które są w niewłaściwej kolejności, to zamieniamy je miejscami. I tak sprawdzamy **wszystkie** pary sąsiednich elementów, tzn. najpierw porównujemy dwa pierwsze, potem drugi z trzecim, trzeci z czwartym itd. W ten sposób przechodzimy od początku do końca naszej tablicy elementów. Oczywiście w trakcie naszego porównywania elementy mogą zmieniać swoje miejsce.

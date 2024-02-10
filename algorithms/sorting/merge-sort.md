@@ -31,17 +31,6 @@ Sortowanie przez scalanie - prezentacja
 [Taneczne sortowanie](https://www.youtube.com/watch?v=XaqR3G_NVoo)
 {% endembed %}
 
-## Specyfikacja
-
-### Dane
-
-* $$n$$ — liczba naturalna, ilość elementów w tablicy.
-* $$A[1..n]$$ — tablica $$n$$ wartości całkowitych.
-
-### Wynik
-
-* Posortowana niemalejąco tablica $$A$$.
-
 ## Rozwiązanie
 
 Nasza implementacja algorytmu sortowania przez scalanie składa się z dwóch części:

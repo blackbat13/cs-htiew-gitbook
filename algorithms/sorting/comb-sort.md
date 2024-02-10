@@ -16,17 +16,6 @@ Poniżej znajdziesz animację przedstawiającą ideę omawianego algorytmu.
 Sortowanie grzebieniowe
 {% endembed %}
 
-## Specyfikacja
-
-### Dane
-
-* $$n$$ — liczba naturalna, ilość elementów w tablicy.
-* $$A[1..n]$$ — tablica $$n$$ wartości całkowitych.
-
-### Wynik
-
-* Posortowana niemalejąco tablica $$A$$.
-
 ## Rozwiązanie
 
 ### Pseudokod

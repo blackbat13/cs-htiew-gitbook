@@ -26,17 +26,6 @@ Sortowanie szybkie - prezentacja
 [Taneczne sortowanie](https://www.youtube.com/watch?v=ywWBy6J5gz8)
 {% endembed %}
 
-## Specyfikacja
-
-### Dane
-
-* $$n$$ — liczba naturalna, ilość elementów w tablicy
-* $$A[1..n]$$ — tablica $$n$$ wartości całkowitych
-
-### Wynik
-
-* Posortowana niemalejąco tablica $$A$$
-
 ## Rozwiązanie
 
 ### Pseudokod
