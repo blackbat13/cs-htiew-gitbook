@@ -2,6 +2,14 @@
 
 Problem $$n$$ królowych to jeden z klasycznych problemów algorytmicznych związanych z szachami. Problem brzmi następująco: mając szachownicę $$n\times n$$ oraz $$n$$ królowych, czy można ustawić **wszystkie** królowe na szchownicy, tak by **żadne** dwie się wzajemnie nie atakowały?
 
+Zaczniemy od przytoczenia tanecznego przeszukiwania, które demonstruje działanie algorytmu dla szachownicy $$4\times 4$$ oraz $$4$$ królowych. Następnie przejdziemy do formalnej specyfikacji.
+
+## Taneczne przeszukiwanie
+
+{% embed url="https://www.youtube.com/watch?v=R8bM6pxlrLY" %}
+[Taneczne przeszukiwanie](https://www.youtube.com/watch?v=R8bM6pxlrLY)
+{% endembed %}
+
 ## Specyfikacja
 
 ### Dane
