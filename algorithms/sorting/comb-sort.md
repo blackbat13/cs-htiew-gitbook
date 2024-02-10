@@ -10,10 +10,16 @@ Algorytm sortowania grzebieniowego działa poprzez porównywanie elementów oddz
 
 Poniżej znajdziesz animację przedstawiającą ideę omawianego algorytmu.
 
-## Animacja
+## Animacja 1
 
 {% embed url="https://blackbat13.github.io/visul2/sorting/comb_sort/#array=%5B6%2C5%2C3%2C1%2C8%2C7%2C2%2C4%5D" %}
 Sortowanie grzebieniowe
+{% endembed %}
+
+## Animacja 2
+
+{% embed url="https://www.youtube.com/watch?v=ob49RukGnAw" %}
+[Animacja sortowania grzebieniowego](https://www.youtube.com/watch?v=ob49RukGnAw)
 {% endembed %}
 
 ## Rozwiązanie
