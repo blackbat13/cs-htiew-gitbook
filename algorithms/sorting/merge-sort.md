@@ -15,9 +15,15 @@ Główne etapy tego algorytmu to:
 
 Poniżej znajdziesz animację przedstawiającą ideę omawianego algorytmu, a także prezentację, na której poszczególne kroki algorytmu są wyjaśnione w jak najprostszy sposób.
 
-## Animacja
+## Animacja 1
 
 ![By Swfung8 - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=14961648](../../.gitbook/assets/Merge-sort-example-300px.gif)
+
+## Animacja 2
+
+{% embed url="https://www.youtube.com/watch?v=ZRPoEKHXTJg" %}
+[Animacja sortowania przez scalanie](https://www.youtube.com/watch?v=ZRPoEKHXTJg)
+{% endembed %}
 
 ## Prezentacja
 
