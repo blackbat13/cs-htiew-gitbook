@@ -4,9 +4,15 @@ Wyobraźmy sobie gnoma, który zarządza swoim ogródkiem, a konkretnie ustawia 
 
 Poniżej znajdziesz animację przedstawiającą ideę omawianego algorytmu.
 
-## Animacja
+## Animacja 1
 
 {% embed url="https://blackbat13.github.io/visul2/sorting/gnome_sort/#array=%5B6%2C5%2C3%2C1%2C8%2C7%2C2%2C4%5D" %}
+
+## Animacja 2
+
+{% embed url="https://www.youtube.com/watch?v=EdcWAw4Hcu0" %}
+[Animacja sortowania gnoma](https://www.youtube.com/watch?v=EdcWAw4Hcu0)
+{% endembed %}
 
 ## Rozwiązanie
 
