@@ -17,6 +17,12 @@ Poniżej znajdziesz animację przedstawiającą ideę omawianego algorytmu
 
 ![By Swfung8 — Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=14957305](../../.gitbook/assets/Heapsort-example.gif)
 
+## Taneczne sortowanie
+
+{% embed url="https://www.youtube.com/watch?v=Xw2D9aJRBY4" %}
+[Taneczne sortowanie](https://www.youtube.com/watch?v=Xw2D9aJRBY4)
+{% endembed %}
+
 ## Specyfikacja
 
 ### Dane

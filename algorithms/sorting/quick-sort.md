@@ -20,6 +20,12 @@ Poniżej znajdziesz prezentację, na której poszczególne kroki algorytmu są w
 Sortowanie szybkie - prezentacja
 {% endfile %}
 
+## Taneczne sortowanie
+
+{% embed url="https://www.youtube.com/watch?v=ywWBy6J5gz8" %}
+[Taneczne sortowanie](https://www.youtube.com/watch?v=ywWBy6J5gz8)
+{% endembed %}
+
 ## Specyfikacja
 
 ### Dane

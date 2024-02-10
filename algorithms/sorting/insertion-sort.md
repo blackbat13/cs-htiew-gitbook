@@ -16,6 +16,12 @@ Poniżej znajdziesz animacje przedstawiające ideę omawianego algorytmu.
 
 {% embed url="https://blackbat13.github.io/visul2/sorting/insertion_sort/#array=%5B6%2C5%2C3%2C1%2C8%2C7%2C2%2C4%5D" %}
 
+## Taneczne sortowanie
+
+{% embed url="https://www.youtube.com/watch?v=ROalU379l3U" %}
+[Taneczne sortowanie](https://www.youtube.com/watch?v=ROalU379l3U)
+{% endembed %}
+
 ## Specyfikacja
 
 ### Dane

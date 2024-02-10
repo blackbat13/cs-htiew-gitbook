@@ -25,6 +25,12 @@ Poniżej znajdziesz animację przedstawiającą ideę omawianego algorytmu, a ta
 Sortowanie przez scalanie - prezentacja
 {% endfile %}
 
+## Taneczne sortowanie
+
+{% embed url="https://www.youtube.com/watch?v=XaqR3G_NVoo" %}
+[Taneczne sortowanie](https://www.youtube.com/watch?v=XaqR3G_NVoo)
+{% endembed %}
+
 ## Specyfikacja
 
 ### Dane
