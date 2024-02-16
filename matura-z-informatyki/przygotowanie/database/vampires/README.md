@@ -108,7 +108,7 @@ Wypisz imiona wszystkich ofiar, które zginęły bezpośrednio w wyniku ataku, t
 
 ### Zadanie 9
 
-Utwórz zestawienie zawierające nazwę kraju, liczbę wampirów pochodzących z tego kraju, liczbę klanów założonych w tym klanie, oraz liczbę ataków przeprowadzonych w tym kraju. Posortuj alfabetycznie po nazwie kraju.
+Utwórz zestawienie zawierające nazwę kraju, liczbę wampirów pochodzących z tego kraju, liczbę klanów założonych w tym kraju, oraz liczbę ataków przeprowadzonych w tym kraju. Posortuj alfabetycznie po nazwie kraju.
 
 ### Zadanie 10
 
