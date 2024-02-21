@@ -384,6 +384,7 @@
     * [Instrukcje warunkowe](programming/python/introduction/condittional-instruction.md)
     * [Pętle](programming/python/introduction/loops.md)
     * [Listy](programming/python/introduction/lists.md)
+    * [Słowniki](programming/python/introduction/dictionaries.md)
     * [Funkcje](programming/python/introduction/functions.md)
     * [Pliki](programming/python/introduction/files.md)
     * [Wydajność](programming/python/introduction/performance.md)
