@@ -67,13 +67,19 @@ Domyślnie wartości w krotkach indeksujemy od 0. Jeśli chcemy, aby wartości m
 from collections import namedtuple
 
 
-Point = namedtuple("x", "y")
+Point = namedtuple('Point', ['x', 'y'])
 ```
 
 Teraz możemy tworzyć własne *punkty*.
 
 ```python
 point = Point(2, 6)
+```
+
+Możemy także je tworzyć podając argumenty po nazwie.
+
+```python
+point = Point(x = 2, y = 6)
 ```
 
 Możemy także z łatwością odwoływać się do wartości w naszej krotce, podając po kropce nazwę wartości, którą chcemy odczytać.
