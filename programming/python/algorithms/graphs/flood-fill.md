@@ -12,6 +12,7 @@
 ```python
 from pprint import pprint
 
+
 def flood_fill(image, row, column, symbol="*"):
     if image[row][column] != " ":
         return
