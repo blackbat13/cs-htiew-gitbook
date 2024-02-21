@@ -145,5 +145,5 @@ from collections import defaultdict
 
 letters_dict = defaultdict(int)
 
-print(letters_dict["a"])
+print(letters_dict["a"])  # Wypisze 0
 ```
