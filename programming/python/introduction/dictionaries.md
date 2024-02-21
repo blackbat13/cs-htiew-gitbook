@@ -126,3 +126,24 @@ Alternatywnie możemy także przejść bezpośrednio po parach klucz-wartość k
 for letter, value in letters_dict.items():
     print(letter, value)
 ```
+
+## Słownik z wartością domyślną
+
+Klasyczny słownik w Pythonie nie ma wartości domyślnej. Oznacza to, że jak spróbujemy się odwołać do klucza, który nie został do słownika dodany, to zakończy się to błędem.
+
+```python
+letters_dict = dict()
+
+print(letters_dict["a"])
+```
+
+Możemy jednak skorzystać ze struktury `defaultdict` z biblioteki `collections`. Ta struktura przyjmuje w konstruktorze funkcję, która będzie wykonywana w przypadku, gdy odwołamy się do nieistniejącego w słowniku klucza. Jako funkcję możemy podać np. `int`. Wówczas domyślną wartością dla *nieistniejącego* klucza będzie zero. Podobnie byłoby np. z `list`, wówczas domyślną wartością będzie pusta lista.
+
+```python
+from collections import defaultdict
+
+
+letters_dict = defaultdict(int)
+
+print(letters_dict["a"])
+```
