@@ -157,19 +157,27 @@ Rozwiązanie
 ### Zadanie 7.1
 
 ```sql
-SELECT DISTINCT Magazyn_koncowy FROM Magazyny JOIN Kursy ON Magazyny.Nazwa = Kursy.Magazyn_poczatkowy WHERE Adres LIKE '*Toruń*';
+SELECT DISTINCT Magazyn_koncowy 
+    FROM Magazyny 
+        JOIN Kursy ON Magazyny.Nazwa = Kursy.Magazyn_poczatkowy 
+    WHERE Adres LIKE '*Toruń*';
 ```
 
 ### Zadanie 7.2
 
 ```sql
-SELECT DISTINCT Model FROM Pojazdy WHERE Ladownosc <= 3.5;
+SELECT DISTINCT Model
+    FROM Pojazdy 
+    WHERE Ladownosc <= 3.5;
 ```
 
 ### Zadanie 7.3
 
 ```sql
-SELECT Magazyn_poczatkowy, Magazyn_koncowy, COUNT(Lp) as Liczba_kursow, SUM(Data_przyjazdu - Data_wyjazdu) as Laczny_czas FROM Kursy GROUP BY Magazyn_poczatkowy, Magazyn_koncowy ORDER BY Liczba_kursow DESC, Magazyn_poczatkowy ASC;
+SELECT Magazyn_poczatkowy, Magazyn_koncowy, COUNT(Lp) as Liczba_kursow, SUM(Data_przyjazdu - Data_wyjazdu) as Laczny_czas 
+    FROM Kursy
+    GROUP BY Magazyn_poczatkowy, Magazyn_koncowy 
+    ORDER BY Liczba_kursow DESC, Magazyn_poczatkowy ASC;
 ```
 
 ## Zadanie 8
