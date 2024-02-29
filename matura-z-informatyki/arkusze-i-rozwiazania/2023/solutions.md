@@ -46,6 +46,11 @@ b) $$10, 8, 4, 6, 15, 12, 13$$
 
 #### Python
 
+{% tabs %}
+
+{% tab title="Python" %} 
+
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 with open("bin.txt") as input_file:
   binary_list = input_file.read().split()
@@ -58,11 +63,19 @@ for bn in binary_list:
 
 print(result)
 ```
+{% endcode %}
+
+{% endtab %}
+
+{% endtabs %}
 
 ### 2.3
 
-#### Python
+{% tabs %}
 
+{% tab title="Python" %} 
+
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 with open("bin.txt") as input_file:
   binary_list = input_file.read().split()
@@ -71,6 +84,11 @@ binary_list.sort(key=lambda el: int(el, 2))
 
 print(binary_list[-1])
 ```
+{% endcode %}
+
+{% endtab %}
+
+{% endtabs %}
 
 ### 2.4
 
@@ -78,8 +96,11 @@ $$(123_{10} \oplus 101101_2) \oplus 2D_{16} = 123_{10}$$
 
 ### 2.5
 
-#### Python
+{% tabs %}
 
+{% tab title="Python" %} 
+
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 with open("bin.txt") as input_file:
   binary_list = input_file.read().split()
@@ -88,6 +109,11 @@ for bn in binary_list:
   result = str(bin(int(bn, 2) ^ (int(bn, 2) // 2))).lstrip("0b")
   print(result)
 ```
+{% endcode %}
+
+{% endtab %}
+
+{% endtabs %}
 
 ## Zadanie 3
 
@@ -161,5 +187,8 @@ Rozwiązanie - Access
 ### 7.5
 
 ```SQL
-SELECT SUM(cena) FROM Sklep LEFT JOIN Gry USING(id_gry) WHERE kategoria="logiczna" AND promocja=true;
+SELECT SUM(cena) 
+  FROM Sklep 
+    LEFT JOIN Gry USING(id_gry) 
+  WHERE kategoria="logiczna" AND promocja=true;
 ```
