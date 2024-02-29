@@ -1203,7 +1203,7 @@
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2017-probna-pti/solutions.md)
   * [2017](matura-z-informatyki/arkusze-i-rozwiazania/2017/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2017/solutions.md)
-  * [2017](matura-z-informatyki/arkusze-i-rozwiazania/2017-czerwiec-cke/README.md)
+  * [2017 - czerwiec](matura-z-informatyki/arkusze-i-rozwiazania/2017-czerwiec-cke/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2017-czerwiec-cke/solutions.md)
   * [2018 - próbna PTI](matura-z-informatyki/arkusze-i-rozwiazania/2018-probna-pti/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2018-probna-pti/solutions.md)
