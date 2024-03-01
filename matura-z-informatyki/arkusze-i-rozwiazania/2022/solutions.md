@@ -16,8 +16,11 @@ TODO
 
 ### 4.1
 
-#### Python
+{% tabs %}
 
+{% tab title="Python" %} 
+
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 with open("liczby.txt") as input_file:
   input_list = input_file.read().split()
@@ -33,11 +36,19 @@ for el in input_list:
 
 print(result, first)
 ```
+{% endcode %}
+
+{% endtab %}
+
+{% endtabs %}
 
 ### 4.2
 
-#### Python
+{% tabs %}
 
+{% tab title="Python" %} 
+
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
 def compute_prime_factors(number):
   prime = 2
@@ -78,6 +89,11 @@ for number in numbers_list:
 
 print(max_prime_factors_number, max_prime_factors, max_unique_prime_factors_number, max_unique_prime_factors)
 ```
+{% endcode %}
+
+{% endtab %}
+
+{% endtabs %}
 
 ### 4.3
 
