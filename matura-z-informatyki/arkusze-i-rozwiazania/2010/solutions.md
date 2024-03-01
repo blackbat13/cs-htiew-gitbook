@@ -4,59 +4,150 @@
 
 ### Zadanie 4
 
-#### Python
+#### a)
 
-##### 4a
+{% tabs %}
 
-```python
-file = open("anagram.txt")
+{% tab title="C++" %}
 
-data = file.read().split("\n")
+{% code overflow="wrap" lineNumbers="true" %}
+```cpp
+#include <iostream>
+#include <fstream>
 
-file.close()
+using namespace std;
 
-#  print(data)
+int main()
+{
+    ifstream file("anagram.txt");
+    for(int row = 0; row < 200; row++) {
+        string words[5];
+        for(int word_num = 0; word_num < 5; word_num++) {
+            file >> words[word_num];
+        }
 
-# Dla każdej linii/wiersza z pliku wejściowego
-for line in data:
-    # Tworzymy listę wyrazów z linii
-    words = line.split(" ")
-    length = len(words[0])  # Przyjmujemy długość pierwszego wyrazu jako "właściwą"
-    ok = True  # Zakładamy, że wszystko jest ok - takie same długości wyrazów
-    for w in words:  # Przechodzimy przez wszystkie wyrazy w linii i szukamy kontrprzykładu
-        if len(w) != length:
-            ok = False
-            break  # opcjonalnie
+        int word_length = words[0].length();
+        bool same_length = true;
+        for(int word_num = 1; word_num < 5; word_num++) {
+            if(words[word_num].length() != word_length) {
+                same_length = false;
+                break;
+            }
+        }
 
-    if ok:  # Jeżeli jest ok - wszystkie wyrazy mają taką samą długość w wierszu
-        print(line)
+        if(same_length) {
+            for(auto word : words) {
+                cout << word << " ";
+            }
+
+            cout << endl;
+        }
+    }
+
+    file.close();
+
+    return 0;
+}
 ```
+{% endcode %}
 
-##### 4b
+{% endtab %}
 
+{% tab title="Python" %} 
+
+{% code overflow="wrap" lineNumbers="true" %}
 ```python
-file = open("anagram.txt")
+with open("anagram.txt") as file:
+    for line in file:
+        words = line.split()
+        word_length = len(words[0])
+        same_length = True
+        for word in words:
+            if len(word) != word_length:
+                same_length = False
+                break
 
-data = file.read().split("\n")
-
-file.close()
-
-#  print(data)
-
-# Dla każdej linii/wiersza z pliku wejściowego
-for line in data:
-    # Tworzymy listę wyrazów z linii
-    words = line.split(" ")
-    word_sorted = sorted(words[0])  # Zapamiętujemy posortowaną reprezentację pierwszego wyrazu
-    ok = True  # Zakładamy, że wszystko jest ok - anagramy
-    for w in words:  # Przechodzimy przez wszystkie wyrazy w linii i szukamy kontrprzykładu
-        if sorted(w) != word_sorted:
-            ok = False
-            break  # opcjonalnie
-
-    if ok:  # Jeżeli jest ok - wszystkie wyrazy w wierszu są anagramami
-        print(line)
+        if same_length:
+            print(*words)
 ```
+{% endcode %}
+
+{% endtab %}
+
+{% endtabs %}
+
+#### b)
+
+{% tabs %}
+
+{% tab title="C++" %}
+
+{% code overflow="wrap" lineNumbers="true" %}
+```cpp
+#include <iostream>
+#include <fstream>
+#include <algorithm>
+
+using namespace std;
+
+int main()
+{
+    ifstream file("anagram.txt");
+    for(int row = 0; row < 200; row++) {
+        string words[5], sorted_words[5];
+        for(int word_num = 0; word_num < 5; word_num++) {
+            file >> words[word_num];
+            sorted_words[word_num] = words[word_num];
+            sort(sorted_words[word_num].begin(), sorted_words[word_num].end());
+        }
+
+        bool anagrams = true;
+        for(int word_num = 1; word_num < 5; word_num++) {
+            if(sorted_words[word_num] != sorted_words[0]) {
+                anagrams = false;
+                break;
+            }
+        }
+
+        if(anagrams) {
+            for(auto word : words) {
+                cout << word << " ";
+            }
+            cout << endl;
+        }
+    }
+
+    file.close();
+
+    return 0;
+}
+```
+{% endcode %}
+
+{% endtab %}
+
+{% tab title="Python" %} 
+
+{% code overflow="wrap" lineNumbers="true" %}
+```python
+with open("anagram.txt") as file:
+    for line in file:
+        words = line.split()
+        words_sorted = [sorted(word) for word in words]
+        anagrams = True
+        for word in words_sorted:
+            if word != words_sorted[0]:
+                anagrams = False
+                break
+
+        if anagrams:
+            print(*words)
+```
+{% endcode %}
+
+{% endtab %}
+
+{% endtabs %}
 
 ### Zadanie 6
 
