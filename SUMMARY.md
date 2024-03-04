@@ -1134,9 +1134,11 @@
       * [Rozwiązanie - C++](matura-z-informatyki/przygotowanie/programming/names/solution-cpp.md)
       * [Rozwiązanie - Python](matura-z-informatyki/przygotowanie/programming/names/solution-python.md)
     * [Sekwencje](matura-z-informatyki/przygotowanie/programming/sequences/README.md)
+      * [Odpowiedzi](matura-z-informatyki/przygotowanie/programming/sequences/answers.md)
+      * [Rozwiązanie - Python](matura-z-informatyki/przygotowanie/programming/sequences/solution-python.md)
     * [Liczby całkowite](matura-z-informatyki/przygotowanie/programming/integers/README.md)
       * [Odpowiedzi](matura-z-informatyki/przygotowanie/programming/integers/answers.md)
-      <!-- * [Rozwiązanie - Python](matura-z-informatyki/przygotowanie/programming/integers/solution-python.md) -->
+      * [Rozwiązanie - Python](matura-z-informatyki/przygotowanie/programming/integers/solution-python.md)
     * [Zakupy](matura-z-informatyki/przygotowanie/programming/groceries/README.md)
       * [Odpowiedzi](matura-z-informatyki/przygotowanie/programming/groceries/answers.md)
     * [Punkty](matura-z-informatyki/przygotowanie/programming/points/README.md)
