@@ -1135,6 +1135,7 @@
       * [Rozwiązanie - Python](matura-z-informatyki/przygotowanie/programming/names/solution-python.md)
     * [Sekwencje](matura-z-informatyki/przygotowanie/programming/sequences/README.md)
       * [Odpowiedzi](matura-z-informatyki/przygotowanie/programming/sequences/answers.md)
+      * [Rozwiązanie - C++](matura-z-informatyki/przygotowanie/programming/sequences/solution-cpp.md)
       * [Rozwiązanie - Python](matura-z-informatyki/przygotowanie/programming/sequences/solution-python.md)
     * [Liczby całkowite](matura-z-informatyki/przygotowanie/programming/integers/README.md)
       * [Odpowiedzi](matura-z-informatyki/przygotowanie/programming/integers/answers.md)
