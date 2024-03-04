@@ -1142,7 +1142,7 @@
       * [Rozwiązanie - Python](matura-z-informatyki/przygotowanie/programming/integers/solution-python.md)
     * [Zakupy](matura-z-informatyki/przygotowanie/programming/groceries/README.md)
       * [Odpowiedzi](matura-z-informatyki/przygotowanie/programming/groceries/answers.md)
-    * [Punkty](matura-z-informatyki/przygotowanie/programming/points/README.
+    * [Punkty](matura-z-informatyki/przygotowanie/programming/points/README.md)
       * [Odpowiedzi](matura-z-informatyki/przygotowanie/programming/points/answers.md)
     * [Labirynt](matura-z-informatyki/przygotowanie/programming/maze/README.md)
       * [Odpowiedzi](matura-z-informatyki/przygotowanie/programming/maze/answers.md)
