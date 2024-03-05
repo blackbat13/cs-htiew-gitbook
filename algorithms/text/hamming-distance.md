@@ -14,9 +14,9 @@ Niech $$s_1 = "karol"$$ i $$s_2 = "koral"$$. Odległość Hamminga dla tych cią
 
 ## Zastosowania
 
-- **Korekcja błędów**: Kody Hamminga są używane do korekcji błędów w systemach komunikacji. Pozwalają na korekcję pojedynczych błędów i wykrywanie dwóch błędów.
-- **Bioinformatyka**: Odległość Hamminga może być używana do porównywania sekwencji DNA.
-- **Kryptografia**: W niektórych schematach kryptograficznych odległość Hamminga między dwoma ciągami może dostarczyć informacji o stopniu podobieństwa tych ciągów, co może być używane do analizy błędów lub ataków.
+- **Korekcja błędów**: odległość Hamminga może być używana do korekcji błędów w systemach komunikacji, jako że pozwala na wykrywanie i korekcję pojedynczych błędów.
+- **Bioinformatyka**: odległość Hamminga może być używana do porównywania sekwencji DNA.
+- **Kryptografia**: w niektórych schematach kryptograficznych odległość Hamminga między dwoma ciągami może dostarczyć informacji o stopniu podobieństwa tych ciągów, co może być używane do analizy błędów lub ataków.
 
 ## Specyfikacja
 
