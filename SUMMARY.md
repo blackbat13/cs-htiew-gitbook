@@ -1166,6 +1166,7 @@
       * [Rozwiązanie](matura-z-informatyki/przygotowanie/spreadsheet/bakery/solution.md)
     * [Trawniki](matura-z-informatyki/przygotowanie/spreadsheet/lawns/README.md)
       * [Odpowiedzi](matura-z-informatyki/przygotowanie/spreadsheet/lawns/answers.md)
+    * [Restauracja](matura-z-informatyki/przygotowanie/spreadsheet/restaurant/README.md)
   * [Baza danych](matura-z-informatyki/przygotowanie/database/README.md)
     * [Wampiry](matura-z-informatyki/przygotowanie/database/vampires/README.md)
       * [Odpowiedzi](matura-z-informatyki/przygotowanie/database/vampires/answers.md)
