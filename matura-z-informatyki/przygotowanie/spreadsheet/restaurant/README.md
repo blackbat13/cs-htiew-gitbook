@@ -84,6 +84,8 @@ Napiwki są zawsze zaokrąglane **w górę** do pełnych groszy.
 
 Oblicz wysokość napiwków dla każdego miesiąca z podziałem na stoliki.
 
+W styczniu wysokość napiwków ze stolika pierwszego wynosiła $$24,14$$ złotych.
+
 ## Zadanie 7
 
 Właściciel restauracji postanawia wprowadzić następującą promocję: każde zamówienie składające się z conajmniej dwóch pozycji (danie główne, przystawka, deser) będzie objęte zniżką wynoszącą 15% kwoty całego zamówienia (zaokrąglonej **w dół** do pełnych groszy). Promocja nie ma trwać jednak cały dzień, a w wybranych dwóch pełnych godzinach w ciągu dnia. Przeprowadź analizę, o ile mniejsze byłyby przychody restauracji po wprowadzeniu tej promocji dla każdego przedziału dwugodzinnego w ciągu dnia w godzinach działania restauracji, tzn. od 10:00:00 do 11:59:59, od 11:00:00 do 12:59:59 itd. aż do przedziału od 22:00:00 do 23:59:59.
