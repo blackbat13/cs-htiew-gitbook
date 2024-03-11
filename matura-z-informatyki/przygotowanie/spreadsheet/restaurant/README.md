@@ -1,6 +1,6 @@
 # Restauracja
 
-W pliku *restaurant.txt* znajdują się dane o zamówieniach pewnej restauracji z 2023 roku. Każda linia zawiera dane jednego zamówienia:
+W pliku *restaurant.txt* znajdują się dane o zamówieniach pewnej restauracji z 2023 roku. Restauracja jest otwierana każdego dnia o 10:00:00, a zamykana o 00:00:00. Każda linia zawiera dane jednego zamówienia:
 
 - numer stolika: liczba naturalna od 1 do 10
 - kwota zamówienia: liczba rzeczywista z dokładnością do 2 miejsc po przecinku
@@ -14,7 +14,7 @@ Dane są rodzielone średnikami. Pierwszy wiersz pliku zawiera nazwy kolumn.
 restaurant.txt
 {% endfile %}
 
-Rodzaj zamówienia zakodowany jest za pomocą liczby naturalnej. Zapis binarny tej liczby na 5 bitach zawiera informacje o tym, co zostało zamówione. Jedynka na danym miejscu oznacza, że została zamówiona pozycja z menu odpowiadająca danemu miejscu. Idąc od bitu najmniej znaczącego, kolejne pozycje odpowiadają następującym kategoriom:
+Rodzaj zamówienia zakodowany jest za pomocą liczby naturalnej. Zapis binarny tej liczby na 5 bitach zawiera informacje o tym, co zostało zamówione. Jedynka na danym miejscu oznacza, że została zamówiona pozycja z menu odpowiadająca danemu miejscu. Idąc od bitu **najmniej znaczącego**, kolejne pozycje odpowiadają następującym kategoriom:
 
 - napój ciepły
 - napój zimny
@@ -68,3 +68,22 @@ Wynik dla stycznia:
 ## Zadanie 5
 
 Zbadaj, które kombinacje zamówień (np. napój ciepły + danie główne, przystawka + deser) są najpopularniejsze, tzn. były najczęściej zamawiane. Jeżeli jest kilka takich kombinacji, to podaj wszystkie.
+
+**Najmniej popularne** zamówienie składało się z samego napoju ciepłego.
+
+## Zadanie 6
+
+Klienci restauracji zwyczajowo zostawiają napiwki po każdym zamówieniu. Wysokość napiwków zależy od złożonego zamówienia:
+
+- jeżeli zamówienie zawierało danie główne, przystawkę oraz deser, to napiwki wynoszą 20% z kwoty zamówienia,
+- jeżeli zamówienie zawierało dokładnie dwie z następujących pozycji: danie główne, przystawkę, deser (napój nie ma znaczenia), to napiwki wynoszą 10% z kwoty zamówienia,
+- jeżeli zamówienie zawierało dokładnie jedno z następujących pozycji: danie główne, przystawkę, deser (napój nie ma znaczenia), to napiwki wynoszą 5% z kwoty zamówienia,
+- jeżeli zamówienie zawierało jedynie napój, to napiwki wynoszą 2% z kwoty zamówienia.
+
+Napiwki są zawsze zaokrąglane **w górę** do pełnych groszy.
+
+Oblicz wysokość napiwków dla każdego miesiąca z podziałem na stoliki.
+
+## Zadanie 7
+
+Właściciel restauracji postanawia wprowadzić następującą promocję: każde zamówienie składające się z conajmniej dwóch pozycji (danie główne, przystawka, deser) będzie objęte zniżką wynoszącą 15% kwoty całego zamówienia (zaokrąglonej **w dół** do pełnych groszy). Promocja nie ma trwać jednak cały dzień, a w wybranych dwóch pełnych godzinach w ciągu dnia. Przeprowadź analizę, o ile mniejsze byłyby przychody restauracji po wprowadzeniu tej promocji dla każdego przedziału dwugodzinnego w ciągu dnia w godzinach działania restauracji, tzn. od 10:00:00 do 11:59:59, od 11:00:00 do 12:59:59 itd. aż do przedziału od 22:00:00 do 23:59:59.
