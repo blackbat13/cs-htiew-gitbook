@@ -51,7 +51,7 @@
 |     lis     |                  15                  |                      10                     |                      23                      |                    20                   |
 |     gru     |                  19                  |                      20                     |                      28                      |                    18                   |
 
-![](../../../../.gitbook/assets/restaurant/zad2_wykres.png)
+![](../../../../.gitbook/assets/restaurant/zad4_wykres.png)
 
 ## Zadanie 5
 
