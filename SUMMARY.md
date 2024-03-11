@@ -1163,6 +1163,7 @@
     * [Książki](matura-z-informatyki/przygotowanie/spreadsheet/books/README.md)
       * [Rozwiązanie](matura-z-informatyki/przygotowanie/spreadsheet/books/solution.md)
     * [Piekarnia](matura-z-informatyki/przygotowanie/spreadsheet/bakery/README.md)
+      * [Odpowiedzi](matura-z-informatyki/przygotowanie/spreadsheet/bakery/answers.md)
       * [Rozwiązanie](matura-z-informatyki/przygotowanie/spreadsheet/bakery/solution.md)
     * [Trawniki](matura-z-informatyki/przygotowanie/spreadsheet/lawns/README.md)
       * [Odpowiedzi](matura-z-informatyki/przygotowanie/spreadsheet/lawns/answers.md)
