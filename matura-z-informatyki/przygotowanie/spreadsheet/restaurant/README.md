@@ -1,6 +1,6 @@
 # Restauracja
 
-W pliku *restaurant.txt* znajdują się dane o zamówieniach pewnej restauracji. Każda linia zawiera dane jednego zamówienia:
+W pliku *restaurant.txt* znajdują się dane o zamówieniach pewnej restauracji z 2023 roku. Każda linia zawiera dane jednego zamówienia:
 
 - numer stolika: liczba naturalna od 1 do 10
 - kwota zamówienia: liczba rzeczywista z dokładnością do 2 miejsc po przecinku
@@ -47,18 +47,24 @@ Dla pierwszych 100 wierszy wynik to:
 
 Znajdź, które godziny są najbardziej popularne wśród klientów, analizując czas zamówień. Wykonaj wykres prezentujący liczby zamówień dokonanych w każdej godzinie.
 
+O godzinie 10 złożonych zostało 80 zamówień.
+
 ## Zadanie 3
 
 Oblicz, ile zamówień zostało dokonanych w weekend (sobota-niedziela), a ile w dni robocze.
 
+Dla pierwszych 10 zamówień z pliku, cztery zostały dokonane w weekend.
+
 ## Zadanie 4
-
-Oblicz średnią wartość zamówienia z każdej kategorii dań dla każdego stolika. 
-
-## Zadanie 5
 
 Dla każdego miesiąca policz liczbę zamówień w następujących przedziałach cenowych: poniżej 50,00 zł, od 50,00 do 100,00 zł, od 100,01 do 150,00 zł i powyżej 150,00 zł. Dane przedstaw na wykresie.
 
-## Zadanie 6
+Wynik dla stycznia:
+
+| **Miesiąc** | **Liczba zamówień poniżej 50,00 zł** | **Liczba zamówień od 50,00 do   100,00 zł** | **Liczba zamówień od 100,01 do   150,00 zł** | **Liczba zamówień powyżej 150,00   zł** |
+|:-----------:|:------------------------------------:|:-------------------------------------------:|:--------------------------------------------:|:---------------------------------------:|
+|     styczeń     |                  $$20$$                  |                      $$19$$                     |                      $$16$$                      |                    $$17$$                   |
+
+## Zadanie 5
 
 Zbadaj, które kombinacje zamówień (np. napój ciepły + danie główne, przystawka + deser) są najpopularniejsze, tzn. były najczęściej zamawiane. Jeżeli jest kilka takich kombinacji, to podaj wszystkie.
