@@ -45,24 +45,20 @@ Dla pierwszych 100 wierszy wynik to:
 
 ## Zadanie 2
 
-Wykorzystując dane o zamówieniach, oblicz łączne przychody restauracji z każdej kategorii menu oraz całkowite przychody ze wszystkich zamówień. 
+Znajdź, które godziny są najbardziej popularne wśród klientów, analizując czas zamówień. Wykonaj wykres prezentujący liczby zamówień dokonanych w każdej godzinie.
 
 ## Zadanie 3
 
-Znajdź, które godziny są najbardziej popularne wśród klientów, analizując czas zamówień. Wykonaj wykres prezentujący liczby zamówień dokonanych w każdej godzinie.
+Oblicz, ile zamówień zostało dokonanych w weekend (sobota-niedziela), a ile w dni robocze.
 
 ## Zadanie 4
 
-Oblicz, ile zamówień zostało dokonanych w weekend (sobota-niedziela), a ile w dni robocze.
+Oblicz średnią wartość zamówienia z każdej kategorii dań dla każdego stolika. 
 
 ## Zadanie 5
 
-Oblicz średnią wartość zamówienia z każdej kategorii dań dla każdego stolika. 
-
-## Zadanie 6
-
 Dla każdego miesiąca policz liczbę zamówień w następujących przedziałach cenowych: poniżej 50,00 zł, od 50,00 do 100,00 zł, od 100,01 do 150,00 zł i powyżej 150,00 zł. Dane przedstaw na wykresie.
 
-## Zadanie 7
+## Zadanie 6
 
 Zbadaj, które kombinacje zamówień (np. napój ciepły + danie główne, przystawka + deser) są najpopularniejsze, tzn. były najczęściej zamawiane. Jeżeli jest kilka takich kombinacji, to podaj wszystkie.
