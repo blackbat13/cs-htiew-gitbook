@@ -1258,6 +1258,7 @@
 * [Moral Machine](https://www.moralmachine.net)
 * [Phishing Quiz](https://phishingquiz.withgoogle.com)
 * [Virus Simulation](https://blackbat13.github.io/VirusSimulation/)
+* [Zadania algorytmiczne](https://cses.fi/problemset/)
 
 ## Przydatne narzędzia
 
