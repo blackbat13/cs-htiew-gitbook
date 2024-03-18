@@ -2,7 +2,7 @@
 
 Pan Józef prowadzi piekarnię w małym miasteczku na uboczu. Piekarnia jest niewielka, a Pan Józef prowadzi ją sam, w związku z tym wypieka i sprzedaje jedynie chleb. Wypiek jednego bochenka kosztuje **$$50$$ groszy**. Ponieważ czasy są ciężkie, Pan Józef sprzedaje każdy bochenek po **$$2$$ złote**.
 
-Pan Józef każdego dnia, gdy piekarnia jest otwarta, wypieka **$$200$$ bochenków chleba**. Zazwyczaj nie udaje mu się niczego sprzedać, ale zaobserował, że:
+Pan Józef każdego dnia, gdy piekarnia jest otwarta, wypieka **$$200$$ bochenków chleba**. Zazwyczaj nie udaje mu się niczego sprzedać, ale zaobserwował, że:
 
 - w poniedziałki sprzedaje $$90\%$$ dostępnych w piekarni bochenków,
 - we wtorki i czwartki klienci kupują $$75\%$$ dostępnych w piekarni bochenków,
@@ -29,7 +29,7 @@ Pan Józef zauważył, że okoliczne zwierzęta stają się wyjątkowo otyłe. G
 
 Przeprowadź analizę dla 2018 roku, zgodnie z dodatkowymi założeniami:
 
-- chleb, który nie został sprzedany danego dnia, jest sprzedawany jako "wczorajszy" dnia następnego,
+- chleb, który nie został sprzedany danego dnia, jest sprzedawany jako "wczorajszy" dnia następnego, przy czym Pan Józef może przechowywać maksymalnie 100 bochenków "wczorajszego" chleba, wszelka nadwyżka służy za karmę dla okolicznych zwierząt,
 - sprzedaż w poszczególne dni tygodnia jest taka jak wcześniej, przy czym zawsze jako pierwszy sprzedawany jest chleb "wczorajszy", a dopiero potem świeży chleb,
 - jeżeli "wczorajszy" chleb nie zostanie w pełni sprzedany, to służy za karmę dla okolicznych zwierząt,
 - pierwszego stycznia w piekarni dostępny jest jedynie świeży chleb.
@@ -44,11 +44,12 @@ Podobnie jak w poprzednim zadaniu, oblicz:
 
 ## Zadanie 3
 
-Pan Józef jest zadowolony ze swojego pomysłu. Niedźwiedzie przestały się pojawiać, ponieważ dwudniowy chleb nie smakował im już aż tak bardzo. Pojawił się jednak pewien problem, a mianowicie **niedziele bez handlu**. Piekarnia może być otwarta jedynie w każdą **pierwszą niedzielę miesiąca**. Pomóż Panu Józefowi przeprowadzić analizę dla $$2019$$ roku, zakładając, że:
+Pan Józef jest zadowolony ze swojego pomysłu. Niedźwiedzie przestały się pojawiać. Pojawił się jednak pewien problem, a mianowicie **niedziele bez handlu**. Piekarnia może być otwarta jedynie w każdą **pierwszą niedzielę miesiąca**. Pomóż Panu Józefowi przeprowadzić analizę dla $$2019$$ roku, zakładając, że:
 
 - w niedziele bez handlu piekarnia jest zamknięta i nie sprzedaje, ani też nie wypieka chleba,
 - w każdą pierwszą niedzielę miesiąca handel jest prowadzony tak jak wcześniej (jak w zadaniu $$2$$),
-- w każdą sobotę, po której następuje **niedziela bez handlu**, piekarnia sprzedaje teraz **100\%** bochenków chleba na składzie.
+- w każdą sobotę, po której następuje **niedziela bez handlu**, piekarnia sprzedaje teraz **100\%** bochenków chleba na składzie,
+- pozostałe reguły są jak w poprzednim zadaniu.
 
 Oblicz:
 
