@@ -2,7 +2,7 @@
 
 Pan Józef prowadzi piekarnię w małym miasteczku na uboczu. Piekarnia jest niewielka, a Pan Józef prowadzi ją sam, w związku z tym wypieka i sprzedaje jedynie chleb. Wypiek jednego bochenka kosztuje **$$50$$ groszy**. Ponieważ czasy są ciężkie, Pan Józef sprzedaje każdy bochenek po **$$2$$ złote**.
 
-Pan Józef każdego dnia, gdy piekarnia jest otwarta, wypieka **$$200$$ bochenków chleba**. Zazwyczaj nie udaje mu się niczego sprzedać, ale zaobserwował, że:
+Pan Józef każdego dnia, gdy piekarnia jest otwarta, wypieka **$$200$$ bochenków chleba**. Zazwyczaj nie udaje mu się wszystkiego sprzedać, ale zaobserwował, że:
 
 - w poniedziałki sprzedaje $$90\%$$ dostępnych w piekarni bochenków,
 - we wtorki i czwartki klienci kupują $$75\%$$ dostępnych w piekarni bochenków,
