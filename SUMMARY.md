@@ -1165,20 +1165,12 @@
     * [Piekarnia](matura-z-informatyki/przygotowanie/spreadsheet/bakery/README.md)
       * [Odpowiedzi](matura-z-informatyki/przygotowanie/spreadsheet/bakery/answers.md)
       * [Rozwiązanie](matura-z-informatyki/przygotowanie/spreadsheet/bakery/solution.md)
-    <!-- * [Trawniki](matura-z-informatyki/przygotowanie/spreadsheet/lawns/README.md)
-      * [Odpowiedzi](matura-z-informatyki/przygotowanie/spreadsheet/lawns/answers.md) -->
     * [Restauracja](matura-z-informatyki/przygotowanie/spreadsheet/restaurant/README.md)
       * [Odpowiedzi](matura-z-informatyki/przygotowanie/spreadsheet/restaurant/answers.md)
   * [Baza danych](matura-z-informatyki/przygotowanie/database/README.md)
     * [Wampiry](matura-z-informatyki/przygotowanie/database/vampires/README.md)
       * [Odpowiedzi](matura-z-informatyki/przygotowanie/database/vampires/answers.md)
       * [Rozwiązanie](matura-z-informatyki/przygotowanie/database/vampires/solution.md)
-    <!-- * [Wypożyczalnia samochodów](matura-z-informatyki/przygotowanie/database/wypsa/README.md)
-      * [Odpowiedzi](matura-z-informatyki/przygotowanie/database/wypsa/answers.md)
-      * [Rozwiązanie](matura-z-informatyki/przygotowanie/database/wypsa/solution.md)
-    * [Kino](matura-z-informatyki/przygotowanie/database/cinema/README.md)
-      * [Odpowiedzi](matura-z-informatyki/przygotowanie/database/cinema/answers.md)
-      * [Rozwiązanie](matura-z-informatyki/przygotowanie/database/cinema/solution.md) -->
   * [SQL](matura-z-informatyki/przygotowanie/sql/README.md)
     * [Sklep](matura-z-informatyki/przygotowanie/sql/shop/README.md)
       * [Rozwiązanie](matura-z-informatyki/przygotowanie/sql/shop/solution.md)
@@ -1191,42 +1183,26 @@
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2011/solutions.md)
   * [2012](matura-z-informatyki/arkusze-i-rozwiazania/2012/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2012/solutions.md)
-  <!-- * [2013 - próbna PTI](matura-z-informatyki/arkusze-i-rozwiazania/2013-probna-pti/README.md)
-    * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2013-probna-pti/solutions.md) -->
   * [2013](matura-z-informatyki/arkusze-i-rozwiazania/2013/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2013/solutions.md)
-  <!-- * [2014 - próbna PTI](matura-z-informatyki/arkusze-i-rozwiazania/2014-probna-pti/README.md)
-    * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2014-probna-pti/solutions.md) -->
   * [2014](matura-z-informatyki/arkusze-i-rozwiazania/2014/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2014/solutions.md)
   * [2015](matura-z-informatyki/arkusze-i-rozwiazania/2015/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2015/solutions.md)
-  <!-- * [2016 - próbna PTI](matura-z-informatyki/arkusze-i-rozwiazania/2016-probna-pti/README.md)
-    * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2016-probna-pti/solutions.md) -->
   * [2016](matura-z-informatyki/arkusze-i-rozwiazania/2016/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2016/solutions.md)
-  <!-- * [2017 - próbna PTI](matura-z-informatyki/arkusze-i-rozwiazania/2017-probna-pti/README.md)
-    * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2017-probna-pti/solutions.md) -->
   * [2017](matura-z-informatyki/arkusze-i-rozwiazania/2017/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2017/solutions.md)
   * [2017 - czerwiec](matura-z-informatyki/arkusze-i-rozwiazania/2017-czerwiec-cke/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2017-czerwiec-cke/solutions.md)
-  <!-- * [2018 - próbna PTI](matura-z-informatyki/arkusze-i-rozwiazania/2018-probna-pti/README.md)
-    * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2018-probna-pti/solutions.md) -->
   * [2018](matura-z-informatyki/arkusze-i-rozwiazania/2018/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2018/solutions.md)
-  * [2019 - próbna INFORMATURA](matura-z-informatyki/arkusze-i-rozwiazania/2019-probna-informatura/README.md)
-    * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2019-probna-informatura/solutions.md)
-  <!-- * [2019 - próbna PTI](matura-z-informatyki/arkusze-i-rozwiazania/2019-probna-pti/README.md)
-    * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2019-probna-pti/solutions.md) -->
   * [2019](matura-z-informatyki/arkusze-i-rozwiazania/2019/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2019/solutions.md)
   * [2020 - próbna CKE](matura-z-informatyki/arkusze-i-rozwiazania/2020-probna-cke/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2020-probna-cke/solutions.md)
   * [2020](matura-z-informatyki/arkusze-i-rozwiazania/2020/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2020/solutions.md)
-  <!-- * [2021 - próbna PTI](matura-z-informatyki/arkusze-i-rozwiazania/2021-probna-pti/README.md)
-    * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2021-probna-pti/solutions.md) -->
   * [2021 - próbna CKE](matura-z-informatyki/arkusze-i-rozwiazania/2021-probna-cke/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2021-probna-cke/solutions.md)
   * [2021](matura-z-informatyki/arkusze-i-rozwiazania/2021/README.md)
@@ -1236,12 +1212,8 @@
   * [2022](matura-z-informatyki/arkusze-i-rozwiazania/2022/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2022/solutions.md)
   * [2023 - przykładowa CKE](matura-z-informatyki/arkusze-i-rozwiazania/2023-probna-cke/README.md)
-  <!-- * [2023 - próbna PTI](matura-z-informatyki/arkusze-i-rozwiazania/2023-probna-pti/README.md)
-    * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2023-probna-pti/solutions.md) -->
   * [2023](matura-z-informatyki/arkusze-i-rozwiazania/2023/README.md)
     * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2023/solutions.md)
-  <!-- * [2024 - próbna PTI](matura-z-informatyki/arkusze-i-rozwiazania/2024-probna-pti/README.md)
-    * [Rozwiązania](matura-z-informatyki/arkusze-i-rozwiazania/2024-probna-pti/solutions.md) -->
   * [Pytania zamknięte](matura-z-informatyki/arkusze-i-rozwiazania/pytania-zamkniete.md)
 
 ## Przydatne linki
